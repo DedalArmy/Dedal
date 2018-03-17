@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="dedal" version="11.1.1.201610211630">
+  <ownedViewpoints name="fr.ema.dedal.design.viewpoint" label="Dedal.old">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="fr.ema.dedal.design.viewpoint.specificationDiagram" label="SpecificationDiagram" titleExpression="[thisEObject.name/]" initialisation="true" domainClass="Specification">
+      <metamodel href="../../fr.ema.dedal.metamodel/model/dedal.ecore#/"/>
+      <defaultLayer name="specification.layer">
+        <nodeMappings name="InterfaceType.node" semanticCandidatesExpression="[self.interfaceTypes/]" doubleClickDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Open%20Xtext%20editor']" domainClass="Dedal.InterfaceType">
+          <style xsi:type="style:NoteDescription" labelExpression="[self.name/]" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="connection.edge" sourceMapping="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@containerMappings[name='role.container']/@borderedNodeMappings[name='interface.borderNode']" targetMapping="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@containerMappings[name='role.container']/@borderedNodeMappings[name='interface.borderNode']" targetFinderExpression="feature:clientIntElem" sourceFinderExpression="feature:serverIntElem" domainClass="Dedal.RoleConnection" useDomainElement="true">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="role.container" semanticCandidatesExpression="[self.specComponents/]" domainClass="CompRole">
+          <borderedNodeMappings name="interface.borderNode" semanticCandidatesExpression="feature:compInterfaces" doubleClickDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Open%20Xtext%20editor']" domainClass="Interface">
+            <conditionnalStyles predicateExpression="[thisEObject.direction=DIRECTION::PROVIDED/]">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.type.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[thisEObject.direction=DIRECTION::REQUIRED/]">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.type.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1" showIcon="false">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="specification.tool">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="role.creation" label="New Component role" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@containerMappings[name='role.container']">
+            <variable name="roleContainer"/>
+            <viewVariable name="roleContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.CompRole" referenceName="specComponents" variableName="compRoleInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="feature:id"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="specificationDiagram.creation" label="New Specification Diagram" diagramDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']">
+            <initialOperation/>
+            <containerViewVariable name="containerView"/>
+            <representationNameVariable name="diagramName"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="interface.creation" label="add interface" nodeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@containerMappings[name='role.container']/@borderedNodeMappings[name='interface.borderNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Interface" referenceName="compInterfaces" variableName="interfaceInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="connection.creation" label="Connection" edgeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@edgeMappings[name='connection.edge']" extraSourceMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@containerMappings[name='role.container']/@borderedNodeMappings[name='interface.borderNode'] //@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@containerMappings[name='role.container']" extraTargetMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@containerMappings[name='role.container']/@borderedNodeMappings[name='interface.borderNode'] //@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@containerMappings[name='role.container']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source.eContainer().eContainer()/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.RoleConnection" referenceName="specConnections">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="clientIntElem" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="serverIntElem" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="parameter.creation" label="add parameter">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Parameter" referenceName="parameters">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="GO">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ExternalJavaActionCall" name="test.id" action="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Test%20it']"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ExternalJavaAction" name="Test it" id="fr.ema.dedal.design.externaljavaactiontestID"/>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Open Xtext editor" mappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@containerMappings[name='role.container']/@borderedNodeMappings[name='interface.borderNode'] //@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@nodeMappings[name='InterfaceType.node']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="Open Embedded Editor" id="fr.ema.dedal.design.openembeddededitorID"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="interfaceType.creation" label="New interface type" nodeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']/@defaultLayer/@nodeMappings[name='InterfaceType.node']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.InterfaceType" referenceName="interfaceTypes">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="ConfigurationDiagram" domainClass="Configuration">
+      <metamodel href="../../fr.ema.dedal.metamodel/model/dedal.ecore#/"/>
+      <defaultLayer name="configuration.layer">
+        <edgeMappings name="classconnection.edge" sourceMapping="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@containerMappings[name='class.container']/@borderedNodeMappings[name='config.interface.borderNode']" targetMapping="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@containerMappings[name='class.container']/@borderedNodeMappings[name='config.interface.borderNode']" targetFinderExpression="feature:clientIntElem" sourceFinderExpression="feature:serverIntElem" domainClass="ClassConnection" useDomainElement="true">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="class.container" navigationDescriptions="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='compositeComp.navigation']" semanticCandidatesExpression="[self.configComponents/]" doubleClickDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='compositeComp.edit']" domainClass="CompClass">
+          <borderedNodeMappings name="config.interface.borderNode" semanticCandidatesExpression="feature:compInterfaces " domainClass="Interface">
+            <borderedNodeMappings name="interfaceType.node" semanticCandidatesExpression="feature:type" domainClass="Dedal.InterfaceType">
+              <style xsi:type="style:NoteDescription" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+              </style>
+            </borderedNodeMappings>
+            <conditionnalStyles predicateExpression="[thisEObject.direction=DIRECTION::PROVIDED/]">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.type.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[thisEObject.direction=DIRECTION::REQUIRED/]">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.type.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1" showIcon="false">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <containerMappings xsi:type="description_1:ContainerMappingImport" name="config.interfaceType.container" semanticCandidatesExpression="[self.interfaceTypes/]" domainClass="InterfaceType">
+          <subContainerMappings name="config.signature.container" semanticCandidatesExpression="feature:eAllContents" domainClass="Dedal.Signature">
+            <subNodeMappings name="config.param.node" semanticCandidatesExpression="feature:eAllContents" domainClass="Dedal.Parameter">
+              <style xsi:type="style:BundledImageDescription" labelExpression="[type + ' ' + name/]" sizeComputationExpression="0" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1" labelExpression="[type + ' ' + name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="configuration.tool">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="class.creation" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@containerMappings[name='class.container']">
+            <variable name="roleContainer"/>
+            <viewVariable name="roleContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.CompClass" referenceName="configComponents" variableName="compClasseInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="interfaceType.creation" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@containerMappings[name='config.interfaceType.container']">
+            <variable name="interfaceTypeContainer"/>
+            <viewVariable name="interfaceTypeContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.InterfaceType" referenceName="interfaceTypes">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="interface.creation" nodeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@containerMappings[name='class.container']/@borderedNodeMappings[name='config.interface.borderNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Interface" referenceName="compInterfaces" variableName="interfaceInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="connection.creation" label="Connection" edgeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@edgeMappings[name='classconnection.edge']" extraSourceMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@containerMappings[name='class.container']/@borderedNodeMappings[name='config.interface.borderNode'] //@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@containerMappings[name='class.container']" extraTargetMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@containerMappings[name='class.container']/@borderedNodeMappings[name='config.interface.borderNode'] //@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@containerMappings[name='class.container']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source.eContainer().eContainer()/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.ClassConnection" referenceName="configConnections">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="clientIntElem" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="serverIntElem" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="parameter.creation" nodeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@containerMappings[name='config.interfaceType.container']/@subContainerMappings[name='config.signature.container']/@subNodeMappings[name='config.param.node']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Parameter" referenceName="parameters">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="compositeComp.navigation" browseExpression="[self.oclAsType(CompositeCompClass).uses/]" navigationNameExpression="[self.oclAsType(CompositeCompClass). name/]" diagramDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']">
+            <containerViewVariable name="containerView"/>
+            <containerVariable name="container"/>
+            <representationNameVariable name="diagramName"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="compositeComp.edit" precondition="[self.oclIsTypeOf(CompositeCompClass)/]" mappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@containerMappings[name='class.container']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" diagramDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="uses" valueExpression="[self.oclAsType(CompositeCompClass).uses/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="configurationDiagram.creation" diagramDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']">
+            <initialOperation/>
+            <containerViewVariable name="containerView"/>
+            <representationNameVariable name="diagramName"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="signature.creation" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@containerMappings[name='config.interfaceType.container']/@subContainerMappings[name='config.signature.container']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Signature" referenceName="signatures">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="feature:id"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:PopupMenu"/>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="AssemblyDiagram" domainClass="Dedal.Assembly">
+      <metamodel href="../../fr.ema.dedal.metamodel/model/dedal.ecore#/"/>
+      <defaultLayer name="assembly.layer">
+        <edgeMappings name="instanceconnection.edge" sourceMapping="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']/@defaultLayer/@containerMappings[name='instance.container']/@borderedNodeMappings[name='assm.interface.borderNode']" targetMapping="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']/@defaultLayer/@containerMappings[name='instance.container']/@borderedNodeMappings[name='assm.interface.borderNode']" targetFinderExpression="feature:clientIntElem" sourceFinderExpression="feature:serverIntElem" domainClass="Dedal.InstConnection" useDomainElement="true">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="instance.container" semanticCandidatesExpression="[self.assmComponents/]" domainClass="Dedal.CompInstance">
+          <borderedNodeMappings name="assm.interface.borderNode" semanticCandidatesExpression="feature:compInterfaces" domainClass="Interface">
+            <conditionnalStyles predicateExpression="[thisEObject.direction=DIRECTION::PROVIDED/]">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.type.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[thisEObject.direction=DIRECTION::REQUIRED/]">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.type.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1" showIcon="false">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <containerMappings xsi:type="description_1:ContainerMappingImport" name="assm.interfaceType.container" semanticCandidatesExpression="[self.interfaceTypes/]" domainClass="InterfaceType" childrenPresentation="List">
+          <subContainerMappings name="assm.signature.container" semanticCandidatesExpression="feature:eAllContents" domainClass="Dedal.Signature">
+            <subNodeMappings name="assm.param.node" semanticCandidatesExpression="feature:eAllContents" domainClass="Dedal.Parameter">
+              <style xsi:type="style:BundledImageDescription" labelExpression="[type + ' ' + name/]" sizeComputationExpression="0" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1" labelExpression="[type + ' ' + name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="assembly.tool">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="instance.creation" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']/@defaultLayer/@containerMappings[name='instance.container']">
+            <variable name="roleContainer"/>
+            <viewVariable name="roleContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.CompInstance" referenceName="assmComponents" variableName="compInstInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="interfaceType.creation" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']/@defaultLayer/@containerMappings[name='assm.interfaceType.container']">
+            <variable name="interfaceTypeContainer"/>
+            <viewVariable name="interfaceTypeContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.InterfaceType" referenceName="interfaceTypes">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="interface.creation" nodeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']/@defaultLayer/@containerMappings[name='instance.container']/@borderedNodeMappings[name='assm.interface.borderNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Interface" referenceName="compInterfaces" variableName="interfaceInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="connection.creation" label="Connection" edgeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']/@defaultLayer/@edgeMappings[name='instanceconnection.edge']" extraSourceMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']/@defaultLayer/@containerMappings[name='instance.container']/@borderedNodeMappings[name='assm.interface.borderNode'] //@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']/@defaultLayer/@containerMappings[name='instance.container']" extraTargetMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']/@defaultLayer/@containerMappings[name='instance.container']/@borderedNodeMappings[name='assm.interface.borderNode'] //@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']/@defaultLayer/@containerMappings[name='instance.container']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source.eContainer().eContainer()/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.InstConnection" referenceName="assemblyConnections">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="clientIntElem" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="serverIntElem" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="parameter.creation" nodeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']/@defaultLayer/@containerMappings[name='assm.interfaceType.container']/@subContainerMappings[name='assm.signature.container']/@subNodeMappings[name='assm.param.node']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Parameter" referenceName="parameters">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="signature.creation" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']/@defaultLayer/@containerMappings[name='assm.interfaceType.container']/@subContainerMappings[name='assm.signature.container']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Signature" referenceName="signatures">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="feature:id"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="DedalDiagram" domainClass="Dedal.DedalDiagram">
+      <metamodel href="../../fr.ema.dedal.metamodel/model/dedal.ecore#/"/>
+      <defaultLayer name="dedalDiagram.layer">
+        <containerMappings name="specification.container" detailDescriptions="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='DedalDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Specification.diagramCreation']" navigationDescriptions="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='DedalDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='specifciation.navigation']" semanticCandidatesExpression="[self.eContents(Specification)/]" domainClass="Dedal.Specification">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="configuration.container" detailDescriptions="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='DedalDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Configuration.diagramCreation']" navigationDescriptions="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='DedalDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='configuration.navigation']" semanticCandidatesExpression="[self.eContents(Configuration)/]" domainClass="Dedal.Configuration">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="assembly.container" detailDescriptions="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='DedalDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Assembly.diagramCreation']" navigationDescriptions="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='DedalDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='assembly.navigation']" semanticCandidatesExpression="[self.eContents(Assembly)/]" domainClass="Dedal.Assembly">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="repository.container" semanticCandidatesExpression="[self.repositories/]" domainClass="Dedal.Repository">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="dedal.tool">
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="specifciation.navigation" diagramDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']">
+            <containerViewVariable name="containerView"/>
+            <containerVariable name="container"/>
+            <representationNameVariable name="diagramName"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Specification.creation" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='DedalDiagram']/@defaultLayer/@containerMappings[name='specification.container']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Specification" referenceName="architectureDescriptions">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Specification.diagramCreation" label="create diagram" precondition="[self.eAllContents()->isEmpty()/]" titleExpression="[self.name/]" diagramDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='fr.ema.dedal.design.viewpoint.specificationDiagram']">
+            <initialOperation/>
+            <containerViewVariable name="containerView"/>
+            <representationNameVariable name="diagramName"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="generatemodel.id" label="generate B models">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.generateBModel()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="configuration.navigation" diagramDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']">
+            <containerViewVariable name="containerView"/>
+            <containerVariable name="container"/>
+            <representationNameVariable name="diagramName"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Configuration.creation" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='DedalDiagram']/@defaultLayer/@containerMappings[name='configuration.container']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Configuration" referenceName="architectureDescriptions">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Configuration.diagramCreation" label="create diagram" precondition="[self.eAllContents()->isEmpty()/]" titleExpression="[self.name/]" diagramDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']">
+            <initialOperation/>
+            <containerViewVariable name="containerView"/>
+            <representationNameVariable name="diagramName"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="assembly.navigation" diagramDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']">
+            <containerViewVariable name="containerView"/>
+            <containerVariable name="container"/>
+            <representationNameVariable name="diagramName"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Assembly.creation" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='DedalDiagram']/@defaultLayer/@containerMappings[name='assembly.container']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Assembly" referenceName="architectureDescriptions">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Assembly.diagramCreation" label="create diagram" precondition="[self.eAllContents()->isEmpty()/]" titleExpression="[self.name/]" diagramDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='AssemblyDiagram']">
+            <initialOperation/>
+            <containerViewVariable name="containerView"/>
+            <representationNameVariable name="diagramName"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="consistencyChecking.id" label="check consistency" precondition="[self.oclIsKindOf(ArchitectureDescription)/]">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.checkArchConsistency()/]"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="repo.navigation" diagramDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='RepositoryDiagram']">
+            <containerViewVariable name="containerView"/>
+            <containerVariable name="container"/>
+            <representationNameVariable name="diagramName"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="repo.creation" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='DedalDiagram']/@defaultLayer/@containerMappings[name='repository.container']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Repository" referenceName="repositories" variableName="repInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="repo.diagramCreation" label="create diagram" precondition="[self.eAllContents()->isEmpty()/]" titleExpression="[self.name/]" diagramDescription="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='RepositoryDiagram']">
+            <initialOperation/>
+            <containerViewVariable name="containerView"/>
+            <representationNameVariable name="diagramName"/>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="RepositoryDiagram" titleExpression="[ThthisEObject.name/]" domainClass="Dedal.Repository">
+      <metamodel href="../../fr.ema.dedal.metamodel/model/dedal.ecore#/"/>
+      <defaultLayer name="repo.layer">
+        <containerMappings name="repo.role.container" semanticCandidatesExpression="[self.eContents(CompRole)/]" domainClass="CompRole">
+          <borderedNodeMappings name="repo.role.interface.borderNode" semanticCandidatesExpression="feature:compInterfaces" domainClass="Interface">
+            <conditionnalStyles predicateExpression="[thisEObject.direction=DIRECTION::PROVIDED/]">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.type.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[thisEObject.direction=DIRECTION::REQUIRED/]">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.type.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1" showIcon="false">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <containerMappings xsi:type="description_1:ContainerMappingImport" name="repo.interfaceType.container" semanticCandidatesExpression="[self.interfaceTypes/]" domainClass="InterfaceType">
+          <subContainerMappings name="repo.signature.container" semanticCandidatesExpression="feature:eAllContents" domainClass="Dedal.Signature">
+            <subNodeMappings name="repo.param.node" semanticCandidatesExpression="feature:eAllContents" domainClass="Dedal.Parameter">
+              <style xsi:type="style:BundledImageDescription" labelExpression="[type + ' ' + name/]" sizeComputationExpression="0" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1" labelExpression="[type + ' ' + name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="repo.class.container" navigationDescriptions="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='ConfigurationDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='compositeComp.navigation']" semanticCandidatesExpression="[self.eContents(CompClass)/]" domainClass="CompClass">
+          <borderedNodeMappings name="repo.class.interface.borderNode" semanticCandidatesExpression="feature:compInterfaces " domainClass="Interface">
+            <conditionnalStyles predicateExpression="[thisEObject.direction=DIRECTION::PROVIDED/]">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.type.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[thisEObject.direction=DIRECTION::REQUIRED/]">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.type.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1" showIcon="false">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="repo.instance.container" semanticCandidatesExpression="[self.eContents(CompInstance)/]" domainClass="Dedal.CompInstance">
+          <borderedNodeMappings name="repo.instance.interface.borderNode" semanticCandidatesExpression="feature:compInterfaces" domainClass="Interface">
+            <conditionnalStyles predicateExpression="[thisEObject.direction=DIRECTION::PROVIDED/]">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.type.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[thisEObject.direction=DIRECTION::REQUIRED/]">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.type.name/]" sizeComputationExpression="2" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1" showIcon="false">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="repo.tool">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="role.creation" label="New Component role" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='RepositoryDiagram']/@defaultLayer/@containerMappings[name='repo.role.container']">
+            <variable name="roleContainer"/>
+            <viewVariable name="roleContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.CompRole" referenceName="components" variableName="compRoleInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="feature:id"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="interfaceType.creation" label="New interface type" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='RepositoryDiagram']/@defaultLayer/@containerMappings[name='repo.interfaceType.container']">
+            <variable name="interfaceTypeContainer"/>
+            <viewVariable name="interfaceTypeContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.InterfaceType" referenceName="interfaceTypes">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="role.interface.creation" label="add interface to role" nodeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='RepositoryDiagram']/@defaultLayer/@containerMappings[name='repo.role.container']/@borderedNodeMappings[name='repo.role.interface.borderNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Interface" referenceName="compInterfaces" variableName="interfaceInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="parameter.creation" label="add parameter" nodeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='RepositoryDiagram']/@defaultLayer/@containerMappings[name='repo.interfaceType.container']/@subContainerMappings[name='repo.signature.container']/@subNodeMappings[name='repo.param.node']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Parameter" referenceName="parameters">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="signature.creation" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='RepositoryDiagram']/@defaultLayer/@containerMappings[name='repo.interfaceType.container']/@subContainerMappings[name='repo.signature.container']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Signature" referenceName="signatures">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="feature:id"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="class.creation" label="add component class" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='RepositoryDiagram']/@defaultLayer/@containerMappings[name='repo.class.container']">
+            <variable name="roleContainer"/>
+            <viewVariable name="roleContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.CompClass" referenceName="components" variableName="compClasseInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="instance.creation" label="add component instance" containerMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='RepositoryDiagram']/@defaultLayer/@containerMappings[name='repo.instance.container']">
+            <variable name="roleContainer"/>
+            <viewVariable name="roleContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.CompInstance" referenceName="components" variableName="compInstInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="class.interface.creation" label="add interface to component class" nodeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='RepositoryDiagram']/@defaultLayer/@containerMappings[name='repo.class.container']/@borderedNodeMappings[name='repo.class.interface.borderNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Interface" referenceName="compInterfaces" variableName="interfaceInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="instance.interface.creation" label="add interface to component instance" nodeMappings="//@ownedViewpoints[name='fr.ema.dedal.design.viewpoint']/@ownedRepresentations[name='RepositoryDiagram']/@defaultLayer/@containerMappings[name='repo.instance.container']/@borderedNodeMappings[name='repo.instance.interface.borderNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Dedal.Interface" referenceName="compInterfaces" variableName="interfaceInstance">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="feature:type"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:PopupMenu" name="additionOperations.popup" label="Request change">
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="addClass.action" label="Add this component class to current configuration" precondition="[thisEObject.oclIsTypeOf(CompClass)/]">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.requestChange()/]"/>
+              </initialOperation>
+            </menuItemDescription>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="fr.ema.dedal.design.templates.DedalServices"/>
+  </ownedViewpoints>
+</description:Group>

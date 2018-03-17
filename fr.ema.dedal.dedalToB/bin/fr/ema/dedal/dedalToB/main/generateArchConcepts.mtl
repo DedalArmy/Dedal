@@ -1,0 +1,407 @@
+[comment encoding = UTF-8 /]
+[module generateArchConcepts('http://www.dedal.fr/metamodel')]
+
+
+[template public generateElement(aDedalDiagram : DedalDiagram)]
+[comment @main/]
+[file ('Arch_concepts.mch', false, 'UTF-8')]MACHINE
+    Arch_concepts
+INCLUDES
+    Basic_concepts
+
+SETS   
+   ARCHITECTURES = {eArch,
+
+[comment][if (self.eContents(Configuration)->isEmpty())][/comment]
+[for (a : Specification|self.eContents(Specification)) separator(',')]
+[a.name/]
+[/for]
+[comment][else]
+[for (a : Specification|self.eContents(Specification)) separator(',') after(',')]
+[a.name/]
+[/for]
+
+[for (a : Configuration|self.eContents(Configuration)) separator(',')]
+[a.name/]
+[/for]
+[/if][/comment]};
+   COMPONENTS = {eRole,
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (c : CompRole|rep.eContents(CompRole)) separator(',')]
+['s_cr'+c.id/]
+[/for]
+[for (c : CompClass|rep.eContents(CompClass)) before(',') separator(',')]
+['s_ct'+ c.id/]
+[/for]
+[/for]
+[/if]
+[if (self.eContents(Configuration)->isEmpty())]
+[for (a : Specification|self.eContents(Specification)) separator(',')]
+[for (c : CompRole|a.specComponents) separator(',')]
+['cr'.concat(c.id.toString())/]
+[/for]
+[/for]
+[else]
+[for (a : Specification|self.eContents(Specification)) separator(',') after(',')]
+[for (c : CompRole|a.specComponents) separator(',')]
+['cr'+ c.id/]
+[/for]
+[/for]
+[for (a : Configuration|self.eContents(Configuration)) separator(',')]
+[for (c : CompClass|a.configComponents) separator(',')]
+['ct'+ c.id/]
+[/for]
+[/for]
+[/if]};
+   COMP_NAMES = {
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (c : CompRole|rep.eContents(CompRole)) separator(',')]
+[c.name/]
+[/for]
+[for (c : CompClass|rep.eContents(CompClass)) before(',') separator(',')]
+[c.name+'Type'/]
+[/for]
+[/for]
+[/if]
+
+[if (self.eContents(Configuration)->isEmpty())]
+[for (a : Specification|self.eContents(Specification)) separator(',')]
+[for (c : CompRole|a.specComponents) separator(',')]
+[c.name/]
+[/for]
+[/for]
+[else]
+[for (a : Specification|self.eContents(Specification)) separator(',') after(',')]
+[for (c : CompRole|a.specComponents) separator(',')]
+[c.name/]
+[/for]
+[/for]
+[for (a : Configuration|self.eContents(Configuration)) separator(',')]
+[for (c : CompClass|a.configComponents) separator(',')]
+[c.name+'Type'/]
+[/for]
+[/for]
+[/if]};
+   FLOW_DIRECTION = {OP_IN, OP_OUT}
+   
+VARIABLES
+    architecture, arch_components, arch_connections, component, comp_name, connection, comp_interfaces, comp_substitution, comp_compatible, client, server, arch_clients, arch_servers, init,  gard
+    
+INVARIANT
+   component <: COMPONENTS & 
+   comp_name : component --> COMP_NAMES &
+   comp_interfaces : component >-> POW(interface) &
+   comp_substitution : component <-> component &
+   
+    comp_compatible : component <-> component  &
+    !(C1, C2).(C1 : component & C2 : component & C1 /= C2 =>
+        ((C1, C2) : comp_compatible <=> #(int1, int2).(int1 : interface & int1 : comp_interfaces(C1) & int2 : interface & int2 : comp_interfaces(C2) & (int1, int2) : int_compatible))) &
+    
+    client : component <-> interface &
+    !(c1).(c1 : client => !(CR, int).(CR : component & int : interface & CR : dom({c1}) & int : ran({c1}) => int : comp_interfaces(CR) & int_direction(int) = REQUIRED)) &
+    !c1.(c1 : client => #(comp, int).(comp : component & int : interface & int : comp_requiredInterfaces(comp) & c1 = (comp, int))) &
+    server : component <-> interface &
+    !s1.(s1 : server => !(CR, int).(CR : component & int : interface & CR : dom({s1}) & int : ran({s1}) => int : comp_interfaces(CR) & int_direction(int) = PROVIDED)) &
+    !s1.(s1 : server => #(comp, int).(comp : component & int : interface & int : comp_providedInterfaces(comp) & s1 = (comp, int))) &
+    
+    /*relation client -> server is a bijection between a couple of component role and one required interface and a couple of component role and one provided interface compatible with the required one*/ 
+    connection : client <-> server &
+    /*!(C1, C2, int1, int2).(C1 : component & C2 : component & int1 : interface & int2 : interface & (C1|->int1):client & (C2|->int2):server => (((C1|->int1)|->(C2, int2)) : connection => C1/=C2 & (int1, int2) : int_compatible)) &*/
+    
+    !(c1, s1).(c1 : client & s1 : server => ((c1, s1) : connection => #(C1, C2, int1, int2).(C1 : component & C2 : component & C1 /= C2 & int1 : interface & int2 : interface & (C1,int1)=c1 & (C2, int2)=s1 & (int1, int2) : int_compatible))) &
+    
+    architecture <: ARCHITECTURES &
+    arch_components : architecture --> POW(component) &
+    !(cr1, cr2, A1).(cr1 : component & cr2 : component & cr1 /= cr2 & A1 : architecture & {cr1, cr2} <: arch_components(A1) => comp_name(cr1) /= comp_name(cr2)) &
+   
+    arch_connections : architecture --> POW(connection) &
+    arch_clients : architecture --> POW(client) &
+    !(arch, cl).(arch : architecture & cl : client =>
+        (cl : arch_clients(arch) <=> #comp.(comp : component & comp : dom({cl}) & comp : arch_components(arch)))) &
+    
+     arch_servers : architecture --> POW(server) &
+    !(arch, se).(arch : architecture & se : server =>
+        (se : arch_servers(arch) <=> #comp.(comp : component & comp : dom({se}) & comp : arch_components(arch)))) &
+    
+    /*architecture completeness : all required functions are captured*/
+    !(arch, cl).(arch : architecture & cl : client & cl : arch_clients(arch) =>
+        #conn.(conn : connection & conn : arch_connections(arch) & cl : dom({conn}))) &
+    
+    /*Architecture correctness*/
+    !(arch).(arch : architecture & card(arch_components(arch))>=2 => 
+        !(comp).(comp : component & comp : arch_components(arch) =>
+            #conn.(conn : connection & comp : dom(dom({conn})) \/ dom(ran({conn}))))) &
+    
+    init : BOOL &
+    gard : BOOL
+
+DEFINITIONS
+    
+    comp_providedInterfaces(comp) == {int|int : interface & int : comp_interfaces(comp) & int_direction(int) = PROVIDED};
+    comp_requiredInterfaces(comp) == {int|int : interface & int : comp_interfaces(comp) & int_direction(int) = REQUIRED};
+    comp_elem == {cl, comp|cl : component*interface & comp : component & #int.(int : interface & cl = (comp, int))};
+    interface_elem == {cl, int|cl : component*interface & int : interface & #comp.(comp : component & cl = (comp, int))};
+    /*computing definitions*/
+    /*all_connections == ;*/
+    all_comp_compatible == {c1, c2|c1 : component & c2 : component & c1/=c2 & #(int1, int2).(int1 : interface & int1 : comp_interfaces(c1) & int2 : interface & int2 : comp_interfaces(c2) & (int1, int2) : int_compatible)};
+    all_comp_substitution == {c1, c2|c1 : component & c2 : component & c1 /= c2 & #(inj1, inj2).(inj1 : comp_providedInterfaces(c1) >-> comp_providedInterfaces(c2) & (inj1 /= {} or inj2 /= {}) & !(int).(int : interface &  int : comp_providedInterfaces(c1) => inj1(int) : int_substitution['[{int}]'/]) & inj2 : comp_requiredInterfaces(c2) >-> comp_requiredInterfaces(c1) & !(int).(int : interface &  int : comp_requiredInterfaces(c2) => inj2(int) : int_substitution['[{int}]'/]))};
+    all_clients == {comp, int| comp : component & int : interface & int_direction(int) = REQUIRED & int : comp_interfaces(comp)};
+    all_servers == {comp, int| comp : component & int : interface & int_direction(int) = PROVIDED & int : comp_interfaces(comp)};
+    all_connections == {cl, se|cl :client & se : server & #(c1, c2, int1, int2).(c1 : component & c2 : component & c1 /= c2 & int1 : interface & int2 : interface & (c1|->int1)=cl & (c2|->int2)=se & (int1, int2) : int_compatible)}
+
+INITIALISATION
+   component := {
+
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (c : CompRole|rep.eContents(CompRole)) separator(',')]
+['s_cr'+c.id/]
+[/for]
+[for (c : CompClass|rep.eContents(CompClass)) before(',') separator(',')]
+['s_ct'+ c.id/]
+[/for]
+[/for]
+[/if]
+
+[if (self.eContents(Configuration)->isEmpty())]
+[for (a : Specification|self.eContents(Specification)) separator(',')]
+[for (c : CompRole|a.specComponents) separator(',')]
+['cr'+c.id.toString()/]
+[/for]
+[/for]
+[else]
+[for (a : Specification|self.eContents(Specification)) separator(',') after(',')]
+[for (c : CompRole|a.specComponents) separator(',')]
+['cr'+c.id/]
+[/for]
+[/for]
+[for (a : Configuration|self.eContents(Configuration)) separator(',')]
+[for (c : CompClass|a.configComponents) separator(',')]
+['ct'+c.id/]
+[/for]
+[/for]
+[/if]} ||
+   comp_name := {
+
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (c : CompRole|rep.eContents(CompRole)) separator(',')]
+['(s_cr'+c.id+'|->'+c.name+')'/]
+[/for]
+[for (c : CompClass|rep.eContents(CompClass)) before(',') separator(',')]
+['(s_ct'+c.id+'|->'+c.name+'Type)'/]
+[/for]
+[/for]
+[/if]
+
+[if (self.eContents(Configuration)->isEmpty())]
+[for (a : Specification|self.eContents(Specification)) separator(',')]
+[for (c : CompRole|a.specComponents) separator(',')]
+['(cr'+c.id+'|->'+c.name+')'/]
+[/for]
+[/for]
+[else]
+[for (a : Specification|self.eContents(Specification)) separator(',') after(',')]
+[for (c : CompRole|a.specComponents) separator(',')]
+['(cr'+c.id+'|->'+c.name+')'/]
+[/for]
+[/for]
+[for (a : Configuration|self.eContents(Configuration)) separator(',')]
+[for (c : CompClass|a.configComponents) separator(',')]
+['(ct'+c.id+'|->'+c.name+'Type)'/]
+[/for]
+[/for]
+[/if]} ||
+   comp_interfaces := {
+
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (c : CompRole|rep.eContents(CompRole)) separator(',') ]
+['s_cr'+c.id+'|->{'/]
+[for (int : Interface|c.compInterfaces) separator(',') after('}')]
+[int.name/]
+[/for]
+[/for]
+[for (c : CompClass|rep.eContents(CompClass)) before(',') separator(',')]
+['s_ct'+c.id+'|->{'/]
+[for (int : Interface|c.compInterfaces) separator(',') after('}')]
+[int.name/]
+[/for]
+[/for]
+[/for]
+[/if]
+
+[if (self.eContents(Configuration)->isEmpty())]
+[for (a : Specification|self.eContents(Specification)) separator(',')]
+[for (c : CompRole|a.specComponents) separator(',')]
+['cr'+c.id+'|->{'/]
+[for (int : Interface|c.compInterfaces) separator(',') after('}')]
+[int.name/]
+[/for]
+[/for]
+[/for]
+[else]
+[for (a : Specification|self.eContents(Specification)) separator(',') after(',')]
+[for (c : CompRole|a.specComponents) separator(',')]
+['cr'+c.id+'|->{'/]
+[for (int : Interface|c.compInterfaces) separator(',') after('}')]
+[int.name/]
+[/for]
+[/for]
+[/for]
+
+[for (a : Configuration|self.eContents(Configuration)) separator(',')]
+[for (c : CompClass|a.configComponents) separator(',')]
+['ct'+c.id+'|->{'/]
+[for (int : Interface|c.compInterfaces) separator(',') after('}')]
+[int.name/]
+[/for]
+[/for]
+[/for]
+[/if]} ||
+       client := {
+[if (self.eContents(Configuration)->isEmpty())]
+[for (a : Specification|self.eContents(Specification)) separator(',')]
+[for (con : RoleConnection|a.specConnections) separator(',')]
+['(cr'+con.clientCompElem.id+'|->'+con.clientIntElem.name+')'/]
+[/for]
+[/for]
+[else]
+[for (a : Specification|self.eContents(Specification)) separator(',') after(',')]
+[for (con : RoleConnection|a.specConnections) separator(',')]
+['(cr'+con.clientCompElem.id+'|->'+con.clientIntElem.name+')'/]
+[/for]
+[/for]
+
+[for (a : Configuration|self.eContents(Configuration)) separator(',')]
+[for (con : ClassConnection|a.configConnections) separator(',')]
+['(ct'+con.clientClassElem.id+'|->'+con.clientIntElem.name+')'/]
+[/for]
+[/for]
+[/if]} ||
+       server := {
+[if (self.eContents(Configuration)->isEmpty())]
+[for (a : Specification|self.eContents(Specification)) separator(',')]
+[for (con : RoleConnection|a.specConnections) separator(',')]
+['(cr'+con.serverCompElem.id+'|->'+con.serverIntElem.name+')'/]
+[/for]
+[/for]
+[else]
+[for (a : Specification|self.eContents(Specification)) separator(',') after(',')]
+[for (con : RoleConnection|a.specConnections) separator(',')]
+['(cr'+con.serverCompElem.id+'|->'+con.serverIntElem.name+')'/]
+[/for]
+[/for]
+
+[for (a : Configuration|self.eContents(Configuration)) separator(',')]
+[for (con : ClassConnection|a.configConnections) separator(',')]
+['(ct'+con.serverClassElem.id+'|->'+con.serverIntElem.name+')'/]
+[/for]
+[/for]
+[/if]} ||
+       connection := {
+[if (self.eContents(Configuration)->isEmpty())]
+[for (a : Specification|self.eContents(Specification)) separator(',')]
+[for (con : RoleConnection|a.specConnections) separator(',')]
+['((cr'+con.clientCompElem.id+'|->'+con.clientIntElem.name+')'+'|->(cr'+con.serverCompElem.id+'|->'+con.serverIntElem.name+'))'/]
+[/for]
+[/for]
+[else]
+[for (a : Specification|self.eContents(Specification)) separator(',') after(',')]
+[for (con : RoleConnection|a.specConnections) separator(',')]
+['((cr'+con.clientCompElem.id+'|->'+con.clientIntElem.name+')'+'|->(cr'+con.serverCompElem.id+'|->'+con.serverIntElem.name+'))'/]
+[/for]
+[/for]
+
+[for (a : Configuration|self.eContents(Configuration)) separator(',')]
+[for (con : ClassConnection|a.configConnections) separator(',')]
+['((ct'+con.clientClassElem.id+'|->'+con.clientIntElem.name+')'+'|->(ct'+con.serverClassElem.id+'|->'+con.serverIntElem.name+'))'/]
+[/for]
+[/for]
+[/if]} ||
+   architecture:= {
+[comment][if (self.eContents(Configuration)->isEmpty())][/comment]
+[for (a : Specification|self.eContents(Specification)) separator(',')]
+[a.name/]
+[/for]
+[comment][else]
+[for (a : Specification|self.eContents(Specification)) separator(',') after(',')]
+[a.name/]
+[/for]
+
+[for (a : Configuration|self.eContents(Configuration)) separator(',')]
+[a.name/]
+[/for]
+[/if][/comment]} ||
+   arch_components := {
+[comment][if (self.eContents(Configuration)->isEmpty())][/comment]
+[for (a : Specification|self.eContents(Specification)) separator(',')]
+[a.name+'|->{'/]
+[for (c : CompRole|a.specComponents) separator(',') after('}')]
+['cr'+c.id.toString()/]
+[/for]
+[/for]
+[comment][else]
+[for (a : Specification|self.eContents(Specification)) separator(',') after(',')]
+[a.name+'|->{'/]
+[for (c : CompRole|a.specComponents) separator(',') after('}')]
+['cr'+c.id.toString()/]
+[/for]
+[/for]
+
+[for (a : Configuration|self.eContents(Configuration)) separator(',')]
+[a.name.concat('|->{')/]
+[for (c : CompClass|a.configComponents) separator(',') after('}')]
+['ct'+c.id.toString()/]
+[/for]
+[/for]
+[/if][/comment]} ||
+   arch_connections := {} ||
+   comp_substitution := {} ||
+   comp_compatible := {} ||
+   arch_clients := {} ||
+   arch_servers := {} ||
+   init := FALSE ||
+   gard := FALSE
+
+   
+OPERATIONS
+    initializeArchModel =
+    /*PRE
+        init = TRUE
+    THEN*/
+    BEGIN
+        client := all_clients ||
+        server := all_servers ||
+        comp_compatible := all_comp_compatible ||
+        comp_substitution := all_comp_substitution
+    END;
+    
+    initializeConnections =
+    BEGIN
+        connection := all_connections
+    END;
+    
+    initializeParameterSubtype =
+    BEGIN
+        initializeParam_subtype
+    END;
+    initializesignatureSubtype =
+    BEGIN
+        initializeSigSubtype
+    END;
+    initializeInterfaceSubtype =
+    BEGIN
+        initializeIntSubtype
+    END;
+    initializeBasicModel    =
+    BEGIN
+        computeSubstitutabilityAndCompatibility ||
+        init := TRUE
+    END
+END
+
+[/file]
+[/template]

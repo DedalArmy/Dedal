@@ -1,0 +1,21 @@
+[comment encoding = UTF-8 /]
+[module generateAll('http://www.dedal.fr/metamodel')/]
+[import fr::ema::dedal::dedalToB::files::generateAllArchSpec/]
+[import fr::ema::dedal::dedalToB::files::generateBasicConcepts/]
+[import fr::ema::dedal::dedalToB::main::generateArchConcepts/]
+[import fr::ema::dedal::dedalToB::files::generateAllArchConfig/]
+[import fr::ema::dedal::dedalToB::files::generateAllArchAssm/]
+[import fr::ema::dedal::dedalToB::files::generateEvolutionMachine/]
+
+[template public generateAllDedalDiagram(aDedalDiagram : DedalDiagram)]
+	
+	[comment @main /]
+	[aDedalDiagram.generateBasicConcepts()/]
+	[aDedalDiagram.generateElement()/]
+	[aDedalDiagram.generateAllArchSpec()/]
+	[aDedalDiagram.generateAllArchConfig()/]
+	[aDedalDiagram.generateAllArchAssm()/]
+	[aDedalDiagram.generateEvolutionMachine()/]
+	
+[/template]
+
