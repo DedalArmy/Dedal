@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="generateAll" name="fr.ema.dedal.dedalToB">
-    <property name="ECLIPSE_HOME" value="../../../../../eclipse/modeling-latest-released/eclipse"/>
-    <property name="ECLIPSE_WORKSPACE" value="../.."/>
+    <property name="ECLIPSE_HOME" value="../../../../Documents/Travail/IDEs/eclipse/modeling-latest-released/eclipse"/>
+    <property name="ECLIPSE_WORKSPACE" value="../../../../Documents/Travail/IDEs/Workspaces/modeling_workspaces/spring"/>
 
     <!-- The classpath with only the dependencies used by the project -->
     <path id="fr.ema.dedal.dedalToB.libraryclasspath">
