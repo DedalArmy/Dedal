@@ -197,13 +197,22 @@ public interface DedalPackage extends EPackage {
 	int CONNECTION__REF_ID = 2;
 
 	/**
+	 * The feature id for the '<em><b>Property</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTION__PROPERTY = 3;
+
+	/**
 	 * The number of structural features of the '<em>Connection</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONNECTION_FEATURE_COUNT = 3;
+	int CONNECTION_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Connection</em>' class.
@@ -1084,6 +1093,15 @@ public interface DedalPackage extends EPackage {
 	int ROLE_CONNECTION__REF_ID = CONNECTION__REF_ID;
 
 	/**
+	 * The feature id for the '<em><b>Property</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_CONNECTION__PROPERTY = CONNECTION__PROPERTY;
+
+	/**
 	 * The feature id for the '<em><b>Client Comp Elem</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1157,6 +1175,15 @@ public interface DedalPackage extends EPackage {
 	int CLASS_CONNECTION__REF_ID = CONNECTION__REF_ID;
 
 	/**
+	 * The feature id for the '<em><b>Property</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_CONNECTION__PROPERTY = CONNECTION__PROPERTY;
+
+	/**
 	 * The feature id for the '<em><b>Client Class Elem</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1228,6 +1255,15 @@ public interface DedalPackage extends EPackage {
 	 * @ordered
 	 */
 	int INST_CONNECTION__REF_ID = CONNECTION__REF_ID;
+
+	/**
+	 * The feature id for the '<em><b>Property</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INST_CONNECTION__PROPERTY = CONNECTION__PROPERTY;
 
 	/**
 	 * The feature id for the '<em><b>Client Inst Elem</b></em>' reference.
@@ -1723,6 +1759,17 @@ public interface DedalPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getConnection_RefID();
+
+	/**
+	 * Returns the meta object for the attribute '{@link dedal.Connection#getProperty <em>Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Property</em>'.
+	 * @see dedal.Connection#getProperty()
+	 * @see #getConnection()
+	 * @generated
+	 */
+	EAttribute getConnection_Property();
 
 	/**
 	 * Returns the meta object for class '{@link dedal.Interface <em>Interface</em>}'.
@@ -2609,6 +2656,14 @@ public interface DedalPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CONNECTION__REF_ID = eINSTANCE.getConnection_RefID();
+
+		/**
+		 * The meta object literal for the '<em><b>Property</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONNECTION__PROPERTY = eINSTANCE.getConnection_Property();
 
 		/**
 		 * The meta object literal for the '{@link dedal.impl.InterfaceImpl <em>Interface</em>}' class.

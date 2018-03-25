@@ -3583,9 +3583,31 @@ ruleClassConnection returns [EObject current=null]
 	    }
 
 )
-)	otherlv_2='client' 
+)	otherlv_2='property' 
     {
-    	newLeafNode(otherlv_2, grammarAccess.getClassConnectionAccess().getClientKeyword_2());
+    	newLeafNode(otherlv_2, grammarAccess.getClassConnectionAccess().getPropertyKeyword_2());
+    }
+(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getClassConnectionAccess().getPropertyEStringParserRuleCall_3_0()); 
+	    }
+		lv_property_3_0=ruleEString		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getClassConnectionRule());
+	        }
+       		set(
+       			$current, 
+       			"property",
+        		lv_property_3_0, 
+        		"fr.ema.dedal.xtext.DedalADL.EString");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)	otherlv_4='client' 
+    {
+    	newLeafNode(otherlv_4, grammarAccess.getClassConnectionAccess().getClientKeyword_4());
     }
 (
 (
@@ -3595,16 +3617,16 @@ ruleClassConnection returns [EObject current=null]
 	        }
         }
 		{ 
-	        newCompositeNode(grammarAccess.getClassConnectionAccess().getClientClassElemCompClassCrossReference_3_0()); 
+	        newCompositeNode(grammarAccess.getClassConnectionAccess().getClientClassElemCompClassCrossReference_5_0()); 
 	    }
 		ruleEString		{ 
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)	otherlv_4='.' 
+)	otherlv_6='.' 
     {
-    	newLeafNode(otherlv_4, grammarAccess.getClassConnectionAccess().getFullStopKeyword_4());
+    	newLeafNode(otherlv_6, grammarAccess.getClassConnectionAccess().getFullStopKeyword_6());
     }
 (
 (
@@ -3614,16 +3636,16 @@ ruleClassConnection returns [EObject current=null]
 	        }
         }
 		{ 
-	        newCompositeNode(grammarAccess.getClassConnectionAccess().getClientIntElemInteractionCrossReference_5_0()); 
+	        newCompositeNode(grammarAccess.getClassConnectionAccess().getClientIntElemInteractionCrossReference_7_0()); 
 	    }
 		ruleEString		{ 
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)	otherlv_6='server' 
+)	otherlv_8='server' 
     {
-    	newLeafNode(otherlv_6, grammarAccess.getClassConnectionAccess().getServerKeyword_6());
+    	newLeafNode(otherlv_8, grammarAccess.getClassConnectionAccess().getServerKeyword_8());
     }
 (
 (
@@ -3633,16 +3655,16 @@ ruleClassConnection returns [EObject current=null]
 	        }
         }
 		{ 
-	        newCompositeNode(grammarAccess.getClassConnectionAccess().getServerClassElemCompClassCrossReference_7_0()); 
+	        newCompositeNode(grammarAccess.getClassConnectionAccess().getServerClassElemCompClassCrossReference_9_0()); 
 	    }
 		ruleEString		{ 
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)	otherlv_8='.' 
+)	otherlv_10='.' 
     {
-    	newLeafNode(otherlv_8, grammarAccess.getClassConnectionAccess().getFullStopKeyword_8());
+    	newLeafNode(otherlv_10, grammarAccess.getClassConnectionAccess().getFullStopKeyword_10());
     }
 (
 (
@@ -3652,7 +3674,7 @@ ruleClassConnection returns [EObject current=null]
 	        }
         }
 		{ 
-	        newCompositeNode(grammarAccess.getClassConnectionAccess().getServerIntElemInteractionCrossReference_9_0()); 
+	        newCompositeNode(grammarAccess.getClassConnectionAccess().getServerIntElemInteractionCrossReference_11_0()); 
 	    }
 		ruleEString		{ 
 	        afterParserOrEnumRuleCall();

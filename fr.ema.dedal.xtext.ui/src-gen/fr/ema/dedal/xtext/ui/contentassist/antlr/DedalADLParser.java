@@ -289,10 +289,11 @@ public class DedalADLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getCompositeCompClassAccess().getDelegatedInterfacesAssignment_13_1(), "rule__CompositeCompClass__DelegatedInterfacesAssignment_13_1");
 					put(grammarAccess.getCompositeCompClassAccess().getDelegatedInterfacesAssignment_13_2_1(), "rule__CompositeCompClass__DelegatedInterfacesAssignment_13_2_1");
 					put(grammarAccess.getClassConnectionAccess().getRefIDAssignment_1(), "rule__ClassConnection__RefIDAssignment_1");
-					put(grammarAccess.getClassConnectionAccess().getClientClassElemAssignment_3(), "rule__ClassConnection__ClientClassElemAssignment_3");
-					put(grammarAccess.getClassConnectionAccess().getClientIntElemAssignment_5(), "rule__ClassConnection__ClientIntElemAssignment_5");
-					put(grammarAccess.getClassConnectionAccess().getServerClassElemAssignment_7(), "rule__ClassConnection__ServerClassElemAssignment_7");
-					put(grammarAccess.getClassConnectionAccess().getServerIntElemAssignment_9(), "rule__ClassConnection__ServerIntElemAssignment_9");
+					put(grammarAccess.getClassConnectionAccess().getPropertyAssignment_3(), "rule__ClassConnection__PropertyAssignment_3");
+					put(grammarAccess.getClassConnectionAccess().getClientClassElemAssignment_5(), "rule__ClassConnection__ClientClassElemAssignment_5");
+					put(grammarAccess.getClassConnectionAccess().getClientIntElemAssignment_7(), "rule__ClassConnection__ClientIntElemAssignment_7");
+					put(grammarAccess.getClassConnectionAccess().getServerClassElemAssignment_9(), "rule__ClassConnection__ServerClassElemAssignment_9");
+					put(grammarAccess.getClassConnectionAccess().getServerIntElemAssignment_11(), "rule__ClassConnection__ServerIntElemAssignment_11");
 					put(grammarAccess.getPort_ImplAccess().getNameAssignment_1(), "rule__Port_Impl__NameAssignment_1");
 					put(grammarAccess.getPort_ImplAccess().getInterfacesAssignment_4(), "rule__Port_Impl__InterfacesAssignment_4");
 					put(grammarAccess.getPort_ImplAccess().getInterfacesAssignment_5_1(), "rule__Port_Impl__InterfacesAssignment_5_1");

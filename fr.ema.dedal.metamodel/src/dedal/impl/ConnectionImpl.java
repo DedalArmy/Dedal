@@ -13,7 +13,6 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-import org.eclipse.emf.ecore.util.EcoreUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,6 +25,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *   <li>{@link dedal.impl.ConnectionImpl#getServerIntElem <em>Server Int Elem</em>}</li>
  *   <li>{@link dedal.impl.ConnectionImpl#getClientIntElem <em>Client Int Elem</em>}</li>
  *   <li>{@link dedal.impl.ConnectionImpl#getRefID <em>Ref ID</em>}</li>
+ *   <li>{@link dedal.impl.ConnectionImpl#getProperty <em>Property</em>}</li>
  * </ul>
  *
  * @generated
@@ -72,13 +72,32 @@ public abstract class ConnectionImpl extends MinimalEObjectImpl.Container implem
 	protected String refID = REF_ID_EDEFAULT;
 
 	/**
+	 * The default value of the '{@link #getProperty() <em>Property</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProperty()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PROPERTY_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getProperty() <em>Property</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProperty()
+	 * @generated
+	 * @ordered
+	 */
+	protected String property = PROPERTY_EDEFAULT;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected ConnectionImpl() {
 		super();
-		refID=EcoreUtil.generateUUID();
 	}
 
 	/**
@@ -193,6 +212,27 @@ public abstract class ConnectionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getProperty() {
+		return property;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setProperty(String newProperty) {
+		String oldProperty = property;
+		property = newProperty;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DedalPackage.CONNECTION__PROPERTY, oldProperty, property));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -204,6 +244,8 @@ public abstract class ConnectionImpl extends MinimalEObjectImpl.Container implem
 				return basicGetClientIntElem();
 			case DedalPackage.CONNECTION__REF_ID:
 				return getRefID();
+			case DedalPackage.CONNECTION__PROPERTY:
+				return getProperty();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -224,6 +266,9 @@ public abstract class ConnectionImpl extends MinimalEObjectImpl.Container implem
 				return;
 			case DedalPackage.CONNECTION__REF_ID:
 				setRefID((String)newValue);
+				return;
+			case DedalPackage.CONNECTION__PROPERTY:
+				setProperty((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -246,6 +291,9 @@ public abstract class ConnectionImpl extends MinimalEObjectImpl.Container implem
 			case DedalPackage.CONNECTION__REF_ID:
 				setRefID(REF_ID_EDEFAULT);
 				return;
+			case DedalPackage.CONNECTION__PROPERTY:
+				setProperty(PROPERTY_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -264,6 +312,8 @@ public abstract class ConnectionImpl extends MinimalEObjectImpl.Container implem
 				return clientIntElem != null;
 			case DedalPackage.CONNECTION__REF_ID:
 				return REF_ID_EDEFAULT == null ? refID != null : !REF_ID_EDEFAULT.equals(refID);
+			case DedalPackage.CONNECTION__PROPERTY:
+				return PROPERTY_EDEFAULT == null ? property != null : !PROPERTY_EDEFAULT.equals(property);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -280,6 +330,8 @@ public abstract class ConnectionImpl extends MinimalEObjectImpl.Container implem
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (refID: ");
 		result.append(refID);
+		result.append(", property: ");
+		result.append(property);
 		result.append(')');
 		return result.toString();
 	}
