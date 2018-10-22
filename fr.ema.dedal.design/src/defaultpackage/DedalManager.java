@@ -11,12 +11,6 @@ import util.Set;
 import de.be4.classicalb.core.parser.exceptions.BException;
 import de.prob.Main;
 import de.prob.model.classicalb.ClassicalBModel;
-/*import de.prob.Main;
- import de.prob.model.classicalb.ClassicalBModel;
- import de.prob.scripting.Api;
- import de.prob.statespace.StateSpace;
- import de.prob.statespace.Trace;
- import de.prob.statespace.Transition;*/
 import de.prob.scripting.Api;
 import de.prob.statespace.StateSpace;
 import de.prob.statespace.Trace;
@@ -24,7 +18,7 @@ import de.prob.statespace.Transition;
 
 public class DedalManager {
 
-	private Api api = Main.getInjector().getInstance(Api.class);
+	private Api api;
 	private ClassicalBModel bModel;
 	private Trace trace;
 	private boolean initialization = false;
@@ -37,7 +31,7 @@ public class DedalManager {
 
 	public void initializeModel(String specName, String configName,
 			String assmName) {
-
+		api = Main.getInjector().getInstance(Api.class);
 		// String file = "C:/Users/acer/Generated/EvolutionManager.mch";
 		// String file =
 		// "C:/Users/acer/Documents/Generated/EvolutionManagerAssm.mch";
