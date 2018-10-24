@@ -4,6 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 import org.eclipse.emf.common.CommonPlugin;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
@@ -75,6 +77,7 @@ public class DedalServices {
 		System.out.println(destDir.getAbsolutePath() + " created");
 		args[1] = destDir.getAbsolutePath();
 		GenerateAll.main(args);
+		JOptionPane.showMessageDialog(null, "B models generated");
 		System.out.println("B models generated");
 	}
 
