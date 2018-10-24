@@ -267,6 +267,7 @@ connector_class_name:
 // From old metamodel
 ClassConnection returns dedal::ClassConnection:
 	'class_connection' refID=EString
+	'property' property=EString
 		'client' clientClassElem=[dedal::CompClass|EString] '.' clientIntElem=[dedal::Interaction|EString]
 		'server' serverClassElem=[dedal::CompClass|EString] '.' serverIntElem=[dedal::Interaction|EString]
 ;

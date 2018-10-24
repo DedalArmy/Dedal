@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalDedalADLParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_STRING", "RULE_REVISION_NUMB", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'provided'", "'=='", "'!='", "'>'", "'<'", "'>='", "'<='", "'static'", "'dynamic'", "'specification'", "'configuration'", "'assembly'", "'addition'", "'removal'", "'substitution'", "'modification'", "'component_role'", "'connection'", "'architecture_behavior'", "'component_class'", "'connector_class'", "'component_instance'", "'connector_instance'", "'assembly_constraint'", "'corrective'", "'perfective'", "'adaptative'", "'given'", "'generated'", "'propagated'", "'required'", "'dedal_diagram'", "'architecture_descriptions'", "'('", "')'", "';'", "'repositories'", "'repository'", "'components'", "'interface_types'", "'type'", "'signatures'", "'signature'", "'name'", "'parameters'", "'parameter'", "'component_roles'", "'connections'", "'versionID'", "'pre_version'", "'by'", "'id'", "'required_interfaces'", "'provided_interfaces'", "'MinInstanceNbr'", "'MaxInstanceNbr'", "'interactions'", "'interface'", "'interface_direction'", "'implementation'", "'delegation'", "'instantiates'", "'client'", "'.'", "'server'", "'implements'", "'component_classes'", "'connector_classes'", "'as'", "'component_types'", "'configConnections'", "'component_type'", "'primitive_component_class'", "'content'", "'attributes'", "'interfaces'", "'composite_component_class'", "'delegated_interfaces'", "'realizes'", "'delegated_old'", "'['", "']'", "'connector_type'", "'connector'", "'class_connection'", "'port'", "','", "'composite_port'", "'ports'", "'instance_of'", "'component_instances'", "'assembly_constraints'", "'assembly_connections'", "'expression'", "'component_interfaces'", "'instance_connection'", "'!'", "'||'", "'&&'", "'='", "'change'", "'time'", "'level'", "'operation'", "'artifact'", "'is'", "'purpose'", "'origin'", "'from'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_STRING", "RULE_REVISION_NUMB", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'provided'", "'=='", "'!='", "'>'", "'<'", "'>='", "'<='", "'static'", "'dynamic'", "'specification'", "'configuration'", "'assembly'", "'addition'", "'removal'", "'substitution'", "'modification'", "'component_role'", "'connection'", "'architecture_behavior'", "'component_class'", "'connector_class'", "'component_instance'", "'connector_instance'", "'assembly_constraint'", "'corrective'", "'perfective'", "'adaptative'", "'given'", "'generated'", "'propagated'", "'required'", "'dedal_diagram'", "'architecture_descriptions'", "'('", "')'", "';'", "'repositories'", "'repository'", "'components'", "'interface_types'", "'type'", "'signatures'", "'signature'", "'name'", "'parameters'", "'parameter'", "'component_roles'", "'connections'", "'versionID'", "'pre_version'", "'by'", "'id'", "'required_interfaces'", "'provided_interfaces'", "'MinInstanceNbr'", "'MaxInstanceNbr'", "'interactions'", "'interface'", "'interface_direction'", "'implementation'", "'delegation'", "'instantiates'", "'client'", "'.'", "'server'", "'implements'", "'component_classes'", "'connector_classes'", "'as'", "'component_types'", "'configConnections'", "'component_type'", "'primitive_component_class'", "'content'", "'attributes'", "'interfaces'", "'composite_component_class'", "'delegated_interfaces'", "'realizes'", "'delegated_old'", "'['", "']'", "'connector_type'", "'connector'", "'class_connection'", "'property'", "'port'", "','", "'composite_port'", "'ports'", "'instance_of'", "'component_instances'", "'assembly_constraints'", "'assembly_connections'", "'expression'", "'component_interfaces'", "'instance_connection'", "'!'", "'||'", "'&&'", "'='", "'change'", "'time'", "'level'", "'operation'", "'artifact'", "'is'", "'purpose'", "'origin'", "'from'"
     };
     public static final int T__50=50;
     public static final int T__59=59;
@@ -100,6 +100,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
     public static final int T__20=20;
     public static final int T__21=21;
     public static final int T__70=70;
+    public static final int T__121=121;
     public static final int T__71=71;
     public static final int T__72=72;
     public static final int T__120=120;
@@ -3573,10 +3574,10 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             int alt1=2;
             int LA1_0 = input.LA(1);
 
-            if ( (LA1_0==109) ) {
+            if ( (LA1_0==110) ) {
                 alt1=1;
             }
-            else if ( (LA1_0==110) ) {
+            else if ( (LA1_0==111) ) {
                 alt1=1;
             }
             switch (alt1) {
@@ -5174,12 +5175,12 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
                 alt5=1;
                 }
                 break;
-            case 97:
+            case 98:
                 {
                 alt5=2;
                 }
                 break;
-            case 99:
+            case 100:
                 {
                 alt5=3;
                 }
@@ -5520,7 +5521,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             int alt9=2;
             int LA9_0 = input.LA(1);
 
-            if ( (LA9_0==108) ) {
+            if ( (LA9_0==109) ) {
                 alt9=1;
             }
             else if ( (LA9_0==RULE_ID) ) {
@@ -5611,10 +5612,10 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             int alt10=2;
             int LA10_0 = input.LA(1);
 
-            if ( (LA10_0==109) ) {
+            if ( (LA10_0==110) ) {
                 alt10=1;
             }
-            else if ( (LA10_0==110) ) {
+            else if ( (LA10_0==111) ) {
                 alt10=2;
             }
             else {
@@ -5860,11 +5861,11 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             if ( (LA12_0==RULE_ID) ) {
                 int LA12_1 = input.LA(2);
 
-                if ( (LA12_1==111) ) {
-                    alt12=2;
-                }
-                else if ( (LA12_1==75) ) {
+                if ( (LA12_1==75) ) {
                     alt12=1;
+                }
+                else if ( (LA12_1==112) ) {
+                    alt12=2;
                 }
                 else {
                     NoViableAltException nvae =
@@ -16922,7 +16923,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
                 if ( (LA53_0==47) ) {
                     int LA53_2 = input.LA(2);
 
-                    if ( (LA53_2==69||LA53_2==97||LA53_2==99) ) {
+                    if ( (LA53_2==69||LA53_2==98||LA53_2==100) ) {
                         alt53=1;
                     }
 
@@ -25799,7 +25800,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
                 if ( (LA77_0==47) ) {
                     int LA77_2 = input.LA(2);
 
-                    if ( (LA77_2==69||LA77_2==97||LA77_2==99) ) {
+                    if ( (LA77_2==69||LA77_2==98||LA77_2==100) ) {
                         alt77=1;
                     }
 
@@ -28690,7 +28691,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
                 if ( (LA86_0==47) ) {
                     int LA86_2 = input.LA(2);
 
-                    if ( (LA86_2==69||LA86_2==97||LA86_2==99) ) {
+                    if ( (LA86_2==69||LA86_2==98||LA86_2==100) ) {
                         alt86=1;
                     }
 
@@ -32553,7 +32554,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
                 if ( (LA98_0==47) ) {
                     int LA98_2 = input.LA(2);
 
-                    if ( (LA98_2==69||LA98_2==97||LA98_2==99) ) {
+                    if ( (LA98_2==69||LA98_2==98||LA98_2==100) ) {
                         alt98=1;
                     }
 
@@ -36462,7 +36463,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             // InternalDedalADL.g:13821:1: ( rule__ClassConnection__Group__1__Impl rule__ClassConnection__Group__2 )
             // InternalDedalADL.g:13822:2: rule__ClassConnection__Group__1__Impl rule__ClassConnection__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_37);
+            pushFollow(FollowSets000.FOLLOW_60);
             rule__ClassConnection__Group__1__Impl();
 
             state._fsp--;
@@ -36576,21 +36577,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__ClassConnection__Group__2__Impl"
-    // InternalDedalADL.g:13858:1: rule__ClassConnection__Group__2__Impl : ( 'client' ) ;
+    // InternalDedalADL.g:13858:1: rule__ClassConnection__Group__2__Impl : ( 'property' ) ;
     public final void rule__ClassConnection__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:13862:1: ( ( 'client' ) )
-            // InternalDedalADL.g:13863:1: ( 'client' )
+            // InternalDedalADL.g:13862:1: ( ( 'property' ) )
+            // InternalDedalADL.g:13863:1: ( 'property' )
             {
-            // InternalDedalADL.g:13863:1: ( 'client' )
-            // InternalDedalADL.g:13864:1: 'client'
+            // InternalDedalADL.g:13863:1: ( 'property' )
+            // InternalDedalADL.g:13864:1: 'property'
             {
-             before(grammarAccess.getClassConnectionAccess().getClientKeyword_2()); 
-            match(input,74,FollowSets000.FOLLOW_2); 
-             after(grammarAccess.getClassConnectionAccess().getClientKeyword_2()); 
+             before(grammarAccess.getClassConnectionAccess().getPropertyKeyword_2()); 
+            match(input,97,FollowSets000.FOLLOW_2); 
+             after(grammarAccess.getClassConnectionAccess().getPropertyKeyword_2()); 
 
             }
 
@@ -36622,7 +36623,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             // InternalDedalADL.g:13881:1: ( rule__ClassConnection__Group__3__Impl rule__ClassConnection__Group__4 )
             // InternalDedalADL.g:13882:2: rule__ClassConnection__Group__3__Impl rule__ClassConnection__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_38);
+            pushFollow(FollowSets000.FOLLOW_37);
             rule__ClassConnection__Group__3__Impl();
 
             state._fsp--;
@@ -36651,31 +36652,31 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__ClassConnection__Group__3__Impl"
-    // InternalDedalADL.g:13889:1: rule__ClassConnection__Group__3__Impl : ( ( rule__ClassConnection__ClientClassElemAssignment_3 ) ) ;
+    // InternalDedalADL.g:13889:1: rule__ClassConnection__Group__3__Impl : ( ( rule__ClassConnection__PropertyAssignment_3 ) ) ;
     public final void rule__ClassConnection__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:13893:1: ( ( ( rule__ClassConnection__ClientClassElemAssignment_3 ) ) )
-            // InternalDedalADL.g:13894:1: ( ( rule__ClassConnection__ClientClassElemAssignment_3 ) )
+            // InternalDedalADL.g:13893:1: ( ( ( rule__ClassConnection__PropertyAssignment_3 ) ) )
+            // InternalDedalADL.g:13894:1: ( ( rule__ClassConnection__PropertyAssignment_3 ) )
             {
-            // InternalDedalADL.g:13894:1: ( ( rule__ClassConnection__ClientClassElemAssignment_3 ) )
-            // InternalDedalADL.g:13895:1: ( rule__ClassConnection__ClientClassElemAssignment_3 )
+            // InternalDedalADL.g:13894:1: ( ( rule__ClassConnection__PropertyAssignment_3 ) )
+            // InternalDedalADL.g:13895:1: ( rule__ClassConnection__PropertyAssignment_3 )
             {
-             before(grammarAccess.getClassConnectionAccess().getClientClassElemAssignment_3()); 
-            // InternalDedalADL.g:13896:1: ( rule__ClassConnection__ClientClassElemAssignment_3 )
-            // InternalDedalADL.g:13896:2: rule__ClassConnection__ClientClassElemAssignment_3
+             before(grammarAccess.getClassConnectionAccess().getPropertyAssignment_3()); 
+            // InternalDedalADL.g:13896:1: ( rule__ClassConnection__PropertyAssignment_3 )
+            // InternalDedalADL.g:13896:2: rule__ClassConnection__PropertyAssignment_3
             {
             pushFollow(FollowSets000.FOLLOW_2);
-            rule__ClassConnection__ClientClassElemAssignment_3();
+            rule__ClassConnection__PropertyAssignment_3();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getClassConnectionAccess().getClientClassElemAssignment_3()); 
+             after(grammarAccess.getClassConnectionAccess().getPropertyAssignment_3()); 
 
             }
 
@@ -36736,21 +36737,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__ClassConnection__Group__4__Impl"
-    // InternalDedalADL.g:13918:1: rule__ClassConnection__Group__4__Impl : ( '.' ) ;
+    // InternalDedalADL.g:13918:1: rule__ClassConnection__Group__4__Impl : ( 'client' ) ;
     public final void rule__ClassConnection__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:13922:1: ( ( '.' ) )
-            // InternalDedalADL.g:13923:1: ( '.' )
+            // InternalDedalADL.g:13922:1: ( ( 'client' ) )
+            // InternalDedalADL.g:13923:1: ( 'client' )
             {
-            // InternalDedalADL.g:13923:1: ( '.' )
-            // InternalDedalADL.g:13924:1: '.'
+            // InternalDedalADL.g:13923:1: ( 'client' )
+            // InternalDedalADL.g:13924:1: 'client'
             {
-             before(grammarAccess.getClassConnectionAccess().getFullStopKeyword_4()); 
-            match(input,75,FollowSets000.FOLLOW_2); 
-             after(grammarAccess.getClassConnectionAccess().getFullStopKeyword_4()); 
+             before(grammarAccess.getClassConnectionAccess().getClientKeyword_4()); 
+            match(input,74,FollowSets000.FOLLOW_2); 
+             after(grammarAccess.getClassConnectionAccess().getClientKeyword_4()); 
 
             }
 
@@ -36782,7 +36783,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             // InternalDedalADL.g:13941:1: ( rule__ClassConnection__Group__5__Impl rule__ClassConnection__Group__6 )
             // InternalDedalADL.g:13942:2: rule__ClassConnection__Group__5__Impl rule__ClassConnection__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_39);
+            pushFollow(FollowSets000.FOLLOW_38);
             rule__ClassConnection__Group__5__Impl();
 
             state._fsp--;
@@ -36811,31 +36812,31 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__ClassConnection__Group__5__Impl"
-    // InternalDedalADL.g:13949:1: rule__ClassConnection__Group__5__Impl : ( ( rule__ClassConnection__ClientIntElemAssignment_5 ) ) ;
+    // InternalDedalADL.g:13949:1: rule__ClassConnection__Group__5__Impl : ( ( rule__ClassConnection__ClientClassElemAssignment_5 ) ) ;
     public final void rule__ClassConnection__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:13953:1: ( ( ( rule__ClassConnection__ClientIntElemAssignment_5 ) ) )
-            // InternalDedalADL.g:13954:1: ( ( rule__ClassConnection__ClientIntElemAssignment_5 ) )
+            // InternalDedalADL.g:13953:1: ( ( ( rule__ClassConnection__ClientClassElemAssignment_5 ) ) )
+            // InternalDedalADL.g:13954:1: ( ( rule__ClassConnection__ClientClassElemAssignment_5 ) )
             {
-            // InternalDedalADL.g:13954:1: ( ( rule__ClassConnection__ClientIntElemAssignment_5 ) )
-            // InternalDedalADL.g:13955:1: ( rule__ClassConnection__ClientIntElemAssignment_5 )
+            // InternalDedalADL.g:13954:1: ( ( rule__ClassConnection__ClientClassElemAssignment_5 ) )
+            // InternalDedalADL.g:13955:1: ( rule__ClassConnection__ClientClassElemAssignment_5 )
             {
-             before(grammarAccess.getClassConnectionAccess().getClientIntElemAssignment_5()); 
-            // InternalDedalADL.g:13956:1: ( rule__ClassConnection__ClientIntElemAssignment_5 )
-            // InternalDedalADL.g:13956:2: rule__ClassConnection__ClientIntElemAssignment_5
+             before(grammarAccess.getClassConnectionAccess().getClientClassElemAssignment_5()); 
+            // InternalDedalADL.g:13956:1: ( rule__ClassConnection__ClientClassElemAssignment_5 )
+            // InternalDedalADL.g:13956:2: rule__ClassConnection__ClientClassElemAssignment_5
             {
             pushFollow(FollowSets000.FOLLOW_2);
-            rule__ClassConnection__ClientIntElemAssignment_5();
+            rule__ClassConnection__ClientClassElemAssignment_5();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getClassConnectionAccess().getClientIntElemAssignment_5()); 
+             after(grammarAccess.getClassConnectionAccess().getClientClassElemAssignment_5()); 
 
             }
 
@@ -36896,21 +36897,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__ClassConnection__Group__6__Impl"
-    // InternalDedalADL.g:13978:1: rule__ClassConnection__Group__6__Impl : ( 'server' ) ;
+    // InternalDedalADL.g:13978:1: rule__ClassConnection__Group__6__Impl : ( '.' ) ;
     public final void rule__ClassConnection__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:13982:1: ( ( 'server' ) )
-            // InternalDedalADL.g:13983:1: ( 'server' )
+            // InternalDedalADL.g:13982:1: ( ( '.' ) )
+            // InternalDedalADL.g:13983:1: ( '.' )
             {
-            // InternalDedalADL.g:13983:1: ( 'server' )
-            // InternalDedalADL.g:13984:1: 'server'
+            // InternalDedalADL.g:13983:1: ( '.' )
+            // InternalDedalADL.g:13984:1: '.'
             {
-             before(grammarAccess.getClassConnectionAccess().getServerKeyword_6()); 
-            match(input,76,FollowSets000.FOLLOW_2); 
-             after(grammarAccess.getClassConnectionAccess().getServerKeyword_6()); 
+             before(grammarAccess.getClassConnectionAccess().getFullStopKeyword_6()); 
+            match(input,75,FollowSets000.FOLLOW_2); 
+             after(grammarAccess.getClassConnectionAccess().getFullStopKeyword_6()); 
 
             }
 
@@ -36942,7 +36943,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             // InternalDedalADL.g:14001:1: ( rule__ClassConnection__Group__7__Impl rule__ClassConnection__Group__8 )
             // InternalDedalADL.g:14002:2: rule__ClassConnection__Group__7__Impl rule__ClassConnection__Group__8
             {
-            pushFollow(FollowSets000.FOLLOW_38);
+            pushFollow(FollowSets000.FOLLOW_39);
             rule__ClassConnection__Group__7__Impl();
 
             state._fsp--;
@@ -36971,31 +36972,31 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__ClassConnection__Group__7__Impl"
-    // InternalDedalADL.g:14009:1: rule__ClassConnection__Group__7__Impl : ( ( rule__ClassConnection__ServerClassElemAssignment_7 ) ) ;
+    // InternalDedalADL.g:14009:1: rule__ClassConnection__Group__7__Impl : ( ( rule__ClassConnection__ClientIntElemAssignment_7 ) ) ;
     public final void rule__ClassConnection__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14013:1: ( ( ( rule__ClassConnection__ServerClassElemAssignment_7 ) ) )
-            // InternalDedalADL.g:14014:1: ( ( rule__ClassConnection__ServerClassElemAssignment_7 ) )
+            // InternalDedalADL.g:14013:1: ( ( ( rule__ClassConnection__ClientIntElemAssignment_7 ) ) )
+            // InternalDedalADL.g:14014:1: ( ( rule__ClassConnection__ClientIntElemAssignment_7 ) )
             {
-            // InternalDedalADL.g:14014:1: ( ( rule__ClassConnection__ServerClassElemAssignment_7 ) )
-            // InternalDedalADL.g:14015:1: ( rule__ClassConnection__ServerClassElemAssignment_7 )
+            // InternalDedalADL.g:14014:1: ( ( rule__ClassConnection__ClientIntElemAssignment_7 ) )
+            // InternalDedalADL.g:14015:1: ( rule__ClassConnection__ClientIntElemAssignment_7 )
             {
-             before(grammarAccess.getClassConnectionAccess().getServerClassElemAssignment_7()); 
-            // InternalDedalADL.g:14016:1: ( rule__ClassConnection__ServerClassElemAssignment_7 )
-            // InternalDedalADL.g:14016:2: rule__ClassConnection__ServerClassElemAssignment_7
+             before(grammarAccess.getClassConnectionAccess().getClientIntElemAssignment_7()); 
+            // InternalDedalADL.g:14016:1: ( rule__ClassConnection__ClientIntElemAssignment_7 )
+            // InternalDedalADL.g:14016:2: rule__ClassConnection__ClientIntElemAssignment_7
             {
             pushFollow(FollowSets000.FOLLOW_2);
-            rule__ClassConnection__ServerClassElemAssignment_7();
+            rule__ClassConnection__ClientIntElemAssignment_7();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getClassConnectionAccess().getServerClassElemAssignment_7()); 
+             after(grammarAccess.getClassConnectionAccess().getClientIntElemAssignment_7()); 
 
             }
 
@@ -37056,21 +37057,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__ClassConnection__Group__8__Impl"
-    // InternalDedalADL.g:14038:1: rule__ClassConnection__Group__8__Impl : ( '.' ) ;
+    // InternalDedalADL.g:14038:1: rule__ClassConnection__Group__8__Impl : ( 'server' ) ;
     public final void rule__ClassConnection__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14042:1: ( ( '.' ) )
-            // InternalDedalADL.g:14043:1: ( '.' )
+            // InternalDedalADL.g:14042:1: ( ( 'server' ) )
+            // InternalDedalADL.g:14043:1: ( 'server' )
             {
-            // InternalDedalADL.g:14043:1: ( '.' )
-            // InternalDedalADL.g:14044:1: '.'
+            // InternalDedalADL.g:14043:1: ( 'server' )
+            // InternalDedalADL.g:14044:1: 'server'
             {
-             before(grammarAccess.getClassConnectionAccess().getFullStopKeyword_8()); 
-            match(input,75,FollowSets000.FOLLOW_2); 
-             after(grammarAccess.getClassConnectionAccess().getFullStopKeyword_8()); 
+             before(grammarAccess.getClassConnectionAccess().getServerKeyword_8()); 
+            match(input,76,FollowSets000.FOLLOW_2); 
+             after(grammarAccess.getClassConnectionAccess().getServerKeyword_8()); 
 
             }
 
@@ -37093,17 +37094,22 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__ClassConnection__Group__9"
-    // InternalDedalADL.g:14057:1: rule__ClassConnection__Group__9 : rule__ClassConnection__Group__9__Impl ;
+    // InternalDedalADL.g:14057:1: rule__ClassConnection__Group__9 : rule__ClassConnection__Group__9__Impl rule__ClassConnection__Group__10 ;
     public final void rule__ClassConnection__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14061:1: ( rule__ClassConnection__Group__9__Impl )
-            // InternalDedalADL.g:14062:2: rule__ClassConnection__Group__9__Impl
+            // InternalDedalADL.g:14061:1: ( rule__ClassConnection__Group__9__Impl rule__ClassConnection__Group__10 )
+            // InternalDedalADL.g:14062:2: rule__ClassConnection__Group__9__Impl rule__ClassConnection__Group__10
             {
-            pushFollow(FollowSets000.FOLLOW_2);
+            pushFollow(FollowSets000.FOLLOW_38);
             rule__ClassConnection__Group__9__Impl();
+
+            state._fsp--;
+
+            pushFollow(FollowSets000.FOLLOW_2);
+            rule__ClassConnection__Group__10();
 
             state._fsp--;
 
@@ -37126,31 +37132,31 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__ClassConnection__Group__9__Impl"
-    // InternalDedalADL.g:14068:1: rule__ClassConnection__Group__9__Impl : ( ( rule__ClassConnection__ServerIntElemAssignment_9 ) ) ;
+    // InternalDedalADL.g:14069:1: rule__ClassConnection__Group__9__Impl : ( ( rule__ClassConnection__ServerClassElemAssignment_9 ) ) ;
     public final void rule__ClassConnection__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14072:1: ( ( ( rule__ClassConnection__ServerIntElemAssignment_9 ) ) )
-            // InternalDedalADL.g:14073:1: ( ( rule__ClassConnection__ServerIntElemAssignment_9 ) )
+            // InternalDedalADL.g:14073:1: ( ( ( rule__ClassConnection__ServerClassElemAssignment_9 ) ) )
+            // InternalDedalADL.g:14074:1: ( ( rule__ClassConnection__ServerClassElemAssignment_9 ) )
             {
-            // InternalDedalADL.g:14073:1: ( ( rule__ClassConnection__ServerIntElemAssignment_9 ) )
-            // InternalDedalADL.g:14074:1: ( rule__ClassConnection__ServerIntElemAssignment_9 )
+            // InternalDedalADL.g:14074:1: ( ( rule__ClassConnection__ServerClassElemAssignment_9 ) )
+            // InternalDedalADL.g:14075:1: ( rule__ClassConnection__ServerClassElemAssignment_9 )
             {
-             before(grammarAccess.getClassConnectionAccess().getServerIntElemAssignment_9()); 
-            // InternalDedalADL.g:14075:1: ( rule__ClassConnection__ServerIntElemAssignment_9 )
-            // InternalDedalADL.g:14075:2: rule__ClassConnection__ServerIntElemAssignment_9
+             before(grammarAccess.getClassConnectionAccess().getServerClassElemAssignment_9()); 
+            // InternalDedalADL.g:14076:1: ( rule__ClassConnection__ServerClassElemAssignment_9 )
+            // InternalDedalADL.g:14076:2: rule__ClassConnection__ServerClassElemAssignment_9
             {
             pushFollow(FollowSets000.FOLLOW_2);
-            rule__ClassConnection__ServerIntElemAssignment_9();
+            rule__ClassConnection__ServerClassElemAssignment_9();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getClassConnectionAccess().getServerIntElemAssignment_9()); 
+             after(grammarAccess.getClassConnectionAccess().getServerClassElemAssignment_9()); 
 
             }
 
@@ -37172,15 +37178,170 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__ClassConnection__Group__9__Impl"
 
 
+    // $ANTLR start "rule__ClassConnection__Group__10"
+    // InternalDedalADL.g:14086:1: rule__ClassConnection__Group__10 : rule__ClassConnection__Group__10__Impl rule__ClassConnection__Group__11 ;
+    public final void rule__ClassConnection__Group__10() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalDedalADL.g:14090:1: ( rule__ClassConnection__Group__10__Impl rule__ClassConnection__Group__11 )
+            // InternalDedalADL.g:14091:2: rule__ClassConnection__Group__10__Impl rule__ClassConnection__Group__11
+            {
+            pushFollow(FollowSets000.FOLLOW_3);
+            rule__ClassConnection__Group__10__Impl();
+
+            state._fsp--;
+
+            pushFollow(FollowSets000.FOLLOW_2);
+            rule__ClassConnection__Group__11();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ClassConnection__Group__10"
+
+
+    // $ANTLR start "rule__ClassConnection__Group__10__Impl"
+    // InternalDedalADL.g:14098:1: rule__ClassConnection__Group__10__Impl : ( '.' ) ;
+    public final void rule__ClassConnection__Group__10__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalDedalADL.g:14102:1: ( ( '.' ) )
+            // InternalDedalADL.g:14103:1: ( '.' )
+            {
+            // InternalDedalADL.g:14103:1: ( '.' )
+            // InternalDedalADL.g:14104:1: '.'
+            {
+             before(grammarAccess.getClassConnectionAccess().getFullStopKeyword_10()); 
+            match(input,75,FollowSets000.FOLLOW_2); 
+             after(grammarAccess.getClassConnectionAccess().getFullStopKeyword_10()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ClassConnection__Group__10__Impl"
+
+
+    // $ANTLR start "rule__ClassConnection__Group__11"
+    // InternalDedalADL.g:14117:1: rule__ClassConnection__Group__11 : rule__ClassConnection__Group__11__Impl ;
+    public final void rule__ClassConnection__Group__11() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalDedalADL.g:14121:1: ( rule__ClassConnection__Group__11__Impl )
+            // InternalDedalADL.g:14122:2: rule__ClassConnection__Group__11__Impl
+            {
+            pushFollow(FollowSets000.FOLLOW_2);
+            rule__ClassConnection__Group__11__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ClassConnection__Group__11"
+
+
+    // $ANTLR start "rule__ClassConnection__Group__11__Impl"
+    // InternalDedalADL.g:14128:1: rule__ClassConnection__Group__11__Impl : ( ( rule__ClassConnection__ServerIntElemAssignment_11 ) ) ;
+    public final void rule__ClassConnection__Group__11__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalDedalADL.g:14132:1: ( ( ( rule__ClassConnection__ServerIntElemAssignment_11 ) ) )
+            // InternalDedalADL.g:14133:1: ( ( rule__ClassConnection__ServerIntElemAssignment_11 ) )
+            {
+            // InternalDedalADL.g:14133:1: ( ( rule__ClassConnection__ServerIntElemAssignment_11 ) )
+            // InternalDedalADL.g:14134:1: ( rule__ClassConnection__ServerIntElemAssignment_11 )
+            {
+             before(grammarAccess.getClassConnectionAccess().getServerIntElemAssignment_11()); 
+            // InternalDedalADL.g:14135:1: ( rule__ClassConnection__ServerIntElemAssignment_11 )
+            // InternalDedalADL.g:14135:2: rule__ClassConnection__ServerIntElemAssignment_11
+            {
+            pushFollow(FollowSets000.FOLLOW_2);
+            rule__ClassConnection__ServerIntElemAssignment_11();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getClassConnectionAccess().getServerIntElemAssignment_11()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ClassConnection__Group__11__Impl"
+
+
     // $ANTLR start "rule__Port_Impl__Group__0"
-    // InternalDedalADL.g:14105:1: rule__Port_Impl__Group__0 : rule__Port_Impl__Group__0__Impl rule__Port_Impl__Group__1 ;
+    // InternalDedalADL.g:14169:1: rule__Port_Impl__Group__0 : rule__Port_Impl__Group__0__Impl rule__Port_Impl__Group__1 ;
     public final void rule__Port_Impl__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14109:1: ( rule__Port_Impl__Group__0__Impl rule__Port_Impl__Group__1 )
-            // InternalDedalADL.g:14110:2: rule__Port_Impl__Group__0__Impl rule__Port_Impl__Group__1
+            // InternalDedalADL.g:14173:1: ( rule__Port_Impl__Group__0__Impl rule__Port_Impl__Group__1 )
+            // InternalDedalADL.g:14174:2: rule__Port_Impl__Group__0__Impl rule__Port_Impl__Group__1
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__Port_Impl__Group__0__Impl();
@@ -37211,20 +37372,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__0__Impl"
-    // InternalDedalADL.g:14117:1: rule__Port_Impl__Group__0__Impl : ( 'port' ) ;
+    // InternalDedalADL.g:14181:1: rule__Port_Impl__Group__0__Impl : ( 'port' ) ;
     public final void rule__Port_Impl__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14121:1: ( ( 'port' ) )
-            // InternalDedalADL.g:14122:1: ( 'port' )
+            // InternalDedalADL.g:14185:1: ( ( 'port' ) )
+            // InternalDedalADL.g:14186:1: ( 'port' )
             {
-            // InternalDedalADL.g:14122:1: ( 'port' )
-            // InternalDedalADL.g:14123:1: 'port'
+            // InternalDedalADL.g:14186:1: ( 'port' )
+            // InternalDedalADL.g:14187:1: 'port'
             {
              before(grammarAccess.getPort_ImplAccess().getPortKeyword_0()); 
-            match(input,97,FollowSets000.FOLLOW_2); 
+            match(input,98,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getPort_ImplAccess().getPortKeyword_0()); 
 
             }
@@ -37248,16 +37409,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__1"
-    // InternalDedalADL.g:14136:1: rule__Port_Impl__Group__1 : rule__Port_Impl__Group__1__Impl rule__Port_Impl__Group__2 ;
+    // InternalDedalADL.g:14200:1: rule__Port_Impl__Group__1 : rule__Port_Impl__Group__1__Impl rule__Port_Impl__Group__2 ;
     public final void rule__Port_Impl__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14140:1: ( rule__Port_Impl__Group__1__Impl rule__Port_Impl__Group__2 )
-            // InternalDedalADL.g:14141:2: rule__Port_Impl__Group__1__Impl rule__Port_Impl__Group__2
+            // InternalDedalADL.g:14204:1: ( rule__Port_Impl__Group__1__Impl rule__Port_Impl__Group__2 )
+            // InternalDedalADL.g:14205:2: rule__Port_Impl__Group__1__Impl rule__Port_Impl__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_60);
+            pushFollow(FollowSets000.FOLLOW_61);
             rule__Port_Impl__Group__1__Impl();
 
             state._fsp--;
@@ -37286,21 +37447,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__1__Impl"
-    // InternalDedalADL.g:14148:1: rule__Port_Impl__Group__1__Impl : ( ( rule__Port_Impl__NameAssignment_1 ) ) ;
+    // InternalDedalADL.g:14212:1: rule__Port_Impl__Group__1__Impl : ( ( rule__Port_Impl__NameAssignment_1 ) ) ;
     public final void rule__Port_Impl__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14152:1: ( ( ( rule__Port_Impl__NameAssignment_1 ) ) )
-            // InternalDedalADL.g:14153:1: ( ( rule__Port_Impl__NameAssignment_1 ) )
+            // InternalDedalADL.g:14216:1: ( ( ( rule__Port_Impl__NameAssignment_1 ) ) )
+            // InternalDedalADL.g:14217:1: ( ( rule__Port_Impl__NameAssignment_1 ) )
             {
-            // InternalDedalADL.g:14153:1: ( ( rule__Port_Impl__NameAssignment_1 ) )
-            // InternalDedalADL.g:14154:1: ( rule__Port_Impl__NameAssignment_1 )
+            // InternalDedalADL.g:14217:1: ( ( rule__Port_Impl__NameAssignment_1 ) )
+            // InternalDedalADL.g:14218:1: ( rule__Port_Impl__NameAssignment_1 )
             {
              before(grammarAccess.getPort_ImplAccess().getNameAssignment_1()); 
-            // InternalDedalADL.g:14155:1: ( rule__Port_Impl__NameAssignment_1 )
-            // InternalDedalADL.g:14155:2: rule__Port_Impl__NameAssignment_1
+            // InternalDedalADL.g:14219:1: ( rule__Port_Impl__NameAssignment_1 )
+            // InternalDedalADL.g:14219:2: rule__Port_Impl__NameAssignment_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Port_Impl__NameAssignment_1();
@@ -37333,14 +37494,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__2"
-    // InternalDedalADL.g:14165:1: rule__Port_Impl__Group__2 : rule__Port_Impl__Group__2__Impl rule__Port_Impl__Group__3 ;
+    // InternalDedalADL.g:14229:1: rule__Port_Impl__Group__2 : rule__Port_Impl__Group__2__Impl rule__Port_Impl__Group__3 ;
     public final void rule__Port_Impl__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14169:1: ( rule__Port_Impl__Group__2__Impl rule__Port_Impl__Group__3 )
-            // InternalDedalADL.g:14170:2: rule__Port_Impl__Group__2__Impl rule__Port_Impl__Group__3
+            // InternalDedalADL.g:14233:1: ( rule__Port_Impl__Group__2__Impl rule__Port_Impl__Group__3 )
+            // InternalDedalADL.g:14234:2: rule__Port_Impl__Group__2__Impl rule__Port_Impl__Group__3
             {
             pushFollow(FollowSets000.FOLLOW_5);
             rule__Port_Impl__Group__2__Impl();
@@ -37371,17 +37532,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__2__Impl"
-    // InternalDedalADL.g:14177:1: rule__Port_Impl__Group__2__Impl : ( 'interfaces' ) ;
+    // InternalDedalADL.g:14241:1: rule__Port_Impl__Group__2__Impl : ( 'interfaces' ) ;
     public final void rule__Port_Impl__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14181:1: ( ( 'interfaces' ) )
-            // InternalDedalADL.g:14182:1: ( 'interfaces' )
+            // InternalDedalADL.g:14245:1: ( ( 'interfaces' ) )
+            // InternalDedalADL.g:14246:1: ( 'interfaces' )
             {
-            // InternalDedalADL.g:14182:1: ( 'interfaces' )
-            // InternalDedalADL.g:14183:1: 'interfaces'
+            // InternalDedalADL.g:14246:1: ( 'interfaces' )
+            // InternalDedalADL.g:14247:1: 'interfaces'
             {
              before(grammarAccess.getPort_ImplAccess().getInterfacesKeyword_2()); 
             match(input,87,FollowSets000.FOLLOW_2); 
@@ -37408,14 +37569,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__3"
-    // InternalDedalADL.g:14196:1: rule__Port_Impl__Group__3 : rule__Port_Impl__Group__3__Impl rule__Port_Impl__Group__4 ;
+    // InternalDedalADL.g:14260:1: rule__Port_Impl__Group__3 : rule__Port_Impl__Group__3__Impl rule__Port_Impl__Group__4 ;
     public final void rule__Port_Impl__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14200:1: ( rule__Port_Impl__Group__3__Impl rule__Port_Impl__Group__4 )
-            // InternalDedalADL.g:14201:2: rule__Port_Impl__Group__3__Impl rule__Port_Impl__Group__4
+            // InternalDedalADL.g:14264:1: ( rule__Port_Impl__Group__3__Impl rule__Port_Impl__Group__4 )
+            // InternalDedalADL.g:14265:2: rule__Port_Impl__Group__3__Impl rule__Port_Impl__Group__4
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__Port_Impl__Group__3__Impl();
@@ -37446,17 +37607,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__3__Impl"
-    // InternalDedalADL.g:14208:1: rule__Port_Impl__Group__3__Impl : ( '(' ) ;
+    // InternalDedalADL.g:14272:1: rule__Port_Impl__Group__3__Impl : ( '(' ) ;
     public final void rule__Port_Impl__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14212:1: ( ( '(' ) )
-            // InternalDedalADL.g:14213:1: ( '(' )
+            // InternalDedalADL.g:14276:1: ( ( '(' ) )
+            // InternalDedalADL.g:14277:1: ( '(' )
             {
-            // InternalDedalADL.g:14213:1: ( '(' )
-            // InternalDedalADL.g:14214:1: '('
+            // InternalDedalADL.g:14277:1: ( '(' )
+            // InternalDedalADL.g:14278:1: '('
             {
              before(grammarAccess.getPort_ImplAccess().getLeftParenthesisKeyword_3()); 
             match(input,45,FollowSets000.FOLLOW_2); 
@@ -37483,16 +37644,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__4"
-    // InternalDedalADL.g:14227:1: rule__Port_Impl__Group__4 : rule__Port_Impl__Group__4__Impl rule__Port_Impl__Group__5 ;
+    // InternalDedalADL.g:14291:1: rule__Port_Impl__Group__4 : rule__Port_Impl__Group__4__Impl rule__Port_Impl__Group__5 ;
     public final void rule__Port_Impl__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14231:1: ( rule__Port_Impl__Group__4__Impl rule__Port_Impl__Group__5 )
-            // InternalDedalADL.g:14232:2: rule__Port_Impl__Group__4__Impl rule__Port_Impl__Group__5
+            // InternalDedalADL.g:14295:1: ( rule__Port_Impl__Group__4__Impl rule__Port_Impl__Group__5 )
+            // InternalDedalADL.g:14296:2: rule__Port_Impl__Group__4__Impl rule__Port_Impl__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_61);
+            pushFollow(FollowSets000.FOLLOW_62);
             rule__Port_Impl__Group__4__Impl();
 
             state._fsp--;
@@ -37521,21 +37682,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__4__Impl"
-    // InternalDedalADL.g:14239:1: rule__Port_Impl__Group__4__Impl : ( ( rule__Port_Impl__InterfacesAssignment_4 ) ) ;
+    // InternalDedalADL.g:14303:1: rule__Port_Impl__Group__4__Impl : ( ( rule__Port_Impl__InterfacesAssignment_4 ) ) ;
     public final void rule__Port_Impl__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14243:1: ( ( ( rule__Port_Impl__InterfacesAssignment_4 ) ) )
-            // InternalDedalADL.g:14244:1: ( ( rule__Port_Impl__InterfacesAssignment_4 ) )
+            // InternalDedalADL.g:14307:1: ( ( ( rule__Port_Impl__InterfacesAssignment_4 ) ) )
+            // InternalDedalADL.g:14308:1: ( ( rule__Port_Impl__InterfacesAssignment_4 ) )
             {
-            // InternalDedalADL.g:14244:1: ( ( rule__Port_Impl__InterfacesAssignment_4 ) )
-            // InternalDedalADL.g:14245:1: ( rule__Port_Impl__InterfacesAssignment_4 )
+            // InternalDedalADL.g:14308:1: ( ( rule__Port_Impl__InterfacesAssignment_4 ) )
+            // InternalDedalADL.g:14309:1: ( rule__Port_Impl__InterfacesAssignment_4 )
             {
              before(grammarAccess.getPort_ImplAccess().getInterfacesAssignment_4()); 
-            // InternalDedalADL.g:14246:1: ( rule__Port_Impl__InterfacesAssignment_4 )
-            // InternalDedalADL.g:14246:2: rule__Port_Impl__InterfacesAssignment_4
+            // InternalDedalADL.g:14310:1: ( rule__Port_Impl__InterfacesAssignment_4 )
+            // InternalDedalADL.g:14310:2: rule__Port_Impl__InterfacesAssignment_4
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Port_Impl__InterfacesAssignment_4();
@@ -37568,16 +37729,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__5"
-    // InternalDedalADL.g:14256:1: rule__Port_Impl__Group__5 : rule__Port_Impl__Group__5__Impl rule__Port_Impl__Group__6 ;
+    // InternalDedalADL.g:14320:1: rule__Port_Impl__Group__5 : rule__Port_Impl__Group__5__Impl rule__Port_Impl__Group__6 ;
     public final void rule__Port_Impl__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14260:1: ( rule__Port_Impl__Group__5__Impl rule__Port_Impl__Group__6 )
-            // InternalDedalADL.g:14261:2: rule__Port_Impl__Group__5__Impl rule__Port_Impl__Group__6
+            // InternalDedalADL.g:14324:1: ( rule__Port_Impl__Group__5__Impl rule__Port_Impl__Group__6 )
+            // InternalDedalADL.g:14325:2: rule__Port_Impl__Group__5__Impl rule__Port_Impl__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_61);
+            pushFollow(FollowSets000.FOLLOW_62);
             rule__Port_Impl__Group__5__Impl();
 
             state._fsp--;
@@ -37606,35 +37767,35 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__5__Impl"
-    // InternalDedalADL.g:14268:1: rule__Port_Impl__Group__5__Impl : ( ( rule__Port_Impl__Group_5__0 )* ) ;
+    // InternalDedalADL.g:14332:1: rule__Port_Impl__Group__5__Impl : ( ( rule__Port_Impl__Group_5__0 )* ) ;
     public final void rule__Port_Impl__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14272:1: ( ( ( rule__Port_Impl__Group_5__0 )* ) )
-            // InternalDedalADL.g:14273:1: ( ( rule__Port_Impl__Group_5__0 )* )
+            // InternalDedalADL.g:14336:1: ( ( ( rule__Port_Impl__Group_5__0 )* ) )
+            // InternalDedalADL.g:14337:1: ( ( rule__Port_Impl__Group_5__0 )* )
             {
-            // InternalDedalADL.g:14273:1: ( ( rule__Port_Impl__Group_5__0 )* )
-            // InternalDedalADL.g:14274:1: ( rule__Port_Impl__Group_5__0 )*
+            // InternalDedalADL.g:14337:1: ( ( rule__Port_Impl__Group_5__0 )* )
+            // InternalDedalADL.g:14338:1: ( rule__Port_Impl__Group_5__0 )*
             {
              before(grammarAccess.getPort_ImplAccess().getGroup_5()); 
-            // InternalDedalADL.g:14275:1: ( rule__Port_Impl__Group_5__0 )*
+            // InternalDedalADL.g:14339:1: ( rule__Port_Impl__Group_5__0 )*
             loop104:
             do {
                 int alt104=2;
                 int LA104_0 = input.LA(1);
 
-                if ( (LA104_0==98) ) {
+                if ( (LA104_0==99) ) {
                     alt104=1;
                 }
 
 
                 switch (alt104) {
             	case 1 :
-            	    // InternalDedalADL.g:14275:2: rule__Port_Impl__Group_5__0
+            	    // InternalDedalADL.g:14339:2: rule__Port_Impl__Group_5__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_62);
+            	    pushFollow(FollowSets000.FOLLOW_63);
             	    rule__Port_Impl__Group_5__0();
 
             	    state._fsp--;
@@ -37671,14 +37832,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__6"
-    // InternalDedalADL.g:14285:1: rule__Port_Impl__Group__6 : rule__Port_Impl__Group__6__Impl ;
+    // InternalDedalADL.g:14349:1: rule__Port_Impl__Group__6 : rule__Port_Impl__Group__6__Impl ;
     public final void rule__Port_Impl__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14289:1: ( rule__Port_Impl__Group__6__Impl )
-            // InternalDedalADL.g:14290:2: rule__Port_Impl__Group__6__Impl
+            // InternalDedalADL.g:14353:1: ( rule__Port_Impl__Group__6__Impl )
+            // InternalDedalADL.g:14354:2: rule__Port_Impl__Group__6__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Port_Impl__Group__6__Impl();
@@ -37704,17 +37865,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group__6__Impl"
-    // InternalDedalADL.g:14296:1: rule__Port_Impl__Group__6__Impl : ( ')' ) ;
+    // InternalDedalADL.g:14360:1: rule__Port_Impl__Group__6__Impl : ( ')' ) ;
     public final void rule__Port_Impl__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14300:1: ( ( ')' ) )
-            // InternalDedalADL.g:14301:1: ( ')' )
+            // InternalDedalADL.g:14364:1: ( ( ')' ) )
+            // InternalDedalADL.g:14365:1: ( ')' )
             {
-            // InternalDedalADL.g:14301:1: ( ')' )
-            // InternalDedalADL.g:14302:1: ')'
+            // InternalDedalADL.g:14365:1: ( ')' )
+            // InternalDedalADL.g:14366:1: ')'
             {
              before(grammarAccess.getPort_ImplAccess().getRightParenthesisKeyword_6()); 
             match(input,46,FollowSets000.FOLLOW_2); 
@@ -37741,14 +37902,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group_5__0"
-    // InternalDedalADL.g:14329:1: rule__Port_Impl__Group_5__0 : rule__Port_Impl__Group_5__0__Impl rule__Port_Impl__Group_5__1 ;
+    // InternalDedalADL.g:14393:1: rule__Port_Impl__Group_5__0 : rule__Port_Impl__Group_5__0__Impl rule__Port_Impl__Group_5__1 ;
     public final void rule__Port_Impl__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14333:1: ( rule__Port_Impl__Group_5__0__Impl rule__Port_Impl__Group_5__1 )
-            // InternalDedalADL.g:14334:2: rule__Port_Impl__Group_5__0__Impl rule__Port_Impl__Group_5__1
+            // InternalDedalADL.g:14397:1: ( rule__Port_Impl__Group_5__0__Impl rule__Port_Impl__Group_5__1 )
+            // InternalDedalADL.g:14398:2: rule__Port_Impl__Group_5__0__Impl rule__Port_Impl__Group_5__1
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__Port_Impl__Group_5__0__Impl();
@@ -37779,20 +37940,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group_5__0__Impl"
-    // InternalDedalADL.g:14341:1: rule__Port_Impl__Group_5__0__Impl : ( ',' ) ;
+    // InternalDedalADL.g:14405:1: rule__Port_Impl__Group_5__0__Impl : ( ',' ) ;
     public final void rule__Port_Impl__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14345:1: ( ( ',' ) )
-            // InternalDedalADL.g:14346:1: ( ',' )
+            // InternalDedalADL.g:14409:1: ( ( ',' ) )
+            // InternalDedalADL.g:14410:1: ( ',' )
             {
-            // InternalDedalADL.g:14346:1: ( ',' )
-            // InternalDedalADL.g:14347:1: ','
+            // InternalDedalADL.g:14410:1: ( ',' )
+            // InternalDedalADL.g:14411:1: ','
             {
              before(grammarAccess.getPort_ImplAccess().getCommaKeyword_5_0()); 
-            match(input,98,FollowSets000.FOLLOW_2); 
+            match(input,99,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getPort_ImplAccess().getCommaKeyword_5_0()); 
 
             }
@@ -37816,14 +37977,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group_5__1"
-    // InternalDedalADL.g:14360:1: rule__Port_Impl__Group_5__1 : rule__Port_Impl__Group_5__1__Impl ;
+    // InternalDedalADL.g:14424:1: rule__Port_Impl__Group_5__1 : rule__Port_Impl__Group_5__1__Impl ;
     public final void rule__Port_Impl__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14364:1: ( rule__Port_Impl__Group_5__1__Impl )
-            // InternalDedalADL.g:14365:2: rule__Port_Impl__Group_5__1__Impl
+            // InternalDedalADL.g:14428:1: ( rule__Port_Impl__Group_5__1__Impl )
+            // InternalDedalADL.g:14429:2: rule__Port_Impl__Group_5__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Port_Impl__Group_5__1__Impl();
@@ -37849,21 +38010,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__Group_5__1__Impl"
-    // InternalDedalADL.g:14371:1: rule__Port_Impl__Group_5__1__Impl : ( ( rule__Port_Impl__InterfacesAssignment_5_1 ) ) ;
+    // InternalDedalADL.g:14435:1: rule__Port_Impl__Group_5__1__Impl : ( ( rule__Port_Impl__InterfacesAssignment_5_1 ) ) ;
     public final void rule__Port_Impl__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14375:1: ( ( ( rule__Port_Impl__InterfacesAssignment_5_1 ) ) )
-            // InternalDedalADL.g:14376:1: ( ( rule__Port_Impl__InterfacesAssignment_5_1 ) )
+            // InternalDedalADL.g:14439:1: ( ( ( rule__Port_Impl__InterfacesAssignment_5_1 ) ) )
+            // InternalDedalADL.g:14440:1: ( ( rule__Port_Impl__InterfacesAssignment_5_1 ) )
             {
-            // InternalDedalADL.g:14376:1: ( ( rule__Port_Impl__InterfacesAssignment_5_1 ) )
-            // InternalDedalADL.g:14377:1: ( rule__Port_Impl__InterfacesAssignment_5_1 )
+            // InternalDedalADL.g:14440:1: ( ( rule__Port_Impl__InterfacesAssignment_5_1 ) )
+            // InternalDedalADL.g:14441:1: ( rule__Port_Impl__InterfacesAssignment_5_1 )
             {
              before(grammarAccess.getPort_ImplAccess().getInterfacesAssignment_5_1()); 
-            // InternalDedalADL.g:14378:1: ( rule__Port_Impl__InterfacesAssignment_5_1 )
-            // InternalDedalADL.g:14378:2: rule__Port_Impl__InterfacesAssignment_5_1
+            // InternalDedalADL.g:14442:1: ( rule__Port_Impl__InterfacesAssignment_5_1 )
+            // InternalDedalADL.g:14442:2: rule__Port_Impl__InterfacesAssignment_5_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Port_Impl__InterfacesAssignment_5_1();
@@ -37896,14 +38057,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__0"
-    // InternalDedalADL.g:14392:1: rule__CompositePort__Group__0 : rule__CompositePort__Group__0__Impl rule__CompositePort__Group__1 ;
+    // InternalDedalADL.g:14456:1: rule__CompositePort__Group__0 : rule__CompositePort__Group__0__Impl rule__CompositePort__Group__1 ;
     public final void rule__CompositePort__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14396:1: ( rule__CompositePort__Group__0__Impl rule__CompositePort__Group__1 )
-            // InternalDedalADL.g:14397:2: rule__CompositePort__Group__0__Impl rule__CompositePort__Group__1
+            // InternalDedalADL.g:14460:1: ( rule__CompositePort__Group__0__Impl rule__CompositePort__Group__1 )
+            // InternalDedalADL.g:14461:2: rule__CompositePort__Group__0__Impl rule__CompositePort__Group__1
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__CompositePort__Group__0__Impl();
@@ -37934,20 +38095,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__0__Impl"
-    // InternalDedalADL.g:14404:1: rule__CompositePort__Group__0__Impl : ( 'composite_port' ) ;
+    // InternalDedalADL.g:14468:1: rule__CompositePort__Group__0__Impl : ( 'composite_port' ) ;
     public final void rule__CompositePort__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14408:1: ( ( 'composite_port' ) )
-            // InternalDedalADL.g:14409:1: ( 'composite_port' )
+            // InternalDedalADL.g:14472:1: ( ( 'composite_port' ) )
+            // InternalDedalADL.g:14473:1: ( 'composite_port' )
             {
-            // InternalDedalADL.g:14409:1: ( 'composite_port' )
-            // InternalDedalADL.g:14410:1: 'composite_port'
+            // InternalDedalADL.g:14473:1: ( 'composite_port' )
+            // InternalDedalADL.g:14474:1: 'composite_port'
             {
              before(grammarAccess.getCompositePortAccess().getComposite_portKeyword_0()); 
-            match(input,99,FollowSets000.FOLLOW_2); 
+            match(input,100,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getCompositePortAccess().getComposite_portKeyword_0()); 
 
             }
@@ -37971,16 +38132,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__1"
-    // InternalDedalADL.g:14423:1: rule__CompositePort__Group__1 : rule__CompositePort__Group__1__Impl rule__CompositePort__Group__2 ;
+    // InternalDedalADL.g:14487:1: rule__CompositePort__Group__1 : rule__CompositePort__Group__1__Impl rule__CompositePort__Group__2 ;
     public final void rule__CompositePort__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14427:1: ( rule__CompositePort__Group__1__Impl rule__CompositePort__Group__2 )
-            // InternalDedalADL.g:14428:2: rule__CompositePort__Group__1__Impl rule__CompositePort__Group__2
+            // InternalDedalADL.g:14491:1: ( rule__CompositePort__Group__1__Impl rule__CompositePort__Group__2 )
+            // InternalDedalADL.g:14492:2: rule__CompositePort__Group__1__Impl rule__CompositePort__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_63);
+            pushFollow(FollowSets000.FOLLOW_64);
             rule__CompositePort__Group__1__Impl();
 
             state._fsp--;
@@ -38009,21 +38170,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__1__Impl"
-    // InternalDedalADL.g:14435:1: rule__CompositePort__Group__1__Impl : ( ( rule__CompositePort__NameAssignment_1 ) ) ;
+    // InternalDedalADL.g:14499:1: rule__CompositePort__Group__1__Impl : ( ( rule__CompositePort__NameAssignment_1 ) ) ;
     public final void rule__CompositePort__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14439:1: ( ( ( rule__CompositePort__NameAssignment_1 ) ) )
-            // InternalDedalADL.g:14440:1: ( ( rule__CompositePort__NameAssignment_1 ) )
+            // InternalDedalADL.g:14503:1: ( ( ( rule__CompositePort__NameAssignment_1 ) ) )
+            // InternalDedalADL.g:14504:1: ( ( rule__CompositePort__NameAssignment_1 ) )
             {
-            // InternalDedalADL.g:14440:1: ( ( rule__CompositePort__NameAssignment_1 ) )
-            // InternalDedalADL.g:14441:1: ( rule__CompositePort__NameAssignment_1 )
+            // InternalDedalADL.g:14504:1: ( ( rule__CompositePort__NameAssignment_1 ) )
+            // InternalDedalADL.g:14505:1: ( rule__CompositePort__NameAssignment_1 )
             {
              before(grammarAccess.getCompositePortAccess().getNameAssignment_1()); 
-            // InternalDedalADL.g:14442:1: ( rule__CompositePort__NameAssignment_1 )
-            // InternalDedalADL.g:14442:2: rule__CompositePort__NameAssignment_1
+            // InternalDedalADL.g:14506:1: ( rule__CompositePort__NameAssignment_1 )
+            // InternalDedalADL.g:14506:2: rule__CompositePort__NameAssignment_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompositePort__NameAssignment_1();
@@ -38056,14 +38217,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__2"
-    // InternalDedalADL.g:14452:1: rule__CompositePort__Group__2 : rule__CompositePort__Group__2__Impl rule__CompositePort__Group__3 ;
+    // InternalDedalADL.g:14516:1: rule__CompositePort__Group__2 : rule__CompositePort__Group__2__Impl rule__CompositePort__Group__3 ;
     public final void rule__CompositePort__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14456:1: ( rule__CompositePort__Group__2__Impl rule__CompositePort__Group__3 )
-            // InternalDedalADL.g:14457:2: rule__CompositePort__Group__2__Impl rule__CompositePort__Group__3
+            // InternalDedalADL.g:14520:1: ( rule__CompositePort__Group__2__Impl rule__CompositePort__Group__3 )
+            // InternalDedalADL.g:14521:2: rule__CompositePort__Group__2__Impl rule__CompositePort__Group__3
             {
             pushFollow(FollowSets000.FOLLOW_5);
             rule__CompositePort__Group__2__Impl();
@@ -38094,20 +38255,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__2__Impl"
-    // InternalDedalADL.g:14464:1: rule__CompositePort__Group__2__Impl : ( 'ports' ) ;
+    // InternalDedalADL.g:14528:1: rule__CompositePort__Group__2__Impl : ( 'ports' ) ;
     public final void rule__CompositePort__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14468:1: ( ( 'ports' ) )
-            // InternalDedalADL.g:14469:1: ( 'ports' )
+            // InternalDedalADL.g:14532:1: ( ( 'ports' ) )
+            // InternalDedalADL.g:14533:1: ( 'ports' )
             {
-            // InternalDedalADL.g:14469:1: ( 'ports' )
-            // InternalDedalADL.g:14470:1: 'ports'
+            // InternalDedalADL.g:14533:1: ( 'ports' )
+            // InternalDedalADL.g:14534:1: 'ports'
             {
              before(grammarAccess.getCompositePortAccess().getPortsKeyword_2()); 
-            match(input,100,FollowSets000.FOLLOW_2); 
+            match(input,101,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getCompositePortAccess().getPortsKeyword_2()); 
 
             }
@@ -38131,14 +38292,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__3"
-    // InternalDedalADL.g:14483:1: rule__CompositePort__Group__3 : rule__CompositePort__Group__3__Impl rule__CompositePort__Group__4 ;
+    // InternalDedalADL.g:14547:1: rule__CompositePort__Group__3 : rule__CompositePort__Group__3__Impl rule__CompositePort__Group__4 ;
     public final void rule__CompositePort__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14487:1: ( rule__CompositePort__Group__3__Impl rule__CompositePort__Group__4 )
-            // InternalDedalADL.g:14488:2: rule__CompositePort__Group__3__Impl rule__CompositePort__Group__4
+            // InternalDedalADL.g:14551:1: ( rule__CompositePort__Group__3__Impl rule__CompositePort__Group__4 )
+            // InternalDedalADL.g:14552:2: rule__CompositePort__Group__3__Impl rule__CompositePort__Group__4
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__CompositePort__Group__3__Impl();
@@ -38169,17 +38330,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__3__Impl"
-    // InternalDedalADL.g:14495:1: rule__CompositePort__Group__3__Impl : ( '(' ) ;
+    // InternalDedalADL.g:14559:1: rule__CompositePort__Group__3__Impl : ( '(' ) ;
     public final void rule__CompositePort__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14499:1: ( ( '(' ) )
-            // InternalDedalADL.g:14500:1: ( '(' )
+            // InternalDedalADL.g:14563:1: ( ( '(' ) )
+            // InternalDedalADL.g:14564:1: ( '(' )
             {
-            // InternalDedalADL.g:14500:1: ( '(' )
-            // InternalDedalADL.g:14501:1: '('
+            // InternalDedalADL.g:14564:1: ( '(' )
+            // InternalDedalADL.g:14565:1: '('
             {
              before(grammarAccess.getCompositePortAccess().getLeftParenthesisKeyword_3()); 
             match(input,45,FollowSets000.FOLLOW_2); 
@@ -38206,16 +38367,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__4"
-    // InternalDedalADL.g:14514:1: rule__CompositePort__Group__4 : rule__CompositePort__Group__4__Impl rule__CompositePort__Group__5 ;
+    // InternalDedalADL.g:14578:1: rule__CompositePort__Group__4 : rule__CompositePort__Group__4__Impl rule__CompositePort__Group__5 ;
     public final void rule__CompositePort__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14518:1: ( rule__CompositePort__Group__4__Impl rule__CompositePort__Group__5 )
-            // InternalDedalADL.g:14519:2: rule__CompositePort__Group__4__Impl rule__CompositePort__Group__5
+            // InternalDedalADL.g:14582:1: ( rule__CompositePort__Group__4__Impl rule__CompositePort__Group__5 )
+            // InternalDedalADL.g:14583:2: rule__CompositePort__Group__4__Impl rule__CompositePort__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_61);
+            pushFollow(FollowSets000.FOLLOW_62);
             rule__CompositePort__Group__4__Impl();
 
             state._fsp--;
@@ -38244,21 +38405,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__4__Impl"
-    // InternalDedalADL.g:14526:1: rule__CompositePort__Group__4__Impl : ( ( rule__CompositePort__PortsAssignment_4 ) ) ;
+    // InternalDedalADL.g:14590:1: rule__CompositePort__Group__4__Impl : ( ( rule__CompositePort__PortsAssignment_4 ) ) ;
     public final void rule__CompositePort__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14530:1: ( ( ( rule__CompositePort__PortsAssignment_4 ) ) )
-            // InternalDedalADL.g:14531:1: ( ( rule__CompositePort__PortsAssignment_4 ) )
+            // InternalDedalADL.g:14594:1: ( ( ( rule__CompositePort__PortsAssignment_4 ) ) )
+            // InternalDedalADL.g:14595:1: ( ( rule__CompositePort__PortsAssignment_4 ) )
             {
-            // InternalDedalADL.g:14531:1: ( ( rule__CompositePort__PortsAssignment_4 ) )
-            // InternalDedalADL.g:14532:1: ( rule__CompositePort__PortsAssignment_4 )
+            // InternalDedalADL.g:14595:1: ( ( rule__CompositePort__PortsAssignment_4 ) )
+            // InternalDedalADL.g:14596:1: ( rule__CompositePort__PortsAssignment_4 )
             {
              before(grammarAccess.getCompositePortAccess().getPortsAssignment_4()); 
-            // InternalDedalADL.g:14533:1: ( rule__CompositePort__PortsAssignment_4 )
-            // InternalDedalADL.g:14533:2: rule__CompositePort__PortsAssignment_4
+            // InternalDedalADL.g:14597:1: ( rule__CompositePort__PortsAssignment_4 )
+            // InternalDedalADL.g:14597:2: rule__CompositePort__PortsAssignment_4
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompositePort__PortsAssignment_4();
@@ -38291,16 +38452,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__5"
-    // InternalDedalADL.g:14543:1: rule__CompositePort__Group__5 : rule__CompositePort__Group__5__Impl rule__CompositePort__Group__6 ;
+    // InternalDedalADL.g:14607:1: rule__CompositePort__Group__5 : rule__CompositePort__Group__5__Impl rule__CompositePort__Group__6 ;
     public final void rule__CompositePort__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14547:1: ( rule__CompositePort__Group__5__Impl rule__CompositePort__Group__6 )
-            // InternalDedalADL.g:14548:2: rule__CompositePort__Group__5__Impl rule__CompositePort__Group__6
+            // InternalDedalADL.g:14611:1: ( rule__CompositePort__Group__5__Impl rule__CompositePort__Group__6 )
+            // InternalDedalADL.g:14612:2: rule__CompositePort__Group__5__Impl rule__CompositePort__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_61);
+            pushFollow(FollowSets000.FOLLOW_62);
             rule__CompositePort__Group__5__Impl();
 
             state._fsp--;
@@ -38329,35 +38490,35 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__5__Impl"
-    // InternalDedalADL.g:14555:1: rule__CompositePort__Group__5__Impl : ( ( rule__CompositePort__Group_5__0 )* ) ;
+    // InternalDedalADL.g:14619:1: rule__CompositePort__Group__5__Impl : ( ( rule__CompositePort__Group_5__0 )* ) ;
     public final void rule__CompositePort__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14559:1: ( ( ( rule__CompositePort__Group_5__0 )* ) )
-            // InternalDedalADL.g:14560:1: ( ( rule__CompositePort__Group_5__0 )* )
+            // InternalDedalADL.g:14623:1: ( ( ( rule__CompositePort__Group_5__0 )* ) )
+            // InternalDedalADL.g:14624:1: ( ( rule__CompositePort__Group_5__0 )* )
             {
-            // InternalDedalADL.g:14560:1: ( ( rule__CompositePort__Group_5__0 )* )
-            // InternalDedalADL.g:14561:1: ( rule__CompositePort__Group_5__0 )*
+            // InternalDedalADL.g:14624:1: ( ( rule__CompositePort__Group_5__0 )* )
+            // InternalDedalADL.g:14625:1: ( rule__CompositePort__Group_5__0 )*
             {
              before(grammarAccess.getCompositePortAccess().getGroup_5()); 
-            // InternalDedalADL.g:14562:1: ( rule__CompositePort__Group_5__0 )*
+            // InternalDedalADL.g:14626:1: ( rule__CompositePort__Group_5__0 )*
             loop105:
             do {
                 int alt105=2;
                 int LA105_0 = input.LA(1);
 
-                if ( (LA105_0==98) ) {
+                if ( (LA105_0==99) ) {
                     alt105=1;
                 }
 
 
                 switch (alt105) {
             	case 1 :
-            	    // InternalDedalADL.g:14562:2: rule__CompositePort__Group_5__0
+            	    // InternalDedalADL.g:14626:2: rule__CompositePort__Group_5__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_62);
+            	    pushFollow(FollowSets000.FOLLOW_63);
             	    rule__CompositePort__Group_5__0();
 
             	    state._fsp--;
@@ -38394,14 +38555,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__6"
-    // InternalDedalADL.g:14572:1: rule__CompositePort__Group__6 : rule__CompositePort__Group__6__Impl ;
+    // InternalDedalADL.g:14636:1: rule__CompositePort__Group__6 : rule__CompositePort__Group__6__Impl ;
     public final void rule__CompositePort__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14576:1: ( rule__CompositePort__Group__6__Impl )
-            // InternalDedalADL.g:14577:2: rule__CompositePort__Group__6__Impl
+            // InternalDedalADL.g:14640:1: ( rule__CompositePort__Group__6__Impl )
+            // InternalDedalADL.g:14641:2: rule__CompositePort__Group__6__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompositePort__Group__6__Impl();
@@ -38427,17 +38588,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group__6__Impl"
-    // InternalDedalADL.g:14583:1: rule__CompositePort__Group__6__Impl : ( ')' ) ;
+    // InternalDedalADL.g:14647:1: rule__CompositePort__Group__6__Impl : ( ')' ) ;
     public final void rule__CompositePort__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14587:1: ( ( ')' ) )
-            // InternalDedalADL.g:14588:1: ( ')' )
+            // InternalDedalADL.g:14651:1: ( ( ')' ) )
+            // InternalDedalADL.g:14652:1: ( ')' )
             {
-            // InternalDedalADL.g:14588:1: ( ')' )
-            // InternalDedalADL.g:14589:1: ')'
+            // InternalDedalADL.g:14652:1: ( ')' )
+            // InternalDedalADL.g:14653:1: ')'
             {
              before(grammarAccess.getCompositePortAccess().getRightParenthesisKeyword_6()); 
             match(input,46,FollowSets000.FOLLOW_2); 
@@ -38464,14 +38625,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group_5__0"
-    // InternalDedalADL.g:14616:1: rule__CompositePort__Group_5__0 : rule__CompositePort__Group_5__0__Impl rule__CompositePort__Group_5__1 ;
+    // InternalDedalADL.g:14680:1: rule__CompositePort__Group_5__0 : rule__CompositePort__Group_5__0__Impl rule__CompositePort__Group_5__1 ;
     public final void rule__CompositePort__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14620:1: ( rule__CompositePort__Group_5__0__Impl rule__CompositePort__Group_5__1 )
-            // InternalDedalADL.g:14621:2: rule__CompositePort__Group_5__0__Impl rule__CompositePort__Group_5__1
+            // InternalDedalADL.g:14684:1: ( rule__CompositePort__Group_5__0__Impl rule__CompositePort__Group_5__1 )
+            // InternalDedalADL.g:14685:2: rule__CompositePort__Group_5__0__Impl rule__CompositePort__Group_5__1
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__CompositePort__Group_5__0__Impl();
@@ -38502,20 +38663,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group_5__0__Impl"
-    // InternalDedalADL.g:14628:1: rule__CompositePort__Group_5__0__Impl : ( ',' ) ;
+    // InternalDedalADL.g:14692:1: rule__CompositePort__Group_5__0__Impl : ( ',' ) ;
     public final void rule__CompositePort__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14632:1: ( ( ',' ) )
-            // InternalDedalADL.g:14633:1: ( ',' )
+            // InternalDedalADL.g:14696:1: ( ( ',' ) )
+            // InternalDedalADL.g:14697:1: ( ',' )
             {
-            // InternalDedalADL.g:14633:1: ( ',' )
-            // InternalDedalADL.g:14634:1: ','
+            // InternalDedalADL.g:14697:1: ( ',' )
+            // InternalDedalADL.g:14698:1: ','
             {
              before(grammarAccess.getCompositePortAccess().getCommaKeyword_5_0()); 
-            match(input,98,FollowSets000.FOLLOW_2); 
+            match(input,99,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getCompositePortAccess().getCommaKeyword_5_0()); 
 
             }
@@ -38539,14 +38700,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group_5__1"
-    // InternalDedalADL.g:14647:1: rule__CompositePort__Group_5__1 : rule__CompositePort__Group_5__1__Impl ;
+    // InternalDedalADL.g:14711:1: rule__CompositePort__Group_5__1 : rule__CompositePort__Group_5__1__Impl ;
     public final void rule__CompositePort__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14651:1: ( rule__CompositePort__Group_5__1__Impl )
-            // InternalDedalADL.g:14652:2: rule__CompositePort__Group_5__1__Impl
+            // InternalDedalADL.g:14715:1: ( rule__CompositePort__Group_5__1__Impl )
+            // InternalDedalADL.g:14716:2: rule__CompositePort__Group_5__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompositePort__Group_5__1__Impl();
@@ -38572,21 +38733,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__Group_5__1__Impl"
-    // InternalDedalADL.g:14658:1: rule__CompositePort__Group_5__1__Impl : ( ( rule__CompositePort__PortsAssignment_5_1 ) ) ;
+    // InternalDedalADL.g:14722:1: rule__CompositePort__Group_5__1__Impl : ( ( rule__CompositePort__PortsAssignment_5_1 ) ) ;
     public final void rule__CompositePort__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14662:1: ( ( ( rule__CompositePort__PortsAssignment_5_1 ) ) )
-            // InternalDedalADL.g:14663:1: ( ( rule__CompositePort__PortsAssignment_5_1 ) )
+            // InternalDedalADL.g:14726:1: ( ( ( rule__CompositePort__PortsAssignment_5_1 ) ) )
+            // InternalDedalADL.g:14727:1: ( ( rule__CompositePort__PortsAssignment_5_1 ) )
             {
-            // InternalDedalADL.g:14663:1: ( ( rule__CompositePort__PortsAssignment_5_1 ) )
-            // InternalDedalADL.g:14664:1: ( rule__CompositePort__PortsAssignment_5_1 )
+            // InternalDedalADL.g:14727:1: ( ( rule__CompositePort__PortsAssignment_5_1 ) )
+            // InternalDedalADL.g:14728:1: ( rule__CompositePort__PortsAssignment_5_1 )
             {
              before(grammarAccess.getCompositePortAccess().getPortsAssignment_5_1()); 
-            // InternalDedalADL.g:14665:1: ( rule__CompositePort__PortsAssignment_5_1 )
-            // InternalDedalADL.g:14665:2: rule__CompositePort__PortsAssignment_5_1
+            // InternalDedalADL.g:14729:1: ( rule__CompositePort__PortsAssignment_5_1 )
+            // InternalDedalADL.g:14729:2: rule__CompositePort__PortsAssignment_5_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompositePort__PortsAssignment_5_1();
@@ -38619,14 +38780,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__0"
-    // InternalDedalADL.g:14679:1: rule__Assembly__Group__0 : rule__Assembly__Group__0__Impl rule__Assembly__Group__1 ;
+    // InternalDedalADL.g:14743:1: rule__Assembly__Group__0 : rule__Assembly__Group__0__Impl rule__Assembly__Group__1 ;
     public final void rule__Assembly__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14683:1: ( rule__Assembly__Group__0__Impl rule__Assembly__Group__1 )
-            // InternalDedalADL.g:14684:2: rule__Assembly__Group__0__Impl rule__Assembly__Group__1
+            // InternalDedalADL.g:14747:1: ( rule__Assembly__Group__0__Impl rule__Assembly__Group__1 )
+            // InternalDedalADL.g:14748:2: rule__Assembly__Group__0__Impl rule__Assembly__Group__1
             {
             pushFollow(FollowSets000.FOLLOW_18);
             rule__Assembly__Group__0__Impl();
@@ -38657,17 +38818,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__0__Impl"
-    // InternalDedalADL.g:14691:1: rule__Assembly__Group__0__Impl : ( 'assembly' ) ;
+    // InternalDedalADL.g:14755:1: rule__Assembly__Group__0__Impl : ( 'assembly' ) ;
     public final void rule__Assembly__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14695:1: ( ( 'assembly' ) )
-            // InternalDedalADL.g:14696:1: ( 'assembly' )
+            // InternalDedalADL.g:14759:1: ( ( 'assembly' ) )
+            // InternalDedalADL.g:14760:1: ( 'assembly' )
             {
-            // InternalDedalADL.g:14696:1: ( 'assembly' )
-            // InternalDedalADL.g:14697:1: 'assembly'
+            // InternalDedalADL.g:14760:1: ( 'assembly' )
+            // InternalDedalADL.g:14761:1: 'assembly'
             {
              before(grammarAccess.getAssemblyAccess().getAssemblyKeyword_0()); 
             match(input,23,FollowSets000.FOLLOW_2); 
@@ -38694,16 +38855,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__1"
-    // InternalDedalADL.g:14710:1: rule__Assembly__Group__1 : rule__Assembly__Group__1__Impl rule__Assembly__Group__2 ;
+    // InternalDedalADL.g:14774:1: rule__Assembly__Group__1 : rule__Assembly__Group__1__Impl rule__Assembly__Group__2 ;
     public final void rule__Assembly__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14714:1: ( rule__Assembly__Group__1__Impl rule__Assembly__Group__2 )
-            // InternalDedalADL.g:14715:2: rule__Assembly__Group__1__Impl rule__Assembly__Group__2
+            // InternalDedalADL.g:14778:1: ( rule__Assembly__Group__1__Impl rule__Assembly__Group__2 )
+            // InternalDedalADL.g:14779:2: rule__Assembly__Group__1__Impl rule__Assembly__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_64);
+            pushFollow(FollowSets000.FOLLOW_65);
             rule__Assembly__Group__1__Impl();
 
             state._fsp--;
@@ -38732,21 +38893,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__1__Impl"
-    // InternalDedalADL.g:14722:1: rule__Assembly__Group__1__Impl : ( ( rule__Assembly__NameAssignment_1 ) ) ;
+    // InternalDedalADL.g:14786:1: rule__Assembly__Group__1__Impl : ( ( rule__Assembly__NameAssignment_1 ) ) ;
     public final void rule__Assembly__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14726:1: ( ( ( rule__Assembly__NameAssignment_1 ) ) )
-            // InternalDedalADL.g:14727:1: ( ( rule__Assembly__NameAssignment_1 ) )
+            // InternalDedalADL.g:14790:1: ( ( ( rule__Assembly__NameAssignment_1 ) ) )
+            // InternalDedalADL.g:14791:1: ( ( rule__Assembly__NameAssignment_1 ) )
             {
-            // InternalDedalADL.g:14727:1: ( ( rule__Assembly__NameAssignment_1 ) )
-            // InternalDedalADL.g:14728:1: ( rule__Assembly__NameAssignment_1 )
+            // InternalDedalADL.g:14791:1: ( ( rule__Assembly__NameAssignment_1 ) )
+            // InternalDedalADL.g:14792:1: ( rule__Assembly__NameAssignment_1 )
             {
              before(grammarAccess.getAssemblyAccess().getNameAssignment_1()); 
-            // InternalDedalADL.g:14729:1: ( rule__Assembly__NameAssignment_1 )
-            // InternalDedalADL.g:14729:2: rule__Assembly__NameAssignment_1
+            // InternalDedalADL.g:14793:1: ( rule__Assembly__NameAssignment_1 )
+            // InternalDedalADL.g:14793:2: rule__Assembly__NameAssignment_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__NameAssignment_1();
@@ -38779,14 +38940,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__2"
-    // InternalDedalADL.g:14739:1: rule__Assembly__Group__2 : rule__Assembly__Group__2__Impl rule__Assembly__Group__3 ;
+    // InternalDedalADL.g:14803:1: rule__Assembly__Group__2 : rule__Assembly__Group__2__Impl rule__Assembly__Group__3 ;
     public final void rule__Assembly__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14743:1: ( rule__Assembly__Group__2__Impl rule__Assembly__Group__3 )
-            // InternalDedalADL.g:14744:2: rule__Assembly__Group__2__Impl rule__Assembly__Group__3
+            // InternalDedalADL.g:14807:1: ( rule__Assembly__Group__2__Impl rule__Assembly__Group__3 )
+            // InternalDedalADL.g:14808:2: rule__Assembly__Group__2__Impl rule__Assembly__Group__3
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__Assembly__Group__2__Impl();
@@ -38817,20 +38978,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__2__Impl"
-    // InternalDedalADL.g:14751:1: rule__Assembly__Group__2__Impl : ( 'instance_of' ) ;
+    // InternalDedalADL.g:14815:1: rule__Assembly__Group__2__Impl : ( 'instance_of' ) ;
     public final void rule__Assembly__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14755:1: ( ( 'instance_of' ) )
-            // InternalDedalADL.g:14756:1: ( 'instance_of' )
+            // InternalDedalADL.g:14819:1: ( ( 'instance_of' ) )
+            // InternalDedalADL.g:14820:1: ( 'instance_of' )
             {
-            // InternalDedalADL.g:14756:1: ( 'instance_of' )
-            // InternalDedalADL.g:14757:1: 'instance_of'
+            // InternalDedalADL.g:14820:1: ( 'instance_of' )
+            // InternalDedalADL.g:14821:1: 'instance_of'
             {
              before(grammarAccess.getAssemblyAccess().getInstance_ofKeyword_2()); 
-            match(input,101,FollowSets000.FOLLOW_2); 
+            match(input,102,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getAssemblyAccess().getInstance_ofKeyword_2()); 
 
             }
@@ -38854,16 +39015,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__3"
-    // InternalDedalADL.g:14770:1: rule__Assembly__Group__3 : rule__Assembly__Group__3__Impl rule__Assembly__Group__4 ;
+    // InternalDedalADL.g:14834:1: rule__Assembly__Group__3 : rule__Assembly__Group__3__Impl rule__Assembly__Group__4 ;
     public final void rule__Assembly__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14774:1: ( rule__Assembly__Group__3__Impl rule__Assembly__Group__4 )
-            // InternalDedalADL.g:14775:2: rule__Assembly__Group__3__Impl rule__Assembly__Group__4
+            // InternalDedalADL.g:14838:1: ( rule__Assembly__Group__3__Impl rule__Assembly__Group__4 )
+            // InternalDedalADL.g:14839:2: rule__Assembly__Group__3__Impl rule__Assembly__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_65);
+            pushFollow(FollowSets000.FOLLOW_66);
             rule__Assembly__Group__3__Impl();
 
             state._fsp--;
@@ -38892,21 +39053,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__3__Impl"
-    // InternalDedalADL.g:14782:1: rule__Assembly__Group__3__Impl : ( ( rule__Assembly__InstantiatesAssignment_3 ) ) ;
+    // InternalDedalADL.g:14846:1: rule__Assembly__Group__3__Impl : ( ( rule__Assembly__InstantiatesAssignment_3 ) ) ;
     public final void rule__Assembly__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14786:1: ( ( ( rule__Assembly__InstantiatesAssignment_3 ) ) )
-            // InternalDedalADL.g:14787:1: ( ( rule__Assembly__InstantiatesAssignment_3 ) )
+            // InternalDedalADL.g:14850:1: ( ( ( rule__Assembly__InstantiatesAssignment_3 ) ) )
+            // InternalDedalADL.g:14851:1: ( ( rule__Assembly__InstantiatesAssignment_3 ) )
             {
-            // InternalDedalADL.g:14787:1: ( ( rule__Assembly__InstantiatesAssignment_3 ) )
-            // InternalDedalADL.g:14788:1: ( rule__Assembly__InstantiatesAssignment_3 )
+            // InternalDedalADL.g:14851:1: ( ( rule__Assembly__InstantiatesAssignment_3 ) )
+            // InternalDedalADL.g:14852:1: ( rule__Assembly__InstantiatesAssignment_3 )
             {
              before(grammarAccess.getAssemblyAccess().getInstantiatesAssignment_3()); 
-            // InternalDedalADL.g:14789:1: ( rule__Assembly__InstantiatesAssignment_3 )
-            // InternalDedalADL.g:14789:2: rule__Assembly__InstantiatesAssignment_3
+            // InternalDedalADL.g:14853:1: ( rule__Assembly__InstantiatesAssignment_3 )
+            // InternalDedalADL.g:14853:2: rule__Assembly__InstantiatesAssignment_3
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__InstantiatesAssignment_3();
@@ -38939,16 +39100,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__4"
-    // InternalDedalADL.g:14799:1: rule__Assembly__Group__4 : rule__Assembly__Group__4__Impl rule__Assembly__Group__5 ;
+    // InternalDedalADL.g:14863:1: rule__Assembly__Group__4 : rule__Assembly__Group__4__Impl rule__Assembly__Group__5 ;
     public final void rule__Assembly__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14803:1: ( rule__Assembly__Group__4__Impl rule__Assembly__Group__5 )
-            // InternalDedalADL.g:14804:2: rule__Assembly__Group__4__Impl rule__Assembly__Group__5
+            // InternalDedalADL.g:14867:1: ( rule__Assembly__Group__4__Impl rule__Assembly__Group__5 )
+            // InternalDedalADL.g:14868:2: rule__Assembly__Group__4__Impl rule__Assembly__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_65);
+            pushFollow(FollowSets000.FOLLOW_66);
             rule__Assembly__Group__4__Impl();
 
             state._fsp--;
@@ -38977,20 +39138,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__4__Impl"
-    // InternalDedalADL.g:14811:1: rule__Assembly__Group__4__Impl : ( ( rule__Assembly__Group_4__0 )? ) ;
+    // InternalDedalADL.g:14875:1: rule__Assembly__Group__4__Impl : ( ( rule__Assembly__Group_4__0 )? ) ;
     public final void rule__Assembly__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14815:1: ( ( ( rule__Assembly__Group_4__0 )? ) )
-            // InternalDedalADL.g:14816:1: ( ( rule__Assembly__Group_4__0 )? )
+            // InternalDedalADL.g:14879:1: ( ( ( rule__Assembly__Group_4__0 )? ) )
+            // InternalDedalADL.g:14880:1: ( ( rule__Assembly__Group_4__0 )? )
             {
-            // InternalDedalADL.g:14816:1: ( ( rule__Assembly__Group_4__0 )? )
-            // InternalDedalADL.g:14817:1: ( rule__Assembly__Group_4__0 )?
+            // InternalDedalADL.g:14880:1: ( ( rule__Assembly__Group_4__0 )? )
+            // InternalDedalADL.g:14881:1: ( rule__Assembly__Group_4__0 )?
             {
              before(grammarAccess.getAssemblyAccess().getGroup_4()); 
-            // InternalDedalADL.g:14818:1: ( rule__Assembly__Group_4__0 )?
+            // InternalDedalADL.g:14882:1: ( rule__Assembly__Group_4__0 )?
             int alt106=2;
             int LA106_0 = input.LA(1);
 
@@ -38999,7 +39160,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             }
             switch (alt106) {
                 case 1 :
-                    // InternalDedalADL.g:14818:2: rule__Assembly__Group_4__0
+                    // InternalDedalADL.g:14882:2: rule__Assembly__Group_4__0
                     {
                     pushFollow(FollowSets000.FOLLOW_2);
                     rule__Assembly__Group_4__0();
@@ -39035,16 +39196,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__5"
-    // InternalDedalADL.g:14828:1: rule__Assembly__Group__5 : rule__Assembly__Group__5__Impl rule__Assembly__Group__6 ;
+    // InternalDedalADL.g:14892:1: rule__Assembly__Group__5 : rule__Assembly__Group__5__Impl rule__Assembly__Group__6 ;
     public final void rule__Assembly__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14832:1: ( rule__Assembly__Group__5__Impl rule__Assembly__Group__6 )
-            // InternalDedalADL.g:14833:2: rule__Assembly__Group__5__Impl rule__Assembly__Group__6
+            // InternalDedalADL.g:14896:1: ( rule__Assembly__Group__5__Impl rule__Assembly__Group__6 )
+            // InternalDedalADL.g:14897:2: rule__Assembly__Group__5__Impl rule__Assembly__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_65);
+            pushFollow(FollowSets000.FOLLOW_66);
             rule__Assembly__Group__5__Impl();
 
             state._fsp--;
@@ -39073,20 +39234,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__5__Impl"
-    // InternalDedalADL.g:14840:1: rule__Assembly__Group__5__Impl : ( ( rule__Assembly__Group_5__0 )? ) ;
+    // InternalDedalADL.g:14904:1: rule__Assembly__Group__5__Impl : ( ( rule__Assembly__Group_5__0 )? ) ;
     public final void rule__Assembly__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14844:1: ( ( ( rule__Assembly__Group_5__0 )? ) )
-            // InternalDedalADL.g:14845:1: ( ( rule__Assembly__Group_5__0 )? )
+            // InternalDedalADL.g:14908:1: ( ( ( rule__Assembly__Group_5__0 )? ) )
+            // InternalDedalADL.g:14909:1: ( ( rule__Assembly__Group_5__0 )? )
             {
-            // InternalDedalADL.g:14845:1: ( ( rule__Assembly__Group_5__0 )? )
-            // InternalDedalADL.g:14846:1: ( rule__Assembly__Group_5__0 )?
+            // InternalDedalADL.g:14909:1: ( ( rule__Assembly__Group_5__0 )? )
+            // InternalDedalADL.g:14910:1: ( rule__Assembly__Group_5__0 )?
             {
              before(grammarAccess.getAssemblyAccess().getGroup_5()); 
-            // InternalDedalADL.g:14847:1: ( rule__Assembly__Group_5__0 )?
+            // InternalDedalADL.g:14911:1: ( rule__Assembly__Group_5__0 )?
             int alt107=2;
             int LA107_0 = input.LA(1);
 
@@ -39095,7 +39256,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             }
             switch (alt107) {
                 case 1 :
-                    // InternalDedalADL.g:14847:2: rule__Assembly__Group_5__0
+                    // InternalDedalADL.g:14911:2: rule__Assembly__Group_5__0
                     {
                     pushFollow(FollowSets000.FOLLOW_2);
                     rule__Assembly__Group_5__0();
@@ -39131,14 +39292,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__6"
-    // InternalDedalADL.g:14857:1: rule__Assembly__Group__6 : rule__Assembly__Group__6__Impl rule__Assembly__Group__7 ;
+    // InternalDedalADL.g:14921:1: rule__Assembly__Group__6 : rule__Assembly__Group__6__Impl rule__Assembly__Group__7 ;
     public final void rule__Assembly__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14861:1: ( rule__Assembly__Group__6__Impl rule__Assembly__Group__7 )
-            // InternalDedalADL.g:14862:2: rule__Assembly__Group__6__Impl rule__Assembly__Group__7
+            // InternalDedalADL.g:14925:1: ( rule__Assembly__Group__6__Impl rule__Assembly__Group__7 )
+            // InternalDedalADL.g:14926:2: rule__Assembly__Group__6__Impl rule__Assembly__Group__7
             {
             pushFollow(FollowSets000.FOLLOW_5);
             rule__Assembly__Group__6__Impl();
@@ -39169,20 +39330,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__6__Impl"
-    // InternalDedalADL.g:14869:1: rule__Assembly__Group__6__Impl : ( 'component_instances' ) ;
+    // InternalDedalADL.g:14933:1: rule__Assembly__Group__6__Impl : ( 'component_instances' ) ;
     public final void rule__Assembly__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14873:1: ( ( 'component_instances' ) )
-            // InternalDedalADL.g:14874:1: ( 'component_instances' )
+            // InternalDedalADL.g:14937:1: ( ( 'component_instances' ) )
+            // InternalDedalADL.g:14938:1: ( 'component_instances' )
             {
-            // InternalDedalADL.g:14874:1: ( 'component_instances' )
-            // InternalDedalADL.g:14875:1: 'component_instances'
+            // InternalDedalADL.g:14938:1: ( 'component_instances' )
+            // InternalDedalADL.g:14939:1: 'component_instances'
             {
              before(grammarAccess.getAssemblyAccess().getComponent_instancesKeyword_6()); 
-            match(input,102,FollowSets000.FOLLOW_2); 
+            match(input,103,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getAssemblyAccess().getComponent_instancesKeyword_6()); 
 
             }
@@ -39206,16 +39367,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__7"
-    // InternalDedalADL.g:14888:1: rule__Assembly__Group__7 : rule__Assembly__Group__7__Impl rule__Assembly__Group__8 ;
+    // InternalDedalADL.g:14952:1: rule__Assembly__Group__7 : rule__Assembly__Group__7__Impl rule__Assembly__Group__8 ;
     public final void rule__Assembly__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14892:1: ( rule__Assembly__Group__7__Impl rule__Assembly__Group__8 )
-            // InternalDedalADL.g:14893:2: rule__Assembly__Group__7__Impl rule__Assembly__Group__8
+            // InternalDedalADL.g:14956:1: ( rule__Assembly__Group__7__Impl rule__Assembly__Group__8 )
+            // InternalDedalADL.g:14957:2: rule__Assembly__Group__7__Impl rule__Assembly__Group__8
             {
-            pushFollow(FollowSets000.FOLLOW_66);
+            pushFollow(FollowSets000.FOLLOW_67);
             rule__Assembly__Group__7__Impl();
 
             state._fsp--;
@@ -39244,17 +39405,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__7__Impl"
-    // InternalDedalADL.g:14900:1: rule__Assembly__Group__7__Impl : ( '(' ) ;
+    // InternalDedalADL.g:14964:1: rule__Assembly__Group__7__Impl : ( '(' ) ;
     public final void rule__Assembly__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14904:1: ( ( '(' ) )
-            // InternalDedalADL.g:14905:1: ( '(' )
+            // InternalDedalADL.g:14968:1: ( ( '(' ) )
+            // InternalDedalADL.g:14969:1: ( '(' )
             {
-            // InternalDedalADL.g:14905:1: ( '(' )
-            // InternalDedalADL.g:14906:1: '('
+            // InternalDedalADL.g:14969:1: ( '(' )
+            // InternalDedalADL.g:14970:1: '('
             {
              before(grammarAccess.getAssemblyAccess().getLeftParenthesisKeyword_7()); 
             match(input,45,FollowSets000.FOLLOW_2); 
@@ -39281,14 +39442,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__8"
-    // InternalDedalADL.g:14919:1: rule__Assembly__Group__8 : rule__Assembly__Group__8__Impl rule__Assembly__Group__9 ;
+    // InternalDedalADL.g:14983:1: rule__Assembly__Group__8 : rule__Assembly__Group__8__Impl rule__Assembly__Group__9 ;
     public final void rule__Assembly__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14923:1: ( rule__Assembly__Group__8__Impl rule__Assembly__Group__9 )
-            // InternalDedalADL.g:14924:2: rule__Assembly__Group__8__Impl rule__Assembly__Group__9
+            // InternalDedalADL.g:14987:1: ( rule__Assembly__Group__8__Impl rule__Assembly__Group__9 )
+            // InternalDedalADL.g:14988:2: rule__Assembly__Group__8__Impl rule__Assembly__Group__9
             {
             pushFollow(FollowSets000.FOLLOW_7);
             rule__Assembly__Group__8__Impl();
@@ -39319,21 +39480,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__8__Impl"
-    // InternalDedalADL.g:14931:1: rule__Assembly__Group__8__Impl : ( ( rule__Assembly__AssmComponentsAssignment_8 ) ) ;
+    // InternalDedalADL.g:14995:1: rule__Assembly__Group__8__Impl : ( ( rule__Assembly__AssmComponentsAssignment_8 ) ) ;
     public final void rule__Assembly__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14935:1: ( ( ( rule__Assembly__AssmComponentsAssignment_8 ) ) )
-            // InternalDedalADL.g:14936:1: ( ( rule__Assembly__AssmComponentsAssignment_8 ) )
+            // InternalDedalADL.g:14999:1: ( ( ( rule__Assembly__AssmComponentsAssignment_8 ) ) )
+            // InternalDedalADL.g:15000:1: ( ( rule__Assembly__AssmComponentsAssignment_8 ) )
             {
-            // InternalDedalADL.g:14936:1: ( ( rule__Assembly__AssmComponentsAssignment_8 ) )
-            // InternalDedalADL.g:14937:1: ( rule__Assembly__AssmComponentsAssignment_8 )
+            // InternalDedalADL.g:15000:1: ( ( rule__Assembly__AssmComponentsAssignment_8 ) )
+            // InternalDedalADL.g:15001:1: ( rule__Assembly__AssmComponentsAssignment_8 )
             {
              before(grammarAccess.getAssemblyAccess().getAssmComponentsAssignment_8()); 
-            // InternalDedalADL.g:14938:1: ( rule__Assembly__AssmComponentsAssignment_8 )
-            // InternalDedalADL.g:14938:2: rule__Assembly__AssmComponentsAssignment_8
+            // InternalDedalADL.g:15002:1: ( rule__Assembly__AssmComponentsAssignment_8 )
+            // InternalDedalADL.g:15002:2: rule__Assembly__AssmComponentsAssignment_8
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__AssmComponentsAssignment_8();
@@ -39366,14 +39527,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__9"
-    // InternalDedalADL.g:14948:1: rule__Assembly__Group__9 : rule__Assembly__Group__9__Impl rule__Assembly__Group__10 ;
+    // InternalDedalADL.g:15012:1: rule__Assembly__Group__9 : rule__Assembly__Group__9__Impl rule__Assembly__Group__10 ;
     public final void rule__Assembly__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14952:1: ( rule__Assembly__Group__9__Impl rule__Assembly__Group__10 )
-            // InternalDedalADL.g:14953:2: rule__Assembly__Group__9__Impl rule__Assembly__Group__10
+            // InternalDedalADL.g:15016:1: ( rule__Assembly__Group__9__Impl rule__Assembly__Group__10 )
+            // InternalDedalADL.g:15017:2: rule__Assembly__Group__9__Impl rule__Assembly__Group__10
             {
             pushFollow(FollowSets000.FOLLOW_7);
             rule__Assembly__Group__9__Impl();
@@ -39404,20 +39565,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__9__Impl"
-    // InternalDedalADL.g:14960:1: rule__Assembly__Group__9__Impl : ( ( rule__Assembly__Group_9__0 )* ) ;
+    // InternalDedalADL.g:15024:1: rule__Assembly__Group__9__Impl : ( ( rule__Assembly__Group_9__0 )* ) ;
     public final void rule__Assembly__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14964:1: ( ( ( rule__Assembly__Group_9__0 )* ) )
-            // InternalDedalADL.g:14965:1: ( ( rule__Assembly__Group_9__0 )* )
+            // InternalDedalADL.g:15028:1: ( ( ( rule__Assembly__Group_9__0 )* ) )
+            // InternalDedalADL.g:15029:1: ( ( rule__Assembly__Group_9__0 )* )
             {
-            // InternalDedalADL.g:14965:1: ( ( rule__Assembly__Group_9__0 )* )
-            // InternalDedalADL.g:14966:1: ( rule__Assembly__Group_9__0 )*
+            // InternalDedalADL.g:15029:1: ( ( rule__Assembly__Group_9__0 )* )
+            // InternalDedalADL.g:15030:1: ( rule__Assembly__Group_9__0 )*
             {
              before(grammarAccess.getAssemblyAccess().getGroup_9()); 
-            // InternalDedalADL.g:14967:1: ( rule__Assembly__Group_9__0 )*
+            // InternalDedalADL.g:15031:1: ( rule__Assembly__Group_9__0 )*
             loop108:
             do {
                 int alt108=2;
@@ -39430,7 +39591,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
                 switch (alt108) {
             	case 1 :
-            	    // InternalDedalADL.g:14967:2: rule__Assembly__Group_9__0
+            	    // InternalDedalADL.g:15031:2: rule__Assembly__Group_9__0
             	    {
             	    pushFollow(FollowSets000.FOLLOW_8);
             	    rule__Assembly__Group_9__0();
@@ -39469,16 +39630,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__10"
-    // InternalDedalADL.g:14977:1: rule__Assembly__Group__10 : rule__Assembly__Group__10__Impl rule__Assembly__Group__11 ;
+    // InternalDedalADL.g:15041:1: rule__Assembly__Group__10 : rule__Assembly__Group__10__Impl rule__Assembly__Group__11 ;
     public final void rule__Assembly__Group__10() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14981:1: ( rule__Assembly__Group__10__Impl rule__Assembly__Group__11 )
-            // InternalDedalADL.g:14982:2: rule__Assembly__Group__10__Impl rule__Assembly__Group__11
+            // InternalDedalADL.g:15045:1: ( rule__Assembly__Group__10__Impl rule__Assembly__Group__11 )
+            // InternalDedalADL.g:15046:2: rule__Assembly__Group__10__Impl rule__Assembly__Group__11
             {
-            pushFollow(FollowSets000.FOLLOW_67);
+            pushFollow(FollowSets000.FOLLOW_68);
             rule__Assembly__Group__10__Impl();
 
             state._fsp--;
@@ -39507,17 +39668,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__10__Impl"
-    // InternalDedalADL.g:14989:1: rule__Assembly__Group__10__Impl : ( ')' ) ;
+    // InternalDedalADL.g:15053:1: rule__Assembly__Group__10__Impl : ( ')' ) ;
     public final void rule__Assembly__Group__10__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:14993:1: ( ( ')' ) )
-            // InternalDedalADL.g:14994:1: ( ')' )
+            // InternalDedalADL.g:15057:1: ( ( ')' ) )
+            // InternalDedalADL.g:15058:1: ( ')' )
             {
-            // InternalDedalADL.g:14994:1: ( ')' )
-            // InternalDedalADL.g:14995:1: ')'
+            // InternalDedalADL.g:15058:1: ( ')' )
+            // InternalDedalADL.g:15059:1: ')'
             {
              before(grammarAccess.getAssemblyAccess().getRightParenthesisKeyword_10()); 
             match(input,46,FollowSets000.FOLLOW_2); 
@@ -39544,16 +39705,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__11"
-    // InternalDedalADL.g:15008:1: rule__Assembly__Group__11 : rule__Assembly__Group__11__Impl rule__Assembly__Group__12 ;
+    // InternalDedalADL.g:15072:1: rule__Assembly__Group__11 : rule__Assembly__Group__11__Impl rule__Assembly__Group__12 ;
     public final void rule__Assembly__Group__11() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15012:1: ( rule__Assembly__Group__11__Impl rule__Assembly__Group__12 )
-            // InternalDedalADL.g:15013:2: rule__Assembly__Group__11__Impl rule__Assembly__Group__12
+            // InternalDedalADL.g:15076:1: ( rule__Assembly__Group__11__Impl rule__Assembly__Group__12 )
+            // InternalDedalADL.g:15077:2: rule__Assembly__Group__11__Impl rule__Assembly__Group__12
             {
-            pushFollow(FollowSets000.FOLLOW_67);
+            pushFollow(FollowSets000.FOLLOW_68);
             rule__Assembly__Group__11__Impl();
 
             state._fsp--;
@@ -39582,29 +39743,29 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__11__Impl"
-    // InternalDedalADL.g:15020:1: rule__Assembly__Group__11__Impl : ( ( rule__Assembly__Group_11__0 )? ) ;
+    // InternalDedalADL.g:15084:1: rule__Assembly__Group__11__Impl : ( ( rule__Assembly__Group_11__0 )? ) ;
     public final void rule__Assembly__Group__11__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15024:1: ( ( ( rule__Assembly__Group_11__0 )? ) )
-            // InternalDedalADL.g:15025:1: ( ( rule__Assembly__Group_11__0 )? )
+            // InternalDedalADL.g:15088:1: ( ( ( rule__Assembly__Group_11__0 )? ) )
+            // InternalDedalADL.g:15089:1: ( ( rule__Assembly__Group_11__0 )? )
             {
-            // InternalDedalADL.g:15025:1: ( ( rule__Assembly__Group_11__0 )? )
-            // InternalDedalADL.g:15026:1: ( rule__Assembly__Group_11__0 )?
+            // InternalDedalADL.g:15089:1: ( ( rule__Assembly__Group_11__0 )? )
+            // InternalDedalADL.g:15090:1: ( rule__Assembly__Group_11__0 )?
             {
              before(grammarAccess.getAssemblyAccess().getGroup_11()); 
-            // InternalDedalADL.g:15027:1: ( rule__Assembly__Group_11__0 )?
+            // InternalDedalADL.g:15091:1: ( rule__Assembly__Group_11__0 )?
             int alt109=2;
             int LA109_0 = input.LA(1);
 
-            if ( (LA109_0==103) ) {
+            if ( (LA109_0==104) ) {
                 alt109=1;
             }
             switch (alt109) {
                 case 1 :
-                    // InternalDedalADL.g:15027:2: rule__Assembly__Group_11__0
+                    // InternalDedalADL.g:15091:2: rule__Assembly__Group_11__0
                     {
                     pushFollow(FollowSets000.FOLLOW_2);
                     rule__Assembly__Group_11__0();
@@ -39640,16 +39801,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__12"
-    // InternalDedalADL.g:15037:1: rule__Assembly__Group__12 : rule__Assembly__Group__12__Impl rule__Assembly__Group__13 ;
+    // InternalDedalADL.g:15101:1: rule__Assembly__Group__12 : rule__Assembly__Group__12__Impl rule__Assembly__Group__13 ;
     public final void rule__Assembly__Group__12() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15041:1: ( rule__Assembly__Group__12__Impl rule__Assembly__Group__13 )
-            // InternalDedalADL.g:15042:2: rule__Assembly__Group__12__Impl rule__Assembly__Group__13
+            // InternalDedalADL.g:15105:1: ( rule__Assembly__Group__12__Impl rule__Assembly__Group__13 )
+            // InternalDedalADL.g:15106:2: rule__Assembly__Group__12__Impl rule__Assembly__Group__13
             {
-            pushFollow(FollowSets000.FOLLOW_67);
+            pushFollow(FollowSets000.FOLLOW_68);
             rule__Assembly__Group__12__Impl();
 
             state._fsp--;
@@ -39678,20 +39839,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__12__Impl"
-    // InternalDedalADL.g:15049:1: rule__Assembly__Group__12__Impl : ( ( rule__Assembly__Group_12__0 )? ) ;
+    // InternalDedalADL.g:15113:1: rule__Assembly__Group__12__Impl : ( ( rule__Assembly__Group_12__0 )? ) ;
     public final void rule__Assembly__Group__12__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15053:1: ( ( ( rule__Assembly__Group_12__0 )? ) )
-            // InternalDedalADL.g:15054:1: ( ( rule__Assembly__Group_12__0 )? )
+            // InternalDedalADL.g:15117:1: ( ( ( rule__Assembly__Group_12__0 )? ) )
+            // InternalDedalADL.g:15118:1: ( ( rule__Assembly__Group_12__0 )? )
             {
-            // InternalDedalADL.g:15054:1: ( ( rule__Assembly__Group_12__0 )? )
-            // InternalDedalADL.g:15055:1: ( rule__Assembly__Group_12__0 )?
+            // InternalDedalADL.g:15118:1: ( ( rule__Assembly__Group_12__0 )? )
+            // InternalDedalADL.g:15119:1: ( rule__Assembly__Group_12__0 )?
             {
              before(grammarAccess.getAssemblyAccess().getGroup_12()); 
-            // InternalDedalADL.g:15056:1: ( rule__Assembly__Group_12__0 )?
+            // InternalDedalADL.g:15120:1: ( rule__Assembly__Group_12__0 )?
             int alt110=2;
             int LA110_0 = input.LA(1);
 
@@ -39700,7 +39861,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             }
             switch (alt110) {
                 case 1 :
-                    // InternalDedalADL.g:15056:2: rule__Assembly__Group_12__0
+                    // InternalDedalADL.g:15120:2: rule__Assembly__Group_12__0
                     {
                     pushFollow(FollowSets000.FOLLOW_2);
                     rule__Assembly__Group_12__0();
@@ -39736,16 +39897,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__13"
-    // InternalDedalADL.g:15066:1: rule__Assembly__Group__13 : rule__Assembly__Group__13__Impl rule__Assembly__Group__14 ;
+    // InternalDedalADL.g:15130:1: rule__Assembly__Group__13 : rule__Assembly__Group__13__Impl rule__Assembly__Group__14 ;
     public final void rule__Assembly__Group__13() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15070:1: ( rule__Assembly__Group__13__Impl rule__Assembly__Group__14 )
-            // InternalDedalADL.g:15071:2: rule__Assembly__Group__13__Impl rule__Assembly__Group__14
+            // InternalDedalADL.g:15134:1: ( rule__Assembly__Group__13__Impl rule__Assembly__Group__14 )
+            // InternalDedalADL.g:15135:2: rule__Assembly__Group__13__Impl rule__Assembly__Group__14
             {
-            pushFollow(FollowSets000.FOLLOW_67);
+            pushFollow(FollowSets000.FOLLOW_68);
             rule__Assembly__Group__13__Impl();
 
             state._fsp--;
@@ -39774,20 +39935,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__13__Impl"
-    // InternalDedalADL.g:15078:1: rule__Assembly__Group__13__Impl : ( ( rule__Assembly__Group_13__0 )? ) ;
+    // InternalDedalADL.g:15142:1: rule__Assembly__Group__13__Impl : ( ( rule__Assembly__Group_13__0 )? ) ;
     public final void rule__Assembly__Group__13__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15082:1: ( ( ( rule__Assembly__Group_13__0 )? ) )
-            // InternalDedalADL.g:15083:1: ( ( rule__Assembly__Group_13__0 )? )
+            // InternalDedalADL.g:15146:1: ( ( ( rule__Assembly__Group_13__0 )? ) )
+            // InternalDedalADL.g:15147:1: ( ( rule__Assembly__Group_13__0 )? )
             {
-            // InternalDedalADL.g:15083:1: ( ( rule__Assembly__Group_13__0 )? )
-            // InternalDedalADL.g:15084:1: ( rule__Assembly__Group_13__0 )?
+            // InternalDedalADL.g:15147:1: ( ( rule__Assembly__Group_13__0 )? )
+            // InternalDedalADL.g:15148:1: ( rule__Assembly__Group_13__0 )?
             {
              before(grammarAccess.getAssemblyAccess().getGroup_13()); 
-            // InternalDedalADL.g:15085:1: ( rule__Assembly__Group_13__0 )?
+            // InternalDedalADL.g:15149:1: ( rule__Assembly__Group_13__0 )?
             int alt111=2;
             int LA111_0 = input.LA(1);
 
@@ -39796,7 +39957,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             }
             switch (alt111) {
                 case 1 :
-                    // InternalDedalADL.g:15085:2: rule__Assembly__Group_13__0
+                    // InternalDedalADL.g:15149:2: rule__Assembly__Group_13__0
                     {
                     pushFollow(FollowSets000.FOLLOW_2);
                     rule__Assembly__Group_13__0();
@@ -39832,16 +39993,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__14"
-    // InternalDedalADL.g:15095:1: rule__Assembly__Group__14 : rule__Assembly__Group__14__Impl rule__Assembly__Group__15 ;
+    // InternalDedalADL.g:15159:1: rule__Assembly__Group__14 : rule__Assembly__Group__14__Impl rule__Assembly__Group__15 ;
     public final void rule__Assembly__Group__14() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15099:1: ( rule__Assembly__Group__14__Impl rule__Assembly__Group__15 )
-            // InternalDedalADL.g:15100:2: rule__Assembly__Group__14__Impl rule__Assembly__Group__15
+            // InternalDedalADL.g:15163:1: ( rule__Assembly__Group__14__Impl rule__Assembly__Group__15 )
+            // InternalDedalADL.g:15164:2: rule__Assembly__Group__14__Impl rule__Assembly__Group__15
             {
-            pushFollow(FollowSets000.FOLLOW_67);
+            pushFollow(FollowSets000.FOLLOW_68);
             rule__Assembly__Group__14__Impl();
 
             state._fsp--;
@@ -39870,20 +40031,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__14__Impl"
-    // InternalDedalADL.g:15107:1: rule__Assembly__Group__14__Impl : ( ( rule__Assembly__Group_14__0 )? ) ;
+    // InternalDedalADL.g:15171:1: rule__Assembly__Group__14__Impl : ( ( rule__Assembly__Group_14__0 )? ) ;
     public final void rule__Assembly__Group__14__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15111:1: ( ( ( rule__Assembly__Group_14__0 )? ) )
-            // InternalDedalADL.g:15112:1: ( ( rule__Assembly__Group_14__0 )? )
+            // InternalDedalADL.g:15175:1: ( ( ( rule__Assembly__Group_14__0 )? ) )
+            // InternalDedalADL.g:15176:1: ( ( rule__Assembly__Group_14__0 )? )
             {
-            // InternalDedalADL.g:15112:1: ( ( rule__Assembly__Group_14__0 )? )
-            // InternalDedalADL.g:15113:1: ( rule__Assembly__Group_14__0 )?
+            // InternalDedalADL.g:15176:1: ( ( rule__Assembly__Group_14__0 )? )
+            // InternalDedalADL.g:15177:1: ( rule__Assembly__Group_14__0 )?
             {
              before(grammarAccess.getAssemblyAccess().getGroup_14()); 
-            // InternalDedalADL.g:15114:1: ( rule__Assembly__Group_14__0 )?
+            // InternalDedalADL.g:15178:1: ( rule__Assembly__Group_14__0 )?
             int alt112=2;
             int LA112_0 = input.LA(1);
 
@@ -39892,7 +40053,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             }
             switch (alt112) {
                 case 1 :
-                    // InternalDedalADL.g:15114:2: rule__Assembly__Group_14__0
+                    // InternalDedalADL.g:15178:2: rule__Assembly__Group_14__0
                     {
                     pushFollow(FollowSets000.FOLLOW_2);
                     rule__Assembly__Group_14__0();
@@ -39928,14 +40089,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__15"
-    // InternalDedalADL.g:15124:1: rule__Assembly__Group__15 : rule__Assembly__Group__15__Impl ;
+    // InternalDedalADL.g:15188:1: rule__Assembly__Group__15 : rule__Assembly__Group__15__Impl ;
     public final void rule__Assembly__Group__15() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15128:1: ( rule__Assembly__Group__15__Impl )
-            // InternalDedalADL.g:15129:2: rule__Assembly__Group__15__Impl
+            // InternalDedalADL.g:15192:1: ( rule__Assembly__Group__15__Impl )
+            // InternalDedalADL.g:15193:2: rule__Assembly__Group__15__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__Group__15__Impl();
@@ -39961,29 +40122,29 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group__15__Impl"
-    // InternalDedalADL.g:15135:1: rule__Assembly__Group__15__Impl : ( ( rule__Assembly__Group_15__0 )? ) ;
+    // InternalDedalADL.g:15199:1: rule__Assembly__Group__15__Impl : ( ( rule__Assembly__Group_15__0 )? ) ;
     public final void rule__Assembly__Group__15__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15139:1: ( ( ( rule__Assembly__Group_15__0 )? ) )
-            // InternalDedalADL.g:15140:1: ( ( rule__Assembly__Group_15__0 )? )
+            // InternalDedalADL.g:15203:1: ( ( ( rule__Assembly__Group_15__0 )? ) )
+            // InternalDedalADL.g:15204:1: ( ( rule__Assembly__Group_15__0 )? )
             {
-            // InternalDedalADL.g:15140:1: ( ( rule__Assembly__Group_15__0 )? )
-            // InternalDedalADL.g:15141:1: ( rule__Assembly__Group_15__0 )?
+            // InternalDedalADL.g:15204:1: ( ( rule__Assembly__Group_15__0 )? )
+            // InternalDedalADL.g:15205:1: ( rule__Assembly__Group_15__0 )?
             {
              before(grammarAccess.getAssemblyAccess().getGroup_15()); 
-            // InternalDedalADL.g:15142:1: ( rule__Assembly__Group_15__0 )?
+            // InternalDedalADL.g:15206:1: ( rule__Assembly__Group_15__0 )?
             int alt113=2;
             int LA113_0 = input.LA(1);
 
-            if ( (LA113_0==104) ) {
+            if ( (LA113_0==105) ) {
                 alt113=1;
             }
             switch (alt113) {
                 case 1 :
-                    // InternalDedalADL.g:15142:2: rule__Assembly__Group_15__0
+                    // InternalDedalADL.g:15206:2: rule__Assembly__Group_15__0
                     {
                     pushFollow(FollowSets000.FOLLOW_2);
                     rule__Assembly__Group_15__0();
@@ -40019,14 +40180,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_4__0"
-    // InternalDedalADL.g:15184:1: rule__Assembly__Group_4__0 : rule__Assembly__Group_4__0__Impl rule__Assembly__Group_4__1 ;
+    // InternalDedalADL.g:15248:1: rule__Assembly__Group_4__0 : rule__Assembly__Group_4__0__Impl rule__Assembly__Group_4__1 ;
     public final void rule__Assembly__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15188:1: ( rule__Assembly__Group_4__0__Impl rule__Assembly__Group_4__1 )
-            // InternalDedalADL.g:15189:2: rule__Assembly__Group_4__0__Impl rule__Assembly__Group_4__1
+            // InternalDedalADL.g:15252:1: ( rule__Assembly__Group_4__0__Impl rule__Assembly__Group_4__1 )
+            // InternalDedalADL.g:15253:2: rule__Assembly__Group_4__0__Impl rule__Assembly__Group_4__1
             {
             pushFollow(FollowSets000.FOLLOW_24);
             rule__Assembly__Group_4__0__Impl();
@@ -40057,17 +40218,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_4__0__Impl"
-    // InternalDedalADL.g:15196:1: rule__Assembly__Group_4__0__Impl : ( '(' ) ;
+    // InternalDedalADL.g:15260:1: rule__Assembly__Group_4__0__Impl : ( '(' ) ;
     public final void rule__Assembly__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15200:1: ( ( '(' ) )
-            // InternalDedalADL.g:15201:1: ( '(' )
+            // InternalDedalADL.g:15264:1: ( ( '(' ) )
+            // InternalDedalADL.g:15265:1: ( '(' )
             {
-            // InternalDedalADL.g:15201:1: ( '(' )
-            // InternalDedalADL.g:15202:1: '('
+            // InternalDedalADL.g:15265:1: ( '(' )
+            // InternalDedalADL.g:15266:1: '('
             {
              before(grammarAccess.getAssemblyAccess().getLeftParenthesisKeyword_4_0()); 
             match(input,45,FollowSets000.FOLLOW_2); 
@@ -40094,14 +40255,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_4__1"
-    // InternalDedalADL.g:15215:1: rule__Assembly__Group_4__1 : rule__Assembly__Group_4__1__Impl rule__Assembly__Group_4__2 ;
+    // InternalDedalADL.g:15279:1: rule__Assembly__Group_4__1 : rule__Assembly__Group_4__1__Impl rule__Assembly__Group_4__2 ;
     public final void rule__Assembly__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15219:1: ( rule__Assembly__Group_4__1__Impl rule__Assembly__Group_4__2 )
-            // InternalDedalADL.g:15220:2: rule__Assembly__Group_4__1__Impl rule__Assembly__Group_4__2
+            // InternalDedalADL.g:15283:1: ( rule__Assembly__Group_4__1__Impl rule__Assembly__Group_4__2 )
+            // InternalDedalADL.g:15284:2: rule__Assembly__Group_4__1__Impl rule__Assembly__Group_4__2
             {
             pushFollow(FollowSets000.FOLLOW_42);
             rule__Assembly__Group_4__1__Impl();
@@ -40132,17 +40293,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_4__1__Impl"
-    // InternalDedalADL.g:15227:1: rule__Assembly__Group_4__1__Impl : ( RULE_REVISION_NUMB ) ;
+    // InternalDedalADL.g:15291:1: rule__Assembly__Group_4__1__Impl : ( RULE_REVISION_NUMB ) ;
     public final void rule__Assembly__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15231:1: ( ( RULE_REVISION_NUMB ) )
-            // InternalDedalADL.g:15232:1: ( RULE_REVISION_NUMB )
+            // InternalDedalADL.g:15295:1: ( ( RULE_REVISION_NUMB ) )
+            // InternalDedalADL.g:15296:1: ( RULE_REVISION_NUMB )
             {
-            // InternalDedalADL.g:15232:1: ( RULE_REVISION_NUMB )
-            // InternalDedalADL.g:15233:1: RULE_REVISION_NUMB
+            // InternalDedalADL.g:15296:1: ( RULE_REVISION_NUMB )
+            // InternalDedalADL.g:15297:1: RULE_REVISION_NUMB
             {
              before(grammarAccess.getAssemblyAccess().getREVISION_NUMBTerminalRuleCall_4_1()); 
             match(input,RULE_REVISION_NUMB,FollowSets000.FOLLOW_2); 
@@ -40169,14 +40330,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_4__2"
-    // InternalDedalADL.g:15244:1: rule__Assembly__Group_4__2 : rule__Assembly__Group_4__2__Impl ;
+    // InternalDedalADL.g:15308:1: rule__Assembly__Group_4__2 : rule__Assembly__Group_4__2__Impl ;
     public final void rule__Assembly__Group_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15248:1: ( rule__Assembly__Group_4__2__Impl )
-            // InternalDedalADL.g:15249:2: rule__Assembly__Group_4__2__Impl
+            // InternalDedalADL.g:15312:1: ( rule__Assembly__Group_4__2__Impl )
+            // InternalDedalADL.g:15313:2: rule__Assembly__Group_4__2__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__Group_4__2__Impl();
@@ -40202,17 +40363,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_4__2__Impl"
-    // InternalDedalADL.g:15255:1: rule__Assembly__Group_4__2__Impl : ( ')' ) ;
+    // InternalDedalADL.g:15319:1: rule__Assembly__Group_4__2__Impl : ( ')' ) ;
     public final void rule__Assembly__Group_4__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15259:1: ( ( ')' ) )
-            // InternalDedalADL.g:15260:1: ( ')' )
+            // InternalDedalADL.g:15323:1: ( ( ')' ) )
+            // InternalDedalADL.g:15324:1: ( ')' )
             {
-            // InternalDedalADL.g:15260:1: ( ')' )
-            // InternalDedalADL.g:15261:1: ')'
+            // InternalDedalADL.g:15324:1: ( ')' )
+            // InternalDedalADL.g:15325:1: ')'
             {
              before(grammarAccess.getAssemblyAccess().getRightParenthesisKeyword_4_2()); 
             match(input,46,FollowSets000.FOLLOW_2); 
@@ -40239,14 +40400,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_5__0"
-    // InternalDedalADL.g:15280:1: rule__Assembly__Group_5__0 : rule__Assembly__Group_5__0__Impl rule__Assembly__Group_5__1 ;
+    // InternalDedalADL.g:15344:1: rule__Assembly__Group_5__0 : rule__Assembly__Group_5__0__Impl rule__Assembly__Group_5__1 ;
     public final void rule__Assembly__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15284:1: ( rule__Assembly__Group_5__0__Impl rule__Assembly__Group_5__1 )
-            // InternalDedalADL.g:15285:2: rule__Assembly__Group_5__0__Impl rule__Assembly__Group_5__1
+            // InternalDedalADL.g:15348:1: ( rule__Assembly__Group_5__0__Impl rule__Assembly__Group_5__1 )
+            // InternalDedalADL.g:15349:2: rule__Assembly__Group_5__0__Impl rule__Assembly__Group_5__1
             {
             pushFollow(FollowSets000.FOLLOW_24);
             rule__Assembly__Group_5__0__Impl();
@@ -40277,17 +40438,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_5__0__Impl"
-    // InternalDedalADL.g:15292:1: rule__Assembly__Group_5__0__Impl : ( 'versionID' ) ;
+    // InternalDedalADL.g:15356:1: rule__Assembly__Group_5__0__Impl : ( 'versionID' ) ;
     public final void rule__Assembly__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15296:1: ( ( 'versionID' ) )
-            // InternalDedalADL.g:15297:1: ( 'versionID' )
+            // InternalDedalADL.g:15360:1: ( ( 'versionID' ) )
+            // InternalDedalADL.g:15361:1: ( 'versionID' )
             {
-            // InternalDedalADL.g:15297:1: ( 'versionID' )
-            // InternalDedalADL.g:15298:1: 'versionID'
+            // InternalDedalADL.g:15361:1: ( 'versionID' )
+            // InternalDedalADL.g:15362:1: 'versionID'
             {
              before(grammarAccess.getAssemblyAccess().getVersionIDKeyword_5_0()); 
             match(input,60,FollowSets000.FOLLOW_2); 
@@ -40314,14 +40475,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_5__1"
-    // InternalDedalADL.g:15311:1: rule__Assembly__Group_5__1 : rule__Assembly__Group_5__1__Impl ;
+    // InternalDedalADL.g:15375:1: rule__Assembly__Group_5__1 : rule__Assembly__Group_5__1__Impl ;
     public final void rule__Assembly__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15315:1: ( rule__Assembly__Group_5__1__Impl )
-            // InternalDedalADL.g:15316:2: rule__Assembly__Group_5__1__Impl
+            // InternalDedalADL.g:15379:1: ( rule__Assembly__Group_5__1__Impl )
+            // InternalDedalADL.g:15380:2: rule__Assembly__Group_5__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__Group_5__1__Impl();
@@ -40347,17 +40508,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_5__1__Impl"
-    // InternalDedalADL.g:15322:1: rule__Assembly__Group_5__1__Impl : ( RULE_REVISION_NUMB ) ;
+    // InternalDedalADL.g:15386:1: rule__Assembly__Group_5__1__Impl : ( RULE_REVISION_NUMB ) ;
     public final void rule__Assembly__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15326:1: ( ( RULE_REVISION_NUMB ) )
-            // InternalDedalADL.g:15327:1: ( RULE_REVISION_NUMB )
+            // InternalDedalADL.g:15390:1: ( ( RULE_REVISION_NUMB ) )
+            // InternalDedalADL.g:15391:1: ( RULE_REVISION_NUMB )
             {
-            // InternalDedalADL.g:15327:1: ( RULE_REVISION_NUMB )
-            // InternalDedalADL.g:15328:1: RULE_REVISION_NUMB
+            // InternalDedalADL.g:15391:1: ( RULE_REVISION_NUMB )
+            // InternalDedalADL.g:15392:1: RULE_REVISION_NUMB
             {
              before(grammarAccess.getAssemblyAccess().getREVISION_NUMBTerminalRuleCall_5_1()); 
             match(input,RULE_REVISION_NUMB,FollowSets000.FOLLOW_2); 
@@ -40384,16 +40545,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_9__0"
-    // InternalDedalADL.g:15343:1: rule__Assembly__Group_9__0 : rule__Assembly__Group_9__0__Impl rule__Assembly__Group_9__1 ;
+    // InternalDedalADL.g:15407:1: rule__Assembly__Group_9__0 : rule__Assembly__Group_9__0__Impl rule__Assembly__Group_9__1 ;
     public final void rule__Assembly__Group_9__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15347:1: ( rule__Assembly__Group_9__0__Impl rule__Assembly__Group_9__1 )
-            // InternalDedalADL.g:15348:2: rule__Assembly__Group_9__0__Impl rule__Assembly__Group_9__1
+            // InternalDedalADL.g:15411:1: ( rule__Assembly__Group_9__0__Impl rule__Assembly__Group_9__1 )
+            // InternalDedalADL.g:15412:2: rule__Assembly__Group_9__0__Impl rule__Assembly__Group_9__1
             {
-            pushFollow(FollowSets000.FOLLOW_66);
+            pushFollow(FollowSets000.FOLLOW_67);
             rule__Assembly__Group_9__0__Impl();
 
             state._fsp--;
@@ -40422,17 +40583,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_9__0__Impl"
-    // InternalDedalADL.g:15355:1: rule__Assembly__Group_9__0__Impl : ( ';' ) ;
+    // InternalDedalADL.g:15419:1: rule__Assembly__Group_9__0__Impl : ( ';' ) ;
     public final void rule__Assembly__Group_9__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15359:1: ( ( ';' ) )
-            // InternalDedalADL.g:15360:1: ( ';' )
+            // InternalDedalADL.g:15423:1: ( ( ';' ) )
+            // InternalDedalADL.g:15424:1: ( ';' )
             {
-            // InternalDedalADL.g:15360:1: ( ';' )
-            // InternalDedalADL.g:15361:1: ';'
+            // InternalDedalADL.g:15424:1: ( ';' )
+            // InternalDedalADL.g:15425:1: ';'
             {
              before(grammarAccess.getAssemblyAccess().getSemicolonKeyword_9_0()); 
             match(input,47,FollowSets000.FOLLOW_2); 
@@ -40459,14 +40620,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_9__1"
-    // InternalDedalADL.g:15374:1: rule__Assembly__Group_9__1 : rule__Assembly__Group_9__1__Impl ;
+    // InternalDedalADL.g:15438:1: rule__Assembly__Group_9__1 : rule__Assembly__Group_9__1__Impl ;
     public final void rule__Assembly__Group_9__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15378:1: ( rule__Assembly__Group_9__1__Impl )
-            // InternalDedalADL.g:15379:2: rule__Assembly__Group_9__1__Impl
+            // InternalDedalADL.g:15442:1: ( rule__Assembly__Group_9__1__Impl )
+            // InternalDedalADL.g:15443:2: rule__Assembly__Group_9__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__Group_9__1__Impl();
@@ -40492,21 +40653,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_9__1__Impl"
-    // InternalDedalADL.g:15385:1: rule__Assembly__Group_9__1__Impl : ( ( rule__Assembly__AssmComponentsAssignment_9_1 ) ) ;
+    // InternalDedalADL.g:15449:1: rule__Assembly__Group_9__1__Impl : ( ( rule__Assembly__AssmComponentsAssignment_9_1 ) ) ;
     public final void rule__Assembly__Group_9__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15389:1: ( ( ( rule__Assembly__AssmComponentsAssignment_9_1 ) ) )
-            // InternalDedalADL.g:15390:1: ( ( rule__Assembly__AssmComponentsAssignment_9_1 ) )
+            // InternalDedalADL.g:15453:1: ( ( ( rule__Assembly__AssmComponentsAssignment_9_1 ) ) )
+            // InternalDedalADL.g:15454:1: ( ( rule__Assembly__AssmComponentsAssignment_9_1 ) )
             {
-            // InternalDedalADL.g:15390:1: ( ( rule__Assembly__AssmComponentsAssignment_9_1 ) )
-            // InternalDedalADL.g:15391:1: ( rule__Assembly__AssmComponentsAssignment_9_1 )
+            // InternalDedalADL.g:15454:1: ( ( rule__Assembly__AssmComponentsAssignment_9_1 ) )
+            // InternalDedalADL.g:15455:1: ( rule__Assembly__AssmComponentsAssignment_9_1 )
             {
              before(grammarAccess.getAssemblyAccess().getAssmComponentsAssignment_9_1()); 
-            // InternalDedalADL.g:15392:1: ( rule__Assembly__AssmComponentsAssignment_9_1 )
-            // InternalDedalADL.g:15392:2: rule__Assembly__AssmComponentsAssignment_9_1
+            // InternalDedalADL.g:15456:1: ( rule__Assembly__AssmComponentsAssignment_9_1 )
+            // InternalDedalADL.g:15456:2: rule__Assembly__AssmComponentsAssignment_9_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__AssmComponentsAssignment_9_1();
@@ -40539,14 +40700,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11__0"
-    // InternalDedalADL.g:15406:1: rule__Assembly__Group_11__0 : rule__Assembly__Group_11__0__Impl rule__Assembly__Group_11__1 ;
+    // InternalDedalADL.g:15470:1: rule__Assembly__Group_11__0 : rule__Assembly__Group_11__0__Impl rule__Assembly__Group_11__1 ;
     public final void rule__Assembly__Group_11__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15410:1: ( rule__Assembly__Group_11__0__Impl rule__Assembly__Group_11__1 )
-            // InternalDedalADL.g:15411:2: rule__Assembly__Group_11__0__Impl rule__Assembly__Group_11__1
+            // InternalDedalADL.g:15474:1: ( rule__Assembly__Group_11__0__Impl rule__Assembly__Group_11__1 )
+            // InternalDedalADL.g:15475:2: rule__Assembly__Group_11__0__Impl rule__Assembly__Group_11__1
             {
             pushFollow(FollowSets000.FOLLOW_5);
             rule__Assembly__Group_11__0__Impl();
@@ -40577,20 +40738,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11__0__Impl"
-    // InternalDedalADL.g:15418:1: rule__Assembly__Group_11__0__Impl : ( 'assembly_constraints' ) ;
+    // InternalDedalADL.g:15482:1: rule__Assembly__Group_11__0__Impl : ( 'assembly_constraints' ) ;
     public final void rule__Assembly__Group_11__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15422:1: ( ( 'assembly_constraints' ) )
-            // InternalDedalADL.g:15423:1: ( 'assembly_constraints' )
+            // InternalDedalADL.g:15486:1: ( ( 'assembly_constraints' ) )
+            // InternalDedalADL.g:15487:1: ( 'assembly_constraints' )
             {
-            // InternalDedalADL.g:15423:1: ( 'assembly_constraints' )
-            // InternalDedalADL.g:15424:1: 'assembly_constraints'
+            // InternalDedalADL.g:15487:1: ( 'assembly_constraints' )
+            // InternalDedalADL.g:15488:1: 'assembly_constraints'
             {
              before(grammarAccess.getAssemblyAccess().getAssembly_constraintsKeyword_11_0()); 
-            match(input,103,FollowSets000.FOLLOW_2); 
+            match(input,104,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getAssemblyAccess().getAssembly_constraintsKeyword_11_0()); 
 
             }
@@ -40614,16 +40775,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11__1"
-    // InternalDedalADL.g:15437:1: rule__Assembly__Group_11__1 : rule__Assembly__Group_11__1__Impl rule__Assembly__Group_11__2 ;
+    // InternalDedalADL.g:15501:1: rule__Assembly__Group_11__1 : rule__Assembly__Group_11__1__Impl rule__Assembly__Group_11__2 ;
     public final void rule__Assembly__Group_11__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15441:1: ( rule__Assembly__Group_11__1__Impl rule__Assembly__Group_11__2 )
-            // InternalDedalADL.g:15442:2: rule__Assembly__Group_11__1__Impl rule__Assembly__Group_11__2
+            // InternalDedalADL.g:15505:1: ( rule__Assembly__Group_11__1__Impl rule__Assembly__Group_11__2 )
+            // InternalDedalADL.g:15506:2: rule__Assembly__Group_11__1__Impl rule__Assembly__Group_11__2
             {
-            pushFollow(FollowSets000.FOLLOW_68);
+            pushFollow(FollowSets000.FOLLOW_69);
             rule__Assembly__Group_11__1__Impl();
 
             state._fsp--;
@@ -40652,17 +40813,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11__1__Impl"
-    // InternalDedalADL.g:15449:1: rule__Assembly__Group_11__1__Impl : ( '(' ) ;
+    // InternalDedalADL.g:15513:1: rule__Assembly__Group_11__1__Impl : ( '(' ) ;
     public final void rule__Assembly__Group_11__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15453:1: ( ( '(' ) )
-            // InternalDedalADL.g:15454:1: ( '(' )
+            // InternalDedalADL.g:15517:1: ( ( '(' ) )
+            // InternalDedalADL.g:15518:1: ( '(' )
             {
-            // InternalDedalADL.g:15454:1: ( '(' )
-            // InternalDedalADL.g:15455:1: '('
+            // InternalDedalADL.g:15518:1: ( '(' )
+            // InternalDedalADL.g:15519:1: '('
             {
              before(grammarAccess.getAssemblyAccess().getLeftParenthesisKeyword_11_1()); 
             match(input,45,FollowSets000.FOLLOW_2); 
@@ -40689,14 +40850,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11__2"
-    // InternalDedalADL.g:15468:1: rule__Assembly__Group_11__2 : rule__Assembly__Group_11__2__Impl rule__Assembly__Group_11__3 ;
+    // InternalDedalADL.g:15532:1: rule__Assembly__Group_11__2 : rule__Assembly__Group_11__2__Impl rule__Assembly__Group_11__3 ;
     public final void rule__Assembly__Group_11__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15472:1: ( rule__Assembly__Group_11__2__Impl rule__Assembly__Group_11__3 )
-            // InternalDedalADL.g:15473:2: rule__Assembly__Group_11__2__Impl rule__Assembly__Group_11__3
+            // InternalDedalADL.g:15536:1: ( rule__Assembly__Group_11__2__Impl rule__Assembly__Group_11__3 )
+            // InternalDedalADL.g:15537:2: rule__Assembly__Group_11__2__Impl rule__Assembly__Group_11__3
             {
             pushFollow(FollowSets000.FOLLOW_7);
             rule__Assembly__Group_11__2__Impl();
@@ -40727,17 +40888,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11__2__Impl"
-    // InternalDedalADL.g:15480:1: rule__Assembly__Group_11__2__Impl : ( ruleConstraint ) ;
+    // InternalDedalADL.g:15544:1: rule__Assembly__Group_11__2__Impl : ( ruleConstraint ) ;
     public final void rule__Assembly__Group_11__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15484:1: ( ( ruleConstraint ) )
-            // InternalDedalADL.g:15485:1: ( ruleConstraint )
+            // InternalDedalADL.g:15548:1: ( ( ruleConstraint ) )
+            // InternalDedalADL.g:15549:1: ( ruleConstraint )
             {
-            // InternalDedalADL.g:15485:1: ( ruleConstraint )
-            // InternalDedalADL.g:15486:1: ruleConstraint
+            // InternalDedalADL.g:15549:1: ( ruleConstraint )
+            // InternalDedalADL.g:15550:1: ruleConstraint
             {
              before(grammarAccess.getAssemblyAccess().getConstraintParserRuleCall_11_2()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -40768,14 +40929,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11__3"
-    // InternalDedalADL.g:15497:1: rule__Assembly__Group_11__3 : rule__Assembly__Group_11__3__Impl rule__Assembly__Group_11__4 ;
+    // InternalDedalADL.g:15561:1: rule__Assembly__Group_11__3 : rule__Assembly__Group_11__3__Impl rule__Assembly__Group_11__4 ;
     public final void rule__Assembly__Group_11__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15501:1: ( rule__Assembly__Group_11__3__Impl rule__Assembly__Group_11__4 )
-            // InternalDedalADL.g:15502:2: rule__Assembly__Group_11__3__Impl rule__Assembly__Group_11__4
+            // InternalDedalADL.g:15565:1: ( rule__Assembly__Group_11__3__Impl rule__Assembly__Group_11__4 )
+            // InternalDedalADL.g:15566:2: rule__Assembly__Group_11__3__Impl rule__Assembly__Group_11__4
             {
             pushFollow(FollowSets000.FOLLOW_7);
             rule__Assembly__Group_11__3__Impl();
@@ -40806,20 +40967,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11__3__Impl"
-    // InternalDedalADL.g:15509:1: rule__Assembly__Group_11__3__Impl : ( ( rule__Assembly__Group_11_3__0 )* ) ;
+    // InternalDedalADL.g:15573:1: rule__Assembly__Group_11__3__Impl : ( ( rule__Assembly__Group_11_3__0 )* ) ;
     public final void rule__Assembly__Group_11__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15513:1: ( ( ( rule__Assembly__Group_11_3__0 )* ) )
-            // InternalDedalADL.g:15514:1: ( ( rule__Assembly__Group_11_3__0 )* )
+            // InternalDedalADL.g:15577:1: ( ( ( rule__Assembly__Group_11_3__0 )* ) )
+            // InternalDedalADL.g:15578:1: ( ( rule__Assembly__Group_11_3__0 )* )
             {
-            // InternalDedalADL.g:15514:1: ( ( rule__Assembly__Group_11_3__0 )* )
-            // InternalDedalADL.g:15515:1: ( rule__Assembly__Group_11_3__0 )*
+            // InternalDedalADL.g:15578:1: ( ( rule__Assembly__Group_11_3__0 )* )
+            // InternalDedalADL.g:15579:1: ( rule__Assembly__Group_11_3__0 )*
             {
              before(grammarAccess.getAssemblyAccess().getGroup_11_3()); 
-            // InternalDedalADL.g:15516:1: ( rule__Assembly__Group_11_3__0 )*
+            // InternalDedalADL.g:15580:1: ( rule__Assembly__Group_11_3__0 )*
             loop114:
             do {
                 int alt114=2;
@@ -40832,7 +40993,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
                 switch (alt114) {
             	case 1 :
-            	    // InternalDedalADL.g:15516:2: rule__Assembly__Group_11_3__0
+            	    // InternalDedalADL.g:15580:2: rule__Assembly__Group_11_3__0
             	    {
             	    pushFollow(FollowSets000.FOLLOW_8);
             	    rule__Assembly__Group_11_3__0();
@@ -40871,14 +41032,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11__4"
-    // InternalDedalADL.g:15526:1: rule__Assembly__Group_11__4 : rule__Assembly__Group_11__4__Impl ;
+    // InternalDedalADL.g:15590:1: rule__Assembly__Group_11__4 : rule__Assembly__Group_11__4__Impl ;
     public final void rule__Assembly__Group_11__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15530:1: ( rule__Assembly__Group_11__4__Impl )
-            // InternalDedalADL.g:15531:2: rule__Assembly__Group_11__4__Impl
+            // InternalDedalADL.g:15594:1: ( rule__Assembly__Group_11__4__Impl )
+            // InternalDedalADL.g:15595:2: rule__Assembly__Group_11__4__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__Group_11__4__Impl();
@@ -40904,17 +41065,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11__4__Impl"
-    // InternalDedalADL.g:15537:1: rule__Assembly__Group_11__4__Impl : ( ')' ) ;
+    // InternalDedalADL.g:15601:1: rule__Assembly__Group_11__4__Impl : ( ')' ) ;
     public final void rule__Assembly__Group_11__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15541:1: ( ( ')' ) )
-            // InternalDedalADL.g:15542:1: ( ')' )
+            // InternalDedalADL.g:15605:1: ( ( ')' ) )
+            // InternalDedalADL.g:15606:1: ( ')' )
             {
-            // InternalDedalADL.g:15542:1: ( ')' )
-            // InternalDedalADL.g:15543:1: ')'
+            // InternalDedalADL.g:15606:1: ( ')' )
+            // InternalDedalADL.g:15607:1: ')'
             {
              before(grammarAccess.getAssemblyAccess().getRightParenthesisKeyword_11_4()); 
             match(input,46,FollowSets000.FOLLOW_2); 
@@ -40941,16 +41102,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11_3__0"
-    // InternalDedalADL.g:15566:1: rule__Assembly__Group_11_3__0 : rule__Assembly__Group_11_3__0__Impl rule__Assembly__Group_11_3__1 ;
+    // InternalDedalADL.g:15630:1: rule__Assembly__Group_11_3__0 : rule__Assembly__Group_11_3__0__Impl rule__Assembly__Group_11_3__1 ;
     public final void rule__Assembly__Group_11_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15570:1: ( rule__Assembly__Group_11_3__0__Impl rule__Assembly__Group_11_3__1 )
-            // InternalDedalADL.g:15571:2: rule__Assembly__Group_11_3__0__Impl rule__Assembly__Group_11_3__1
+            // InternalDedalADL.g:15634:1: ( rule__Assembly__Group_11_3__0__Impl rule__Assembly__Group_11_3__1 )
+            // InternalDedalADL.g:15635:2: rule__Assembly__Group_11_3__0__Impl rule__Assembly__Group_11_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_68);
+            pushFollow(FollowSets000.FOLLOW_69);
             rule__Assembly__Group_11_3__0__Impl();
 
             state._fsp--;
@@ -40979,17 +41140,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11_3__0__Impl"
-    // InternalDedalADL.g:15578:1: rule__Assembly__Group_11_3__0__Impl : ( ';' ) ;
+    // InternalDedalADL.g:15642:1: rule__Assembly__Group_11_3__0__Impl : ( ';' ) ;
     public final void rule__Assembly__Group_11_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15582:1: ( ( ';' ) )
-            // InternalDedalADL.g:15583:1: ( ';' )
+            // InternalDedalADL.g:15646:1: ( ( ';' ) )
+            // InternalDedalADL.g:15647:1: ( ';' )
             {
-            // InternalDedalADL.g:15583:1: ( ';' )
-            // InternalDedalADL.g:15584:1: ';'
+            // InternalDedalADL.g:15647:1: ( ';' )
+            // InternalDedalADL.g:15648:1: ';'
             {
              before(grammarAccess.getAssemblyAccess().getSemicolonKeyword_11_3_0()); 
             match(input,47,FollowSets000.FOLLOW_2); 
@@ -41016,14 +41177,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11_3__1"
-    // InternalDedalADL.g:15597:1: rule__Assembly__Group_11_3__1 : rule__Assembly__Group_11_3__1__Impl ;
+    // InternalDedalADL.g:15661:1: rule__Assembly__Group_11_3__1 : rule__Assembly__Group_11_3__1__Impl ;
     public final void rule__Assembly__Group_11_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15601:1: ( rule__Assembly__Group_11_3__1__Impl )
-            // InternalDedalADL.g:15602:2: rule__Assembly__Group_11_3__1__Impl
+            // InternalDedalADL.g:15665:1: ( rule__Assembly__Group_11_3__1__Impl )
+            // InternalDedalADL.g:15666:2: rule__Assembly__Group_11_3__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__Group_11_3__1__Impl();
@@ -41049,17 +41210,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_11_3__1__Impl"
-    // InternalDedalADL.g:15608:1: rule__Assembly__Group_11_3__1__Impl : ( ruleConstraint ) ;
+    // InternalDedalADL.g:15672:1: rule__Assembly__Group_11_3__1__Impl : ( ruleConstraint ) ;
     public final void rule__Assembly__Group_11_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15612:1: ( ( ruleConstraint ) )
-            // InternalDedalADL.g:15613:1: ( ruleConstraint )
+            // InternalDedalADL.g:15676:1: ( ( ruleConstraint ) )
+            // InternalDedalADL.g:15677:1: ( ruleConstraint )
             {
-            // InternalDedalADL.g:15613:1: ( ruleConstraint )
-            // InternalDedalADL.g:15614:1: ruleConstraint
+            // InternalDedalADL.g:15677:1: ( ruleConstraint )
+            // InternalDedalADL.g:15678:1: ruleConstraint
             {
              before(grammarAccess.getAssemblyAccess().getConstraintParserRuleCall_11_3_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -41090,14 +41251,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_12__0"
-    // InternalDedalADL.g:15629:1: rule__Assembly__Group_12__0 : rule__Assembly__Group_12__0__Impl rule__Assembly__Group_12__1 ;
+    // InternalDedalADL.g:15693:1: rule__Assembly__Group_12__0 : rule__Assembly__Group_12__0__Impl rule__Assembly__Group_12__1 ;
     public final void rule__Assembly__Group_12__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15633:1: ( rule__Assembly__Group_12__0__Impl rule__Assembly__Group_12__1 )
-            // InternalDedalADL.g:15634:2: rule__Assembly__Group_12__0__Impl rule__Assembly__Group_12__1
+            // InternalDedalADL.g:15697:1: ( rule__Assembly__Group_12__0__Impl rule__Assembly__Group_12__1 )
+            // InternalDedalADL.g:15698:2: rule__Assembly__Group_12__0__Impl rule__Assembly__Group_12__1
             {
             pushFollow(FollowSets000.FOLLOW_18);
             rule__Assembly__Group_12__0__Impl();
@@ -41128,17 +41289,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_12__0__Impl"
-    // InternalDedalADL.g:15641:1: rule__Assembly__Group_12__0__Impl : ( 'pre_version' ) ;
+    // InternalDedalADL.g:15705:1: rule__Assembly__Group_12__0__Impl : ( 'pre_version' ) ;
     public final void rule__Assembly__Group_12__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15645:1: ( ( 'pre_version' ) )
-            // InternalDedalADL.g:15646:1: ( 'pre_version' )
+            // InternalDedalADL.g:15709:1: ( ( 'pre_version' ) )
+            // InternalDedalADL.g:15710:1: ( 'pre_version' )
             {
-            // InternalDedalADL.g:15646:1: ( 'pre_version' )
-            // InternalDedalADL.g:15647:1: 'pre_version'
+            // InternalDedalADL.g:15710:1: ( 'pre_version' )
+            // InternalDedalADL.g:15711:1: 'pre_version'
             {
              before(grammarAccess.getAssemblyAccess().getPre_versionKeyword_12_0()); 
             match(input,61,FollowSets000.FOLLOW_2); 
@@ -41165,14 +41326,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_12__1"
-    // InternalDedalADL.g:15660:1: rule__Assembly__Group_12__1 : rule__Assembly__Group_12__1__Impl ;
+    // InternalDedalADL.g:15724:1: rule__Assembly__Group_12__1 : rule__Assembly__Group_12__1__Impl ;
     public final void rule__Assembly__Group_12__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15664:1: ( rule__Assembly__Group_12__1__Impl )
-            // InternalDedalADL.g:15665:2: rule__Assembly__Group_12__1__Impl
+            // InternalDedalADL.g:15728:1: ( rule__Assembly__Group_12__1__Impl )
+            // InternalDedalADL.g:15729:2: rule__Assembly__Group_12__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__Group_12__1__Impl();
@@ -41198,17 +41359,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_12__1__Impl"
-    // InternalDedalADL.g:15671:1: rule__Assembly__Group_12__1__Impl : ( ruleversion ) ;
+    // InternalDedalADL.g:15735:1: rule__Assembly__Group_12__1__Impl : ( ruleversion ) ;
     public final void rule__Assembly__Group_12__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15675:1: ( ( ruleversion ) )
-            // InternalDedalADL.g:15676:1: ( ruleversion )
+            // InternalDedalADL.g:15739:1: ( ( ruleversion ) )
+            // InternalDedalADL.g:15740:1: ( ruleversion )
             {
-            // InternalDedalADL.g:15676:1: ( ruleversion )
-            // InternalDedalADL.g:15677:1: ruleversion
+            // InternalDedalADL.g:15740:1: ( ruleversion )
+            // InternalDedalADL.g:15741:1: ruleversion
             {
              before(grammarAccess.getAssemblyAccess().getVersionParserRuleCall_12_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -41239,14 +41400,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_13__0"
-    // InternalDedalADL.g:15692:1: rule__Assembly__Group_13__0 : rule__Assembly__Group_13__0__Impl rule__Assembly__Group_13__1 ;
+    // InternalDedalADL.g:15756:1: rule__Assembly__Group_13__0 : rule__Assembly__Group_13__0__Impl rule__Assembly__Group_13__1 ;
     public final void rule__Assembly__Group_13__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15696:1: ( rule__Assembly__Group_13__0__Impl rule__Assembly__Group_13__1 )
-            // InternalDedalADL.g:15697:2: rule__Assembly__Group_13__0__Impl rule__Assembly__Group_13__1
+            // InternalDedalADL.g:15760:1: ( rule__Assembly__Group_13__0__Impl rule__Assembly__Group_13__1 )
+            // InternalDedalADL.g:15761:2: rule__Assembly__Group_13__0__Impl rule__Assembly__Group_13__1
             {
             pushFollow(FollowSets000.FOLLOW_26);
             rule__Assembly__Group_13__0__Impl();
@@ -41277,17 +41438,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_13__0__Impl"
-    // InternalDedalADL.g:15704:1: rule__Assembly__Group_13__0__Impl : ( 'by' ) ;
+    // InternalDedalADL.g:15768:1: rule__Assembly__Group_13__0__Impl : ( 'by' ) ;
     public final void rule__Assembly__Group_13__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15708:1: ( ( 'by' ) )
-            // InternalDedalADL.g:15709:1: ( 'by' )
+            // InternalDedalADL.g:15772:1: ( ( 'by' ) )
+            // InternalDedalADL.g:15773:1: ( 'by' )
             {
-            // InternalDedalADL.g:15709:1: ( 'by' )
-            // InternalDedalADL.g:15710:1: 'by'
+            // InternalDedalADL.g:15773:1: ( 'by' )
+            // InternalDedalADL.g:15774:1: 'by'
             {
              before(grammarAccess.getAssemblyAccess().getByKeyword_13_0()); 
             match(input,62,FollowSets000.FOLLOW_2); 
@@ -41314,14 +41475,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_13__1"
-    // InternalDedalADL.g:15723:1: rule__Assembly__Group_13__1 : rule__Assembly__Group_13__1__Impl ;
+    // InternalDedalADL.g:15787:1: rule__Assembly__Group_13__1 : rule__Assembly__Group_13__1__Impl ;
     public final void rule__Assembly__Group_13__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15727:1: ( rule__Assembly__Group_13__1__Impl )
-            // InternalDedalADL.g:15728:2: rule__Assembly__Group_13__1__Impl
+            // InternalDedalADL.g:15791:1: ( rule__Assembly__Group_13__1__Impl )
+            // InternalDedalADL.g:15792:2: rule__Assembly__Group_13__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__Group_13__1__Impl();
@@ -41347,17 +41508,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_13__1__Impl"
-    // InternalDedalADL.g:15734:1: rule__Assembly__Group_13__1__Impl : ( rulechange ) ;
+    // InternalDedalADL.g:15798:1: rule__Assembly__Group_13__1__Impl : ( rulechange ) ;
     public final void rule__Assembly__Group_13__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15738:1: ( ( rulechange ) )
-            // InternalDedalADL.g:15739:1: ( rulechange )
+            // InternalDedalADL.g:15802:1: ( ( rulechange ) )
+            // InternalDedalADL.g:15803:1: ( rulechange )
             {
-            // InternalDedalADL.g:15739:1: ( rulechange )
-            // InternalDedalADL.g:15740:1: rulechange
+            // InternalDedalADL.g:15803:1: ( rulechange )
+            // InternalDedalADL.g:15804:1: rulechange
             {
              before(grammarAccess.getAssemblyAccess().getChangeParserRuleCall_13_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -41388,14 +41549,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14__0"
-    // InternalDedalADL.g:15755:1: rule__Assembly__Group_14__0 : rule__Assembly__Group_14__0__Impl rule__Assembly__Group_14__1 ;
+    // InternalDedalADL.g:15819:1: rule__Assembly__Group_14__0 : rule__Assembly__Group_14__0__Impl rule__Assembly__Group_14__1 ;
     public final void rule__Assembly__Group_14__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15759:1: ( rule__Assembly__Group_14__0__Impl rule__Assembly__Group_14__1 )
-            // InternalDedalADL.g:15760:2: rule__Assembly__Group_14__0__Impl rule__Assembly__Group_14__1
+            // InternalDedalADL.g:15823:1: ( rule__Assembly__Group_14__0__Impl rule__Assembly__Group_14__1 )
+            // InternalDedalADL.g:15824:2: rule__Assembly__Group_14__0__Impl rule__Assembly__Group_14__1
             {
             pushFollow(FollowSets000.FOLLOW_5);
             rule__Assembly__Group_14__0__Impl();
@@ -41426,17 +41587,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14__0__Impl"
-    // InternalDedalADL.g:15767:1: rule__Assembly__Group_14__0__Impl : ( 'interface_types' ) ;
+    // InternalDedalADL.g:15831:1: rule__Assembly__Group_14__0__Impl : ( 'interface_types' ) ;
     public final void rule__Assembly__Group_14__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15771:1: ( ( 'interface_types' ) )
-            // InternalDedalADL.g:15772:1: ( 'interface_types' )
+            // InternalDedalADL.g:15835:1: ( ( 'interface_types' ) )
+            // InternalDedalADL.g:15836:1: ( 'interface_types' )
             {
-            // InternalDedalADL.g:15772:1: ( 'interface_types' )
-            // InternalDedalADL.g:15773:1: 'interface_types'
+            // InternalDedalADL.g:15836:1: ( 'interface_types' )
+            // InternalDedalADL.g:15837:1: 'interface_types'
             {
              before(grammarAccess.getAssemblyAccess().getInterface_typesKeyword_14_0()); 
             match(input,51,FollowSets000.FOLLOW_2); 
@@ -41463,14 +41624,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14__1"
-    // InternalDedalADL.g:15786:1: rule__Assembly__Group_14__1 : rule__Assembly__Group_14__1__Impl rule__Assembly__Group_14__2 ;
+    // InternalDedalADL.g:15850:1: rule__Assembly__Group_14__1 : rule__Assembly__Group_14__1__Impl rule__Assembly__Group_14__2 ;
     public final void rule__Assembly__Group_14__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15790:1: ( rule__Assembly__Group_14__1__Impl rule__Assembly__Group_14__2 )
-            // InternalDedalADL.g:15791:2: rule__Assembly__Group_14__1__Impl rule__Assembly__Group_14__2
+            // InternalDedalADL.g:15854:1: ( rule__Assembly__Group_14__1__Impl rule__Assembly__Group_14__2 )
+            // InternalDedalADL.g:15855:2: rule__Assembly__Group_14__1__Impl rule__Assembly__Group_14__2
             {
             pushFollow(FollowSets000.FOLLOW_12);
             rule__Assembly__Group_14__1__Impl();
@@ -41501,17 +41662,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14__1__Impl"
-    // InternalDedalADL.g:15798:1: rule__Assembly__Group_14__1__Impl : ( '(' ) ;
+    // InternalDedalADL.g:15862:1: rule__Assembly__Group_14__1__Impl : ( '(' ) ;
     public final void rule__Assembly__Group_14__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15802:1: ( ( '(' ) )
-            // InternalDedalADL.g:15803:1: ( '(' )
+            // InternalDedalADL.g:15866:1: ( ( '(' ) )
+            // InternalDedalADL.g:15867:1: ( '(' )
             {
-            // InternalDedalADL.g:15803:1: ( '(' )
-            // InternalDedalADL.g:15804:1: '('
+            // InternalDedalADL.g:15867:1: ( '(' )
+            // InternalDedalADL.g:15868:1: '('
             {
              before(grammarAccess.getAssemblyAccess().getLeftParenthesisKeyword_14_1()); 
             match(input,45,FollowSets000.FOLLOW_2); 
@@ -41538,14 +41699,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14__2"
-    // InternalDedalADL.g:15817:1: rule__Assembly__Group_14__2 : rule__Assembly__Group_14__2__Impl rule__Assembly__Group_14__3 ;
+    // InternalDedalADL.g:15881:1: rule__Assembly__Group_14__2 : rule__Assembly__Group_14__2__Impl rule__Assembly__Group_14__3 ;
     public final void rule__Assembly__Group_14__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15821:1: ( rule__Assembly__Group_14__2__Impl rule__Assembly__Group_14__3 )
-            // InternalDedalADL.g:15822:2: rule__Assembly__Group_14__2__Impl rule__Assembly__Group_14__3
+            // InternalDedalADL.g:15885:1: ( rule__Assembly__Group_14__2__Impl rule__Assembly__Group_14__3 )
+            // InternalDedalADL.g:15886:2: rule__Assembly__Group_14__2__Impl rule__Assembly__Group_14__3
             {
             pushFollow(FollowSets000.FOLLOW_7);
             rule__Assembly__Group_14__2__Impl();
@@ -41576,21 +41737,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14__2__Impl"
-    // InternalDedalADL.g:15829:1: rule__Assembly__Group_14__2__Impl : ( ( rule__Assembly__InterfaceTypesAssignment_14_2 ) ) ;
+    // InternalDedalADL.g:15893:1: rule__Assembly__Group_14__2__Impl : ( ( rule__Assembly__InterfaceTypesAssignment_14_2 ) ) ;
     public final void rule__Assembly__Group_14__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15833:1: ( ( ( rule__Assembly__InterfaceTypesAssignment_14_2 ) ) )
-            // InternalDedalADL.g:15834:1: ( ( rule__Assembly__InterfaceTypesAssignment_14_2 ) )
+            // InternalDedalADL.g:15897:1: ( ( ( rule__Assembly__InterfaceTypesAssignment_14_2 ) ) )
+            // InternalDedalADL.g:15898:1: ( ( rule__Assembly__InterfaceTypesAssignment_14_2 ) )
             {
-            // InternalDedalADL.g:15834:1: ( ( rule__Assembly__InterfaceTypesAssignment_14_2 ) )
-            // InternalDedalADL.g:15835:1: ( rule__Assembly__InterfaceTypesAssignment_14_2 )
+            // InternalDedalADL.g:15898:1: ( ( rule__Assembly__InterfaceTypesAssignment_14_2 ) )
+            // InternalDedalADL.g:15899:1: ( rule__Assembly__InterfaceTypesAssignment_14_2 )
             {
              before(grammarAccess.getAssemblyAccess().getInterfaceTypesAssignment_14_2()); 
-            // InternalDedalADL.g:15836:1: ( rule__Assembly__InterfaceTypesAssignment_14_2 )
-            // InternalDedalADL.g:15836:2: rule__Assembly__InterfaceTypesAssignment_14_2
+            // InternalDedalADL.g:15900:1: ( rule__Assembly__InterfaceTypesAssignment_14_2 )
+            // InternalDedalADL.g:15900:2: rule__Assembly__InterfaceTypesAssignment_14_2
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__InterfaceTypesAssignment_14_2();
@@ -41623,14 +41784,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14__3"
-    // InternalDedalADL.g:15846:1: rule__Assembly__Group_14__3 : rule__Assembly__Group_14__3__Impl rule__Assembly__Group_14__4 ;
+    // InternalDedalADL.g:15910:1: rule__Assembly__Group_14__3 : rule__Assembly__Group_14__3__Impl rule__Assembly__Group_14__4 ;
     public final void rule__Assembly__Group_14__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15850:1: ( rule__Assembly__Group_14__3__Impl rule__Assembly__Group_14__4 )
-            // InternalDedalADL.g:15851:2: rule__Assembly__Group_14__3__Impl rule__Assembly__Group_14__4
+            // InternalDedalADL.g:15914:1: ( rule__Assembly__Group_14__3__Impl rule__Assembly__Group_14__4 )
+            // InternalDedalADL.g:15915:2: rule__Assembly__Group_14__3__Impl rule__Assembly__Group_14__4
             {
             pushFollow(FollowSets000.FOLLOW_7);
             rule__Assembly__Group_14__3__Impl();
@@ -41661,20 +41822,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14__3__Impl"
-    // InternalDedalADL.g:15858:1: rule__Assembly__Group_14__3__Impl : ( ( rule__Assembly__Group_14_3__0 )* ) ;
+    // InternalDedalADL.g:15922:1: rule__Assembly__Group_14__3__Impl : ( ( rule__Assembly__Group_14_3__0 )* ) ;
     public final void rule__Assembly__Group_14__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15862:1: ( ( ( rule__Assembly__Group_14_3__0 )* ) )
-            // InternalDedalADL.g:15863:1: ( ( rule__Assembly__Group_14_3__0 )* )
+            // InternalDedalADL.g:15926:1: ( ( ( rule__Assembly__Group_14_3__0 )* ) )
+            // InternalDedalADL.g:15927:1: ( ( rule__Assembly__Group_14_3__0 )* )
             {
-            // InternalDedalADL.g:15863:1: ( ( rule__Assembly__Group_14_3__0 )* )
-            // InternalDedalADL.g:15864:1: ( rule__Assembly__Group_14_3__0 )*
+            // InternalDedalADL.g:15927:1: ( ( rule__Assembly__Group_14_3__0 )* )
+            // InternalDedalADL.g:15928:1: ( rule__Assembly__Group_14_3__0 )*
             {
              before(grammarAccess.getAssemblyAccess().getGroup_14_3()); 
-            // InternalDedalADL.g:15865:1: ( rule__Assembly__Group_14_3__0 )*
+            // InternalDedalADL.g:15929:1: ( rule__Assembly__Group_14_3__0 )*
             loop115:
             do {
                 int alt115=2;
@@ -41687,7 +41848,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
                 switch (alt115) {
             	case 1 :
-            	    // InternalDedalADL.g:15865:2: rule__Assembly__Group_14_3__0
+            	    // InternalDedalADL.g:15929:2: rule__Assembly__Group_14_3__0
             	    {
             	    pushFollow(FollowSets000.FOLLOW_8);
             	    rule__Assembly__Group_14_3__0();
@@ -41726,14 +41887,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14__4"
-    // InternalDedalADL.g:15875:1: rule__Assembly__Group_14__4 : rule__Assembly__Group_14__4__Impl ;
+    // InternalDedalADL.g:15939:1: rule__Assembly__Group_14__4 : rule__Assembly__Group_14__4__Impl ;
     public final void rule__Assembly__Group_14__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15879:1: ( rule__Assembly__Group_14__4__Impl )
-            // InternalDedalADL.g:15880:2: rule__Assembly__Group_14__4__Impl
+            // InternalDedalADL.g:15943:1: ( rule__Assembly__Group_14__4__Impl )
+            // InternalDedalADL.g:15944:2: rule__Assembly__Group_14__4__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__Group_14__4__Impl();
@@ -41759,17 +41920,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14__4__Impl"
-    // InternalDedalADL.g:15886:1: rule__Assembly__Group_14__4__Impl : ( ')' ) ;
+    // InternalDedalADL.g:15950:1: rule__Assembly__Group_14__4__Impl : ( ')' ) ;
     public final void rule__Assembly__Group_14__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15890:1: ( ( ')' ) )
-            // InternalDedalADL.g:15891:1: ( ')' )
+            // InternalDedalADL.g:15954:1: ( ( ')' ) )
+            // InternalDedalADL.g:15955:1: ( ')' )
             {
-            // InternalDedalADL.g:15891:1: ( ')' )
-            // InternalDedalADL.g:15892:1: ')'
+            // InternalDedalADL.g:15955:1: ( ')' )
+            // InternalDedalADL.g:15956:1: ')'
             {
              before(grammarAccess.getAssemblyAccess().getRightParenthesisKeyword_14_4()); 
             match(input,46,FollowSets000.FOLLOW_2); 
@@ -41796,14 +41957,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14_3__0"
-    // InternalDedalADL.g:15915:1: rule__Assembly__Group_14_3__0 : rule__Assembly__Group_14_3__0__Impl rule__Assembly__Group_14_3__1 ;
+    // InternalDedalADL.g:15979:1: rule__Assembly__Group_14_3__0 : rule__Assembly__Group_14_3__0__Impl rule__Assembly__Group_14_3__1 ;
     public final void rule__Assembly__Group_14_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15919:1: ( rule__Assembly__Group_14_3__0__Impl rule__Assembly__Group_14_3__1 )
-            // InternalDedalADL.g:15920:2: rule__Assembly__Group_14_3__0__Impl rule__Assembly__Group_14_3__1
+            // InternalDedalADL.g:15983:1: ( rule__Assembly__Group_14_3__0__Impl rule__Assembly__Group_14_3__1 )
+            // InternalDedalADL.g:15984:2: rule__Assembly__Group_14_3__0__Impl rule__Assembly__Group_14_3__1
             {
             pushFollow(FollowSets000.FOLLOW_12);
             rule__Assembly__Group_14_3__0__Impl();
@@ -41834,17 +41995,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14_3__0__Impl"
-    // InternalDedalADL.g:15927:1: rule__Assembly__Group_14_3__0__Impl : ( ';' ) ;
+    // InternalDedalADL.g:15991:1: rule__Assembly__Group_14_3__0__Impl : ( ';' ) ;
     public final void rule__Assembly__Group_14_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15931:1: ( ( ';' ) )
-            // InternalDedalADL.g:15932:1: ( ';' )
+            // InternalDedalADL.g:15995:1: ( ( ';' ) )
+            // InternalDedalADL.g:15996:1: ( ';' )
             {
-            // InternalDedalADL.g:15932:1: ( ';' )
-            // InternalDedalADL.g:15933:1: ';'
+            // InternalDedalADL.g:15996:1: ( ';' )
+            // InternalDedalADL.g:15997:1: ';'
             {
              before(grammarAccess.getAssemblyAccess().getSemicolonKeyword_14_3_0()); 
             match(input,47,FollowSets000.FOLLOW_2); 
@@ -41871,14 +42032,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14_3__1"
-    // InternalDedalADL.g:15946:1: rule__Assembly__Group_14_3__1 : rule__Assembly__Group_14_3__1__Impl ;
+    // InternalDedalADL.g:16010:1: rule__Assembly__Group_14_3__1 : rule__Assembly__Group_14_3__1__Impl ;
     public final void rule__Assembly__Group_14_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15950:1: ( rule__Assembly__Group_14_3__1__Impl )
-            // InternalDedalADL.g:15951:2: rule__Assembly__Group_14_3__1__Impl
+            // InternalDedalADL.g:16014:1: ( rule__Assembly__Group_14_3__1__Impl )
+            // InternalDedalADL.g:16015:2: rule__Assembly__Group_14_3__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__Group_14_3__1__Impl();
@@ -41904,21 +42065,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_14_3__1__Impl"
-    // InternalDedalADL.g:15957:1: rule__Assembly__Group_14_3__1__Impl : ( ( rule__Assembly__InterfaceTypesAssignment_14_3_1 ) ) ;
+    // InternalDedalADL.g:16021:1: rule__Assembly__Group_14_3__1__Impl : ( ( rule__Assembly__InterfaceTypesAssignment_14_3_1 ) ) ;
     public final void rule__Assembly__Group_14_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15961:1: ( ( ( rule__Assembly__InterfaceTypesAssignment_14_3_1 ) ) )
-            // InternalDedalADL.g:15962:1: ( ( rule__Assembly__InterfaceTypesAssignment_14_3_1 ) )
+            // InternalDedalADL.g:16025:1: ( ( ( rule__Assembly__InterfaceTypesAssignment_14_3_1 ) ) )
+            // InternalDedalADL.g:16026:1: ( ( rule__Assembly__InterfaceTypesAssignment_14_3_1 ) )
             {
-            // InternalDedalADL.g:15962:1: ( ( rule__Assembly__InterfaceTypesAssignment_14_3_1 ) )
-            // InternalDedalADL.g:15963:1: ( rule__Assembly__InterfaceTypesAssignment_14_3_1 )
+            // InternalDedalADL.g:16026:1: ( ( rule__Assembly__InterfaceTypesAssignment_14_3_1 ) )
+            // InternalDedalADL.g:16027:1: ( rule__Assembly__InterfaceTypesAssignment_14_3_1 )
             {
              before(grammarAccess.getAssemblyAccess().getInterfaceTypesAssignment_14_3_1()); 
-            // InternalDedalADL.g:15964:1: ( rule__Assembly__InterfaceTypesAssignment_14_3_1 )
-            // InternalDedalADL.g:15964:2: rule__Assembly__InterfaceTypesAssignment_14_3_1
+            // InternalDedalADL.g:16028:1: ( rule__Assembly__InterfaceTypesAssignment_14_3_1 )
+            // InternalDedalADL.g:16028:2: rule__Assembly__InterfaceTypesAssignment_14_3_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__InterfaceTypesAssignment_14_3_1();
@@ -41951,14 +42112,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15__0"
-    // InternalDedalADL.g:15978:1: rule__Assembly__Group_15__0 : rule__Assembly__Group_15__0__Impl rule__Assembly__Group_15__1 ;
+    // InternalDedalADL.g:16042:1: rule__Assembly__Group_15__0 : rule__Assembly__Group_15__0__Impl rule__Assembly__Group_15__1 ;
     public final void rule__Assembly__Group_15__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15982:1: ( rule__Assembly__Group_15__0__Impl rule__Assembly__Group_15__1 )
-            // InternalDedalADL.g:15983:2: rule__Assembly__Group_15__0__Impl rule__Assembly__Group_15__1
+            // InternalDedalADL.g:16046:1: ( rule__Assembly__Group_15__0__Impl rule__Assembly__Group_15__1 )
+            // InternalDedalADL.g:16047:2: rule__Assembly__Group_15__0__Impl rule__Assembly__Group_15__1
             {
             pushFollow(FollowSets000.FOLLOW_5);
             rule__Assembly__Group_15__0__Impl();
@@ -41989,20 +42150,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15__0__Impl"
-    // InternalDedalADL.g:15990:1: rule__Assembly__Group_15__0__Impl : ( 'assembly_connections' ) ;
+    // InternalDedalADL.g:16054:1: rule__Assembly__Group_15__0__Impl : ( 'assembly_connections' ) ;
     public final void rule__Assembly__Group_15__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:15994:1: ( ( 'assembly_connections' ) )
-            // InternalDedalADL.g:15995:1: ( 'assembly_connections' )
+            // InternalDedalADL.g:16058:1: ( ( 'assembly_connections' ) )
+            // InternalDedalADL.g:16059:1: ( 'assembly_connections' )
             {
-            // InternalDedalADL.g:15995:1: ( 'assembly_connections' )
-            // InternalDedalADL.g:15996:1: 'assembly_connections'
+            // InternalDedalADL.g:16059:1: ( 'assembly_connections' )
+            // InternalDedalADL.g:16060:1: 'assembly_connections'
             {
              before(grammarAccess.getAssemblyAccess().getAssembly_connectionsKeyword_15_0()); 
-            match(input,104,FollowSets000.FOLLOW_2); 
+            match(input,105,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getAssemblyAccess().getAssembly_connectionsKeyword_15_0()); 
 
             }
@@ -42026,16 +42187,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15__1"
-    // InternalDedalADL.g:16009:1: rule__Assembly__Group_15__1 : rule__Assembly__Group_15__1__Impl rule__Assembly__Group_15__2 ;
+    // InternalDedalADL.g:16073:1: rule__Assembly__Group_15__1 : rule__Assembly__Group_15__1__Impl rule__Assembly__Group_15__2 ;
     public final void rule__Assembly__Group_15__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16013:1: ( rule__Assembly__Group_15__1__Impl rule__Assembly__Group_15__2 )
-            // InternalDedalADL.g:16014:2: rule__Assembly__Group_15__1__Impl rule__Assembly__Group_15__2
+            // InternalDedalADL.g:16077:1: ( rule__Assembly__Group_15__1__Impl rule__Assembly__Group_15__2 )
+            // InternalDedalADL.g:16078:2: rule__Assembly__Group_15__1__Impl rule__Assembly__Group_15__2
             {
-            pushFollow(FollowSets000.FOLLOW_69);
+            pushFollow(FollowSets000.FOLLOW_70);
             rule__Assembly__Group_15__1__Impl();
 
             state._fsp--;
@@ -42064,17 +42225,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15__1__Impl"
-    // InternalDedalADL.g:16021:1: rule__Assembly__Group_15__1__Impl : ( '(' ) ;
+    // InternalDedalADL.g:16085:1: rule__Assembly__Group_15__1__Impl : ( '(' ) ;
     public final void rule__Assembly__Group_15__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16025:1: ( ( '(' ) )
-            // InternalDedalADL.g:16026:1: ( '(' )
+            // InternalDedalADL.g:16089:1: ( ( '(' ) )
+            // InternalDedalADL.g:16090:1: ( '(' )
             {
-            // InternalDedalADL.g:16026:1: ( '(' )
-            // InternalDedalADL.g:16027:1: '('
+            // InternalDedalADL.g:16090:1: ( '(' )
+            // InternalDedalADL.g:16091:1: '('
             {
              before(grammarAccess.getAssemblyAccess().getLeftParenthesisKeyword_15_1()); 
             match(input,45,FollowSets000.FOLLOW_2); 
@@ -42101,14 +42262,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15__2"
-    // InternalDedalADL.g:16040:1: rule__Assembly__Group_15__2 : rule__Assembly__Group_15__2__Impl rule__Assembly__Group_15__3 ;
+    // InternalDedalADL.g:16104:1: rule__Assembly__Group_15__2 : rule__Assembly__Group_15__2__Impl rule__Assembly__Group_15__3 ;
     public final void rule__Assembly__Group_15__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16044:1: ( rule__Assembly__Group_15__2__Impl rule__Assembly__Group_15__3 )
-            // InternalDedalADL.g:16045:2: rule__Assembly__Group_15__2__Impl rule__Assembly__Group_15__3
+            // InternalDedalADL.g:16108:1: ( rule__Assembly__Group_15__2__Impl rule__Assembly__Group_15__3 )
+            // InternalDedalADL.g:16109:2: rule__Assembly__Group_15__2__Impl rule__Assembly__Group_15__3
             {
             pushFollow(FollowSets000.FOLLOW_7);
             rule__Assembly__Group_15__2__Impl();
@@ -42139,21 +42300,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15__2__Impl"
-    // InternalDedalADL.g:16052:1: rule__Assembly__Group_15__2__Impl : ( ( rule__Assembly__AssemblyConnectionsAssignment_15_2 ) ) ;
+    // InternalDedalADL.g:16116:1: rule__Assembly__Group_15__2__Impl : ( ( rule__Assembly__AssemblyConnectionsAssignment_15_2 ) ) ;
     public final void rule__Assembly__Group_15__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16056:1: ( ( ( rule__Assembly__AssemblyConnectionsAssignment_15_2 ) ) )
-            // InternalDedalADL.g:16057:1: ( ( rule__Assembly__AssemblyConnectionsAssignment_15_2 ) )
+            // InternalDedalADL.g:16120:1: ( ( ( rule__Assembly__AssemblyConnectionsAssignment_15_2 ) ) )
+            // InternalDedalADL.g:16121:1: ( ( rule__Assembly__AssemblyConnectionsAssignment_15_2 ) )
             {
-            // InternalDedalADL.g:16057:1: ( ( rule__Assembly__AssemblyConnectionsAssignment_15_2 ) )
-            // InternalDedalADL.g:16058:1: ( rule__Assembly__AssemblyConnectionsAssignment_15_2 )
+            // InternalDedalADL.g:16121:1: ( ( rule__Assembly__AssemblyConnectionsAssignment_15_2 ) )
+            // InternalDedalADL.g:16122:1: ( rule__Assembly__AssemblyConnectionsAssignment_15_2 )
             {
              before(grammarAccess.getAssemblyAccess().getAssemblyConnectionsAssignment_15_2()); 
-            // InternalDedalADL.g:16059:1: ( rule__Assembly__AssemblyConnectionsAssignment_15_2 )
-            // InternalDedalADL.g:16059:2: rule__Assembly__AssemblyConnectionsAssignment_15_2
+            // InternalDedalADL.g:16123:1: ( rule__Assembly__AssemblyConnectionsAssignment_15_2 )
+            // InternalDedalADL.g:16123:2: rule__Assembly__AssemblyConnectionsAssignment_15_2
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__AssemblyConnectionsAssignment_15_2();
@@ -42186,14 +42347,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15__3"
-    // InternalDedalADL.g:16069:1: rule__Assembly__Group_15__3 : rule__Assembly__Group_15__3__Impl rule__Assembly__Group_15__4 ;
+    // InternalDedalADL.g:16133:1: rule__Assembly__Group_15__3 : rule__Assembly__Group_15__3__Impl rule__Assembly__Group_15__4 ;
     public final void rule__Assembly__Group_15__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16073:1: ( rule__Assembly__Group_15__3__Impl rule__Assembly__Group_15__4 )
-            // InternalDedalADL.g:16074:2: rule__Assembly__Group_15__3__Impl rule__Assembly__Group_15__4
+            // InternalDedalADL.g:16137:1: ( rule__Assembly__Group_15__3__Impl rule__Assembly__Group_15__4 )
+            // InternalDedalADL.g:16138:2: rule__Assembly__Group_15__3__Impl rule__Assembly__Group_15__4
             {
             pushFollow(FollowSets000.FOLLOW_7);
             rule__Assembly__Group_15__3__Impl();
@@ -42224,20 +42385,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15__3__Impl"
-    // InternalDedalADL.g:16081:1: rule__Assembly__Group_15__3__Impl : ( ( rule__Assembly__Group_15_3__0 )* ) ;
+    // InternalDedalADL.g:16145:1: rule__Assembly__Group_15__3__Impl : ( ( rule__Assembly__Group_15_3__0 )* ) ;
     public final void rule__Assembly__Group_15__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16085:1: ( ( ( rule__Assembly__Group_15_3__0 )* ) )
-            // InternalDedalADL.g:16086:1: ( ( rule__Assembly__Group_15_3__0 )* )
+            // InternalDedalADL.g:16149:1: ( ( ( rule__Assembly__Group_15_3__0 )* ) )
+            // InternalDedalADL.g:16150:1: ( ( rule__Assembly__Group_15_3__0 )* )
             {
-            // InternalDedalADL.g:16086:1: ( ( rule__Assembly__Group_15_3__0 )* )
-            // InternalDedalADL.g:16087:1: ( rule__Assembly__Group_15_3__0 )*
+            // InternalDedalADL.g:16150:1: ( ( rule__Assembly__Group_15_3__0 )* )
+            // InternalDedalADL.g:16151:1: ( rule__Assembly__Group_15_3__0 )*
             {
              before(grammarAccess.getAssemblyAccess().getGroup_15_3()); 
-            // InternalDedalADL.g:16088:1: ( rule__Assembly__Group_15_3__0 )*
+            // InternalDedalADL.g:16152:1: ( rule__Assembly__Group_15_3__0 )*
             loop116:
             do {
                 int alt116=2;
@@ -42250,7 +42411,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
                 switch (alt116) {
             	case 1 :
-            	    // InternalDedalADL.g:16088:2: rule__Assembly__Group_15_3__0
+            	    // InternalDedalADL.g:16152:2: rule__Assembly__Group_15_3__0
             	    {
             	    pushFollow(FollowSets000.FOLLOW_8);
             	    rule__Assembly__Group_15_3__0();
@@ -42289,14 +42450,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15__4"
-    // InternalDedalADL.g:16098:1: rule__Assembly__Group_15__4 : rule__Assembly__Group_15__4__Impl ;
+    // InternalDedalADL.g:16162:1: rule__Assembly__Group_15__4 : rule__Assembly__Group_15__4__Impl ;
     public final void rule__Assembly__Group_15__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16102:1: ( rule__Assembly__Group_15__4__Impl )
-            // InternalDedalADL.g:16103:2: rule__Assembly__Group_15__4__Impl
+            // InternalDedalADL.g:16166:1: ( rule__Assembly__Group_15__4__Impl )
+            // InternalDedalADL.g:16167:2: rule__Assembly__Group_15__4__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__Group_15__4__Impl();
@@ -42322,17 +42483,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15__4__Impl"
-    // InternalDedalADL.g:16109:1: rule__Assembly__Group_15__4__Impl : ( ')' ) ;
+    // InternalDedalADL.g:16173:1: rule__Assembly__Group_15__4__Impl : ( ')' ) ;
     public final void rule__Assembly__Group_15__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16113:1: ( ( ')' ) )
-            // InternalDedalADL.g:16114:1: ( ')' )
+            // InternalDedalADL.g:16177:1: ( ( ')' ) )
+            // InternalDedalADL.g:16178:1: ( ')' )
             {
-            // InternalDedalADL.g:16114:1: ( ')' )
-            // InternalDedalADL.g:16115:1: ')'
+            // InternalDedalADL.g:16178:1: ( ')' )
+            // InternalDedalADL.g:16179:1: ')'
             {
              before(grammarAccess.getAssemblyAccess().getRightParenthesisKeyword_15_4()); 
             match(input,46,FollowSets000.FOLLOW_2); 
@@ -42359,16 +42520,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15_3__0"
-    // InternalDedalADL.g:16138:1: rule__Assembly__Group_15_3__0 : rule__Assembly__Group_15_3__0__Impl rule__Assembly__Group_15_3__1 ;
+    // InternalDedalADL.g:16202:1: rule__Assembly__Group_15_3__0 : rule__Assembly__Group_15_3__0__Impl rule__Assembly__Group_15_3__1 ;
     public final void rule__Assembly__Group_15_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16142:1: ( rule__Assembly__Group_15_3__0__Impl rule__Assembly__Group_15_3__1 )
-            // InternalDedalADL.g:16143:2: rule__Assembly__Group_15_3__0__Impl rule__Assembly__Group_15_3__1
+            // InternalDedalADL.g:16206:1: ( rule__Assembly__Group_15_3__0__Impl rule__Assembly__Group_15_3__1 )
+            // InternalDedalADL.g:16207:2: rule__Assembly__Group_15_3__0__Impl rule__Assembly__Group_15_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_69);
+            pushFollow(FollowSets000.FOLLOW_70);
             rule__Assembly__Group_15_3__0__Impl();
 
             state._fsp--;
@@ -42397,17 +42558,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15_3__0__Impl"
-    // InternalDedalADL.g:16150:1: rule__Assembly__Group_15_3__0__Impl : ( ';' ) ;
+    // InternalDedalADL.g:16214:1: rule__Assembly__Group_15_3__0__Impl : ( ';' ) ;
     public final void rule__Assembly__Group_15_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16154:1: ( ( ';' ) )
-            // InternalDedalADL.g:16155:1: ( ';' )
+            // InternalDedalADL.g:16218:1: ( ( ';' ) )
+            // InternalDedalADL.g:16219:1: ( ';' )
             {
-            // InternalDedalADL.g:16155:1: ( ';' )
-            // InternalDedalADL.g:16156:1: ';'
+            // InternalDedalADL.g:16219:1: ( ';' )
+            // InternalDedalADL.g:16220:1: ';'
             {
              before(grammarAccess.getAssemblyAccess().getSemicolonKeyword_15_3_0()); 
             match(input,47,FollowSets000.FOLLOW_2); 
@@ -42434,14 +42595,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15_3__1"
-    // InternalDedalADL.g:16169:1: rule__Assembly__Group_15_3__1 : rule__Assembly__Group_15_3__1__Impl ;
+    // InternalDedalADL.g:16233:1: rule__Assembly__Group_15_3__1 : rule__Assembly__Group_15_3__1__Impl ;
     public final void rule__Assembly__Group_15_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16173:1: ( rule__Assembly__Group_15_3__1__Impl )
-            // InternalDedalADL.g:16174:2: rule__Assembly__Group_15_3__1__Impl
+            // InternalDedalADL.g:16237:1: ( rule__Assembly__Group_15_3__1__Impl )
+            // InternalDedalADL.g:16238:2: rule__Assembly__Group_15_3__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__Group_15_3__1__Impl();
@@ -42467,21 +42628,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__Group_15_3__1__Impl"
-    // InternalDedalADL.g:16180:1: rule__Assembly__Group_15_3__1__Impl : ( ( rule__Assembly__AssemblyConnectionsAssignment_15_3_1 ) ) ;
+    // InternalDedalADL.g:16244:1: rule__Assembly__Group_15_3__1__Impl : ( ( rule__Assembly__AssemblyConnectionsAssignment_15_3_1 ) ) ;
     public final void rule__Assembly__Group_15_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16184:1: ( ( ( rule__Assembly__AssemblyConnectionsAssignment_15_3_1 ) ) )
-            // InternalDedalADL.g:16185:1: ( ( rule__Assembly__AssemblyConnectionsAssignment_15_3_1 ) )
+            // InternalDedalADL.g:16248:1: ( ( ( rule__Assembly__AssemblyConnectionsAssignment_15_3_1 ) ) )
+            // InternalDedalADL.g:16249:1: ( ( rule__Assembly__AssemblyConnectionsAssignment_15_3_1 ) )
             {
-            // InternalDedalADL.g:16185:1: ( ( rule__Assembly__AssemblyConnectionsAssignment_15_3_1 ) )
-            // InternalDedalADL.g:16186:1: ( rule__Assembly__AssemblyConnectionsAssignment_15_3_1 )
+            // InternalDedalADL.g:16249:1: ( ( rule__Assembly__AssemblyConnectionsAssignment_15_3_1 ) )
+            // InternalDedalADL.g:16250:1: ( rule__Assembly__AssemblyConnectionsAssignment_15_3_1 )
             {
              before(grammarAccess.getAssemblyAccess().getAssemblyConnectionsAssignment_15_3_1()); 
-            // InternalDedalADL.g:16187:1: ( rule__Assembly__AssemblyConnectionsAssignment_15_3_1 )
-            // InternalDedalADL.g:16187:2: rule__Assembly__AssemblyConnectionsAssignment_15_3_1
+            // InternalDedalADL.g:16251:1: ( rule__Assembly__AssemblyConnectionsAssignment_15_3_1 )
+            // InternalDedalADL.g:16251:2: rule__Assembly__AssemblyConnectionsAssignment_15_3_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Assembly__AssemblyConnectionsAssignment_15_3_1();
@@ -42514,16 +42675,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint__Group__0"
-    // InternalDedalADL.g:16201:1: rule__Constraint__Group__0 : rule__Constraint__Group__0__Impl rule__Constraint__Group__1 ;
+    // InternalDedalADL.g:16265:1: rule__Constraint__Group__0 : rule__Constraint__Group__0__Impl rule__Constraint__Group__1 ;
     public final void rule__Constraint__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16205:1: ( rule__Constraint__Group__0__Impl rule__Constraint__Group__1 )
-            // InternalDedalADL.g:16206:2: rule__Constraint__Group__0__Impl rule__Constraint__Group__1
+            // InternalDedalADL.g:16269:1: ( rule__Constraint__Group__0__Impl rule__Constraint__Group__1 )
+            // InternalDedalADL.g:16270:2: rule__Constraint__Group__0__Impl rule__Constraint__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_70);
+            pushFollow(FollowSets000.FOLLOW_71);
             rule__Constraint__Group__0__Impl();
 
             state._fsp--;
@@ -42552,20 +42713,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint__Group__0__Impl"
-    // InternalDedalADL.g:16213:1: rule__Constraint__Group__0__Impl : ( 'expression' ) ;
+    // InternalDedalADL.g:16277:1: rule__Constraint__Group__0__Impl : ( 'expression' ) ;
     public final void rule__Constraint__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16217:1: ( ( 'expression' ) )
-            // InternalDedalADL.g:16218:1: ( 'expression' )
+            // InternalDedalADL.g:16281:1: ( ( 'expression' ) )
+            // InternalDedalADL.g:16282:1: ( 'expression' )
             {
-            // InternalDedalADL.g:16218:1: ( 'expression' )
-            // InternalDedalADL.g:16219:1: 'expression'
+            // InternalDedalADL.g:16282:1: ( 'expression' )
+            // InternalDedalADL.g:16283:1: 'expression'
             {
              before(grammarAccess.getConstraintAccess().getExpressionKeyword_0()); 
-            match(input,105,FollowSets000.FOLLOW_2); 
+            match(input,106,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getConstraintAccess().getExpressionKeyword_0()); 
 
             }
@@ -42589,14 +42750,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint__Group__1"
-    // InternalDedalADL.g:16232:1: rule__Constraint__Group__1 : rule__Constraint__Group__1__Impl ;
+    // InternalDedalADL.g:16296:1: rule__Constraint__Group__1 : rule__Constraint__Group__1__Impl ;
     public final void rule__Constraint__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16236:1: ( rule__Constraint__Group__1__Impl )
-            // InternalDedalADL.g:16237:2: rule__Constraint__Group__1__Impl
+            // InternalDedalADL.g:16300:1: ( rule__Constraint__Group__1__Impl )
+            // InternalDedalADL.g:16301:2: rule__Constraint__Group__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Constraint__Group__1__Impl();
@@ -42622,17 +42783,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint__Group__1__Impl"
-    // InternalDedalADL.g:16243:1: rule__Constraint__Group__1__Impl : ( ruleconstraint_expression ) ;
+    // InternalDedalADL.g:16307:1: rule__Constraint__Group__1__Impl : ( ruleconstraint_expression ) ;
     public final void rule__Constraint__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16247:1: ( ( ruleconstraint_expression ) )
-            // InternalDedalADL.g:16248:1: ( ruleconstraint_expression )
+            // InternalDedalADL.g:16311:1: ( ( ruleconstraint_expression ) )
+            // InternalDedalADL.g:16312:1: ( ruleconstraint_expression )
             {
-            // InternalDedalADL.g:16248:1: ( ruleconstraint_expression )
-            // InternalDedalADL.g:16249:1: ruleconstraint_expression
+            // InternalDedalADL.g:16312:1: ( ruleconstraint_expression )
+            // InternalDedalADL.g:16313:1: ruleconstraint_expression
             {
              before(grammarAccess.getConstraintAccess().getConstraint_expressionParserRuleCall_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -42663,16 +42824,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__0"
-    // InternalDedalADL.g:16264:1: rule__CompInstance__Group__0 : rule__CompInstance__Group__0__Impl rule__CompInstance__Group__1 ;
+    // InternalDedalADL.g:16328:1: rule__CompInstance__Group__0 : rule__CompInstance__Group__0__Impl rule__CompInstance__Group__1 ;
     public final void rule__CompInstance__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16268:1: ( rule__CompInstance__Group__0__Impl rule__CompInstance__Group__1 )
-            // InternalDedalADL.g:16269:2: rule__CompInstance__Group__0__Impl rule__CompInstance__Group__1
+            // InternalDedalADL.g:16332:1: ( rule__CompInstance__Group__0__Impl rule__CompInstance__Group__1 )
+            // InternalDedalADL.g:16333:2: rule__CompInstance__Group__0__Impl rule__CompInstance__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_70);
+            pushFollow(FollowSets000.FOLLOW_71);
             rule__CompInstance__Group__0__Impl();
 
             state._fsp--;
@@ -42701,17 +42862,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__0__Impl"
-    // InternalDedalADL.g:16276:1: rule__CompInstance__Group__0__Impl : ( 'component_instance' ) ;
+    // InternalDedalADL.g:16340:1: rule__CompInstance__Group__0__Impl : ( 'component_instance' ) ;
     public final void rule__CompInstance__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16280:1: ( ( 'component_instance' ) )
-            // InternalDedalADL.g:16281:1: ( 'component_instance' )
+            // InternalDedalADL.g:16344:1: ( ( 'component_instance' ) )
+            // InternalDedalADL.g:16345:1: ( 'component_instance' )
             {
-            // InternalDedalADL.g:16281:1: ( 'component_instance' )
-            // InternalDedalADL.g:16282:1: 'component_instance'
+            // InternalDedalADL.g:16345:1: ( 'component_instance' )
+            // InternalDedalADL.g:16346:1: 'component_instance'
             {
              before(grammarAccess.getCompInstanceAccess().getComponent_instanceKeyword_0()); 
             match(input,33,FollowSets000.FOLLOW_2); 
@@ -42738,14 +42899,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__1"
-    // InternalDedalADL.g:16295:1: rule__CompInstance__Group__1 : rule__CompInstance__Group__1__Impl rule__CompInstance__Group__2 ;
+    // InternalDedalADL.g:16359:1: rule__CompInstance__Group__1 : rule__CompInstance__Group__1__Impl rule__CompInstance__Group__2 ;
     public final void rule__CompInstance__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16299:1: ( rule__CompInstance__Group__1__Impl rule__CompInstance__Group__2 )
-            // InternalDedalADL.g:16300:2: rule__CompInstance__Group__1__Impl rule__CompInstance__Group__2
+            // InternalDedalADL.g:16363:1: ( rule__CompInstance__Group__1__Impl rule__CompInstance__Group__2 )
+            // InternalDedalADL.g:16364:2: rule__CompInstance__Group__1__Impl rule__CompInstance__Group__2
             {
             pushFollow(FollowSets000.FOLLOW_48);
             rule__CompInstance__Group__1__Impl();
@@ -42776,21 +42937,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__1__Impl"
-    // InternalDedalADL.g:16307:1: rule__CompInstance__Group__1__Impl : ( ( rule__CompInstance__NameAssignment_1 ) ) ;
+    // InternalDedalADL.g:16371:1: rule__CompInstance__Group__1__Impl : ( ( rule__CompInstance__NameAssignment_1 ) ) ;
     public final void rule__CompInstance__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16311:1: ( ( ( rule__CompInstance__NameAssignment_1 ) ) )
-            // InternalDedalADL.g:16312:1: ( ( rule__CompInstance__NameAssignment_1 ) )
+            // InternalDedalADL.g:16375:1: ( ( ( rule__CompInstance__NameAssignment_1 ) ) )
+            // InternalDedalADL.g:16376:1: ( ( rule__CompInstance__NameAssignment_1 ) )
             {
-            // InternalDedalADL.g:16312:1: ( ( rule__CompInstance__NameAssignment_1 ) )
-            // InternalDedalADL.g:16313:1: ( rule__CompInstance__NameAssignment_1 )
+            // InternalDedalADL.g:16376:1: ( ( rule__CompInstance__NameAssignment_1 ) )
+            // InternalDedalADL.g:16377:1: ( rule__CompInstance__NameAssignment_1 )
             {
              before(grammarAccess.getCompInstanceAccess().getNameAssignment_1()); 
-            // InternalDedalADL.g:16314:1: ( rule__CompInstance__NameAssignment_1 )
-            // InternalDedalADL.g:16314:2: rule__CompInstance__NameAssignment_1
+            // InternalDedalADL.g:16378:1: ( rule__CompInstance__NameAssignment_1 )
+            // InternalDedalADL.g:16378:2: rule__CompInstance__NameAssignment_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompInstance__NameAssignment_1();
@@ -42823,14 +42984,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__2"
-    // InternalDedalADL.g:16324:1: rule__CompInstance__Group__2 : rule__CompInstance__Group__2__Impl rule__CompInstance__Group__3 ;
+    // InternalDedalADL.g:16388:1: rule__CompInstance__Group__2 : rule__CompInstance__Group__2__Impl rule__CompInstance__Group__3 ;
     public final void rule__CompInstance__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16328:1: ( rule__CompInstance__Group__2__Impl rule__CompInstance__Group__3 )
-            // InternalDedalADL.g:16329:2: rule__CompInstance__Group__2__Impl rule__CompInstance__Group__3
+            // InternalDedalADL.g:16392:1: ( rule__CompInstance__Group__2__Impl rule__CompInstance__Group__3 )
+            // InternalDedalADL.g:16393:2: rule__CompInstance__Group__2__Impl rule__CompInstance__Group__3
             {
             pushFollow(FollowSets000.FOLLOW_48);
             rule__CompInstance__Group__2__Impl();
@@ -42861,20 +43022,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__2__Impl"
-    // InternalDedalADL.g:16336:1: rule__CompInstance__Group__2__Impl : ( ( rule__CompInstance__Group_2__0 )? ) ;
+    // InternalDedalADL.g:16400:1: rule__CompInstance__Group__2__Impl : ( ( rule__CompInstance__Group_2__0 )? ) ;
     public final void rule__CompInstance__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16340:1: ( ( ( rule__CompInstance__Group_2__0 )? ) )
-            // InternalDedalADL.g:16341:1: ( ( rule__CompInstance__Group_2__0 )? )
+            // InternalDedalADL.g:16404:1: ( ( ( rule__CompInstance__Group_2__0 )? ) )
+            // InternalDedalADL.g:16405:1: ( ( rule__CompInstance__Group_2__0 )? )
             {
-            // InternalDedalADL.g:16341:1: ( ( rule__CompInstance__Group_2__0 )? )
-            // InternalDedalADL.g:16342:1: ( rule__CompInstance__Group_2__0 )?
+            // InternalDedalADL.g:16405:1: ( ( rule__CompInstance__Group_2__0 )? )
+            // InternalDedalADL.g:16406:1: ( rule__CompInstance__Group_2__0 )?
             {
              before(grammarAccess.getCompInstanceAccess().getGroup_2()); 
-            // InternalDedalADL.g:16343:1: ( rule__CompInstance__Group_2__0 )?
+            // InternalDedalADL.g:16407:1: ( rule__CompInstance__Group_2__0 )?
             int alt117=2;
             int LA117_0 = input.LA(1);
 
@@ -42883,7 +43044,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             }
             switch (alt117) {
                 case 1 :
-                    // InternalDedalADL.g:16343:2: rule__CompInstance__Group_2__0
+                    // InternalDedalADL.g:16407:2: rule__CompInstance__Group_2__0
                     {
                     pushFollow(FollowSets000.FOLLOW_2);
                     rule__CompInstance__Group_2__0();
@@ -42919,14 +43080,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__3"
-    // InternalDedalADL.g:16353:1: rule__CompInstance__Group__3 : rule__CompInstance__Group__3__Impl rule__CompInstance__Group__4 ;
+    // InternalDedalADL.g:16417:1: rule__CompInstance__Group__3 : rule__CompInstance__Group__3__Impl rule__CompInstance__Group__4 ;
     public final void rule__CompInstance__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16357:1: ( rule__CompInstance__Group__3__Impl rule__CompInstance__Group__4 )
-            // InternalDedalADL.g:16358:2: rule__CompInstance__Group__3__Impl rule__CompInstance__Group__4
+            // InternalDedalADL.g:16421:1: ( rule__CompInstance__Group__3__Impl rule__CompInstance__Group__4 )
+            // InternalDedalADL.g:16422:2: rule__CompInstance__Group__3__Impl rule__CompInstance__Group__4
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__CompInstance__Group__3__Impl();
@@ -42957,17 +43118,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__3__Impl"
-    // InternalDedalADL.g:16365:1: rule__CompInstance__Group__3__Impl : ( 'id' ) ;
+    // InternalDedalADL.g:16429:1: rule__CompInstance__Group__3__Impl : ( 'id' ) ;
     public final void rule__CompInstance__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16369:1: ( ( 'id' ) )
-            // InternalDedalADL.g:16370:1: ( 'id' )
+            // InternalDedalADL.g:16433:1: ( ( 'id' ) )
+            // InternalDedalADL.g:16434:1: ( 'id' )
             {
-            // InternalDedalADL.g:16370:1: ( 'id' )
-            // InternalDedalADL.g:16371:1: 'id'
+            // InternalDedalADL.g:16434:1: ( 'id' )
+            // InternalDedalADL.g:16435:1: 'id'
             {
              before(grammarAccess.getCompInstanceAccess().getIdKeyword_3()); 
             match(input,63,FollowSets000.FOLLOW_2); 
@@ -42994,16 +43155,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__4"
-    // InternalDedalADL.g:16384:1: rule__CompInstance__Group__4 : rule__CompInstance__Group__4__Impl rule__CompInstance__Group__5 ;
+    // InternalDedalADL.g:16448:1: rule__CompInstance__Group__4 : rule__CompInstance__Group__4__Impl rule__CompInstance__Group__5 ;
     public final void rule__CompInstance__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16388:1: ( rule__CompInstance__Group__4__Impl rule__CompInstance__Group__5 )
-            // InternalDedalADL.g:16389:2: rule__CompInstance__Group__4__Impl rule__CompInstance__Group__5
+            // InternalDedalADL.g:16452:1: ( rule__CompInstance__Group__4__Impl rule__CompInstance__Group__5 )
+            // InternalDedalADL.g:16453:2: rule__CompInstance__Group__4__Impl rule__CompInstance__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_64);
+            pushFollow(FollowSets000.FOLLOW_65);
             rule__CompInstance__Group__4__Impl();
 
             state._fsp--;
@@ -43032,21 +43193,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__4__Impl"
-    // InternalDedalADL.g:16396:1: rule__CompInstance__Group__4__Impl : ( ( rule__CompInstance__IdAssignment_4 ) ) ;
+    // InternalDedalADL.g:16460:1: rule__CompInstance__Group__4__Impl : ( ( rule__CompInstance__IdAssignment_4 ) ) ;
     public final void rule__CompInstance__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16400:1: ( ( ( rule__CompInstance__IdAssignment_4 ) ) )
-            // InternalDedalADL.g:16401:1: ( ( rule__CompInstance__IdAssignment_4 ) )
+            // InternalDedalADL.g:16464:1: ( ( ( rule__CompInstance__IdAssignment_4 ) ) )
+            // InternalDedalADL.g:16465:1: ( ( rule__CompInstance__IdAssignment_4 ) )
             {
-            // InternalDedalADL.g:16401:1: ( ( rule__CompInstance__IdAssignment_4 ) )
-            // InternalDedalADL.g:16402:1: ( rule__CompInstance__IdAssignment_4 )
+            // InternalDedalADL.g:16465:1: ( ( rule__CompInstance__IdAssignment_4 ) )
+            // InternalDedalADL.g:16466:1: ( rule__CompInstance__IdAssignment_4 )
             {
              before(grammarAccess.getCompInstanceAccess().getIdAssignment_4()); 
-            // InternalDedalADL.g:16403:1: ( rule__CompInstance__IdAssignment_4 )
-            // InternalDedalADL.g:16403:2: rule__CompInstance__IdAssignment_4
+            // InternalDedalADL.g:16467:1: ( rule__CompInstance__IdAssignment_4 )
+            // InternalDedalADL.g:16467:2: rule__CompInstance__IdAssignment_4
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompInstance__IdAssignment_4();
@@ -43079,14 +43240,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__5"
-    // InternalDedalADL.g:16413:1: rule__CompInstance__Group__5 : rule__CompInstance__Group__5__Impl rule__CompInstance__Group__6 ;
+    // InternalDedalADL.g:16477:1: rule__CompInstance__Group__5 : rule__CompInstance__Group__5__Impl rule__CompInstance__Group__6 ;
     public final void rule__CompInstance__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16417:1: ( rule__CompInstance__Group__5__Impl rule__CompInstance__Group__6 )
-            // InternalDedalADL.g:16418:2: rule__CompInstance__Group__5__Impl rule__CompInstance__Group__6
+            // InternalDedalADL.g:16481:1: ( rule__CompInstance__Group__5__Impl rule__CompInstance__Group__6 )
+            // InternalDedalADL.g:16482:2: rule__CompInstance__Group__5__Impl rule__CompInstance__Group__6
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__CompInstance__Group__5__Impl();
@@ -43117,20 +43278,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__5__Impl"
-    // InternalDedalADL.g:16425:1: rule__CompInstance__Group__5__Impl : ( 'instance_of' ) ;
+    // InternalDedalADL.g:16489:1: rule__CompInstance__Group__5__Impl : ( 'instance_of' ) ;
     public final void rule__CompInstance__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16429:1: ( ( 'instance_of' ) )
-            // InternalDedalADL.g:16430:1: ( 'instance_of' )
+            // InternalDedalADL.g:16493:1: ( ( 'instance_of' ) )
+            // InternalDedalADL.g:16494:1: ( 'instance_of' )
             {
-            // InternalDedalADL.g:16430:1: ( 'instance_of' )
-            // InternalDedalADL.g:16431:1: 'instance_of'
+            // InternalDedalADL.g:16494:1: ( 'instance_of' )
+            // InternalDedalADL.g:16495:1: 'instance_of'
             {
              before(grammarAccess.getCompInstanceAccess().getInstance_ofKeyword_5()); 
-            match(input,101,FollowSets000.FOLLOW_2); 
+            match(input,102,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getCompInstanceAccess().getInstance_ofKeyword_5()); 
 
             }
@@ -43154,16 +43315,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__6"
-    // InternalDedalADL.g:16444:1: rule__CompInstance__Group__6 : rule__CompInstance__Group__6__Impl rule__CompInstance__Group__7 ;
+    // InternalDedalADL.g:16508:1: rule__CompInstance__Group__6 : rule__CompInstance__Group__6__Impl rule__CompInstance__Group__7 ;
     public final void rule__CompInstance__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16448:1: ( rule__CompInstance__Group__6__Impl rule__CompInstance__Group__7 )
-            // InternalDedalADL.g:16449:2: rule__CompInstance__Group__6__Impl rule__CompInstance__Group__7
+            // InternalDedalADL.g:16512:1: ( rule__CompInstance__Group__6__Impl rule__CompInstance__Group__7 )
+            // InternalDedalADL.g:16513:2: rule__CompInstance__Group__6__Impl rule__CompInstance__Group__7
             {
-            pushFollow(FollowSets000.FOLLOW_71);
+            pushFollow(FollowSets000.FOLLOW_72);
             rule__CompInstance__Group__6__Impl();
 
             state._fsp--;
@@ -43192,21 +43353,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__6__Impl"
-    // InternalDedalADL.g:16456:1: rule__CompInstance__Group__6__Impl : ( ( rule__CompInstance__InstantiatesAssignment_6 ) ) ;
+    // InternalDedalADL.g:16520:1: rule__CompInstance__Group__6__Impl : ( ( rule__CompInstance__InstantiatesAssignment_6 ) ) ;
     public final void rule__CompInstance__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16460:1: ( ( ( rule__CompInstance__InstantiatesAssignment_6 ) ) )
-            // InternalDedalADL.g:16461:1: ( ( rule__CompInstance__InstantiatesAssignment_6 ) )
+            // InternalDedalADL.g:16524:1: ( ( ( rule__CompInstance__InstantiatesAssignment_6 ) ) )
+            // InternalDedalADL.g:16525:1: ( ( rule__CompInstance__InstantiatesAssignment_6 ) )
             {
-            // InternalDedalADL.g:16461:1: ( ( rule__CompInstance__InstantiatesAssignment_6 ) )
-            // InternalDedalADL.g:16462:1: ( rule__CompInstance__InstantiatesAssignment_6 )
+            // InternalDedalADL.g:16525:1: ( ( rule__CompInstance__InstantiatesAssignment_6 ) )
+            // InternalDedalADL.g:16526:1: ( rule__CompInstance__InstantiatesAssignment_6 )
             {
              before(grammarAccess.getCompInstanceAccess().getInstantiatesAssignment_6()); 
-            // InternalDedalADL.g:16463:1: ( rule__CompInstance__InstantiatesAssignment_6 )
-            // InternalDedalADL.g:16463:2: rule__CompInstance__InstantiatesAssignment_6
+            // InternalDedalADL.g:16527:1: ( rule__CompInstance__InstantiatesAssignment_6 )
+            // InternalDedalADL.g:16527:2: rule__CompInstance__InstantiatesAssignment_6
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompInstance__InstantiatesAssignment_6();
@@ -43239,14 +43400,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__7"
-    // InternalDedalADL.g:16473:1: rule__CompInstance__Group__7 : rule__CompInstance__Group__7__Impl ;
+    // InternalDedalADL.g:16537:1: rule__CompInstance__Group__7 : rule__CompInstance__Group__7__Impl ;
     public final void rule__CompInstance__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16477:1: ( rule__CompInstance__Group__7__Impl )
-            // InternalDedalADL.g:16478:2: rule__CompInstance__Group__7__Impl
+            // InternalDedalADL.g:16541:1: ( rule__CompInstance__Group__7__Impl )
+            // InternalDedalADL.g:16542:2: rule__CompInstance__Group__7__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompInstance__Group__7__Impl();
@@ -43272,29 +43433,29 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group__7__Impl"
-    // InternalDedalADL.g:16484:1: rule__CompInstance__Group__7__Impl : ( ( rule__CompInstance__Group_7__0 )? ) ;
+    // InternalDedalADL.g:16548:1: rule__CompInstance__Group__7__Impl : ( ( rule__CompInstance__Group_7__0 )? ) ;
     public final void rule__CompInstance__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16488:1: ( ( ( rule__CompInstance__Group_7__0 )? ) )
-            // InternalDedalADL.g:16489:1: ( ( rule__CompInstance__Group_7__0 )? )
+            // InternalDedalADL.g:16552:1: ( ( ( rule__CompInstance__Group_7__0 )? ) )
+            // InternalDedalADL.g:16553:1: ( ( rule__CompInstance__Group_7__0 )? )
             {
-            // InternalDedalADL.g:16489:1: ( ( rule__CompInstance__Group_7__0 )? )
-            // InternalDedalADL.g:16490:1: ( rule__CompInstance__Group_7__0 )?
+            // InternalDedalADL.g:16553:1: ( ( rule__CompInstance__Group_7__0 )? )
+            // InternalDedalADL.g:16554:1: ( rule__CompInstance__Group_7__0 )?
             {
              before(grammarAccess.getCompInstanceAccess().getGroup_7()); 
-            // InternalDedalADL.g:16491:1: ( rule__CompInstance__Group_7__0 )?
+            // InternalDedalADL.g:16555:1: ( rule__CompInstance__Group_7__0 )?
             int alt118=2;
             int LA118_0 = input.LA(1);
 
-            if ( (LA118_0==106) ) {
+            if ( (LA118_0==107) ) {
                 alt118=1;
             }
             switch (alt118) {
                 case 1 :
-                    // InternalDedalADL.g:16491:2: rule__CompInstance__Group_7__0
+                    // InternalDedalADL.g:16555:2: rule__CompInstance__Group_7__0
                     {
                     pushFollow(FollowSets000.FOLLOW_2);
                     rule__CompInstance__Group_7__0();
@@ -43330,14 +43491,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_2__0"
-    // InternalDedalADL.g:16517:1: rule__CompInstance__Group_2__0 : rule__CompInstance__Group_2__0__Impl rule__CompInstance__Group_2__1 ;
+    // InternalDedalADL.g:16581:1: rule__CompInstance__Group_2__0 : rule__CompInstance__Group_2__0__Impl rule__CompInstance__Group_2__1 ;
     public final void rule__CompInstance__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16521:1: ( rule__CompInstance__Group_2__0__Impl rule__CompInstance__Group_2__1 )
-            // InternalDedalADL.g:16522:2: rule__CompInstance__Group_2__0__Impl rule__CompInstance__Group_2__1
+            // InternalDedalADL.g:16585:1: ( rule__CompInstance__Group_2__0__Impl rule__CompInstance__Group_2__1 )
+            // InternalDedalADL.g:16586:2: rule__CompInstance__Group_2__0__Impl rule__CompInstance__Group_2__1
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__CompInstance__Group_2__0__Impl();
@@ -43368,17 +43529,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_2__0__Impl"
-    // InternalDedalADL.g:16529:1: rule__CompInstance__Group_2__0__Impl : ( 'as' ) ;
+    // InternalDedalADL.g:16593:1: rule__CompInstance__Group_2__0__Impl : ( 'as' ) ;
     public final void rule__CompInstance__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16533:1: ( ( 'as' ) )
-            // InternalDedalADL.g:16534:1: ( 'as' )
+            // InternalDedalADL.g:16597:1: ( ( 'as' ) )
+            // InternalDedalADL.g:16598:1: ( 'as' )
             {
-            // InternalDedalADL.g:16534:1: ( 'as' )
-            // InternalDedalADL.g:16535:1: 'as'
+            // InternalDedalADL.g:16598:1: ( 'as' )
+            // InternalDedalADL.g:16599:1: 'as'
             {
              before(grammarAccess.getCompInstanceAccess().getAsKeyword_2_0()); 
             match(input,80,FollowSets000.FOLLOW_2); 
@@ -43405,14 +43566,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_2__1"
-    // InternalDedalADL.g:16548:1: rule__CompInstance__Group_2__1 : rule__CompInstance__Group_2__1__Impl ;
+    // InternalDedalADL.g:16612:1: rule__CompInstance__Group_2__1 : rule__CompInstance__Group_2__1__Impl ;
     public final void rule__CompInstance__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16552:1: ( rule__CompInstance__Group_2__1__Impl )
-            // InternalDedalADL.g:16553:2: rule__CompInstance__Group_2__1__Impl
+            // InternalDedalADL.g:16616:1: ( rule__CompInstance__Group_2__1__Impl )
+            // InternalDedalADL.g:16617:2: rule__CompInstance__Group_2__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompInstance__Group_2__1__Impl();
@@ -43438,21 +43599,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_2__1__Impl"
-    // InternalDedalADL.g:16559:1: rule__CompInstance__Group_2__1__Impl : ( ( rule__CompInstance__RoleAssignment_2_1 ) ) ;
+    // InternalDedalADL.g:16623:1: rule__CompInstance__Group_2__1__Impl : ( ( rule__CompInstance__RoleAssignment_2_1 ) ) ;
     public final void rule__CompInstance__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16563:1: ( ( ( rule__CompInstance__RoleAssignment_2_1 ) ) )
-            // InternalDedalADL.g:16564:1: ( ( rule__CompInstance__RoleAssignment_2_1 ) )
+            // InternalDedalADL.g:16627:1: ( ( ( rule__CompInstance__RoleAssignment_2_1 ) ) )
+            // InternalDedalADL.g:16628:1: ( ( rule__CompInstance__RoleAssignment_2_1 ) )
             {
-            // InternalDedalADL.g:16564:1: ( ( rule__CompInstance__RoleAssignment_2_1 ) )
-            // InternalDedalADL.g:16565:1: ( rule__CompInstance__RoleAssignment_2_1 )
+            // InternalDedalADL.g:16628:1: ( ( rule__CompInstance__RoleAssignment_2_1 ) )
+            // InternalDedalADL.g:16629:1: ( rule__CompInstance__RoleAssignment_2_1 )
             {
              before(grammarAccess.getCompInstanceAccess().getRoleAssignment_2_1()); 
-            // InternalDedalADL.g:16566:1: ( rule__CompInstance__RoleAssignment_2_1 )
-            // InternalDedalADL.g:16566:2: rule__CompInstance__RoleAssignment_2_1
+            // InternalDedalADL.g:16630:1: ( rule__CompInstance__RoleAssignment_2_1 )
+            // InternalDedalADL.g:16630:2: rule__CompInstance__RoleAssignment_2_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompInstance__RoleAssignment_2_1();
@@ -43485,14 +43646,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_7__0"
-    // InternalDedalADL.g:16580:1: rule__CompInstance__Group_7__0 : rule__CompInstance__Group_7__0__Impl rule__CompInstance__Group_7__1 ;
+    // InternalDedalADL.g:16644:1: rule__CompInstance__Group_7__0 : rule__CompInstance__Group_7__0__Impl rule__CompInstance__Group_7__1 ;
     public final void rule__CompInstance__Group_7__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16584:1: ( rule__CompInstance__Group_7__0__Impl rule__CompInstance__Group_7__1 )
-            // InternalDedalADL.g:16585:2: rule__CompInstance__Group_7__0__Impl rule__CompInstance__Group_7__1
+            // InternalDedalADL.g:16648:1: ( rule__CompInstance__Group_7__0__Impl rule__CompInstance__Group_7__1 )
+            // InternalDedalADL.g:16649:2: rule__CompInstance__Group_7__0__Impl rule__CompInstance__Group_7__1
             {
             pushFollow(FollowSets000.FOLLOW_32);
             rule__CompInstance__Group_7__0__Impl();
@@ -43523,20 +43684,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_7__0__Impl"
-    // InternalDedalADL.g:16592:1: rule__CompInstance__Group_7__0__Impl : ( 'component_interfaces' ) ;
+    // InternalDedalADL.g:16656:1: rule__CompInstance__Group_7__0__Impl : ( 'component_interfaces' ) ;
     public final void rule__CompInstance__Group_7__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16596:1: ( ( 'component_interfaces' ) )
-            // InternalDedalADL.g:16597:1: ( 'component_interfaces' )
+            // InternalDedalADL.g:16660:1: ( ( 'component_interfaces' ) )
+            // InternalDedalADL.g:16661:1: ( 'component_interfaces' )
             {
-            // InternalDedalADL.g:16597:1: ( 'component_interfaces' )
-            // InternalDedalADL.g:16598:1: 'component_interfaces'
+            // InternalDedalADL.g:16661:1: ( 'component_interfaces' )
+            // InternalDedalADL.g:16662:1: 'component_interfaces'
             {
              before(grammarAccess.getCompInstanceAccess().getComponent_interfacesKeyword_7_0()); 
-            match(input,106,FollowSets000.FOLLOW_2); 
+            match(input,107,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getCompInstanceAccess().getComponent_interfacesKeyword_7_0()); 
 
             }
@@ -43560,14 +43721,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_7__1"
-    // InternalDedalADL.g:16611:1: rule__CompInstance__Group_7__1 : rule__CompInstance__Group_7__1__Impl rule__CompInstance__Group_7__2 ;
+    // InternalDedalADL.g:16675:1: rule__CompInstance__Group_7__1 : rule__CompInstance__Group_7__1__Impl rule__CompInstance__Group_7__2 ;
     public final void rule__CompInstance__Group_7__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16615:1: ( rule__CompInstance__Group_7__1__Impl rule__CompInstance__Group_7__2 )
-            // InternalDedalADL.g:16616:2: rule__CompInstance__Group_7__1__Impl rule__CompInstance__Group_7__2
+            // InternalDedalADL.g:16679:1: ( rule__CompInstance__Group_7__1__Impl rule__CompInstance__Group_7__2 )
+            // InternalDedalADL.g:16680:2: rule__CompInstance__Group_7__1__Impl rule__CompInstance__Group_7__2
             {
             pushFollow(FollowSets000.FOLLOW_27);
             rule__CompInstance__Group_7__1__Impl();
@@ -43598,21 +43759,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_7__1__Impl"
-    // InternalDedalADL.g:16623:1: rule__CompInstance__Group_7__1__Impl : ( ( rule__CompInstance__CompInterfacesAssignment_7_1 ) ) ;
+    // InternalDedalADL.g:16687:1: rule__CompInstance__Group_7__1__Impl : ( ( rule__CompInstance__CompInterfacesAssignment_7_1 ) ) ;
     public final void rule__CompInstance__Group_7__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16627:1: ( ( ( rule__CompInstance__CompInterfacesAssignment_7_1 ) ) )
-            // InternalDedalADL.g:16628:1: ( ( rule__CompInstance__CompInterfacesAssignment_7_1 ) )
+            // InternalDedalADL.g:16691:1: ( ( ( rule__CompInstance__CompInterfacesAssignment_7_1 ) ) )
+            // InternalDedalADL.g:16692:1: ( ( rule__CompInstance__CompInterfacesAssignment_7_1 ) )
             {
-            // InternalDedalADL.g:16628:1: ( ( rule__CompInstance__CompInterfacesAssignment_7_1 ) )
-            // InternalDedalADL.g:16629:1: ( rule__CompInstance__CompInterfacesAssignment_7_1 )
+            // InternalDedalADL.g:16692:1: ( ( rule__CompInstance__CompInterfacesAssignment_7_1 ) )
+            // InternalDedalADL.g:16693:1: ( rule__CompInstance__CompInterfacesAssignment_7_1 )
             {
              before(grammarAccess.getCompInstanceAccess().getCompInterfacesAssignment_7_1()); 
-            // InternalDedalADL.g:16630:1: ( rule__CompInstance__CompInterfacesAssignment_7_1 )
-            // InternalDedalADL.g:16630:2: rule__CompInstance__CompInterfacesAssignment_7_1
+            // InternalDedalADL.g:16694:1: ( rule__CompInstance__CompInterfacesAssignment_7_1 )
+            // InternalDedalADL.g:16694:2: rule__CompInstance__CompInterfacesAssignment_7_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompInstance__CompInterfacesAssignment_7_1();
@@ -43645,14 +43806,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_7__2"
-    // InternalDedalADL.g:16640:1: rule__CompInstance__Group_7__2 : rule__CompInstance__Group_7__2__Impl ;
+    // InternalDedalADL.g:16704:1: rule__CompInstance__Group_7__2 : rule__CompInstance__Group_7__2__Impl ;
     public final void rule__CompInstance__Group_7__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16644:1: ( rule__CompInstance__Group_7__2__Impl )
-            // InternalDedalADL.g:16645:2: rule__CompInstance__Group_7__2__Impl
+            // InternalDedalADL.g:16708:1: ( rule__CompInstance__Group_7__2__Impl )
+            // InternalDedalADL.g:16709:2: rule__CompInstance__Group_7__2__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompInstance__Group_7__2__Impl();
@@ -43678,20 +43839,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_7__2__Impl"
-    // InternalDedalADL.g:16651:1: rule__CompInstance__Group_7__2__Impl : ( ( rule__CompInstance__Group_7_2__0 )* ) ;
+    // InternalDedalADL.g:16715:1: rule__CompInstance__Group_7__2__Impl : ( ( rule__CompInstance__Group_7_2__0 )* ) ;
     public final void rule__CompInstance__Group_7__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16655:1: ( ( ( rule__CompInstance__Group_7_2__0 )* ) )
-            // InternalDedalADL.g:16656:1: ( ( rule__CompInstance__Group_7_2__0 )* )
+            // InternalDedalADL.g:16719:1: ( ( ( rule__CompInstance__Group_7_2__0 )* ) )
+            // InternalDedalADL.g:16720:1: ( ( rule__CompInstance__Group_7_2__0 )* )
             {
-            // InternalDedalADL.g:16656:1: ( ( rule__CompInstance__Group_7_2__0 )* )
-            // InternalDedalADL.g:16657:1: ( rule__CompInstance__Group_7_2__0 )*
+            // InternalDedalADL.g:16720:1: ( ( rule__CompInstance__Group_7_2__0 )* )
+            // InternalDedalADL.g:16721:1: ( rule__CompInstance__Group_7_2__0 )*
             {
              before(grammarAccess.getCompInstanceAccess().getGroup_7_2()); 
-            // InternalDedalADL.g:16658:1: ( rule__CompInstance__Group_7_2__0 )*
+            // InternalDedalADL.g:16722:1: ( rule__CompInstance__Group_7_2__0 )*
             loop119:
             do {
                 int alt119=2;
@@ -43700,7 +43861,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
                 if ( (LA119_0==47) ) {
                     int LA119_2 = input.LA(2);
 
-                    if ( (LA119_2==69||LA119_2==97||LA119_2==99) ) {
+                    if ( (LA119_2==69||LA119_2==98||LA119_2==100) ) {
                         alt119=1;
                     }
 
@@ -43710,7 +43871,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
                 switch (alt119) {
             	case 1 :
-            	    // InternalDedalADL.g:16658:2: rule__CompInstance__Group_7_2__0
+            	    // InternalDedalADL.g:16722:2: rule__CompInstance__Group_7_2__0
             	    {
             	    pushFollow(FollowSets000.FOLLOW_8);
             	    rule__CompInstance__Group_7_2__0();
@@ -43749,14 +43910,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_7_2__0"
-    // InternalDedalADL.g:16674:1: rule__CompInstance__Group_7_2__0 : rule__CompInstance__Group_7_2__0__Impl rule__CompInstance__Group_7_2__1 ;
+    // InternalDedalADL.g:16738:1: rule__CompInstance__Group_7_2__0 : rule__CompInstance__Group_7_2__0__Impl rule__CompInstance__Group_7_2__1 ;
     public final void rule__CompInstance__Group_7_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16678:1: ( rule__CompInstance__Group_7_2__0__Impl rule__CompInstance__Group_7_2__1 )
-            // InternalDedalADL.g:16679:2: rule__CompInstance__Group_7_2__0__Impl rule__CompInstance__Group_7_2__1
+            // InternalDedalADL.g:16742:1: ( rule__CompInstance__Group_7_2__0__Impl rule__CompInstance__Group_7_2__1 )
+            // InternalDedalADL.g:16743:2: rule__CompInstance__Group_7_2__0__Impl rule__CompInstance__Group_7_2__1
             {
             pushFollow(FollowSets000.FOLLOW_32);
             rule__CompInstance__Group_7_2__0__Impl();
@@ -43787,17 +43948,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_7_2__0__Impl"
-    // InternalDedalADL.g:16686:1: rule__CompInstance__Group_7_2__0__Impl : ( ';' ) ;
+    // InternalDedalADL.g:16750:1: rule__CompInstance__Group_7_2__0__Impl : ( ';' ) ;
     public final void rule__CompInstance__Group_7_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16690:1: ( ( ';' ) )
-            // InternalDedalADL.g:16691:1: ( ';' )
+            // InternalDedalADL.g:16754:1: ( ( ';' ) )
+            // InternalDedalADL.g:16755:1: ( ';' )
             {
-            // InternalDedalADL.g:16691:1: ( ';' )
-            // InternalDedalADL.g:16692:1: ';'
+            // InternalDedalADL.g:16755:1: ( ';' )
+            // InternalDedalADL.g:16756:1: ';'
             {
              before(grammarAccess.getCompInstanceAccess().getSemicolonKeyword_7_2_0()); 
             match(input,47,FollowSets000.FOLLOW_2); 
@@ -43824,14 +43985,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_7_2__1"
-    // InternalDedalADL.g:16705:1: rule__CompInstance__Group_7_2__1 : rule__CompInstance__Group_7_2__1__Impl ;
+    // InternalDedalADL.g:16769:1: rule__CompInstance__Group_7_2__1 : rule__CompInstance__Group_7_2__1__Impl ;
     public final void rule__CompInstance__Group_7_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16709:1: ( rule__CompInstance__Group_7_2__1__Impl )
-            // InternalDedalADL.g:16710:2: rule__CompInstance__Group_7_2__1__Impl
+            // InternalDedalADL.g:16773:1: ( rule__CompInstance__Group_7_2__1__Impl )
+            // InternalDedalADL.g:16774:2: rule__CompInstance__Group_7_2__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompInstance__Group_7_2__1__Impl();
@@ -43857,21 +44018,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__Group_7_2__1__Impl"
-    // InternalDedalADL.g:16716:1: rule__CompInstance__Group_7_2__1__Impl : ( ( rule__CompInstance__CompInterfacesAssignment_7_2_1 ) ) ;
+    // InternalDedalADL.g:16780:1: rule__CompInstance__Group_7_2__1__Impl : ( ( rule__CompInstance__CompInterfacesAssignment_7_2_1 ) ) ;
     public final void rule__CompInstance__Group_7_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16720:1: ( ( ( rule__CompInstance__CompInterfacesAssignment_7_2_1 ) ) )
-            // InternalDedalADL.g:16721:1: ( ( rule__CompInstance__CompInterfacesAssignment_7_2_1 ) )
+            // InternalDedalADL.g:16784:1: ( ( ( rule__CompInstance__CompInterfacesAssignment_7_2_1 ) ) )
+            // InternalDedalADL.g:16785:1: ( ( rule__CompInstance__CompInterfacesAssignment_7_2_1 ) )
             {
-            // InternalDedalADL.g:16721:1: ( ( rule__CompInstance__CompInterfacesAssignment_7_2_1 ) )
-            // InternalDedalADL.g:16722:1: ( rule__CompInstance__CompInterfacesAssignment_7_2_1 )
+            // InternalDedalADL.g:16785:1: ( ( rule__CompInstance__CompInterfacesAssignment_7_2_1 ) )
+            // InternalDedalADL.g:16786:1: ( rule__CompInstance__CompInterfacesAssignment_7_2_1 )
             {
              before(grammarAccess.getCompInstanceAccess().getCompInterfacesAssignment_7_2_1()); 
-            // InternalDedalADL.g:16723:1: ( rule__CompInstance__CompInterfacesAssignment_7_2_1 )
-            // InternalDedalADL.g:16723:2: rule__CompInstance__CompInterfacesAssignment_7_2_1
+            // InternalDedalADL.g:16787:1: ( rule__CompInstance__CompInterfacesAssignment_7_2_1 )
+            // InternalDedalADL.g:16787:2: rule__CompInstance__CompInterfacesAssignment_7_2_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__CompInstance__CompInterfacesAssignment_7_2_1();
@@ -43904,14 +44065,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__0"
-    // InternalDedalADL.g:16737:1: rule__InstConnection__Group__0 : rule__InstConnection__Group__0__Impl rule__InstConnection__Group__1 ;
+    // InternalDedalADL.g:16801:1: rule__InstConnection__Group__0 : rule__InstConnection__Group__0__Impl rule__InstConnection__Group__1 ;
     public final void rule__InstConnection__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16741:1: ( rule__InstConnection__Group__0__Impl rule__InstConnection__Group__1 )
-            // InternalDedalADL.g:16742:2: rule__InstConnection__Group__0__Impl rule__InstConnection__Group__1
+            // InternalDedalADL.g:16805:1: ( rule__InstConnection__Group__0__Impl rule__InstConnection__Group__1 )
+            // InternalDedalADL.g:16806:2: rule__InstConnection__Group__0__Impl rule__InstConnection__Group__1
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__InstConnection__Group__0__Impl();
@@ -43942,20 +44103,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__0__Impl"
-    // InternalDedalADL.g:16749:1: rule__InstConnection__Group__0__Impl : ( 'instance_connection' ) ;
+    // InternalDedalADL.g:16813:1: rule__InstConnection__Group__0__Impl : ( 'instance_connection' ) ;
     public final void rule__InstConnection__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16753:1: ( ( 'instance_connection' ) )
-            // InternalDedalADL.g:16754:1: ( 'instance_connection' )
+            // InternalDedalADL.g:16817:1: ( ( 'instance_connection' ) )
+            // InternalDedalADL.g:16818:1: ( 'instance_connection' )
             {
-            // InternalDedalADL.g:16754:1: ( 'instance_connection' )
-            // InternalDedalADL.g:16755:1: 'instance_connection'
+            // InternalDedalADL.g:16818:1: ( 'instance_connection' )
+            // InternalDedalADL.g:16819:1: 'instance_connection'
             {
              before(grammarAccess.getInstConnectionAccess().getInstance_connectionKeyword_0()); 
-            match(input,107,FollowSets000.FOLLOW_2); 
+            match(input,108,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getInstConnectionAccess().getInstance_connectionKeyword_0()); 
 
             }
@@ -43979,14 +44140,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__1"
-    // InternalDedalADL.g:16768:1: rule__InstConnection__Group__1 : rule__InstConnection__Group__1__Impl rule__InstConnection__Group__2 ;
+    // InternalDedalADL.g:16832:1: rule__InstConnection__Group__1 : rule__InstConnection__Group__1__Impl rule__InstConnection__Group__2 ;
     public final void rule__InstConnection__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16772:1: ( rule__InstConnection__Group__1__Impl rule__InstConnection__Group__2 )
-            // InternalDedalADL.g:16773:2: rule__InstConnection__Group__1__Impl rule__InstConnection__Group__2
+            // InternalDedalADL.g:16836:1: ( rule__InstConnection__Group__1__Impl rule__InstConnection__Group__2 )
+            // InternalDedalADL.g:16837:2: rule__InstConnection__Group__1__Impl rule__InstConnection__Group__2
             {
             pushFollow(FollowSets000.FOLLOW_37);
             rule__InstConnection__Group__1__Impl();
@@ -44017,21 +44178,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__1__Impl"
-    // InternalDedalADL.g:16780:1: rule__InstConnection__Group__1__Impl : ( ( rule__InstConnection__RefIDAssignment_1 ) ) ;
+    // InternalDedalADL.g:16844:1: rule__InstConnection__Group__1__Impl : ( ( rule__InstConnection__RefIDAssignment_1 ) ) ;
     public final void rule__InstConnection__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16784:1: ( ( ( rule__InstConnection__RefIDAssignment_1 ) ) )
-            // InternalDedalADL.g:16785:1: ( ( rule__InstConnection__RefIDAssignment_1 ) )
+            // InternalDedalADL.g:16848:1: ( ( ( rule__InstConnection__RefIDAssignment_1 ) ) )
+            // InternalDedalADL.g:16849:1: ( ( rule__InstConnection__RefIDAssignment_1 ) )
             {
-            // InternalDedalADL.g:16785:1: ( ( rule__InstConnection__RefIDAssignment_1 ) )
-            // InternalDedalADL.g:16786:1: ( rule__InstConnection__RefIDAssignment_1 )
+            // InternalDedalADL.g:16849:1: ( ( rule__InstConnection__RefIDAssignment_1 ) )
+            // InternalDedalADL.g:16850:1: ( rule__InstConnection__RefIDAssignment_1 )
             {
              before(grammarAccess.getInstConnectionAccess().getRefIDAssignment_1()); 
-            // InternalDedalADL.g:16787:1: ( rule__InstConnection__RefIDAssignment_1 )
-            // InternalDedalADL.g:16787:2: rule__InstConnection__RefIDAssignment_1
+            // InternalDedalADL.g:16851:1: ( rule__InstConnection__RefIDAssignment_1 )
+            // InternalDedalADL.g:16851:2: rule__InstConnection__RefIDAssignment_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__InstConnection__RefIDAssignment_1();
@@ -44064,14 +44225,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__2"
-    // InternalDedalADL.g:16797:1: rule__InstConnection__Group__2 : rule__InstConnection__Group__2__Impl rule__InstConnection__Group__3 ;
+    // InternalDedalADL.g:16861:1: rule__InstConnection__Group__2 : rule__InstConnection__Group__2__Impl rule__InstConnection__Group__3 ;
     public final void rule__InstConnection__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16801:1: ( rule__InstConnection__Group__2__Impl rule__InstConnection__Group__3 )
-            // InternalDedalADL.g:16802:2: rule__InstConnection__Group__2__Impl rule__InstConnection__Group__3
+            // InternalDedalADL.g:16865:1: ( rule__InstConnection__Group__2__Impl rule__InstConnection__Group__3 )
+            // InternalDedalADL.g:16866:2: rule__InstConnection__Group__2__Impl rule__InstConnection__Group__3
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__InstConnection__Group__2__Impl();
@@ -44102,17 +44263,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__2__Impl"
-    // InternalDedalADL.g:16809:1: rule__InstConnection__Group__2__Impl : ( 'client' ) ;
+    // InternalDedalADL.g:16873:1: rule__InstConnection__Group__2__Impl : ( 'client' ) ;
     public final void rule__InstConnection__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16813:1: ( ( 'client' ) )
-            // InternalDedalADL.g:16814:1: ( 'client' )
+            // InternalDedalADL.g:16877:1: ( ( 'client' ) )
+            // InternalDedalADL.g:16878:1: ( 'client' )
             {
-            // InternalDedalADL.g:16814:1: ( 'client' )
-            // InternalDedalADL.g:16815:1: 'client'
+            // InternalDedalADL.g:16878:1: ( 'client' )
+            // InternalDedalADL.g:16879:1: 'client'
             {
              before(grammarAccess.getInstConnectionAccess().getClientKeyword_2()); 
             match(input,74,FollowSets000.FOLLOW_2); 
@@ -44139,14 +44300,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__3"
-    // InternalDedalADL.g:16828:1: rule__InstConnection__Group__3 : rule__InstConnection__Group__3__Impl rule__InstConnection__Group__4 ;
+    // InternalDedalADL.g:16892:1: rule__InstConnection__Group__3 : rule__InstConnection__Group__3__Impl rule__InstConnection__Group__4 ;
     public final void rule__InstConnection__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16832:1: ( rule__InstConnection__Group__3__Impl rule__InstConnection__Group__4 )
-            // InternalDedalADL.g:16833:2: rule__InstConnection__Group__3__Impl rule__InstConnection__Group__4
+            // InternalDedalADL.g:16896:1: ( rule__InstConnection__Group__3__Impl rule__InstConnection__Group__4 )
+            // InternalDedalADL.g:16897:2: rule__InstConnection__Group__3__Impl rule__InstConnection__Group__4
             {
             pushFollow(FollowSets000.FOLLOW_38);
             rule__InstConnection__Group__3__Impl();
@@ -44177,21 +44338,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__3__Impl"
-    // InternalDedalADL.g:16840:1: rule__InstConnection__Group__3__Impl : ( ( rule__InstConnection__ClientInstElemAssignment_3 ) ) ;
+    // InternalDedalADL.g:16904:1: rule__InstConnection__Group__3__Impl : ( ( rule__InstConnection__ClientInstElemAssignment_3 ) ) ;
     public final void rule__InstConnection__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16844:1: ( ( ( rule__InstConnection__ClientInstElemAssignment_3 ) ) )
-            // InternalDedalADL.g:16845:1: ( ( rule__InstConnection__ClientInstElemAssignment_3 ) )
+            // InternalDedalADL.g:16908:1: ( ( ( rule__InstConnection__ClientInstElemAssignment_3 ) ) )
+            // InternalDedalADL.g:16909:1: ( ( rule__InstConnection__ClientInstElemAssignment_3 ) )
             {
-            // InternalDedalADL.g:16845:1: ( ( rule__InstConnection__ClientInstElemAssignment_3 ) )
-            // InternalDedalADL.g:16846:1: ( rule__InstConnection__ClientInstElemAssignment_3 )
+            // InternalDedalADL.g:16909:1: ( ( rule__InstConnection__ClientInstElemAssignment_3 ) )
+            // InternalDedalADL.g:16910:1: ( rule__InstConnection__ClientInstElemAssignment_3 )
             {
              before(grammarAccess.getInstConnectionAccess().getClientInstElemAssignment_3()); 
-            // InternalDedalADL.g:16847:1: ( rule__InstConnection__ClientInstElemAssignment_3 )
-            // InternalDedalADL.g:16847:2: rule__InstConnection__ClientInstElemAssignment_3
+            // InternalDedalADL.g:16911:1: ( rule__InstConnection__ClientInstElemAssignment_3 )
+            // InternalDedalADL.g:16911:2: rule__InstConnection__ClientInstElemAssignment_3
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__InstConnection__ClientInstElemAssignment_3();
@@ -44224,14 +44385,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__4"
-    // InternalDedalADL.g:16857:1: rule__InstConnection__Group__4 : rule__InstConnection__Group__4__Impl rule__InstConnection__Group__5 ;
+    // InternalDedalADL.g:16921:1: rule__InstConnection__Group__4 : rule__InstConnection__Group__4__Impl rule__InstConnection__Group__5 ;
     public final void rule__InstConnection__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16861:1: ( rule__InstConnection__Group__4__Impl rule__InstConnection__Group__5 )
-            // InternalDedalADL.g:16862:2: rule__InstConnection__Group__4__Impl rule__InstConnection__Group__5
+            // InternalDedalADL.g:16925:1: ( rule__InstConnection__Group__4__Impl rule__InstConnection__Group__5 )
+            // InternalDedalADL.g:16926:2: rule__InstConnection__Group__4__Impl rule__InstConnection__Group__5
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__InstConnection__Group__4__Impl();
@@ -44262,17 +44423,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__4__Impl"
-    // InternalDedalADL.g:16869:1: rule__InstConnection__Group__4__Impl : ( '.' ) ;
+    // InternalDedalADL.g:16933:1: rule__InstConnection__Group__4__Impl : ( '.' ) ;
     public final void rule__InstConnection__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16873:1: ( ( '.' ) )
-            // InternalDedalADL.g:16874:1: ( '.' )
+            // InternalDedalADL.g:16937:1: ( ( '.' ) )
+            // InternalDedalADL.g:16938:1: ( '.' )
             {
-            // InternalDedalADL.g:16874:1: ( '.' )
-            // InternalDedalADL.g:16875:1: '.'
+            // InternalDedalADL.g:16938:1: ( '.' )
+            // InternalDedalADL.g:16939:1: '.'
             {
              before(grammarAccess.getInstConnectionAccess().getFullStopKeyword_4()); 
             match(input,75,FollowSets000.FOLLOW_2); 
@@ -44299,14 +44460,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__5"
-    // InternalDedalADL.g:16888:1: rule__InstConnection__Group__5 : rule__InstConnection__Group__5__Impl rule__InstConnection__Group__6 ;
+    // InternalDedalADL.g:16952:1: rule__InstConnection__Group__5 : rule__InstConnection__Group__5__Impl rule__InstConnection__Group__6 ;
     public final void rule__InstConnection__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16892:1: ( rule__InstConnection__Group__5__Impl rule__InstConnection__Group__6 )
-            // InternalDedalADL.g:16893:2: rule__InstConnection__Group__5__Impl rule__InstConnection__Group__6
+            // InternalDedalADL.g:16956:1: ( rule__InstConnection__Group__5__Impl rule__InstConnection__Group__6 )
+            // InternalDedalADL.g:16957:2: rule__InstConnection__Group__5__Impl rule__InstConnection__Group__6
             {
             pushFollow(FollowSets000.FOLLOW_39);
             rule__InstConnection__Group__5__Impl();
@@ -44337,21 +44498,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__5__Impl"
-    // InternalDedalADL.g:16900:1: rule__InstConnection__Group__5__Impl : ( ( rule__InstConnection__ClientIntElemAssignment_5 ) ) ;
+    // InternalDedalADL.g:16964:1: rule__InstConnection__Group__5__Impl : ( ( rule__InstConnection__ClientIntElemAssignment_5 ) ) ;
     public final void rule__InstConnection__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16904:1: ( ( ( rule__InstConnection__ClientIntElemAssignment_5 ) ) )
-            // InternalDedalADL.g:16905:1: ( ( rule__InstConnection__ClientIntElemAssignment_5 ) )
+            // InternalDedalADL.g:16968:1: ( ( ( rule__InstConnection__ClientIntElemAssignment_5 ) ) )
+            // InternalDedalADL.g:16969:1: ( ( rule__InstConnection__ClientIntElemAssignment_5 ) )
             {
-            // InternalDedalADL.g:16905:1: ( ( rule__InstConnection__ClientIntElemAssignment_5 ) )
-            // InternalDedalADL.g:16906:1: ( rule__InstConnection__ClientIntElemAssignment_5 )
+            // InternalDedalADL.g:16969:1: ( ( rule__InstConnection__ClientIntElemAssignment_5 ) )
+            // InternalDedalADL.g:16970:1: ( rule__InstConnection__ClientIntElemAssignment_5 )
             {
              before(grammarAccess.getInstConnectionAccess().getClientIntElemAssignment_5()); 
-            // InternalDedalADL.g:16907:1: ( rule__InstConnection__ClientIntElemAssignment_5 )
-            // InternalDedalADL.g:16907:2: rule__InstConnection__ClientIntElemAssignment_5
+            // InternalDedalADL.g:16971:1: ( rule__InstConnection__ClientIntElemAssignment_5 )
+            // InternalDedalADL.g:16971:2: rule__InstConnection__ClientIntElemAssignment_5
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__InstConnection__ClientIntElemAssignment_5();
@@ -44384,14 +44545,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__6"
-    // InternalDedalADL.g:16917:1: rule__InstConnection__Group__6 : rule__InstConnection__Group__6__Impl rule__InstConnection__Group__7 ;
+    // InternalDedalADL.g:16981:1: rule__InstConnection__Group__6 : rule__InstConnection__Group__6__Impl rule__InstConnection__Group__7 ;
     public final void rule__InstConnection__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16921:1: ( rule__InstConnection__Group__6__Impl rule__InstConnection__Group__7 )
-            // InternalDedalADL.g:16922:2: rule__InstConnection__Group__6__Impl rule__InstConnection__Group__7
+            // InternalDedalADL.g:16985:1: ( rule__InstConnection__Group__6__Impl rule__InstConnection__Group__7 )
+            // InternalDedalADL.g:16986:2: rule__InstConnection__Group__6__Impl rule__InstConnection__Group__7
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__InstConnection__Group__6__Impl();
@@ -44422,17 +44583,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__6__Impl"
-    // InternalDedalADL.g:16929:1: rule__InstConnection__Group__6__Impl : ( 'server' ) ;
+    // InternalDedalADL.g:16993:1: rule__InstConnection__Group__6__Impl : ( 'server' ) ;
     public final void rule__InstConnection__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16933:1: ( ( 'server' ) )
-            // InternalDedalADL.g:16934:1: ( 'server' )
+            // InternalDedalADL.g:16997:1: ( ( 'server' ) )
+            // InternalDedalADL.g:16998:1: ( 'server' )
             {
-            // InternalDedalADL.g:16934:1: ( 'server' )
-            // InternalDedalADL.g:16935:1: 'server'
+            // InternalDedalADL.g:16998:1: ( 'server' )
+            // InternalDedalADL.g:16999:1: 'server'
             {
              before(grammarAccess.getInstConnectionAccess().getServerKeyword_6()); 
             match(input,76,FollowSets000.FOLLOW_2); 
@@ -44459,14 +44620,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__7"
-    // InternalDedalADL.g:16948:1: rule__InstConnection__Group__7 : rule__InstConnection__Group__7__Impl rule__InstConnection__Group__8 ;
+    // InternalDedalADL.g:17012:1: rule__InstConnection__Group__7 : rule__InstConnection__Group__7__Impl rule__InstConnection__Group__8 ;
     public final void rule__InstConnection__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16952:1: ( rule__InstConnection__Group__7__Impl rule__InstConnection__Group__8 )
-            // InternalDedalADL.g:16953:2: rule__InstConnection__Group__7__Impl rule__InstConnection__Group__8
+            // InternalDedalADL.g:17016:1: ( rule__InstConnection__Group__7__Impl rule__InstConnection__Group__8 )
+            // InternalDedalADL.g:17017:2: rule__InstConnection__Group__7__Impl rule__InstConnection__Group__8
             {
             pushFollow(FollowSets000.FOLLOW_38);
             rule__InstConnection__Group__7__Impl();
@@ -44497,21 +44658,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__7__Impl"
-    // InternalDedalADL.g:16960:1: rule__InstConnection__Group__7__Impl : ( ( rule__InstConnection__ServerInstElemAssignment_7 ) ) ;
+    // InternalDedalADL.g:17024:1: rule__InstConnection__Group__7__Impl : ( ( rule__InstConnection__ServerInstElemAssignment_7 ) ) ;
     public final void rule__InstConnection__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16964:1: ( ( ( rule__InstConnection__ServerInstElemAssignment_7 ) ) )
-            // InternalDedalADL.g:16965:1: ( ( rule__InstConnection__ServerInstElemAssignment_7 ) )
+            // InternalDedalADL.g:17028:1: ( ( ( rule__InstConnection__ServerInstElemAssignment_7 ) ) )
+            // InternalDedalADL.g:17029:1: ( ( rule__InstConnection__ServerInstElemAssignment_7 ) )
             {
-            // InternalDedalADL.g:16965:1: ( ( rule__InstConnection__ServerInstElemAssignment_7 ) )
-            // InternalDedalADL.g:16966:1: ( rule__InstConnection__ServerInstElemAssignment_7 )
+            // InternalDedalADL.g:17029:1: ( ( rule__InstConnection__ServerInstElemAssignment_7 ) )
+            // InternalDedalADL.g:17030:1: ( rule__InstConnection__ServerInstElemAssignment_7 )
             {
              before(grammarAccess.getInstConnectionAccess().getServerInstElemAssignment_7()); 
-            // InternalDedalADL.g:16967:1: ( rule__InstConnection__ServerInstElemAssignment_7 )
-            // InternalDedalADL.g:16967:2: rule__InstConnection__ServerInstElemAssignment_7
+            // InternalDedalADL.g:17031:1: ( rule__InstConnection__ServerInstElemAssignment_7 )
+            // InternalDedalADL.g:17031:2: rule__InstConnection__ServerInstElemAssignment_7
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__InstConnection__ServerInstElemAssignment_7();
@@ -44544,14 +44705,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__8"
-    // InternalDedalADL.g:16977:1: rule__InstConnection__Group__8 : rule__InstConnection__Group__8__Impl rule__InstConnection__Group__9 ;
+    // InternalDedalADL.g:17041:1: rule__InstConnection__Group__8 : rule__InstConnection__Group__8__Impl rule__InstConnection__Group__9 ;
     public final void rule__InstConnection__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16981:1: ( rule__InstConnection__Group__8__Impl rule__InstConnection__Group__9 )
-            // InternalDedalADL.g:16982:2: rule__InstConnection__Group__8__Impl rule__InstConnection__Group__9
+            // InternalDedalADL.g:17045:1: ( rule__InstConnection__Group__8__Impl rule__InstConnection__Group__9 )
+            // InternalDedalADL.g:17046:2: rule__InstConnection__Group__8__Impl rule__InstConnection__Group__9
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__InstConnection__Group__8__Impl();
@@ -44582,17 +44743,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__8__Impl"
-    // InternalDedalADL.g:16989:1: rule__InstConnection__Group__8__Impl : ( '.' ) ;
+    // InternalDedalADL.g:17053:1: rule__InstConnection__Group__8__Impl : ( '.' ) ;
     public final void rule__InstConnection__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:16993:1: ( ( '.' ) )
-            // InternalDedalADL.g:16994:1: ( '.' )
+            // InternalDedalADL.g:17057:1: ( ( '.' ) )
+            // InternalDedalADL.g:17058:1: ( '.' )
             {
-            // InternalDedalADL.g:16994:1: ( '.' )
-            // InternalDedalADL.g:16995:1: '.'
+            // InternalDedalADL.g:17058:1: ( '.' )
+            // InternalDedalADL.g:17059:1: '.'
             {
              before(grammarAccess.getInstConnectionAccess().getFullStopKeyword_8()); 
             match(input,75,FollowSets000.FOLLOW_2); 
@@ -44619,14 +44780,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__9"
-    // InternalDedalADL.g:17008:1: rule__InstConnection__Group__9 : rule__InstConnection__Group__9__Impl ;
+    // InternalDedalADL.g:17072:1: rule__InstConnection__Group__9 : rule__InstConnection__Group__9__Impl ;
     public final void rule__InstConnection__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17012:1: ( rule__InstConnection__Group__9__Impl )
-            // InternalDedalADL.g:17013:2: rule__InstConnection__Group__9__Impl
+            // InternalDedalADL.g:17076:1: ( rule__InstConnection__Group__9__Impl )
+            // InternalDedalADL.g:17077:2: rule__InstConnection__Group__9__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__InstConnection__Group__9__Impl();
@@ -44652,21 +44813,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__Group__9__Impl"
-    // InternalDedalADL.g:17019:1: rule__InstConnection__Group__9__Impl : ( ( rule__InstConnection__ServerIntElemAssignment_9 ) ) ;
+    // InternalDedalADL.g:17083:1: rule__InstConnection__Group__9__Impl : ( ( rule__InstConnection__ServerIntElemAssignment_9 ) ) ;
     public final void rule__InstConnection__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17023:1: ( ( ( rule__InstConnection__ServerIntElemAssignment_9 ) ) )
-            // InternalDedalADL.g:17024:1: ( ( rule__InstConnection__ServerIntElemAssignment_9 ) )
+            // InternalDedalADL.g:17087:1: ( ( ( rule__InstConnection__ServerIntElemAssignment_9 ) ) )
+            // InternalDedalADL.g:17088:1: ( ( rule__InstConnection__ServerIntElemAssignment_9 ) )
             {
-            // InternalDedalADL.g:17024:1: ( ( rule__InstConnection__ServerIntElemAssignment_9 ) )
-            // InternalDedalADL.g:17025:1: ( rule__InstConnection__ServerIntElemAssignment_9 )
+            // InternalDedalADL.g:17088:1: ( ( rule__InstConnection__ServerIntElemAssignment_9 ) )
+            // InternalDedalADL.g:17089:1: ( rule__InstConnection__ServerIntElemAssignment_9 )
             {
              before(grammarAccess.getInstConnectionAccess().getServerIntElemAssignment_9()); 
-            // InternalDedalADL.g:17026:1: ( rule__InstConnection__ServerIntElemAssignment_9 )
-            // InternalDedalADL.g:17026:2: rule__InstConnection__ServerIntElemAssignment_9
+            // InternalDedalADL.g:17090:1: ( rule__InstConnection__ServerIntElemAssignment_9 )
+            // InternalDedalADL.g:17090:2: rule__InstConnection__ServerIntElemAssignment_9
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__InstConnection__ServerIntElemAssignment_9();
@@ -44699,16 +44860,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint_expression__Group_0__0"
-    // InternalDedalADL.g:17056:1: rule__Constraint_expression__Group_0__0 : rule__Constraint_expression__Group_0__0__Impl rule__Constraint_expression__Group_0__1 ;
+    // InternalDedalADL.g:17120:1: rule__Constraint_expression__Group_0__0 : rule__Constraint_expression__Group_0__0__Impl rule__Constraint_expression__Group_0__1 ;
     public final void rule__Constraint_expression__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17060:1: ( rule__Constraint_expression__Group_0__0__Impl rule__Constraint_expression__Group_0__1 )
-            // InternalDedalADL.g:17061:2: rule__Constraint_expression__Group_0__0__Impl rule__Constraint_expression__Group_0__1
+            // InternalDedalADL.g:17124:1: ( rule__Constraint_expression__Group_0__0__Impl rule__Constraint_expression__Group_0__1 )
+            // InternalDedalADL.g:17125:2: rule__Constraint_expression__Group_0__0__Impl rule__Constraint_expression__Group_0__1
             {
-            pushFollow(FollowSets000.FOLLOW_70);
+            pushFollow(FollowSets000.FOLLOW_71);
             rule__Constraint_expression__Group_0__0__Impl();
 
             state._fsp--;
@@ -44737,20 +44898,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint_expression__Group_0__0__Impl"
-    // InternalDedalADL.g:17068:1: rule__Constraint_expression__Group_0__0__Impl : ( '!' ) ;
+    // InternalDedalADL.g:17132:1: rule__Constraint_expression__Group_0__0__Impl : ( '!' ) ;
     public final void rule__Constraint_expression__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17072:1: ( ( '!' ) )
-            // InternalDedalADL.g:17073:1: ( '!' )
+            // InternalDedalADL.g:17136:1: ( ( '!' ) )
+            // InternalDedalADL.g:17137:1: ( '!' )
             {
-            // InternalDedalADL.g:17073:1: ( '!' )
-            // InternalDedalADL.g:17074:1: '!'
+            // InternalDedalADL.g:17137:1: ( '!' )
+            // InternalDedalADL.g:17138:1: '!'
             {
              before(grammarAccess.getConstraint_expressionAccess().getExclamationMarkKeyword_0_0()); 
-            match(input,108,FollowSets000.FOLLOW_2); 
+            match(input,109,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getConstraint_expressionAccess().getExclamationMarkKeyword_0_0()); 
 
             }
@@ -44774,16 +44935,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint_expression__Group_0__1"
-    // InternalDedalADL.g:17087:1: rule__Constraint_expression__Group_0__1 : rule__Constraint_expression__Group_0__1__Impl rule__Constraint_expression__Group_0__2 ;
+    // InternalDedalADL.g:17151:1: rule__Constraint_expression__Group_0__1 : rule__Constraint_expression__Group_0__1__Impl rule__Constraint_expression__Group_0__2 ;
     public final void rule__Constraint_expression__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17091:1: ( rule__Constraint_expression__Group_0__1__Impl rule__Constraint_expression__Group_0__2 )
-            // InternalDedalADL.g:17092:2: rule__Constraint_expression__Group_0__1__Impl rule__Constraint_expression__Group_0__2
+            // InternalDedalADL.g:17155:1: ( rule__Constraint_expression__Group_0__1__Impl rule__Constraint_expression__Group_0__2 )
+            // InternalDedalADL.g:17156:2: rule__Constraint_expression__Group_0__1__Impl rule__Constraint_expression__Group_0__2
             {
-            pushFollow(FollowSets000.FOLLOW_72);
+            pushFollow(FollowSets000.FOLLOW_73);
             rule__Constraint_expression__Group_0__1__Impl();
 
             state._fsp--;
@@ -44812,17 +44973,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint_expression__Group_0__1__Impl"
-    // InternalDedalADL.g:17099:1: rule__Constraint_expression__Group_0__1__Impl : ( ruleconstraint_expression ) ;
+    // InternalDedalADL.g:17163:1: rule__Constraint_expression__Group_0__1__Impl : ( ruleconstraint_expression ) ;
     public final void rule__Constraint_expression__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17103:1: ( ( ruleconstraint_expression ) )
-            // InternalDedalADL.g:17104:1: ( ruleconstraint_expression )
+            // InternalDedalADL.g:17167:1: ( ( ruleconstraint_expression ) )
+            // InternalDedalADL.g:17168:1: ( ruleconstraint_expression )
             {
-            // InternalDedalADL.g:17104:1: ( ruleconstraint_expression )
-            // InternalDedalADL.g:17105:1: ruleconstraint_expression
+            // InternalDedalADL.g:17168:1: ( ruleconstraint_expression )
+            // InternalDedalADL.g:17169:1: ruleconstraint_expression
             {
              before(grammarAccess.getConstraint_expressionAccess().getConstraint_expressionParserRuleCall_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -44853,14 +45014,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint_expression__Group_0__2"
-    // InternalDedalADL.g:17116:1: rule__Constraint_expression__Group_0__2 : rule__Constraint_expression__Group_0__2__Impl ;
+    // InternalDedalADL.g:17180:1: rule__Constraint_expression__Group_0__2 : rule__Constraint_expression__Group_0__2__Impl ;
     public final void rule__Constraint_expression__Group_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17120:1: ( rule__Constraint_expression__Group_0__2__Impl )
-            // InternalDedalADL.g:17121:2: rule__Constraint_expression__Group_0__2__Impl
+            // InternalDedalADL.g:17184:1: ( rule__Constraint_expression__Group_0__2__Impl )
+            // InternalDedalADL.g:17185:2: rule__Constraint_expression__Group_0__2__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Constraint_expression__Group_0__2__Impl();
@@ -44886,17 +45047,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint_expression__Group_0__2__Impl"
-    // InternalDedalADL.g:17127:1: rule__Constraint_expression__Group_0__2__Impl : ( rulelogical_constraint ) ;
+    // InternalDedalADL.g:17191:1: rule__Constraint_expression__Group_0__2__Impl : ( rulelogical_constraint ) ;
     public final void rule__Constraint_expression__Group_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17131:1: ( ( rulelogical_constraint ) )
-            // InternalDedalADL.g:17132:1: ( rulelogical_constraint )
+            // InternalDedalADL.g:17195:1: ( ( rulelogical_constraint ) )
+            // InternalDedalADL.g:17196:1: ( rulelogical_constraint )
             {
-            // InternalDedalADL.g:17132:1: ( rulelogical_constraint )
-            // InternalDedalADL.g:17133:1: rulelogical_constraint
+            // InternalDedalADL.g:17196:1: ( rulelogical_constraint )
+            // InternalDedalADL.g:17197:1: rulelogical_constraint
             {
              before(grammarAccess.getConstraint_expressionAccess().getLogical_constraintParserRuleCall_0_2()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -44927,16 +45088,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint_expression__Group_1__0"
-    // InternalDedalADL.g:17150:1: rule__Constraint_expression__Group_1__0 : rule__Constraint_expression__Group_1__0__Impl rule__Constraint_expression__Group_1__1 ;
+    // InternalDedalADL.g:17214:1: rule__Constraint_expression__Group_1__0 : rule__Constraint_expression__Group_1__0__Impl rule__Constraint_expression__Group_1__1 ;
     public final void rule__Constraint_expression__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17154:1: ( rule__Constraint_expression__Group_1__0__Impl rule__Constraint_expression__Group_1__1 )
-            // InternalDedalADL.g:17155:2: rule__Constraint_expression__Group_1__0__Impl rule__Constraint_expression__Group_1__1
+            // InternalDedalADL.g:17218:1: ( rule__Constraint_expression__Group_1__0__Impl rule__Constraint_expression__Group_1__1 )
+            // InternalDedalADL.g:17219:2: rule__Constraint_expression__Group_1__0__Impl rule__Constraint_expression__Group_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_72);
+            pushFollow(FollowSets000.FOLLOW_73);
             rule__Constraint_expression__Group_1__0__Impl();
 
             state._fsp--;
@@ -44965,17 +45126,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint_expression__Group_1__0__Impl"
-    // InternalDedalADL.g:17162:1: rule__Constraint_expression__Group_1__0__Impl : ( rulerelational_constraint ) ;
+    // InternalDedalADL.g:17226:1: rule__Constraint_expression__Group_1__0__Impl : ( rulerelational_constraint ) ;
     public final void rule__Constraint_expression__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17166:1: ( ( rulerelational_constraint ) )
-            // InternalDedalADL.g:17167:1: ( rulerelational_constraint )
+            // InternalDedalADL.g:17230:1: ( ( rulerelational_constraint ) )
+            // InternalDedalADL.g:17231:1: ( rulerelational_constraint )
             {
-            // InternalDedalADL.g:17167:1: ( rulerelational_constraint )
-            // InternalDedalADL.g:17168:1: rulerelational_constraint
+            // InternalDedalADL.g:17231:1: ( rulerelational_constraint )
+            // InternalDedalADL.g:17232:1: rulerelational_constraint
             {
              before(grammarAccess.getConstraint_expressionAccess().getRelational_constraintParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -45006,14 +45167,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint_expression__Group_1__1"
-    // InternalDedalADL.g:17179:1: rule__Constraint_expression__Group_1__1 : rule__Constraint_expression__Group_1__1__Impl ;
+    // InternalDedalADL.g:17243:1: rule__Constraint_expression__Group_1__1 : rule__Constraint_expression__Group_1__1__Impl ;
     public final void rule__Constraint_expression__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17183:1: ( rule__Constraint_expression__Group_1__1__Impl )
-            // InternalDedalADL.g:17184:2: rule__Constraint_expression__Group_1__1__Impl
+            // InternalDedalADL.g:17247:1: ( rule__Constraint_expression__Group_1__1__Impl )
+            // InternalDedalADL.g:17248:2: rule__Constraint_expression__Group_1__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Constraint_expression__Group_1__1__Impl();
@@ -45039,17 +45200,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Constraint_expression__Group_1__1__Impl"
-    // InternalDedalADL.g:17190:1: rule__Constraint_expression__Group_1__1__Impl : ( rulelogical_constraint ) ;
+    // InternalDedalADL.g:17254:1: rule__Constraint_expression__Group_1__1__Impl : ( rulelogical_constraint ) ;
     public final void rule__Constraint_expression__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17194:1: ( ( rulelogical_constraint ) )
-            // InternalDedalADL.g:17195:1: ( rulelogical_constraint )
+            // InternalDedalADL.g:17258:1: ( ( rulelogical_constraint ) )
+            // InternalDedalADL.g:17259:1: ( rulelogical_constraint )
             {
-            // InternalDedalADL.g:17195:1: ( rulelogical_constraint )
-            // InternalDedalADL.g:17196:1: rulelogical_constraint
+            // InternalDedalADL.g:17259:1: ( rulelogical_constraint )
+            // InternalDedalADL.g:17260:1: rulelogical_constraint
             {
              before(grammarAccess.getConstraint_expressionAccess().getLogical_constraintParserRuleCall_1_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -45080,16 +45241,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Logical_constraint__Group_0__0"
-    // InternalDedalADL.g:17211:1: rule__Logical_constraint__Group_0__0 : rule__Logical_constraint__Group_0__0__Impl rule__Logical_constraint__Group_0__1 ;
+    // InternalDedalADL.g:17275:1: rule__Logical_constraint__Group_0__0 : rule__Logical_constraint__Group_0__0__Impl rule__Logical_constraint__Group_0__1 ;
     public final void rule__Logical_constraint__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17215:1: ( rule__Logical_constraint__Group_0__0__Impl rule__Logical_constraint__Group_0__1 )
-            // InternalDedalADL.g:17216:2: rule__Logical_constraint__Group_0__0__Impl rule__Logical_constraint__Group_0__1
+            // InternalDedalADL.g:17279:1: ( rule__Logical_constraint__Group_0__0__Impl rule__Logical_constraint__Group_0__1 )
+            // InternalDedalADL.g:17280:2: rule__Logical_constraint__Group_0__0__Impl rule__Logical_constraint__Group_0__1
             {
-            pushFollow(FollowSets000.FOLLOW_70);
+            pushFollow(FollowSets000.FOLLOW_71);
             rule__Logical_constraint__Group_0__0__Impl();
 
             state._fsp--;
@@ -45118,20 +45279,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Logical_constraint__Group_0__0__Impl"
-    // InternalDedalADL.g:17223:1: rule__Logical_constraint__Group_0__0__Impl : ( '||' ) ;
+    // InternalDedalADL.g:17287:1: rule__Logical_constraint__Group_0__0__Impl : ( '||' ) ;
     public final void rule__Logical_constraint__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17227:1: ( ( '||' ) )
-            // InternalDedalADL.g:17228:1: ( '||' )
+            // InternalDedalADL.g:17291:1: ( ( '||' ) )
+            // InternalDedalADL.g:17292:1: ( '||' )
             {
-            // InternalDedalADL.g:17228:1: ( '||' )
-            // InternalDedalADL.g:17229:1: '||'
+            // InternalDedalADL.g:17292:1: ( '||' )
+            // InternalDedalADL.g:17293:1: '||'
             {
              before(grammarAccess.getLogical_constraintAccess().getVerticalLineVerticalLineKeyword_0_0()); 
-            match(input,109,FollowSets000.FOLLOW_2); 
+            match(input,110,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getLogical_constraintAccess().getVerticalLineVerticalLineKeyword_0_0()); 
 
             }
@@ -45155,16 +45316,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Logical_constraint__Group_0__1"
-    // InternalDedalADL.g:17242:1: rule__Logical_constraint__Group_0__1 : rule__Logical_constraint__Group_0__1__Impl rule__Logical_constraint__Group_0__2 ;
+    // InternalDedalADL.g:17306:1: rule__Logical_constraint__Group_0__1 : rule__Logical_constraint__Group_0__1__Impl rule__Logical_constraint__Group_0__2 ;
     public final void rule__Logical_constraint__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17246:1: ( rule__Logical_constraint__Group_0__1__Impl rule__Logical_constraint__Group_0__2 )
-            // InternalDedalADL.g:17247:2: rule__Logical_constraint__Group_0__1__Impl rule__Logical_constraint__Group_0__2
+            // InternalDedalADL.g:17310:1: ( rule__Logical_constraint__Group_0__1__Impl rule__Logical_constraint__Group_0__2 )
+            // InternalDedalADL.g:17311:2: rule__Logical_constraint__Group_0__1__Impl rule__Logical_constraint__Group_0__2
             {
-            pushFollow(FollowSets000.FOLLOW_72);
+            pushFollow(FollowSets000.FOLLOW_73);
             rule__Logical_constraint__Group_0__1__Impl();
 
             state._fsp--;
@@ -45193,17 +45354,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Logical_constraint__Group_0__1__Impl"
-    // InternalDedalADL.g:17254:1: rule__Logical_constraint__Group_0__1__Impl : ( ruleconstraint_expression ) ;
+    // InternalDedalADL.g:17318:1: rule__Logical_constraint__Group_0__1__Impl : ( ruleconstraint_expression ) ;
     public final void rule__Logical_constraint__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17258:1: ( ( ruleconstraint_expression ) )
-            // InternalDedalADL.g:17259:1: ( ruleconstraint_expression )
+            // InternalDedalADL.g:17322:1: ( ( ruleconstraint_expression ) )
+            // InternalDedalADL.g:17323:1: ( ruleconstraint_expression )
             {
-            // InternalDedalADL.g:17259:1: ( ruleconstraint_expression )
-            // InternalDedalADL.g:17260:1: ruleconstraint_expression
+            // InternalDedalADL.g:17323:1: ( ruleconstraint_expression )
+            // InternalDedalADL.g:17324:1: ruleconstraint_expression
             {
              before(grammarAccess.getLogical_constraintAccess().getConstraint_expressionParserRuleCall_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -45234,14 +45395,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Logical_constraint__Group_0__2"
-    // InternalDedalADL.g:17271:1: rule__Logical_constraint__Group_0__2 : rule__Logical_constraint__Group_0__2__Impl ;
+    // InternalDedalADL.g:17335:1: rule__Logical_constraint__Group_0__2 : rule__Logical_constraint__Group_0__2__Impl ;
     public final void rule__Logical_constraint__Group_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17275:1: ( rule__Logical_constraint__Group_0__2__Impl )
-            // InternalDedalADL.g:17276:2: rule__Logical_constraint__Group_0__2__Impl
+            // InternalDedalADL.g:17339:1: ( rule__Logical_constraint__Group_0__2__Impl )
+            // InternalDedalADL.g:17340:2: rule__Logical_constraint__Group_0__2__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Logical_constraint__Group_0__2__Impl();
@@ -45267,17 +45428,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Logical_constraint__Group_0__2__Impl"
-    // InternalDedalADL.g:17282:1: rule__Logical_constraint__Group_0__2__Impl : ( rulelogical_constraint ) ;
+    // InternalDedalADL.g:17346:1: rule__Logical_constraint__Group_0__2__Impl : ( rulelogical_constraint ) ;
     public final void rule__Logical_constraint__Group_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17286:1: ( ( rulelogical_constraint ) )
-            // InternalDedalADL.g:17287:1: ( rulelogical_constraint )
+            // InternalDedalADL.g:17350:1: ( ( rulelogical_constraint ) )
+            // InternalDedalADL.g:17351:1: ( rulelogical_constraint )
             {
-            // InternalDedalADL.g:17287:1: ( rulelogical_constraint )
-            // InternalDedalADL.g:17288:1: rulelogical_constraint
+            // InternalDedalADL.g:17351:1: ( rulelogical_constraint )
+            // InternalDedalADL.g:17352:1: rulelogical_constraint
             {
              before(grammarAccess.getLogical_constraintAccess().getLogical_constraintParserRuleCall_0_2()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -45308,16 +45469,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Logical_constraint__Group_1__0"
-    // InternalDedalADL.g:17305:1: rule__Logical_constraint__Group_1__0 : rule__Logical_constraint__Group_1__0__Impl rule__Logical_constraint__Group_1__1 ;
+    // InternalDedalADL.g:17369:1: rule__Logical_constraint__Group_1__0 : rule__Logical_constraint__Group_1__0__Impl rule__Logical_constraint__Group_1__1 ;
     public final void rule__Logical_constraint__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17309:1: ( rule__Logical_constraint__Group_1__0__Impl rule__Logical_constraint__Group_1__1 )
-            // InternalDedalADL.g:17310:2: rule__Logical_constraint__Group_1__0__Impl rule__Logical_constraint__Group_1__1
+            // InternalDedalADL.g:17373:1: ( rule__Logical_constraint__Group_1__0__Impl rule__Logical_constraint__Group_1__1 )
+            // InternalDedalADL.g:17374:2: rule__Logical_constraint__Group_1__0__Impl rule__Logical_constraint__Group_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_70);
+            pushFollow(FollowSets000.FOLLOW_71);
             rule__Logical_constraint__Group_1__0__Impl();
 
             state._fsp--;
@@ -45346,20 +45507,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Logical_constraint__Group_1__0__Impl"
-    // InternalDedalADL.g:17317:1: rule__Logical_constraint__Group_1__0__Impl : ( '&&' ) ;
+    // InternalDedalADL.g:17381:1: rule__Logical_constraint__Group_1__0__Impl : ( '&&' ) ;
     public final void rule__Logical_constraint__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17321:1: ( ( '&&' ) )
-            // InternalDedalADL.g:17322:1: ( '&&' )
+            // InternalDedalADL.g:17385:1: ( ( '&&' ) )
+            // InternalDedalADL.g:17386:1: ( '&&' )
             {
-            // InternalDedalADL.g:17322:1: ( '&&' )
-            // InternalDedalADL.g:17323:1: '&&'
+            // InternalDedalADL.g:17386:1: ( '&&' )
+            // InternalDedalADL.g:17387:1: '&&'
             {
              before(grammarAccess.getLogical_constraintAccess().getAmpersandAmpersandKeyword_1_0()); 
-            match(input,110,FollowSets000.FOLLOW_2); 
+            match(input,111,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getLogical_constraintAccess().getAmpersandAmpersandKeyword_1_0()); 
 
             }
@@ -45383,16 +45544,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Logical_constraint__Group_1__1"
-    // InternalDedalADL.g:17336:1: rule__Logical_constraint__Group_1__1 : rule__Logical_constraint__Group_1__1__Impl rule__Logical_constraint__Group_1__2 ;
+    // InternalDedalADL.g:17400:1: rule__Logical_constraint__Group_1__1 : rule__Logical_constraint__Group_1__1__Impl rule__Logical_constraint__Group_1__2 ;
     public final void rule__Logical_constraint__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17340:1: ( rule__Logical_constraint__Group_1__1__Impl rule__Logical_constraint__Group_1__2 )
-            // InternalDedalADL.g:17341:2: rule__Logical_constraint__Group_1__1__Impl rule__Logical_constraint__Group_1__2
+            // InternalDedalADL.g:17404:1: ( rule__Logical_constraint__Group_1__1__Impl rule__Logical_constraint__Group_1__2 )
+            // InternalDedalADL.g:17405:2: rule__Logical_constraint__Group_1__1__Impl rule__Logical_constraint__Group_1__2
             {
-            pushFollow(FollowSets000.FOLLOW_72);
+            pushFollow(FollowSets000.FOLLOW_73);
             rule__Logical_constraint__Group_1__1__Impl();
 
             state._fsp--;
@@ -45421,17 +45582,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Logical_constraint__Group_1__1__Impl"
-    // InternalDedalADL.g:17348:1: rule__Logical_constraint__Group_1__1__Impl : ( ruleconstraint_expression ) ;
+    // InternalDedalADL.g:17412:1: rule__Logical_constraint__Group_1__1__Impl : ( ruleconstraint_expression ) ;
     public final void rule__Logical_constraint__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17352:1: ( ( ruleconstraint_expression ) )
-            // InternalDedalADL.g:17353:1: ( ruleconstraint_expression )
+            // InternalDedalADL.g:17416:1: ( ( ruleconstraint_expression ) )
+            // InternalDedalADL.g:17417:1: ( ruleconstraint_expression )
             {
-            // InternalDedalADL.g:17353:1: ( ruleconstraint_expression )
-            // InternalDedalADL.g:17354:1: ruleconstraint_expression
+            // InternalDedalADL.g:17417:1: ( ruleconstraint_expression )
+            // InternalDedalADL.g:17418:1: ruleconstraint_expression
             {
              before(grammarAccess.getLogical_constraintAccess().getConstraint_expressionParserRuleCall_1_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -45462,14 +45623,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Logical_constraint__Group_1__2"
-    // InternalDedalADL.g:17365:1: rule__Logical_constraint__Group_1__2 : rule__Logical_constraint__Group_1__2__Impl ;
+    // InternalDedalADL.g:17429:1: rule__Logical_constraint__Group_1__2 : rule__Logical_constraint__Group_1__2__Impl ;
     public final void rule__Logical_constraint__Group_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17369:1: ( rule__Logical_constraint__Group_1__2__Impl )
-            // InternalDedalADL.g:17370:2: rule__Logical_constraint__Group_1__2__Impl
+            // InternalDedalADL.g:17433:1: ( rule__Logical_constraint__Group_1__2__Impl )
+            // InternalDedalADL.g:17434:2: rule__Logical_constraint__Group_1__2__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Logical_constraint__Group_1__2__Impl();
@@ -45495,17 +45656,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Logical_constraint__Group_1__2__Impl"
-    // InternalDedalADL.g:17376:1: rule__Logical_constraint__Group_1__2__Impl : ( rulelogical_constraint ) ;
+    // InternalDedalADL.g:17440:1: rule__Logical_constraint__Group_1__2__Impl : ( rulelogical_constraint ) ;
     public final void rule__Logical_constraint__Group_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17380:1: ( ( rulelogical_constraint ) )
-            // InternalDedalADL.g:17381:1: ( rulelogical_constraint )
+            // InternalDedalADL.g:17444:1: ( ( rulelogical_constraint ) )
+            // InternalDedalADL.g:17445:1: ( rulelogical_constraint )
             {
-            // InternalDedalADL.g:17381:1: ( rulelogical_constraint )
-            // InternalDedalADL.g:17382:1: rulelogical_constraint
+            // InternalDedalADL.g:17445:1: ( rulelogical_constraint )
+            // InternalDedalADL.g:17446:1: rulelogical_constraint
             {
              before(grammarAccess.getLogical_constraintAccess().getLogical_constraintParserRuleCall_1_2()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -45536,16 +45697,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Relational_constraint__Group__0"
-    // InternalDedalADL.g:17399:1: rule__Relational_constraint__Group__0 : rule__Relational_constraint__Group__0__Impl rule__Relational_constraint__Group__1 ;
+    // InternalDedalADL.g:17463:1: rule__Relational_constraint__Group__0 : rule__Relational_constraint__Group__0__Impl rule__Relational_constraint__Group__1 ;
     public final void rule__Relational_constraint__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17403:1: ( rule__Relational_constraint__Group__0__Impl rule__Relational_constraint__Group__1 )
-            // InternalDedalADL.g:17404:2: rule__Relational_constraint__Group__0__Impl rule__Relational_constraint__Group__1
+            // InternalDedalADL.g:17467:1: ( rule__Relational_constraint__Group__0__Impl rule__Relational_constraint__Group__1 )
+            // InternalDedalADL.g:17468:2: rule__Relational_constraint__Group__0__Impl rule__Relational_constraint__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_73);
+            pushFollow(FollowSets000.FOLLOW_74);
             rule__Relational_constraint__Group__0__Impl();
 
             state._fsp--;
@@ -45574,17 +45735,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Relational_constraint__Group__0__Impl"
-    // InternalDedalADL.g:17411:1: rule__Relational_constraint__Group__0__Impl : ( ruleinstance_attribute ) ;
+    // InternalDedalADL.g:17475:1: rule__Relational_constraint__Group__0__Impl : ( ruleinstance_attribute ) ;
     public final void rule__Relational_constraint__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17415:1: ( ( ruleinstance_attribute ) )
-            // InternalDedalADL.g:17416:1: ( ruleinstance_attribute )
+            // InternalDedalADL.g:17479:1: ( ( ruleinstance_attribute ) )
+            // InternalDedalADL.g:17480:1: ( ruleinstance_attribute )
             {
-            // InternalDedalADL.g:17416:1: ( ruleinstance_attribute )
-            // InternalDedalADL.g:17417:1: ruleinstance_attribute
+            // InternalDedalADL.g:17480:1: ( ruleinstance_attribute )
+            // InternalDedalADL.g:17481:1: ruleinstance_attribute
             {
              before(grammarAccess.getRelational_constraintAccess().getInstance_attributeParserRuleCall_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -45615,16 +45776,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Relational_constraint__Group__1"
-    // InternalDedalADL.g:17428:1: rule__Relational_constraint__Group__1 : rule__Relational_constraint__Group__1__Impl rule__Relational_constraint__Group__2 ;
+    // InternalDedalADL.g:17492:1: rule__Relational_constraint__Group__1 : rule__Relational_constraint__Group__1__Impl rule__Relational_constraint__Group__2 ;
     public final void rule__Relational_constraint__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17432:1: ( rule__Relational_constraint__Group__1__Impl rule__Relational_constraint__Group__2 )
-            // InternalDedalADL.g:17433:2: rule__Relational_constraint__Group__1__Impl rule__Relational_constraint__Group__2
+            // InternalDedalADL.g:17496:1: ( rule__Relational_constraint__Group__1__Impl rule__Relational_constraint__Group__2 )
+            // InternalDedalADL.g:17497:2: rule__Relational_constraint__Group__1__Impl rule__Relational_constraint__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_70);
+            pushFollow(FollowSets000.FOLLOW_71);
             rule__Relational_constraint__Group__1__Impl();
 
             state._fsp--;
@@ -45653,21 +45814,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Relational_constraint__Group__1__Impl"
-    // InternalDedalADL.g:17440:1: rule__Relational_constraint__Group__1__Impl : ( ( rule__Relational_constraint__Alternatives_1 ) ) ;
+    // InternalDedalADL.g:17504:1: rule__Relational_constraint__Group__1__Impl : ( ( rule__Relational_constraint__Alternatives_1 ) ) ;
     public final void rule__Relational_constraint__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17444:1: ( ( ( rule__Relational_constraint__Alternatives_1 ) ) )
-            // InternalDedalADL.g:17445:1: ( ( rule__Relational_constraint__Alternatives_1 ) )
+            // InternalDedalADL.g:17508:1: ( ( ( rule__Relational_constraint__Alternatives_1 ) ) )
+            // InternalDedalADL.g:17509:1: ( ( rule__Relational_constraint__Alternatives_1 ) )
             {
-            // InternalDedalADL.g:17445:1: ( ( rule__Relational_constraint__Alternatives_1 ) )
-            // InternalDedalADL.g:17446:1: ( rule__Relational_constraint__Alternatives_1 )
+            // InternalDedalADL.g:17509:1: ( ( rule__Relational_constraint__Alternatives_1 ) )
+            // InternalDedalADL.g:17510:1: ( rule__Relational_constraint__Alternatives_1 )
             {
              before(grammarAccess.getRelational_constraintAccess().getAlternatives_1()); 
-            // InternalDedalADL.g:17447:1: ( rule__Relational_constraint__Alternatives_1 )
-            // InternalDedalADL.g:17447:2: rule__Relational_constraint__Alternatives_1
+            // InternalDedalADL.g:17511:1: ( rule__Relational_constraint__Alternatives_1 )
+            // InternalDedalADL.g:17511:2: rule__Relational_constraint__Alternatives_1
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Relational_constraint__Alternatives_1();
@@ -45700,14 +45861,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Relational_constraint__Group__2"
-    // InternalDedalADL.g:17457:1: rule__Relational_constraint__Group__2 : rule__Relational_constraint__Group__2__Impl ;
+    // InternalDedalADL.g:17521:1: rule__Relational_constraint__Group__2 : rule__Relational_constraint__Group__2__Impl ;
     public final void rule__Relational_constraint__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17461:1: ( rule__Relational_constraint__Group__2__Impl )
-            // InternalDedalADL.g:17462:2: rule__Relational_constraint__Group__2__Impl
+            // InternalDedalADL.g:17525:1: ( rule__Relational_constraint__Group__2__Impl )
+            // InternalDedalADL.g:17526:2: rule__Relational_constraint__Group__2__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Relational_constraint__Group__2__Impl();
@@ -45733,21 +45894,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Relational_constraint__Group__2__Impl"
-    // InternalDedalADL.g:17468:1: rule__Relational_constraint__Group__2__Impl : ( ( rule__Relational_constraint__Alternatives_2 ) ) ;
+    // InternalDedalADL.g:17532:1: rule__Relational_constraint__Group__2__Impl : ( ( rule__Relational_constraint__Alternatives_2 ) ) ;
     public final void rule__Relational_constraint__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17472:1: ( ( ( rule__Relational_constraint__Alternatives_2 ) ) )
-            // InternalDedalADL.g:17473:1: ( ( rule__Relational_constraint__Alternatives_2 ) )
+            // InternalDedalADL.g:17536:1: ( ( ( rule__Relational_constraint__Alternatives_2 ) ) )
+            // InternalDedalADL.g:17537:1: ( ( rule__Relational_constraint__Alternatives_2 ) )
             {
-            // InternalDedalADL.g:17473:1: ( ( rule__Relational_constraint__Alternatives_2 ) )
-            // InternalDedalADL.g:17474:1: ( rule__Relational_constraint__Alternatives_2 )
+            // InternalDedalADL.g:17537:1: ( ( rule__Relational_constraint__Alternatives_2 ) )
+            // InternalDedalADL.g:17538:1: ( rule__Relational_constraint__Alternatives_2 )
             {
              before(grammarAccess.getRelational_constraintAccess().getAlternatives_2()); 
-            // InternalDedalADL.g:17475:1: ( rule__Relational_constraint__Alternatives_2 )
-            // InternalDedalADL.g:17475:2: rule__Relational_constraint__Alternatives_2
+            // InternalDedalADL.g:17539:1: ( rule__Relational_constraint__Alternatives_2 )
+            // InternalDedalADL.g:17539:2: rule__Relational_constraint__Alternatives_2
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Relational_constraint__Alternatives_2();
@@ -45780,14 +45941,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Instance_attribute__Group__0"
-    // InternalDedalADL.g:17491:1: rule__Instance_attribute__Group__0 : rule__Instance_attribute__Group__0__Impl rule__Instance_attribute__Group__1 ;
+    // InternalDedalADL.g:17555:1: rule__Instance_attribute__Group__0 : rule__Instance_attribute__Group__0__Impl rule__Instance_attribute__Group__1 ;
     public final void rule__Instance_attribute__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17495:1: ( rule__Instance_attribute__Group__0__Impl rule__Instance_attribute__Group__1 )
-            // InternalDedalADL.g:17496:2: rule__Instance_attribute__Group__0__Impl rule__Instance_attribute__Group__1
+            // InternalDedalADL.g:17559:1: ( rule__Instance_attribute__Group__0__Impl rule__Instance_attribute__Group__1 )
+            // InternalDedalADL.g:17560:2: rule__Instance_attribute__Group__0__Impl rule__Instance_attribute__Group__1
             {
             pushFollow(FollowSets000.FOLLOW_38);
             rule__Instance_attribute__Group__0__Impl();
@@ -45818,17 +45979,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Instance_attribute__Group__0__Impl"
-    // InternalDedalADL.g:17503:1: rule__Instance_attribute__Group__0__Impl : ( rulecomponent_instance_name ) ;
+    // InternalDedalADL.g:17567:1: rule__Instance_attribute__Group__0__Impl : ( rulecomponent_instance_name ) ;
     public final void rule__Instance_attribute__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17507:1: ( ( rulecomponent_instance_name ) )
-            // InternalDedalADL.g:17508:1: ( rulecomponent_instance_name )
+            // InternalDedalADL.g:17571:1: ( ( rulecomponent_instance_name ) )
+            // InternalDedalADL.g:17572:1: ( rulecomponent_instance_name )
             {
-            // InternalDedalADL.g:17508:1: ( rulecomponent_instance_name )
-            // InternalDedalADL.g:17509:1: rulecomponent_instance_name
+            // InternalDedalADL.g:17572:1: ( rulecomponent_instance_name )
+            // InternalDedalADL.g:17573:1: rulecomponent_instance_name
             {
              before(grammarAccess.getInstance_attributeAccess().getComponent_instance_nameParserRuleCall_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -45859,14 +46020,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Instance_attribute__Group__1"
-    // InternalDedalADL.g:17520:1: rule__Instance_attribute__Group__1 : rule__Instance_attribute__Group__1__Impl rule__Instance_attribute__Group__2 ;
+    // InternalDedalADL.g:17584:1: rule__Instance_attribute__Group__1 : rule__Instance_attribute__Group__1__Impl rule__Instance_attribute__Group__2 ;
     public final void rule__Instance_attribute__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17524:1: ( rule__Instance_attribute__Group__1__Impl rule__Instance_attribute__Group__2 )
-            // InternalDedalADL.g:17525:2: rule__Instance_attribute__Group__1__Impl rule__Instance_attribute__Group__2
+            // InternalDedalADL.g:17588:1: ( rule__Instance_attribute__Group__1__Impl rule__Instance_attribute__Group__2 )
+            // InternalDedalADL.g:17589:2: rule__Instance_attribute__Group__1__Impl rule__Instance_attribute__Group__2
             {
             pushFollow(FollowSets000.FOLLOW_18);
             rule__Instance_attribute__Group__1__Impl();
@@ -45897,17 +46058,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Instance_attribute__Group__1__Impl"
-    // InternalDedalADL.g:17532:1: rule__Instance_attribute__Group__1__Impl : ( '.' ) ;
+    // InternalDedalADL.g:17596:1: rule__Instance_attribute__Group__1__Impl : ( '.' ) ;
     public final void rule__Instance_attribute__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17536:1: ( ( '.' ) )
-            // InternalDedalADL.g:17537:1: ( '.' )
+            // InternalDedalADL.g:17600:1: ( ( '.' ) )
+            // InternalDedalADL.g:17601:1: ( '.' )
             {
-            // InternalDedalADL.g:17537:1: ( '.' )
-            // InternalDedalADL.g:17538:1: '.'
+            // InternalDedalADL.g:17601:1: ( '.' )
+            // InternalDedalADL.g:17602:1: '.'
             {
              before(grammarAccess.getInstance_attributeAccess().getFullStopKeyword_1()); 
             match(input,75,FollowSets000.FOLLOW_2); 
@@ -45934,14 +46095,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Instance_attribute__Group__2"
-    // InternalDedalADL.g:17551:1: rule__Instance_attribute__Group__2 : rule__Instance_attribute__Group__2__Impl ;
+    // InternalDedalADL.g:17615:1: rule__Instance_attribute__Group__2 : rule__Instance_attribute__Group__2__Impl ;
     public final void rule__Instance_attribute__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17555:1: ( rule__Instance_attribute__Group__2__Impl )
-            // InternalDedalADL.g:17556:2: rule__Instance_attribute__Group__2__Impl
+            // InternalDedalADL.g:17619:1: ( rule__Instance_attribute__Group__2__Impl )
+            // InternalDedalADL.g:17620:2: rule__Instance_attribute__Group__2__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Instance_attribute__Group__2__Impl();
@@ -45967,17 +46128,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Instance_attribute__Group__2__Impl"
-    // InternalDedalADL.g:17562:1: rule__Instance_attribute__Group__2__Impl : ( ruleattribute_name ) ;
+    // InternalDedalADL.g:17626:1: rule__Instance_attribute__Group__2__Impl : ( ruleattribute_name ) ;
     public final void rule__Instance_attribute__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17566:1: ( ( ruleattribute_name ) )
-            // InternalDedalADL.g:17567:1: ( ruleattribute_name )
+            // InternalDedalADL.g:17630:1: ( ( ruleattribute_name ) )
+            // InternalDedalADL.g:17631:1: ( ruleattribute_name )
             {
-            // InternalDedalADL.g:17567:1: ( ruleattribute_name )
-            // InternalDedalADL.g:17568:1: ruleattribute_name
+            // InternalDedalADL.g:17631:1: ( ruleattribute_name )
+            // InternalDedalADL.g:17632:1: ruleattribute_name
             {
              before(grammarAccess.getInstance_attributeAccess().getAttribute_nameParserRuleCall_2()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -46008,16 +46169,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Attribute_value__Group__0"
-    // InternalDedalADL.g:17585:1: rule__Attribute_value__Group__0 : rule__Attribute_value__Group__0__Impl rule__Attribute_value__Group__1 ;
+    // InternalDedalADL.g:17649:1: rule__Attribute_value__Group__0 : rule__Attribute_value__Group__0__Impl rule__Attribute_value__Group__1 ;
     public final void rule__Attribute_value__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17589:1: ( rule__Attribute_value__Group__0__Impl rule__Attribute_value__Group__1 )
-            // InternalDedalADL.g:17590:2: rule__Attribute_value__Group__0__Impl rule__Attribute_value__Group__1
+            // InternalDedalADL.g:17653:1: ( rule__Attribute_value__Group__0__Impl rule__Attribute_value__Group__1 )
+            // InternalDedalADL.g:17654:2: rule__Attribute_value__Group__0__Impl rule__Attribute_value__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_74);
+            pushFollow(FollowSets000.FOLLOW_75);
             rule__Attribute_value__Group__0__Impl();
 
             state._fsp--;
@@ -46046,17 +46207,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Attribute_value__Group__0__Impl"
-    // InternalDedalADL.g:17597:1: rule__Attribute_value__Group__0__Impl : ( ruleattribute_name ) ;
+    // InternalDedalADL.g:17661:1: rule__Attribute_value__Group__0__Impl : ( ruleattribute_name ) ;
     public final void rule__Attribute_value__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17601:1: ( ( ruleattribute_name ) )
-            // InternalDedalADL.g:17602:1: ( ruleattribute_name )
+            // InternalDedalADL.g:17665:1: ( ( ruleattribute_name ) )
+            // InternalDedalADL.g:17666:1: ( ruleattribute_name )
             {
-            // InternalDedalADL.g:17602:1: ( ruleattribute_name )
-            // InternalDedalADL.g:17603:1: ruleattribute_name
+            // InternalDedalADL.g:17666:1: ( ruleattribute_name )
+            // InternalDedalADL.g:17667:1: ruleattribute_name
             {
              before(grammarAccess.getAttribute_valueAccess().getAttribute_nameParserRuleCall_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -46087,14 +46248,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Attribute_value__Group__1"
-    // InternalDedalADL.g:17614:1: rule__Attribute_value__Group__1 : rule__Attribute_value__Group__1__Impl ;
+    // InternalDedalADL.g:17678:1: rule__Attribute_value__Group__1 : rule__Attribute_value__Group__1__Impl ;
     public final void rule__Attribute_value__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17618:1: ( rule__Attribute_value__Group__1__Impl )
-            // InternalDedalADL.g:17619:2: rule__Attribute_value__Group__1__Impl
+            // InternalDedalADL.g:17682:1: ( rule__Attribute_value__Group__1__Impl )
+            // InternalDedalADL.g:17683:2: rule__Attribute_value__Group__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Attribute_value__Group__1__Impl();
@@ -46120,20 +46281,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Attribute_value__Group__1__Impl"
-    // InternalDedalADL.g:17625:1: rule__Attribute_value__Group__1__Impl : ( '=' ) ;
+    // InternalDedalADL.g:17689:1: rule__Attribute_value__Group__1__Impl : ( '=' ) ;
     public final void rule__Attribute_value__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17629:1: ( ( '=' ) )
-            // InternalDedalADL.g:17630:1: ( '=' )
+            // InternalDedalADL.g:17693:1: ( ( '=' ) )
+            // InternalDedalADL.g:17694:1: ( '=' )
             {
-            // InternalDedalADL.g:17630:1: ( '=' )
-            // InternalDedalADL.g:17631:1: '='
+            // InternalDedalADL.g:17694:1: ( '=' )
+            // InternalDedalADL.g:17695:1: '='
             {
              before(grammarAccess.getAttribute_valueAccess().getEqualsSignKeyword_1()); 
-            match(input,111,FollowSets000.FOLLOW_2); 
+            match(input,112,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getAttribute_valueAccess().getEqualsSignKeyword_1()); 
 
             }
@@ -46157,14 +46318,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Version__Group__0"
-    // InternalDedalADL.g:17648:1: rule__Version__Group__0 : rule__Version__Group__0__Impl rule__Version__Group__1 ;
+    // InternalDedalADL.g:17712:1: rule__Version__Group__0 : rule__Version__Group__0__Impl rule__Version__Group__1 ;
     public final void rule__Version__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17652:1: ( rule__Version__Group__0__Impl rule__Version__Group__1 )
-            // InternalDedalADL.g:17653:2: rule__Version__Group__0__Impl rule__Version__Group__1
+            // InternalDedalADL.g:17716:1: ( rule__Version__Group__0__Impl rule__Version__Group__1 )
+            // InternalDedalADL.g:17717:2: rule__Version__Group__0__Impl rule__Version__Group__1
             {
             pushFollow(FollowSets000.FOLLOW_5);
             rule__Version__Group__0__Impl();
@@ -46195,17 +46356,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Version__Group__0__Impl"
-    // InternalDedalADL.g:17660:1: rule__Version__Group__0__Impl : ( RULE_ID ) ;
+    // InternalDedalADL.g:17724:1: rule__Version__Group__0__Impl : ( RULE_ID ) ;
     public final void rule__Version__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17664:1: ( ( RULE_ID ) )
-            // InternalDedalADL.g:17665:1: ( RULE_ID )
+            // InternalDedalADL.g:17728:1: ( ( RULE_ID ) )
+            // InternalDedalADL.g:17729:1: ( RULE_ID )
             {
-            // InternalDedalADL.g:17665:1: ( RULE_ID )
-            // InternalDedalADL.g:17666:1: RULE_ID
+            // InternalDedalADL.g:17729:1: ( RULE_ID )
+            // InternalDedalADL.g:17730:1: RULE_ID
             {
              before(grammarAccess.getVersionAccess().getIDTerminalRuleCall_0()); 
             match(input,RULE_ID,FollowSets000.FOLLOW_2); 
@@ -46232,14 +46393,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Version__Group__1"
-    // InternalDedalADL.g:17677:1: rule__Version__Group__1 : rule__Version__Group__1__Impl rule__Version__Group__2 ;
+    // InternalDedalADL.g:17741:1: rule__Version__Group__1 : rule__Version__Group__1__Impl rule__Version__Group__2 ;
     public final void rule__Version__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17681:1: ( rule__Version__Group__1__Impl rule__Version__Group__2 )
-            // InternalDedalADL.g:17682:2: rule__Version__Group__1__Impl rule__Version__Group__2
+            // InternalDedalADL.g:17745:1: ( rule__Version__Group__1__Impl rule__Version__Group__2 )
+            // InternalDedalADL.g:17746:2: rule__Version__Group__1__Impl rule__Version__Group__2
             {
             pushFollow(FollowSets000.FOLLOW_24);
             rule__Version__Group__1__Impl();
@@ -46270,17 +46431,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Version__Group__1__Impl"
-    // InternalDedalADL.g:17689:1: rule__Version__Group__1__Impl : ( '(' ) ;
+    // InternalDedalADL.g:17753:1: rule__Version__Group__1__Impl : ( '(' ) ;
     public final void rule__Version__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17693:1: ( ( '(' ) )
-            // InternalDedalADL.g:17694:1: ( '(' )
+            // InternalDedalADL.g:17757:1: ( ( '(' ) )
+            // InternalDedalADL.g:17758:1: ( '(' )
             {
-            // InternalDedalADL.g:17694:1: ( '(' )
-            // InternalDedalADL.g:17695:1: '('
+            // InternalDedalADL.g:17758:1: ( '(' )
+            // InternalDedalADL.g:17759:1: '('
             {
              before(grammarAccess.getVersionAccess().getLeftParenthesisKeyword_1()); 
             match(input,45,FollowSets000.FOLLOW_2); 
@@ -46307,14 +46468,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Version__Group__2"
-    // InternalDedalADL.g:17708:1: rule__Version__Group__2 : rule__Version__Group__2__Impl rule__Version__Group__3 ;
+    // InternalDedalADL.g:17772:1: rule__Version__Group__2 : rule__Version__Group__2__Impl rule__Version__Group__3 ;
     public final void rule__Version__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17712:1: ( rule__Version__Group__2__Impl rule__Version__Group__3 )
-            // InternalDedalADL.g:17713:2: rule__Version__Group__2__Impl rule__Version__Group__3
+            // InternalDedalADL.g:17776:1: ( rule__Version__Group__2__Impl rule__Version__Group__3 )
+            // InternalDedalADL.g:17777:2: rule__Version__Group__2__Impl rule__Version__Group__3
             {
             pushFollow(FollowSets000.FOLLOW_42);
             rule__Version__Group__2__Impl();
@@ -46345,17 +46506,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Version__Group__2__Impl"
-    // InternalDedalADL.g:17720:1: rule__Version__Group__2__Impl : ( RULE_REVISION_NUMB ) ;
+    // InternalDedalADL.g:17784:1: rule__Version__Group__2__Impl : ( RULE_REVISION_NUMB ) ;
     public final void rule__Version__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17724:1: ( ( RULE_REVISION_NUMB ) )
-            // InternalDedalADL.g:17725:1: ( RULE_REVISION_NUMB )
+            // InternalDedalADL.g:17788:1: ( ( RULE_REVISION_NUMB ) )
+            // InternalDedalADL.g:17789:1: ( RULE_REVISION_NUMB )
             {
-            // InternalDedalADL.g:17725:1: ( RULE_REVISION_NUMB )
-            // InternalDedalADL.g:17726:1: RULE_REVISION_NUMB
+            // InternalDedalADL.g:17789:1: ( RULE_REVISION_NUMB )
+            // InternalDedalADL.g:17790:1: RULE_REVISION_NUMB
             {
              before(grammarAccess.getVersionAccess().getREVISION_NUMBTerminalRuleCall_2()); 
             match(input,RULE_REVISION_NUMB,FollowSets000.FOLLOW_2); 
@@ -46382,14 +46543,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Version__Group__3"
-    // InternalDedalADL.g:17737:1: rule__Version__Group__3 : rule__Version__Group__3__Impl ;
+    // InternalDedalADL.g:17801:1: rule__Version__Group__3 : rule__Version__Group__3__Impl ;
     public final void rule__Version__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17741:1: ( rule__Version__Group__3__Impl )
-            // InternalDedalADL.g:17742:2: rule__Version__Group__3__Impl
+            // InternalDedalADL.g:17805:1: ( rule__Version__Group__3__Impl )
+            // InternalDedalADL.g:17806:2: rule__Version__Group__3__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Version__Group__3__Impl();
@@ -46415,17 +46576,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Version__Group__3__Impl"
-    // InternalDedalADL.g:17748:1: rule__Version__Group__3__Impl : ( ')' ) ;
+    // InternalDedalADL.g:17812:1: rule__Version__Group__3__Impl : ( ')' ) ;
     public final void rule__Version__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17752:1: ( ( ')' ) )
-            // InternalDedalADL.g:17753:1: ( ')' )
+            // InternalDedalADL.g:17816:1: ( ( ')' ) )
+            // InternalDedalADL.g:17817:1: ( ')' )
             {
-            // InternalDedalADL.g:17753:1: ( ')' )
-            // InternalDedalADL.g:17754:1: ')'
+            // InternalDedalADL.g:17817:1: ( ')' )
+            // InternalDedalADL.g:17818:1: ')'
             {
              before(grammarAccess.getVersionAccess().getRightParenthesisKeyword_3()); 
             match(input,46,FollowSets000.FOLLOW_2); 
@@ -46452,14 +46613,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Pre_version__Group__0"
-    // InternalDedalADL.g:17775:1: rule__Pre_version__Group__0 : rule__Pre_version__Group__0__Impl rule__Pre_version__Group__1 ;
+    // InternalDedalADL.g:17839:1: rule__Pre_version__Group__0 : rule__Pre_version__Group__0__Impl rule__Pre_version__Group__1 ;
     public final void rule__Pre_version__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17779:1: ( rule__Pre_version__Group__0__Impl rule__Pre_version__Group__1 )
-            // InternalDedalADL.g:17780:2: rule__Pre_version__Group__0__Impl rule__Pre_version__Group__1
+            // InternalDedalADL.g:17843:1: ( rule__Pre_version__Group__0__Impl rule__Pre_version__Group__1 )
+            // InternalDedalADL.g:17844:2: rule__Pre_version__Group__0__Impl rule__Pre_version__Group__1
             {
             pushFollow(FollowSets000.FOLLOW_25);
             rule__Pre_version__Group__0__Impl();
@@ -46490,20 +46651,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Pre_version__Group__0__Impl"
-    // InternalDedalADL.g:17787:1: rule__Pre_version__Group__0__Impl : ( ( RULE_ID )? ) ;
+    // InternalDedalADL.g:17851:1: rule__Pre_version__Group__0__Impl : ( ( RULE_ID )? ) ;
     public final void rule__Pre_version__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17791:1: ( ( ( RULE_ID )? ) )
-            // InternalDedalADL.g:17792:1: ( ( RULE_ID )? )
+            // InternalDedalADL.g:17855:1: ( ( ( RULE_ID )? ) )
+            // InternalDedalADL.g:17856:1: ( ( RULE_ID )? )
             {
-            // InternalDedalADL.g:17792:1: ( ( RULE_ID )? )
-            // InternalDedalADL.g:17793:1: ( RULE_ID )?
+            // InternalDedalADL.g:17856:1: ( ( RULE_ID )? )
+            // InternalDedalADL.g:17857:1: ( RULE_ID )?
             {
              before(grammarAccess.getPre_versionAccess().getIDTerminalRuleCall_0()); 
-            // InternalDedalADL.g:17794:1: ( RULE_ID )?
+            // InternalDedalADL.g:17858:1: ( RULE_ID )?
             int alt120=2;
             int LA120_0 = input.LA(1);
 
@@ -46512,7 +46673,7 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
             }
             switch (alt120) {
                 case 1 :
-                    // InternalDedalADL.g:17794:3: RULE_ID
+                    // InternalDedalADL.g:17858:3: RULE_ID
                     {
                     match(input,RULE_ID,FollowSets000.FOLLOW_2); 
 
@@ -46544,14 +46705,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Pre_version__Group__1"
-    // InternalDedalADL.g:17804:1: rule__Pre_version__Group__1 : rule__Pre_version__Group__1__Impl rule__Pre_version__Group__2 ;
+    // InternalDedalADL.g:17868:1: rule__Pre_version__Group__1 : rule__Pre_version__Group__1__Impl rule__Pre_version__Group__2 ;
     public final void rule__Pre_version__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17808:1: ( rule__Pre_version__Group__1__Impl rule__Pre_version__Group__2 )
-            // InternalDedalADL.g:17809:2: rule__Pre_version__Group__1__Impl rule__Pre_version__Group__2
+            // InternalDedalADL.g:17872:1: ( rule__Pre_version__Group__1__Impl rule__Pre_version__Group__2 )
+            // InternalDedalADL.g:17873:2: rule__Pre_version__Group__1__Impl rule__Pre_version__Group__2
             {
             pushFollow(FollowSets000.FOLLOW_24);
             rule__Pre_version__Group__1__Impl();
@@ -46582,17 +46743,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Pre_version__Group__1__Impl"
-    // InternalDedalADL.g:17816:1: rule__Pre_version__Group__1__Impl : ( '(' ) ;
+    // InternalDedalADL.g:17880:1: rule__Pre_version__Group__1__Impl : ( '(' ) ;
     public final void rule__Pre_version__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17820:1: ( ( '(' ) )
-            // InternalDedalADL.g:17821:1: ( '(' )
+            // InternalDedalADL.g:17884:1: ( ( '(' ) )
+            // InternalDedalADL.g:17885:1: ( '(' )
             {
-            // InternalDedalADL.g:17821:1: ( '(' )
-            // InternalDedalADL.g:17822:1: '('
+            // InternalDedalADL.g:17885:1: ( '(' )
+            // InternalDedalADL.g:17886:1: '('
             {
              before(grammarAccess.getPre_versionAccess().getLeftParenthesisKeyword_1()); 
             match(input,45,FollowSets000.FOLLOW_2); 
@@ -46619,14 +46780,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Pre_version__Group__2"
-    // InternalDedalADL.g:17835:1: rule__Pre_version__Group__2 : rule__Pre_version__Group__2__Impl rule__Pre_version__Group__3 ;
+    // InternalDedalADL.g:17899:1: rule__Pre_version__Group__2 : rule__Pre_version__Group__2__Impl rule__Pre_version__Group__3 ;
     public final void rule__Pre_version__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17839:1: ( rule__Pre_version__Group__2__Impl rule__Pre_version__Group__3 )
-            // InternalDedalADL.g:17840:2: rule__Pre_version__Group__2__Impl rule__Pre_version__Group__3
+            // InternalDedalADL.g:17903:1: ( rule__Pre_version__Group__2__Impl rule__Pre_version__Group__3 )
+            // InternalDedalADL.g:17904:2: rule__Pre_version__Group__2__Impl rule__Pre_version__Group__3
             {
             pushFollow(FollowSets000.FOLLOW_42);
             rule__Pre_version__Group__2__Impl();
@@ -46657,17 +46818,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Pre_version__Group__2__Impl"
-    // InternalDedalADL.g:17847:1: rule__Pre_version__Group__2__Impl : ( RULE_REVISION_NUMB ) ;
+    // InternalDedalADL.g:17911:1: rule__Pre_version__Group__2__Impl : ( RULE_REVISION_NUMB ) ;
     public final void rule__Pre_version__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17851:1: ( ( RULE_REVISION_NUMB ) )
-            // InternalDedalADL.g:17852:1: ( RULE_REVISION_NUMB )
+            // InternalDedalADL.g:17915:1: ( ( RULE_REVISION_NUMB ) )
+            // InternalDedalADL.g:17916:1: ( RULE_REVISION_NUMB )
             {
-            // InternalDedalADL.g:17852:1: ( RULE_REVISION_NUMB )
-            // InternalDedalADL.g:17853:1: RULE_REVISION_NUMB
+            // InternalDedalADL.g:17916:1: ( RULE_REVISION_NUMB )
+            // InternalDedalADL.g:17917:1: RULE_REVISION_NUMB
             {
              before(grammarAccess.getPre_versionAccess().getREVISION_NUMBTerminalRuleCall_2()); 
             match(input,RULE_REVISION_NUMB,FollowSets000.FOLLOW_2); 
@@ -46694,14 +46855,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Pre_version__Group__3"
-    // InternalDedalADL.g:17864:1: rule__Pre_version__Group__3 : rule__Pre_version__Group__3__Impl ;
+    // InternalDedalADL.g:17928:1: rule__Pre_version__Group__3 : rule__Pre_version__Group__3__Impl ;
     public final void rule__Pre_version__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17868:1: ( rule__Pre_version__Group__3__Impl )
-            // InternalDedalADL.g:17869:2: rule__Pre_version__Group__3__Impl
+            // InternalDedalADL.g:17932:1: ( rule__Pre_version__Group__3__Impl )
+            // InternalDedalADL.g:17933:2: rule__Pre_version__Group__3__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Pre_version__Group__3__Impl();
@@ -46727,17 +46888,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Pre_version__Group__3__Impl"
-    // InternalDedalADL.g:17875:1: rule__Pre_version__Group__3__Impl : ( ')' ) ;
+    // InternalDedalADL.g:17939:1: rule__Pre_version__Group__3__Impl : ( ')' ) ;
     public final void rule__Pre_version__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17879:1: ( ( ')' ) )
-            // InternalDedalADL.g:17880:1: ( ')' )
+            // InternalDedalADL.g:17943:1: ( ( ')' ) )
+            // InternalDedalADL.g:17944:1: ( ')' )
             {
-            // InternalDedalADL.g:17880:1: ( ')' )
-            // InternalDedalADL.g:17881:1: ')'
+            // InternalDedalADL.g:17944:1: ( ')' )
+            // InternalDedalADL.g:17945:1: ')'
             {
              before(grammarAccess.getPre_versionAccess().getRightParenthesisKeyword_3()); 
             match(input,46,FollowSets000.FOLLOW_2); 
@@ -46764,14 +46925,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__0"
-    // InternalDedalADL.g:17902:1: rule__Change__Group__0 : rule__Change__Group__0__Impl rule__Change__Group__1 ;
+    // InternalDedalADL.g:17966:1: rule__Change__Group__0 : rule__Change__Group__0__Impl rule__Change__Group__1 ;
     public final void rule__Change__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17906:1: ( rule__Change__Group__0__Impl rule__Change__Group__1 )
-            // InternalDedalADL.g:17907:2: rule__Change__Group__0__Impl rule__Change__Group__1
+            // InternalDedalADL.g:17970:1: ( rule__Change__Group__0__Impl rule__Change__Group__1 )
+            // InternalDedalADL.g:17971:2: rule__Change__Group__0__Impl rule__Change__Group__1
             {
             pushFollow(FollowSets000.FOLLOW_18);
             rule__Change__Group__0__Impl();
@@ -46802,20 +46963,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__0__Impl"
-    // InternalDedalADL.g:17914:1: rule__Change__Group__0__Impl : ( 'change' ) ;
+    // InternalDedalADL.g:17978:1: rule__Change__Group__0__Impl : ( 'change' ) ;
     public final void rule__Change__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17918:1: ( ( 'change' ) )
-            // InternalDedalADL.g:17919:1: ( 'change' )
+            // InternalDedalADL.g:17982:1: ( ( 'change' ) )
+            // InternalDedalADL.g:17983:1: ( 'change' )
             {
-            // InternalDedalADL.g:17919:1: ( 'change' )
-            // InternalDedalADL.g:17920:1: 'change'
+            // InternalDedalADL.g:17983:1: ( 'change' )
+            // InternalDedalADL.g:17984:1: 'change'
             {
              before(grammarAccess.getChangeAccess().getChangeKeyword_0()); 
-            match(input,112,FollowSets000.FOLLOW_2); 
+            match(input,113,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getChangeAccess().getChangeKeyword_0()); 
 
             }
@@ -46839,16 +47000,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__1"
-    // InternalDedalADL.g:17933:1: rule__Change__Group__1 : rule__Change__Group__1__Impl rule__Change__Group__2 ;
+    // InternalDedalADL.g:17997:1: rule__Change__Group__1 : rule__Change__Group__1__Impl rule__Change__Group__2 ;
     public final void rule__Change__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17937:1: ( rule__Change__Group__1__Impl rule__Change__Group__2 )
-            // InternalDedalADL.g:17938:2: rule__Change__Group__1__Impl rule__Change__Group__2
+            // InternalDedalADL.g:18001:1: ( rule__Change__Group__1__Impl rule__Change__Group__2 )
+            // InternalDedalADL.g:18002:2: rule__Change__Group__1__Impl rule__Change__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_75);
+            pushFollow(FollowSets000.FOLLOW_76);
             rule__Change__Group__1__Impl();
 
             state._fsp--;
@@ -46877,17 +47038,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__1__Impl"
-    // InternalDedalADL.g:17945:1: rule__Change__Group__1__Impl : ( RULE_ID ) ;
+    // InternalDedalADL.g:18009:1: rule__Change__Group__1__Impl : ( RULE_ID ) ;
     public final void rule__Change__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17949:1: ( ( RULE_ID ) )
-            // InternalDedalADL.g:17950:1: ( RULE_ID )
+            // InternalDedalADL.g:18013:1: ( ( RULE_ID ) )
+            // InternalDedalADL.g:18014:1: ( RULE_ID )
             {
-            // InternalDedalADL.g:17950:1: ( RULE_ID )
-            // InternalDedalADL.g:17951:1: RULE_ID
+            // InternalDedalADL.g:18014:1: ( RULE_ID )
+            // InternalDedalADL.g:18015:1: RULE_ID
             {
              before(grammarAccess.getChangeAccess().getIDTerminalRuleCall_1()); 
             match(input,RULE_ID,FollowSets000.FOLLOW_2); 
@@ -46914,16 +47075,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__2"
-    // InternalDedalADL.g:17962:1: rule__Change__Group__2 : rule__Change__Group__2__Impl rule__Change__Group__3 ;
+    // InternalDedalADL.g:18026:1: rule__Change__Group__2 : rule__Change__Group__2__Impl rule__Change__Group__3 ;
     public final void rule__Change__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17966:1: ( rule__Change__Group__2__Impl rule__Change__Group__3 )
-            // InternalDedalADL.g:17967:2: rule__Change__Group__2__Impl rule__Change__Group__3
+            // InternalDedalADL.g:18030:1: ( rule__Change__Group__2__Impl rule__Change__Group__3 )
+            // InternalDedalADL.g:18031:2: rule__Change__Group__2__Impl rule__Change__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_76);
+            pushFollow(FollowSets000.FOLLOW_77);
             rule__Change__Group__2__Impl();
 
             state._fsp--;
@@ -46952,20 +47113,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__2__Impl"
-    // InternalDedalADL.g:17974:1: rule__Change__Group__2__Impl : ( 'time' ) ;
+    // InternalDedalADL.g:18038:1: rule__Change__Group__2__Impl : ( 'time' ) ;
     public final void rule__Change__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17978:1: ( ( 'time' ) )
-            // InternalDedalADL.g:17979:1: ( 'time' )
+            // InternalDedalADL.g:18042:1: ( ( 'time' ) )
+            // InternalDedalADL.g:18043:1: ( 'time' )
             {
-            // InternalDedalADL.g:17979:1: ( 'time' )
-            // InternalDedalADL.g:17980:1: 'time'
+            // InternalDedalADL.g:18043:1: ( 'time' )
+            // InternalDedalADL.g:18044:1: 'time'
             {
              before(grammarAccess.getChangeAccess().getTimeKeyword_2()); 
-            match(input,113,FollowSets000.FOLLOW_2); 
+            match(input,114,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getChangeAccess().getTimeKeyword_2()); 
 
             }
@@ -46989,16 +47150,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__3"
-    // InternalDedalADL.g:17993:1: rule__Change__Group__3 : rule__Change__Group__3__Impl rule__Change__Group__4 ;
+    // InternalDedalADL.g:18057:1: rule__Change__Group__3 : rule__Change__Group__3__Impl rule__Change__Group__4 ;
     public final void rule__Change__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:17997:1: ( rule__Change__Group__3__Impl rule__Change__Group__4 )
-            // InternalDedalADL.g:17998:2: rule__Change__Group__3__Impl rule__Change__Group__4
+            // InternalDedalADL.g:18061:1: ( rule__Change__Group__3__Impl rule__Change__Group__4 )
+            // InternalDedalADL.g:18062:2: rule__Change__Group__3__Impl rule__Change__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_77);
+            pushFollow(FollowSets000.FOLLOW_78);
             rule__Change__Group__3__Impl();
 
             state._fsp--;
@@ -47027,17 +47188,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__3__Impl"
-    // InternalDedalADL.g:18005:1: rule__Change__Group__3__Impl : ( rulechange_time ) ;
+    // InternalDedalADL.g:18069:1: rule__Change__Group__3__Impl : ( rulechange_time ) ;
     public final void rule__Change__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18009:1: ( ( rulechange_time ) )
-            // InternalDedalADL.g:18010:1: ( rulechange_time )
+            // InternalDedalADL.g:18073:1: ( ( rulechange_time ) )
+            // InternalDedalADL.g:18074:1: ( rulechange_time )
             {
-            // InternalDedalADL.g:18010:1: ( rulechange_time )
-            // InternalDedalADL.g:18011:1: rulechange_time
+            // InternalDedalADL.g:18074:1: ( rulechange_time )
+            // InternalDedalADL.g:18075:1: rulechange_time
             {
              before(grammarAccess.getChangeAccess().getChange_timeParserRuleCall_3()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -47068,14 +47229,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__4"
-    // InternalDedalADL.g:18022:1: rule__Change__Group__4 : rule__Change__Group__4__Impl rule__Change__Group__5 ;
+    // InternalDedalADL.g:18086:1: rule__Change__Group__4 : rule__Change__Group__4__Impl rule__Change__Group__5 ;
     public final void rule__Change__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18026:1: ( rule__Change__Group__4__Impl rule__Change__Group__5 )
-            // InternalDedalADL.g:18027:2: rule__Change__Group__4__Impl rule__Change__Group__5
+            // InternalDedalADL.g:18090:1: ( rule__Change__Group__4__Impl rule__Change__Group__5 )
+            // InternalDedalADL.g:18091:2: rule__Change__Group__4__Impl rule__Change__Group__5
             {
             pushFollow(FollowSets000.FOLLOW_6);
             rule__Change__Group__4__Impl();
@@ -47106,20 +47267,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__4__Impl"
-    // InternalDedalADL.g:18034:1: rule__Change__Group__4__Impl : ( 'level' ) ;
+    // InternalDedalADL.g:18098:1: rule__Change__Group__4__Impl : ( 'level' ) ;
     public final void rule__Change__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18038:1: ( ( 'level' ) )
-            // InternalDedalADL.g:18039:1: ( 'level' )
+            // InternalDedalADL.g:18102:1: ( ( 'level' ) )
+            // InternalDedalADL.g:18103:1: ( 'level' )
             {
-            // InternalDedalADL.g:18039:1: ( 'level' )
-            // InternalDedalADL.g:18040:1: 'level'
+            // InternalDedalADL.g:18103:1: ( 'level' )
+            // InternalDedalADL.g:18104:1: 'level'
             {
              before(grammarAccess.getChangeAccess().getLevelKeyword_4()); 
-            match(input,114,FollowSets000.FOLLOW_2); 
+            match(input,115,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getChangeAccess().getLevelKeyword_4()); 
 
             }
@@ -47143,16 +47304,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__5"
-    // InternalDedalADL.g:18053:1: rule__Change__Group__5 : rule__Change__Group__5__Impl rule__Change__Group__6 ;
+    // InternalDedalADL.g:18117:1: rule__Change__Group__5 : rule__Change__Group__5__Impl rule__Change__Group__6 ;
     public final void rule__Change__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18057:1: ( rule__Change__Group__5__Impl rule__Change__Group__6 )
-            // InternalDedalADL.g:18058:2: rule__Change__Group__5__Impl rule__Change__Group__6
+            // InternalDedalADL.g:18121:1: ( rule__Change__Group__5__Impl rule__Change__Group__6 )
+            // InternalDedalADL.g:18122:2: rule__Change__Group__5__Impl rule__Change__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_78);
+            pushFollow(FollowSets000.FOLLOW_79);
             rule__Change__Group__5__Impl();
 
             state._fsp--;
@@ -47181,17 +47342,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__5__Impl"
-    // InternalDedalADL.g:18065:1: rule__Change__Group__5__Impl : ( ruleinitial_level ) ;
+    // InternalDedalADL.g:18129:1: rule__Change__Group__5__Impl : ( ruleinitial_level ) ;
     public final void rule__Change__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18069:1: ( ( ruleinitial_level ) )
-            // InternalDedalADL.g:18070:1: ( ruleinitial_level )
+            // InternalDedalADL.g:18133:1: ( ( ruleinitial_level ) )
+            // InternalDedalADL.g:18134:1: ( ruleinitial_level )
             {
-            // InternalDedalADL.g:18070:1: ( ruleinitial_level )
-            // InternalDedalADL.g:18071:1: ruleinitial_level
+            // InternalDedalADL.g:18134:1: ( ruleinitial_level )
+            // InternalDedalADL.g:18135:1: ruleinitial_level
             {
              before(grammarAccess.getChangeAccess().getInitial_levelParserRuleCall_5()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -47222,16 +47383,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__6"
-    // InternalDedalADL.g:18082:1: rule__Change__Group__6 : rule__Change__Group__6__Impl rule__Change__Group__7 ;
+    // InternalDedalADL.g:18146:1: rule__Change__Group__6 : rule__Change__Group__6__Impl rule__Change__Group__7 ;
     public final void rule__Change__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18086:1: ( rule__Change__Group__6__Impl rule__Change__Group__7 )
-            // InternalDedalADL.g:18087:2: rule__Change__Group__6__Impl rule__Change__Group__7
+            // InternalDedalADL.g:18150:1: ( rule__Change__Group__6__Impl rule__Change__Group__7 )
+            // InternalDedalADL.g:18151:2: rule__Change__Group__6__Impl rule__Change__Group__7
             {
-            pushFollow(FollowSets000.FOLLOW_79);
+            pushFollow(FollowSets000.FOLLOW_80);
             rule__Change__Group__6__Impl();
 
             state._fsp--;
@@ -47260,20 +47421,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__6__Impl"
-    // InternalDedalADL.g:18094:1: rule__Change__Group__6__Impl : ( 'operation' ) ;
+    // InternalDedalADL.g:18158:1: rule__Change__Group__6__Impl : ( 'operation' ) ;
     public final void rule__Change__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18098:1: ( ( 'operation' ) )
-            // InternalDedalADL.g:18099:1: ( 'operation' )
+            // InternalDedalADL.g:18162:1: ( ( 'operation' ) )
+            // InternalDedalADL.g:18163:1: ( 'operation' )
             {
-            // InternalDedalADL.g:18099:1: ( 'operation' )
-            // InternalDedalADL.g:18100:1: 'operation'
+            // InternalDedalADL.g:18163:1: ( 'operation' )
+            // InternalDedalADL.g:18164:1: 'operation'
             {
              before(grammarAccess.getChangeAccess().getOperationKeyword_6()); 
-            match(input,115,FollowSets000.FOLLOW_2); 
+            match(input,116,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getChangeAccess().getOperationKeyword_6()); 
 
             }
@@ -47297,16 +47458,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__7"
-    // InternalDedalADL.g:18113:1: rule__Change__Group__7 : rule__Change__Group__7__Impl rule__Change__Group__8 ;
+    // InternalDedalADL.g:18177:1: rule__Change__Group__7 : rule__Change__Group__7__Impl rule__Change__Group__8 ;
     public final void rule__Change__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18117:1: ( rule__Change__Group__7__Impl rule__Change__Group__8 )
-            // InternalDedalADL.g:18118:2: rule__Change__Group__7__Impl rule__Change__Group__8
+            // InternalDedalADL.g:18181:1: ( rule__Change__Group__7__Impl rule__Change__Group__8 )
+            // InternalDedalADL.g:18182:2: rule__Change__Group__7__Impl rule__Change__Group__8
             {
-            pushFollow(FollowSets000.FOLLOW_80);
+            pushFollow(FollowSets000.FOLLOW_81);
             rule__Change__Group__7__Impl();
 
             state._fsp--;
@@ -47335,17 +47496,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__7__Impl"
-    // InternalDedalADL.g:18125:1: rule__Change__Group__7__Impl : ( rulechange_operation ) ;
+    // InternalDedalADL.g:18189:1: rule__Change__Group__7__Impl : ( rulechange_operation ) ;
     public final void rule__Change__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18129:1: ( ( rulechange_operation ) )
-            // InternalDedalADL.g:18130:1: ( rulechange_operation )
+            // InternalDedalADL.g:18193:1: ( ( rulechange_operation ) )
+            // InternalDedalADL.g:18194:1: ( rulechange_operation )
             {
-            // InternalDedalADL.g:18130:1: ( rulechange_operation )
-            // InternalDedalADL.g:18131:1: rulechange_operation
+            // InternalDedalADL.g:18194:1: ( rulechange_operation )
+            // InternalDedalADL.g:18195:1: rulechange_operation
             {
              before(grammarAccess.getChangeAccess().getChange_operationParserRuleCall_7()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -47376,16 +47537,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__8"
-    // InternalDedalADL.g:18142:1: rule__Change__Group__8 : rule__Change__Group__8__Impl rule__Change__Group__9 ;
+    // InternalDedalADL.g:18206:1: rule__Change__Group__8 : rule__Change__Group__8__Impl rule__Change__Group__9 ;
     public final void rule__Change__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18146:1: ( rule__Change__Group__8__Impl rule__Change__Group__9 )
-            // InternalDedalADL.g:18147:2: rule__Change__Group__8__Impl rule__Change__Group__9
+            // InternalDedalADL.g:18210:1: ( rule__Change__Group__8__Impl rule__Change__Group__9 )
+            // InternalDedalADL.g:18211:2: rule__Change__Group__8__Impl rule__Change__Group__9
             {
-            pushFollow(FollowSets000.FOLLOW_81);
+            pushFollow(FollowSets000.FOLLOW_82);
             rule__Change__Group__8__Impl();
 
             state._fsp--;
@@ -47414,20 +47575,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__8__Impl"
-    // InternalDedalADL.g:18154:1: rule__Change__Group__8__Impl : ( 'artifact' ) ;
+    // InternalDedalADL.g:18218:1: rule__Change__Group__8__Impl : ( 'artifact' ) ;
     public final void rule__Change__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18158:1: ( ( 'artifact' ) )
-            // InternalDedalADL.g:18159:1: ( 'artifact' )
+            // InternalDedalADL.g:18222:1: ( ( 'artifact' ) )
+            // InternalDedalADL.g:18223:1: ( 'artifact' )
             {
-            // InternalDedalADL.g:18159:1: ( 'artifact' )
-            // InternalDedalADL.g:18160:1: 'artifact'
+            // InternalDedalADL.g:18223:1: ( 'artifact' )
+            // InternalDedalADL.g:18224:1: 'artifact'
             {
              before(grammarAccess.getChangeAccess().getArtifactKeyword_8()); 
-            match(input,116,FollowSets000.FOLLOW_2); 
+            match(input,117,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getChangeAccess().getArtifactKeyword_8()); 
 
             }
@@ -47451,16 +47612,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__9"
-    // InternalDedalADL.g:18173:1: rule__Change__Group__9 : rule__Change__Group__9__Impl rule__Change__Group__10 ;
+    // InternalDedalADL.g:18237:1: rule__Change__Group__9 : rule__Change__Group__9__Impl rule__Change__Group__10 ;
     public final void rule__Change__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18177:1: ( rule__Change__Group__9__Impl rule__Change__Group__10 )
-            // InternalDedalADL.g:18178:2: rule__Change__Group__9__Impl rule__Change__Group__10
+            // InternalDedalADL.g:18241:1: ( rule__Change__Group__9__Impl rule__Change__Group__10 )
+            // InternalDedalADL.g:18242:2: rule__Change__Group__9__Impl rule__Change__Group__10
             {
-            pushFollow(FollowSets000.FOLLOW_82);
+            pushFollow(FollowSets000.FOLLOW_83);
             rule__Change__Group__9__Impl();
 
             state._fsp--;
@@ -47489,17 +47650,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__9__Impl"
-    // InternalDedalADL.g:18185:1: rule__Change__Group__9__Impl : ( rulearchitecture_element ) ;
+    // InternalDedalADL.g:18249:1: rule__Change__Group__9__Impl : ( rulearchitecture_element ) ;
     public final void rule__Change__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18189:1: ( ( rulearchitecture_element ) )
-            // InternalDedalADL.g:18190:1: ( rulearchitecture_element )
+            // InternalDedalADL.g:18253:1: ( ( rulearchitecture_element ) )
+            // InternalDedalADL.g:18254:1: ( rulearchitecture_element )
             {
-            // InternalDedalADL.g:18190:1: ( rulearchitecture_element )
-            // InternalDedalADL.g:18191:1: rulearchitecture_element
+            // InternalDedalADL.g:18254:1: ( rulearchitecture_element )
+            // InternalDedalADL.g:18255:1: rulearchitecture_element
             {
              before(grammarAccess.getChangeAccess().getArchitecture_elementParserRuleCall_9()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -47530,14 +47691,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__10"
-    // InternalDedalADL.g:18202:1: rule__Change__Group__10 : rule__Change__Group__10__Impl rule__Change__Group__11 ;
+    // InternalDedalADL.g:18266:1: rule__Change__Group__10 : rule__Change__Group__10__Impl rule__Change__Group__11 ;
     public final void rule__Change__Group__10() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18206:1: ( rule__Change__Group__10__Impl rule__Change__Group__11 )
-            // InternalDedalADL.g:18207:2: rule__Change__Group__10__Impl rule__Change__Group__11
+            // InternalDedalADL.g:18270:1: ( rule__Change__Group__10__Impl rule__Change__Group__11 )
+            // InternalDedalADL.g:18271:2: rule__Change__Group__10__Impl rule__Change__Group__11
             {
             pushFollow(FollowSets000.FOLLOW_3);
             rule__Change__Group__10__Impl();
@@ -47568,20 +47729,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__10__Impl"
-    // InternalDedalADL.g:18214:1: rule__Change__Group__10__Impl : ( 'is' ) ;
+    // InternalDedalADL.g:18278:1: rule__Change__Group__10__Impl : ( 'is' ) ;
     public final void rule__Change__Group__10__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18218:1: ( ( 'is' ) )
-            // InternalDedalADL.g:18219:1: ( 'is' )
+            // InternalDedalADL.g:18282:1: ( ( 'is' ) )
+            // InternalDedalADL.g:18283:1: ( 'is' )
             {
-            // InternalDedalADL.g:18219:1: ( 'is' )
-            // InternalDedalADL.g:18220:1: 'is'
+            // InternalDedalADL.g:18283:1: ( 'is' )
+            // InternalDedalADL.g:18284:1: 'is'
             {
              before(grammarAccess.getChangeAccess().getIsKeyword_10()); 
-            match(input,117,FollowSets000.FOLLOW_2); 
+            match(input,118,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getChangeAccess().getIsKeyword_10()); 
 
             }
@@ -47605,16 +47766,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__11"
-    // InternalDedalADL.g:18233:1: rule__Change__Group__11 : rule__Change__Group__11__Impl rule__Change__Group__12 ;
+    // InternalDedalADL.g:18297:1: rule__Change__Group__11 : rule__Change__Group__11__Impl rule__Change__Group__12 ;
     public final void rule__Change__Group__11() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18237:1: ( rule__Change__Group__11__Impl rule__Change__Group__12 )
-            // InternalDedalADL.g:18238:2: rule__Change__Group__11__Impl rule__Change__Group__12
+            // InternalDedalADL.g:18301:1: ( rule__Change__Group__11__Impl rule__Change__Group__12 )
+            // InternalDedalADL.g:18302:2: rule__Change__Group__11__Impl rule__Change__Group__12
             {
-            pushFollow(FollowSets000.FOLLOW_83);
+            pushFollow(FollowSets000.FOLLOW_84);
             rule__Change__Group__11__Impl();
 
             state._fsp--;
@@ -47643,17 +47804,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__11__Impl"
-    // InternalDedalADL.g:18245:1: rule__Change__Group__11__Impl : ( ruleEString ) ;
+    // InternalDedalADL.g:18309:1: rule__Change__Group__11__Impl : ( ruleEString ) ;
     public final void rule__Change__Group__11__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18249:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:18250:1: ( ruleEString )
+            // InternalDedalADL.g:18313:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:18314:1: ( ruleEString )
             {
-            // InternalDedalADL.g:18250:1: ( ruleEString )
-            // InternalDedalADL.g:18251:1: ruleEString
+            // InternalDedalADL.g:18314:1: ( ruleEString )
+            // InternalDedalADL.g:18315:1: ruleEString
             {
              before(grammarAccess.getChangeAccess().getEStringParserRuleCall_11()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -47684,16 +47845,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__12"
-    // InternalDedalADL.g:18262:1: rule__Change__Group__12 : rule__Change__Group__12__Impl rule__Change__Group__13 ;
+    // InternalDedalADL.g:18326:1: rule__Change__Group__12 : rule__Change__Group__12__Impl rule__Change__Group__13 ;
     public final void rule__Change__Group__12() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18266:1: ( rule__Change__Group__12__Impl rule__Change__Group__13 )
-            // InternalDedalADL.g:18267:2: rule__Change__Group__12__Impl rule__Change__Group__13
+            // InternalDedalADL.g:18330:1: ( rule__Change__Group__12__Impl rule__Change__Group__13 )
+            // InternalDedalADL.g:18331:2: rule__Change__Group__12__Impl rule__Change__Group__13
             {
-            pushFollow(FollowSets000.FOLLOW_84);
+            pushFollow(FollowSets000.FOLLOW_85);
             rule__Change__Group__12__Impl();
 
             state._fsp--;
@@ -47722,20 +47883,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__12__Impl"
-    // InternalDedalADL.g:18274:1: rule__Change__Group__12__Impl : ( 'purpose' ) ;
+    // InternalDedalADL.g:18338:1: rule__Change__Group__12__Impl : ( 'purpose' ) ;
     public final void rule__Change__Group__12__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18278:1: ( ( 'purpose' ) )
-            // InternalDedalADL.g:18279:1: ( 'purpose' )
+            // InternalDedalADL.g:18342:1: ( ( 'purpose' ) )
+            // InternalDedalADL.g:18343:1: ( 'purpose' )
             {
-            // InternalDedalADL.g:18279:1: ( 'purpose' )
-            // InternalDedalADL.g:18280:1: 'purpose'
+            // InternalDedalADL.g:18343:1: ( 'purpose' )
+            // InternalDedalADL.g:18344:1: 'purpose'
             {
              before(grammarAccess.getChangeAccess().getPurposeKeyword_12()); 
-            match(input,118,FollowSets000.FOLLOW_2); 
+            match(input,119,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getChangeAccess().getPurposeKeyword_12()); 
 
             }
@@ -47759,16 +47920,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__13"
-    // InternalDedalADL.g:18293:1: rule__Change__Group__13 : rule__Change__Group__13__Impl rule__Change__Group__14 ;
+    // InternalDedalADL.g:18357:1: rule__Change__Group__13 : rule__Change__Group__13__Impl rule__Change__Group__14 ;
     public final void rule__Change__Group__13() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18297:1: ( rule__Change__Group__13__Impl rule__Change__Group__14 )
-            // InternalDedalADL.g:18298:2: rule__Change__Group__13__Impl rule__Change__Group__14
+            // InternalDedalADL.g:18361:1: ( rule__Change__Group__13__Impl rule__Change__Group__14 )
+            // InternalDedalADL.g:18362:2: rule__Change__Group__13__Impl rule__Change__Group__14
             {
-            pushFollow(FollowSets000.FOLLOW_85);
+            pushFollow(FollowSets000.FOLLOW_86);
             rule__Change__Group__13__Impl();
 
             state._fsp--;
@@ -47797,17 +47958,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__13__Impl"
-    // InternalDedalADL.g:18305:1: rule__Change__Group__13__Impl : ( rulechange_purpose ) ;
+    // InternalDedalADL.g:18369:1: rule__Change__Group__13__Impl : ( rulechange_purpose ) ;
     public final void rule__Change__Group__13__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18309:1: ( ( rulechange_purpose ) )
-            // InternalDedalADL.g:18310:1: ( rulechange_purpose )
+            // InternalDedalADL.g:18373:1: ( ( rulechange_purpose ) )
+            // InternalDedalADL.g:18374:1: ( rulechange_purpose )
             {
-            // InternalDedalADL.g:18310:1: ( rulechange_purpose )
-            // InternalDedalADL.g:18311:1: rulechange_purpose
+            // InternalDedalADL.g:18374:1: ( rulechange_purpose )
+            // InternalDedalADL.g:18375:1: rulechange_purpose
             {
              before(grammarAccess.getChangeAccess().getChange_purposeParserRuleCall_13()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -47838,16 +47999,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__14"
-    // InternalDedalADL.g:18322:1: rule__Change__Group__14 : rule__Change__Group__14__Impl rule__Change__Group__15 ;
+    // InternalDedalADL.g:18386:1: rule__Change__Group__14 : rule__Change__Group__14__Impl rule__Change__Group__15 ;
     public final void rule__Change__Group__14() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18326:1: ( rule__Change__Group__14__Impl rule__Change__Group__15 )
-            // InternalDedalADL.g:18327:2: rule__Change__Group__14__Impl rule__Change__Group__15
+            // InternalDedalADL.g:18390:1: ( rule__Change__Group__14__Impl rule__Change__Group__15 )
+            // InternalDedalADL.g:18391:2: rule__Change__Group__14__Impl rule__Change__Group__15
             {
-            pushFollow(FollowSets000.FOLLOW_86);
+            pushFollow(FollowSets000.FOLLOW_87);
             rule__Change__Group__14__Impl();
 
             state._fsp--;
@@ -47876,20 +48037,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__14__Impl"
-    // InternalDedalADL.g:18334:1: rule__Change__Group__14__Impl : ( 'origin' ) ;
+    // InternalDedalADL.g:18398:1: rule__Change__Group__14__Impl : ( 'origin' ) ;
     public final void rule__Change__Group__14__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18338:1: ( ( 'origin' ) )
-            // InternalDedalADL.g:18339:1: ( 'origin' )
+            // InternalDedalADL.g:18402:1: ( ( 'origin' ) )
+            // InternalDedalADL.g:18403:1: ( 'origin' )
             {
-            // InternalDedalADL.g:18339:1: ( 'origin' )
-            // InternalDedalADL.g:18340:1: 'origin'
+            // InternalDedalADL.g:18403:1: ( 'origin' )
+            // InternalDedalADL.g:18404:1: 'origin'
             {
              before(grammarAccess.getChangeAccess().getOriginKeyword_14()); 
-            match(input,119,FollowSets000.FOLLOW_2); 
+            match(input,120,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getChangeAccess().getOriginKeyword_14()); 
 
             }
@@ -47913,16 +48074,16 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__15"
-    // InternalDedalADL.g:18353:1: rule__Change__Group__15 : rule__Change__Group__15__Impl rule__Change__Group__16 ;
+    // InternalDedalADL.g:18417:1: rule__Change__Group__15 : rule__Change__Group__15__Impl rule__Change__Group__16 ;
     public final void rule__Change__Group__15() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18357:1: ( rule__Change__Group__15__Impl rule__Change__Group__16 )
-            // InternalDedalADL.g:18358:2: rule__Change__Group__15__Impl rule__Change__Group__16
+            // InternalDedalADL.g:18421:1: ( rule__Change__Group__15__Impl rule__Change__Group__16 )
+            // InternalDedalADL.g:18422:2: rule__Change__Group__15__Impl rule__Change__Group__16
             {
-            pushFollow(FollowSets000.FOLLOW_87);
+            pushFollow(FollowSets000.FOLLOW_88);
             rule__Change__Group__15__Impl();
 
             state._fsp--;
@@ -47951,17 +48112,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__15__Impl"
-    // InternalDedalADL.g:18365:1: rule__Change__Group__15__Impl : ( rulechange_origin ) ;
+    // InternalDedalADL.g:18429:1: rule__Change__Group__15__Impl : ( rulechange_origin ) ;
     public final void rule__Change__Group__15__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18369:1: ( ( rulechange_origin ) )
-            // InternalDedalADL.g:18370:1: ( rulechange_origin )
+            // InternalDedalADL.g:18433:1: ( ( rulechange_origin ) )
+            // InternalDedalADL.g:18434:1: ( rulechange_origin )
             {
-            // InternalDedalADL.g:18370:1: ( rulechange_origin )
-            // InternalDedalADL.g:18371:1: rulechange_origin
+            // InternalDedalADL.g:18434:1: ( rulechange_origin )
+            // InternalDedalADL.g:18435:1: rulechange_origin
             {
              before(grammarAccess.getChangeAccess().getChange_originParserRuleCall_15()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -47992,14 +48153,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__16"
-    // InternalDedalADL.g:18382:1: rule__Change__Group__16 : rule__Change__Group__16__Impl ;
+    // InternalDedalADL.g:18446:1: rule__Change__Group__16 : rule__Change__Group__16__Impl ;
     public final void rule__Change__Group__16() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18386:1: ( rule__Change__Group__16__Impl )
-            // InternalDedalADL.g:18387:2: rule__Change__Group__16__Impl
+            // InternalDedalADL.g:18450:1: ( rule__Change__Group__16__Impl )
+            // InternalDedalADL.g:18451:2: rule__Change__Group__16__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Change__Group__16__Impl();
@@ -48025,29 +48186,29 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group__16__Impl"
-    // InternalDedalADL.g:18393:1: rule__Change__Group__16__Impl : ( ( rule__Change__Group_16__0 )? ) ;
+    // InternalDedalADL.g:18457:1: rule__Change__Group__16__Impl : ( ( rule__Change__Group_16__0 )? ) ;
     public final void rule__Change__Group__16__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18397:1: ( ( ( rule__Change__Group_16__0 )? ) )
-            // InternalDedalADL.g:18398:1: ( ( rule__Change__Group_16__0 )? )
+            // InternalDedalADL.g:18461:1: ( ( ( rule__Change__Group_16__0 )? ) )
+            // InternalDedalADL.g:18462:1: ( ( rule__Change__Group_16__0 )? )
             {
-            // InternalDedalADL.g:18398:1: ( ( rule__Change__Group_16__0 )? )
-            // InternalDedalADL.g:18399:1: ( rule__Change__Group_16__0 )?
+            // InternalDedalADL.g:18462:1: ( ( rule__Change__Group_16__0 )? )
+            // InternalDedalADL.g:18463:1: ( rule__Change__Group_16__0 )?
             {
              before(grammarAccess.getChangeAccess().getGroup_16()); 
-            // InternalDedalADL.g:18400:1: ( rule__Change__Group_16__0 )?
+            // InternalDedalADL.g:18464:1: ( rule__Change__Group_16__0 )?
             int alt121=2;
             int LA121_0 = input.LA(1);
 
-            if ( (LA121_0==120) ) {
+            if ( (LA121_0==121) ) {
                 alt121=1;
             }
             switch (alt121) {
                 case 1 :
-                    // InternalDedalADL.g:18400:2: rule__Change__Group_16__0
+                    // InternalDedalADL.g:18464:2: rule__Change__Group_16__0
                     {
                     pushFollow(FollowSets000.FOLLOW_2);
                     rule__Change__Group_16__0();
@@ -48083,14 +48244,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group_16__0"
-    // InternalDedalADL.g:18444:1: rule__Change__Group_16__0 : rule__Change__Group_16__0__Impl rule__Change__Group_16__1 ;
+    // InternalDedalADL.g:18508:1: rule__Change__Group_16__0 : rule__Change__Group_16__0__Impl rule__Change__Group_16__1 ;
     public final void rule__Change__Group_16__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18448:1: ( rule__Change__Group_16__0__Impl rule__Change__Group_16__1 )
-            // InternalDedalADL.g:18449:2: rule__Change__Group_16__0__Impl rule__Change__Group_16__1
+            // InternalDedalADL.g:18512:1: ( rule__Change__Group_16__0__Impl rule__Change__Group_16__1 )
+            // InternalDedalADL.g:18513:2: rule__Change__Group_16__0__Impl rule__Change__Group_16__1
             {
             pushFollow(FollowSets000.FOLLOW_26);
             rule__Change__Group_16__0__Impl();
@@ -48121,20 +48282,20 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group_16__0__Impl"
-    // InternalDedalADL.g:18456:1: rule__Change__Group_16__0__Impl : ( 'from' ) ;
+    // InternalDedalADL.g:18520:1: rule__Change__Group_16__0__Impl : ( 'from' ) ;
     public final void rule__Change__Group_16__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18460:1: ( ( 'from' ) )
-            // InternalDedalADL.g:18461:1: ( 'from' )
+            // InternalDedalADL.g:18524:1: ( ( 'from' ) )
+            // InternalDedalADL.g:18525:1: ( 'from' )
             {
-            // InternalDedalADL.g:18461:1: ( 'from' )
-            // InternalDedalADL.g:18462:1: 'from'
+            // InternalDedalADL.g:18525:1: ( 'from' )
+            // InternalDedalADL.g:18526:1: 'from'
             {
              before(grammarAccess.getChangeAccess().getFromKeyword_16_0()); 
-            match(input,120,FollowSets000.FOLLOW_2); 
+            match(input,121,FollowSets000.FOLLOW_2); 
              after(grammarAccess.getChangeAccess().getFromKeyword_16_0()); 
 
             }
@@ -48158,14 +48319,14 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group_16__1"
-    // InternalDedalADL.g:18475:1: rule__Change__Group_16__1 : rule__Change__Group_16__1__Impl ;
+    // InternalDedalADL.g:18539:1: rule__Change__Group_16__1 : rule__Change__Group_16__1__Impl ;
     public final void rule__Change__Group_16__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18479:1: ( rule__Change__Group_16__1__Impl )
-            // InternalDedalADL.g:18480:2: rule__Change__Group_16__1__Impl
+            // InternalDedalADL.g:18543:1: ( rule__Change__Group_16__1__Impl )
+            // InternalDedalADL.g:18544:2: rule__Change__Group_16__1__Impl
             {
             pushFollow(FollowSets000.FOLLOW_2);
             rule__Change__Group_16__1__Impl();
@@ -48191,17 +48352,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Change__Group_16__1__Impl"
-    // InternalDedalADL.g:18486:1: rule__Change__Group_16__1__Impl : ( rulechange ) ;
+    // InternalDedalADL.g:18550:1: rule__Change__Group_16__1__Impl : ( rulechange ) ;
     public final void rule__Change__Group_16__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18490:1: ( ( rulechange ) )
-            // InternalDedalADL.g:18491:1: ( rulechange )
+            // InternalDedalADL.g:18554:1: ( ( rulechange ) )
+            // InternalDedalADL.g:18555:1: ( rulechange )
             {
-            // InternalDedalADL.g:18491:1: ( rulechange )
-            // InternalDedalADL.g:18492:1: rulechange
+            // InternalDedalADL.g:18555:1: ( rulechange )
+            // InternalDedalADL.g:18556:1: rulechange
             {
              before(grammarAccess.getChangeAccess().getChangeParserRuleCall_16_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48232,17 +48393,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__DedalDiagram__NameAssignment_1"
-    // InternalDedalADL.g:18508:1: rule__DedalDiagram__NameAssignment_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:18572:1: rule__DedalDiagram__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__DedalDiagram__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18512:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:18513:1: ( ruleEString )
+            // InternalDedalADL.g:18576:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:18577:1: ( ruleEString )
             {
-            // InternalDedalADL.g:18513:1: ( ruleEString )
-            // InternalDedalADL.g:18514:1: ruleEString
+            // InternalDedalADL.g:18577:1: ( ruleEString )
+            // InternalDedalADL.g:18578:1: ruleEString
             {
              before(grammarAccess.getDedalDiagramAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48273,17 +48434,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__DedalDiagram__ArchitectureDescriptionsAssignment_2_0_2"
-    // InternalDedalADL.g:18523:1: rule__DedalDiagram__ArchitectureDescriptionsAssignment_2_0_2 : ( ruleArchitectureDescription ) ;
+    // InternalDedalADL.g:18587:1: rule__DedalDiagram__ArchitectureDescriptionsAssignment_2_0_2 : ( ruleArchitectureDescription ) ;
     public final void rule__DedalDiagram__ArchitectureDescriptionsAssignment_2_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18527:1: ( ( ruleArchitectureDescription ) )
-            // InternalDedalADL.g:18528:1: ( ruleArchitectureDescription )
+            // InternalDedalADL.g:18591:1: ( ( ruleArchitectureDescription ) )
+            // InternalDedalADL.g:18592:1: ( ruleArchitectureDescription )
             {
-            // InternalDedalADL.g:18528:1: ( ruleArchitectureDescription )
-            // InternalDedalADL.g:18529:1: ruleArchitectureDescription
+            // InternalDedalADL.g:18592:1: ( ruleArchitectureDescription )
+            // InternalDedalADL.g:18593:1: ruleArchitectureDescription
             {
              before(grammarAccess.getDedalDiagramAccess().getArchitectureDescriptionsArchitectureDescriptionParserRuleCall_2_0_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48314,17 +48475,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__DedalDiagram__ArchitectureDescriptionsAssignment_2_0_3_1"
-    // InternalDedalADL.g:18538:1: rule__DedalDiagram__ArchitectureDescriptionsAssignment_2_0_3_1 : ( ruleArchitectureDescription ) ;
+    // InternalDedalADL.g:18602:1: rule__DedalDiagram__ArchitectureDescriptionsAssignment_2_0_3_1 : ( ruleArchitectureDescription ) ;
     public final void rule__DedalDiagram__ArchitectureDescriptionsAssignment_2_0_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18542:1: ( ( ruleArchitectureDescription ) )
-            // InternalDedalADL.g:18543:1: ( ruleArchitectureDescription )
+            // InternalDedalADL.g:18606:1: ( ( ruleArchitectureDescription ) )
+            // InternalDedalADL.g:18607:1: ( ruleArchitectureDescription )
             {
-            // InternalDedalADL.g:18543:1: ( ruleArchitectureDescription )
-            // InternalDedalADL.g:18544:1: ruleArchitectureDescription
+            // InternalDedalADL.g:18607:1: ( ruleArchitectureDescription )
+            // InternalDedalADL.g:18608:1: ruleArchitectureDescription
             {
              before(grammarAccess.getDedalDiagramAccess().getArchitectureDescriptionsArchitectureDescriptionParserRuleCall_2_0_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48355,17 +48516,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__DedalDiagram__RepositoriesAssignment_2_1_2"
-    // InternalDedalADL.g:18553:1: rule__DedalDiagram__RepositoriesAssignment_2_1_2 : ( ruleRepository ) ;
+    // InternalDedalADL.g:18617:1: rule__DedalDiagram__RepositoriesAssignment_2_1_2 : ( ruleRepository ) ;
     public final void rule__DedalDiagram__RepositoriesAssignment_2_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18557:1: ( ( ruleRepository ) )
-            // InternalDedalADL.g:18558:1: ( ruleRepository )
+            // InternalDedalADL.g:18621:1: ( ( ruleRepository ) )
+            // InternalDedalADL.g:18622:1: ( ruleRepository )
             {
-            // InternalDedalADL.g:18558:1: ( ruleRepository )
-            // InternalDedalADL.g:18559:1: ruleRepository
+            // InternalDedalADL.g:18622:1: ( ruleRepository )
+            // InternalDedalADL.g:18623:1: ruleRepository
             {
              before(grammarAccess.getDedalDiagramAccess().getRepositoriesRepositoryParserRuleCall_2_1_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48396,17 +48557,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__DedalDiagram__RepositoriesAssignment_2_1_3_1"
-    // InternalDedalADL.g:18568:1: rule__DedalDiagram__RepositoriesAssignment_2_1_3_1 : ( ruleRepository ) ;
+    // InternalDedalADL.g:18632:1: rule__DedalDiagram__RepositoriesAssignment_2_1_3_1 : ( ruleRepository ) ;
     public final void rule__DedalDiagram__RepositoriesAssignment_2_1_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18572:1: ( ( ruleRepository ) )
-            // InternalDedalADL.g:18573:1: ( ruleRepository )
+            // InternalDedalADL.g:18636:1: ( ( ruleRepository ) )
+            // InternalDedalADL.g:18637:1: ( ruleRepository )
             {
-            // InternalDedalADL.g:18573:1: ( ruleRepository )
-            // InternalDedalADL.g:18574:1: ruleRepository
+            // InternalDedalADL.g:18637:1: ( ruleRepository )
+            // InternalDedalADL.g:18638:1: ruleRepository
             {
              before(grammarAccess.getDedalDiagramAccess().getRepositoriesRepositoryParserRuleCall_2_1_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48437,17 +48598,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Repository__NameAssignment_1"
-    // InternalDedalADL.g:18583:1: rule__Repository__NameAssignment_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:18647:1: rule__Repository__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Repository__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18587:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:18588:1: ( ruleEString )
+            // InternalDedalADL.g:18651:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:18652:1: ( ruleEString )
             {
-            // InternalDedalADL.g:18588:1: ( ruleEString )
-            // InternalDedalADL.g:18589:1: ruleEString
+            // InternalDedalADL.g:18652:1: ( ruleEString )
+            // InternalDedalADL.g:18653:1: ruleEString
             {
              before(grammarAccess.getRepositoryAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48478,17 +48639,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Repository__ComponentsAssignment_2_2"
-    // InternalDedalADL.g:18598:1: rule__Repository__ComponentsAssignment_2_2 : ( ruleComponent ) ;
+    // InternalDedalADL.g:18662:1: rule__Repository__ComponentsAssignment_2_2 : ( ruleComponent ) ;
     public final void rule__Repository__ComponentsAssignment_2_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18602:1: ( ( ruleComponent ) )
-            // InternalDedalADL.g:18603:1: ( ruleComponent )
+            // InternalDedalADL.g:18666:1: ( ( ruleComponent ) )
+            // InternalDedalADL.g:18667:1: ( ruleComponent )
             {
-            // InternalDedalADL.g:18603:1: ( ruleComponent )
-            // InternalDedalADL.g:18604:1: ruleComponent
+            // InternalDedalADL.g:18667:1: ( ruleComponent )
+            // InternalDedalADL.g:18668:1: ruleComponent
             {
              before(grammarAccess.getRepositoryAccess().getComponentsComponentParserRuleCall_2_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48519,17 +48680,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Repository__ComponentsAssignment_2_3_1"
-    // InternalDedalADL.g:18613:1: rule__Repository__ComponentsAssignment_2_3_1 : ( ruleComponent ) ;
+    // InternalDedalADL.g:18677:1: rule__Repository__ComponentsAssignment_2_3_1 : ( ruleComponent ) ;
     public final void rule__Repository__ComponentsAssignment_2_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18617:1: ( ( ruleComponent ) )
-            // InternalDedalADL.g:18618:1: ( ruleComponent )
+            // InternalDedalADL.g:18681:1: ( ( ruleComponent ) )
+            // InternalDedalADL.g:18682:1: ( ruleComponent )
             {
-            // InternalDedalADL.g:18618:1: ( ruleComponent )
-            // InternalDedalADL.g:18619:1: ruleComponent
+            // InternalDedalADL.g:18682:1: ( ruleComponent )
+            // InternalDedalADL.g:18683:1: ruleComponent
             {
              before(grammarAccess.getRepositoryAccess().getComponentsComponentParserRuleCall_2_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48560,17 +48721,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Repository__InterfaceTypesAssignment_3_2"
-    // InternalDedalADL.g:18628:1: rule__Repository__InterfaceTypesAssignment_3_2 : ( ruleInterfaceType ) ;
+    // InternalDedalADL.g:18692:1: rule__Repository__InterfaceTypesAssignment_3_2 : ( ruleInterfaceType ) ;
     public final void rule__Repository__InterfaceTypesAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18632:1: ( ( ruleInterfaceType ) )
-            // InternalDedalADL.g:18633:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:18696:1: ( ( ruleInterfaceType ) )
+            // InternalDedalADL.g:18697:1: ( ruleInterfaceType )
             {
-            // InternalDedalADL.g:18633:1: ( ruleInterfaceType )
-            // InternalDedalADL.g:18634:1: ruleInterfaceType
+            // InternalDedalADL.g:18697:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:18698:1: ruleInterfaceType
             {
              before(grammarAccess.getRepositoryAccess().getInterfaceTypesInterfaceTypeParserRuleCall_3_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48601,17 +48762,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Repository__InterfaceTypesAssignment_3_3_1"
-    // InternalDedalADL.g:18643:1: rule__Repository__InterfaceTypesAssignment_3_3_1 : ( ruleInterfaceType ) ;
+    // InternalDedalADL.g:18707:1: rule__Repository__InterfaceTypesAssignment_3_3_1 : ( ruleInterfaceType ) ;
     public final void rule__Repository__InterfaceTypesAssignment_3_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18647:1: ( ( ruleInterfaceType ) )
-            // InternalDedalADL.g:18648:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:18711:1: ( ( ruleInterfaceType ) )
+            // InternalDedalADL.g:18712:1: ( ruleInterfaceType )
             {
-            // InternalDedalADL.g:18648:1: ( ruleInterfaceType )
-            // InternalDedalADL.g:18649:1: ruleInterfaceType
+            // InternalDedalADL.g:18712:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:18713:1: ruleInterfaceType
             {
              before(grammarAccess.getRepositoryAccess().getInterfaceTypesInterfaceTypeParserRuleCall_3_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48642,17 +48803,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InterfaceType__NameAssignment_1"
-    // InternalDedalADL.g:18658:1: rule__InterfaceType__NameAssignment_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:18722:1: rule__InterfaceType__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__InterfaceType__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18662:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:18663:1: ( ruleEString )
+            // InternalDedalADL.g:18726:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:18727:1: ( ruleEString )
             {
-            // InternalDedalADL.g:18663:1: ( ruleEString )
-            // InternalDedalADL.g:18664:1: ruleEString
+            // InternalDedalADL.g:18727:1: ( ruleEString )
+            // InternalDedalADL.g:18728:1: ruleEString
             {
              before(grammarAccess.getInterfaceTypeAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48683,17 +48844,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InterfaceType__SignaturesAssignment_4"
-    // InternalDedalADL.g:18673:1: rule__InterfaceType__SignaturesAssignment_4 : ( ruleSignature ) ;
+    // InternalDedalADL.g:18737:1: rule__InterfaceType__SignaturesAssignment_4 : ( ruleSignature ) ;
     public final void rule__InterfaceType__SignaturesAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18677:1: ( ( ruleSignature ) )
-            // InternalDedalADL.g:18678:1: ( ruleSignature )
+            // InternalDedalADL.g:18741:1: ( ( ruleSignature ) )
+            // InternalDedalADL.g:18742:1: ( ruleSignature )
             {
-            // InternalDedalADL.g:18678:1: ( ruleSignature )
-            // InternalDedalADL.g:18679:1: ruleSignature
+            // InternalDedalADL.g:18742:1: ( ruleSignature )
+            // InternalDedalADL.g:18743:1: ruleSignature
             {
              before(grammarAccess.getInterfaceTypeAccess().getSignaturesSignatureParserRuleCall_4_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48724,17 +48885,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InterfaceType__SignaturesAssignment_5_1"
-    // InternalDedalADL.g:18688:1: rule__InterfaceType__SignaturesAssignment_5_1 : ( ruleSignature ) ;
+    // InternalDedalADL.g:18752:1: rule__InterfaceType__SignaturesAssignment_5_1 : ( ruleSignature ) ;
     public final void rule__InterfaceType__SignaturesAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18692:1: ( ( ruleSignature ) )
-            // InternalDedalADL.g:18693:1: ( ruleSignature )
+            // InternalDedalADL.g:18756:1: ( ( ruleSignature ) )
+            // InternalDedalADL.g:18757:1: ( ruleSignature )
             {
-            // InternalDedalADL.g:18693:1: ( ruleSignature )
-            // InternalDedalADL.g:18694:1: ruleSignature
+            // InternalDedalADL.g:18757:1: ( ruleSignature )
+            // InternalDedalADL.g:18758:1: ruleSignature
             {
              before(grammarAccess.getInterfaceTypeAccess().getSignaturesSignatureParserRuleCall_5_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48765,17 +48926,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Signature__IdAssignment_1"
-    // InternalDedalADL.g:18703:1: rule__Signature__IdAssignment_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:18767:1: rule__Signature__IdAssignment_1 : ( ruleEString ) ;
     public final void rule__Signature__IdAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18707:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:18708:1: ( ruleEString )
+            // InternalDedalADL.g:18771:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:18772:1: ( ruleEString )
             {
-            // InternalDedalADL.g:18708:1: ( ruleEString )
-            // InternalDedalADL.g:18709:1: ruleEString
+            // InternalDedalADL.g:18772:1: ( ruleEString )
+            // InternalDedalADL.g:18773:1: ruleEString
             {
              before(grammarAccess.getSignatureAccess().getIdEStringParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48806,17 +48967,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Signature__NameAssignment_2_1"
-    // InternalDedalADL.g:18718:1: rule__Signature__NameAssignment_2_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:18782:1: rule__Signature__NameAssignment_2_1 : ( ruleEString ) ;
     public final void rule__Signature__NameAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18722:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:18723:1: ( ruleEString )
+            // InternalDedalADL.g:18786:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:18787:1: ( ruleEString )
             {
-            // InternalDedalADL.g:18723:1: ( ruleEString )
-            // InternalDedalADL.g:18724:1: ruleEString
+            // InternalDedalADL.g:18787:1: ( ruleEString )
+            // InternalDedalADL.g:18788:1: ruleEString
             {
              before(grammarAccess.getSignatureAccess().getNameEStringParserRuleCall_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48847,17 +49008,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Signature__TypeAssignment_3_1"
-    // InternalDedalADL.g:18733:1: rule__Signature__TypeAssignment_3_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:18797:1: rule__Signature__TypeAssignment_3_1 : ( ruleEString ) ;
     public final void rule__Signature__TypeAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18737:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:18738:1: ( ruleEString )
+            // InternalDedalADL.g:18801:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:18802:1: ( ruleEString )
             {
-            // InternalDedalADL.g:18738:1: ( ruleEString )
-            // InternalDedalADL.g:18739:1: ruleEString
+            // InternalDedalADL.g:18802:1: ( ruleEString )
+            // InternalDedalADL.g:18803:1: ruleEString
             {
              before(grammarAccess.getSignatureAccess().getTypeEStringParserRuleCall_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48888,17 +49049,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Signature__ParametersAssignment_4_2"
-    // InternalDedalADL.g:18748:1: rule__Signature__ParametersAssignment_4_2 : ( ruleParameter ) ;
+    // InternalDedalADL.g:18812:1: rule__Signature__ParametersAssignment_4_2 : ( ruleParameter ) ;
     public final void rule__Signature__ParametersAssignment_4_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18752:1: ( ( ruleParameter ) )
-            // InternalDedalADL.g:18753:1: ( ruleParameter )
+            // InternalDedalADL.g:18816:1: ( ( ruleParameter ) )
+            // InternalDedalADL.g:18817:1: ( ruleParameter )
             {
-            // InternalDedalADL.g:18753:1: ( ruleParameter )
-            // InternalDedalADL.g:18754:1: ruleParameter
+            // InternalDedalADL.g:18817:1: ( ruleParameter )
+            // InternalDedalADL.g:18818:1: ruleParameter
             {
              before(grammarAccess.getSignatureAccess().getParametersParameterParserRuleCall_4_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48929,17 +49090,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Signature__ParametersAssignment_4_3_1"
-    // InternalDedalADL.g:18763:1: rule__Signature__ParametersAssignment_4_3_1 : ( ruleParameter ) ;
+    // InternalDedalADL.g:18827:1: rule__Signature__ParametersAssignment_4_3_1 : ( ruleParameter ) ;
     public final void rule__Signature__ParametersAssignment_4_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18767:1: ( ( ruleParameter ) )
-            // InternalDedalADL.g:18768:1: ( ruleParameter )
+            // InternalDedalADL.g:18831:1: ( ( ruleParameter ) )
+            // InternalDedalADL.g:18832:1: ( ruleParameter )
             {
-            // InternalDedalADL.g:18768:1: ( ruleParameter )
-            // InternalDedalADL.g:18769:1: ruleParameter
+            // InternalDedalADL.g:18832:1: ( ruleParameter )
+            // InternalDedalADL.g:18833:1: ruleParameter
             {
              before(grammarAccess.getSignatureAccess().getParametersParameterParserRuleCall_4_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -48970,17 +49131,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Parameter__IdAssignment_1"
-    // InternalDedalADL.g:18778:1: rule__Parameter__IdAssignment_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:18842:1: rule__Parameter__IdAssignment_1 : ( ruleEString ) ;
     public final void rule__Parameter__IdAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18782:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:18783:1: ( ruleEString )
+            // InternalDedalADL.g:18846:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:18847:1: ( ruleEString )
             {
-            // InternalDedalADL.g:18783:1: ( ruleEString )
-            // InternalDedalADL.g:18784:1: ruleEString
+            // InternalDedalADL.g:18847:1: ( ruleEString )
+            // InternalDedalADL.g:18848:1: ruleEString
             {
              before(grammarAccess.getParameterAccess().getIdEStringParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49011,17 +49172,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Parameter__NameAssignment_2_1"
-    // InternalDedalADL.g:18793:1: rule__Parameter__NameAssignment_2_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:18857:1: rule__Parameter__NameAssignment_2_1 : ( ruleEString ) ;
     public final void rule__Parameter__NameAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18797:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:18798:1: ( ruleEString )
+            // InternalDedalADL.g:18861:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:18862:1: ( ruleEString )
             {
-            // InternalDedalADL.g:18798:1: ( ruleEString )
-            // InternalDedalADL.g:18799:1: ruleEString
+            // InternalDedalADL.g:18862:1: ( ruleEString )
+            // InternalDedalADL.g:18863:1: ruleEString
             {
              before(grammarAccess.getParameterAccess().getNameEStringParserRuleCall_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49052,17 +49213,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Parameter__TypeAssignment_3_1"
-    // InternalDedalADL.g:18808:1: rule__Parameter__TypeAssignment_3_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:18872:1: rule__Parameter__TypeAssignment_3_1 : ( ruleEString ) ;
     public final void rule__Parameter__TypeAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18812:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:18813:1: ( ruleEString )
+            // InternalDedalADL.g:18876:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:18877:1: ( ruleEString )
             {
-            // InternalDedalADL.g:18813:1: ( ruleEString )
-            // InternalDedalADL.g:18814:1: ruleEString
+            // InternalDedalADL.g:18877:1: ( ruleEString )
+            // InternalDedalADL.g:18878:1: ruleEString
             {
              before(grammarAccess.getParameterAccess().getTypeEStringParserRuleCall_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49093,17 +49254,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Specification__NameAssignment_1"
-    // InternalDedalADL.g:18823:1: rule__Specification__NameAssignment_1 : ( rulespecification_name ) ;
+    // InternalDedalADL.g:18887:1: rule__Specification__NameAssignment_1 : ( rulespecification_name ) ;
     public final void rule__Specification__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18827:1: ( ( rulespecification_name ) )
-            // InternalDedalADL.g:18828:1: ( rulespecification_name )
+            // InternalDedalADL.g:18891:1: ( ( rulespecification_name ) )
+            // InternalDedalADL.g:18892:1: ( rulespecification_name )
             {
-            // InternalDedalADL.g:18828:1: ( rulespecification_name )
-            // InternalDedalADL.g:18829:1: rulespecification_name
+            // InternalDedalADL.g:18892:1: ( rulespecification_name )
+            // InternalDedalADL.g:18893:1: rulespecification_name
             {
              before(grammarAccess.getSpecificationAccess().getNameSpecification_nameParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49134,17 +49295,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Specification__SpecComponentsAssignment_3"
-    // InternalDedalADL.g:18838:1: rule__Specification__SpecComponentsAssignment_3 : ( ruleCompRole ) ;
+    // InternalDedalADL.g:18902:1: rule__Specification__SpecComponentsAssignment_3 : ( ruleCompRole ) ;
     public final void rule__Specification__SpecComponentsAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18842:1: ( ( ruleCompRole ) )
-            // InternalDedalADL.g:18843:1: ( ruleCompRole )
+            // InternalDedalADL.g:18906:1: ( ( ruleCompRole ) )
+            // InternalDedalADL.g:18907:1: ( ruleCompRole )
             {
-            // InternalDedalADL.g:18843:1: ( ruleCompRole )
-            // InternalDedalADL.g:18844:1: ruleCompRole
+            // InternalDedalADL.g:18907:1: ( ruleCompRole )
+            // InternalDedalADL.g:18908:1: ruleCompRole
             {
              before(grammarAccess.getSpecificationAccess().getSpecComponentsCompRoleParserRuleCall_3_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49175,17 +49336,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Specification__SpecComponentsAssignment_4_1"
-    // InternalDedalADL.g:18853:1: rule__Specification__SpecComponentsAssignment_4_1 : ( ruleCompRole ) ;
+    // InternalDedalADL.g:18917:1: rule__Specification__SpecComponentsAssignment_4_1 : ( ruleCompRole ) ;
     public final void rule__Specification__SpecComponentsAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18857:1: ( ( ruleCompRole ) )
-            // InternalDedalADL.g:18858:1: ( ruleCompRole )
+            // InternalDedalADL.g:18921:1: ( ( ruleCompRole ) )
+            // InternalDedalADL.g:18922:1: ( ruleCompRole )
             {
-            // InternalDedalADL.g:18858:1: ( ruleCompRole )
-            // InternalDedalADL.g:18859:1: ruleCompRole
+            // InternalDedalADL.g:18922:1: ( ruleCompRole )
+            // InternalDedalADL.g:18923:1: ruleCompRole
             {
              before(grammarAccess.getSpecificationAccess().getSpecComponentsCompRoleParserRuleCall_4_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49216,17 +49377,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Specification__SpecConnectionsAssignment_5_1"
-    // InternalDedalADL.g:18868:1: rule__Specification__SpecConnectionsAssignment_5_1 : ( ruleRoleConnection ) ;
+    // InternalDedalADL.g:18932:1: rule__Specification__SpecConnectionsAssignment_5_1 : ( ruleRoleConnection ) ;
     public final void rule__Specification__SpecConnectionsAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18872:1: ( ( ruleRoleConnection ) )
-            // InternalDedalADL.g:18873:1: ( ruleRoleConnection )
+            // InternalDedalADL.g:18936:1: ( ( ruleRoleConnection ) )
+            // InternalDedalADL.g:18937:1: ( ruleRoleConnection )
             {
-            // InternalDedalADL.g:18873:1: ( ruleRoleConnection )
-            // InternalDedalADL.g:18874:1: ruleRoleConnection
+            // InternalDedalADL.g:18937:1: ( ruleRoleConnection )
+            // InternalDedalADL.g:18938:1: ruleRoleConnection
             {
              before(grammarAccess.getSpecificationAccess().getSpecConnectionsRoleConnectionParserRuleCall_5_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49257,17 +49418,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Specification__SpecConnectionsAssignment_5_2"
-    // InternalDedalADL.g:18883:1: rule__Specification__SpecConnectionsAssignment_5_2 : ( ruleRoleConnection ) ;
+    // InternalDedalADL.g:18947:1: rule__Specification__SpecConnectionsAssignment_5_2 : ( ruleRoleConnection ) ;
     public final void rule__Specification__SpecConnectionsAssignment_5_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18887:1: ( ( ruleRoleConnection ) )
-            // InternalDedalADL.g:18888:1: ( ruleRoleConnection )
+            // InternalDedalADL.g:18951:1: ( ( ruleRoleConnection ) )
+            // InternalDedalADL.g:18952:1: ( ruleRoleConnection )
             {
-            // InternalDedalADL.g:18888:1: ( ruleRoleConnection )
-            // InternalDedalADL.g:18889:1: ruleRoleConnection
+            // InternalDedalADL.g:18952:1: ( ruleRoleConnection )
+            // InternalDedalADL.g:18953:1: ruleRoleConnection
             {
              before(grammarAccess.getSpecificationAccess().getSpecConnectionsRoleConnectionParserRuleCall_5_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49298,17 +49459,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Specification__InterfaceTypesAssignment_9_1"
-    // InternalDedalADL.g:18898:1: rule__Specification__InterfaceTypesAssignment_9_1 : ( ruleInterfaceType ) ;
+    // InternalDedalADL.g:18962:1: rule__Specification__InterfaceTypesAssignment_9_1 : ( ruleInterfaceType ) ;
     public final void rule__Specification__InterfaceTypesAssignment_9_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18902:1: ( ( ruleInterfaceType ) )
-            // InternalDedalADL.g:18903:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:18966:1: ( ( ruleInterfaceType ) )
+            // InternalDedalADL.g:18967:1: ( ruleInterfaceType )
             {
-            // InternalDedalADL.g:18903:1: ( ruleInterfaceType )
-            // InternalDedalADL.g:18904:1: ruleInterfaceType
+            // InternalDedalADL.g:18967:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:18968:1: ruleInterfaceType
             {
              before(grammarAccess.getSpecificationAccess().getInterfaceTypesInterfaceTypeParserRuleCall_9_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49339,17 +49500,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Specification__InterfaceTypesAssignment_9_2_1"
-    // InternalDedalADL.g:18913:1: rule__Specification__InterfaceTypesAssignment_9_2_1 : ( ruleInterfaceType ) ;
+    // InternalDedalADL.g:18977:1: rule__Specification__InterfaceTypesAssignment_9_2_1 : ( ruleInterfaceType ) ;
     public final void rule__Specification__InterfaceTypesAssignment_9_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18917:1: ( ( ruleInterfaceType ) )
-            // InternalDedalADL.g:18918:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:18981:1: ( ( ruleInterfaceType ) )
+            // InternalDedalADL.g:18982:1: ( ruleInterfaceType )
             {
-            // InternalDedalADL.g:18918:1: ( ruleInterfaceType )
-            // InternalDedalADL.g:18919:1: ruleInterfaceType
+            // InternalDedalADL.g:18982:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:18983:1: ruleInterfaceType
             {
              before(grammarAccess.getSpecificationAccess().getInterfaceTypesInterfaceTypeParserRuleCall_9_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49380,17 +49541,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompRole__NameAssignment_1"
-    // InternalDedalADL.g:18928:1: rule__CompRole__NameAssignment_1 : ( rulecomponent_role_name ) ;
+    // InternalDedalADL.g:18992:1: rule__CompRole__NameAssignment_1 : ( rulecomponent_role_name ) ;
     public final void rule__CompRole__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18932:1: ( ( rulecomponent_role_name ) )
-            // InternalDedalADL.g:18933:1: ( rulecomponent_role_name )
+            // InternalDedalADL.g:18996:1: ( ( rulecomponent_role_name ) )
+            // InternalDedalADL.g:18997:1: ( rulecomponent_role_name )
             {
-            // InternalDedalADL.g:18933:1: ( rulecomponent_role_name )
-            // InternalDedalADL.g:18934:1: rulecomponent_role_name
+            // InternalDedalADL.g:18997:1: ( rulecomponent_role_name )
+            // InternalDedalADL.g:18998:1: rulecomponent_role_name
             {
              before(grammarAccess.getCompRoleAccess().getNameComponent_role_nameParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49421,17 +49582,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompRole__IdAssignment_3"
-    // InternalDedalADL.g:18943:1: rule__CompRole__IdAssignment_3 : ( ruleEString ) ;
+    // InternalDedalADL.g:19007:1: rule__CompRole__IdAssignment_3 : ( ruleEString ) ;
     public final void rule__CompRole__IdAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18947:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:18948:1: ( ruleEString )
+            // InternalDedalADL.g:19011:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19012:1: ( ruleEString )
             {
-            // InternalDedalADL.g:18948:1: ( ruleEString )
-            // InternalDedalADL.g:18949:1: ruleEString
+            // InternalDedalADL.g:19012:1: ( ruleEString )
+            // InternalDedalADL.g:19013:1: ruleEString
             {
              before(grammarAccess.getCompRoleAccess().getIdEStringParserRuleCall_3_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49462,17 +49623,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompRole__CompInterfacesAssignment_4_1"
-    // InternalDedalADL.g:18958:1: rule__CompRole__CompInterfacesAssignment_4_1 : ( ruleInterface ) ;
+    // InternalDedalADL.g:19022:1: rule__CompRole__CompInterfacesAssignment_4_1 : ( ruleInterface ) ;
     public final void rule__CompRole__CompInterfacesAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18962:1: ( ( ruleInterface ) )
-            // InternalDedalADL.g:18963:1: ( ruleInterface )
+            // InternalDedalADL.g:19026:1: ( ( ruleInterface ) )
+            // InternalDedalADL.g:19027:1: ( ruleInterface )
             {
-            // InternalDedalADL.g:18963:1: ( ruleInterface )
-            // InternalDedalADL.g:18964:1: ruleInterface
+            // InternalDedalADL.g:19027:1: ( ruleInterface )
+            // InternalDedalADL.g:19028:1: ruleInterface
             {
              before(grammarAccess.getCompRoleAccess().getCompInterfacesInterfaceParserRuleCall_4_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49503,17 +49664,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompRole__CompInterfacesAssignment_4_2_1"
-    // InternalDedalADL.g:18973:1: rule__CompRole__CompInterfacesAssignment_4_2_1 : ( ruleInterface ) ;
+    // InternalDedalADL.g:19037:1: rule__CompRole__CompInterfacesAssignment_4_2_1 : ( ruleInterface ) ;
     public final void rule__CompRole__CompInterfacesAssignment_4_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18977:1: ( ( ruleInterface ) )
-            // InternalDedalADL.g:18978:1: ( ruleInterface )
+            // InternalDedalADL.g:19041:1: ( ( ruleInterface ) )
+            // InternalDedalADL.g:19042:1: ( ruleInterface )
             {
-            // InternalDedalADL.g:18978:1: ( ruleInterface )
-            // InternalDedalADL.g:18979:1: ruleInterface
+            // InternalDedalADL.g:19042:1: ( ruleInterface )
+            // InternalDedalADL.g:19043:1: ruleInterface
             {
              before(grammarAccess.getCompRoleAccess().getCompInterfacesInterfaceParserRuleCall_4_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49544,17 +49705,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompRole__CompInterfacesAssignment_5_1"
-    // InternalDedalADL.g:18988:1: rule__CompRole__CompInterfacesAssignment_5_1 : ( ruleInterface ) ;
+    // InternalDedalADL.g:19052:1: rule__CompRole__CompInterfacesAssignment_5_1 : ( ruleInterface ) ;
     public final void rule__CompRole__CompInterfacesAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:18992:1: ( ( ruleInterface ) )
-            // InternalDedalADL.g:18993:1: ( ruleInterface )
+            // InternalDedalADL.g:19056:1: ( ( ruleInterface ) )
+            // InternalDedalADL.g:19057:1: ( ruleInterface )
             {
-            // InternalDedalADL.g:18993:1: ( ruleInterface )
-            // InternalDedalADL.g:18994:1: ruleInterface
+            // InternalDedalADL.g:19057:1: ( ruleInterface )
+            // InternalDedalADL.g:19058:1: ruleInterface
             {
              before(grammarAccess.getCompRoleAccess().getCompInterfacesInterfaceParserRuleCall_5_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49585,17 +49746,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompRole__CompInterfacesAssignment_5_2_1"
-    // InternalDedalADL.g:19003:1: rule__CompRole__CompInterfacesAssignment_5_2_1 : ( ruleInterface ) ;
+    // InternalDedalADL.g:19067:1: rule__CompRole__CompInterfacesAssignment_5_2_1 : ( ruleInterface ) ;
     public final void rule__CompRole__CompInterfacesAssignment_5_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19007:1: ( ( ruleInterface ) )
-            // InternalDedalADL.g:19008:1: ( ruleInterface )
+            // InternalDedalADL.g:19071:1: ( ( ruleInterface ) )
+            // InternalDedalADL.g:19072:1: ( ruleInterface )
             {
-            // InternalDedalADL.g:19008:1: ( ruleInterface )
-            // InternalDedalADL.g:19009:1: ruleInterface
+            // InternalDedalADL.g:19072:1: ( ruleInterface )
+            // InternalDedalADL.g:19073:1: ruleInterface
             {
              before(grammarAccess.getCompRoleAccess().getCompInterfacesInterfaceParserRuleCall_5_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49626,17 +49787,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompRole__MinInstanceNbrAssignment_6_1"
-    // InternalDedalADL.g:19018:1: rule__CompRole__MinInstanceNbrAssignment_6_1 : ( RULE_INT ) ;
+    // InternalDedalADL.g:19082:1: rule__CompRole__MinInstanceNbrAssignment_6_1 : ( RULE_INT ) ;
     public final void rule__CompRole__MinInstanceNbrAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19022:1: ( ( RULE_INT ) )
-            // InternalDedalADL.g:19023:1: ( RULE_INT )
+            // InternalDedalADL.g:19086:1: ( ( RULE_INT ) )
+            // InternalDedalADL.g:19087:1: ( RULE_INT )
             {
-            // InternalDedalADL.g:19023:1: ( RULE_INT )
-            // InternalDedalADL.g:19024:1: RULE_INT
+            // InternalDedalADL.g:19087:1: ( RULE_INT )
+            // InternalDedalADL.g:19088:1: RULE_INT
             {
              before(grammarAccess.getCompRoleAccess().getMinInstanceNbrINTTerminalRuleCall_6_1_0()); 
             match(input,RULE_INT,FollowSets000.FOLLOW_2); 
@@ -49663,17 +49824,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompRole__MaxInstanceNbrAssignment_7_1"
-    // InternalDedalADL.g:19033:1: rule__CompRole__MaxInstanceNbrAssignment_7_1 : ( RULE_INT ) ;
+    // InternalDedalADL.g:19097:1: rule__CompRole__MaxInstanceNbrAssignment_7_1 : ( RULE_INT ) ;
     public final void rule__CompRole__MaxInstanceNbrAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19037:1: ( ( RULE_INT ) )
-            // InternalDedalADL.g:19038:1: ( RULE_INT )
+            // InternalDedalADL.g:19101:1: ( ( RULE_INT ) )
+            // InternalDedalADL.g:19102:1: ( RULE_INT )
             {
-            // InternalDedalADL.g:19038:1: ( RULE_INT )
-            // InternalDedalADL.g:19039:1: RULE_INT
+            // InternalDedalADL.g:19102:1: ( RULE_INT )
+            // InternalDedalADL.g:19103:1: RULE_INT
             {
              before(grammarAccess.getCompRoleAccess().getMaxInstanceNbrINTTerminalRuleCall_7_1_0()); 
             match(input,RULE_INT,FollowSets000.FOLLOW_2); 
@@ -49700,17 +49861,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompRole__CompInterfacesAssignment_8_1"
-    // InternalDedalADL.g:19048:1: rule__CompRole__CompInterfacesAssignment_8_1 : ( ruleInteraction ) ;
+    // InternalDedalADL.g:19112:1: rule__CompRole__CompInterfacesAssignment_8_1 : ( ruleInteraction ) ;
     public final void rule__CompRole__CompInterfacesAssignment_8_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19052:1: ( ( ruleInteraction ) )
-            // InternalDedalADL.g:19053:1: ( ruleInteraction )
+            // InternalDedalADL.g:19116:1: ( ( ruleInteraction ) )
+            // InternalDedalADL.g:19117:1: ( ruleInteraction )
             {
-            // InternalDedalADL.g:19053:1: ( ruleInteraction )
-            // InternalDedalADL.g:19054:1: ruleInteraction
+            // InternalDedalADL.g:19117:1: ( ruleInteraction )
+            // InternalDedalADL.g:19118:1: ruleInteraction
             {
              before(grammarAccess.getCompRoleAccess().getCompInterfacesInteractionParserRuleCall_8_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49741,17 +49902,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompRole__CompInterfacesAssignment_8_2_1"
-    // InternalDedalADL.g:19063:1: rule__CompRole__CompInterfacesAssignment_8_2_1 : ( ruleInteraction ) ;
+    // InternalDedalADL.g:19127:1: rule__CompRole__CompInterfacesAssignment_8_2_1 : ( ruleInteraction ) ;
     public final void rule__CompRole__CompInterfacesAssignment_8_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19067:1: ( ( ruleInteraction ) )
-            // InternalDedalADL.g:19068:1: ( ruleInteraction )
+            // InternalDedalADL.g:19131:1: ( ( ruleInteraction ) )
+            // InternalDedalADL.g:19132:1: ( ruleInteraction )
             {
-            // InternalDedalADL.g:19068:1: ( ruleInteraction )
-            // InternalDedalADL.g:19069:1: ruleInteraction
+            // InternalDedalADL.g:19132:1: ( ruleInteraction )
+            // InternalDedalADL.g:19133:1: ruleInteraction
             {
              before(grammarAccess.getCompRoleAccess().getCompInterfacesInteractionParserRuleCall_8_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49782,17 +49943,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Interface__NameAssignment_1"
-    // InternalDedalADL.g:19078:1: rule__Interface__NameAssignment_1 : ( ruleinterface_name ) ;
+    // InternalDedalADL.g:19142:1: rule__Interface__NameAssignment_1 : ( ruleinterface_name ) ;
     public final void rule__Interface__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19082:1: ( ( ruleinterface_name ) )
-            // InternalDedalADL.g:19083:1: ( ruleinterface_name )
+            // InternalDedalADL.g:19146:1: ( ( ruleinterface_name ) )
+            // InternalDedalADL.g:19147:1: ( ruleinterface_name )
             {
-            // InternalDedalADL.g:19083:1: ( ruleinterface_name )
-            // InternalDedalADL.g:19084:1: ruleinterface_name
+            // InternalDedalADL.g:19147:1: ( ruleinterface_name )
+            // InternalDedalADL.g:19148:1: ruleinterface_name
             {
              before(grammarAccess.getInterfaceAccess().getNameInterface_nameParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49823,17 +49984,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Interface__DirectionAssignment_3"
-    // InternalDedalADL.g:19093:1: rule__Interface__DirectionAssignment_3 : ( ruleDIRECTION ) ;
+    // InternalDedalADL.g:19157:1: rule__Interface__DirectionAssignment_3 : ( ruleDIRECTION ) ;
     public final void rule__Interface__DirectionAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19097:1: ( ( ruleDIRECTION ) )
-            // InternalDedalADL.g:19098:1: ( ruleDIRECTION )
+            // InternalDedalADL.g:19161:1: ( ( ruleDIRECTION ) )
+            // InternalDedalADL.g:19162:1: ( ruleDIRECTION )
             {
-            // InternalDedalADL.g:19098:1: ( ruleDIRECTION )
-            // InternalDedalADL.g:19099:1: ruleDIRECTION
+            // InternalDedalADL.g:19162:1: ( ruleDIRECTION )
+            // InternalDedalADL.g:19163:1: ruleDIRECTION
             {
              before(grammarAccess.getInterfaceAccess().getDirectionDIRECTIONEnumRuleCall_3_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49864,21 +50025,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Interface__TypeAssignment_5"
-    // InternalDedalADL.g:19108:1: rule__Interface__TypeAssignment_5 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19172:1: rule__Interface__TypeAssignment_5 : ( ( ruleEString ) ) ;
     public final void rule__Interface__TypeAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19112:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19113:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19176:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19177:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19113:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19114:1: ( ruleEString )
+            // InternalDedalADL.g:19177:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19178:1: ( ruleEString )
             {
              before(grammarAccess.getInterfaceAccess().getTypeInterfaceTypeCrossReference_5_0()); 
-            // InternalDedalADL.g:19115:1: ( ruleEString )
-            // InternalDedalADL.g:19116:1: ruleEString
+            // InternalDedalADL.g:19179:1: ( ruleEString )
+            // InternalDedalADL.g:19180:1: ruleEString
             {
              before(grammarAccess.getInterfaceAccess().getTypeInterfaceTypeEStringParserRuleCall_5_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49913,21 +50074,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Interface__DelegationAssignment_6_1"
-    // InternalDedalADL.g:19127:1: rule__Interface__DelegationAssignment_6_1 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19191:1: rule__Interface__DelegationAssignment_6_1 : ( ( ruleEString ) ) ;
     public final void rule__Interface__DelegationAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19131:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19132:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19195:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19196:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19132:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19133:1: ( ruleEString )
+            // InternalDedalADL.g:19196:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19197:1: ( ruleEString )
             {
              before(grammarAccess.getInterfaceAccess().getDelegationInterfaceCrossReference_6_1_0()); 
-            // InternalDedalADL.g:19134:1: ( ruleEString )
-            // InternalDedalADL.g:19135:1: ruleEString
+            // InternalDedalADL.g:19198:1: ( ruleEString )
+            // InternalDedalADL.g:19199:1: ruleEString
             {
              before(grammarAccess.getInterfaceAccess().getDelegationInterfaceEStringParserRuleCall_6_1_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -49962,21 +50123,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Interface__InstantiatesAssignment_7_1"
-    // InternalDedalADL.g:19146:1: rule__Interface__InstantiatesAssignment_7_1 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19210:1: rule__Interface__InstantiatesAssignment_7_1 : ( ( ruleEString ) ) ;
     public final void rule__Interface__InstantiatesAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19150:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19151:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19214:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19215:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19151:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19152:1: ( ruleEString )
+            // InternalDedalADL.g:19215:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19216:1: ( ruleEString )
             {
              before(grammarAccess.getInterfaceAccess().getInstantiatesInterfaceCrossReference_7_1_0()); 
-            // InternalDedalADL.g:19153:1: ( ruleEString )
-            // InternalDedalADL.g:19154:1: ruleEString
+            // InternalDedalADL.g:19217:1: ( ruleEString )
+            // InternalDedalADL.g:19218:1: ruleEString
             {
              before(grammarAccess.getInterfaceAccess().getInstantiatesInterfaceEStringParserRuleCall_7_1_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50011,17 +50172,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__RoleConnection__RefIDAssignment_1"
-    // InternalDedalADL.g:19165:1: rule__RoleConnection__RefIDAssignment_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:19229:1: rule__RoleConnection__RefIDAssignment_1 : ( ruleEString ) ;
     public final void rule__RoleConnection__RefIDAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19169:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19170:1: ( ruleEString )
+            // InternalDedalADL.g:19233:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19234:1: ( ruleEString )
             {
-            // InternalDedalADL.g:19170:1: ( ruleEString )
-            // InternalDedalADL.g:19171:1: ruleEString
+            // InternalDedalADL.g:19234:1: ( ruleEString )
+            // InternalDedalADL.g:19235:1: ruleEString
             {
              before(grammarAccess.getRoleConnectionAccess().getRefIDEStringParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50052,21 +50213,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__RoleConnection__ClientCompElemAssignment_3"
-    // InternalDedalADL.g:19180:1: rule__RoleConnection__ClientCompElemAssignment_3 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19244:1: rule__RoleConnection__ClientCompElemAssignment_3 : ( ( ruleEString ) ) ;
     public final void rule__RoleConnection__ClientCompElemAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19184:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19185:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19248:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19249:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19185:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19186:1: ( ruleEString )
+            // InternalDedalADL.g:19249:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19250:1: ( ruleEString )
             {
              before(grammarAccess.getRoleConnectionAccess().getClientCompElemCompRoleCrossReference_3_0()); 
-            // InternalDedalADL.g:19187:1: ( ruleEString )
-            // InternalDedalADL.g:19188:1: ruleEString
+            // InternalDedalADL.g:19251:1: ( ruleEString )
+            // InternalDedalADL.g:19252:1: ruleEString
             {
              before(grammarAccess.getRoleConnectionAccess().getClientCompElemCompRoleEStringParserRuleCall_3_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50101,21 +50262,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__RoleConnection__ClientIntElemAssignment_5"
-    // InternalDedalADL.g:19199:1: rule__RoleConnection__ClientIntElemAssignment_5 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19263:1: rule__RoleConnection__ClientIntElemAssignment_5 : ( ( ruleEString ) ) ;
     public final void rule__RoleConnection__ClientIntElemAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19203:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19204:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19267:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19268:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19204:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19205:1: ( ruleEString )
+            // InternalDedalADL.g:19268:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19269:1: ( ruleEString )
             {
              before(grammarAccess.getRoleConnectionAccess().getClientIntElemInteractionCrossReference_5_0()); 
-            // InternalDedalADL.g:19206:1: ( ruleEString )
-            // InternalDedalADL.g:19207:1: ruleEString
+            // InternalDedalADL.g:19270:1: ( ruleEString )
+            // InternalDedalADL.g:19271:1: ruleEString
             {
              before(grammarAccess.getRoleConnectionAccess().getClientIntElemInteractionEStringParserRuleCall_5_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50150,21 +50311,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__RoleConnection__ServerCompElemAssignment_7"
-    // InternalDedalADL.g:19218:1: rule__RoleConnection__ServerCompElemAssignment_7 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19282:1: rule__RoleConnection__ServerCompElemAssignment_7 : ( ( ruleEString ) ) ;
     public final void rule__RoleConnection__ServerCompElemAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19222:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19223:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19286:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19287:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19223:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19224:1: ( ruleEString )
+            // InternalDedalADL.g:19287:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19288:1: ( ruleEString )
             {
              before(grammarAccess.getRoleConnectionAccess().getServerCompElemCompRoleCrossReference_7_0()); 
-            // InternalDedalADL.g:19225:1: ( ruleEString )
-            // InternalDedalADL.g:19226:1: ruleEString
+            // InternalDedalADL.g:19289:1: ( ruleEString )
+            // InternalDedalADL.g:19290:1: ruleEString
             {
              before(grammarAccess.getRoleConnectionAccess().getServerCompElemCompRoleEStringParserRuleCall_7_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50199,21 +50360,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__RoleConnection__ServerIntElemAssignment_9"
-    // InternalDedalADL.g:19237:1: rule__RoleConnection__ServerIntElemAssignment_9 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19301:1: rule__RoleConnection__ServerIntElemAssignment_9 : ( ( ruleEString ) ) ;
     public final void rule__RoleConnection__ServerIntElemAssignment_9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19241:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19242:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19305:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19306:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19242:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19243:1: ( ruleEString )
+            // InternalDedalADL.g:19306:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19307:1: ( ruleEString )
             {
              before(grammarAccess.getRoleConnectionAccess().getServerIntElemInteractionCrossReference_9_0()); 
-            // InternalDedalADL.g:19244:1: ( ruleEString )
-            // InternalDedalADL.g:19245:1: ruleEString
+            // InternalDedalADL.g:19308:1: ( ruleEString )
+            // InternalDedalADL.g:19309:1: ruleEString
             {
              before(grammarAccess.getRoleConnectionAccess().getServerIntElemInteractionEStringParserRuleCall_9_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50248,17 +50409,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Configuration__NameAssignment_1"
-    // InternalDedalADL.g:19256:1: rule__Configuration__NameAssignment_1 : ( ruleconfiguration_name ) ;
+    // InternalDedalADL.g:19320:1: rule__Configuration__NameAssignment_1 : ( ruleconfiguration_name ) ;
     public final void rule__Configuration__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19260:1: ( ( ruleconfiguration_name ) )
-            // InternalDedalADL.g:19261:1: ( ruleconfiguration_name )
+            // InternalDedalADL.g:19324:1: ( ( ruleconfiguration_name ) )
+            // InternalDedalADL.g:19325:1: ( ruleconfiguration_name )
             {
-            // InternalDedalADL.g:19261:1: ( ruleconfiguration_name )
-            // InternalDedalADL.g:19262:1: ruleconfiguration_name
+            // InternalDedalADL.g:19325:1: ( ruleconfiguration_name )
+            // InternalDedalADL.g:19326:1: ruleconfiguration_name
             {
              before(grammarAccess.getConfigurationAccess().getNameConfiguration_nameParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50289,21 +50450,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Configuration__ImplementsAssignment_2_1"
-    // InternalDedalADL.g:19271:1: rule__Configuration__ImplementsAssignment_2_1 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19335:1: rule__Configuration__ImplementsAssignment_2_1 : ( ( ruleEString ) ) ;
     public final void rule__Configuration__ImplementsAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19275:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19276:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19339:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19340:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19276:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19277:1: ( ruleEString )
+            // InternalDedalADL.g:19340:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19341:1: ( ruleEString )
             {
              before(grammarAccess.getConfigurationAccess().getImplementsSpecificationCrossReference_2_1_0()); 
-            // InternalDedalADL.g:19278:1: ( ruleEString )
-            // InternalDedalADL.g:19279:1: ruleEString
+            // InternalDedalADL.g:19342:1: ( ruleEString )
+            // InternalDedalADL.g:19343:1: ruleEString
             {
              before(grammarAccess.getConfigurationAccess().getImplementsSpecificationEStringParserRuleCall_2_1_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50338,21 +50499,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Configuration__ImplementsAssignment_2_3_1"
-    // InternalDedalADL.g:19290:1: rule__Configuration__ImplementsAssignment_2_3_1 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19354:1: rule__Configuration__ImplementsAssignment_2_3_1 : ( ( ruleEString ) ) ;
     public final void rule__Configuration__ImplementsAssignment_2_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19294:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19295:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19358:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19359:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19295:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19296:1: ( ruleEString )
+            // InternalDedalADL.g:19359:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19360:1: ( ruleEString )
             {
              before(grammarAccess.getConfigurationAccess().getImplementsSpecificationCrossReference_2_3_1_0()); 
-            // InternalDedalADL.g:19297:1: ( ruleEString )
-            // InternalDedalADL.g:19298:1: ruleEString
+            // InternalDedalADL.g:19361:1: ( ruleEString )
+            // InternalDedalADL.g:19362:1: ruleEString
             {
              before(grammarAccess.getConfigurationAccess().getImplementsSpecificationEStringParserRuleCall_2_3_1_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50387,17 +50548,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Configuration__ConfigComponentsAssignment_6_1"
-    // InternalDedalADL.g:19309:1: rule__Configuration__ConfigComponentsAssignment_6_1 : ( ruleCompClass ) ;
+    // InternalDedalADL.g:19373:1: rule__Configuration__ConfigComponentsAssignment_6_1 : ( ruleCompClass ) ;
     public final void rule__Configuration__ConfigComponentsAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19313:1: ( ( ruleCompClass ) )
-            // InternalDedalADL.g:19314:1: ( ruleCompClass )
+            // InternalDedalADL.g:19377:1: ( ( ruleCompClass ) )
+            // InternalDedalADL.g:19378:1: ( ruleCompClass )
             {
-            // InternalDedalADL.g:19314:1: ( ruleCompClass )
-            // InternalDedalADL.g:19315:1: ruleCompClass
+            // InternalDedalADL.g:19378:1: ( ruleCompClass )
+            // InternalDedalADL.g:19379:1: ruleCompClass
             {
              before(grammarAccess.getConfigurationAccess().getConfigComponentsCompClassParserRuleCall_6_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50428,17 +50589,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Configuration__ConfigComponentsAssignment_6_2_1"
-    // InternalDedalADL.g:19324:1: rule__Configuration__ConfigComponentsAssignment_6_2_1 : ( ruleCompClass ) ;
+    // InternalDedalADL.g:19388:1: rule__Configuration__ConfigComponentsAssignment_6_2_1 : ( ruleCompClass ) ;
     public final void rule__Configuration__ConfigComponentsAssignment_6_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19328:1: ( ( ruleCompClass ) )
-            // InternalDedalADL.g:19329:1: ( ruleCompClass )
+            // InternalDedalADL.g:19392:1: ( ( ruleCompClass ) )
+            // InternalDedalADL.g:19393:1: ( ruleCompClass )
             {
-            // InternalDedalADL.g:19329:1: ( ruleCompClass )
-            // InternalDedalADL.g:19330:1: ruleCompClass
+            // InternalDedalADL.g:19393:1: ( ruleCompClass )
+            // InternalDedalADL.g:19394:1: ruleCompClass
             {
              before(grammarAccess.getConfigurationAccess().getConfigComponentsCompClassParserRuleCall_6_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50469,17 +50630,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Configuration__InterfaceTypesAssignment_8_2"
-    // InternalDedalADL.g:19339:1: rule__Configuration__InterfaceTypesAssignment_8_2 : ( ruleInterfaceType ) ;
+    // InternalDedalADL.g:19403:1: rule__Configuration__InterfaceTypesAssignment_8_2 : ( ruleInterfaceType ) ;
     public final void rule__Configuration__InterfaceTypesAssignment_8_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19343:1: ( ( ruleInterfaceType ) )
-            // InternalDedalADL.g:19344:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:19407:1: ( ( ruleInterfaceType ) )
+            // InternalDedalADL.g:19408:1: ( ruleInterfaceType )
             {
-            // InternalDedalADL.g:19344:1: ( ruleInterfaceType )
-            // InternalDedalADL.g:19345:1: ruleInterfaceType
+            // InternalDedalADL.g:19408:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:19409:1: ruleInterfaceType
             {
              before(grammarAccess.getConfigurationAccess().getInterfaceTypesInterfaceTypeParserRuleCall_8_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50510,17 +50671,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Configuration__InterfaceTypesAssignment_8_3_1"
-    // InternalDedalADL.g:19354:1: rule__Configuration__InterfaceTypesAssignment_8_3_1 : ( ruleInterfaceType ) ;
+    // InternalDedalADL.g:19418:1: rule__Configuration__InterfaceTypesAssignment_8_3_1 : ( ruleInterfaceType ) ;
     public final void rule__Configuration__InterfaceTypesAssignment_8_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19358:1: ( ( ruleInterfaceType ) )
-            // InternalDedalADL.g:19359:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:19422:1: ( ( ruleInterfaceType ) )
+            // InternalDedalADL.g:19423:1: ( ruleInterfaceType )
             {
-            // InternalDedalADL.g:19359:1: ( ruleInterfaceType )
-            // InternalDedalADL.g:19360:1: ruleInterfaceType
+            // InternalDedalADL.g:19423:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:19424:1: ruleInterfaceType
             {
              before(grammarAccess.getConfigurationAccess().getInterfaceTypesInterfaceTypeParserRuleCall_8_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50551,17 +50712,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Configuration__ComptypesAssignment_9_2"
-    // InternalDedalADL.g:19369:1: rule__Configuration__ComptypesAssignment_9_2 : ( ruleCompType ) ;
+    // InternalDedalADL.g:19433:1: rule__Configuration__ComptypesAssignment_9_2 : ( ruleCompType ) ;
     public final void rule__Configuration__ComptypesAssignment_9_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19373:1: ( ( ruleCompType ) )
-            // InternalDedalADL.g:19374:1: ( ruleCompType )
+            // InternalDedalADL.g:19437:1: ( ( ruleCompType ) )
+            // InternalDedalADL.g:19438:1: ( ruleCompType )
             {
-            // InternalDedalADL.g:19374:1: ( ruleCompType )
-            // InternalDedalADL.g:19375:1: ruleCompType
+            // InternalDedalADL.g:19438:1: ( ruleCompType )
+            // InternalDedalADL.g:19439:1: ruleCompType
             {
              before(grammarAccess.getConfigurationAccess().getComptypesCompTypeParserRuleCall_9_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50592,17 +50753,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Configuration__ComptypesAssignment_9_3_1"
-    // InternalDedalADL.g:19384:1: rule__Configuration__ComptypesAssignment_9_3_1 : ( ruleCompType ) ;
+    // InternalDedalADL.g:19448:1: rule__Configuration__ComptypesAssignment_9_3_1 : ( ruleCompType ) ;
     public final void rule__Configuration__ComptypesAssignment_9_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19388:1: ( ( ruleCompType ) )
-            // InternalDedalADL.g:19389:1: ( ruleCompType )
+            // InternalDedalADL.g:19452:1: ( ( ruleCompType ) )
+            // InternalDedalADL.g:19453:1: ( ruleCompType )
             {
-            // InternalDedalADL.g:19389:1: ( ruleCompType )
-            // InternalDedalADL.g:19390:1: ruleCompType
+            // InternalDedalADL.g:19453:1: ( ruleCompType )
+            // InternalDedalADL.g:19454:1: ruleCompType
             {
              before(grammarAccess.getConfigurationAccess().getComptypesCompTypeParserRuleCall_9_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50633,17 +50794,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Configuration__ConfigConnectionsAssignment_10_2"
-    // InternalDedalADL.g:19399:1: rule__Configuration__ConfigConnectionsAssignment_10_2 : ( ruleClassConnection ) ;
+    // InternalDedalADL.g:19463:1: rule__Configuration__ConfigConnectionsAssignment_10_2 : ( ruleClassConnection ) ;
     public final void rule__Configuration__ConfigConnectionsAssignment_10_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19403:1: ( ( ruleClassConnection ) )
-            // InternalDedalADL.g:19404:1: ( ruleClassConnection )
+            // InternalDedalADL.g:19467:1: ( ( ruleClassConnection ) )
+            // InternalDedalADL.g:19468:1: ( ruleClassConnection )
             {
-            // InternalDedalADL.g:19404:1: ( ruleClassConnection )
-            // InternalDedalADL.g:19405:1: ruleClassConnection
+            // InternalDedalADL.g:19468:1: ( ruleClassConnection )
+            // InternalDedalADL.g:19469:1: ruleClassConnection
             {
              before(grammarAccess.getConfigurationAccess().getConfigConnectionsClassConnectionParserRuleCall_10_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50674,17 +50835,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Configuration__ConfigConnectionsAssignment_10_3_1"
-    // InternalDedalADL.g:19414:1: rule__Configuration__ConfigConnectionsAssignment_10_3_1 : ( ruleClassConnection ) ;
+    // InternalDedalADL.g:19478:1: rule__Configuration__ConfigConnectionsAssignment_10_3_1 : ( ruleClassConnection ) ;
     public final void rule__Configuration__ConfigConnectionsAssignment_10_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19418:1: ( ( ruleClassConnection ) )
-            // InternalDedalADL.g:19419:1: ( ruleClassConnection )
+            // InternalDedalADL.g:19482:1: ( ( ruleClassConnection ) )
+            // InternalDedalADL.g:19483:1: ( ruleClassConnection )
             {
-            // InternalDedalADL.g:19419:1: ( ruleClassConnection )
-            // InternalDedalADL.g:19420:1: ruleClassConnection
+            // InternalDedalADL.g:19483:1: ( ruleClassConnection )
+            // InternalDedalADL.g:19484:1: ruleClassConnection
             {
              before(grammarAccess.getConfigurationAccess().getConfigConnectionsClassConnectionParserRuleCall_10_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50715,17 +50876,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompType__NameAssignment_1"
-    // InternalDedalADL.g:19429:1: rule__CompType__NameAssignment_1 : ( rulecomponent_type_name ) ;
+    // InternalDedalADL.g:19493:1: rule__CompType__NameAssignment_1 : ( rulecomponent_type_name ) ;
     public final void rule__CompType__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19433:1: ( ( rulecomponent_type_name ) )
-            // InternalDedalADL.g:19434:1: ( rulecomponent_type_name )
+            // InternalDedalADL.g:19497:1: ( ( rulecomponent_type_name ) )
+            // InternalDedalADL.g:19498:1: ( rulecomponent_type_name )
             {
-            // InternalDedalADL.g:19434:1: ( rulecomponent_type_name )
-            // InternalDedalADL.g:19435:1: rulecomponent_type_name
+            // InternalDedalADL.g:19498:1: ( rulecomponent_type_name )
+            // InternalDedalADL.g:19499:1: rulecomponent_type_name
             {
              before(grammarAccess.getCompTypeAccess().getNameComponent_type_nameParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50756,17 +50917,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompType__IdAssignment_3"
-    // InternalDedalADL.g:19444:1: rule__CompType__IdAssignment_3 : ( ruleEString ) ;
+    // InternalDedalADL.g:19508:1: rule__CompType__IdAssignment_3 : ( ruleEString ) ;
     public final void rule__CompType__IdAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19448:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19449:1: ( ruleEString )
+            // InternalDedalADL.g:19512:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19513:1: ( ruleEString )
             {
-            // InternalDedalADL.g:19449:1: ( ruleEString )
-            // InternalDedalADL.g:19450:1: ruleEString
+            // InternalDedalADL.g:19513:1: ( ruleEString )
+            // InternalDedalADL.g:19514:1: ruleEString
             {
              before(grammarAccess.getCompTypeAccess().getIdEStringParserRuleCall_3_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50797,17 +50958,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompType__CompInterfacesAssignment_4_1"
-    // InternalDedalADL.g:19459:1: rule__CompType__CompInterfacesAssignment_4_1 : ( ruleInterface ) ;
+    // InternalDedalADL.g:19523:1: rule__CompType__CompInterfacesAssignment_4_1 : ( ruleInterface ) ;
     public final void rule__CompType__CompInterfacesAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19463:1: ( ( ruleInterface ) )
-            // InternalDedalADL.g:19464:1: ( ruleInterface )
+            // InternalDedalADL.g:19527:1: ( ( ruleInterface ) )
+            // InternalDedalADL.g:19528:1: ( ruleInterface )
             {
-            // InternalDedalADL.g:19464:1: ( ruleInterface )
-            // InternalDedalADL.g:19465:1: ruleInterface
+            // InternalDedalADL.g:19528:1: ( ruleInterface )
+            // InternalDedalADL.g:19529:1: ruleInterface
             {
              before(grammarAccess.getCompTypeAccess().getCompInterfacesInterfaceParserRuleCall_4_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50838,17 +50999,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompType__CompInterfacesAssignment_4_2_1"
-    // InternalDedalADL.g:19474:1: rule__CompType__CompInterfacesAssignment_4_2_1 : ( ruleInterface ) ;
+    // InternalDedalADL.g:19538:1: rule__CompType__CompInterfacesAssignment_4_2_1 : ( ruleInterface ) ;
     public final void rule__CompType__CompInterfacesAssignment_4_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19478:1: ( ( ruleInterface ) )
-            // InternalDedalADL.g:19479:1: ( ruleInterface )
+            // InternalDedalADL.g:19542:1: ( ( ruleInterface ) )
+            // InternalDedalADL.g:19543:1: ( ruleInterface )
             {
-            // InternalDedalADL.g:19479:1: ( ruleInterface )
-            // InternalDedalADL.g:19480:1: ruleInterface
+            // InternalDedalADL.g:19543:1: ( ruleInterface )
+            // InternalDedalADL.g:19544:1: ruleInterface
             {
              before(grammarAccess.getCompTypeAccess().getCompInterfacesInterfaceParserRuleCall_4_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50879,17 +51040,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompType__CompInterfacesAssignment_5_1"
-    // InternalDedalADL.g:19489:1: rule__CompType__CompInterfacesAssignment_5_1 : ( ruleInterface ) ;
+    // InternalDedalADL.g:19553:1: rule__CompType__CompInterfacesAssignment_5_1 : ( ruleInterface ) ;
     public final void rule__CompType__CompInterfacesAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19493:1: ( ( ruleInterface ) )
-            // InternalDedalADL.g:19494:1: ( ruleInterface )
+            // InternalDedalADL.g:19557:1: ( ( ruleInterface ) )
+            // InternalDedalADL.g:19558:1: ( ruleInterface )
             {
-            // InternalDedalADL.g:19494:1: ( ruleInterface )
-            // InternalDedalADL.g:19495:1: ruleInterface
+            // InternalDedalADL.g:19558:1: ( ruleInterface )
+            // InternalDedalADL.g:19559:1: ruleInterface
             {
              before(grammarAccess.getCompTypeAccess().getCompInterfacesInterfaceParserRuleCall_5_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50920,17 +51081,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompType__CompInterfacesAssignment_5_2_1"
-    // InternalDedalADL.g:19504:1: rule__CompType__CompInterfacesAssignment_5_2_1 : ( ruleInterface ) ;
+    // InternalDedalADL.g:19568:1: rule__CompType__CompInterfacesAssignment_5_2_1 : ( ruleInterface ) ;
     public final void rule__CompType__CompInterfacesAssignment_5_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19508:1: ( ( ruleInterface ) )
-            // InternalDedalADL.g:19509:1: ( ruleInterface )
+            // InternalDedalADL.g:19572:1: ( ( ruleInterface ) )
+            // InternalDedalADL.g:19573:1: ( ruleInterface )
             {
-            // InternalDedalADL.g:19509:1: ( ruleInterface )
-            // InternalDedalADL.g:19510:1: ruleInterface
+            // InternalDedalADL.g:19573:1: ( ruleInterface )
+            // InternalDedalADL.g:19574:1: ruleInterface
             {
              before(grammarAccess.getCompTypeAccess().getCompInterfacesInterfaceParserRuleCall_5_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -50961,17 +51122,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompType__CompInterfacesAssignment_6_1"
-    // InternalDedalADL.g:19519:1: rule__CompType__CompInterfacesAssignment_6_1 : ( ruleInteraction ) ;
+    // InternalDedalADL.g:19583:1: rule__CompType__CompInterfacesAssignment_6_1 : ( ruleInteraction ) ;
     public final void rule__CompType__CompInterfacesAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19523:1: ( ( ruleInteraction ) )
-            // InternalDedalADL.g:19524:1: ( ruleInteraction )
+            // InternalDedalADL.g:19587:1: ( ( ruleInteraction ) )
+            // InternalDedalADL.g:19588:1: ( ruleInteraction )
             {
-            // InternalDedalADL.g:19524:1: ( ruleInteraction )
-            // InternalDedalADL.g:19525:1: ruleInteraction
+            // InternalDedalADL.g:19588:1: ( ruleInteraction )
+            // InternalDedalADL.g:19589:1: ruleInteraction
             {
              before(grammarAccess.getCompTypeAccess().getCompInterfacesInteractionParserRuleCall_6_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51002,17 +51163,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompType__CompInterfacesAssignment_6_2_1"
-    // InternalDedalADL.g:19534:1: rule__CompType__CompInterfacesAssignment_6_2_1 : ( ruleInteraction ) ;
+    // InternalDedalADL.g:19598:1: rule__CompType__CompInterfacesAssignment_6_2_1 : ( ruleInteraction ) ;
     public final void rule__CompType__CompInterfacesAssignment_6_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19538:1: ( ( ruleInteraction ) )
-            // InternalDedalADL.g:19539:1: ( ruleInteraction )
+            // InternalDedalADL.g:19602:1: ( ( ruleInteraction ) )
+            // InternalDedalADL.g:19603:1: ( ruleInteraction )
             {
-            // InternalDedalADL.g:19539:1: ( ruleInteraction )
-            // InternalDedalADL.g:19540:1: ruleInteraction
+            // InternalDedalADL.g:19603:1: ( ruleInteraction )
+            // InternalDedalADL.g:19604:1: ruleInteraction
             {
              before(grammarAccess.getCompTypeAccess().getCompInterfacesInteractionParserRuleCall_6_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51043,17 +51204,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompClass_Impl__NameAssignment_1"
-    // InternalDedalADL.g:19549:1: rule__CompClass_Impl__NameAssignment_1 : ( rulecomponent_class_name ) ;
+    // InternalDedalADL.g:19613:1: rule__CompClass_Impl__NameAssignment_1 : ( rulecomponent_class_name ) ;
     public final void rule__CompClass_Impl__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19553:1: ( ( rulecomponent_class_name ) )
-            // InternalDedalADL.g:19554:1: ( rulecomponent_class_name )
+            // InternalDedalADL.g:19617:1: ( ( rulecomponent_class_name ) )
+            // InternalDedalADL.g:19618:1: ( rulecomponent_class_name )
             {
-            // InternalDedalADL.g:19554:1: ( rulecomponent_class_name )
-            // InternalDedalADL.g:19555:1: rulecomponent_class_name
+            // InternalDedalADL.g:19618:1: ( rulecomponent_class_name )
+            // InternalDedalADL.g:19619:1: rulecomponent_class_name
             {
              before(grammarAccess.getCompClass_ImplAccess().getNameComponent_class_nameParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51084,21 +51245,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompClass_Impl__RealizesAssignment_2_1"
-    // InternalDedalADL.g:19564:1: rule__CompClass_Impl__RealizesAssignment_2_1 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19628:1: rule__CompClass_Impl__RealizesAssignment_2_1 : ( ( ruleEString ) ) ;
     public final void rule__CompClass_Impl__RealizesAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19568:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19569:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19632:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19633:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19569:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19570:1: ( ruleEString )
+            // InternalDedalADL.g:19633:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19634:1: ( ruleEString )
             {
              before(grammarAccess.getCompClass_ImplAccess().getRealizesCompRoleCrossReference_2_1_0()); 
-            // InternalDedalADL.g:19571:1: ( ruleEString )
-            // InternalDedalADL.g:19572:1: ruleEString
+            // InternalDedalADL.g:19635:1: ( ruleEString )
+            // InternalDedalADL.g:19636:1: ruleEString
             {
              before(grammarAccess.getCompClass_ImplAccess().getRealizesCompRoleEStringParserRuleCall_2_1_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51133,21 +51294,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompClass_Impl__RealizesAssignment_2_2_1"
-    // InternalDedalADL.g:19583:1: rule__CompClass_Impl__RealizesAssignment_2_2_1 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19647:1: rule__CompClass_Impl__RealizesAssignment_2_2_1 : ( ( ruleEString ) ) ;
     public final void rule__CompClass_Impl__RealizesAssignment_2_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19587:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19588:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19651:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19652:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19588:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19589:1: ( ruleEString )
+            // InternalDedalADL.g:19652:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19653:1: ( ruleEString )
             {
              before(grammarAccess.getCompClass_ImplAccess().getRealizesCompRoleCrossReference_2_2_1_0()); 
-            // InternalDedalADL.g:19590:1: ( ruleEString )
-            // InternalDedalADL.g:19591:1: ruleEString
+            // InternalDedalADL.g:19654:1: ( ruleEString )
+            // InternalDedalADL.g:19655:1: ruleEString
             {
              before(grammarAccess.getCompClass_ImplAccess().getRealizesCompRoleEStringParserRuleCall_2_2_1_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51182,17 +51343,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompClass_Impl__IdAssignment_4"
-    // InternalDedalADL.g:19602:1: rule__CompClass_Impl__IdAssignment_4 : ( ruleEString ) ;
+    // InternalDedalADL.g:19666:1: rule__CompClass_Impl__IdAssignment_4 : ( ruleEString ) ;
     public final void rule__CompClass_Impl__IdAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19606:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19607:1: ( ruleEString )
+            // InternalDedalADL.g:19670:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19671:1: ( ruleEString )
             {
-            // InternalDedalADL.g:19607:1: ( ruleEString )
-            // InternalDedalADL.g:19608:1: ruleEString
+            // InternalDedalADL.g:19671:1: ( ruleEString )
+            // InternalDedalADL.g:19672:1: ruleEString
             {
              before(grammarAccess.getCompClass_ImplAccess().getIdEStringParserRuleCall_4_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51223,21 +51384,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompClass_Impl__ImplementsAssignment_6"
-    // InternalDedalADL.g:19617:1: rule__CompClass_Impl__ImplementsAssignment_6 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19681:1: rule__CompClass_Impl__ImplementsAssignment_6 : ( ( ruleEString ) ) ;
     public final void rule__CompClass_Impl__ImplementsAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19621:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19622:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19685:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19686:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19622:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19623:1: ( ruleEString )
+            // InternalDedalADL.g:19686:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19687:1: ( ruleEString )
             {
              before(grammarAccess.getCompClass_ImplAccess().getImplementsCompTypeCrossReference_6_0()); 
-            // InternalDedalADL.g:19624:1: ( ruleEString )
-            // InternalDedalADL.g:19625:1: ruleEString
+            // InternalDedalADL.g:19688:1: ( ruleEString )
+            // InternalDedalADL.g:19689:1: ruleEString
             {
              before(grammarAccess.getCompClass_ImplAccess().getImplementsCompTypeEStringParserRuleCall_6_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51272,21 +51433,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompClass_Impl__ContentAssignment_7_1"
-    // InternalDedalADL.g:19636:1: rule__CompClass_Impl__ContentAssignment_7_1 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19700:1: rule__CompClass_Impl__ContentAssignment_7_1 : ( ( ruleEString ) ) ;
     public final void rule__CompClass_Impl__ContentAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19640:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19641:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19704:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19705:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19641:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19642:1: ( ruleEString )
+            // InternalDedalADL.g:19705:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19706:1: ( ruleEString )
             {
              before(grammarAccess.getCompClass_ImplAccess().getContentCompInstanceCrossReference_7_1_0()); 
-            // InternalDedalADL.g:19643:1: ( ruleEString )
-            // InternalDedalADL.g:19644:1: ruleEString
+            // InternalDedalADL.g:19707:1: ( ruleEString )
+            // InternalDedalADL.g:19708:1: ruleEString
             {
              before(grammarAccess.getCompClass_ImplAccess().getContentCompInstanceEStringParserRuleCall_7_1_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51321,17 +51482,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompClass_Impl__AttributesAssignment_8_2"
-    // InternalDedalADL.g:19655:1: rule__CompClass_Impl__AttributesAssignment_8_2 : ( ruleAttribute ) ;
+    // InternalDedalADL.g:19719:1: rule__CompClass_Impl__AttributesAssignment_8_2 : ( ruleAttribute ) ;
     public final void rule__CompClass_Impl__AttributesAssignment_8_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19659:1: ( ( ruleAttribute ) )
-            // InternalDedalADL.g:19660:1: ( ruleAttribute )
+            // InternalDedalADL.g:19723:1: ( ( ruleAttribute ) )
+            // InternalDedalADL.g:19724:1: ( ruleAttribute )
             {
-            // InternalDedalADL.g:19660:1: ( ruleAttribute )
-            // InternalDedalADL.g:19661:1: ruleAttribute
+            // InternalDedalADL.g:19724:1: ( ruleAttribute )
+            // InternalDedalADL.g:19725:1: ruleAttribute
             {
              before(grammarAccess.getCompClass_ImplAccess().getAttributesAttributeParserRuleCall_8_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51362,17 +51523,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompClass_Impl__AttributesAssignment_8_3_1"
-    // InternalDedalADL.g:19670:1: rule__CompClass_Impl__AttributesAssignment_8_3_1 : ( ruleAttribute ) ;
+    // InternalDedalADL.g:19734:1: rule__CompClass_Impl__AttributesAssignment_8_3_1 : ( ruleAttribute ) ;
     public final void rule__CompClass_Impl__AttributesAssignment_8_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19674:1: ( ( ruleAttribute ) )
-            // InternalDedalADL.g:19675:1: ( ruleAttribute )
+            // InternalDedalADL.g:19738:1: ( ( ruleAttribute ) )
+            // InternalDedalADL.g:19739:1: ( ruleAttribute )
             {
-            // InternalDedalADL.g:19675:1: ( ruleAttribute )
-            // InternalDedalADL.g:19676:1: ruleAttribute
+            // InternalDedalADL.g:19739:1: ( ruleAttribute )
+            // InternalDedalADL.g:19740:1: ruleAttribute
             {
              before(grammarAccess.getCompClass_ImplAccess().getAttributesAttributeParserRuleCall_8_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51403,17 +51564,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompClass_Impl__CompInterfacesAssignment_11_1"
-    // InternalDedalADL.g:19685:1: rule__CompClass_Impl__CompInterfacesAssignment_11_1 : ( ruleInteraction ) ;
+    // InternalDedalADL.g:19749:1: rule__CompClass_Impl__CompInterfacesAssignment_11_1 : ( ruleInteraction ) ;
     public final void rule__CompClass_Impl__CompInterfacesAssignment_11_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19689:1: ( ( ruleInteraction ) )
-            // InternalDedalADL.g:19690:1: ( ruleInteraction )
+            // InternalDedalADL.g:19753:1: ( ( ruleInteraction ) )
+            // InternalDedalADL.g:19754:1: ( ruleInteraction )
             {
-            // InternalDedalADL.g:19690:1: ( ruleInteraction )
-            // InternalDedalADL.g:19691:1: ruleInteraction
+            // InternalDedalADL.g:19754:1: ( ruleInteraction )
+            // InternalDedalADL.g:19755:1: ruleInteraction
             {
              before(grammarAccess.getCompClass_ImplAccess().getCompInterfacesInteractionParserRuleCall_11_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51444,17 +51605,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompClass_Impl__CompInterfacesAssignment_11_2_1"
-    // InternalDedalADL.g:19700:1: rule__CompClass_Impl__CompInterfacesAssignment_11_2_1 : ( ruleInteraction ) ;
+    // InternalDedalADL.g:19764:1: rule__CompClass_Impl__CompInterfacesAssignment_11_2_1 : ( ruleInteraction ) ;
     public final void rule__CompClass_Impl__CompInterfacesAssignment_11_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19704:1: ( ( ruleInteraction ) )
-            // InternalDedalADL.g:19705:1: ( ruleInteraction )
+            // InternalDedalADL.g:19768:1: ( ( ruleInteraction ) )
+            // InternalDedalADL.g:19769:1: ( ruleInteraction )
             {
-            // InternalDedalADL.g:19705:1: ( ruleInteraction )
-            // InternalDedalADL.g:19706:1: ruleInteraction
+            // InternalDedalADL.g:19769:1: ( ruleInteraction )
+            // InternalDedalADL.g:19770:1: ruleInteraction
             {
              before(grammarAccess.getCompClass_ImplAccess().getCompInterfacesInteractionParserRuleCall_11_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51485,17 +51646,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Attribute__TypeAssignment_0"
-    // InternalDedalADL.g:19715:1: rule__Attribute__TypeAssignment_0 : ( ruleEString ) ;
+    // InternalDedalADL.g:19779:1: rule__Attribute__TypeAssignment_0 : ( ruleEString ) ;
     public final void rule__Attribute__TypeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19719:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19720:1: ( ruleEString )
+            // InternalDedalADL.g:19783:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19784:1: ( ruleEString )
             {
-            // InternalDedalADL.g:19720:1: ( ruleEString )
-            // InternalDedalADL.g:19721:1: ruleEString
+            // InternalDedalADL.g:19784:1: ( ruleEString )
+            // InternalDedalADL.g:19785:1: ruleEString
             {
              before(grammarAccess.getAttributeAccess().getTypeEStringParserRuleCall_0_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51526,17 +51687,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Attribute__NameAssignment_1"
-    // InternalDedalADL.g:19730:1: rule__Attribute__NameAssignment_1 : ( ruleattribute_name ) ;
+    // InternalDedalADL.g:19794:1: rule__Attribute__NameAssignment_1 : ( ruleattribute_name ) ;
     public final void rule__Attribute__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19734:1: ( ( ruleattribute_name ) )
-            // InternalDedalADL.g:19735:1: ( ruleattribute_name )
+            // InternalDedalADL.g:19798:1: ( ( ruleattribute_name ) )
+            // InternalDedalADL.g:19799:1: ( ruleattribute_name )
             {
-            // InternalDedalADL.g:19735:1: ( ruleattribute_name )
-            // InternalDedalADL.g:19736:1: ruleattribute_name
+            // InternalDedalADL.g:19799:1: ( ruleattribute_name )
+            // InternalDedalADL.g:19800:1: ruleattribute_name
             {
              before(grammarAccess.getAttributeAccess().getNameAttribute_nameParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51567,17 +51728,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositeCompClass__NameAssignment_1"
-    // InternalDedalADL.g:19745:1: rule__CompositeCompClass__NameAssignment_1 : ( rulecomponent_class_name ) ;
+    // InternalDedalADL.g:19809:1: rule__CompositeCompClass__NameAssignment_1 : ( rulecomponent_class_name ) ;
     public final void rule__CompositeCompClass__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19749:1: ( ( rulecomponent_class_name ) )
-            // InternalDedalADL.g:19750:1: ( rulecomponent_class_name )
+            // InternalDedalADL.g:19813:1: ( ( rulecomponent_class_name ) )
+            // InternalDedalADL.g:19814:1: ( rulecomponent_class_name )
             {
-            // InternalDedalADL.g:19750:1: ( rulecomponent_class_name )
-            // InternalDedalADL.g:19751:1: rulecomponent_class_name
+            // InternalDedalADL.g:19814:1: ( rulecomponent_class_name )
+            // InternalDedalADL.g:19815:1: rulecomponent_class_name
             {
              before(grammarAccess.getCompositeCompClassAccess().getNameComponent_class_nameParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51608,17 +51769,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositeCompClass__IdAssignment_3"
-    // InternalDedalADL.g:19760:1: rule__CompositeCompClass__IdAssignment_3 : ( ruleEString ) ;
+    // InternalDedalADL.g:19824:1: rule__CompositeCompClass__IdAssignment_3 : ( ruleEString ) ;
     public final void rule__CompositeCompClass__IdAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19764:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19765:1: ( ruleEString )
+            // InternalDedalADL.g:19828:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19829:1: ( ruleEString )
             {
-            // InternalDedalADL.g:19765:1: ( ruleEString )
-            // InternalDedalADL.g:19766:1: ruleEString
+            // InternalDedalADL.g:19829:1: ( ruleEString )
+            // InternalDedalADL.g:19830:1: ruleEString
             {
              before(grammarAccess.getCompositeCompClassAccess().getIdEStringParserRuleCall_3_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51649,21 +51810,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositeCompClass__ImplementsAssignment_5"
-    // InternalDedalADL.g:19775:1: rule__CompositeCompClass__ImplementsAssignment_5 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19839:1: rule__CompositeCompClass__ImplementsAssignment_5 : ( ( ruleEString ) ) ;
     public final void rule__CompositeCompClass__ImplementsAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19779:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19780:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19843:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19844:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19780:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19781:1: ( ruleEString )
+            // InternalDedalADL.g:19844:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19845:1: ( ruleEString )
             {
              before(grammarAccess.getCompositeCompClassAccess().getImplementsCompTypeCrossReference_5_0()); 
-            // InternalDedalADL.g:19782:1: ( ruleEString )
-            // InternalDedalADL.g:19783:1: ruleEString
+            // InternalDedalADL.g:19846:1: ( ruleEString )
+            // InternalDedalADL.g:19847:1: ruleEString
             {
              before(grammarAccess.getCompositeCompClassAccess().getImplementsCompTypeEStringParserRuleCall_5_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51698,21 +51859,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositeCompClass__UsesAssignment_6_1"
-    // InternalDedalADL.g:19794:1: rule__CompositeCompClass__UsesAssignment_6_1 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19858:1: rule__CompositeCompClass__UsesAssignment_6_1 : ( ( ruleEString ) ) ;
     public final void rule__CompositeCompClass__UsesAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19798:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19799:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19862:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19863:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19799:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19800:1: ( ruleEString )
+            // InternalDedalADL.g:19863:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19864:1: ( ruleEString )
             {
              before(grammarAccess.getCompositeCompClassAccess().getUsesConfigurationCrossReference_6_1_0()); 
-            // InternalDedalADL.g:19801:1: ( ruleEString )
-            // InternalDedalADL.g:19802:1: ruleEString
+            // InternalDedalADL.g:19865:1: ( ruleEString )
+            // InternalDedalADL.g:19866:1: ruleEString
             {
              before(grammarAccess.getCompositeCompClassAccess().getUsesConfigurationEStringParserRuleCall_6_1_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51747,17 +51908,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositeCompClass__AttributesAssignment_8_2"
-    // InternalDedalADL.g:19813:1: rule__CompositeCompClass__AttributesAssignment_8_2 : ( ruleAttribute ) ;
+    // InternalDedalADL.g:19877:1: rule__CompositeCompClass__AttributesAssignment_8_2 : ( ruleAttribute ) ;
     public final void rule__CompositeCompClass__AttributesAssignment_8_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19817:1: ( ( ruleAttribute ) )
-            // InternalDedalADL.g:19818:1: ( ruleAttribute )
+            // InternalDedalADL.g:19881:1: ( ( ruleAttribute ) )
+            // InternalDedalADL.g:19882:1: ( ruleAttribute )
             {
-            // InternalDedalADL.g:19818:1: ( ruleAttribute )
-            // InternalDedalADL.g:19819:1: ruleAttribute
+            // InternalDedalADL.g:19882:1: ( ruleAttribute )
+            // InternalDedalADL.g:19883:1: ruleAttribute
             {
              before(grammarAccess.getCompositeCompClassAccess().getAttributesAttributeParserRuleCall_8_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51788,17 +51949,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositeCompClass__AttributesAssignment_8_3_1"
-    // InternalDedalADL.g:19828:1: rule__CompositeCompClass__AttributesAssignment_8_3_1 : ( ruleAttribute ) ;
+    // InternalDedalADL.g:19892:1: rule__CompositeCompClass__AttributesAssignment_8_3_1 : ( ruleAttribute ) ;
     public final void rule__CompositeCompClass__AttributesAssignment_8_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19832:1: ( ( ruleAttribute ) )
-            // InternalDedalADL.g:19833:1: ( ruleAttribute )
+            // InternalDedalADL.g:19896:1: ( ( ruleAttribute ) )
+            // InternalDedalADL.g:19897:1: ( ruleAttribute )
             {
-            // InternalDedalADL.g:19833:1: ( ruleAttribute )
-            // InternalDedalADL.g:19834:1: ruleAttribute
+            // InternalDedalADL.g:19897:1: ( ruleAttribute )
+            // InternalDedalADL.g:19898:1: ruleAttribute
             {
              before(grammarAccess.getCompositeCompClassAccess().getAttributesAttributeParserRuleCall_8_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51829,21 +51990,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositeCompClass__RealizesAssignment_11_2"
-    // InternalDedalADL.g:19843:1: rule__CompositeCompClass__RealizesAssignment_11_2 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19907:1: rule__CompositeCompClass__RealizesAssignment_11_2 : ( ( ruleEString ) ) ;
     public final void rule__CompositeCompClass__RealizesAssignment_11_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19847:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19848:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19911:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19912:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19848:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19849:1: ( ruleEString )
+            // InternalDedalADL.g:19912:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19913:1: ( ruleEString )
             {
              before(grammarAccess.getCompositeCompClassAccess().getRealizesCompRoleCrossReference_11_2_0()); 
-            // InternalDedalADL.g:19850:1: ( ruleEString )
-            // InternalDedalADL.g:19851:1: ruleEString
+            // InternalDedalADL.g:19914:1: ( ruleEString )
+            // InternalDedalADL.g:19915:1: ruleEString
             {
              before(grammarAccess.getCompositeCompClassAccess().getRealizesCompRoleEStringParserRuleCall_11_2_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51878,21 +52039,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositeCompClass__RealizesAssignment_11_3_1"
-    // InternalDedalADL.g:19862:1: rule__CompositeCompClass__RealizesAssignment_11_3_1 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:19926:1: rule__CompositeCompClass__RealizesAssignment_11_3_1 : ( ( ruleEString ) ) ;
     public final void rule__CompositeCompClass__RealizesAssignment_11_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19866:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19867:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19930:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:19931:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19867:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19868:1: ( ruleEString )
+            // InternalDedalADL.g:19931:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:19932:1: ( ruleEString )
             {
              before(grammarAccess.getCompositeCompClassAccess().getRealizesCompRoleCrossReference_11_3_1_0()); 
-            // InternalDedalADL.g:19869:1: ( ruleEString )
-            // InternalDedalADL.g:19870:1: ruleEString
+            // InternalDedalADL.g:19933:1: ( ruleEString )
+            // InternalDedalADL.g:19934:1: ruleEString
             {
              before(grammarAccess.getCompositeCompClassAccess().getRealizesCompRoleEStringParserRuleCall_11_3_1_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51927,17 +52088,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositeCompClass__CompInterfacesAssignment_12_1"
-    // InternalDedalADL.g:19881:1: rule__CompositeCompClass__CompInterfacesAssignment_12_1 : ( ruleInteraction ) ;
+    // InternalDedalADL.g:19945:1: rule__CompositeCompClass__CompInterfacesAssignment_12_1 : ( ruleInteraction ) ;
     public final void rule__CompositeCompClass__CompInterfacesAssignment_12_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19885:1: ( ( ruleInteraction ) )
-            // InternalDedalADL.g:19886:1: ( ruleInteraction )
+            // InternalDedalADL.g:19949:1: ( ( ruleInteraction ) )
+            // InternalDedalADL.g:19950:1: ( ruleInteraction )
             {
-            // InternalDedalADL.g:19886:1: ( ruleInteraction )
-            // InternalDedalADL.g:19887:1: ruleInteraction
+            // InternalDedalADL.g:19950:1: ( ruleInteraction )
+            // InternalDedalADL.g:19951:1: ruleInteraction
             {
              before(grammarAccess.getCompositeCompClassAccess().getCompInterfacesInteractionParserRuleCall_12_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -51968,17 +52129,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositeCompClass__CompInterfacesAssignment_12_2_1"
-    // InternalDedalADL.g:19896:1: rule__CompositeCompClass__CompInterfacesAssignment_12_2_1 : ( ruleInteraction ) ;
+    // InternalDedalADL.g:19960:1: rule__CompositeCompClass__CompInterfacesAssignment_12_2_1 : ( ruleInteraction ) ;
     public final void rule__CompositeCompClass__CompInterfacesAssignment_12_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19900:1: ( ( ruleInteraction ) )
-            // InternalDedalADL.g:19901:1: ( ruleInteraction )
+            // InternalDedalADL.g:19964:1: ( ( ruleInteraction ) )
+            // InternalDedalADL.g:19965:1: ( ruleInteraction )
             {
-            // InternalDedalADL.g:19901:1: ( ruleInteraction )
-            // InternalDedalADL.g:19902:1: ruleInteraction
+            // InternalDedalADL.g:19965:1: ( ruleInteraction )
+            // InternalDedalADL.g:19966:1: ruleInteraction
             {
              before(grammarAccess.getCompositeCompClassAccess().getCompInterfacesInteractionParserRuleCall_12_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52009,21 +52170,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositeCompClass__DelegatedInterfacesAssignment_13_1"
-    // InternalDedalADL.g:19911:1: rule__CompositeCompClass__DelegatedInterfacesAssignment_13_1 : ( ( RULE_ID ) ) ;
+    // InternalDedalADL.g:19975:1: rule__CompositeCompClass__DelegatedInterfacesAssignment_13_1 : ( ( RULE_ID ) ) ;
     public final void rule__CompositeCompClass__DelegatedInterfacesAssignment_13_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19915:1: ( ( ( RULE_ID ) ) )
-            // InternalDedalADL.g:19916:1: ( ( RULE_ID ) )
+            // InternalDedalADL.g:19979:1: ( ( ( RULE_ID ) ) )
+            // InternalDedalADL.g:19980:1: ( ( RULE_ID ) )
             {
-            // InternalDedalADL.g:19916:1: ( ( RULE_ID ) )
-            // InternalDedalADL.g:19917:1: ( RULE_ID )
+            // InternalDedalADL.g:19980:1: ( ( RULE_ID ) )
+            // InternalDedalADL.g:19981:1: ( RULE_ID )
             {
              before(grammarAccess.getCompositeCompClassAccess().getDelegatedInterfacesInteractionCrossReference_13_1_0()); 
-            // InternalDedalADL.g:19918:1: ( RULE_ID )
-            // InternalDedalADL.g:19919:1: RULE_ID
+            // InternalDedalADL.g:19982:1: ( RULE_ID )
+            // InternalDedalADL.g:19983:1: RULE_ID
             {
              before(grammarAccess.getCompositeCompClassAccess().getDelegatedInterfacesInteractionIDTerminalRuleCall_13_1_0_1()); 
             match(input,RULE_ID,FollowSets000.FOLLOW_2); 
@@ -52054,21 +52215,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositeCompClass__DelegatedInterfacesAssignment_13_2_1"
-    // InternalDedalADL.g:19930:1: rule__CompositeCompClass__DelegatedInterfacesAssignment_13_2_1 : ( ( RULE_ID ) ) ;
+    // InternalDedalADL.g:19994:1: rule__CompositeCompClass__DelegatedInterfacesAssignment_13_2_1 : ( ( RULE_ID ) ) ;
     public final void rule__CompositeCompClass__DelegatedInterfacesAssignment_13_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19934:1: ( ( ( RULE_ID ) ) )
-            // InternalDedalADL.g:19935:1: ( ( RULE_ID ) )
+            // InternalDedalADL.g:19998:1: ( ( ( RULE_ID ) ) )
+            // InternalDedalADL.g:19999:1: ( ( RULE_ID ) )
             {
-            // InternalDedalADL.g:19935:1: ( ( RULE_ID ) )
-            // InternalDedalADL.g:19936:1: ( RULE_ID )
+            // InternalDedalADL.g:19999:1: ( ( RULE_ID ) )
+            // InternalDedalADL.g:20000:1: ( RULE_ID )
             {
              before(grammarAccess.getCompositeCompClassAccess().getDelegatedInterfacesInteractionCrossReference_13_2_1_0()); 
-            // InternalDedalADL.g:19937:1: ( RULE_ID )
-            // InternalDedalADL.g:19938:1: RULE_ID
+            // InternalDedalADL.g:20001:1: ( RULE_ID )
+            // InternalDedalADL.g:20002:1: RULE_ID
             {
              before(grammarAccess.getCompositeCompClassAccess().getDelegatedInterfacesInteractionIDTerminalRuleCall_13_2_1_0_1()); 
             match(input,RULE_ID,FollowSets000.FOLLOW_2); 
@@ -52099,17 +52260,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__ClassConnection__RefIDAssignment_1"
-    // InternalDedalADL.g:19949:1: rule__ClassConnection__RefIDAssignment_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:20013:1: rule__ClassConnection__RefIDAssignment_1 : ( ruleEString ) ;
     public final void rule__ClassConnection__RefIDAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19953:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19954:1: ( ruleEString )
+            // InternalDedalADL.g:20017:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20018:1: ( ruleEString )
             {
-            // InternalDedalADL.g:19954:1: ( ruleEString )
-            // InternalDedalADL.g:19955:1: ruleEString
+            // InternalDedalADL.g:20018:1: ( ruleEString )
+            // InternalDedalADL.g:20019:1: ruleEString
             {
              before(grammarAccess.getClassConnectionAccess().getRefIDEStringParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52139,34 +52300,26 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__ClassConnection__RefIDAssignment_1"
 
 
-    // $ANTLR start "rule__ClassConnection__ClientClassElemAssignment_3"
-    // InternalDedalADL.g:19964:1: rule__ClassConnection__ClientClassElemAssignment_3 : ( ( ruleEString ) ) ;
-    public final void rule__ClassConnection__ClientClassElemAssignment_3() throws RecognitionException {
+    // $ANTLR start "rule__ClassConnection__PropertyAssignment_3"
+    // InternalDedalADL.g:20028:1: rule__ClassConnection__PropertyAssignment_3 : ( ruleEString ) ;
+    public final void rule__ClassConnection__PropertyAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19968:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19969:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20032:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20033:1: ( ruleEString )
             {
-            // InternalDedalADL.g:19969:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19970:1: ( ruleEString )
+            // InternalDedalADL.g:20033:1: ( ruleEString )
+            // InternalDedalADL.g:20034:1: ruleEString
             {
-             before(grammarAccess.getClassConnectionAccess().getClientClassElemCompClassCrossReference_3_0()); 
-            // InternalDedalADL.g:19971:1: ( ruleEString )
-            // InternalDedalADL.g:19972:1: ruleEString
-            {
-             before(grammarAccess.getClassConnectionAccess().getClientClassElemCompClassEStringParserRuleCall_3_0_1()); 
+             before(grammarAccess.getClassConnectionAccess().getPropertyEStringParserRuleCall_3_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getClassConnectionAccess().getClientClassElemCompClassEStringParserRuleCall_3_0_1()); 
-
-            }
-
-             after(grammarAccess.getClassConnectionAccess().getClientClassElemCompClassCrossReference_3_0()); 
+             after(grammarAccess.getClassConnectionAccess().getPropertyEStringParserRuleCall_3_0()); 
 
             }
 
@@ -52185,37 +52338,37 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__ClassConnection__ClientClassElemAssignment_3"
+    // $ANTLR end "rule__ClassConnection__PropertyAssignment_3"
 
 
-    // $ANTLR start "rule__ClassConnection__ClientIntElemAssignment_5"
-    // InternalDedalADL.g:19983:1: rule__ClassConnection__ClientIntElemAssignment_5 : ( ( ruleEString ) ) ;
-    public final void rule__ClassConnection__ClientIntElemAssignment_5() throws RecognitionException {
+    // $ANTLR start "rule__ClassConnection__ClientClassElemAssignment_5"
+    // InternalDedalADL.g:20043:1: rule__ClassConnection__ClientClassElemAssignment_5 : ( ( ruleEString ) ) ;
+    public final void rule__ClassConnection__ClientClassElemAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:19987:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:19988:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20047:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20048:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:19988:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:19989:1: ( ruleEString )
+            // InternalDedalADL.g:20048:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20049:1: ( ruleEString )
             {
-             before(grammarAccess.getClassConnectionAccess().getClientIntElemInteractionCrossReference_5_0()); 
-            // InternalDedalADL.g:19990:1: ( ruleEString )
-            // InternalDedalADL.g:19991:1: ruleEString
+             before(grammarAccess.getClassConnectionAccess().getClientClassElemCompClassCrossReference_5_0()); 
+            // InternalDedalADL.g:20050:1: ( ruleEString )
+            // InternalDedalADL.g:20051:1: ruleEString
             {
-             before(grammarAccess.getClassConnectionAccess().getClientIntElemInteractionEStringParserRuleCall_5_0_1()); 
+             before(grammarAccess.getClassConnectionAccess().getClientClassElemCompClassEStringParserRuleCall_5_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getClassConnectionAccess().getClientIntElemInteractionEStringParserRuleCall_5_0_1()); 
+             after(grammarAccess.getClassConnectionAccess().getClientClassElemCompClassEStringParserRuleCall_5_0_1()); 
 
             }
 
-             after(grammarAccess.getClassConnectionAccess().getClientIntElemInteractionCrossReference_5_0()); 
+             after(grammarAccess.getClassConnectionAccess().getClientClassElemCompClassCrossReference_5_0()); 
 
             }
 
@@ -52234,37 +52387,37 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__ClassConnection__ClientIntElemAssignment_5"
+    // $ANTLR end "rule__ClassConnection__ClientClassElemAssignment_5"
 
 
-    // $ANTLR start "rule__ClassConnection__ServerClassElemAssignment_7"
-    // InternalDedalADL.g:20002:1: rule__ClassConnection__ServerClassElemAssignment_7 : ( ( ruleEString ) ) ;
-    public final void rule__ClassConnection__ServerClassElemAssignment_7() throws RecognitionException {
+    // $ANTLR start "rule__ClassConnection__ClientIntElemAssignment_7"
+    // InternalDedalADL.g:20062:1: rule__ClassConnection__ClientIntElemAssignment_7 : ( ( ruleEString ) ) ;
+    public final void rule__ClassConnection__ClientIntElemAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20006:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20007:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20066:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20067:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20007:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20008:1: ( ruleEString )
+            // InternalDedalADL.g:20067:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20068:1: ( ruleEString )
             {
-             before(grammarAccess.getClassConnectionAccess().getServerClassElemCompClassCrossReference_7_0()); 
-            // InternalDedalADL.g:20009:1: ( ruleEString )
-            // InternalDedalADL.g:20010:1: ruleEString
+             before(grammarAccess.getClassConnectionAccess().getClientIntElemInteractionCrossReference_7_0()); 
+            // InternalDedalADL.g:20069:1: ( ruleEString )
+            // InternalDedalADL.g:20070:1: ruleEString
             {
-             before(grammarAccess.getClassConnectionAccess().getServerClassElemCompClassEStringParserRuleCall_7_0_1()); 
+             before(grammarAccess.getClassConnectionAccess().getClientIntElemInteractionEStringParserRuleCall_7_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getClassConnectionAccess().getServerClassElemCompClassEStringParserRuleCall_7_0_1()); 
+             after(grammarAccess.getClassConnectionAccess().getClientIntElemInteractionEStringParserRuleCall_7_0_1()); 
 
             }
 
-             after(grammarAccess.getClassConnectionAccess().getServerClassElemCompClassCrossReference_7_0()); 
+             after(grammarAccess.getClassConnectionAccess().getClientIntElemInteractionCrossReference_7_0()); 
 
             }
 
@@ -52283,37 +52436,37 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__ClassConnection__ServerClassElemAssignment_7"
+    // $ANTLR end "rule__ClassConnection__ClientIntElemAssignment_7"
 
 
-    // $ANTLR start "rule__ClassConnection__ServerIntElemAssignment_9"
-    // InternalDedalADL.g:20021:1: rule__ClassConnection__ServerIntElemAssignment_9 : ( ( ruleEString ) ) ;
-    public final void rule__ClassConnection__ServerIntElemAssignment_9() throws RecognitionException {
+    // $ANTLR start "rule__ClassConnection__ServerClassElemAssignment_9"
+    // InternalDedalADL.g:20081:1: rule__ClassConnection__ServerClassElemAssignment_9 : ( ( ruleEString ) ) ;
+    public final void rule__ClassConnection__ServerClassElemAssignment_9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20025:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20026:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20085:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20086:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20026:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20027:1: ( ruleEString )
+            // InternalDedalADL.g:20086:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20087:1: ( ruleEString )
             {
-             before(grammarAccess.getClassConnectionAccess().getServerIntElemInteractionCrossReference_9_0()); 
-            // InternalDedalADL.g:20028:1: ( ruleEString )
-            // InternalDedalADL.g:20029:1: ruleEString
+             before(grammarAccess.getClassConnectionAccess().getServerClassElemCompClassCrossReference_9_0()); 
+            // InternalDedalADL.g:20088:1: ( ruleEString )
+            // InternalDedalADL.g:20089:1: ruleEString
             {
-             before(grammarAccess.getClassConnectionAccess().getServerIntElemInteractionEStringParserRuleCall_9_0_1()); 
+             before(grammarAccess.getClassConnectionAccess().getServerClassElemCompClassEStringParserRuleCall_9_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getClassConnectionAccess().getServerIntElemInteractionEStringParserRuleCall_9_0_1()); 
+             after(grammarAccess.getClassConnectionAccess().getServerClassElemCompClassEStringParserRuleCall_9_0_1()); 
 
             }
 
-             after(grammarAccess.getClassConnectionAccess().getServerIntElemInteractionCrossReference_9_0()); 
+             after(grammarAccess.getClassConnectionAccess().getServerClassElemCompClassCrossReference_9_0()); 
 
             }
 
@@ -52332,21 +52485,70 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__ClassConnection__ServerIntElemAssignment_9"
+    // $ANTLR end "rule__ClassConnection__ServerClassElemAssignment_9"
+
+
+    // $ANTLR start "rule__ClassConnection__ServerIntElemAssignment_11"
+    // InternalDedalADL.g:20100:1: rule__ClassConnection__ServerIntElemAssignment_11 : ( ( ruleEString ) ) ;
+    public final void rule__ClassConnection__ServerIntElemAssignment_11() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // InternalDedalADL.g:20104:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20105:1: ( ( ruleEString ) )
+            {
+            // InternalDedalADL.g:20105:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20106:1: ( ruleEString )
+            {
+             before(grammarAccess.getClassConnectionAccess().getServerIntElemInteractionCrossReference_11_0()); 
+            // InternalDedalADL.g:20107:1: ( ruleEString )
+            // InternalDedalADL.g:20108:1: ruleEString
+            {
+             before(grammarAccess.getClassConnectionAccess().getServerIntElemInteractionEStringParserRuleCall_11_0_1()); 
+            pushFollow(FollowSets000.FOLLOW_2);
+            ruleEString();
+
+            state._fsp--;
+
+             after(grammarAccess.getClassConnectionAccess().getServerIntElemInteractionEStringParserRuleCall_11_0_1()); 
+
+            }
+
+             after(grammarAccess.getClassConnectionAccess().getServerIntElemInteractionCrossReference_11_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ClassConnection__ServerIntElemAssignment_11"
 
 
     // $ANTLR start "rule__Port_Impl__NameAssignment_1"
-    // InternalDedalADL.g:20040:1: rule__Port_Impl__NameAssignment_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:20119:1: rule__Port_Impl__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Port_Impl__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20044:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20045:1: ( ruleEString )
+            // InternalDedalADL.g:20123:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20124:1: ( ruleEString )
             {
-            // InternalDedalADL.g:20045:1: ( ruleEString )
-            // InternalDedalADL.g:20046:1: ruleEString
+            // InternalDedalADL.g:20124:1: ( ruleEString )
+            // InternalDedalADL.g:20125:1: ruleEString
             {
              before(grammarAccess.getPort_ImplAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52377,21 +52579,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__InterfacesAssignment_4"
-    // InternalDedalADL.g:20055:1: rule__Port_Impl__InterfacesAssignment_4 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:20134:1: rule__Port_Impl__InterfacesAssignment_4 : ( ( ruleEString ) ) ;
     public final void rule__Port_Impl__InterfacesAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20059:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20060:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20138:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20139:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20060:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20061:1: ( ruleEString )
+            // InternalDedalADL.g:20139:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20140:1: ( ruleEString )
             {
              before(grammarAccess.getPort_ImplAccess().getInterfacesInterfaceCrossReference_4_0()); 
-            // InternalDedalADL.g:20062:1: ( ruleEString )
-            // InternalDedalADL.g:20063:1: ruleEString
+            // InternalDedalADL.g:20141:1: ( ruleEString )
+            // InternalDedalADL.g:20142:1: ruleEString
             {
              before(grammarAccess.getPort_ImplAccess().getInterfacesInterfaceEStringParserRuleCall_4_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52426,21 +52628,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Port_Impl__InterfacesAssignment_5_1"
-    // InternalDedalADL.g:20074:1: rule__Port_Impl__InterfacesAssignment_5_1 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:20153:1: rule__Port_Impl__InterfacesAssignment_5_1 : ( ( ruleEString ) ) ;
     public final void rule__Port_Impl__InterfacesAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20078:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20079:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20157:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20158:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20079:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20080:1: ( ruleEString )
+            // InternalDedalADL.g:20158:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20159:1: ( ruleEString )
             {
              before(grammarAccess.getPort_ImplAccess().getInterfacesInterfaceCrossReference_5_1_0()); 
-            // InternalDedalADL.g:20081:1: ( ruleEString )
-            // InternalDedalADL.g:20082:1: ruleEString
+            // InternalDedalADL.g:20160:1: ( ruleEString )
+            // InternalDedalADL.g:20161:1: ruleEString
             {
              before(grammarAccess.getPort_ImplAccess().getInterfacesInterfaceEStringParserRuleCall_5_1_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52475,17 +52677,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__NameAssignment_1"
-    // InternalDedalADL.g:20093:1: rule__CompositePort__NameAssignment_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:20172:1: rule__CompositePort__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__CompositePort__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20097:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20098:1: ( ruleEString )
+            // InternalDedalADL.g:20176:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20177:1: ( ruleEString )
             {
-            // InternalDedalADL.g:20098:1: ( ruleEString )
-            // InternalDedalADL.g:20099:1: ruleEString
+            // InternalDedalADL.g:20177:1: ( ruleEString )
+            // InternalDedalADL.g:20178:1: ruleEString
             {
              before(grammarAccess.getCompositePortAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52516,21 +52718,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__PortsAssignment_4"
-    // InternalDedalADL.g:20108:1: rule__CompositePort__PortsAssignment_4 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:20187:1: rule__CompositePort__PortsAssignment_4 : ( ( ruleEString ) ) ;
     public final void rule__CompositePort__PortsAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20112:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20113:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20191:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20192:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20113:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20114:1: ( ruleEString )
+            // InternalDedalADL.g:20192:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20193:1: ( ruleEString )
             {
              before(grammarAccess.getCompositePortAccess().getPortsPortCrossReference_4_0()); 
-            // InternalDedalADL.g:20115:1: ( ruleEString )
-            // InternalDedalADL.g:20116:1: ruleEString
+            // InternalDedalADL.g:20194:1: ( ruleEString )
+            // InternalDedalADL.g:20195:1: ruleEString
             {
              before(grammarAccess.getCompositePortAccess().getPortsPortEStringParserRuleCall_4_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52565,21 +52767,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompositePort__PortsAssignment_5_1"
-    // InternalDedalADL.g:20127:1: rule__CompositePort__PortsAssignment_5_1 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:20206:1: rule__CompositePort__PortsAssignment_5_1 : ( ( ruleEString ) ) ;
     public final void rule__CompositePort__PortsAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20131:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20132:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20210:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20211:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20132:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20133:1: ( ruleEString )
+            // InternalDedalADL.g:20211:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20212:1: ( ruleEString )
             {
              before(grammarAccess.getCompositePortAccess().getPortsPortCrossReference_5_1_0()); 
-            // InternalDedalADL.g:20134:1: ( ruleEString )
-            // InternalDedalADL.g:20135:1: ruleEString
+            // InternalDedalADL.g:20213:1: ( ruleEString )
+            // InternalDedalADL.g:20214:1: ruleEString
             {
              before(grammarAccess.getCompositePortAccess().getPortsPortEStringParserRuleCall_5_1_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52614,17 +52816,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__NameAssignment_1"
-    // InternalDedalADL.g:20146:1: rule__Assembly__NameAssignment_1 : ( ruleassembly_name ) ;
+    // InternalDedalADL.g:20225:1: rule__Assembly__NameAssignment_1 : ( ruleassembly_name ) ;
     public final void rule__Assembly__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20150:1: ( ( ruleassembly_name ) )
-            // InternalDedalADL.g:20151:1: ( ruleassembly_name )
+            // InternalDedalADL.g:20229:1: ( ( ruleassembly_name ) )
+            // InternalDedalADL.g:20230:1: ( ruleassembly_name )
             {
-            // InternalDedalADL.g:20151:1: ( ruleassembly_name )
-            // InternalDedalADL.g:20152:1: ruleassembly_name
+            // InternalDedalADL.g:20230:1: ( ruleassembly_name )
+            // InternalDedalADL.g:20231:1: ruleassembly_name
             {
              before(grammarAccess.getAssemblyAccess().getNameAssembly_nameParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52655,21 +52857,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__InstantiatesAssignment_3"
-    // InternalDedalADL.g:20161:1: rule__Assembly__InstantiatesAssignment_3 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:20240:1: rule__Assembly__InstantiatesAssignment_3 : ( ( ruleEString ) ) ;
     public final void rule__Assembly__InstantiatesAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20165:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20166:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20244:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20245:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20166:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20167:1: ( ruleEString )
+            // InternalDedalADL.g:20245:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20246:1: ( ruleEString )
             {
              before(grammarAccess.getAssemblyAccess().getInstantiatesConfigurationCrossReference_3_0()); 
-            // InternalDedalADL.g:20168:1: ( ruleEString )
-            // InternalDedalADL.g:20169:1: ruleEString
+            // InternalDedalADL.g:20247:1: ( ruleEString )
+            // InternalDedalADL.g:20248:1: ruleEString
             {
              before(grammarAccess.getAssemblyAccess().getInstantiatesConfigurationEStringParserRuleCall_3_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52704,17 +52906,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__AssmComponentsAssignment_8"
-    // InternalDedalADL.g:20180:1: rule__Assembly__AssmComponentsAssignment_8 : ( ruleCompInstance ) ;
+    // InternalDedalADL.g:20259:1: rule__Assembly__AssmComponentsAssignment_8 : ( ruleCompInstance ) ;
     public final void rule__Assembly__AssmComponentsAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20184:1: ( ( ruleCompInstance ) )
-            // InternalDedalADL.g:20185:1: ( ruleCompInstance )
+            // InternalDedalADL.g:20263:1: ( ( ruleCompInstance ) )
+            // InternalDedalADL.g:20264:1: ( ruleCompInstance )
             {
-            // InternalDedalADL.g:20185:1: ( ruleCompInstance )
-            // InternalDedalADL.g:20186:1: ruleCompInstance
+            // InternalDedalADL.g:20264:1: ( ruleCompInstance )
+            // InternalDedalADL.g:20265:1: ruleCompInstance
             {
              before(grammarAccess.getAssemblyAccess().getAssmComponentsCompInstanceParserRuleCall_8_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52745,17 +52947,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__AssmComponentsAssignment_9_1"
-    // InternalDedalADL.g:20195:1: rule__Assembly__AssmComponentsAssignment_9_1 : ( ruleCompInstance ) ;
+    // InternalDedalADL.g:20274:1: rule__Assembly__AssmComponentsAssignment_9_1 : ( ruleCompInstance ) ;
     public final void rule__Assembly__AssmComponentsAssignment_9_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20199:1: ( ( ruleCompInstance ) )
-            // InternalDedalADL.g:20200:1: ( ruleCompInstance )
+            // InternalDedalADL.g:20278:1: ( ( ruleCompInstance ) )
+            // InternalDedalADL.g:20279:1: ( ruleCompInstance )
             {
-            // InternalDedalADL.g:20200:1: ( ruleCompInstance )
-            // InternalDedalADL.g:20201:1: ruleCompInstance
+            // InternalDedalADL.g:20279:1: ( ruleCompInstance )
+            // InternalDedalADL.g:20280:1: ruleCompInstance
             {
              before(grammarAccess.getAssemblyAccess().getAssmComponentsCompInstanceParserRuleCall_9_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52786,17 +52988,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__InterfaceTypesAssignment_14_2"
-    // InternalDedalADL.g:20210:1: rule__Assembly__InterfaceTypesAssignment_14_2 : ( ruleInterfaceType ) ;
+    // InternalDedalADL.g:20289:1: rule__Assembly__InterfaceTypesAssignment_14_2 : ( ruleInterfaceType ) ;
     public final void rule__Assembly__InterfaceTypesAssignment_14_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20214:1: ( ( ruleInterfaceType ) )
-            // InternalDedalADL.g:20215:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:20293:1: ( ( ruleInterfaceType ) )
+            // InternalDedalADL.g:20294:1: ( ruleInterfaceType )
             {
-            // InternalDedalADL.g:20215:1: ( ruleInterfaceType )
-            // InternalDedalADL.g:20216:1: ruleInterfaceType
+            // InternalDedalADL.g:20294:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:20295:1: ruleInterfaceType
             {
              before(grammarAccess.getAssemblyAccess().getInterfaceTypesInterfaceTypeParserRuleCall_14_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52827,17 +53029,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__InterfaceTypesAssignment_14_3_1"
-    // InternalDedalADL.g:20225:1: rule__Assembly__InterfaceTypesAssignment_14_3_1 : ( ruleInterfaceType ) ;
+    // InternalDedalADL.g:20304:1: rule__Assembly__InterfaceTypesAssignment_14_3_1 : ( ruleInterfaceType ) ;
     public final void rule__Assembly__InterfaceTypesAssignment_14_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20229:1: ( ( ruleInterfaceType ) )
-            // InternalDedalADL.g:20230:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:20308:1: ( ( ruleInterfaceType ) )
+            // InternalDedalADL.g:20309:1: ( ruleInterfaceType )
             {
-            // InternalDedalADL.g:20230:1: ( ruleInterfaceType )
-            // InternalDedalADL.g:20231:1: ruleInterfaceType
+            // InternalDedalADL.g:20309:1: ( ruleInterfaceType )
+            // InternalDedalADL.g:20310:1: ruleInterfaceType
             {
              before(grammarAccess.getAssemblyAccess().getInterfaceTypesInterfaceTypeParserRuleCall_14_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52868,17 +53070,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__AssemblyConnectionsAssignment_15_2"
-    // InternalDedalADL.g:20240:1: rule__Assembly__AssemblyConnectionsAssignment_15_2 : ( ruleInstConnection ) ;
+    // InternalDedalADL.g:20319:1: rule__Assembly__AssemblyConnectionsAssignment_15_2 : ( ruleInstConnection ) ;
     public final void rule__Assembly__AssemblyConnectionsAssignment_15_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20244:1: ( ( ruleInstConnection ) )
-            // InternalDedalADL.g:20245:1: ( ruleInstConnection )
+            // InternalDedalADL.g:20323:1: ( ( ruleInstConnection ) )
+            // InternalDedalADL.g:20324:1: ( ruleInstConnection )
             {
-            // InternalDedalADL.g:20245:1: ( ruleInstConnection )
-            // InternalDedalADL.g:20246:1: ruleInstConnection
+            // InternalDedalADL.g:20324:1: ( ruleInstConnection )
+            // InternalDedalADL.g:20325:1: ruleInstConnection
             {
              before(grammarAccess.getAssemblyAccess().getAssemblyConnectionsInstConnectionParserRuleCall_15_2_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52909,17 +53111,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Assembly__AssemblyConnectionsAssignment_15_3_1"
-    // InternalDedalADL.g:20255:1: rule__Assembly__AssemblyConnectionsAssignment_15_3_1 : ( ruleInstConnection ) ;
+    // InternalDedalADL.g:20334:1: rule__Assembly__AssemblyConnectionsAssignment_15_3_1 : ( ruleInstConnection ) ;
     public final void rule__Assembly__AssemblyConnectionsAssignment_15_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20259:1: ( ( ruleInstConnection ) )
-            // InternalDedalADL.g:20260:1: ( ruleInstConnection )
+            // InternalDedalADL.g:20338:1: ( ( ruleInstConnection ) )
+            // InternalDedalADL.g:20339:1: ( ruleInstConnection )
             {
-            // InternalDedalADL.g:20260:1: ( ruleInstConnection )
-            // InternalDedalADL.g:20261:1: ruleInstConnection
+            // InternalDedalADL.g:20339:1: ( ruleInstConnection )
+            // InternalDedalADL.g:20340:1: ruleInstConnection
             {
              before(grammarAccess.getAssemblyAccess().getAssemblyConnectionsInstConnectionParserRuleCall_15_3_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52950,17 +53152,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__NameAssignment_1"
-    // InternalDedalADL.g:20270:1: rule__CompInstance__NameAssignment_1 : ( rulecomponent_instance_name ) ;
+    // InternalDedalADL.g:20349:1: rule__CompInstance__NameAssignment_1 : ( rulecomponent_instance_name ) ;
     public final void rule__CompInstance__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20274:1: ( ( rulecomponent_instance_name ) )
-            // InternalDedalADL.g:20275:1: ( rulecomponent_instance_name )
+            // InternalDedalADL.g:20353:1: ( ( rulecomponent_instance_name ) )
+            // InternalDedalADL.g:20354:1: ( rulecomponent_instance_name )
             {
-            // InternalDedalADL.g:20275:1: ( rulecomponent_instance_name )
-            // InternalDedalADL.g:20276:1: rulecomponent_instance_name
+            // InternalDedalADL.g:20354:1: ( rulecomponent_instance_name )
+            // InternalDedalADL.g:20355:1: rulecomponent_instance_name
             {
              before(grammarAccess.getCompInstanceAccess().getNameComponent_instance_nameParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -52991,21 +53193,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__RoleAssignment_2_1"
-    // InternalDedalADL.g:20285:1: rule__CompInstance__RoleAssignment_2_1 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:20364:1: rule__CompInstance__RoleAssignment_2_1 : ( ( ruleEString ) ) ;
     public final void rule__CompInstance__RoleAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20289:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20290:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20368:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20369:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20290:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20291:1: ( ruleEString )
+            // InternalDedalADL.g:20369:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20370:1: ( ruleEString )
             {
              before(grammarAccess.getCompInstanceAccess().getRoleCompRoleCrossReference_2_1_0()); 
-            // InternalDedalADL.g:20292:1: ( ruleEString )
-            // InternalDedalADL.g:20293:1: ruleEString
+            // InternalDedalADL.g:20371:1: ( ruleEString )
+            // InternalDedalADL.g:20372:1: ruleEString
             {
              before(grammarAccess.getCompInstanceAccess().getRoleCompRoleEStringParserRuleCall_2_1_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -53040,17 +53242,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__IdAssignment_4"
-    // InternalDedalADL.g:20304:1: rule__CompInstance__IdAssignment_4 : ( ruleEString ) ;
+    // InternalDedalADL.g:20383:1: rule__CompInstance__IdAssignment_4 : ( ruleEString ) ;
     public final void rule__CompInstance__IdAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20308:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20309:1: ( ruleEString )
+            // InternalDedalADL.g:20387:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20388:1: ( ruleEString )
             {
-            // InternalDedalADL.g:20309:1: ( ruleEString )
-            // InternalDedalADL.g:20310:1: ruleEString
+            // InternalDedalADL.g:20388:1: ( ruleEString )
+            // InternalDedalADL.g:20389:1: ruleEString
             {
              before(grammarAccess.getCompInstanceAccess().getIdEStringParserRuleCall_4_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -53081,21 +53283,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__InstantiatesAssignment_6"
-    // InternalDedalADL.g:20319:1: rule__CompInstance__InstantiatesAssignment_6 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:20398:1: rule__CompInstance__InstantiatesAssignment_6 : ( ( ruleEString ) ) ;
     public final void rule__CompInstance__InstantiatesAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20323:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20324:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20402:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20403:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20324:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20325:1: ( ruleEString )
+            // InternalDedalADL.g:20403:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20404:1: ( ruleEString )
             {
              before(grammarAccess.getCompInstanceAccess().getInstantiatesCompClassCrossReference_6_0()); 
-            // InternalDedalADL.g:20326:1: ( ruleEString )
-            // InternalDedalADL.g:20327:1: ruleEString
+            // InternalDedalADL.g:20405:1: ( ruleEString )
+            // InternalDedalADL.g:20406:1: ruleEString
             {
              before(grammarAccess.getCompInstanceAccess().getInstantiatesCompClassEStringParserRuleCall_6_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -53130,17 +53332,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__CompInterfacesAssignment_7_1"
-    // InternalDedalADL.g:20338:1: rule__CompInstance__CompInterfacesAssignment_7_1 : ( ruleInteraction ) ;
+    // InternalDedalADL.g:20417:1: rule__CompInstance__CompInterfacesAssignment_7_1 : ( ruleInteraction ) ;
     public final void rule__CompInstance__CompInterfacesAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20342:1: ( ( ruleInteraction ) )
-            // InternalDedalADL.g:20343:1: ( ruleInteraction )
+            // InternalDedalADL.g:20421:1: ( ( ruleInteraction ) )
+            // InternalDedalADL.g:20422:1: ( ruleInteraction )
             {
-            // InternalDedalADL.g:20343:1: ( ruleInteraction )
-            // InternalDedalADL.g:20344:1: ruleInteraction
+            // InternalDedalADL.g:20422:1: ( ruleInteraction )
+            // InternalDedalADL.g:20423:1: ruleInteraction
             {
              before(grammarAccess.getCompInstanceAccess().getCompInterfacesInteractionParserRuleCall_7_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -53171,17 +53373,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__CompInstance__CompInterfacesAssignment_7_2_1"
-    // InternalDedalADL.g:20353:1: rule__CompInstance__CompInterfacesAssignment_7_2_1 : ( ruleInteraction ) ;
+    // InternalDedalADL.g:20432:1: rule__CompInstance__CompInterfacesAssignment_7_2_1 : ( ruleInteraction ) ;
     public final void rule__CompInstance__CompInterfacesAssignment_7_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20357:1: ( ( ruleInteraction ) )
-            // InternalDedalADL.g:20358:1: ( ruleInteraction )
+            // InternalDedalADL.g:20436:1: ( ( ruleInteraction ) )
+            // InternalDedalADL.g:20437:1: ( ruleInteraction )
             {
-            // InternalDedalADL.g:20358:1: ( ruleInteraction )
-            // InternalDedalADL.g:20359:1: ruleInteraction
+            // InternalDedalADL.g:20437:1: ( ruleInteraction )
+            // InternalDedalADL.g:20438:1: ruleInteraction
             {
              before(grammarAccess.getCompInstanceAccess().getCompInterfacesInteractionParserRuleCall_7_2_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -53212,17 +53414,17 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__RefIDAssignment_1"
-    // InternalDedalADL.g:20368:1: rule__InstConnection__RefIDAssignment_1 : ( ruleEString ) ;
+    // InternalDedalADL.g:20447:1: rule__InstConnection__RefIDAssignment_1 : ( ruleEString ) ;
     public final void rule__InstConnection__RefIDAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20372:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20373:1: ( ruleEString )
+            // InternalDedalADL.g:20451:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20452:1: ( ruleEString )
             {
-            // InternalDedalADL.g:20373:1: ( ruleEString )
-            // InternalDedalADL.g:20374:1: ruleEString
+            // InternalDedalADL.g:20452:1: ( ruleEString )
+            // InternalDedalADL.g:20453:1: ruleEString
             {
              before(grammarAccess.getInstConnectionAccess().getRefIDEStringParserRuleCall_1_0()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -53253,21 +53455,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__ClientInstElemAssignment_3"
-    // InternalDedalADL.g:20383:1: rule__InstConnection__ClientInstElemAssignment_3 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:20462:1: rule__InstConnection__ClientInstElemAssignment_3 : ( ( ruleEString ) ) ;
     public final void rule__InstConnection__ClientInstElemAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20387:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20388:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20466:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20467:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20388:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20389:1: ( ruleEString )
+            // InternalDedalADL.g:20467:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20468:1: ( ruleEString )
             {
              before(grammarAccess.getInstConnectionAccess().getClientInstElemCompInstanceCrossReference_3_0()); 
-            // InternalDedalADL.g:20390:1: ( ruleEString )
-            // InternalDedalADL.g:20391:1: ruleEString
+            // InternalDedalADL.g:20469:1: ( ruleEString )
+            // InternalDedalADL.g:20470:1: ruleEString
             {
              before(grammarAccess.getInstConnectionAccess().getClientInstElemCompInstanceEStringParserRuleCall_3_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -53302,21 +53504,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__ClientIntElemAssignment_5"
-    // InternalDedalADL.g:20402:1: rule__InstConnection__ClientIntElemAssignment_5 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:20481:1: rule__InstConnection__ClientIntElemAssignment_5 : ( ( ruleEString ) ) ;
     public final void rule__InstConnection__ClientIntElemAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20406:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20407:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20485:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20486:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20407:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20408:1: ( ruleEString )
+            // InternalDedalADL.g:20486:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20487:1: ( ruleEString )
             {
              before(grammarAccess.getInstConnectionAccess().getClientIntElemInteractionCrossReference_5_0()); 
-            // InternalDedalADL.g:20409:1: ( ruleEString )
-            // InternalDedalADL.g:20410:1: ruleEString
+            // InternalDedalADL.g:20488:1: ( ruleEString )
+            // InternalDedalADL.g:20489:1: ruleEString
             {
              before(grammarAccess.getInstConnectionAccess().getClientIntElemInteractionEStringParserRuleCall_5_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -53351,21 +53553,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__ServerInstElemAssignment_7"
-    // InternalDedalADL.g:20421:1: rule__InstConnection__ServerInstElemAssignment_7 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:20500:1: rule__InstConnection__ServerInstElemAssignment_7 : ( ( ruleEString ) ) ;
     public final void rule__InstConnection__ServerInstElemAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20425:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20426:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20504:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20505:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20426:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20427:1: ( ruleEString )
+            // InternalDedalADL.g:20505:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20506:1: ( ruleEString )
             {
              before(grammarAccess.getInstConnectionAccess().getServerInstElemCompInstanceCrossReference_7_0()); 
-            // InternalDedalADL.g:20428:1: ( ruleEString )
-            // InternalDedalADL.g:20429:1: ruleEString
+            // InternalDedalADL.g:20507:1: ( ruleEString )
+            // InternalDedalADL.g:20508:1: ruleEString
             {
              before(grammarAccess.getInstConnectionAccess().getServerInstElemCompInstanceEStringParserRuleCall_7_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -53400,21 +53602,21 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__InstConnection__ServerIntElemAssignment_9"
-    // InternalDedalADL.g:20440:1: rule__InstConnection__ServerIntElemAssignment_9 : ( ( ruleEString ) ) ;
+    // InternalDedalADL.g:20519:1: rule__InstConnection__ServerIntElemAssignment_9 : ( ( ruleEString ) ) ;
     public final void rule__InstConnection__ServerIntElemAssignment_9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalDedalADL.g:20444:1: ( ( ( ruleEString ) ) )
-            // InternalDedalADL.g:20445:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20523:1: ( ( ( ruleEString ) ) )
+            // InternalDedalADL.g:20524:1: ( ( ruleEString ) )
             {
-            // InternalDedalADL.g:20445:1: ( ( ruleEString ) )
-            // InternalDedalADL.g:20446:1: ( ruleEString )
+            // InternalDedalADL.g:20524:1: ( ( ruleEString ) )
+            // InternalDedalADL.g:20525:1: ( ruleEString )
             {
              before(grammarAccess.getInstConnectionAccess().getServerIntElemInteractionCrossReference_9_0()); 
-            // InternalDedalADL.g:20447:1: ( ruleEString )
-            // InternalDedalADL.g:20448:1: ruleEString
+            // InternalDedalADL.g:20526:1: ( ruleEString )
+            // InternalDedalADL.g:20527:1: ruleEString
             {
              before(grammarAccess.getInstConnectionAccess().getServerIntElemInteractionEStringParserRuleCall_9_0_1()); 
             pushFollow(FollowSets000.FOLLOW_2);
@@ -53479,13 +53681,13 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
         public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000000020000002L});
         public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000000000040L});
         public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000200000000010L});
-        public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000000000000L,0x0001000000000000L});
+        public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000000000000L,0x0002000000000000L});
         public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0000800000000000L});
         public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x8000000000000000L});
         public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0000000000000000L,0x000000000000001FL});
         public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
         public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0000000000000080L});
-        public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0000000000000000L,0x0000000A00000020L});
+        public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0000000000000000L,0x0000001400000020L});
         public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000040L});
         public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x0000040000001000L});
         public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000080L});
@@ -53513,34 +53715,35 @@ public class InternalDedalADLParser extends AbstractInternalContentAssistParser 
         public static final BitSet FOLLOW_57 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
         public static final BitSet FOLLOW_58 = new BitSet(new long[]{0x0000800000000000L,0x0000000000000001L});
         public static final BitSet FOLLOW_59 = new BitSet(new long[]{0x0000000000000000L,0x0000000040000000L});
-        public static final BitSet FOLLOW_60 = new BitSet(new long[]{0x0000000000000000L,0x0000000000800000L});
-        public static final BitSet FOLLOW_61 = new BitSet(new long[]{0x0000400000000000L,0x0000000400000000L});
-        public static final BitSet FOLLOW_62 = new BitSet(new long[]{0x0000000000000002L,0x0000000400000000L});
-        public static final BitSet FOLLOW_63 = new BitSet(new long[]{0x0000000000000000L,0x0000001000000000L});
+        public static final BitSet FOLLOW_60 = new BitSet(new long[]{0x0000000000000000L,0x0000000200000000L});
+        public static final BitSet FOLLOW_61 = new BitSet(new long[]{0x0000000000000000L,0x0000000000800000L});
+        public static final BitSet FOLLOW_62 = new BitSet(new long[]{0x0000400000000000L,0x0000000800000000L});
+        public static final BitSet FOLLOW_63 = new BitSet(new long[]{0x0000000000000002L,0x0000000800000000L});
         public static final BitSet FOLLOW_64 = new BitSet(new long[]{0x0000000000000000L,0x0000002000000000L});
-        public static final BitSet FOLLOW_65 = new BitSet(new long[]{0x1000200000000000L,0x0000004000000000L});
-        public static final BitSet FOLLOW_66 = new BitSet(new long[]{0x0000000200000000L});
-        public static final BitSet FOLLOW_67 = new BitSet(new long[]{0x6008000000000000L,0x0000018000000000L});
-        public static final BitSet FOLLOW_68 = new BitSet(new long[]{0x0000000000000000L,0x0000020000000000L});
-        public static final BitSet FOLLOW_69 = new BitSet(new long[]{0x0000000000000000L,0x0000080000000000L});
-        public static final BitSet FOLLOW_70 = new BitSet(new long[]{0x0000000000000010L,0x0000100000000000L});
-        public static final BitSet FOLLOW_71 = new BitSet(new long[]{0x0000000000000000L,0x0000040000000000L});
-        public static final BitSet FOLLOW_72 = new BitSet(new long[]{0x0000000000000000L,0x0000600000000000L});
-        public static final BitSet FOLLOW_73 = new BitSet(new long[]{0x000000000007E000L});
-        public static final BitSet FOLLOW_74 = new BitSet(new long[]{0x0000000000000000L,0x0000800000000000L});
-        public static final BitSet FOLLOW_75 = new BitSet(new long[]{0x0000000000000000L,0x0002000000000000L});
-        public static final BitSet FOLLOW_76 = new BitSet(new long[]{0x0000000000180000L});
-        public static final BitSet FOLLOW_77 = new BitSet(new long[]{0x0000000000000000L,0x0004000000000000L});
+        public static final BitSet FOLLOW_65 = new BitSet(new long[]{0x0000000000000000L,0x0000004000000000L});
+        public static final BitSet FOLLOW_66 = new BitSet(new long[]{0x1000200000000000L,0x0000008000000000L});
+        public static final BitSet FOLLOW_67 = new BitSet(new long[]{0x0000000200000000L});
+        public static final BitSet FOLLOW_68 = new BitSet(new long[]{0x6008000000000000L,0x0000030000000000L});
+        public static final BitSet FOLLOW_69 = new BitSet(new long[]{0x0000000000000000L,0x0000040000000000L});
+        public static final BitSet FOLLOW_70 = new BitSet(new long[]{0x0000000000000000L,0x0000100000000000L});
+        public static final BitSet FOLLOW_71 = new BitSet(new long[]{0x0000000000000010L,0x0000200000000000L});
+        public static final BitSet FOLLOW_72 = new BitSet(new long[]{0x0000000000000000L,0x0000080000000000L});
+        public static final BitSet FOLLOW_73 = new BitSet(new long[]{0x0000000000000000L,0x0000C00000000000L});
+        public static final BitSet FOLLOW_74 = new BitSet(new long[]{0x000000000007E000L});
+        public static final BitSet FOLLOW_75 = new BitSet(new long[]{0x0000000000000000L,0x0001000000000000L});
+        public static final BitSet FOLLOW_76 = new BitSet(new long[]{0x0000000000000000L,0x0004000000000000L});
+        public static final BitSet FOLLOW_77 = new BitSet(new long[]{0x0000000000180000L});
         public static final BitSet FOLLOW_78 = new BitSet(new long[]{0x0000000000000000L,0x0008000000000000L});
-        public static final BitSet FOLLOW_79 = new BitSet(new long[]{0x000000000F000000L});
-        public static final BitSet FOLLOW_80 = new BitSet(new long[]{0x0000000000000000L,0x0010000000000000L});
-        public static final BitSet FOLLOW_81 = new BitSet(new long[]{0x0000000FF0000000L});
-        public static final BitSet FOLLOW_82 = new BitSet(new long[]{0x0000000000000000L,0x0020000000000000L});
+        public static final BitSet FOLLOW_79 = new BitSet(new long[]{0x0000000000000000L,0x0010000000000000L});
+        public static final BitSet FOLLOW_80 = new BitSet(new long[]{0x000000000F000000L});
+        public static final BitSet FOLLOW_81 = new BitSet(new long[]{0x0000000000000000L,0x0020000000000000L});
+        public static final BitSet FOLLOW_82 = new BitSet(new long[]{0x0000000FF0000000L});
         public static final BitSet FOLLOW_83 = new BitSet(new long[]{0x0000000000000000L,0x0040000000000000L});
-        public static final BitSet FOLLOW_84 = new BitSet(new long[]{0x0000007000000000L});
-        public static final BitSet FOLLOW_85 = new BitSet(new long[]{0x0000000000000000L,0x0080000000000000L});
-        public static final BitSet FOLLOW_86 = new BitSet(new long[]{0x0000038000000000L});
-        public static final BitSet FOLLOW_87 = new BitSet(new long[]{0x0000000000000000L,0x0100000000000000L});
+        public static final BitSet FOLLOW_84 = new BitSet(new long[]{0x0000000000000000L,0x0080000000000000L});
+        public static final BitSet FOLLOW_85 = new BitSet(new long[]{0x0000007000000000L});
+        public static final BitSet FOLLOW_86 = new BitSet(new long[]{0x0000000000000000L,0x0100000000000000L});
+        public static final BitSet FOLLOW_87 = new BitSet(new long[]{0x0000038000000000L});
+        public static final BitSet FOLLOW_88 = new BitSet(new long[]{0x0000000000000000L,0x0200000000000000L});
     }
 
 

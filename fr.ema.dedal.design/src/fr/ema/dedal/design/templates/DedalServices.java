@@ -45,7 +45,7 @@ public class DedalServices {
 	 */
 
 	public static void generateBModel(DedalDiagram dd) {
-
+		System.out.println("generate B Models");
 		// Initialize the architectural model
 		dedalInstance = dd;
 		for (ArchitectureDescription arch : dd.getArchitectureDescriptions()) {

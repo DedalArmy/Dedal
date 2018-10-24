@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link dedal.Connection#getServerIntElem <em>Server Int Elem</em>}</li>
  *   <li>{@link dedal.Connection#getClientIntElem <em>Client Int Elem</em>}</li>
  *   <li>{@link dedal.Connection#getRefID <em>Ref ID</em>}</li>
+ *   <li>{@link dedal.Connection#getProperty <em>Property</em>}</li>
  * </ul>
  *
  * @see dedal.DedalPackage#getConnection()
@@ -101,5 +102,31 @@ public interface Connection extends EObject {
 	 * @generated
 	 */
 	void setRefID(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Property</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Property</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Property</em>' attribute.
+	 * @see #setProperty(String)
+	 * @see dedal.DedalPackage#getConnection_Property()
+	 * @model
+	 * @generated
+	 */
+	String getProperty();
+
+	/**
+	 * Sets the value of the '{@link dedal.Connection#getProperty <em>Property</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Property</em>' attribute.
+	 * @see #getProperty()
+	 * @generated
+	 */
+	void setProperty(String value);
 
 } // Connection

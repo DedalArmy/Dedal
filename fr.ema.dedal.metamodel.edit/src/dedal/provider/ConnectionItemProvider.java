@@ -63,6 +63,7 @@ public class ConnectionItemProvider
 			addServerIntElemPropertyDescriptor(object);
 			addClientIntElemPropertyDescriptor(object);
 			addRefIDPropertyDescriptor(object);
+			addPropertyPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -134,6 +135,28 @@ public class ConnectionItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Property feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addPropertyPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Connection_property_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Connection_property_feature", "_UI_Connection_type"),
+				 DedalPackage.Literals.CONNECTION__PROPERTY,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -161,6 +184,7 @@ public class ConnectionItemProvider
 
 		switch (notification.getFeatureID(Connection.class)) {
 			case DedalPackage.CONNECTION__REF_ID:
+			case DedalPackage.CONNECTION__PROPERTY:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

@@ -2540,31 +2540,35 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cClass_connectionKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cRefIDAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cRefIDEStringParserRuleCall_1_0 = (RuleCall)cRefIDAssignment_1.eContents().get(0);
-		private final Keyword cClientKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cClientClassElemAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final CrossReference cClientClassElemCompClassCrossReference_3_0 = (CrossReference)cClientClassElemAssignment_3.eContents().get(0);
-		private final RuleCall cClientClassElemCompClassEStringParserRuleCall_3_0_1 = (RuleCall)cClientClassElemCompClassCrossReference_3_0.eContents().get(1);
-		private final Keyword cFullStopKeyword_4 = (Keyword)cGroup.eContents().get(4);
-		private final Assignment cClientIntElemAssignment_5 = (Assignment)cGroup.eContents().get(5);
-		private final CrossReference cClientIntElemInteractionCrossReference_5_0 = (CrossReference)cClientIntElemAssignment_5.eContents().get(0);
-		private final RuleCall cClientIntElemInteractionEStringParserRuleCall_5_0_1 = (RuleCall)cClientIntElemInteractionCrossReference_5_0.eContents().get(1);
-		private final Keyword cServerKeyword_6 = (Keyword)cGroup.eContents().get(6);
-		private final Assignment cServerClassElemAssignment_7 = (Assignment)cGroup.eContents().get(7);
-		private final CrossReference cServerClassElemCompClassCrossReference_7_0 = (CrossReference)cServerClassElemAssignment_7.eContents().get(0);
-		private final RuleCall cServerClassElemCompClassEStringParserRuleCall_7_0_1 = (RuleCall)cServerClassElemCompClassCrossReference_7_0.eContents().get(1);
-		private final Keyword cFullStopKeyword_8 = (Keyword)cGroup.eContents().get(8);
-		private final Assignment cServerIntElemAssignment_9 = (Assignment)cGroup.eContents().get(9);
-		private final CrossReference cServerIntElemInteractionCrossReference_9_0 = (CrossReference)cServerIntElemAssignment_9.eContents().get(0);
-		private final RuleCall cServerIntElemInteractionEStringParserRuleCall_9_0_1 = (RuleCall)cServerIntElemInteractionCrossReference_9_0.eContents().get(1);
+		private final Keyword cPropertyKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Assignment cPropertyAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cPropertyEStringParserRuleCall_3_0 = (RuleCall)cPropertyAssignment_3.eContents().get(0);
+		private final Keyword cClientKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		private final Assignment cClientClassElemAssignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final CrossReference cClientClassElemCompClassCrossReference_5_0 = (CrossReference)cClientClassElemAssignment_5.eContents().get(0);
+		private final RuleCall cClientClassElemCompClassEStringParserRuleCall_5_0_1 = (RuleCall)cClientClassElemCompClassCrossReference_5_0.eContents().get(1);
+		private final Keyword cFullStopKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Assignment cClientIntElemAssignment_7 = (Assignment)cGroup.eContents().get(7);
+		private final CrossReference cClientIntElemInteractionCrossReference_7_0 = (CrossReference)cClientIntElemAssignment_7.eContents().get(0);
+		private final RuleCall cClientIntElemInteractionEStringParserRuleCall_7_0_1 = (RuleCall)cClientIntElemInteractionCrossReference_7_0.eContents().get(1);
+		private final Keyword cServerKeyword_8 = (Keyword)cGroup.eContents().get(8);
+		private final Assignment cServerClassElemAssignment_9 = (Assignment)cGroup.eContents().get(9);
+		private final CrossReference cServerClassElemCompClassCrossReference_9_0 = (CrossReference)cServerClassElemAssignment_9.eContents().get(0);
+		private final RuleCall cServerClassElemCompClassEStringParserRuleCall_9_0_1 = (RuleCall)cServerClassElemCompClassCrossReference_9_0.eContents().get(1);
+		private final Keyword cFullStopKeyword_10 = (Keyword)cGroup.eContents().get(10);
+		private final Assignment cServerIntElemAssignment_11 = (Assignment)cGroup.eContents().get(11);
+		private final CrossReference cServerIntElemInteractionCrossReference_11_0 = (CrossReference)cServerIntElemAssignment_11.eContents().get(0);
+		private final RuleCall cServerIntElemInteractionEStringParserRuleCall_11_0_1 = (RuleCall)cServerIntElemInteractionCrossReference_11_0.eContents().get(1);
 		
 		//// From old metamodel
 		//ClassConnection dedal::ClassConnection:
 		//	'class_connection' refID=EString
+		//	'property' property=EString
 		//	'client' clientClassElem=[dedal::CompClass|EString] '.' clientIntElem=[dedal::Interaction|EString]
 		//	'server' serverClassElem=[dedal::CompClass|EString] '.' serverIntElem=[dedal::Interaction|EString];
 		@Override public ParserRule getRule() { return rule; }
 
-		//'class_connection' refID=EString 'client' clientClassElem=[dedal::CompClass|EString] '.'
+		//'class_connection' refID=EString 'property' property=EString 'client' clientClassElem=[dedal::CompClass|EString] '.'
 		//clientIntElem=[dedal::Interaction|EString] 'server' serverClassElem=[dedal::CompClass|EString] '.'
 		//serverIntElem=[dedal::Interaction|EString]
 		public Group getGroup() { return cGroup; }
@@ -2578,53 +2582,62 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		//EString
 		public RuleCall getRefIDEStringParserRuleCall_1_0() { return cRefIDEStringParserRuleCall_1_0; }
 
+		//'property'
+		public Keyword getPropertyKeyword_2() { return cPropertyKeyword_2; }
+
+		//property=EString
+		public Assignment getPropertyAssignment_3() { return cPropertyAssignment_3; }
+
+		//EString
+		public RuleCall getPropertyEStringParserRuleCall_3_0() { return cPropertyEStringParserRuleCall_3_0; }
+
 		//'client'
-		public Keyword getClientKeyword_2() { return cClientKeyword_2; }
+		public Keyword getClientKeyword_4() { return cClientKeyword_4; }
 
 		//clientClassElem=[dedal::CompClass|EString]
-		public Assignment getClientClassElemAssignment_3() { return cClientClassElemAssignment_3; }
+		public Assignment getClientClassElemAssignment_5() { return cClientClassElemAssignment_5; }
 
 		//[dedal::CompClass|EString]
-		public CrossReference getClientClassElemCompClassCrossReference_3_0() { return cClientClassElemCompClassCrossReference_3_0; }
+		public CrossReference getClientClassElemCompClassCrossReference_5_0() { return cClientClassElemCompClassCrossReference_5_0; }
 
 		//EString
-		public RuleCall getClientClassElemCompClassEStringParserRuleCall_3_0_1() { return cClientClassElemCompClassEStringParserRuleCall_3_0_1; }
+		public RuleCall getClientClassElemCompClassEStringParserRuleCall_5_0_1() { return cClientClassElemCompClassEStringParserRuleCall_5_0_1; }
 
 		//'.'
-		public Keyword getFullStopKeyword_4() { return cFullStopKeyword_4; }
+		public Keyword getFullStopKeyword_6() { return cFullStopKeyword_6; }
 
 		//clientIntElem=[dedal::Interaction|EString]
-		public Assignment getClientIntElemAssignment_5() { return cClientIntElemAssignment_5; }
+		public Assignment getClientIntElemAssignment_7() { return cClientIntElemAssignment_7; }
 
 		//[dedal::Interaction|EString]
-		public CrossReference getClientIntElemInteractionCrossReference_5_0() { return cClientIntElemInteractionCrossReference_5_0; }
+		public CrossReference getClientIntElemInteractionCrossReference_7_0() { return cClientIntElemInteractionCrossReference_7_0; }
 
 		//EString
-		public RuleCall getClientIntElemInteractionEStringParserRuleCall_5_0_1() { return cClientIntElemInteractionEStringParserRuleCall_5_0_1; }
+		public RuleCall getClientIntElemInteractionEStringParserRuleCall_7_0_1() { return cClientIntElemInteractionEStringParserRuleCall_7_0_1; }
 
 		//'server'
-		public Keyword getServerKeyword_6() { return cServerKeyword_6; }
+		public Keyword getServerKeyword_8() { return cServerKeyword_8; }
 
 		//serverClassElem=[dedal::CompClass|EString]
-		public Assignment getServerClassElemAssignment_7() { return cServerClassElemAssignment_7; }
+		public Assignment getServerClassElemAssignment_9() { return cServerClassElemAssignment_9; }
 
 		//[dedal::CompClass|EString]
-		public CrossReference getServerClassElemCompClassCrossReference_7_0() { return cServerClassElemCompClassCrossReference_7_0; }
+		public CrossReference getServerClassElemCompClassCrossReference_9_0() { return cServerClassElemCompClassCrossReference_9_0; }
 
 		//EString
-		public RuleCall getServerClassElemCompClassEStringParserRuleCall_7_0_1() { return cServerClassElemCompClassEStringParserRuleCall_7_0_1; }
+		public RuleCall getServerClassElemCompClassEStringParserRuleCall_9_0_1() { return cServerClassElemCompClassEStringParserRuleCall_9_0_1; }
 
 		//'.'
-		public Keyword getFullStopKeyword_8() { return cFullStopKeyword_8; }
+		public Keyword getFullStopKeyword_10() { return cFullStopKeyword_10; }
 
 		//serverIntElem=[dedal::Interaction|EString]
-		public Assignment getServerIntElemAssignment_9() { return cServerIntElemAssignment_9; }
+		public Assignment getServerIntElemAssignment_11() { return cServerIntElemAssignment_11; }
 
 		//[dedal::Interaction|EString]
-		public CrossReference getServerIntElemInteractionCrossReference_9_0() { return cServerIntElemInteractionCrossReference_9_0; }
+		public CrossReference getServerIntElemInteractionCrossReference_11_0() { return cServerIntElemInteractionCrossReference_11_0; }
 
 		//EString
-		public RuleCall getServerIntElemInteractionEStringParserRuleCall_9_0_1() { return cServerIntElemInteractionEStringParserRuleCall_9_0_1; }
+		public RuleCall getServerIntElemInteractionEStringParserRuleCall_11_0_1() { return cServerIntElemInteractionEStringParserRuleCall_11_0_1; }
 	}
 
 	public class Port_ImplElements extends AbstractParserRuleElementFinder {
@@ -4578,6 +4591,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	//// From old metamodel
 	//ClassConnection dedal::ClassConnection:
 	//	'class_connection' refID=EString
+	//	'property' property=EString
 	//	'client' clientClassElem=[dedal::CompClass|EString] '.' clientIntElem=[dedal::Interaction|EString]
 	//	'server' serverClassElem=[dedal::CompClass|EString] '.' serverIntElem=[dedal::Interaction|EString];
 	public ClassConnectionElements getClassConnectionAccess() {

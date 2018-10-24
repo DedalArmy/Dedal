@@ -163,6 +163,7 @@ public abstract class AbstractDedalADLSemanticSequencer extends AbstractDelegati
 	 * Constraint:
 	 *     (
 	 *         refID=EString 
+	 *         property=EString 
 	 *         clientClassElem=[CompClass|EString] 
 	 *         clientIntElem=[Interaction|EString] 
 	 *         serverClassElem=[CompClass|EString] 
@@ -173,6 +174,8 @@ public abstract class AbstractDedalADLSemanticSequencer extends AbstractDelegati
 		if (errorAcceptor != null) {
 			if (transientValues.isValueTransient(semanticObject, DedalPackage.Literals.CONNECTION__REF_ID) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, DedalPackage.Literals.CONNECTION__REF_ID));
+			if (transientValues.isValueTransient(semanticObject, DedalPackage.Literals.CONNECTION__PROPERTY) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, DedalPackage.Literals.CONNECTION__PROPERTY));
 			if (transientValues.isValueTransient(semanticObject, DedalPackage.Literals.CLASS_CONNECTION__CLIENT_CLASS_ELEM) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, DedalPackage.Literals.CLASS_CONNECTION__CLIENT_CLASS_ELEM));
 			if (transientValues.isValueTransient(semanticObject, DedalPackage.Literals.CONNECTION__CLIENT_INT_ELEM) == ValueTransient.YES)
@@ -184,10 +187,11 @@ public abstract class AbstractDedalADLSemanticSequencer extends AbstractDelegati
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
 		feeder.accept(grammarAccess.getClassConnectionAccess().getRefIDEStringParserRuleCall_1_0(), semanticObject.getRefID());
-		feeder.accept(grammarAccess.getClassConnectionAccess().getClientClassElemCompClassEStringParserRuleCall_3_0_1(), semanticObject.eGet(DedalPackage.Literals.CLASS_CONNECTION__CLIENT_CLASS_ELEM, false));
-		feeder.accept(grammarAccess.getClassConnectionAccess().getClientIntElemInteractionEStringParserRuleCall_5_0_1(), semanticObject.eGet(DedalPackage.Literals.CONNECTION__CLIENT_INT_ELEM, false));
-		feeder.accept(grammarAccess.getClassConnectionAccess().getServerClassElemCompClassEStringParserRuleCall_7_0_1(), semanticObject.eGet(DedalPackage.Literals.CLASS_CONNECTION__SERVER_CLASS_ELEM, false));
-		feeder.accept(grammarAccess.getClassConnectionAccess().getServerIntElemInteractionEStringParserRuleCall_9_0_1(), semanticObject.eGet(DedalPackage.Literals.CONNECTION__SERVER_INT_ELEM, false));
+		feeder.accept(grammarAccess.getClassConnectionAccess().getPropertyEStringParserRuleCall_3_0(), semanticObject.getProperty());
+		feeder.accept(grammarAccess.getClassConnectionAccess().getClientClassElemCompClassEStringParserRuleCall_5_0_1(), semanticObject.eGet(DedalPackage.Literals.CLASS_CONNECTION__CLIENT_CLASS_ELEM, false));
+		feeder.accept(grammarAccess.getClassConnectionAccess().getClientIntElemInteractionEStringParserRuleCall_7_0_1(), semanticObject.eGet(DedalPackage.Literals.CONNECTION__CLIENT_INT_ELEM, false));
+		feeder.accept(grammarAccess.getClassConnectionAccess().getServerClassElemCompClassEStringParserRuleCall_9_0_1(), semanticObject.eGet(DedalPackage.Literals.CLASS_CONNECTION__SERVER_CLASS_ELEM, false));
+		feeder.accept(grammarAccess.getClassConnectionAccess().getServerIntElemInteractionEStringParserRuleCall_11_0_1(), semanticObject.eGet(DedalPackage.Literals.CONNECTION__SERVER_INT_ELEM, false));
 		feeder.finish();
 	}
 	

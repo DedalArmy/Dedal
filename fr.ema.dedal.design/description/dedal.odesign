@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="dedal" version="11.1.1.201610211630">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="dedal" version="12.0.0.2017041100">
   <ownedViewpoints name="fr.ema.dedal.design.viewpoint" label="dedal">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="fr.ema.dedal.design.viewpoint.specificationDiagram" label="SpecificationDiagram" titleExpression="[thisEObject.name/]" initialisation="true" domainClass="Specification">
       <metamodel href="../../fr.ema.dedal.metamodel/model/dedal.ecore#/"/>
@@ -1125,12 +1125,6 @@
           </style>
         </containerMappings>
         <toolSections name="dedal.tool" label="dedal tools" icon="/fr.ema.dedal.design/images/imageDedalTools.png">
-          <ownedTools xsi:type="tool_1:OperationAction" name="generatemodel.id" label="Generate B Models">
-            <view name="views"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.generateBModel()/]"/>
-            </initialOperation>
-          </ownedTools>
           <ownedTools xsi:type="tool_1:OperationAction" name="consistencyChecking.id" label="Check Consistency" precondition="[self.oclIsKindOf(ArchitectureDescription)/]">
             <view name="views"/>
             <initialOperation>
@@ -1292,6 +1286,12 @@
             <containerViewVariable name="containerView"/>
             <containerVariable name="container"/>
             <representationNameVariable name="diagramName"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:OperationAction" name="generatemodel.id" label="Generate B Models">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.generateBModel()/]"/>
+            </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool_1:OperationAction" name="inspect.id" label="Inspect Library">
             <view name="views"/>

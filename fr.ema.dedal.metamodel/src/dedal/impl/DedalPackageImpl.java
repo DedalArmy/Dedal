@@ -391,6 +391,15 @@ public class DedalPackageImpl extends EPackageImpl implements DedalPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getConnection_Property() {
+		return (EAttribute)connectionEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getInterface() {
 		return interfaceEClass;
 	}
@@ -1075,6 +1084,7 @@ public class DedalPackageImpl extends EPackageImpl implements DedalPackage {
 		createEReference(connectionEClass, CONNECTION__SERVER_INT_ELEM);
 		createEReference(connectionEClass, CONNECTION__CLIENT_INT_ELEM);
 		createEAttribute(connectionEClass, CONNECTION__REF_ID);
+		createEAttribute(connectionEClass, CONNECTION__PROPERTY);
 
 		interfaceEClass = createEClass(INTERFACE);
 		createEAttribute(interfaceEClass, INTERFACE__DIRECTION);
@@ -1229,6 +1239,7 @@ public class DedalPackageImpl extends EPackageImpl implements DedalPackage {
 		initEReference(getConnection_ServerIntElem(), this.getInteraction(), null, "serverIntElem", null, 0, 1, Connection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getConnection_ClientIntElem(), this.getInteraction(), null, "clientIntElem", null, 0, 1, Connection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getConnection_RefID(), ecorePackage.getEString(), "refID", null, 1, 1, Connection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getConnection_Property(), ecorePackage.getEString(), "property", null, 0, 1, Connection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(interfaceEClass, Interface.class, "Interface", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getInterface_Direction(), this.getDIRECTION(), "direction", null, 1, 1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
