@@ -2485,7 +2485,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleSpecification"
-    // InternalDedalADL.g:942:1: ruleSpecification returns [EObject current=null] : (otherlv_0= 'specification' ( (lv_name_1_0= rulespecification_name ) ) otherlv_2= 'component_roles' ( (lv_specComponents_3_0= ruleCompRole ) ) (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )* (otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )* )? (otherlv_9= 'versionID' this_REVISION_NUMB_10= RULE_REVISION_NUMB )? (otherlv_11= 'pre_version' rulepre_version )? (otherlv_13= 'by' rulechange )? (otherlv_15= 'interface_types' ( (lv_interfaceTypes_16_0= ruleInterfaceType ) ) (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )* )? ) ;
+    // InternalDedalADL.g:942:1: ruleSpecification returns [EObject current=null] : (otherlv_0= 'specification' ( (lv_name_1_0= rulespecification_name ) ) (otherlv_2= 'component_roles' ( (lv_specComponents_3_0= ruleCompRole ) ) (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )* )? (otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )* )? (otherlv_9= 'versionID' this_REVISION_NUMB_10= RULE_REVISION_NUMB )? (otherlv_11= 'pre_version' rulepre_version )? (otherlv_13= 'by' rulechange )? (otherlv_15= 'interface_types' ( (lv_interfaceTypes_16_0= ruleInterfaceType ) ) (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )* )? ) ;
     public final EObject ruleSpecification() throws RecognitionException {
         EObject current = null;
 
@@ -2517,11 +2517,11 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // InternalDedalADL.g:945:28: ( (otherlv_0= 'specification' ( (lv_name_1_0= rulespecification_name ) ) otherlv_2= 'component_roles' ( (lv_specComponents_3_0= ruleCompRole ) ) (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )* (otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )* )? (otherlv_9= 'versionID' this_REVISION_NUMB_10= RULE_REVISION_NUMB )? (otherlv_11= 'pre_version' rulepre_version )? (otherlv_13= 'by' rulechange )? (otherlv_15= 'interface_types' ( (lv_interfaceTypes_16_0= ruleInterfaceType ) ) (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )* )? ) )
-            // InternalDedalADL.g:946:1: (otherlv_0= 'specification' ( (lv_name_1_0= rulespecification_name ) ) otherlv_2= 'component_roles' ( (lv_specComponents_3_0= ruleCompRole ) ) (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )* (otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )* )? (otherlv_9= 'versionID' this_REVISION_NUMB_10= RULE_REVISION_NUMB )? (otherlv_11= 'pre_version' rulepre_version )? (otherlv_13= 'by' rulechange )? (otherlv_15= 'interface_types' ( (lv_interfaceTypes_16_0= ruleInterfaceType ) ) (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )* )? )
+            // InternalDedalADL.g:945:28: ( (otherlv_0= 'specification' ( (lv_name_1_0= rulespecification_name ) ) (otherlv_2= 'component_roles' ( (lv_specComponents_3_0= ruleCompRole ) ) (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )* )? (otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )* )? (otherlv_9= 'versionID' this_REVISION_NUMB_10= RULE_REVISION_NUMB )? (otherlv_11= 'pre_version' rulepre_version )? (otherlv_13= 'by' rulechange )? (otherlv_15= 'interface_types' ( (lv_interfaceTypes_16_0= ruleInterfaceType ) ) (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )* )? ) )
+            // InternalDedalADL.g:946:1: (otherlv_0= 'specification' ( (lv_name_1_0= rulespecification_name ) ) (otherlv_2= 'component_roles' ( (lv_specComponents_3_0= ruleCompRole ) ) (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )* )? (otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )* )? (otherlv_9= 'versionID' this_REVISION_NUMB_10= RULE_REVISION_NUMB )? (otherlv_11= 'pre_version' rulepre_version )? (otherlv_13= 'by' rulechange )? (otherlv_15= 'interface_types' ( (lv_interfaceTypes_16_0= ruleInterfaceType ) ) (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )* )? )
             {
-            // InternalDedalADL.g:946:1: (otherlv_0= 'specification' ( (lv_name_1_0= rulespecification_name ) ) otherlv_2= 'component_roles' ( (lv_specComponents_3_0= ruleCompRole ) ) (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )* (otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )* )? (otherlv_9= 'versionID' this_REVISION_NUMB_10= RULE_REVISION_NUMB )? (otherlv_11= 'pre_version' rulepre_version )? (otherlv_13= 'by' rulechange )? (otherlv_15= 'interface_types' ( (lv_interfaceTypes_16_0= ruleInterfaceType ) ) (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )* )? )
-            // InternalDedalADL.g:946:3: otherlv_0= 'specification' ( (lv_name_1_0= rulespecification_name ) ) otherlv_2= 'component_roles' ( (lv_specComponents_3_0= ruleCompRole ) ) (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )* (otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )* )? (otherlv_9= 'versionID' this_REVISION_NUMB_10= RULE_REVISION_NUMB )? (otherlv_11= 'pre_version' rulepre_version )? (otherlv_13= 'by' rulechange )? (otherlv_15= 'interface_types' ( (lv_interfaceTypes_16_0= ruleInterfaceType ) ) (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )* )?
+            // InternalDedalADL.g:946:1: (otherlv_0= 'specification' ( (lv_name_1_0= rulespecification_name ) ) (otherlv_2= 'component_roles' ( (lv_specComponents_3_0= ruleCompRole ) ) (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )* )? (otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )* )? (otherlv_9= 'versionID' this_REVISION_NUMB_10= RULE_REVISION_NUMB )? (otherlv_11= 'pre_version' rulepre_version )? (otherlv_13= 'by' rulechange )? (otherlv_15= 'interface_types' ( (lv_interfaceTypes_16_0= ruleInterfaceType ) ) (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )* )? )
+            // InternalDedalADL.g:946:3: otherlv_0= 'specification' ( (lv_name_1_0= rulespecification_name ) ) (otherlv_2= 'component_roles' ( (lv_specComponents_3_0= ruleCompRole ) ) (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )* )? (otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )* )? (otherlv_9= 'versionID' this_REVISION_NUMB_10= RULE_REVISION_NUMB )? (otherlv_11= 'pre_version' rulepre_version )? (otherlv_13= 'by' rulechange )? (otherlv_15= 'interface_types' ( (lv_interfaceTypes_16_0= ruleInterfaceType ) ) (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )* )?
             {
             otherlv_0=(Token)match(input,27,FollowSets000.FOLLOW_22); 
 
@@ -2558,120 +2558,137 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,28,FollowSets000.FOLLOW_24); 
+            // InternalDedalADL.g:968:2: (otherlv_2= 'component_roles' ( (lv_specComponents_3_0= ruleCompRole ) ) (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )* )?
+            int alt22=2;
+            int LA22_0 = input.LA(1);
 
-                	newLeafNode(otherlv_2, grammarAccess.getSpecificationAccess().getComponent_rolesKeyword_2());
-                
-            // InternalDedalADL.g:972:1: ( (lv_specComponents_3_0= ruleCompRole ) )
-            // InternalDedalADL.g:973:1: (lv_specComponents_3_0= ruleCompRole )
-            {
-            // InternalDedalADL.g:973:1: (lv_specComponents_3_0= ruleCompRole )
-            // InternalDedalADL.g:974:3: lv_specComponents_3_0= ruleCompRole
-            {
-             
-            	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecComponentsCompRoleParserRuleCall_3_0()); 
-            	    
-            pushFollow(FollowSets000.FOLLOW_25);
-            lv_specComponents_3_0=ruleCompRole();
-
-            state._fsp--;
-
-
-            	        if (current==null) {
-            	            current = createModelElementForParent(grammarAccess.getSpecificationRule());
-            	        }
-                   		add(
-                   			current, 
-                   			"specComponents",
-                    		lv_specComponents_3_0, 
-                    		"fr.ema.dedal.xtext.DedalADL.CompRole");
-            	        afterParserOrEnumRuleCall();
-            	    
-
+            if ( (LA22_0==28) ) {
+                alt22=1;
             }
+            switch (alt22) {
+                case 1 :
+                    // InternalDedalADL.g:968:4: otherlv_2= 'component_roles' ( (lv_specComponents_3_0= ruleCompRole ) ) (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )*
+                    {
+                    otherlv_2=(Token)match(input,28,FollowSets000.FOLLOW_24); 
+
+                        	newLeafNode(otherlv_2, grammarAccess.getSpecificationAccess().getComponent_rolesKeyword_2_0());
+                        
+                    // InternalDedalADL.g:972:1: ( (lv_specComponents_3_0= ruleCompRole ) )
+                    // InternalDedalADL.g:973:1: (lv_specComponents_3_0= ruleCompRole )
+                    {
+                    // InternalDedalADL.g:973:1: (lv_specComponents_3_0= ruleCompRole )
+                    // InternalDedalADL.g:974:3: lv_specComponents_3_0= ruleCompRole
+                    {
+                     
+                    	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecComponentsCompRoleParserRuleCall_2_1_0()); 
+                    	    
+                    pushFollow(FollowSets000.FOLLOW_25);
+                    lv_specComponents_3_0=ruleCompRole();
+
+                    state._fsp--;
 
 
-            }
+                    	        if (current==null) {
+                    	            current = createModelElementForParent(grammarAccess.getSpecificationRule());
+                    	        }
+                           		add(
+                           			current, 
+                           			"specComponents",
+                            		lv_specComponents_3_0, 
+                            		"fr.ema.dedal.xtext.DedalADL.CompRole");
+                    	        afterParserOrEnumRuleCall();
+                    	    
 
-            // InternalDedalADL.g:990:2: (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )*
-            loop21:
-            do {
-                int alt21=2;
-                int LA21_0 = input.LA(1);
-
-                if ( (LA21_0==15) ) {
-                    int LA21_2 = input.LA(2);
-
-                    if ( (LA21_2==33) ) {
-                        alt21=1;
                     }
 
 
-                }
+                    }
+
+                    // InternalDedalADL.g:990:2: (otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) ) )*
+                    loop21:
+                    do {
+                        int alt21=2;
+                        int LA21_0 = input.LA(1);
+
+                        if ( (LA21_0==15) ) {
+                            int LA21_2 = input.LA(2);
+
+                            if ( (LA21_2==33) ) {
+                                alt21=1;
+                            }
 
 
-                switch (alt21) {
-            	case 1 :
-            	    // InternalDedalADL.g:990:4: otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) )
-            	    {
-            	    otherlv_4=(Token)match(input,15,FollowSets000.FOLLOW_24); 
-
-            	        	newLeafNode(otherlv_4, grammarAccess.getSpecificationAccess().getSemicolonKeyword_4_0());
-            	        
-            	    // InternalDedalADL.g:994:1: ( (lv_specComponents_5_0= ruleCompRole ) )
-            	    // InternalDedalADL.g:995:1: (lv_specComponents_5_0= ruleCompRole )
-            	    {
-            	    // InternalDedalADL.g:995:1: (lv_specComponents_5_0= ruleCompRole )
-            	    // InternalDedalADL.g:996:3: lv_specComponents_5_0= ruleCompRole
-            	    {
-            	     
-            	    	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecComponentsCompRoleParserRuleCall_4_1_0()); 
-            	    	    
-            	    pushFollow(FollowSets000.FOLLOW_25);
-            	    lv_specComponents_5_0=ruleCompRole();
-
-            	    state._fsp--;
+                        }
 
 
-            	    	        if (current==null) {
-            	    	            current = createModelElementForParent(grammarAccess.getSpecificationRule());
-            	    	        }
-            	           		add(
-            	           			current, 
-            	           			"specComponents",
-            	            		lv_specComponents_5_0, 
-            	            		"fr.ema.dedal.xtext.DedalADL.CompRole");
-            	    	        afterParserOrEnumRuleCall();
-            	    	    
+                        switch (alt21) {
+                    	case 1 :
+                    	    // InternalDedalADL.g:990:4: otherlv_4= ';' ( (lv_specComponents_5_0= ruleCompRole ) )
+                    	    {
+                    	    otherlv_4=(Token)match(input,15,FollowSets000.FOLLOW_24); 
 
-            	    }
+                    	        	newLeafNode(otherlv_4, grammarAccess.getSpecificationAccess().getSemicolonKeyword_2_2_0());
+                    	        
+                    	    // InternalDedalADL.g:994:1: ( (lv_specComponents_5_0= ruleCompRole ) )
+                    	    // InternalDedalADL.g:995:1: (lv_specComponents_5_0= ruleCompRole )
+                    	    {
+                    	    // InternalDedalADL.g:995:1: (lv_specComponents_5_0= ruleCompRole )
+                    	    // InternalDedalADL.g:996:3: lv_specComponents_5_0= ruleCompRole
+                    	    {
+                    	     
+                    	    	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecComponentsCompRoleParserRuleCall_2_2_1_0()); 
+                    	    	    
+                    	    pushFollow(FollowSets000.FOLLOW_25);
+                    	    lv_specComponents_5_0=ruleCompRole();
+
+                    	    state._fsp--;
 
 
-            	    }
+                    	    	        if (current==null) {
+                    	    	            current = createModelElementForParent(grammarAccess.getSpecificationRule());
+                    	    	        }
+                    	           		add(
+                    	           			current, 
+                    	           			"specComponents",
+                    	            		lv_specComponents_5_0, 
+                    	            		"fr.ema.dedal.xtext.DedalADL.CompRole");
+                    	    	        afterParserOrEnumRuleCall();
+                    	    	    
+
+                    	    }
 
 
-            	    }
-            	    break;
+                    	    }
 
-            	default :
-            	    break loop21;
-                }
-            } while (true);
 
-            // InternalDedalADL.g:1012:4: (otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )* )?
-            int alt23=2;
-            int LA23_0 = input.LA(1);
+                    	    }
+                    	    break;
 
-            if ( (LA23_0==29) ) {
-                alt23=1;
+                    	default :
+                    	    break loop21;
+                        }
+                    } while (true);
+
+
+                    }
+                    break;
+
             }
-            switch (alt23) {
+
+            // InternalDedalADL.g:1012:6: (otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )* )?
+            int alt24=2;
+            int LA24_0 = input.LA(1);
+
+            if ( (LA24_0==29) ) {
+                alt24=1;
+            }
+            switch (alt24) {
                 case 1 :
-                    // InternalDedalADL.g:1012:6: otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )*
+                    // InternalDedalADL.g:1012:8: otherlv_6= 'connections' ( (lv_specConnections_7_0= ruleRoleConnection ) ) ( (lv_specConnections_8_0= ruleRoleConnection ) )*
                     {
                     otherlv_6=(Token)match(input,29,FollowSets000.FOLLOW_26); 
 
-                        	newLeafNode(otherlv_6, grammarAccess.getSpecificationAccess().getConnectionsKeyword_5_0());
+                        	newLeafNode(otherlv_6, grammarAccess.getSpecificationAccess().getConnectionsKeyword_3_0());
                         
                     // InternalDedalADL.g:1016:1: ( (lv_specConnections_7_0= ruleRoleConnection ) )
                     // InternalDedalADL.g:1017:1: (lv_specConnections_7_0= ruleRoleConnection )
@@ -2680,7 +2697,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     // InternalDedalADL.g:1018:3: lv_specConnections_7_0= ruleRoleConnection
                     {
                      
-                    	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecConnectionsRoleConnectionParserRuleCall_5_1_0()); 
+                    	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecConnectionsRoleConnectionParserRuleCall_3_1_0()); 
                     	    
                     pushFollow(FollowSets000.FOLLOW_27);
                     lv_specConnections_7_0=ruleRoleConnection();
@@ -2705,17 +2722,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:1034:2: ( (lv_specConnections_8_0= ruleRoleConnection ) )*
-                    loop22:
+                    loop23:
                     do {
-                        int alt22=2;
-                        int LA22_0 = input.LA(1);
+                        int alt23=2;
+                        int LA23_0 = input.LA(1);
 
-                        if ( (LA22_0==45) ) {
-                            alt22=1;
+                        if ( (LA23_0==45) ) {
+                            alt23=1;
                         }
 
 
-                        switch (alt22) {
+                        switch (alt23) {
                     	case 1 :
                     	    // InternalDedalADL.g:1035:1: (lv_specConnections_8_0= ruleRoleConnection )
                     	    {
@@ -2723,7 +2740,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    // InternalDedalADL.g:1036:3: lv_specConnections_8_0= ruleRoleConnection
                     	    {
                     	     
-                    	    	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecConnectionsRoleConnectionParserRuleCall_5_2_0()); 
+                    	    	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecConnectionsRoleConnectionParserRuleCall_3_2_0()); 
                     	    	    
                     	    pushFollow(FollowSets000.FOLLOW_27);
                     	    lv_specConnections_8_0=ruleRoleConnection();
@@ -2749,7 +2766,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop22;
+                    	    break loop23;
                         }
                     } while (true);
 
@@ -2760,23 +2777,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1052:5: (otherlv_9= 'versionID' this_REVISION_NUMB_10= RULE_REVISION_NUMB )?
-            int alt24=2;
-            int LA24_0 = input.LA(1);
+            int alt25=2;
+            int LA25_0 = input.LA(1);
 
-            if ( (LA24_0==30) ) {
-                alt24=1;
+            if ( (LA25_0==30) ) {
+                alt25=1;
             }
-            switch (alt24) {
+            switch (alt25) {
                 case 1 :
                     // InternalDedalADL.g:1052:7: otherlv_9= 'versionID' this_REVISION_NUMB_10= RULE_REVISION_NUMB
                     {
                     otherlv_9=(Token)match(input,30,FollowSets000.FOLLOW_28); 
 
-                        	newLeafNode(otherlv_9, grammarAccess.getSpecificationAccess().getVersionIDKeyword_6_0());
+                        	newLeafNode(otherlv_9, grammarAccess.getSpecificationAccess().getVersionIDKeyword_4_0());
                         
                     this_REVISION_NUMB_10=(Token)match(input,RULE_REVISION_NUMB,FollowSets000.FOLLOW_29); 
                      
-                        newLeafNode(this_REVISION_NUMB_10, grammarAccess.getSpecificationAccess().getREVISION_NUMBTerminalRuleCall_6_1()); 
+                        newLeafNode(this_REVISION_NUMB_10, grammarAccess.getSpecificationAccess().getREVISION_NUMBTerminalRuleCall_4_1()); 
                         
 
                     }
@@ -2785,22 +2802,22 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1060:3: (otherlv_11= 'pre_version' rulepre_version )?
-            int alt25=2;
-            int LA25_0 = input.LA(1);
+            int alt26=2;
+            int LA26_0 = input.LA(1);
 
-            if ( (LA25_0==31) ) {
-                alt25=1;
+            if ( (LA26_0==31) ) {
+                alt26=1;
             }
-            switch (alt25) {
+            switch (alt26) {
                 case 1 :
                     // InternalDedalADL.g:1060:5: otherlv_11= 'pre_version' rulepre_version
                     {
                     otherlv_11=(Token)match(input,31,FollowSets000.FOLLOW_30); 
 
-                        	newLeafNode(otherlv_11, grammarAccess.getSpecificationAccess().getPre_versionKeyword_7_0());
+                        	newLeafNode(otherlv_11, grammarAccess.getSpecificationAccess().getPre_versionKeyword_5_0());
                         
                      
-                            newCompositeNode(grammarAccess.getSpecificationAccess().getPre_versionParserRuleCall_7_1()); 
+                            newCompositeNode(grammarAccess.getSpecificationAccess().getPre_versionParserRuleCall_5_1()); 
                         
                     pushFollow(FollowSets000.FOLLOW_31);
                     rulepre_version();
@@ -2817,22 +2834,22 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1072:3: (otherlv_13= 'by' rulechange )?
-            int alt26=2;
-            int LA26_0 = input.LA(1);
+            int alt27=2;
+            int LA27_0 = input.LA(1);
 
-            if ( (LA26_0==32) ) {
-                alt26=1;
+            if ( (LA27_0==32) ) {
+                alt27=1;
             }
-            switch (alt26) {
+            switch (alt27) {
                 case 1 :
                     // InternalDedalADL.g:1072:5: otherlv_13= 'by' rulechange
                     {
                     otherlv_13=(Token)match(input,32,FollowSets000.FOLLOW_32); 
 
-                        	newLeafNode(otherlv_13, grammarAccess.getSpecificationAccess().getByKeyword_8_0());
+                        	newLeafNode(otherlv_13, grammarAccess.getSpecificationAccess().getByKeyword_6_0());
                         
                      
-                            newCompositeNode(grammarAccess.getSpecificationAccess().getChangeParserRuleCall_8_1()); 
+                            newCompositeNode(grammarAccess.getSpecificationAccess().getChangeParserRuleCall_6_1()); 
                         
                     pushFollow(FollowSets000.FOLLOW_12);
                     rulechange();
@@ -2849,19 +2866,19 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1084:3: (otherlv_15= 'interface_types' ( (lv_interfaceTypes_16_0= ruleInterfaceType ) ) (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )* )?
-            int alt28=2;
-            int LA28_0 = input.LA(1);
+            int alt29=2;
+            int LA29_0 = input.LA(1);
 
-            if ( (LA28_0==20) ) {
-                alt28=1;
+            if ( (LA29_0==20) ) {
+                alt29=1;
             }
-            switch (alt28) {
+            switch (alt29) {
                 case 1 :
                     // InternalDedalADL.g:1084:5: otherlv_15= 'interface_types' ( (lv_interfaceTypes_16_0= ruleInterfaceType ) ) (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )*
                     {
                     otherlv_15=(Token)match(input,20,FollowSets000.FOLLOW_13); 
 
-                        	newLeafNode(otherlv_15, grammarAccess.getSpecificationAccess().getInterface_typesKeyword_9_0());
+                        	newLeafNode(otherlv_15, grammarAccess.getSpecificationAccess().getInterface_typesKeyword_7_0());
                         
                     // InternalDedalADL.g:1088:1: ( (lv_interfaceTypes_16_0= ruleInterfaceType ) )
                     // InternalDedalADL.g:1089:1: (lv_interfaceTypes_16_0= ruleInterfaceType )
@@ -2870,7 +2887,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     // InternalDedalADL.g:1090:3: lv_interfaceTypes_16_0= ruleInterfaceType
                     {
                      
-                    	        newCompositeNode(grammarAccess.getSpecificationAccess().getInterfaceTypesInterfaceTypeParserRuleCall_9_1_0()); 
+                    	        newCompositeNode(grammarAccess.getSpecificationAccess().getInterfaceTypesInterfaceTypeParserRuleCall_7_1_0()); 
                     	    
                     pushFollow(FollowSets000.FOLLOW_33);
                     lv_interfaceTypes_16_0=ruleInterfaceType();
@@ -2895,29 +2912,29 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:1106:2: (otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) ) )*
-                    loop27:
+                    loop28:
                     do {
-                        int alt27=2;
-                        int LA27_0 = input.LA(1);
+                        int alt28=2;
+                        int LA28_0 = input.LA(1);
 
-                        if ( (LA27_0==15) ) {
-                            int LA27_1 = input.LA(2);
+                        if ( (LA28_0==15) ) {
+                            int LA28_1 = input.LA(2);
 
-                            if ( (LA27_1==21) ) {
-                                alt27=1;
+                            if ( (LA28_1==21) ) {
+                                alt28=1;
                             }
 
 
                         }
 
 
-                        switch (alt27) {
+                        switch (alt28) {
                     	case 1 :
                     	    // InternalDedalADL.g:1106:4: otherlv_17= ';' ( (lv_interfaceTypes_18_0= ruleInterfaceType ) )
                     	    {
                     	    otherlv_17=(Token)match(input,15,FollowSets000.FOLLOW_13); 
 
-                    	        	newLeafNode(otherlv_17, grammarAccess.getSpecificationAccess().getSemicolonKeyword_9_2_0());
+                    	        	newLeafNode(otherlv_17, grammarAccess.getSpecificationAccess().getSemicolonKeyword_7_2_0());
                     	        
                     	    // InternalDedalADL.g:1110:1: ( (lv_interfaceTypes_18_0= ruleInterfaceType ) )
                     	    // InternalDedalADL.g:1111:1: (lv_interfaceTypes_18_0= ruleInterfaceType )
@@ -2926,7 +2943,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    // InternalDedalADL.g:1112:3: lv_interfaceTypes_18_0= ruleInterfaceType
                     	    {
                     	     
-                    	    	        newCompositeNode(grammarAccess.getSpecificationAccess().getInterfaceTypesInterfaceTypeParserRuleCall_9_2_1_0()); 
+                    	    	        newCompositeNode(grammarAccess.getSpecificationAccess().getInterfaceTypesInterfaceTypeParserRuleCall_7_2_1_0()); 
                     	    	    
                     	    pushFollow(FollowSets000.FOLLOW_33);
                     	    lv_interfaceTypes_18_0=ruleInterfaceType();
@@ -2955,7 +2972,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop27;
+                    	    break loop28;
                         }
                     } while (true);
 
@@ -3208,13 +3225,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1221:2: (otherlv_4= 'required_interfaces' ( (lv_compInterfaces_5_0= ruleInterface ) ) (otherlv_6= ';' ( (lv_compInterfaces_7_0= ruleInterface ) ) )* )?
-            int alt30=2;
-            int LA30_0 = input.LA(1);
+            int alt31=2;
+            int LA31_0 = input.LA(1);
 
-            if ( (LA30_0==35) ) {
-                alt30=1;
+            if ( (LA31_0==35) ) {
+                alt31=1;
             }
-            switch (alt30) {
+            switch (alt31) {
                 case 1 :
                     // InternalDedalADL.g:1221:4: otherlv_4= 'required_interfaces' ( (lv_compInterfaces_5_0= ruleInterface ) ) (otherlv_6= ';' ( (lv_compInterfaces_7_0= ruleInterface ) ) )*
                     {
@@ -3254,23 +3271,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:1243:2: (otherlv_6= ';' ( (lv_compInterfaces_7_0= ruleInterface ) ) )*
-                    loop29:
+                    loop30:
                     do {
-                        int alt29=2;
-                        int LA29_0 = input.LA(1);
+                        int alt30=2;
+                        int LA30_0 = input.LA(1);
 
-                        if ( (LA29_0==15) ) {
-                            int LA29_2 = input.LA(2);
+                        if ( (LA30_0==15) ) {
+                            int LA30_2 = input.LA(2);
 
-                            if ( (LA29_2==40) ) {
-                                alt29=1;
+                            if ( (LA30_2==40) ) {
+                                alt30=1;
                             }
 
 
                         }
 
 
-                        switch (alt29) {
+                        switch (alt30) {
                     	case 1 :
                     	    // InternalDedalADL.g:1243:4: otherlv_6= ';' ( (lv_compInterfaces_7_0= ruleInterface ) )
                     	    {
@@ -3314,7 +3331,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop29;
+                    	    break loop30;
                         }
                     } while (true);
 
@@ -3325,13 +3342,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1265:6: (otherlv_8= 'provided_interfaces' ( (lv_compInterfaces_9_0= ruleInterface ) ) (otherlv_10= ';' ( (lv_compInterfaces_11_0= ruleInterface ) ) )* )?
-            int alt32=2;
-            int LA32_0 = input.LA(1);
+            int alt33=2;
+            int LA33_0 = input.LA(1);
 
-            if ( (LA32_0==36) ) {
-                alt32=1;
+            if ( (LA33_0==36) ) {
+                alt33=1;
             }
-            switch (alt32) {
+            switch (alt33) {
                 case 1 :
                     // InternalDedalADL.g:1265:8: otherlv_8= 'provided_interfaces' ( (lv_compInterfaces_9_0= ruleInterface ) ) (otherlv_10= ';' ( (lv_compInterfaces_11_0= ruleInterface ) ) )*
                     {
@@ -3371,23 +3388,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:1287:2: (otherlv_10= ';' ( (lv_compInterfaces_11_0= ruleInterface ) ) )*
-                    loop31:
+                    loop32:
                     do {
-                        int alt31=2;
-                        int LA31_0 = input.LA(1);
+                        int alt32=2;
+                        int LA32_0 = input.LA(1);
 
-                        if ( (LA31_0==15) ) {
-                            int LA31_2 = input.LA(2);
+                        if ( (LA32_0==15) ) {
+                            int LA32_2 = input.LA(2);
 
-                            if ( (LA31_2==40) ) {
-                                alt31=1;
+                            if ( (LA32_2==40) ) {
+                                alt32=1;
                             }
 
 
                         }
 
 
-                        switch (alt31) {
+                        switch (alt32) {
                     	case 1 :
                     	    // InternalDedalADL.g:1287:4: otherlv_10= ';' ( (lv_compInterfaces_11_0= ruleInterface ) )
                     	    {
@@ -3431,7 +3448,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop31;
+                    	    break loop32;
                         }
                     } while (true);
 
@@ -3442,13 +3459,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1309:6: (otherlv_12= 'MinInstanceNbr' ( (lv_minInstanceNbr_13_0= RULE_INT ) ) )?
-            int alt33=2;
-            int LA33_0 = input.LA(1);
+            int alt34=2;
+            int LA34_0 = input.LA(1);
 
-            if ( (LA33_0==37) ) {
-                alt33=1;
+            if ( (LA34_0==37) ) {
+                alt34=1;
             }
-            switch (alt33) {
+            switch (alt34) {
                 case 1 :
                     // InternalDedalADL.g:1309:8: otherlv_12= 'MinInstanceNbr' ( (lv_minInstanceNbr_13_0= RULE_INT ) )
                     {
@@ -3489,13 +3506,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1331:4: (otherlv_14= 'MaxInstanceNbr' ( (lv_maxInstanceNbr_15_0= RULE_INT ) ) )?
-            int alt34=2;
-            int LA34_0 = input.LA(1);
+            int alt35=2;
+            int LA35_0 = input.LA(1);
 
-            if ( (LA34_0==38) ) {
-                alt34=1;
+            if ( (LA35_0==38) ) {
+                alt35=1;
             }
-            switch (alt34) {
+            switch (alt35) {
                 case 1 :
                     // InternalDedalADL.g:1331:6: otherlv_14= 'MaxInstanceNbr' ( (lv_maxInstanceNbr_15_0= RULE_INT ) )
                     {
@@ -3536,13 +3553,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1353:4: (otherlv_16= 'interactions' ( (lv_compInterfaces_17_0= ruleInteraction ) ) (otherlv_18= ';' ( (lv_compInterfaces_19_0= ruleInteraction ) ) )* )?
-            int alt36=2;
-            int LA36_0 = input.LA(1);
+            int alt37=2;
+            int LA37_0 = input.LA(1);
 
-            if ( (LA36_0==39) ) {
-                alt36=1;
+            if ( (LA37_0==39) ) {
+                alt37=1;
             }
-            switch (alt36) {
+            switch (alt37) {
                 case 1 :
                     // InternalDedalADL.g:1353:6: otherlv_16= 'interactions' ( (lv_compInterfaces_17_0= ruleInteraction ) ) (otherlv_18= ';' ( (lv_compInterfaces_19_0= ruleInteraction ) ) )*
                     {
@@ -3582,23 +3599,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:1375:2: (otherlv_18= ';' ( (lv_compInterfaces_19_0= ruleInteraction ) ) )*
-                    loop35:
+                    loop36:
                     do {
-                        int alt35=2;
-                        int LA35_0 = input.LA(1);
+                        int alt36=2;
+                        int LA36_0 = input.LA(1);
 
-                        if ( (LA35_0==15) ) {
-                            int LA35_2 = input.LA(2);
+                        if ( (LA36_0==15) ) {
+                            int LA36_2 = input.LA(2);
 
-                            if ( (LA35_2==40||LA35_2==73||LA35_2==75) ) {
-                                alt35=1;
+                            if ( (LA36_2==40||LA36_2==73||LA36_2==75) ) {
+                                alt36=1;
                             }
 
 
                         }
 
 
-                        switch (alt35) {
+                        switch (alt36) {
                     	case 1 :
                     	    // InternalDedalADL.g:1375:4: otherlv_18= ';' ( (lv_compInterfaces_19_0= ruleInteraction ) )
                     	    {
@@ -3642,7 +3659,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop35;
+                    	    break loop36;
                         }
                     } while (true);
 
@@ -3908,13 +3925,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1509:2: (otherlv_6= 'delegation' ( ( ruleEString ) ) )?
-            int alt37=2;
-            int LA37_0 = input.LA(1);
+            int alt38=2;
+            int LA38_0 = input.LA(1);
 
-            if ( (LA37_0==43) ) {
-                alt37=1;
+            if ( (LA38_0==43) ) {
+                alt38=1;
             }
-            switch (alt37) {
+            switch (alt38) {
                 case 1 :
                     // InternalDedalADL.g:1509:4: otherlv_6= 'delegation' ( ( ruleEString ) )
                     {
@@ -3957,13 +3974,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1528:4: (otherlv_8= 'instantiates' ( ( ruleEString ) ) )?
-            int alt38=2;
-            int LA38_0 = input.LA(1);
+            int alt39=2;
+            int LA39_0 = input.LA(1);
 
-            if ( (LA38_0==44) ) {
-                alt38=1;
+            if ( (LA39_0==44) ) {
+                alt39=1;
             }
-            switch (alt38) {
+            switch (alt39) {
                 case 1 :
                     // InternalDedalADL.g:1528:6: otherlv_8= 'instantiates' ( ( ruleEString ) )
                     {
@@ -4548,13 +4565,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1765:2: (otherlv_2= 'implements' ( ( ruleEString ) ) (otherlv_4= '(' this_REVISION_NUMB_5= RULE_REVISION_NUMB otherlv_6= ')' )? (otherlv_7= ';' ( ( ruleEString ) ) otherlv_9= '(' this_REVISION_NUMB_10= RULE_REVISION_NUMB otherlv_11= ')' )* )?
-            int alt41=2;
-            int LA41_0 = input.LA(1);
+            int alt42=2;
+            int LA42_0 = input.LA(1);
 
-            if ( (LA41_0==50) ) {
-                alt41=1;
+            if ( (LA42_0==50) ) {
+                alt42=1;
             }
-            switch (alt41) {
+            switch (alt42) {
                 case 1 :
                     // InternalDedalADL.g:1765:4: otherlv_2= 'implements' ( ( ruleEString ) ) (otherlv_4= '(' this_REVISION_NUMB_5= RULE_REVISION_NUMB otherlv_6= ')' )? (otherlv_7= ';' ( ( ruleEString ) ) otherlv_9= '(' this_REVISION_NUMB_10= RULE_REVISION_NUMB otherlv_11= ')' )*
                     {
@@ -4591,13 +4608,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:1784:2: (otherlv_4= '(' this_REVISION_NUMB_5= RULE_REVISION_NUMB otherlv_6= ')' )?
-                    int alt39=2;
-                    int LA39_0 = input.LA(1);
+                    int alt40=2;
+                    int LA40_0 = input.LA(1);
 
-                    if ( (LA39_0==14) ) {
-                        alt39=1;
+                    if ( (LA40_0==14) ) {
+                        alt40=1;
                     }
-                    switch (alt39) {
+                    switch (alt40) {
                         case 1 :
                             // InternalDedalADL.g:1784:4: otherlv_4= '(' this_REVISION_NUMB_5= RULE_REVISION_NUMB otherlv_6= ')'
                             {
@@ -4620,23 +4637,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:1796:3: (otherlv_7= ';' ( ( ruleEString ) ) otherlv_9= '(' this_REVISION_NUMB_10= RULE_REVISION_NUMB otherlv_11= ')' )*
-                    loop40:
+                    loop41:
                     do {
-                        int alt40=2;
-                        int LA40_0 = input.LA(1);
+                        int alt41=2;
+                        int LA41_0 = input.LA(1);
 
-                        if ( (LA40_0==15) ) {
-                            int LA40_2 = input.LA(2);
+                        if ( (LA41_0==15) ) {
+                            int LA41_2 = input.LA(2);
 
-                            if ( ((LA40_2>=RULE_STRING && LA40_2<=RULE_ID)) ) {
-                                alt40=1;
+                            if ( ((LA41_2>=RULE_STRING && LA41_2<=RULE_ID)) ) {
+                                alt41=1;
                             }
 
 
                         }
 
 
-                        switch (alt40) {
+                        switch (alt41) {
                     	case 1 :
                     	    // InternalDedalADL.g:1796:5: otherlv_7= ';' ( ( ruleEString ) ) otherlv_9= '(' this_REVISION_NUMB_10= RULE_REVISION_NUMB otherlv_11= ')'
                     	    {
@@ -4689,7 +4706,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop40;
+                    	    break loop41;
                         }
                     } while (true);
 
@@ -4700,13 +4717,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1827:5: (otherlv_12= 'versionID' this_REVISION_NUMB_13= RULE_REVISION_NUMB )?
-            int alt42=2;
-            int LA42_0 = input.LA(1);
+            int alt43=2;
+            int LA43_0 = input.LA(1);
 
-            if ( (LA42_0==30) ) {
-                alt42=1;
+            if ( (LA43_0==30) ) {
+                alt43=1;
             }
-            switch (alt42) {
+            switch (alt43) {
                 case 1 :
                     // InternalDedalADL.g:1827:7: otherlv_12= 'versionID' this_REVISION_NUMB_13= RULE_REVISION_NUMB
                     {
@@ -4725,13 +4742,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1835:3: (otherlv_14= 'pre_version' rulepre_version )?
-            int alt43=2;
-            int LA43_0 = input.LA(1);
+            int alt44=2;
+            int LA44_0 = input.LA(1);
 
-            if ( (LA43_0==31) ) {
-                alt43=1;
+            if ( (LA44_0==31) ) {
+                alt44=1;
             }
-            switch (alt43) {
+            switch (alt44) {
                 case 1 :
                     // InternalDedalADL.g:1835:5: otherlv_14= 'pre_version' rulepre_version
                     {
@@ -4757,13 +4774,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1847:3: (otherlv_16= 'by' rulechange )?
-            int alt44=2;
-            int LA44_0 = input.LA(1);
+            int alt45=2;
+            int LA45_0 = input.LA(1);
 
-            if ( (LA44_0==32) ) {
-                alt44=1;
+            if ( (LA45_0==32) ) {
+                alt45=1;
             }
-            switch (alt44) {
+            switch (alt45) {
                 case 1 :
                     // InternalDedalADL.g:1847:5: otherlv_16= 'by' rulechange
                     {
@@ -4789,13 +4806,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1859:3: (otherlv_18= 'component_classes' ( (lv_configComponents_19_0= ruleCompClass ) ) (otherlv_20= ';' ( (lv_configComponents_21_0= ruleCompClass ) ) )* )?
-            int alt46=2;
-            int LA46_0 = input.LA(1);
+            int alt47=2;
+            int LA47_0 = input.LA(1);
 
-            if ( (LA46_0==51) ) {
-                alt46=1;
+            if ( (LA47_0==51) ) {
+                alt47=1;
             }
-            switch (alt46) {
+            switch (alt47) {
                 case 1 :
                     // InternalDedalADL.g:1859:5: otherlv_18= 'component_classes' ( (lv_configComponents_19_0= ruleCompClass ) ) (otherlv_20= ';' ( (lv_configComponents_21_0= ruleCompClass ) ) )*
                     {
@@ -4835,23 +4852,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:1881:2: (otherlv_20= ';' ( (lv_configComponents_21_0= ruleCompClass ) ) )*
-                    loop45:
+                    loop46:
                     do {
-                        int alt45=2;
-                        int LA45_0 = input.LA(1);
+                        int alt46=2;
+                        int LA46_0 = input.LA(1);
 
-                        if ( (LA45_0==15) ) {
-                            int LA45_2 = input.LA(2);
+                        if ( (LA46_0==15) ) {
+                            int LA46_2 = input.LA(2);
 
-                            if ( (LA45_2==57||LA45_2==61) ) {
-                                alt45=1;
+                            if ( (LA46_2==57||LA46_2==61) ) {
+                                alt46=1;
                             }
 
 
                         }
 
 
-                        switch (alt45) {
+                        switch (alt46) {
                     	case 1 :
                     	    // InternalDedalADL.g:1881:4: otherlv_20= ';' ( (lv_configComponents_21_0= ruleCompClass ) )
                     	    {
@@ -4895,7 +4912,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop45;
+                    	    break loop46;
                         }
                     } while (true);
 
@@ -4906,13 +4923,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1903:6: (otherlv_22= 'connector_classes' ruleconnector_class otherlv_24= 'as' ruleconnection_name (otherlv_26= ';' ruleconnector_class otherlv_28= 'as' ruleconnection_name )* )?
-            int alt48=2;
-            int LA48_0 = input.LA(1);
+            int alt49=2;
+            int LA49_0 = input.LA(1);
 
-            if ( (LA48_0==52) ) {
-                alt48=1;
+            if ( (LA49_0==52) ) {
+                alt49=1;
             }
-            switch (alt48) {
+            switch (alt49) {
                 case 1 :
                     // InternalDedalADL.g:1903:8: otherlv_22= 'connector_classes' ruleconnector_class otherlv_24= 'as' ruleconnection_name (otherlv_26= ';' ruleconnector_class otherlv_28= 'as' ruleconnection_name )*
                     {
@@ -4947,23 +4964,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                             afterParserOrEnumRuleCall();
                         
                     // InternalDedalADL.g:1927:1: (otherlv_26= ';' ruleconnector_class otherlv_28= 'as' ruleconnection_name )*
-                    loop47:
+                    loop48:
                     do {
-                        int alt47=2;
-                        int LA47_0 = input.LA(1);
+                        int alt48=2;
+                        int LA48_0 = input.LA(1);
 
-                        if ( (LA47_0==15) ) {
-                            int LA47_2 = input.LA(2);
+                        if ( (LA48_0==15) ) {
+                            int LA48_2 = input.LA(2);
 
-                            if ( (LA47_2==70) ) {
-                                alt47=1;
+                            if ( (LA48_2==70) ) {
+                                alt48=1;
                             }
 
 
                         }
 
 
-                        switch (alt47) {
+                        switch (alt48) {
                     	case 1 :
                     	    // InternalDedalADL.g:1927:3: otherlv_26= ';' ruleconnector_class otherlv_28= 'as' ruleconnection_name
                     	    {
@@ -5002,7 +5019,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop47;
+                    	    break loop48;
                         }
                     } while (true);
 
@@ -5013,13 +5030,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:1951:5: (otherlv_30= 'interface_types' otherlv_31= '(' ( (lv_interfaceTypes_32_0= ruleInterfaceType ) ) (otherlv_33= ';' ( (lv_interfaceTypes_34_0= ruleInterfaceType ) ) )* otherlv_35= ')' )?
-            int alt50=2;
-            int LA50_0 = input.LA(1);
+            int alt51=2;
+            int LA51_0 = input.LA(1);
 
-            if ( (LA50_0==20) ) {
-                alt50=1;
+            if ( (LA51_0==20) ) {
+                alt51=1;
             }
-            switch (alt50) {
+            switch (alt51) {
                 case 1 :
                     // InternalDedalADL.g:1951:7: otherlv_30= 'interface_types' otherlv_31= '(' ( (lv_interfaceTypes_32_0= ruleInterfaceType ) ) (otherlv_33= ';' ( (lv_interfaceTypes_34_0= ruleInterfaceType ) ) )* otherlv_35= ')'
                     {
@@ -5063,17 +5080,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:1977:2: (otherlv_33= ';' ( (lv_interfaceTypes_34_0= ruleInterfaceType ) ) )*
-                    loop49:
+                    loop50:
                     do {
-                        int alt49=2;
-                        int LA49_0 = input.LA(1);
+                        int alt50=2;
+                        int LA50_0 = input.LA(1);
 
-                        if ( (LA49_0==15) ) {
-                            alt49=1;
+                        if ( (LA50_0==15) ) {
+                            alt50=1;
                         }
 
 
-                        switch (alt49) {
+                        switch (alt50) {
                     	case 1 :
                     	    // InternalDedalADL.g:1977:4: otherlv_33= ';' ( (lv_interfaceTypes_34_0= ruleInterfaceType ) )
                     	    {
@@ -5117,7 +5134,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop49;
+                    	    break loop50;
                         }
                     } while (true);
 
@@ -5132,13 +5149,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2003:3: (otherlv_36= 'component_types' otherlv_37= '(' ( (lv_comptypes_38_0= ruleCompType ) ) (otherlv_39= ';' ( (lv_comptypes_40_0= ruleCompType ) ) )* otherlv_41= ')' )?
-            int alt52=2;
-            int LA52_0 = input.LA(1);
+            int alt53=2;
+            int LA53_0 = input.LA(1);
 
-            if ( (LA52_0==54) ) {
-                alt52=1;
+            if ( (LA53_0==54) ) {
+                alt53=1;
             }
-            switch (alt52) {
+            switch (alt53) {
                 case 1 :
                     // InternalDedalADL.g:2003:5: otherlv_36= 'component_types' otherlv_37= '(' ( (lv_comptypes_38_0= ruleCompType ) ) (otherlv_39= ';' ( (lv_comptypes_40_0= ruleCompType ) ) )* otherlv_41= ')'
                     {
@@ -5182,17 +5199,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:2029:2: (otherlv_39= ';' ( (lv_comptypes_40_0= ruleCompType ) ) )*
-                    loop51:
+                    loop52:
                     do {
-                        int alt51=2;
-                        int LA51_0 = input.LA(1);
+                        int alt52=2;
+                        int LA52_0 = input.LA(1);
 
-                        if ( (LA51_0==15) ) {
-                            alt51=1;
+                        if ( (LA52_0==15) ) {
+                            alt52=1;
                         }
 
 
-                        switch (alt51) {
+                        switch (alt52) {
                     	case 1 :
                     	    // InternalDedalADL.g:2029:4: otherlv_39= ';' ( (lv_comptypes_40_0= ruleCompType ) )
                     	    {
@@ -5236,7 +5253,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop51;
+                    	    break loop52;
                         }
                     } while (true);
 
@@ -5251,13 +5268,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2055:3: (otherlv_42= 'configConnections' otherlv_43= '(' ( (lv_configConnections_44_0= ruleClassConnection ) ) (otherlv_45= ';' ( (lv_configConnections_46_0= ruleClassConnection ) ) )* otherlv_47= ')' )?
-            int alt54=2;
-            int LA54_0 = input.LA(1);
+            int alt55=2;
+            int LA55_0 = input.LA(1);
 
-            if ( (LA54_0==55) ) {
-                alt54=1;
+            if ( (LA55_0==55) ) {
+                alt55=1;
             }
-            switch (alt54) {
+            switch (alt55) {
                 case 1 :
                     // InternalDedalADL.g:2055:5: otherlv_42= 'configConnections' otherlv_43= '(' ( (lv_configConnections_44_0= ruleClassConnection ) ) (otherlv_45= ';' ( (lv_configConnections_46_0= ruleClassConnection ) ) )* otherlv_47= ')'
                     {
@@ -5301,17 +5318,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:2081:2: (otherlv_45= ';' ( (lv_configConnections_46_0= ruleClassConnection ) ) )*
-                    loop53:
+                    loop54:
                     do {
-                        int alt53=2;
-                        int LA53_0 = input.LA(1);
+                        int alt54=2;
+                        int LA54_0 = input.LA(1);
 
-                        if ( (LA53_0==15) ) {
-                            alt53=1;
+                        if ( (LA54_0==15) ) {
+                            alt54=1;
                         }
 
 
-                        switch (alt53) {
+                        switch (alt54) {
                     	case 1 :
                     	    // InternalDedalADL.g:2081:4: otherlv_45= ';' ( (lv_configConnections_46_0= ruleClassConnection ) )
                     	    {
@@ -5355,7 +5372,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop53;
+                    	    break loop54;
                         }
                     } while (true);
 
@@ -5681,13 +5698,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2228:2: (otherlv_4= 'required_interfaces' ( (lv_compInterfaces_5_0= ruleInterface ) ) (otherlv_6= ';' ( (lv_compInterfaces_7_0= ruleInterface ) ) )* )?
-            int alt56=2;
-            int LA56_0 = input.LA(1);
+            int alt57=2;
+            int LA57_0 = input.LA(1);
 
-            if ( (LA56_0==35) ) {
-                alt56=1;
+            if ( (LA57_0==35) ) {
+                alt57=1;
             }
-            switch (alt56) {
+            switch (alt57) {
                 case 1 :
                     // InternalDedalADL.g:2228:4: otherlv_4= 'required_interfaces' ( (lv_compInterfaces_5_0= ruleInterface ) ) (otherlv_6= ';' ( (lv_compInterfaces_7_0= ruleInterface ) ) )*
                     {
@@ -5727,23 +5744,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:2250:2: (otherlv_6= ';' ( (lv_compInterfaces_7_0= ruleInterface ) ) )*
-                    loop55:
+                    loop56:
                     do {
-                        int alt55=2;
-                        int LA55_0 = input.LA(1);
+                        int alt56=2;
+                        int LA56_0 = input.LA(1);
 
-                        if ( (LA55_0==15) ) {
-                            int LA55_2 = input.LA(2);
+                        if ( (LA56_0==15) ) {
+                            int LA56_2 = input.LA(2);
 
-                            if ( (LA55_2==40) ) {
-                                alt55=1;
+                            if ( (LA56_2==40) ) {
+                                alt56=1;
                             }
 
 
                         }
 
 
-                        switch (alt55) {
+                        switch (alt56) {
                     	case 1 :
                     	    // InternalDedalADL.g:2250:4: otherlv_6= ';' ( (lv_compInterfaces_7_0= ruleInterface ) )
                     	    {
@@ -5787,7 +5804,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop55;
+                    	    break loop56;
                         }
                     } while (true);
 
@@ -5798,13 +5815,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2272:6: (otherlv_8= 'provided_interfaces' ( (lv_compInterfaces_9_0= ruleInterface ) ) (otherlv_10= ';' ( (lv_compInterfaces_11_0= ruleInterface ) ) )* )?
-            int alt58=2;
-            int LA58_0 = input.LA(1);
+            int alt59=2;
+            int LA59_0 = input.LA(1);
 
-            if ( (LA58_0==36) ) {
-                alt58=1;
+            if ( (LA59_0==36) ) {
+                alt59=1;
             }
-            switch (alt58) {
+            switch (alt59) {
                 case 1 :
                     // InternalDedalADL.g:2272:8: otherlv_8= 'provided_interfaces' ( (lv_compInterfaces_9_0= ruleInterface ) ) (otherlv_10= ';' ( (lv_compInterfaces_11_0= ruleInterface ) ) )*
                     {
@@ -5844,23 +5861,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:2294:2: (otherlv_10= ';' ( (lv_compInterfaces_11_0= ruleInterface ) ) )*
-                    loop57:
+                    loop58:
                     do {
-                        int alt57=2;
-                        int LA57_0 = input.LA(1);
+                        int alt58=2;
+                        int LA58_0 = input.LA(1);
 
-                        if ( (LA57_0==15) ) {
-                            int LA57_2 = input.LA(2);
+                        if ( (LA58_0==15) ) {
+                            int LA58_2 = input.LA(2);
 
-                            if ( (LA57_2==40) ) {
-                                alt57=1;
+                            if ( (LA58_2==40) ) {
+                                alt58=1;
                             }
 
 
                         }
 
 
-                        switch (alt57) {
+                        switch (alt58) {
                     	case 1 :
                     	    // InternalDedalADL.g:2294:4: otherlv_10= ';' ( (lv_compInterfaces_11_0= ruleInterface ) )
                     	    {
@@ -5904,7 +5921,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop57;
+                    	    break loop58;
                         }
                     } while (true);
 
@@ -5915,13 +5932,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2316:6: (otherlv_12= 'interactions' ( (lv_compInterfaces_13_0= ruleInteraction ) ) (otherlv_14= ';' ( (lv_compInterfaces_15_0= ruleInteraction ) ) )* )?
-            int alt60=2;
-            int LA60_0 = input.LA(1);
+            int alt61=2;
+            int LA61_0 = input.LA(1);
 
-            if ( (LA60_0==39) ) {
-                alt60=1;
+            if ( (LA61_0==39) ) {
+                alt61=1;
             }
-            switch (alt60) {
+            switch (alt61) {
                 case 1 :
                     // InternalDedalADL.g:2316:8: otherlv_12= 'interactions' ( (lv_compInterfaces_13_0= ruleInteraction ) ) (otherlv_14= ';' ( (lv_compInterfaces_15_0= ruleInteraction ) ) )*
                     {
@@ -5961,23 +5978,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:2338:2: (otherlv_14= ';' ( (lv_compInterfaces_15_0= ruleInteraction ) ) )*
-                    loop59:
+                    loop60:
                     do {
-                        int alt59=2;
-                        int LA59_0 = input.LA(1);
+                        int alt60=2;
+                        int LA60_0 = input.LA(1);
 
-                        if ( (LA59_0==15) ) {
-                            int LA59_2 = input.LA(2);
+                        if ( (LA60_0==15) ) {
+                            int LA60_2 = input.LA(2);
 
-                            if ( (LA59_2==40||LA59_2==73||LA59_2==75) ) {
-                                alt59=1;
+                            if ( (LA60_2==40||LA60_2==73||LA60_2==75) ) {
+                                alt60=1;
                             }
 
 
                         }
 
 
-                        switch (alt59) {
+                        switch (alt60) {
                     	case 1 :
                     	    // InternalDedalADL.g:2338:4: otherlv_14= ';' ( (lv_compInterfaces_15_0= ruleInteraction ) )
                     	    {
@@ -6021,7 +6038,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop59;
+                    	    break loop60;
                         }
                     } while (true);
 
@@ -6239,13 +6256,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2431:2: (otherlv_2= 'as' ( ( ruleEString ) ) (otherlv_4= ';' ( ( ruleEString ) ) )* )?
-            int alt62=2;
-            int LA62_0 = input.LA(1);
+            int alt63=2;
+            int LA63_0 = input.LA(1);
 
-            if ( (LA62_0==53) ) {
-                alt62=1;
+            if ( (LA63_0==53) ) {
+                alt63=1;
             }
-            switch (alt62) {
+            switch (alt63) {
                 case 1 :
                     // InternalDedalADL.g:2431:4: otherlv_2= 'as' ( ( ruleEString ) ) (otherlv_4= ';' ( ( ruleEString ) ) )*
                     {
@@ -6282,17 +6299,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:2450:2: (otherlv_4= ';' ( ( ruleEString ) ) )*
-                    loop61:
+                    loop62:
                     do {
-                        int alt61=2;
-                        int LA61_0 = input.LA(1);
+                        int alt62=2;
+                        int LA62_0 = input.LA(1);
 
-                        if ( (LA61_0==15) ) {
-                            alt61=1;
+                        if ( (LA62_0==15) ) {
+                            alt62=1;
                         }
 
 
-                        switch (alt61) {
+                        switch (alt62) {
                     	case 1 :
                     	    // InternalDedalADL.g:2450:4: otherlv_4= ';' ( ( ruleEString ) )
                     	    {
@@ -6333,7 +6350,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop61;
+                    	    break loop62;
                         }
                     } while (true);
 
@@ -6411,13 +6428,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2510:2: (otherlv_10= 'content' ( ( ruleEString ) ) )?
-            int alt63=2;
-            int LA63_0 = input.LA(1);
+            int alt64=2;
+            int LA64_0 = input.LA(1);
 
-            if ( (LA63_0==58) ) {
-                alt63=1;
+            if ( (LA64_0==58) ) {
+                alt64=1;
             }
-            switch (alt63) {
+            switch (alt64) {
                 case 1 :
                     // InternalDedalADL.g:2510:4: otherlv_10= 'content' ( ( ruleEString ) )
                     {
@@ -6460,13 +6477,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2529:4: (otherlv_12= 'attributes' otherlv_13= '(' ( (lv_attributes_14_0= ruleAttribute ) ) (otherlv_15= ';' ( (lv_attributes_16_0= ruleAttribute ) ) )* otherlv_17= ')' )?
-            int alt65=2;
-            int LA65_0 = input.LA(1);
+            int alt66=2;
+            int LA66_0 = input.LA(1);
 
-            if ( (LA65_0==59) ) {
-                alt65=1;
+            if ( (LA66_0==59) ) {
+                alt66=1;
             }
-            switch (alt65) {
+            switch (alt66) {
                 case 1 :
                     // InternalDedalADL.g:2529:6: otherlv_12= 'attributes' otherlv_13= '(' ( (lv_attributes_14_0= ruleAttribute ) ) (otherlv_15= ';' ( (lv_attributes_16_0= ruleAttribute ) ) )* otherlv_17= ')'
                     {
@@ -6510,17 +6527,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:2555:2: (otherlv_15= ';' ( (lv_attributes_16_0= ruleAttribute ) ) )*
-                    loop64:
+                    loop65:
                     do {
-                        int alt64=2;
-                        int LA64_0 = input.LA(1);
+                        int alt65=2;
+                        int LA65_0 = input.LA(1);
 
-                        if ( (LA64_0==15) ) {
-                            alt64=1;
+                        if ( (LA65_0==15) ) {
+                            alt65=1;
                         }
 
 
-                        switch (alt64) {
+                        switch (alt65) {
                     	case 1 :
                     	    // InternalDedalADL.g:2555:4: otherlv_15= ';' ( (lv_attributes_16_0= ruleAttribute ) )
                     	    {
@@ -6564,7 +6581,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop64;
+                    	    break loop65;
                         }
                     } while (true);
 
@@ -6579,13 +6596,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2581:3: (otherlv_18= 'versionID' this_REVISION_NUMB_19= RULE_REVISION_NUMB )?
-            int alt66=2;
-            int LA66_0 = input.LA(1);
+            int alt67=2;
+            int LA67_0 = input.LA(1);
 
-            if ( (LA66_0==30) ) {
-                alt66=1;
+            if ( (LA67_0==30) ) {
+                alt67=1;
             }
-            switch (alt66) {
+            switch (alt67) {
                 case 1 :
                     // InternalDedalADL.g:2581:5: otherlv_18= 'versionID' this_REVISION_NUMB_19= RULE_REVISION_NUMB
                     {
@@ -6604,13 +6621,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2589:3: (otherlv_20= 'pre_version' this_REVISION_NUMB_21= RULE_REVISION_NUMB )?
-            int alt67=2;
-            int LA67_0 = input.LA(1);
+            int alt68=2;
+            int LA68_0 = input.LA(1);
 
-            if ( (LA67_0==31) ) {
-                alt67=1;
+            if ( (LA68_0==31) ) {
+                alt68=1;
             }
-            switch (alt67) {
+            switch (alt68) {
                 case 1 :
                     // InternalDedalADL.g:2589:5: otherlv_20= 'pre_version' this_REVISION_NUMB_21= RULE_REVISION_NUMB
                     {
@@ -6629,13 +6646,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2597:3: (otherlv_22= 'interfaces' ( (lv_compInterfaces_23_0= ruleInteraction ) ) (otherlv_24= ';' ( (lv_compInterfaces_25_0= ruleInteraction ) ) )* )?
-            int alt69=2;
-            int LA69_0 = input.LA(1);
+            int alt70=2;
+            int LA70_0 = input.LA(1);
 
-            if ( (LA69_0==60) ) {
-                alt69=1;
+            if ( (LA70_0==60) ) {
+                alt70=1;
             }
-            switch (alt69) {
+            switch (alt70) {
                 case 1 :
                     // InternalDedalADL.g:2597:5: otherlv_22= 'interfaces' ( (lv_compInterfaces_23_0= ruleInteraction ) ) (otherlv_24= ';' ( (lv_compInterfaces_25_0= ruleInteraction ) ) )*
                     {
@@ -6675,23 +6692,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:2619:2: (otherlv_24= ';' ( (lv_compInterfaces_25_0= ruleInteraction ) ) )*
-                    loop68:
+                    loop69:
                     do {
-                        int alt68=2;
-                        int LA68_0 = input.LA(1);
+                        int alt69=2;
+                        int LA69_0 = input.LA(1);
 
-                        if ( (LA68_0==15) ) {
-                            int LA68_2 = input.LA(2);
+                        if ( (LA69_0==15) ) {
+                            int LA69_2 = input.LA(2);
 
-                            if ( (LA68_2==40||LA68_2==73||LA68_2==75) ) {
-                                alt68=1;
+                            if ( (LA69_2==40||LA69_2==73||LA69_2==75) ) {
+                                alt69=1;
                             }
 
 
                         }
 
 
-                        switch (alt68) {
+                        switch (alt69) {
                     	case 1 :
                     	    // InternalDedalADL.g:2619:4: otherlv_24= ';' ( (lv_compInterfaces_25_0= ruleInteraction ) )
                     	    {
@@ -6735,7 +6752,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop68;
+                    	    break loop69;
                         }
                     } while (true);
 
@@ -7167,13 +7184,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2810:2: (otherlv_6= 'content' ( ( ruleEString ) ) (otherlv_8= '(' this_REVISION_NUMB_9= RULE_REVISION_NUMB otherlv_10= ')' )? )?
-            int alt71=2;
-            int LA71_0 = input.LA(1);
+            int alt72=2;
+            int LA72_0 = input.LA(1);
 
-            if ( (LA71_0==58) ) {
-                alt71=1;
+            if ( (LA72_0==58) ) {
+                alt72=1;
             }
-            switch (alt71) {
+            switch (alt72) {
                 case 1 :
                     // InternalDedalADL.g:2810:4: otherlv_6= 'content' ( ( ruleEString ) ) (otherlv_8= '(' this_REVISION_NUMB_9= RULE_REVISION_NUMB otherlv_10= ')' )?
                     {
@@ -7210,13 +7227,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:2829:2: (otherlv_8= '(' this_REVISION_NUMB_9= RULE_REVISION_NUMB otherlv_10= ')' )?
-                    int alt70=2;
-                    int LA70_0 = input.LA(1);
+                    int alt71=2;
+                    int LA71_0 = input.LA(1);
 
-                    if ( (LA70_0==14) ) {
-                        alt70=1;
+                    if ( (LA71_0==14) ) {
+                        alt71=1;
                     }
-                    switch (alt70) {
+                    switch (alt71) {
                         case 1 :
                             // InternalDedalADL.g:2829:4: otherlv_8= '(' this_REVISION_NUMB_9= RULE_REVISION_NUMB otherlv_10= ')'
                             {
@@ -7245,13 +7262,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2841:5: (otherlv_11= 'delegated_interfaces' ruledelegated_interface_list )?
-            int alt72=2;
-            int LA72_0 = input.LA(1);
+            int alt73=2;
+            int LA73_0 = input.LA(1);
 
-            if ( (LA72_0==62) ) {
-                alt72=1;
+            if ( (LA73_0==62) ) {
+                alt73=1;
             }
-            switch (alt72) {
+            switch (alt73) {
                 case 1 :
                     // InternalDedalADL.g:2841:7: otherlv_11= 'delegated_interfaces' ruledelegated_interface_list
                     {
@@ -7277,13 +7294,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2853:3: (otherlv_13= 'attributes' otherlv_14= '(' ( (lv_attributes_15_0= ruleAttribute ) ) (otherlv_16= ';' ( (lv_attributes_17_0= ruleAttribute ) ) )* otherlv_18= ')' )?
-            int alt74=2;
-            int LA74_0 = input.LA(1);
+            int alt75=2;
+            int LA75_0 = input.LA(1);
 
-            if ( (LA74_0==59) ) {
-                alt74=1;
+            if ( (LA75_0==59) ) {
+                alt75=1;
             }
-            switch (alt74) {
+            switch (alt75) {
                 case 1 :
                     // InternalDedalADL.g:2853:5: otherlv_13= 'attributes' otherlv_14= '(' ( (lv_attributes_15_0= ruleAttribute ) ) (otherlv_16= ';' ( (lv_attributes_17_0= ruleAttribute ) ) )* otherlv_18= ')'
                     {
@@ -7327,17 +7344,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:2879:2: (otherlv_16= ';' ( (lv_attributes_17_0= ruleAttribute ) ) )*
-                    loop73:
+                    loop74:
                     do {
-                        int alt73=2;
-                        int LA73_0 = input.LA(1);
+                        int alt74=2;
+                        int LA74_0 = input.LA(1);
 
-                        if ( (LA73_0==15) ) {
-                            alt73=1;
+                        if ( (LA74_0==15) ) {
+                            alt74=1;
                         }
 
 
-                        switch (alt73) {
+                        switch (alt74) {
                     	case 1 :
                     	    // InternalDedalADL.g:2879:4: otherlv_16= ';' ( (lv_attributes_17_0= ruleAttribute ) )
                     	    {
@@ -7381,7 +7398,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop73;
+                    	    break loop74;
                         }
                     } while (true);
 
@@ -7396,13 +7413,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2905:3: (otherlv_19= 'versionID' this_REVISION_NUMB_20= RULE_REVISION_NUMB )?
-            int alt75=2;
-            int LA75_0 = input.LA(1);
+            int alt76=2;
+            int LA76_0 = input.LA(1);
 
-            if ( (LA75_0==30) ) {
-                alt75=1;
+            if ( (LA76_0==30) ) {
+                alt76=1;
             }
-            switch (alt75) {
+            switch (alt76) {
                 case 1 :
                     // InternalDedalADL.g:2905:5: otherlv_19= 'versionID' this_REVISION_NUMB_20= RULE_REVISION_NUMB
                     {
@@ -7421,13 +7438,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2913:3: (otherlv_21= 'pre_version' this_REVISION_NUMB_22= RULE_REVISION_NUMB )?
-            int alt76=2;
-            int LA76_0 = input.LA(1);
+            int alt77=2;
+            int LA77_0 = input.LA(1);
 
-            if ( (LA76_0==31) ) {
-                alt76=1;
+            if ( (LA77_0==31) ) {
+                alt77=1;
             }
-            switch (alt76) {
+            switch (alt77) {
                 case 1 :
                     // InternalDedalADL.g:2913:5: otherlv_21= 'pre_version' this_REVISION_NUMB_22= RULE_REVISION_NUMB
                     {
@@ -7446,13 +7463,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2921:3: (otherlv_23= 'realizes' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ';' ( ( ruleEString ) ) )* otherlv_28= ')' )?
-            int alt78=2;
-            int LA78_0 = input.LA(1);
+            int alt79=2;
+            int LA79_0 = input.LA(1);
 
-            if ( (LA78_0==63) ) {
-                alt78=1;
+            if ( (LA79_0==63) ) {
+                alt79=1;
             }
-            switch (alt78) {
+            switch (alt79) {
                 case 1 :
                     // InternalDedalADL.g:2921:5: otherlv_23= 'realizes' otherlv_24= '(' ( ( ruleEString ) ) (otherlv_26= ';' ( ( ruleEString ) ) )* otherlv_28= ')'
                     {
@@ -7493,17 +7510,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:2944:2: (otherlv_26= ';' ( ( ruleEString ) ) )*
-                    loop77:
+                    loop78:
                     do {
-                        int alt77=2;
-                        int LA77_0 = input.LA(1);
+                        int alt78=2;
+                        int LA78_0 = input.LA(1);
 
-                        if ( (LA77_0==15) ) {
-                            alt77=1;
+                        if ( (LA78_0==15) ) {
+                            alt78=1;
                         }
 
 
-                        switch (alt77) {
+                        switch (alt78) {
                     	case 1 :
                     	    // InternalDedalADL.g:2944:4: otherlv_26= ';' ( ( ruleEString ) )
                     	    {
@@ -7544,7 +7561,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop77;
+                    	    break loop78;
                         }
                     } while (true);
 
@@ -7559,13 +7576,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:2967:3: (otherlv_29= 'interfaces' ( (lv_compInterfaces_30_0= ruleInteraction ) ) (otherlv_31= ';' ( (lv_compInterfaces_32_0= ruleInteraction ) ) )* )?
-            int alt80=2;
-            int LA80_0 = input.LA(1);
+            int alt81=2;
+            int LA81_0 = input.LA(1);
 
-            if ( (LA80_0==60) ) {
-                alt80=1;
+            if ( (LA81_0==60) ) {
+                alt81=1;
             }
-            switch (alt80) {
+            switch (alt81) {
                 case 1 :
                     // InternalDedalADL.g:2967:5: otherlv_29= 'interfaces' ( (lv_compInterfaces_30_0= ruleInteraction ) ) (otherlv_31= ';' ( (lv_compInterfaces_32_0= ruleInteraction ) ) )*
                     {
@@ -7605,23 +7622,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:2989:2: (otherlv_31= ';' ( (lv_compInterfaces_32_0= ruleInteraction ) ) )*
-                    loop79:
+                    loop80:
                     do {
-                        int alt79=2;
-                        int LA79_0 = input.LA(1);
+                        int alt80=2;
+                        int LA80_0 = input.LA(1);
 
-                        if ( (LA79_0==15) ) {
-                            int LA79_2 = input.LA(2);
+                        if ( (LA80_0==15) ) {
+                            int LA80_2 = input.LA(2);
 
-                            if ( (LA79_2==40||LA79_2==73||LA79_2==75) ) {
-                                alt79=1;
+                            if ( (LA80_2==40||LA80_2==73||LA80_2==75) ) {
+                                alt80=1;
                             }
 
 
                         }
 
 
-                        switch (alt79) {
+                        switch (alt80) {
                     	case 1 :
                     	    // InternalDedalADL.g:2989:4: otherlv_31= ';' ( (lv_compInterfaces_32_0= ruleInteraction ) )
                     	    {
@@ -7665,7 +7682,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop79;
+                    	    break loop80;
                         }
                     } while (true);
 
@@ -7676,13 +7693,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:3011:6: (otherlv_33= 'delegated_old' ( (otherlv_34= RULE_ID ) ) (otherlv_35= ';' ( (otherlv_36= RULE_ID ) ) )* )?
-            int alt82=2;
-            int LA82_0 = input.LA(1);
+            int alt83=2;
+            int LA83_0 = input.LA(1);
 
-            if ( (LA82_0==64) ) {
-                alt82=1;
+            if ( (LA83_0==64) ) {
+                alt83=1;
             }
-            switch (alt82) {
+            switch (alt83) {
                 case 1 :
                     // InternalDedalADL.g:3011:8: otherlv_33= 'delegated_old' ( (otherlv_34= RULE_ID ) ) (otherlv_35= ';' ( (otherlv_36= RULE_ID ) ) )*
                     {
@@ -7712,23 +7729,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:3028:2: (otherlv_35= ';' ( (otherlv_36= RULE_ID ) ) )*
-                    loop81:
+                    loop82:
                     do {
-                        int alt81=2;
-                        int LA81_0 = input.LA(1);
+                        int alt82=2;
+                        int LA82_0 = input.LA(1);
 
-                        if ( (LA81_0==15) ) {
-                            int LA81_2 = input.LA(2);
+                        if ( (LA82_0==15) ) {
+                            int LA82_2 = input.LA(2);
 
-                            if ( (LA81_2==RULE_ID) ) {
-                                alt81=1;
+                            if ( (LA82_2==RULE_ID) ) {
+                                alt82=1;
                             }
 
 
                         }
 
 
-                        switch (alt81) {
+                        switch (alt82) {
                     	case 1 :
                     	    // InternalDedalADL.g:3028:4: otherlv_35= ';' ( (otherlv_36= RULE_ID ) )
                     	    {
@@ -7762,7 +7779,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop81;
+                    	    break loop82;
                         }
                     } while (true);
 
@@ -7850,22 +7867,22 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:3066:1: (kw= 'provided' | (kw= 'required' this_inner_interface_2= ruleinner_interface kw= 'as' this_outer_interface_4= ruleouter_interface ( (kw= ';' kw= 'provided' ) | (kw= 'required' this_inner_interface_8= ruleinner_interface kw= 'as' this_outer_interface_10= ruleouter_interface ) )* ) )
             {
             // InternalDedalADL.g:3066:1: (kw= 'provided' | (kw= 'required' this_inner_interface_2= ruleinner_interface kw= 'as' this_outer_interface_4= ruleouter_interface ( (kw= ';' kw= 'provided' ) | (kw= 'required' this_inner_interface_8= ruleinner_interface kw= 'as' this_outer_interface_10= ruleouter_interface ) )* ) )
-            int alt84=2;
-            int LA84_0 = input.LA(1);
+            int alt85=2;
+            int LA85_0 = input.LA(1);
 
-            if ( (LA84_0==65) ) {
-                alt84=1;
+            if ( (LA85_0==65) ) {
+                alt85=1;
             }
-            else if ( (LA84_0==66) ) {
-                alt84=2;
+            else if ( (LA85_0==66) ) {
+                alt85=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 84, 0, input);
+                    new NoViableAltException("", 85, 0, input);
 
                 throw nvae;
             }
-            switch (alt84) {
+            switch (alt85) {
                 case 1 :
                     // InternalDedalADL.g:3067:2: kw= 'provided'
                     {
@@ -7922,26 +7939,26 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                             afterParserOrEnumRuleCall();
                         
                     // InternalDedalADL.g:3107:1: ( (kw= ';' kw= 'provided' ) | (kw= 'required' this_inner_interface_8= ruleinner_interface kw= 'as' this_outer_interface_10= ruleouter_interface ) )*
-                    loop83:
+                    loop84:
                     do {
-                        int alt83=3;
-                        int LA83_0 = input.LA(1);
+                        int alt84=3;
+                        int LA84_0 = input.LA(1);
 
-                        if ( (LA83_0==15) ) {
-                            int LA83_2 = input.LA(2);
+                        if ( (LA84_0==15) ) {
+                            int LA84_2 = input.LA(2);
 
-                            if ( (LA83_2==65) ) {
-                                alt83=1;
+                            if ( (LA84_2==65) ) {
+                                alt84=1;
                             }
 
 
                         }
-                        else if ( (LA83_0==66) ) {
-                            alt83=2;
+                        else if ( (LA84_0==66) ) {
+                            alt84=2;
                         }
 
 
-                        switch (alt83) {
+                        switch (alt84) {
                     	case 1 :
                     	    // InternalDedalADL.g:3107:2: (kw= ';' kw= 'provided' )
                     	    {
@@ -8016,7 +8033,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop83;
+                    	    break loop84;
                         }
                     } while (true);
 
@@ -8360,13 +8377,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     afterParserOrEnumRuleCall();
                 
             // InternalDedalADL.g:3307:1: (kw= '(' this_REVISION_NUMB_2= RULE_REVISION_NUMB kw= ')' )?
-            int alt85=2;
-            int LA85_0 = input.LA(1);
+            int alt86=2;
+            int LA86_0 = input.LA(1);
 
-            if ( (LA85_0==14) ) {
-                alt85=1;
+            if ( (LA86_0==14) ) {
+                alt86=1;
             }
-            switch (alt85) {
+            switch (alt86) {
                 case 1 :
                     // InternalDedalADL.g:3308:2: kw= '(' this_REVISION_NUMB_2= RULE_REVISION_NUMB kw= ')'
                     {
@@ -8514,17 +8531,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     afterParserOrEnumRuleCall();
                 
             // InternalDedalADL.g:3381:1: (kw= ';' this_interface_name_5= ruleinterface_name )*
-            loop86:
+            loop87:
             do {
-                int alt86=2;
-                int LA86_0 = input.LA(1);
+                int alt87=2;
+                int LA87_0 = input.LA(1);
 
-                if ( (LA86_0==15) ) {
-                    alt86=1;
+                if ( (LA87_0==15) ) {
+                    alt87=1;
                 }
 
 
-                switch (alt86) {
+                switch (alt87) {
             	case 1 :
             	    // InternalDedalADL.g:3382:2: kw= ';' this_interface_name_5= ruleinterface_name
             	    {
@@ -8552,7 +8569,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop86;
+            	    break loop87;
                 }
             } while (true);
 
@@ -8576,17 +8593,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     afterParserOrEnumRuleCall();
                 
             // InternalDedalADL.g:3415:1: (kw= ';' this_interface_name_9= ruleinterface_name )*
-            loop87:
+            loop88:
             do {
-                int alt87=2;
-                int LA87_0 = input.LA(1);
+                int alt88=2;
+                int LA88_0 = input.LA(1);
 
-                if ( (LA87_0==15) ) {
-                    alt87=1;
+                if ( (LA88_0==15) ) {
+                    alt88=1;
                 }
 
 
-                switch (alt87) {
+                switch (alt88) {
             	case 1 :
             	    // InternalDedalADL.g:3416:2: kw= ';' this_interface_name_9= ruleinterface_name
             	    {
@@ -8614,7 +8631,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop87;
+            	    break loop88;
                 }
             } while (true);
 
@@ -9307,17 +9324,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:3750:2: (otherlv_5= ',' ( ( ruleEString ) ) )*
-            loop88:
+            loop89:
             do {
-                int alt88=2;
-                int LA88_0 = input.LA(1);
+                int alt89=2;
+                int LA89_0 = input.LA(1);
 
-                if ( (LA88_0==74) ) {
-                    alt88=1;
+                if ( (LA89_0==74) ) {
+                    alt89=1;
                 }
 
 
-                switch (alt88) {
+                switch (alt89) {
             	case 1 :
             	    // InternalDedalADL.g:3750:4: otherlv_5= ',' ( ( ruleEString ) )
             	    {
@@ -9358,7 +9375,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop88;
+            	    break loop89;
                 }
             } while (true);
 
@@ -9516,17 +9533,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:3839:2: (otherlv_5= ',' ( ( ruleEString ) ) )*
-            loop89:
+            loop90:
             do {
-                int alt89=2;
-                int LA89_0 = input.LA(1);
+                int alt90=2;
+                int LA90_0 = input.LA(1);
 
-                if ( (LA89_0==74) ) {
-                    alt89=1;
+                if ( (LA90_0==74) ) {
+                    alt90=1;
                 }
 
 
-                switch (alt89) {
+                switch (alt90) {
             	case 1 :
             	    // InternalDedalADL.g:3839:4: otherlv_5= ',' ( ( ruleEString ) )
             	    {
@@ -9567,7 +9584,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop89;
+            	    break loop90;
                 }
             } while (true);
 
@@ -9753,13 +9770,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:3924:2: (otherlv_4= '(' this_REVISION_NUMB_5= RULE_REVISION_NUMB otherlv_6= ')' )?
-            int alt90=2;
-            int LA90_0 = input.LA(1);
+            int alt91=2;
+            int LA91_0 = input.LA(1);
 
-            if ( (LA90_0==14) ) {
-                alt90=1;
+            if ( (LA91_0==14) ) {
+                alt91=1;
             }
-            switch (alt90) {
+            switch (alt91) {
                 case 1 :
                     // InternalDedalADL.g:3924:4: otherlv_4= '(' this_REVISION_NUMB_5= RULE_REVISION_NUMB otherlv_6= ')'
                     {
@@ -9782,13 +9799,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:3936:3: (otherlv_7= 'versionID' this_REVISION_NUMB_8= RULE_REVISION_NUMB )?
-            int alt91=2;
-            int LA91_0 = input.LA(1);
+            int alt92=2;
+            int LA92_0 = input.LA(1);
 
-            if ( (LA91_0==30) ) {
-                alt91=1;
+            if ( (LA92_0==30) ) {
+                alt92=1;
             }
-            switch (alt91) {
+            switch (alt92) {
                 case 1 :
                     // InternalDedalADL.g:3936:5: otherlv_7= 'versionID' this_REVISION_NUMB_8= RULE_REVISION_NUMB
                     {
@@ -9846,17 +9863,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:3970:2: (otherlv_12= ';' ( (lv_assmComponents_13_0= ruleCompInstance ) ) )*
-            loop92:
+            loop93:
             do {
-                int alt92=2;
-                int LA92_0 = input.LA(1);
+                int alt93=2;
+                int LA93_0 = input.LA(1);
 
-                if ( (LA92_0==15) ) {
-                    alt92=1;
+                if ( (LA93_0==15) ) {
+                    alt93=1;
                 }
 
 
-                switch (alt92) {
+                switch (alt93) {
             	case 1 :
             	    // InternalDedalADL.g:3970:4: otherlv_12= ';' ( (lv_assmComponents_13_0= ruleCompInstance ) )
             	    {
@@ -9900,7 +9917,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop92;
+            	    break loop93;
                 }
             } while (true);
 
@@ -9909,13 +9926,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                 	newLeafNode(otherlv_14, grammarAccess.getAssemblyAccess().getRightParenthesisKeyword_10());
                 
             // InternalDedalADL.g:3996:1: (otherlv_15= 'assembly_constraints' otherlv_16= '(' ruleConstraint (otherlv_18= ';' ruleConstraint )* otherlv_20= ')' )?
-            int alt94=2;
-            int LA94_0 = input.LA(1);
+            int alt95=2;
+            int LA95_0 = input.LA(1);
 
-            if ( (LA94_0==80) ) {
-                alt94=1;
+            if ( (LA95_0==80) ) {
+                alt95=1;
             }
-            switch (alt94) {
+            switch (alt95) {
                 case 1 :
                     // InternalDedalADL.g:3996:3: otherlv_15= 'assembly_constraints' otherlv_16= '(' ruleConstraint (otherlv_18= ';' ruleConstraint )* otherlv_20= ')'
                     {
@@ -9939,17 +9956,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                             afterParserOrEnumRuleCall();
                         
                     // InternalDedalADL.g:4012:1: (otherlv_18= ';' ruleConstraint )*
-                    loop93:
+                    loop94:
                     do {
-                        int alt93=2;
-                        int LA93_0 = input.LA(1);
+                        int alt94=2;
+                        int LA94_0 = input.LA(1);
 
-                        if ( (LA93_0==15) ) {
-                            alt93=1;
+                        if ( (LA94_0==15) ) {
+                            alt94=1;
                         }
 
 
-                        switch (alt93) {
+                        switch (alt94) {
                     	case 1 :
                     	    // InternalDedalADL.g:4012:3: otherlv_18= ';' ruleConstraint
                     	    {
@@ -9973,7 +9990,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop93;
+                    	    break loop94;
                         }
                     } while (true);
 
@@ -9988,13 +10005,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:4028:3: (otherlv_21= 'pre_version' ruleversion )?
-            int alt95=2;
-            int LA95_0 = input.LA(1);
+            int alt96=2;
+            int LA96_0 = input.LA(1);
 
-            if ( (LA95_0==31) ) {
-                alt95=1;
+            if ( (LA96_0==31) ) {
+                alt96=1;
             }
-            switch (alt95) {
+            switch (alt96) {
                 case 1 :
                     // InternalDedalADL.g:4028:5: otherlv_21= 'pre_version' ruleversion
                     {
@@ -10020,13 +10037,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:4040:3: (otherlv_23= 'by' rulechange )?
-            int alt96=2;
-            int LA96_0 = input.LA(1);
+            int alt97=2;
+            int LA97_0 = input.LA(1);
 
-            if ( (LA96_0==32) ) {
-                alt96=1;
+            if ( (LA97_0==32) ) {
+                alt97=1;
             }
-            switch (alt96) {
+            switch (alt97) {
                 case 1 :
                     // InternalDedalADL.g:4040:5: otherlv_23= 'by' rulechange
                     {
@@ -10052,13 +10069,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:4052:3: (otherlv_25= 'interface_types' otherlv_26= '(' ( (lv_interfaceTypes_27_0= ruleInterfaceType ) ) (otherlv_28= ';' ( (lv_interfaceTypes_29_0= ruleInterfaceType ) ) )* otherlv_30= ')' )?
-            int alt98=2;
-            int LA98_0 = input.LA(1);
+            int alt99=2;
+            int LA99_0 = input.LA(1);
 
-            if ( (LA98_0==20) ) {
-                alt98=1;
+            if ( (LA99_0==20) ) {
+                alt99=1;
             }
-            switch (alt98) {
+            switch (alt99) {
                 case 1 :
                     // InternalDedalADL.g:4052:5: otherlv_25= 'interface_types' otherlv_26= '(' ( (lv_interfaceTypes_27_0= ruleInterfaceType ) ) (otherlv_28= ';' ( (lv_interfaceTypes_29_0= ruleInterfaceType ) ) )* otherlv_30= ')'
                     {
@@ -10102,17 +10119,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:4078:2: (otherlv_28= ';' ( (lv_interfaceTypes_29_0= ruleInterfaceType ) ) )*
-                    loop97:
+                    loop98:
                     do {
-                        int alt97=2;
-                        int LA97_0 = input.LA(1);
+                        int alt98=2;
+                        int LA98_0 = input.LA(1);
 
-                        if ( (LA97_0==15) ) {
-                            alt97=1;
+                        if ( (LA98_0==15) ) {
+                            alt98=1;
                         }
 
 
-                        switch (alt97) {
+                        switch (alt98) {
                     	case 1 :
                     	    // InternalDedalADL.g:4078:4: otherlv_28= ';' ( (lv_interfaceTypes_29_0= ruleInterfaceType ) )
                     	    {
@@ -10156,7 +10173,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop97;
+                    	    break loop98;
                         }
                     } while (true);
 
@@ -10171,13 +10188,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:4104:3: (otherlv_31= 'assembly_connections' otherlv_32= '(' ( (lv_assemblyConnections_33_0= ruleInstConnection ) ) (otherlv_34= ';' ( (lv_assemblyConnections_35_0= ruleInstConnection ) ) )* otherlv_36= ')' )?
-            int alt100=2;
-            int LA100_0 = input.LA(1);
+            int alt101=2;
+            int LA101_0 = input.LA(1);
 
-            if ( (LA100_0==81) ) {
-                alt100=1;
+            if ( (LA101_0==81) ) {
+                alt101=1;
             }
-            switch (alt100) {
+            switch (alt101) {
                 case 1 :
                     // InternalDedalADL.g:4104:5: otherlv_31= 'assembly_connections' otherlv_32= '(' ( (lv_assemblyConnections_33_0= ruleInstConnection ) ) (otherlv_34= ';' ( (lv_assemblyConnections_35_0= ruleInstConnection ) ) )* otherlv_36= ')'
                     {
@@ -10221,17 +10238,17 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:4130:2: (otherlv_34= ';' ( (lv_assemblyConnections_35_0= ruleInstConnection ) ) )*
-                    loop99:
+                    loop100:
                     do {
-                        int alt99=2;
-                        int LA99_0 = input.LA(1);
+                        int alt100=2;
+                        int LA100_0 = input.LA(1);
 
-                        if ( (LA99_0==15) ) {
-                            alt99=1;
+                        if ( (LA100_0==15) ) {
+                            alt100=1;
                         }
 
 
-                        switch (alt99) {
+                        switch (alt100) {
                     	case 1 :
                     	    // InternalDedalADL.g:4130:4: otherlv_34= ';' ( (lv_assemblyConnections_35_0= ruleInstConnection ) )
                     	    {
@@ -10275,7 +10292,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop99;
+                    	    break loop100;
                         }
                     } while (true);
 
@@ -10576,13 +10593,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:4265:2: (otherlv_2= 'as' ( ( ruleEString ) ) )?
-            int alt101=2;
-            int LA101_0 = input.LA(1);
+            int alt102=2;
+            int LA102_0 = input.LA(1);
 
-            if ( (LA101_0==53) ) {
-                alt101=1;
+            if ( (LA102_0==53) ) {
+                alt102=1;
             }
-            switch (alt101) {
+            switch (alt102) {
                 case 1 :
                     // InternalDedalADL.g:4265:4: otherlv_2= 'as' ( ( ruleEString ) )
                     {
@@ -10692,13 +10709,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:4325:2: (otherlv_8= 'component_interfaces' ( (lv_compInterfaces_9_0= ruleInteraction ) ) (otherlv_10= ';' ( (lv_compInterfaces_11_0= ruleInteraction ) ) )* )?
-            int alt103=2;
-            int LA103_0 = input.LA(1);
+            int alt104=2;
+            int LA104_0 = input.LA(1);
 
-            if ( (LA103_0==84) ) {
-                alt103=1;
+            if ( (LA104_0==84) ) {
+                alt104=1;
             }
-            switch (alt103) {
+            switch (alt104) {
                 case 1 :
                     // InternalDedalADL.g:4325:4: otherlv_8= 'component_interfaces' ( (lv_compInterfaces_9_0= ruleInteraction ) ) (otherlv_10= ';' ( (lv_compInterfaces_11_0= ruleInteraction ) ) )*
                     {
@@ -10738,23 +10755,23 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalDedalADL.g:4347:2: (otherlv_10= ';' ( (lv_compInterfaces_11_0= ruleInteraction ) ) )*
-                    loop102:
+                    loop103:
                     do {
-                        int alt102=2;
-                        int LA102_0 = input.LA(1);
+                        int alt103=2;
+                        int LA103_0 = input.LA(1);
 
-                        if ( (LA102_0==15) ) {
-                            int LA102_2 = input.LA(2);
+                        if ( (LA103_0==15) ) {
+                            int LA103_2 = input.LA(2);
 
-                            if ( (LA102_2==40||LA102_2==73||LA102_2==75) ) {
-                                alt102=1;
+                            if ( (LA103_2==40||LA103_2==73||LA103_2==75) ) {
+                                alt103=1;
                             }
 
 
                         }
 
 
-                        switch (alt102) {
+                        switch (alt103) {
                     	case 1 :
                     	    // InternalDedalADL.g:4347:4: otherlv_10= ';' ( (lv_compInterfaces_11_0= ruleInteraction ) )
                     	    {
@@ -10798,7 +10815,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop102;
+                    	    break loop103;
                         }
                     } while (true);
 
@@ -11200,22 +11217,22 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:4537:1: ( (kw= '!' this_constraint_expression_1= ruleconstraint_expression this_logical_constraint_2= rulelogical_constraint ) | (this_relational_constraint_3= rulerelational_constraint this_logical_constraint_4= rulelogical_constraint ) )
             {
             // InternalDedalADL.g:4537:1: ( (kw= '!' this_constraint_expression_1= ruleconstraint_expression this_logical_constraint_2= rulelogical_constraint ) | (this_relational_constraint_3= rulerelational_constraint this_logical_constraint_4= rulelogical_constraint ) )
-            int alt104=2;
-            int LA104_0 = input.LA(1);
+            int alt105=2;
+            int LA105_0 = input.LA(1);
 
-            if ( (LA104_0==86) ) {
-                alt104=1;
+            if ( (LA105_0==86) ) {
+                alt105=1;
             }
-            else if ( (LA104_0==RULE_ID) ) {
-                alt104=2;
+            else if ( (LA105_0==RULE_ID) ) {
+                alt105=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 104, 0, input);
+                    new NoViableAltException("", 105, 0, input);
 
                 throw nvae;
             }
-            switch (alt104) {
+            switch (alt105) {
                 case 1 :
                     // InternalDedalADL.g:4537:2: (kw= '!' this_constraint_expression_1= ruleconstraint_expression this_logical_constraint_2= rulelogical_constraint )
                     {
@@ -11379,16 +11396,16 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:4609:1: ( (kw= '||' this_constraint_expression_1= ruleconstraint_expression this_logical_constraint_2= rulelogical_constraint ) | (kw= '&&' this_constraint_expression_4= ruleconstraint_expression this_logical_constraint_5= rulelogical_constraint ) )?
             {
             // InternalDedalADL.g:4609:1: ( (kw= '||' this_constraint_expression_1= ruleconstraint_expression this_logical_constraint_2= rulelogical_constraint ) | (kw= '&&' this_constraint_expression_4= ruleconstraint_expression this_logical_constraint_5= rulelogical_constraint ) )?
-            int alt105=3;
-            int LA105_0 = input.LA(1);
+            int alt106=3;
+            int LA106_0 = input.LA(1);
 
-            if ( (LA105_0==87) ) {
-                alt105=1;
+            if ( (LA106_0==87) ) {
+                alt106=1;
             }
-            else if ( (LA105_0==88) ) {
-                alt105=2;
+            else if ( (LA106_0==88) ) {
+                alt106=2;
             }
-            switch (alt105) {
+            switch (alt106) {
                 case 1 :
                     // InternalDedalADL.g:4609:2: (kw= '||' this_constraint_expression_1= ruleconstraint_expression this_logical_constraint_2= rulelogical_constraint )
                     {
@@ -11572,46 +11589,46 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     afterParserOrEnumRuleCall();
                 
             // InternalDedalADL.g:4698:1: (kw= '==' | kw= '!=' | kw= '>' | kw= '<' | kw= '>=' | kw= '<=' )
-            int alt106=6;
+            int alt107=6;
             switch ( input.LA(1) ) {
             case 89:
                 {
-                alt106=1;
+                alt107=1;
                 }
                 break;
             case 90:
                 {
-                alt106=2;
+                alt107=2;
                 }
                 break;
             case 91:
                 {
-                alt106=3;
+                alt107=3;
                 }
                 break;
             case 92:
                 {
-                alt106=4;
+                alt107=4;
                 }
                 break;
             case 93:
                 {
-                alt106=5;
+                alt107=5;
                 }
                 break;
             case 94:
                 {
-                alt106=6;
+                alt107=6;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 106, 0, input);
+                    new NoViableAltException("", 107, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt106) {
+            switch (alt107) {
                 case 1 :
                     // InternalDedalADL.g:4699:2: kw= '=='
                     {
@@ -11682,32 +11699,32 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             }
 
             // InternalDedalADL.g:4739:2: (this_instance_attribute_7= ruleinstance_attribute | this_attribute_value_8= ruleattribute_value )
-            int alt107=2;
-            int LA107_0 = input.LA(1);
+            int alt108=2;
+            int LA108_0 = input.LA(1);
 
-            if ( (LA107_0==RULE_ID) ) {
-                int LA107_1 = input.LA(2);
+            if ( (LA108_0==RULE_ID) ) {
+                int LA108_1 = input.LA(2);
 
-                if ( (LA107_1==47) ) {
-                    alt107=1;
+                if ( (LA108_1==95) ) {
+                    alt108=2;
                 }
-                else if ( (LA107_1==95) ) {
-                    alt107=2;
+                else if ( (LA108_1==47) ) {
+                    alt108=1;
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("", 107, 1, input);
+                        new NoViableAltException("", 108, 1, input);
 
                     throw nvae;
                 }
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 107, 0, input);
+                    new NoViableAltException("", 108, 0, input);
 
                 throw nvae;
             }
-            switch (alt107) {
+            switch (alt108) {
                 case 1 :
                     // InternalDedalADL.g:4740:5: this_instance_attribute_7= ruleinstance_attribute
                     {
@@ -12126,13 +12143,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:4917:2: (this_ID_0= RULE_ID )? kw= '(' this_REVISION_NUMB_2= RULE_REVISION_NUMB kw= ')'
             {
             // InternalDedalADL.g:4917:2: (this_ID_0= RULE_ID )?
-            int alt108=2;
-            int LA108_0 = input.LA(1);
+            int alt109=2;
+            int LA109_0 = input.LA(1);
 
-            if ( (LA108_0==RULE_ID) ) {
-                alt108=1;
+            if ( (LA109_0==RULE_ID) ) {
+                alt109=1;
             }
-            switch (alt108) {
+            switch (alt109) {
                 case 1 :
                     // InternalDedalADL.g:4917:7: this_ID_0= RULE_ID
                     {
@@ -12401,13 +12418,13 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
                     afterParserOrEnumRuleCall();
                 
             // InternalDedalADL.g:5096:1: (kw= 'from' this_change_17= rulechange )?
-            int alt109=2;
-            int LA109_0 = input.LA(1);
+            int alt110=2;
+            int LA110_0 = input.LA(1);
 
-            if ( (LA109_0==104) ) {
-                alt109=1;
+            if ( (LA110_0==104) ) {
+                alt110=1;
             }
-            switch (alt109) {
+            switch (alt110) {
                 case 1 :
                     // InternalDedalADL.g:5097:2: kw= 'from' this_change_17= rulechange
                     {
@@ -12506,22 +12523,22 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:5134:1: (kw= 'static' | kw= 'dynamic' )
             {
             // InternalDedalADL.g:5134:1: (kw= 'static' | kw= 'dynamic' )
-            int alt110=2;
-            int LA110_0 = input.LA(1);
+            int alt111=2;
+            int LA111_0 = input.LA(1);
 
-            if ( (LA110_0==105) ) {
-                alt110=1;
+            if ( (LA111_0==105) ) {
+                alt111=1;
             }
-            else if ( (LA110_0==106) ) {
-                alt110=2;
+            else if ( (LA111_0==106) ) {
+                alt111=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 110, 0, input);
+                    new NoViableAltException("", 111, 0, input);
 
                 throw nvae;
             }
-            switch (alt110) {
+            switch (alt111) {
                 case 1 :
                     // InternalDedalADL.g:5135:2: kw= 'static'
                     {
@@ -12614,31 +12631,31 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:5168:1: (kw= 'specification' | kw= 'configuration' | kw= 'assembly' )
             {
             // InternalDedalADL.g:5168:1: (kw= 'specification' | kw= 'configuration' | kw= 'assembly' )
-            int alt111=3;
+            int alt112=3;
             switch ( input.LA(1) ) {
             case 27:
                 {
-                alt111=1;
+                alt112=1;
                 }
                 break;
             case 49:
                 {
-                alt111=2;
+                alt112=2;
                 }
                 break;
             case 77:
                 {
-                alt111=3;
+                alt112=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 111, 0, input);
+                    new NoViableAltException("", 112, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt111) {
+            switch (alt112) {
                 case 1 :
                     // InternalDedalADL.g:5169:2: kw= 'specification'
                     {
@@ -12742,36 +12759,36 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:5209:1: (kw= 'addition' | kw= 'removal' | kw= 'substitution' | kw= 'modification' )
             {
             // InternalDedalADL.g:5209:1: (kw= 'addition' | kw= 'removal' | kw= 'substitution' | kw= 'modification' )
-            int alt112=4;
+            int alt113=4;
             switch ( input.LA(1) ) {
             case 107:
                 {
-                alt112=1;
+                alt113=1;
                 }
                 break;
             case 108:
                 {
-                alt112=2;
+                alt113=2;
                 }
                 break;
             case 109:
                 {
-                alt112=3;
+                alt113=3;
                 }
                 break;
             case 110:
                 {
-                alt112=4;
+                alt113=4;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 112, 0, input);
+                    new NoViableAltException("", 113, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt112) {
+            switch (alt113) {
                 case 1 :
                     // InternalDedalADL.g:5210:2: kw= 'addition'
                     {
@@ -12891,36 +12908,36 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:5257:1: (this_specification_element_0= rulespecification_element | this_configuration_element_1= ruleconfiguration_element | this_assembly_element_2= ruleassembly_element )
             {
             // InternalDedalADL.g:5257:1: (this_specification_element_0= rulespecification_element | this_configuration_element_1= ruleconfiguration_element | this_assembly_element_2= ruleassembly_element )
-            int alt113=3;
+            int alt114=3;
             switch ( input.LA(1) ) {
             case 33:
             case 45:
             case 111:
                 {
-                alt113=1;
+                alt114=1;
                 }
                 break;
             case 112:
             case 113:
                 {
-                alt113=2;
+                alt114=2;
                 }
                 break;
             case 83:
             case 114:
             case 115:
                 {
-                alt113=3;
+                alt114=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 113, 0, input);
+                    new NoViableAltException("", 114, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt113) {
+            switch (alt114) {
                 case 1 :
                     // InternalDedalADL.g:5258:5: this_specification_element_0= rulespecification_element
                     {
@@ -13051,31 +13068,31 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:5313:1: (kw= 'component_role' | kw= 'connection' | kw= 'architecture_behavior' )
             {
             // InternalDedalADL.g:5313:1: (kw= 'component_role' | kw= 'connection' | kw= 'architecture_behavior' )
-            int alt114=3;
+            int alt115=3;
             switch ( input.LA(1) ) {
             case 33:
                 {
-                alt114=1;
+                alt115=1;
                 }
                 break;
             case 45:
                 {
-                alt114=2;
+                alt115=2;
                 }
                 break;
             case 111:
                 {
-                alt114=3;
+                alt115=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 114, 0, input);
+                    new NoViableAltException("", 115, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt114) {
+            switch (alt115) {
                 case 1 :
                     // InternalDedalADL.g:5314:2: kw= 'component_role'
                     {
@@ -13179,22 +13196,22 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:5354:1: (kw= 'component_class' | kw= 'connector_class' )
             {
             // InternalDedalADL.g:5354:1: (kw= 'component_class' | kw= 'connector_class' )
-            int alt115=2;
-            int LA115_0 = input.LA(1);
+            int alt116=2;
+            int LA116_0 = input.LA(1);
 
-            if ( (LA115_0==112) ) {
-                alt115=1;
+            if ( (LA116_0==112) ) {
+                alt116=1;
             }
-            else if ( (LA115_0==113) ) {
-                alt115=2;
+            else if ( (LA116_0==113) ) {
+                alt116=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 115, 0, input);
+                    new NoViableAltException("", 116, 0, input);
 
                 throw nvae;
             }
-            switch (alt115) {
+            switch (alt116) {
                 case 1 :
                     // InternalDedalADL.g:5355:2: kw= 'component_class'
                     {
@@ -13287,31 +13304,31 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:5388:1: (kw= 'component_instance' | kw= 'connector_instance' | kw= 'assembly_constraint' )
             {
             // InternalDedalADL.g:5388:1: (kw= 'component_instance' | kw= 'connector_instance' | kw= 'assembly_constraint' )
-            int alt116=3;
+            int alt117=3;
             switch ( input.LA(1) ) {
             case 83:
                 {
-                alt116=1;
+                alt117=1;
                 }
                 break;
             case 114:
                 {
-                alt116=2;
+                alt117=2;
                 }
                 break;
             case 115:
                 {
-                alt116=3;
+                alt117=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 116, 0, input);
+                    new NoViableAltException("", 117, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt116) {
+            switch (alt117) {
                 case 1 :
                     // InternalDedalADL.g:5389:2: kw= 'component_instance'
                     {
@@ -13415,31 +13432,31 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:5429:1: (kw= 'corrective' | kw= 'perfective' | kw= 'adaptative' )
             {
             // InternalDedalADL.g:5429:1: (kw= 'corrective' | kw= 'perfective' | kw= 'adaptative' )
-            int alt117=3;
+            int alt118=3;
             switch ( input.LA(1) ) {
             case 116:
                 {
-                alt117=1;
+                alt118=1;
                 }
                 break;
             case 117:
                 {
-                alt117=2;
+                alt118=2;
                 }
                 break;
             case 118:
                 {
-                alt117=3;
+                alt118=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 117, 0, input);
+                    new NoViableAltException("", 118, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt117) {
+            switch (alt118) {
                 case 1 :
                     // InternalDedalADL.g:5430:2: kw= 'corrective'
                     {
@@ -13543,31 +13560,31 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:5470:1: (kw= 'given' | kw= 'generated' | kw= 'propagated' )
             {
             // InternalDedalADL.g:5470:1: (kw= 'given' | kw= 'generated' | kw= 'propagated' )
-            int alt118=3;
+            int alt119=3;
             switch ( input.LA(1) ) {
             case 119:
                 {
-                alt118=1;
+                alt119=1;
                 }
                 break;
             case 120:
                 {
-                alt118=2;
+                alt119=2;
                 }
                 break;
             case 121:
                 {
-                alt118=3;
+                alt119=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 118, 0, input);
+                    new NoViableAltException("", 119, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt118) {
+            switch (alt119) {
                 case 1 :
                     // InternalDedalADL.g:5471:2: kw= 'given'
                     {
@@ -13635,22 +13652,22 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
             // InternalDedalADL.g:5501:1: ( (enumLiteral_0= 'provided' ) | (enumLiteral_1= 'required' ) )
             {
             // InternalDedalADL.g:5501:1: ( (enumLiteral_0= 'provided' ) | (enumLiteral_1= 'required' ) )
-            int alt119=2;
-            int LA119_0 = input.LA(1);
+            int alt120=2;
+            int LA120_0 = input.LA(1);
 
-            if ( (LA119_0==65) ) {
-                alt119=1;
+            if ( (LA120_0==65) ) {
+                alt120=1;
             }
-            else if ( (LA119_0==66) ) {
-                alt119=2;
+            else if ( (LA120_0==66) ) {
+                alt120=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 119, 0, input);
+                    new NoViableAltException("", 120, 0, input);
 
                 throw nvae;
             }
-            switch (alt119) {
+            switch (alt120) {
                 case 1 :
                     // InternalDedalADL.g:5501:2: (enumLiteral_0= 'provided' )
                     {
@@ -13733,7 +13750,7 @@ public class InternalDedalADLParser extends AbstractInternalAntlrParser {
         public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000000001200002L});
         public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000000200002L});
         public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000000010000000L});
+        public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x00000001F0100002L});
         public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000200000000L});
         public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x00000001E0108002L});
         public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000200000000000L});

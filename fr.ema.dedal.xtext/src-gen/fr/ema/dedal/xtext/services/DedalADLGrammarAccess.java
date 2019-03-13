@@ -623,48 +623,49 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cSpecificationKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameSpecification_nameParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
-		private final Keyword cComponent_rolesKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cSpecComponentsAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cSpecComponentsCompRoleParserRuleCall_3_0 = (RuleCall)cSpecComponentsAssignment_3.eContents().get(0);
+		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
+		private final Keyword cComponent_rolesKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Assignment cSpecComponentsAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
+		private final RuleCall cSpecComponentsCompRoleParserRuleCall_2_1_0 = (RuleCall)cSpecComponentsAssignment_2_1.eContents().get(0);
+		private final Group cGroup_2_2 = (Group)cGroup_2.eContents().get(2);
+		private final Keyword cSemicolonKeyword_2_2_0 = (Keyword)cGroup_2_2.eContents().get(0);
+		private final Assignment cSpecComponentsAssignment_2_2_1 = (Assignment)cGroup_2_2.eContents().get(1);
+		private final RuleCall cSpecComponentsCompRoleParserRuleCall_2_2_1_0 = (RuleCall)cSpecComponentsAssignment_2_2_1.eContents().get(0);
+		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
+		private final Keyword cConnectionsKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Assignment cSpecConnectionsAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
+		private final RuleCall cSpecConnectionsRoleConnectionParserRuleCall_3_1_0 = (RuleCall)cSpecConnectionsAssignment_3_1.eContents().get(0);
+		private final Assignment cSpecConnectionsAssignment_3_2 = (Assignment)cGroup_3.eContents().get(2);
+		private final RuleCall cSpecConnectionsRoleConnectionParserRuleCall_3_2_0 = (RuleCall)cSpecConnectionsAssignment_3_2.eContents().get(0);
 		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Keyword cSemicolonKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
-		private final Assignment cSpecComponentsAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
-		private final RuleCall cSpecComponentsCompRoleParserRuleCall_4_1_0 = (RuleCall)cSpecComponentsAssignment_4_1.eContents().get(0);
+		private final Keyword cVersionIDKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final RuleCall cREVISION_NUMBTerminalRuleCall_4_1 = (RuleCall)cGroup_4.eContents().get(1);
 		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Keyword cConnectionsKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
-		private final Assignment cSpecConnectionsAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
-		private final RuleCall cSpecConnectionsRoleConnectionParserRuleCall_5_1_0 = (RuleCall)cSpecConnectionsAssignment_5_1.eContents().get(0);
-		private final Assignment cSpecConnectionsAssignment_5_2 = (Assignment)cGroup_5.eContents().get(2);
-		private final RuleCall cSpecConnectionsRoleConnectionParserRuleCall_5_2_0 = (RuleCall)cSpecConnectionsAssignment_5_2.eContents().get(0);
+		private final Keyword cPre_versionKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
+		private final RuleCall cPre_versionParserRuleCall_5_1 = (RuleCall)cGroup_5.eContents().get(1);
 		private final Group cGroup_6 = (Group)cGroup.eContents().get(6);
-		private final Keyword cVersionIDKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
-		private final RuleCall cREVISION_NUMBTerminalRuleCall_6_1 = (RuleCall)cGroup_6.eContents().get(1);
+		private final Keyword cByKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
+		private final RuleCall cChangeParserRuleCall_6_1 = (RuleCall)cGroup_6.eContents().get(1);
 		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
-		private final Keyword cPre_versionKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
-		private final RuleCall cPre_versionParserRuleCall_7_1 = (RuleCall)cGroup_7.eContents().get(1);
-		private final Group cGroup_8 = (Group)cGroup.eContents().get(8);
-		private final Keyword cByKeyword_8_0 = (Keyword)cGroup_8.eContents().get(0);
-		private final RuleCall cChangeParserRuleCall_8_1 = (RuleCall)cGroup_8.eContents().get(1);
-		private final Group cGroup_9 = (Group)cGroup.eContents().get(9);
-		private final Keyword cInterface_typesKeyword_9_0 = (Keyword)cGroup_9.eContents().get(0);
-		private final Assignment cInterfaceTypesAssignment_9_1 = (Assignment)cGroup_9.eContents().get(1);
-		private final RuleCall cInterfaceTypesInterfaceTypeParserRuleCall_9_1_0 = (RuleCall)cInterfaceTypesAssignment_9_1.eContents().get(0);
-		private final Group cGroup_9_2 = (Group)cGroup_9.eContents().get(2);
-		private final Keyword cSemicolonKeyword_9_2_0 = (Keyword)cGroup_9_2.eContents().get(0);
-		private final Assignment cInterfaceTypesAssignment_9_2_1 = (Assignment)cGroup_9_2.eContents().get(1);
-		private final RuleCall cInterfaceTypesInterfaceTypeParserRuleCall_9_2_1_0 = (RuleCall)cInterfaceTypesAssignment_9_2_1.eContents().get(0);
+		private final Keyword cInterface_typesKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
+		private final Assignment cInterfaceTypesAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
+		private final RuleCall cInterfaceTypesInterfaceTypeParserRuleCall_7_1_0 = (RuleCall)cInterfaceTypesAssignment_7_1.eContents().get(0);
+		private final Group cGroup_7_2 = (Group)cGroup_7.eContents().get(2);
+		private final Keyword cSemicolonKeyword_7_2_0 = (Keyword)cGroup_7_2.eContents().get(0);
+		private final Assignment cInterfaceTypesAssignment_7_2_1 = (Assignment)cGroup_7_2.eContents().get(1);
+		private final RuleCall cInterfaceTypesInterfaceTypeParserRuleCall_7_2_1_0 = (RuleCall)cInterfaceTypesAssignment_7_2_1.eContents().get(0);
 		
 		//// ---------------------------------------------------------------------------------------
 		////									Specification
 		//// ---------------------------------------------------------------------------------------
 		//Specification dedal::Specification:
-		//	'specification' name=specification_name
-		//	'component_roles' specComponents+=CompRole (';' specComponents+=CompRole)* ('connections'
-		//	specConnections+=RoleConnection specConnections+=RoleConnection*)? ('versionID' REVISION_NUMB)? ('pre_version'
-		//	pre_version)? ('by' change)? ('interface_types' interfaceTypes+=InterfaceType (';' interfaceTypes+=InterfaceType)*)?;
+		//	'specification' name=specification_name ('component_roles' specComponents+=CompRole (';' specComponents+=CompRole)*)?
+		//	('connections' specConnections+=RoleConnection specConnections+=RoleConnection*)? ('versionID' REVISION_NUMB)?
+		//	('pre_version' pre_version)? ('by' change)? ('interface_types' interfaceTypes+=InterfaceType (';'
+		//	interfaceTypes+=InterfaceType)*)?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//'specification' name=specification_name 'component_roles' specComponents+=CompRole (';' specComponents+=CompRole)*
+		//'specification' name=specification_name ('component_roles' specComponents+=CompRole (';' specComponents+=CompRole)*)?
 		//('connections' specConnections+=RoleConnection specConnections+=RoleConnection*)? ('versionID' REVISION_NUMB)?
 		//('pre_version' pre_version)? ('by' change)? ('interface_types' interfaceTypes+=InterfaceType (';'
 		//interfaceTypes+=InterfaceType)*)?
@@ -679,95 +680,98 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		//specification_name
 		public RuleCall getNameSpecification_nameParserRuleCall_1_0() { return cNameSpecification_nameParserRuleCall_1_0; }
 
+		//('component_roles' specComponents+=CompRole (';' specComponents+=CompRole)*)?
+		public Group getGroup_2() { return cGroup_2; }
+
 		//'component_roles'
-		public Keyword getComponent_rolesKeyword_2() { return cComponent_rolesKeyword_2; }
+		public Keyword getComponent_rolesKeyword_2_0() { return cComponent_rolesKeyword_2_0; }
 
 		//specComponents+=CompRole
-		public Assignment getSpecComponentsAssignment_3() { return cSpecComponentsAssignment_3; }
+		public Assignment getSpecComponentsAssignment_2_1() { return cSpecComponentsAssignment_2_1; }
 
 		//CompRole
-		public RuleCall getSpecComponentsCompRoleParserRuleCall_3_0() { return cSpecComponentsCompRoleParserRuleCall_3_0; }
+		public RuleCall getSpecComponentsCompRoleParserRuleCall_2_1_0() { return cSpecComponentsCompRoleParserRuleCall_2_1_0; }
 
 		//(';' specComponents+=CompRole)*
-		public Group getGroup_4() { return cGroup_4; }
+		public Group getGroup_2_2() { return cGroup_2_2; }
 
 		//';'
-		public Keyword getSemicolonKeyword_4_0() { return cSemicolonKeyword_4_0; }
+		public Keyword getSemicolonKeyword_2_2_0() { return cSemicolonKeyword_2_2_0; }
 
 		//specComponents+=CompRole
-		public Assignment getSpecComponentsAssignment_4_1() { return cSpecComponentsAssignment_4_1; }
+		public Assignment getSpecComponentsAssignment_2_2_1() { return cSpecComponentsAssignment_2_2_1; }
 
 		//CompRole
-		public RuleCall getSpecComponentsCompRoleParserRuleCall_4_1_0() { return cSpecComponentsCompRoleParserRuleCall_4_1_0; }
+		public RuleCall getSpecComponentsCompRoleParserRuleCall_2_2_1_0() { return cSpecComponentsCompRoleParserRuleCall_2_2_1_0; }
 
 		//('connections' specConnections+=RoleConnection specConnections+=RoleConnection*)?
-		public Group getGroup_5() { return cGroup_5; }
+		public Group getGroup_3() { return cGroup_3; }
 
 		//'connections'
-		public Keyword getConnectionsKeyword_5_0() { return cConnectionsKeyword_5_0; }
+		public Keyword getConnectionsKeyword_3_0() { return cConnectionsKeyword_3_0; }
 
 		//specConnections+=RoleConnection
-		public Assignment getSpecConnectionsAssignment_5_1() { return cSpecConnectionsAssignment_5_1; }
+		public Assignment getSpecConnectionsAssignment_3_1() { return cSpecConnectionsAssignment_3_1; }
 
 		//RoleConnection
-		public RuleCall getSpecConnectionsRoleConnectionParserRuleCall_5_1_0() { return cSpecConnectionsRoleConnectionParserRuleCall_5_1_0; }
+		public RuleCall getSpecConnectionsRoleConnectionParserRuleCall_3_1_0() { return cSpecConnectionsRoleConnectionParserRuleCall_3_1_0; }
 
 		//specConnections+=RoleConnection*
-		public Assignment getSpecConnectionsAssignment_5_2() { return cSpecConnectionsAssignment_5_2; }
+		public Assignment getSpecConnectionsAssignment_3_2() { return cSpecConnectionsAssignment_3_2; }
 
 		//RoleConnection
-		public RuleCall getSpecConnectionsRoleConnectionParserRuleCall_5_2_0() { return cSpecConnectionsRoleConnectionParserRuleCall_5_2_0; }
+		public RuleCall getSpecConnectionsRoleConnectionParserRuleCall_3_2_0() { return cSpecConnectionsRoleConnectionParserRuleCall_3_2_0; }
 
 		//('versionID' REVISION_NUMB)?
-		public Group getGroup_6() { return cGroup_6; }
+		public Group getGroup_4() { return cGroup_4; }
 
 		//'versionID'
-		public Keyword getVersionIDKeyword_6_0() { return cVersionIDKeyword_6_0; }
+		public Keyword getVersionIDKeyword_4_0() { return cVersionIDKeyword_4_0; }
 
 		//REVISION_NUMB
-		public RuleCall getREVISION_NUMBTerminalRuleCall_6_1() { return cREVISION_NUMBTerminalRuleCall_6_1; }
+		public RuleCall getREVISION_NUMBTerminalRuleCall_4_1() { return cREVISION_NUMBTerminalRuleCall_4_1; }
 
 		//('pre_version' pre_version)?
-		public Group getGroup_7() { return cGroup_7; }
+		public Group getGroup_5() { return cGroup_5; }
 
 		//'pre_version'
-		public Keyword getPre_versionKeyword_7_0() { return cPre_versionKeyword_7_0; }
+		public Keyword getPre_versionKeyword_5_0() { return cPre_versionKeyword_5_0; }
 
 		//pre_version
-		public RuleCall getPre_versionParserRuleCall_7_1() { return cPre_versionParserRuleCall_7_1; }
+		public RuleCall getPre_versionParserRuleCall_5_1() { return cPre_versionParserRuleCall_5_1; }
 
 		//('by' change)?
-		public Group getGroup_8() { return cGroup_8; }
+		public Group getGroup_6() { return cGroup_6; }
 
 		//'by'
-		public Keyword getByKeyword_8_0() { return cByKeyword_8_0; }
+		public Keyword getByKeyword_6_0() { return cByKeyword_6_0; }
 
 		//change
-		public RuleCall getChangeParserRuleCall_8_1() { return cChangeParserRuleCall_8_1; }
+		public RuleCall getChangeParserRuleCall_6_1() { return cChangeParserRuleCall_6_1; }
 
 		//('interface_types' interfaceTypes+=InterfaceType (';' interfaceTypes+=InterfaceType)*)?
-		public Group getGroup_9() { return cGroup_9; }
+		public Group getGroup_7() { return cGroup_7; }
 
 		//'interface_types'
-		public Keyword getInterface_typesKeyword_9_0() { return cInterface_typesKeyword_9_0; }
+		public Keyword getInterface_typesKeyword_7_0() { return cInterface_typesKeyword_7_0; }
 
 		//interfaceTypes+=InterfaceType
-		public Assignment getInterfaceTypesAssignment_9_1() { return cInterfaceTypesAssignment_9_1; }
+		public Assignment getInterfaceTypesAssignment_7_1() { return cInterfaceTypesAssignment_7_1; }
 
 		//InterfaceType
-		public RuleCall getInterfaceTypesInterfaceTypeParserRuleCall_9_1_0() { return cInterfaceTypesInterfaceTypeParserRuleCall_9_1_0; }
+		public RuleCall getInterfaceTypesInterfaceTypeParserRuleCall_7_1_0() { return cInterfaceTypesInterfaceTypeParserRuleCall_7_1_0; }
 
 		//(';' interfaceTypes+=InterfaceType)*
-		public Group getGroup_9_2() { return cGroup_9_2; }
+		public Group getGroup_7_2() { return cGroup_7_2; }
 
 		//';'
-		public Keyword getSemicolonKeyword_9_2_0() { return cSemicolonKeyword_9_2_0; }
+		public Keyword getSemicolonKeyword_7_2_0() { return cSemicolonKeyword_7_2_0; }
 
 		//interfaceTypes+=InterfaceType
-		public Assignment getInterfaceTypesAssignment_9_2_1() { return cInterfaceTypesAssignment_9_2_1; }
+		public Assignment getInterfaceTypesAssignment_7_2_1() { return cInterfaceTypesAssignment_7_2_1; }
 
 		//InterfaceType
-		public RuleCall getInterfaceTypesInterfaceTypeParserRuleCall_9_2_1_0() { return cInterfaceTypesInterfaceTypeParserRuleCall_9_2_1_0; }
+		public RuleCall getInterfaceTypesInterfaceTypeParserRuleCall_7_2_1_0() { return cInterfaceTypesInterfaceTypeParserRuleCall_7_2_1_0; }
 	}
 
 	public class Specification_nameElements extends AbstractParserRuleElementFinder {
@@ -4270,10 +4274,10 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	////									Specification
 	//// ---------------------------------------------------------------------------------------
 	//Specification dedal::Specification:
-	//	'specification' name=specification_name
-	//	'component_roles' specComponents+=CompRole (';' specComponents+=CompRole)* ('connections'
-	//	specConnections+=RoleConnection specConnections+=RoleConnection*)? ('versionID' REVISION_NUMB)? ('pre_version'
-	//	pre_version)? ('by' change)? ('interface_types' interfaceTypes+=InterfaceType (';' interfaceTypes+=InterfaceType)*)?;
+	//	'specification' name=specification_name ('component_roles' specComponents+=CompRole (';' specComponents+=CompRole)*)?
+	//	('connections' specConnections+=RoleConnection specConnections+=RoleConnection*)? ('versionID' REVISION_NUMB)?
+	//	('pre_version' pre_version)? ('by' change)? ('interface_types' interfaceTypes+=InterfaceType (';'
+	//	interfaceTypes+=InterfaceType)*)?;
 	public SpecificationElements getSpecificationAccess() {
 		return pSpecification;
 	}

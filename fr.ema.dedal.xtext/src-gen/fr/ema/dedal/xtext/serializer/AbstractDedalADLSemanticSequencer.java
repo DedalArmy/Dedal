@@ -505,8 +505,7 @@ public abstract class AbstractDedalADLSemanticSequencer extends AbstractDelegati
 	 * Constraint:
 	 *     (
 	 *         name=specification_name 
-	 *         specComponents+=CompRole 
-	 *         specComponents+=CompRole* 
+	 *         (specComponents+=CompRole specComponents+=CompRole*)? 
 	 *         (specConnections+=RoleConnection specConnections+=RoleConnection*)? 
 	 *         (interfaceTypes+=InterfaceType interfaceTypes+=InterfaceType*)?
 	 *     )

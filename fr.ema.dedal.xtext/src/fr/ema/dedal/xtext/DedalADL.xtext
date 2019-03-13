@@ -70,7 +70,7 @@ Parameter returns dedal::Parameter:
 
 Specification returns dedal::Specification:
 	'specification' name=specification_name
-		'component_roles' specComponents+=CompRole ( ';' specComponents+=CompRole )*
+		('component_roles' specComponents+=CompRole ( ';' specComponents+=CompRole )*)?
 		('connections' specConnections+=RoleConnection (specConnections+=RoleConnection)* )?
 		// 'architecture_behavior' architecture_behavior
 		('versionID' REVISION_NUMB)?

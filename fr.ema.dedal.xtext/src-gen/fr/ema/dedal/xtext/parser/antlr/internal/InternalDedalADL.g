@@ -965,14 +965,14 @@ ruleSpecification returns [EObject current=null]
 	    }
 
 )
-)	otherlv_2='component_roles' 
+)(	otherlv_2='component_roles' 
     {
-    	newLeafNode(otherlv_2, grammarAccess.getSpecificationAccess().getComponent_rolesKeyword_2());
+    	newLeafNode(otherlv_2, grammarAccess.getSpecificationAccess().getComponent_rolesKeyword_2_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecComponentsCompRoleParserRuleCall_3_0()); 
+	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecComponentsCompRoleParserRuleCall_2_1_0()); 
 	    }
 		lv_specComponents_3_0=ruleCompRole		{
 	        if ($current==null) {
@@ -989,12 +989,12 @@ ruleSpecification returns [EObject current=null]
 )
 )(	otherlv_4=';' 
     {
-    	newLeafNode(otherlv_4, grammarAccess.getSpecificationAccess().getSemicolonKeyword_4_0());
+    	newLeafNode(otherlv_4, grammarAccess.getSpecificationAccess().getSemicolonKeyword_2_2_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecComponentsCompRoleParserRuleCall_4_1_0()); 
+	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecComponentsCompRoleParserRuleCall_2_2_1_0()); 
 	    }
 		lv_specComponents_5_0=ruleCompRole		{
 	        if ($current==null) {
@@ -1009,14 +1009,14 @@ ruleSpecification returns [EObject current=null]
 	    }
 
 )
-))*(	otherlv_6='connections' 
+))*)?(	otherlv_6='connections' 
     {
-    	newLeafNode(otherlv_6, grammarAccess.getSpecificationAccess().getConnectionsKeyword_5_0());
+    	newLeafNode(otherlv_6, grammarAccess.getSpecificationAccess().getConnectionsKeyword_3_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecConnectionsRoleConnectionParserRuleCall_5_1_0()); 
+	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecConnectionsRoleConnectionParserRuleCall_3_1_0()); 
 	    }
 		lv_specConnections_7_0=ruleRoleConnection		{
 	        if ($current==null) {
@@ -1034,7 +1034,7 @@ ruleSpecification returns [EObject current=null]
 )(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecConnectionsRoleConnectionParserRuleCall_5_2_0()); 
+	        newCompositeNode(grammarAccess.getSpecificationAccess().getSpecConnectionsRoleConnectionParserRuleCall_3_2_0()); 
 	    }
 		lv_specConnections_8_0=ruleRoleConnection		{
 	        if ($current==null) {
@@ -1051,19 +1051,19 @@ ruleSpecification returns [EObject current=null]
 )
 )*)?(	otherlv_9='versionID' 
     {
-    	newLeafNode(otherlv_9, grammarAccess.getSpecificationAccess().getVersionIDKeyword_6_0());
+    	newLeafNode(otherlv_9, grammarAccess.getSpecificationAccess().getVersionIDKeyword_4_0());
     }
 this_REVISION_NUMB_10=RULE_REVISION_NUMB
     { 
-    newLeafNode(this_REVISION_NUMB_10, grammarAccess.getSpecificationAccess().getREVISION_NUMBTerminalRuleCall_6_1()); 
+    newLeafNode(this_REVISION_NUMB_10, grammarAccess.getSpecificationAccess().getREVISION_NUMBTerminalRuleCall_4_1()); 
     }
 )?(	otherlv_11='pre_version' 
     {
-    	newLeafNode(otherlv_11, grammarAccess.getSpecificationAccess().getPre_versionKeyword_7_0());
+    	newLeafNode(otherlv_11, grammarAccess.getSpecificationAccess().getPre_versionKeyword_5_0());
     }
 
     { 
-        newCompositeNode(grammarAccess.getSpecificationAccess().getPre_versionParserRuleCall_7_1()); 
+        newCompositeNode(grammarAccess.getSpecificationAccess().getPre_versionParserRuleCall_5_1()); 
     }
 rulepre_version
     { 
@@ -1071,11 +1071,11 @@ rulepre_version
     }
 )?(	otherlv_13='by' 
     {
-    	newLeafNode(otherlv_13, grammarAccess.getSpecificationAccess().getByKeyword_8_0());
+    	newLeafNode(otherlv_13, grammarAccess.getSpecificationAccess().getByKeyword_6_0());
     }
 
     { 
-        newCompositeNode(grammarAccess.getSpecificationAccess().getChangeParserRuleCall_8_1()); 
+        newCompositeNode(grammarAccess.getSpecificationAccess().getChangeParserRuleCall_6_1()); 
     }
 rulechange
     { 
@@ -1083,12 +1083,12 @@ rulechange
     }
 )?(	otherlv_15='interface_types' 
     {
-    	newLeafNode(otherlv_15, grammarAccess.getSpecificationAccess().getInterface_typesKeyword_9_0());
+    	newLeafNode(otherlv_15, grammarAccess.getSpecificationAccess().getInterface_typesKeyword_7_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getSpecificationAccess().getInterfaceTypesInterfaceTypeParserRuleCall_9_1_0()); 
+	        newCompositeNode(grammarAccess.getSpecificationAccess().getInterfaceTypesInterfaceTypeParserRuleCall_7_1_0()); 
 	    }
 		lv_interfaceTypes_16_0=ruleInterfaceType		{
 	        if ($current==null) {
@@ -1105,12 +1105,12 @@ rulechange
 )
 )(	otherlv_17=';' 
     {
-    	newLeafNode(otherlv_17, grammarAccess.getSpecificationAccess().getSemicolonKeyword_9_2_0());
+    	newLeafNode(otherlv_17, grammarAccess.getSpecificationAccess().getSemicolonKeyword_7_2_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getSpecificationAccess().getInterfaceTypesInterfaceTypeParserRuleCall_9_2_1_0()); 
+	        newCompositeNode(grammarAccess.getSpecificationAccess().getInterfaceTypesInterfaceTypeParserRuleCall_7_2_1_0()); 
 	    }
 		lv_interfaceTypes_18_0=ruleInterfaceType		{
 	        if ($current==null) {
