@@ -650,10 +650,10 @@ ruleInterfaceType returns [EObject current=null]
     {
     	newLeafNode(otherlv_3, grammarAccess.getInterfaceTypeAccess().getLeftParenthesisKeyword_3());
     }
-(
+((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getInterfaceTypeAccess().getSignaturesSignatureParserRuleCall_4_0()); 
+	        newCompositeNode(grammarAccess.getInterfaceTypeAccess().getSignaturesSignatureParserRuleCall_4_0_0()); 
 	    }
 		lv_signatures_4_0=ruleSignature		{
 	        if ($current==null) {
@@ -670,12 +670,12 @@ ruleInterfaceType returns [EObject current=null]
 )
 )(	otherlv_5=';' 
     {
-    	newLeafNode(otherlv_5, grammarAccess.getInterfaceTypeAccess().getSemicolonKeyword_5_0());
+    	newLeafNode(otherlv_5, grammarAccess.getInterfaceTypeAccess().getSemicolonKeyword_4_1_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getInterfaceTypeAccess().getSignaturesSignatureParserRuleCall_5_1_0()); 
+	        newCompositeNode(grammarAccess.getInterfaceTypeAccess().getSignaturesSignatureParserRuleCall_4_1_1_0()); 
 	    }
 		lv_signatures_6_0=ruleSignature		{
 	        if ($current==null) {
@@ -690,9 +690,9 @@ ruleInterfaceType returns [EObject current=null]
 	    }
 
 )
-))*	otherlv_7=')' 
+))*)?	otherlv_7=')' 
     {
-    	newLeafNode(otherlv_7, grammarAccess.getInterfaceTypeAccess().getRightParenthesisKeyword_6());
+    	newLeafNode(otherlv_7, grammarAccess.getInterfaceTypeAccess().getRightParenthesisKeyword_5());
     }
 )
 ;
@@ -1146,14 +1146,22 @@ rulespecification_name returns [AntlrDatatypeRuleToken current=new AntlrDatatype
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-    this_ID_0=RULE_ID    {
+(    this_ID_0=RULE_ID    {
 		$current.merge(this_ID_0);
     }
 
     { 
-    newLeafNode(this_ID_0, grammarAccess.getSpecification_nameAccess().getIDTerminalRuleCall()); 
+    newLeafNode(this_ID_0, grammarAccess.getSpecification_nameAccess().getIDTerminalRuleCall_0()); 
     }
 
+    |    this_STRING_1=RULE_STRING    {
+		$current.merge(this_STRING_1);
+    }
+
+    { 
+    newLeafNode(this_STRING_1, grammarAccess.getSpecification_nameAccess().getSTRINGTerminalRuleCall_1()); 
+    }
+)
     ;
 
 
@@ -1415,14 +1423,22 @@ rulecomponent_role_name returns [AntlrDatatypeRuleToken current=new AntlrDatatyp
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-    this_ID_0=RULE_ID    {
+(    this_ID_0=RULE_ID    {
 		$current.merge(this_ID_0);
     }
 
     { 
-    newLeafNode(this_ID_0, grammarAccess.getComponent_role_nameAccess().getIDTerminalRuleCall()); 
+    newLeafNode(this_ID_0, grammarAccess.getComponent_role_nameAccess().getIDTerminalRuleCall_0()); 
     }
 
+    |    this_STRING_1=RULE_STRING    {
+		$current.merge(this_STRING_1);
+    }
+
+    { 
+    newLeafNode(this_STRING_1, grammarAccess.getComponent_role_nameAccess().getSTRINGTerminalRuleCall_1()); 
+    }
+)
     ;
 
 
@@ -1498,12 +1514,10 @@ ruleInterface returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getInterfaceRule());
 	        }
         }
-		{ 
-	        newCompositeNode(grammarAccess.getInterfaceAccess().getTypeInterfaceTypeCrossReference_5_0()); 
-	    }
-		ruleEString		{ 
-	        afterParserOrEnumRuleCall();
-	    }
+	otherlv_5=RULE_ID
+	{
+		newLeafNode(otherlv_5, grammarAccess.getInterfaceAccess().getTypeInterfaceTypeCrossReference_5_0()); 
+	}
 
 )
 )(	otherlv_6='delegation' 
@@ -1517,12 +1531,10 @@ ruleInterface returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getInterfaceRule());
 	        }
         }
-		{ 
-	        newCompositeNode(grammarAccess.getInterfaceAccess().getDelegationInterfaceCrossReference_6_1_0()); 
-	    }
-		ruleEString		{ 
-	        afterParserOrEnumRuleCall();
-	    }
+	otherlv_7=RULE_ID
+	{
+		newLeafNode(otherlv_7, grammarAccess.getInterfaceAccess().getDelegationInterfaceCrossReference_6_1_0()); 
+	}
 
 )
 ))?(	otherlv_8='instantiates' 
@@ -1565,14 +1577,22 @@ ruleinterface_name returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRule
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-    this_ID_0=RULE_ID    {
+(    this_ID_0=RULE_ID    {
 		$current.merge(this_ID_0);
     }
 
     { 
-    newLeafNode(this_ID_0, grammarAccess.getInterface_nameAccess().getIDTerminalRuleCall()); 
+    newLeafNode(this_ID_0, grammarAccess.getInterface_nameAccess().getIDTerminalRuleCall_0()); 
     }
 
+    |    this_STRING_1=RULE_STRING    {
+		$current.merge(this_STRING_1);
+    }
+
+    { 
+    newLeafNode(this_STRING_1, grammarAccess.getInterface_nameAccess().getSTRINGTerminalRuleCall_1()); 
+    }
+)
     ;
 
 
@@ -1626,12 +1646,10 @@ ruleRoleConnection returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getRoleConnectionRule());
 	        }
         }
-		{ 
-	        newCompositeNode(grammarAccess.getRoleConnectionAccess().getClientCompElemCompRoleCrossReference_3_0()); 
-	    }
-		ruleEString		{ 
-	        afterParserOrEnumRuleCall();
-	    }
+	otherlv_3=RULE_ID
+	{
+		newLeafNode(otherlv_3, grammarAccess.getRoleConnectionAccess().getClientCompElemCompRoleCrossReference_3_0()); 
+	}
 
 )
 )	otherlv_4='.' 
@@ -1645,12 +1663,10 @@ ruleRoleConnection returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getRoleConnectionRule());
 	        }
         }
-		{ 
-	        newCompositeNode(grammarAccess.getRoleConnectionAccess().getClientIntElemInteractionCrossReference_5_0()); 
-	    }
-		ruleEString		{ 
-	        afterParserOrEnumRuleCall();
-	    }
+	otherlv_5=RULE_ID
+	{
+		newLeafNode(otherlv_5, grammarAccess.getRoleConnectionAccess().getClientIntElemInteractionCrossReference_5_0()); 
+	}
 
 )
 )	otherlv_6='server' 
@@ -1664,12 +1680,10 @@ ruleRoleConnection returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getRoleConnectionRule());
 	        }
         }
-		{ 
-	        newCompositeNode(grammarAccess.getRoleConnectionAccess().getServerCompElemCompRoleCrossReference_7_0()); 
-	    }
-		ruleEString		{ 
-	        afterParserOrEnumRuleCall();
-	    }
+	otherlv_7=RULE_ID
+	{
+		newLeafNode(otherlv_7, grammarAccess.getRoleConnectionAccess().getServerCompElemCompRoleCrossReference_7_0()); 
+	}
 
 )
 )	otherlv_8='.' 
@@ -1683,12 +1697,10 @@ ruleRoleConnection returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getRoleConnectionRule());
 	        }
         }
-		{ 
-	        newCompositeNode(grammarAccess.getRoleConnectionAccess().getServerIntElemInteractionCrossReference_9_0()); 
-	    }
-		ruleEString		{ 
-	        afterParserOrEnumRuleCall();
-	    }
+	otherlv_9=RULE_ID
+	{
+		newLeafNode(otherlv_9, grammarAccess.getRoleConnectionAccess().getServerIntElemInteractionCrossReference_9_0()); 
+	}
 
 )
 ))
@@ -1712,14 +1724,22 @@ ruleconnection_name returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRul
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-    this_ID_0=RULE_ID    {
+(    this_ID_0=RULE_ID    {
 		$current.merge(this_ID_0);
     }
 
     { 
-    newLeafNode(this_ID_0, grammarAccess.getConnection_nameAccess().getIDTerminalRuleCall()); 
+    newLeafNode(this_ID_0, grammarAccess.getConnection_nameAccess().getIDTerminalRuleCall_0()); 
     }
 
+    |    this_STRING_1=RULE_STRING    {
+		$current.merge(this_STRING_1);
+    }
+
+    { 
+    newLeafNode(this_STRING_1, grammarAccess.getConnection_nameAccess().getSTRINGTerminalRuleCall_1()); 
+    }
+)
     ;
 
 
@@ -2125,14 +2145,22 @@ ruleconfiguration_name returns [AntlrDatatypeRuleToken current=new AntlrDatatype
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-    this_ID_0=RULE_ID    {
+(    this_ID_0=RULE_ID    {
 		$current.merge(this_ID_0);
     }
 
     { 
-    newLeafNode(this_ID_0, grammarAccess.getConfiguration_nameAccess().getIDTerminalRuleCall()); 
+    newLeafNode(this_ID_0, grammarAccess.getConfiguration_nameAccess().getIDTerminalRuleCall_0()); 
     }
 
+    |    this_STRING_1=RULE_STRING    {
+		$current.merge(this_STRING_1);
+    }
+
+    { 
+    newLeafNode(this_STRING_1, grammarAccess.getConfiguration_nameAccess().getSTRINGTerminalRuleCall_1()); 
+    }
+)
     ;
 
 
@@ -2153,14 +2181,22 @@ rulecomponent_class_name returns [AntlrDatatypeRuleToken current=new AntlrDataty
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-    this_ID_0=RULE_ID    {
+(    this_ID_0=RULE_ID    {
 		$current.merge(this_ID_0);
     }
 
     { 
-    newLeafNode(this_ID_0, grammarAccess.getComponent_class_nameAccess().getIDTerminalRuleCall()); 
+    newLeafNode(this_ID_0, grammarAccess.getComponent_class_nameAccess().getIDTerminalRuleCall_0()); 
     }
 
+    |    this_STRING_1=RULE_STRING    {
+		$current.merge(this_STRING_1);
+    }
+
+    { 
+    newLeafNode(this_STRING_1, grammarAccess.getComponent_class_nameAccess().getSTRINGTerminalRuleCall_1()); 
+    }
+)
     ;
 
 
@@ -2378,14 +2414,22 @@ rulecomponent_type_name returns [AntlrDatatypeRuleToken current=new AntlrDatatyp
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-    this_ID_0=RULE_ID    {
+(    this_ID_0=RULE_ID    {
 		$current.merge(this_ID_0);
     }
 
     { 
-    newLeafNode(this_ID_0, grammarAccess.getComponent_type_nameAccess().getIDTerminalRuleCall()); 
+    newLeafNode(this_ID_0, grammarAccess.getComponent_type_nameAccess().getIDTerminalRuleCall_0()); 
     }
 
+    |    this_STRING_1=RULE_STRING    {
+		$current.merge(this_STRING_1);
+    }
+
+    { 
+    newLeafNode(this_STRING_1, grammarAccess.getComponent_type_nameAccess().getSTRINGTerminalRuleCall_1()); 
+    }
+)
     ;
 
 
@@ -2716,14 +2760,22 @@ ruleattribute_name returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRule
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-    this_ID_0=RULE_ID    {
+(    this_ID_0=RULE_ID    {
 		$current.merge(this_ID_0);
     }
 
     { 
-    newLeafNode(this_ID_0, grammarAccess.getAttribute_nameAccess().getIDTerminalRuleCall()); 
+    newLeafNode(this_ID_0, grammarAccess.getAttribute_nameAccess().getIDTerminalRuleCall_0()); 
     }
 
+    |    this_STRING_1=RULE_STRING    {
+		$current.merge(this_STRING_1);
+    }
+
+    { 
+    newLeafNode(this_STRING_1, grammarAccess.getAttribute_nameAccess().getSTRINGTerminalRuleCall_1()); 
+    }
+)
     ;
 
 
@@ -3450,14 +3502,22 @@ ruleconnector_type_name returns [AntlrDatatypeRuleToken current=new AntlrDatatyp
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-    this_ID_0=RULE_ID    {
+(    this_ID_0=RULE_ID    {
 		$current.merge(this_ID_0);
     }
 
     { 
-    newLeafNode(this_ID_0, grammarAccess.getConnector_type_nameAccess().getIDTerminalRuleCall()); 
+    newLeafNode(this_ID_0, grammarAccess.getConnector_type_nameAccess().getIDTerminalRuleCall_0()); 
     }
 
+    |    this_STRING_1=RULE_STRING    {
+		$current.merge(this_STRING_1);
+    }
+
+    { 
+    newLeafNode(this_STRING_1, grammarAccess.getConnector_type_nameAccess().getSTRINGTerminalRuleCall_1()); 
+    }
+)
     ;
 
 
@@ -3533,14 +3593,22 @@ ruleconnector_class_name returns [AntlrDatatypeRuleToken current=new AntlrDataty
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-    this_ID_0=RULE_ID    {
+(    this_ID_0=RULE_ID    {
 		$current.merge(this_ID_0);
     }
 
     { 
-    newLeafNode(this_ID_0, grammarAccess.getConnector_class_nameAccess().getIDTerminalRuleCall()); 
+    newLeafNode(this_ID_0, grammarAccess.getConnector_class_nameAccess().getIDTerminalRuleCall_0()); 
     }
 
+    |    this_STRING_1=RULE_STRING    {
+		$current.merge(this_STRING_1);
+    }
+
+    { 
+    newLeafNode(this_STRING_1, grammarAccess.getConnector_class_nameAccess().getSTRINGTerminalRuleCall_1()); 
+    }
+)
     ;
 
 
@@ -4174,14 +4242,22 @@ ruleassembly_name returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleT
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-    this_ID_0=RULE_ID    {
+(    this_ID_0=RULE_ID    {
 		$current.merge(this_ID_0);
     }
 
     { 
-    newLeafNode(this_ID_0, grammarAccess.getAssembly_nameAccess().getIDTerminalRuleCall()); 
+    newLeafNode(this_ID_0, grammarAccess.getAssembly_nameAccess().getIDTerminalRuleCall_0()); 
     }
 
+    |    this_STRING_1=RULE_STRING    {
+		$current.merge(this_STRING_1);
+    }
+
+    { 
+    newLeafNode(this_STRING_1, grammarAccess.getAssembly_nameAccess().getSTRINGTerminalRuleCall_1()); 
+    }
+)
     ;
 
 
@@ -4387,14 +4463,22 @@ rulecomponent_instance_name returns [AntlrDatatypeRuleToken current=new AntlrDat
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-    this_ID_0=RULE_ID    {
+(    this_ID_0=RULE_ID    {
 		$current.merge(this_ID_0);
     }
 
     { 
-    newLeafNode(this_ID_0, grammarAccess.getComponent_instance_nameAccess().getIDTerminalRuleCall()); 
+    newLeafNode(this_ID_0, grammarAccess.getComponent_instance_nameAccess().getIDTerminalRuleCall_0()); 
     }
 
+    |    this_STRING_1=RULE_STRING    {
+		$current.merge(this_STRING_1);
+    }
+
+    { 
+    newLeafNode(this_STRING_1, grammarAccess.getComponent_instance_nameAccess().getSTRINGTerminalRuleCall_1()); 
+    }
+)
     ;
 
 

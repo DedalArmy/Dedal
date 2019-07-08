@@ -127,7 +127,7 @@ public abstract class AbstractDedalADLSyntacticSequencer extends AbstractSyntact
 	
 	/**
 	 * connection_name:
-	 * 	ID
+	 * 	ID | STRING
 	 * ;
 	 */
 	protected String getconnection_nameToken(EObject semanticObject, RuleCall ruleCall, INode node) {

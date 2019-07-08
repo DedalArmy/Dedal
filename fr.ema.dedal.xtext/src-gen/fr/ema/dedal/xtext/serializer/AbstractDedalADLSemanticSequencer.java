@@ -391,7 +391,7 @@ public abstract class AbstractDedalADLSemanticSequencer extends AbstractDelegati
 	 *     InterfaceType returns InterfaceType
 	 *
 	 * Constraint:
-	 *     (name=EString signatures+=Signature signatures+=Signature*)
+	 *     (name=EString (signatures+=Signature signatures+=Signature*)?)
 	 */
 	protected void sequence_InterfaceType(ISerializationContext context, InterfaceType semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -404,7 +404,7 @@ public abstract class AbstractDedalADLSemanticSequencer extends AbstractDelegati
 	 *     Interface returns Interface
 	 *
 	 * Constraint:
-	 *     (name=interface_name direction=DIRECTION type=[InterfaceType|EString] delegation=[Interface|EString]? instantiates=[Interface|EString]?)
+	 *     (name=interface_name direction=DIRECTION type=[InterfaceType|ID] delegation=[Interface|ID]? instantiates=[Interface|EString]?)
 	 */
 	protected void sequence_Interface(ISerializationContext context, Interface semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -454,13 +454,7 @@ public abstract class AbstractDedalADLSemanticSequencer extends AbstractDelegati
 	 *     RoleConnection returns RoleConnection
 	 *
 	 * Constraint:
-	 *     (
-	 *         refID=EString 
-	 *         clientCompElem=[CompRole|EString] 
-	 *         clientIntElem=[Interaction|EString] 
-	 *         serverCompElem=[CompRole|EString] 
-	 *         serverIntElem=[Interaction|EString]
-	 *     )
+	 *     (refID=EString clientCompElem=[CompRole|ID] clientIntElem=[Interaction|ID] serverCompElem=[CompRole|ID] serverIntElem=[Interaction|ID])
 	 */
 	protected void sequence_RoleConnection(ISerializationContext context, RoleConnection semanticObject) {
 		if (errorAcceptor != null) {
@@ -477,10 +471,10 @@ public abstract class AbstractDedalADLSemanticSequencer extends AbstractDelegati
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
 		feeder.accept(grammarAccess.getRoleConnectionAccess().getRefIDEStringParserRuleCall_1_0(), semanticObject.getRefID());
-		feeder.accept(grammarAccess.getRoleConnectionAccess().getClientCompElemCompRoleEStringParserRuleCall_3_0_1(), semanticObject.eGet(DedalPackage.Literals.ROLE_CONNECTION__CLIENT_COMP_ELEM, false));
-		feeder.accept(grammarAccess.getRoleConnectionAccess().getClientIntElemInteractionEStringParserRuleCall_5_0_1(), semanticObject.eGet(DedalPackage.Literals.CONNECTION__CLIENT_INT_ELEM, false));
-		feeder.accept(grammarAccess.getRoleConnectionAccess().getServerCompElemCompRoleEStringParserRuleCall_7_0_1(), semanticObject.eGet(DedalPackage.Literals.ROLE_CONNECTION__SERVER_COMP_ELEM, false));
-		feeder.accept(grammarAccess.getRoleConnectionAccess().getServerIntElemInteractionEStringParserRuleCall_9_0_1(), semanticObject.eGet(DedalPackage.Literals.CONNECTION__SERVER_INT_ELEM, false));
+		feeder.accept(grammarAccess.getRoleConnectionAccess().getClientCompElemCompRoleIDTerminalRuleCall_3_0_1(), semanticObject.eGet(DedalPackage.Literals.ROLE_CONNECTION__CLIENT_COMP_ELEM, false));
+		feeder.accept(grammarAccess.getRoleConnectionAccess().getClientIntElemInteractionIDTerminalRuleCall_5_0_1(), semanticObject.eGet(DedalPackage.Literals.CONNECTION__CLIENT_INT_ELEM, false));
+		feeder.accept(grammarAccess.getRoleConnectionAccess().getServerCompElemCompRoleIDTerminalRuleCall_7_0_1(), semanticObject.eGet(DedalPackage.Literals.ROLE_CONNECTION__SERVER_COMP_ELEM, false));
+		feeder.accept(grammarAccess.getRoleConnectionAccess().getServerIntElemInteractionIDTerminalRuleCall_9_0_1(), semanticObject.eGet(DedalPackage.Literals.CONNECTION__SERVER_INT_ELEM, false));
 		feeder.finish();
 	}
 	

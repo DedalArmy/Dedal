@@ -390,20 +390,21 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cNameEStringParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Keyword cSignaturesKeyword_2 = (Keyword)cGroup.eContents().get(2);
 		private final Keyword cLeftParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		private final Assignment cSignaturesAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final RuleCall cSignaturesSignatureParserRuleCall_4_0 = (RuleCall)cSignaturesAssignment_4.eContents().get(0);
-		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Keyword cSemicolonKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
-		private final Assignment cSignaturesAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
-		private final RuleCall cSignaturesSignatureParserRuleCall_5_1_0 = (RuleCall)cSignaturesAssignment_5_1.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Assignment cSignaturesAssignment_4_0 = (Assignment)cGroup_4.eContents().get(0);
+		private final RuleCall cSignaturesSignatureParserRuleCall_4_0_0 = (RuleCall)cSignaturesAssignment_4_0.eContents().get(0);
+		private final Group cGroup_4_1 = (Group)cGroup_4.eContents().get(1);
+		private final Keyword cSemicolonKeyword_4_1_0 = (Keyword)cGroup_4_1.eContents().get(0);
+		private final Assignment cSignaturesAssignment_4_1_1 = (Assignment)cGroup_4_1.eContents().get(1);
+		private final RuleCall cSignaturesSignatureParserRuleCall_4_1_1_0 = (RuleCall)cSignaturesAssignment_4_1_1.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//InterfaceType dedal::InterfaceType:
 		//	'type' name=EString
-		//	'signatures' '(' signatures+=Signature (";" signatures+=Signature)* ')';
+		//	'signatures' '(' (signatures+=Signature (";" signatures+=Signature)*)? ')';
 		@Override public ParserRule getRule() { return rule; }
 
-		//'type' name=EString 'signatures' '(' signatures+=Signature (";" signatures+=Signature)* ')'
+		//'type' name=EString 'signatures' '(' (signatures+=Signature (";" signatures+=Signature)*)? ')'
 		public Group getGroup() { return cGroup; }
 
 		//'type'
@@ -421,26 +422,29 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		//'('
 		public Keyword getLeftParenthesisKeyword_3() { return cLeftParenthesisKeyword_3; }
 
+		//(signatures+=Signature (";" signatures+=Signature)*)?
+		public Group getGroup_4() { return cGroup_4; }
+
 		//signatures+=Signature
-		public Assignment getSignaturesAssignment_4() { return cSignaturesAssignment_4; }
+		public Assignment getSignaturesAssignment_4_0() { return cSignaturesAssignment_4_0; }
 
 		//Signature
-		public RuleCall getSignaturesSignatureParserRuleCall_4_0() { return cSignaturesSignatureParserRuleCall_4_0; }
+		public RuleCall getSignaturesSignatureParserRuleCall_4_0_0() { return cSignaturesSignatureParserRuleCall_4_0_0; }
 
 		//(";" signatures+=Signature)*
-		public Group getGroup_5() { return cGroup_5; }
+		public Group getGroup_4_1() { return cGroup_4_1; }
 
 		//";"
-		public Keyword getSemicolonKeyword_5_0() { return cSemicolonKeyword_5_0; }
+		public Keyword getSemicolonKeyword_4_1_0() { return cSemicolonKeyword_4_1_0; }
 
 		//signatures+=Signature
-		public Assignment getSignaturesAssignment_5_1() { return cSignaturesAssignment_5_1; }
+		public Assignment getSignaturesAssignment_4_1_1() { return cSignaturesAssignment_4_1_1; }
 
 		//Signature
-		public RuleCall getSignaturesSignatureParserRuleCall_5_1_0() { return cSignaturesSignatureParserRuleCall_5_1_0; }
+		public RuleCall getSignaturesSignatureParserRuleCall_4_1_1_0() { return cSignaturesSignatureParserRuleCall_4_1_1_0; }
 
 		//')'
-		public Keyword getRightParenthesisKeyword_6() { return cRightParenthesisKeyword_6; }
+		public Keyword getRightParenthesisKeyword_5() { return cRightParenthesisKeyword_5; }
 	}
 
 	public class EIntElements extends AbstractParserRuleElementFinder {
@@ -776,14 +780,22 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class Specification_nameElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.ema.dedal.xtext.DedalADL.specification_name");
-		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//specification_name:
-		//	ID;
+		//	ID | STRING;
 		@Override public ParserRule getRule() { return rule; }
 
+		//ID | STRING
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//ID
-		public RuleCall getIDTerminalRuleCall() { return cIDTerminalRuleCall; }
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
 	}
 
 	public class CompRoleElements extends AbstractParserRuleElementFinder {
@@ -959,14 +971,22 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class Component_role_nameElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.ema.dedal.xtext.DedalADL.component_role_name");
-		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//component_role_name:
-		//	ID;
+		//	ID | STRING;
 		@Override public ParserRule getRule() { return rule; }
 
+		//ID | STRING
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//ID
-		public RuleCall getIDTerminalRuleCall() { return cIDTerminalRuleCall; }
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
 	}
 
 	public class InterfaceElements extends AbstractParserRuleElementFinder {
@@ -981,12 +1001,12 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cImplementationKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		private final Assignment cTypeAssignment_5 = (Assignment)cGroup.eContents().get(5);
 		private final CrossReference cTypeInterfaceTypeCrossReference_5_0 = (CrossReference)cTypeAssignment_5.eContents().get(0);
-		private final RuleCall cTypeInterfaceTypeEStringParserRuleCall_5_0_1 = (RuleCall)cTypeInterfaceTypeCrossReference_5_0.eContents().get(1);
+		private final RuleCall cTypeInterfaceTypeIDTerminalRuleCall_5_0_1 = (RuleCall)cTypeInterfaceTypeCrossReference_5_0.eContents().get(1);
 		private final Group cGroup_6 = (Group)cGroup.eContents().get(6);
 		private final Keyword cDelegationKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
 		private final Assignment cDelegationAssignment_6_1 = (Assignment)cGroup_6.eContents().get(1);
 		private final CrossReference cDelegationInterfaceCrossReference_6_1_0 = (CrossReference)cDelegationAssignment_6_1.eContents().get(0);
-		private final RuleCall cDelegationInterfaceEStringParserRuleCall_6_1_0_1 = (RuleCall)cDelegationInterfaceCrossReference_6_1_0.eContents().get(1);
+		private final RuleCall cDelegationInterfaceIDTerminalRuleCall_6_1_0_1 = (RuleCall)cDelegationInterfaceCrossReference_6_1_0.eContents().get(1);
 		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
 		private final Keyword cInstantiatesKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
 		private final Assignment cInstantiatesAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
@@ -997,13 +1017,13 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		//	'interface' name=interface_name
 		//	//		'id' id=EString
 		//	'interface_direction' direction=DIRECTION
-		//	'implementation' type=[dedal::InterfaceType|EString] ('delegation' delegation=[dedal::Interface|EString])?
-		//	('instantiates' instantiates=[dedal::Interface|EString])?;
+		//	'implementation' type=[dedal::InterfaceType] ('delegation' delegation=[dedal::Interface])? ('instantiates'
+		//	instantiates=[dedal::Interface|EString])?;
 		@Override public ParserRule getRule() { return rule; }
 
 		//'interface' name=interface_name //		'id' id=EString
-		//'interface_direction' direction=DIRECTION 'implementation' type=[dedal::InterfaceType|EString] ('delegation'
-		//delegation=[dedal::Interface|EString])? ('instantiates' instantiates=[dedal::Interface|EString])?
+		//'interface_direction' direction=DIRECTION 'implementation' type=[dedal::InterfaceType] ('delegation'
+		//delegation=[dedal::Interface])? ('instantiates' instantiates=[dedal::Interface|EString])?
 		public Group getGroup() { return cGroup; }
 
 		//'interface'
@@ -1028,29 +1048,29 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		//'implementation'
 		public Keyword getImplementationKeyword_4() { return cImplementationKeyword_4; }
 
-		//type=[dedal::InterfaceType|EString]
+		//type=[dedal::InterfaceType]
 		public Assignment getTypeAssignment_5() { return cTypeAssignment_5; }
 
-		//[dedal::InterfaceType|EString]
+		//[dedal::InterfaceType]
 		public CrossReference getTypeInterfaceTypeCrossReference_5_0() { return cTypeInterfaceTypeCrossReference_5_0; }
 
-		//EString
-		public RuleCall getTypeInterfaceTypeEStringParserRuleCall_5_0_1() { return cTypeInterfaceTypeEStringParserRuleCall_5_0_1; }
+		//ID
+		public RuleCall getTypeInterfaceTypeIDTerminalRuleCall_5_0_1() { return cTypeInterfaceTypeIDTerminalRuleCall_5_0_1; }
 
-		//('delegation' delegation=[dedal::Interface|EString])?
+		//('delegation' delegation=[dedal::Interface])?
 		public Group getGroup_6() { return cGroup_6; }
 
 		//'delegation'
 		public Keyword getDelegationKeyword_6_0() { return cDelegationKeyword_6_0; }
 
-		//delegation=[dedal::Interface|EString]
+		//delegation=[dedal::Interface]
 		public Assignment getDelegationAssignment_6_1() { return cDelegationAssignment_6_1; }
 
-		//[dedal::Interface|EString]
+		//[dedal::Interface]
 		public CrossReference getDelegationInterfaceCrossReference_6_1_0() { return cDelegationInterfaceCrossReference_6_1_0; }
 
-		//EString
-		public RuleCall getDelegationInterfaceEStringParserRuleCall_6_1_0_1() { return cDelegationInterfaceEStringParserRuleCall_6_1_0_1; }
+		//ID
+		public RuleCall getDelegationInterfaceIDTerminalRuleCall_6_1_0_1() { return cDelegationInterfaceIDTerminalRuleCall_6_1_0_1; }
 
 		//('instantiates' instantiates=[dedal::Interface|EString])?
 		public Group getGroup_7() { return cGroup_7; }
@@ -1070,14 +1090,22 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class Interface_nameElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.ema.dedal.xtext.DedalADL.interface_name");
-		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//interface_name:
-		//	ID;
+		//	ID | STRING;
 		@Override public ParserRule getRule() { return rule; }
 
+		//ID | STRING
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//ID
-		public RuleCall getIDTerminalRuleCall() { return cIDTerminalRuleCall; }
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
 	}
 
 	public class RoleConnectionElements extends AbstractParserRuleElementFinder {
@@ -1089,32 +1117,32 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cClientKeyword_2 = (Keyword)cGroup.eContents().get(2);
 		private final Assignment cClientCompElemAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final CrossReference cClientCompElemCompRoleCrossReference_3_0 = (CrossReference)cClientCompElemAssignment_3.eContents().get(0);
-		private final RuleCall cClientCompElemCompRoleEStringParserRuleCall_3_0_1 = (RuleCall)cClientCompElemCompRoleCrossReference_3_0.eContents().get(1);
+		private final RuleCall cClientCompElemCompRoleIDTerminalRuleCall_3_0_1 = (RuleCall)cClientCompElemCompRoleCrossReference_3_0.eContents().get(1);
 		private final Keyword cFullStopKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		private final Assignment cClientIntElemAssignment_5 = (Assignment)cGroup.eContents().get(5);
 		private final CrossReference cClientIntElemInteractionCrossReference_5_0 = (CrossReference)cClientIntElemAssignment_5.eContents().get(0);
-		private final RuleCall cClientIntElemInteractionEStringParserRuleCall_5_0_1 = (RuleCall)cClientIntElemInteractionCrossReference_5_0.eContents().get(1);
+		private final RuleCall cClientIntElemInteractionIDTerminalRuleCall_5_0_1 = (RuleCall)cClientIntElemInteractionCrossReference_5_0.eContents().get(1);
 		private final Keyword cServerKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		private final Assignment cServerCompElemAssignment_7 = (Assignment)cGroup.eContents().get(7);
 		private final CrossReference cServerCompElemCompRoleCrossReference_7_0 = (CrossReference)cServerCompElemAssignment_7.eContents().get(0);
-		private final RuleCall cServerCompElemCompRoleEStringParserRuleCall_7_0_1 = (RuleCall)cServerCompElemCompRoleCrossReference_7_0.eContents().get(1);
+		private final RuleCall cServerCompElemCompRoleIDTerminalRuleCall_7_0_1 = (RuleCall)cServerCompElemCompRoleCrossReference_7_0.eContents().get(1);
 		private final Keyword cFullStopKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		private final Assignment cServerIntElemAssignment_9 = (Assignment)cGroup.eContents().get(9);
 		private final CrossReference cServerIntElemInteractionCrossReference_9_0 = (CrossReference)cServerIntElemAssignment_9.eContents().get(0);
-		private final RuleCall cServerIntElemInteractionEStringParserRuleCall_9_0_1 = (RuleCall)cServerIntElemInteractionCrossReference_9_0.eContents().get(1);
+		private final RuleCall cServerIntElemInteractionIDTerminalRuleCall_9_0_1 = (RuleCall)cServerIntElemInteractionCrossReference_9_0.eContents().get(1);
 		
 		//RoleConnection dedal::RoleConnection:
 		//	'connection' //connection_name
 		//	//'id' 
 		//	refID=EString
-		//	'client' clientCompElem=[dedal::CompRole|EString] '.' clientIntElem=[dedal::Interaction|EString]
-		//	'server' serverCompElem=[dedal::CompRole|EString] '.' serverIntElem=[dedal::Interaction|EString];
+		//	'client' clientCompElem=[dedal::CompRole] '.' clientIntElem=[dedal::Interaction]
+		//	'server' serverCompElem=[dedal::CompRole] '.' serverIntElem=[dedal::Interaction];
 		@Override public ParserRule getRule() { return rule; }
 
 		//'connection' //connection_name
 		////'id' 
-		//refID=EString 'client' clientCompElem=[dedal::CompRole|EString] '.' clientIntElem=[dedal::Interaction|EString] 'server'
-		//serverCompElem=[dedal::CompRole|EString] '.' serverIntElem=[dedal::Interaction|EString]
+		//refID=EString 'client' clientCompElem=[dedal::CompRole] '.' clientIntElem=[dedal::Interaction] 'server'
+		//serverCompElem=[dedal::CompRole] '.' serverIntElem=[dedal::Interaction]
 		public Group getGroup() { return cGroup; }
 
 		//'connection'
@@ -1131,62 +1159,70 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		//'client'
 		public Keyword getClientKeyword_2() { return cClientKeyword_2; }
 
-		//clientCompElem=[dedal::CompRole|EString]
+		//clientCompElem=[dedal::CompRole]
 		public Assignment getClientCompElemAssignment_3() { return cClientCompElemAssignment_3; }
 
-		//[dedal::CompRole|EString]
+		//[dedal::CompRole]
 		public CrossReference getClientCompElemCompRoleCrossReference_3_0() { return cClientCompElemCompRoleCrossReference_3_0; }
 
-		//EString
-		public RuleCall getClientCompElemCompRoleEStringParserRuleCall_3_0_1() { return cClientCompElemCompRoleEStringParserRuleCall_3_0_1; }
+		//ID
+		public RuleCall getClientCompElemCompRoleIDTerminalRuleCall_3_0_1() { return cClientCompElemCompRoleIDTerminalRuleCall_3_0_1; }
 
 		//'.'
 		public Keyword getFullStopKeyword_4() { return cFullStopKeyword_4; }
 
-		//clientIntElem=[dedal::Interaction|EString]
+		//clientIntElem=[dedal::Interaction]
 		public Assignment getClientIntElemAssignment_5() { return cClientIntElemAssignment_5; }
 
-		//[dedal::Interaction|EString]
+		//[dedal::Interaction]
 		public CrossReference getClientIntElemInteractionCrossReference_5_0() { return cClientIntElemInteractionCrossReference_5_0; }
 
-		//EString
-		public RuleCall getClientIntElemInteractionEStringParserRuleCall_5_0_1() { return cClientIntElemInteractionEStringParserRuleCall_5_0_1; }
+		//ID
+		public RuleCall getClientIntElemInteractionIDTerminalRuleCall_5_0_1() { return cClientIntElemInteractionIDTerminalRuleCall_5_0_1; }
 
 		//'server'
 		public Keyword getServerKeyword_6() { return cServerKeyword_6; }
 
-		//serverCompElem=[dedal::CompRole|EString]
+		//serverCompElem=[dedal::CompRole]
 		public Assignment getServerCompElemAssignment_7() { return cServerCompElemAssignment_7; }
 
-		//[dedal::CompRole|EString]
+		//[dedal::CompRole]
 		public CrossReference getServerCompElemCompRoleCrossReference_7_0() { return cServerCompElemCompRoleCrossReference_7_0; }
 
-		//EString
-		public RuleCall getServerCompElemCompRoleEStringParserRuleCall_7_0_1() { return cServerCompElemCompRoleEStringParserRuleCall_7_0_1; }
+		//ID
+		public RuleCall getServerCompElemCompRoleIDTerminalRuleCall_7_0_1() { return cServerCompElemCompRoleIDTerminalRuleCall_7_0_1; }
 
 		//'.'
 		public Keyword getFullStopKeyword_8() { return cFullStopKeyword_8; }
 
-		//serverIntElem=[dedal::Interaction|EString]
+		//serverIntElem=[dedal::Interaction]
 		public Assignment getServerIntElemAssignment_9() { return cServerIntElemAssignment_9; }
 
-		//[dedal::Interaction|EString]
+		//[dedal::Interaction]
 		public CrossReference getServerIntElemInteractionCrossReference_9_0() { return cServerIntElemInteractionCrossReference_9_0; }
 
-		//EString
-		public RuleCall getServerIntElemInteractionEStringParserRuleCall_9_0_1() { return cServerIntElemInteractionEStringParserRuleCall_9_0_1; }
+		//ID
+		public RuleCall getServerIntElemInteractionIDTerminalRuleCall_9_0_1() { return cServerIntElemInteractionIDTerminalRuleCall_9_0_1; }
 	}
 
 	public class Connection_nameElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.ema.dedal.xtext.DedalADL.connection_name");
-		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//connection_name:
-		//	ID;
+		//	ID | STRING;
 		@Override public ParserRule getRule() { return rule; }
 
+		//ID | STRING
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//ID
-		public RuleCall getIDTerminalRuleCall() { return cIDTerminalRuleCall; }
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
 	}
 
 	public class ConfigurationElements extends AbstractParserRuleElementFinder {
@@ -1527,26 +1563,42 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class Configuration_nameElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.ema.dedal.xtext.DedalADL.configuration_name");
-		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//configuration_name:
-		//	ID;
+		//	ID | STRING;
 		@Override public ParserRule getRule() { return rule; }
 
+		//ID | STRING
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//ID
-		public RuleCall getIDTerminalRuleCall() { return cIDTerminalRuleCall; }
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
 	}
 
 	public class Component_class_nameElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.ema.dedal.xtext.DedalADL.component_class_name");
-		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//component_class_name:
-		//	ID;
+		//	ID | STRING;
 		@Override public ParserRule getRule() { return rule; }
 
+		//ID | STRING
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//ID
-		public RuleCall getIDTerminalRuleCall() { return cIDTerminalRuleCall; }
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
 	}
 
 	public class CompTypeElements extends AbstractParserRuleElementFinder {
@@ -1688,14 +1740,22 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class Component_type_nameElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.ema.dedal.xtext.DedalADL.component_type_name");
-		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//component_type_name:
-		//	ID;
+		//	ID | STRING;
 		@Override public ParserRule getRule() { return rule; }
 
+		//ID | STRING
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//ID
-		public RuleCall getIDTerminalRuleCall() { return cIDTerminalRuleCall; }
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
 	}
 
 	public class CompClass_ImplElements extends AbstractParserRuleElementFinder {
@@ -1945,14 +2005,22 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class Attribute_nameElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.ema.dedal.xtext.DedalADL.attribute_name");
-		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//attribute_name:
-		//	ID;
+		//	ID | STRING;
 		@Override public ParserRule getRule() { return rule; }
 
+		//ID | STRING
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//ID
-		public RuleCall getIDTerminalRuleCall() { return cIDTerminalRuleCall; }
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
 	}
 
 	public class CompositeCompClassElements extends AbstractParserRuleElementFinder {
@@ -2485,14 +2553,22 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class Connector_type_nameElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.ema.dedal.xtext.DedalADL.connector_type_name");
-		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//connector_type_name:
-		//	ID;
+		//	ID | STRING;
 		@Override public ParserRule getRule() { return rule; }
 
+		//ID | STRING
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//ID
-		public RuleCall getIDTerminalRuleCall() { return cIDTerminalRuleCall; }
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
 	}
 
 	public class Connector_classElements extends AbstractParserRuleElementFinder {
@@ -2528,14 +2604,22 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class Connector_class_nameElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.ema.dedal.xtext.DedalADL.connector_class_name");
-		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//connector_class_name:
-		//	ID;
+		//	ID | STRING;
 		@Override public ParserRule getRule() { return rule; }
 
+		//ID | STRING
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//ID
-		public RuleCall getIDTerminalRuleCall() { return cIDTerminalRuleCall; }
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
 	}
 
 	public class ClassConnectionElements extends AbstractParserRuleElementFinder {
@@ -3042,14 +3126,22 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class Assembly_nameElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.ema.dedal.xtext.DedalADL.assembly_name");
-		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//assembly_name:
-		//	ID;
+		//	ID | STRING;
 		@Override public ParserRule getRule() { return rule; }
 
+		//ID | STRING
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//ID
-		public RuleCall getIDTerminalRuleCall() { return cIDTerminalRuleCall; }
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
 	}
 
 	public class ConstraintElements extends AbstractParserRuleElementFinder {
@@ -3183,14 +3275,22 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class Component_instance_nameElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.ema.dedal.xtext.DedalADL.component_instance_name");
-		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//component_instance_name:
-		//	ID;
+		//	ID | STRING;
 		@Override public ParserRule getRule() { return rule; }
 
+		//ID | STRING
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//ID
-		public RuleCall getIDTerminalRuleCall() { return cIDTerminalRuleCall; }
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
 	}
 
 	public class InstConnectionElements extends AbstractParserRuleElementFinder {
@@ -4230,7 +4330,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 
 	//InterfaceType dedal::InterfaceType:
 	//	'type' name=EString
-	//	'signatures' '(' signatures+=Signature (";" signatures+=Signature)* ')';
+	//	'signatures' '(' (signatures+=Signature (";" signatures+=Signature)*)? ')';
 	public InterfaceTypeElements getInterfaceTypeAccess() {
 		return pInterfaceType;
 	}
@@ -4287,7 +4387,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//specification_name:
-	//	ID;
+	//	ID | STRING;
 	public Specification_nameElements getSpecification_nameAccess() {
 		return pSpecification_name;
 	}
@@ -4311,7 +4411,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//component_role_name:
-	//	ID;
+	//	ID | STRING;
 	public Component_role_nameElements getComponent_role_nameAccess() {
 		return pComponent_role_name;
 	}
@@ -4324,8 +4424,8 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	//	'interface' name=interface_name
 	//	//		'id' id=EString
 	//	'interface_direction' direction=DIRECTION
-	//	'implementation' type=[dedal::InterfaceType|EString] ('delegation' delegation=[dedal::Interface|EString])?
-	//	('instantiates' instantiates=[dedal::Interface|EString])?;
+	//	'implementation' type=[dedal::InterfaceType] ('delegation' delegation=[dedal::Interface])? ('instantiates'
+	//	instantiates=[dedal::Interface|EString])?;
 	public InterfaceElements getInterfaceAccess() {
 		return pInterface;
 	}
@@ -4335,7 +4435,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//interface_name:
-	//	ID;
+	//	ID | STRING;
 	public Interface_nameElements getInterface_nameAccess() {
 		return pInterface_name;
 	}
@@ -4358,8 +4458,8 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	//	'connection' //connection_name
 	//	//'id' 
 	//	refID=EString
-	//	'client' clientCompElem=[dedal::CompRole|EString] '.' clientIntElem=[dedal::Interaction|EString]
-	//	'server' serverCompElem=[dedal::CompRole|EString] '.' serverIntElem=[dedal::Interaction|EString];
+	//	'client' clientCompElem=[dedal::CompRole] '.' clientIntElem=[dedal::Interaction]
+	//	'server' serverCompElem=[dedal::CompRole] '.' serverIntElem=[dedal::Interaction];
 	public RoleConnectionElements getRoleConnectionAccess() {
 		return pRoleConnection;
 	}
@@ -4369,7 +4469,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//connection_name:
-	//	ID;
+	//	ID | STRING;
 	public Connection_nameElements getConnection_nameAccess() {
 		return pConnection_name;
 	}
@@ -4398,7 +4498,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//configuration_name:
-	//	ID;
+	//	ID | STRING;
 	public Configuration_nameElements getConfiguration_nameAccess() {
 		return pConfiguration_name;
 	}
@@ -4408,7 +4508,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//component_class_name:
-	//	ID;
+	//	ID | STRING;
 	public Component_class_nameElements getComponent_class_nameAccess() {
 		return pComponent_class_name;
 	}
@@ -4431,7 +4531,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//component_type_name:
-	//	ID;
+	//	ID | STRING;
 	public Component_type_nameElements getComponent_type_nameAccess() {
 		return pComponent_type_name;
 	}
@@ -4466,7 +4566,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//attribute_name:
-	//	ID;
+	//	ID | STRING;
 	public Attribute_nameElements getAttribute_nameAccess() {
 		return pAttribute_name;
 	}
@@ -4560,7 +4660,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//connector_type_name:
-	//	ID;
+	//	ID | STRING;
 	public Connector_type_nameElements getConnector_type_nameAccess() {
 		return pConnector_type_name;
 	}
@@ -4583,7 +4683,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//connector_class_name:
-	//	ID;
+	//	ID | STRING;
 	public Connector_class_nameElements getConnector_class_nameAccess() {
 		return pConnector_class_name;
 	}
@@ -4649,7 +4749,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//assembly_name:
-	//	ID;
+	//	ID | STRING;
 	public Assembly_nameElements getAssembly_nameAccess() {
 		return pAssembly_name;
 	}
@@ -4682,7 +4782,7 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//component_instance_name:
-	//	ID;
+	//	ID | STRING;
 	public Component_instance_nameElements getComponent_instance_nameAccess() {
 		return pComponent_instance_name;
 	}

@@ -41,7 +41,7 @@ Repository returns dedal::Repository:
 
 InterfaceType returns dedal::InterfaceType:
 	'type' name=EString
-	'signatures' '(' signatures+=Signature ( ";" signatures+=Signature)* ')' 
+	'signatures' '(' (signatures+=Signature ( ";" signatures+=Signature)*)? ')'
 ;
 
 				
@@ -82,7 +82,7 @@ Specification returns dedal::Specification:
 ;
 
 specification_name:
-	ID
+	ID | STRING
 ;
 
 
@@ -100,22 +100,22 @@ CompRole returns dedal::CompRole:
 ;
 
 component_role_name:
-	ID
+	ID | STRING
 ;
 
 Interface returns dedal::Interface:
 	'interface' name=interface_name
 //		'id' id=EString
 		'interface_direction' direction=DIRECTION
-		'implementation' type=[dedal::InterfaceType|EString]
+		'implementation' type=[dedal::InterfaceType|ID]
 		
 		// Missing attributes from old metamodel
-		('delegation' delegation=[dedal::Interface|EString])?
+		('delegation' delegation=[dedal::Interface|ID])?
 		('instantiates' instantiates=[dedal::Interface|EString])?
 ;	
 
 interface_name:
-	ID
+	ID | STRING
 ;
 	
 enum DIRECTION returns dedal::DIRECTION:
@@ -125,12 +125,12 @@ RoleConnection returns dedal::RoleConnection:
 	'connection' //connection_name
 		//'id' 
 		refID=EString
-		'client' clientCompElem=[dedal::CompRole|EString] '.' clientIntElem=[dedal::Interaction|EString]
-		'server' serverCompElem=[dedal::CompRole|EString] '.' serverIntElem=[dedal::Interaction|EString]
+		'client' clientCompElem=[dedal::CompRole|ID] '.' clientIntElem=[dedal::Interaction|ID]
+		'server' serverCompElem=[dedal::CompRole|ID] '.' serverIntElem=[dedal::Interaction|ID]
 ;
 
 connection_name:
-	ID
+	ID | STRING
 ;
 
 
@@ -156,11 +156,11 @@ Configuration returns dedal::Configuration:
 ;
 
 configuration_name:
-	ID
+	ID | STRING
 ;
 
 component_class_name:
-	ID
+	ID | STRING
 ;
 
 CompType returns dedal::CompType:
@@ -175,7 +175,7 @@ CompType returns dedal::CompType:
 ;
 
 component_type_name:
-	ID
+	ID | STRING
 ;
 
 CompClass_Impl returns dedal::CompClass:
@@ -198,7 +198,7 @@ Attribute returns dedal::Attribute:
 ;
 
 attribute_name:
-	ID
+	ID | STRING
 ;
 
 enum ATTRIBUTE_TYPE returns dedal::ATTRIBUTE_TYPE:
@@ -251,7 +251,7 @@ connector_type:
 ;
 
 connector_type_name:
-	ID
+	ID | STRING
 ;
 
 connector_class:
@@ -261,7 +261,7 @@ connector_class:
 ;
 
 connector_class_name:
-	ID
+	ID | STRING
 ;
 
 // From old metamodel
@@ -306,7 +306,7 @@ Assembly returns dedal::Assembly:
 ;
 
 assembly_name:
-	ID
+	ID | STRING
 ;
 
 Constraint:
@@ -325,7 +325,7 @@ CompInstance returns dedal::CompInstance:
 ;
 
 component_instance_name:
-	ID
+	ID | STRING
 ;
 
 InstConnection returns dedal::InstConnection:
