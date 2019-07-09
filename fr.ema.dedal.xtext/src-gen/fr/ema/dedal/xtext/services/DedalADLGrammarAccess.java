@@ -1777,54 +1777,55 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cIdKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		private final Assignment cIdAssignment_4 = (Assignment)cGroup.eContents().get(4);
 		private final RuleCall cIdEStringParserRuleCall_4_0 = (RuleCall)cIdAssignment_4.eContents().get(0);
-		private final Keyword cImplementsKeyword_5 = (Keyword)cGroup.eContents().get(5);
-		private final Assignment cImplementsAssignment_6 = (Assignment)cGroup.eContents().get(6);
-		private final CrossReference cImplementsCompTypeCrossReference_6_0 = (CrossReference)cImplementsAssignment_6.eContents().get(0);
-		private final RuleCall cImplementsCompTypeEStringParserRuleCall_6_0_1 = (RuleCall)cImplementsCompTypeCrossReference_6_0.eContents().get(1);
+		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
+		private final Keyword cImplementsKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
+		private final Assignment cImplementsAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
+		private final CrossReference cImplementsCompTypeCrossReference_5_1_0 = (CrossReference)cImplementsAssignment_5_1.eContents().get(0);
+		private final RuleCall cImplementsCompTypeEStringParserRuleCall_5_1_0_1 = (RuleCall)cImplementsCompTypeCrossReference_5_1_0.eContents().get(1);
+		private final Group cGroup_6 = (Group)cGroup.eContents().get(6);
+		private final Keyword cContentKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
+		private final Assignment cContentAssignment_6_1 = (Assignment)cGroup_6.eContents().get(1);
+		private final CrossReference cContentCompInstanceCrossReference_6_1_0 = (CrossReference)cContentAssignment_6_1.eContents().get(0);
+		private final RuleCall cContentCompInstanceEStringParserRuleCall_6_1_0_1 = (RuleCall)cContentCompInstanceCrossReference_6_1_0.eContents().get(1);
 		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
-		private final Keyword cContentKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
-		private final Assignment cContentAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
-		private final CrossReference cContentCompInstanceCrossReference_7_1_0 = (CrossReference)cContentAssignment_7_1.eContents().get(0);
-		private final RuleCall cContentCompInstanceEStringParserRuleCall_7_1_0_1 = (RuleCall)cContentCompInstanceCrossReference_7_1_0.eContents().get(1);
+		private final Keyword cAttributesKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_7_1 = (Keyword)cGroup_7.eContents().get(1);
+		private final Assignment cAttributesAssignment_7_2 = (Assignment)cGroup_7.eContents().get(2);
+		private final RuleCall cAttributesAttributeParserRuleCall_7_2_0 = (RuleCall)cAttributesAssignment_7_2.eContents().get(0);
+		private final Group cGroup_7_3 = (Group)cGroup_7.eContents().get(3);
+		private final Keyword cSemicolonKeyword_7_3_0 = (Keyword)cGroup_7_3.eContents().get(0);
+		private final Assignment cAttributesAssignment_7_3_1 = (Assignment)cGroup_7_3.eContents().get(1);
+		private final RuleCall cAttributesAttributeParserRuleCall_7_3_1_0 = (RuleCall)cAttributesAssignment_7_3_1.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_7_4 = (Keyword)cGroup_7.eContents().get(4);
 		private final Group cGroup_8 = (Group)cGroup.eContents().get(8);
-		private final Keyword cAttributesKeyword_8_0 = (Keyword)cGroup_8.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_8_1 = (Keyword)cGroup_8.eContents().get(1);
-		private final Assignment cAttributesAssignment_8_2 = (Assignment)cGroup_8.eContents().get(2);
-		private final RuleCall cAttributesAttributeParserRuleCall_8_2_0 = (RuleCall)cAttributesAssignment_8_2.eContents().get(0);
-		private final Group cGroup_8_3 = (Group)cGroup_8.eContents().get(3);
-		private final Keyword cSemicolonKeyword_8_3_0 = (Keyword)cGroup_8_3.eContents().get(0);
-		private final Assignment cAttributesAssignment_8_3_1 = (Assignment)cGroup_8_3.eContents().get(1);
-		private final RuleCall cAttributesAttributeParserRuleCall_8_3_1_0 = (RuleCall)cAttributesAssignment_8_3_1.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_8_4 = (Keyword)cGroup_8.eContents().get(4);
+		private final Keyword cVersionIDKeyword_8_0 = (Keyword)cGroup_8.eContents().get(0);
+		private final RuleCall cREVISION_NUMBTerminalRuleCall_8_1 = (RuleCall)cGroup_8.eContents().get(1);
 		private final Group cGroup_9 = (Group)cGroup.eContents().get(9);
-		private final Keyword cVersionIDKeyword_9_0 = (Keyword)cGroup_9.eContents().get(0);
+		private final Keyword cPre_versionKeyword_9_0 = (Keyword)cGroup_9.eContents().get(0);
 		private final RuleCall cREVISION_NUMBTerminalRuleCall_9_1 = (RuleCall)cGroup_9.eContents().get(1);
 		private final Group cGroup_10 = (Group)cGroup.eContents().get(10);
-		private final Keyword cPre_versionKeyword_10_0 = (Keyword)cGroup_10.eContents().get(0);
-		private final RuleCall cREVISION_NUMBTerminalRuleCall_10_1 = (RuleCall)cGroup_10.eContents().get(1);
-		private final Group cGroup_11 = (Group)cGroup.eContents().get(11);
-		private final Keyword cInterfacesKeyword_11_0 = (Keyword)cGroup_11.eContents().get(0);
-		private final Assignment cCompInterfacesAssignment_11_1 = (Assignment)cGroup_11.eContents().get(1);
-		private final RuleCall cCompInterfacesInteractionParserRuleCall_11_1_0 = (RuleCall)cCompInterfacesAssignment_11_1.eContents().get(0);
-		private final Group cGroup_11_2 = (Group)cGroup_11.eContents().get(2);
-		private final Keyword cSemicolonKeyword_11_2_0 = (Keyword)cGroup_11_2.eContents().get(0);
-		private final Assignment cCompInterfacesAssignment_11_2_1 = (Assignment)cGroup_11_2.eContents().get(1);
-		private final RuleCall cCompInterfacesInteractionParserRuleCall_11_2_1_0 = (RuleCall)cCompInterfacesAssignment_11_2_1.eContents().get(0);
+		private final Keyword cInterfacesKeyword_10_0 = (Keyword)cGroup_10.eContents().get(0);
+		private final Assignment cCompInterfacesAssignment_10_1 = (Assignment)cGroup_10.eContents().get(1);
+		private final RuleCall cCompInterfacesInteractionParserRuleCall_10_1_0 = (RuleCall)cCompInterfacesAssignment_10_1.eContents().get(0);
+		private final Group cGroup_10_2 = (Group)cGroup_10.eContents().get(2);
+		private final Keyword cSemicolonKeyword_10_2_0 = (Keyword)cGroup_10_2.eContents().get(0);
+		private final Assignment cCompInterfacesAssignment_10_2_1 = (Assignment)cGroup_10_2.eContents().get(1);
+		private final RuleCall cCompInterfacesInteractionParserRuleCall_10_2_1_0 = (RuleCall)cCompInterfacesAssignment_10_2_1.eContents().get(0);
 		
 		//CompClass_Impl dedal::CompClass:
 		//	'primitive_component_class' name=component_class_name ('as' realizes+=[dedal::CompRole|EString] (";"
 		//	realizes+=[dedal::CompRole|EString])*)?
-		//	'id' id=EString
-		//	'implements' implements=[dedal::CompType|EString] ('content' content=[dedal::CompInstance|EString])? ('attributes'
-		//	'(' attributes+=Attribute (";" attributes+=Attribute)* ')')? ('versionID' REVISION_NUMB)? ('pre_version'
-		//	REVISION_NUMB)? ('interfaces' compInterfaces+=Interaction (";" compInterfaces+=Interaction)*)?;
+		//	'id' id=EString ('implements' implements=[dedal::CompType|EString])? ('content'
+		//	content=[dedal::CompInstance|EString])? ('attributes' '(' attributes+=Attribute (";" attributes+=Attribute)* ')')?
+		//	('versionID' REVISION_NUMB)? ('pre_version' REVISION_NUMB)? ('interfaces' compInterfaces+=Interaction (";"
+		//	compInterfaces+=Interaction)*)?;
 		@Override public ParserRule getRule() { return rule; }
 
 		//'primitive_component_class' name=component_class_name ('as' realizes+=[dedal::CompRole|EString] (";"
-		//realizes+=[dedal::CompRole|EString])*)? 'id' id=EString 'implements' implements=[dedal::CompType|EString] ('content'
-		//content=[dedal::CompInstance|EString])? ('attributes' '(' attributes+=Attribute (";" attributes+=Attribute)* ')')?
-		//('versionID' REVISION_NUMB)? ('pre_version' REVISION_NUMB)? ('interfaces' compInterfaces+=Interaction (";"
-		//compInterfaces+=Interaction)*)?
+		//realizes+=[dedal::CompRole|EString])*)? 'id' id=EString ('implements' implements=[dedal::CompType|EString])?
+		//('content' content=[dedal::CompInstance|EString])? ('attributes' '(' attributes+=Attribute (";"
+		//attributes+=Attribute)* ')')? ('versionID' REVISION_NUMB)? ('pre_version' REVISION_NUMB)? ('interfaces'
+		//compInterfaces+=Interaction (";" compInterfaces+=Interaction)*)?
 		public Group getGroup() { return cGroup; }
 
 		//'primitive_component_class'
@@ -1875,104 +1876,107 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 		//EString
 		public RuleCall getIdEStringParserRuleCall_4_0() { return cIdEStringParserRuleCall_4_0; }
 
+		//('implements' implements=[dedal::CompType|EString])?
+		public Group getGroup_5() { return cGroup_5; }
+
 		//'implements'
-		public Keyword getImplementsKeyword_5() { return cImplementsKeyword_5; }
+		public Keyword getImplementsKeyword_5_0() { return cImplementsKeyword_5_0; }
 
 		//implements=[dedal::CompType|EString]
-		public Assignment getImplementsAssignment_6() { return cImplementsAssignment_6; }
+		public Assignment getImplementsAssignment_5_1() { return cImplementsAssignment_5_1; }
 
 		//[dedal::CompType|EString]
-		public CrossReference getImplementsCompTypeCrossReference_6_0() { return cImplementsCompTypeCrossReference_6_0; }
+		public CrossReference getImplementsCompTypeCrossReference_5_1_0() { return cImplementsCompTypeCrossReference_5_1_0; }
 
 		//EString
-		public RuleCall getImplementsCompTypeEStringParserRuleCall_6_0_1() { return cImplementsCompTypeEStringParserRuleCall_6_0_1; }
+		public RuleCall getImplementsCompTypeEStringParserRuleCall_5_1_0_1() { return cImplementsCompTypeEStringParserRuleCall_5_1_0_1; }
 
 		//('content' content=[dedal::CompInstance|EString])?
-		public Group getGroup_7() { return cGroup_7; }
+		public Group getGroup_6() { return cGroup_6; }
 
 		//'content'
-		public Keyword getContentKeyword_7_0() { return cContentKeyword_7_0; }
+		public Keyword getContentKeyword_6_0() { return cContentKeyword_6_0; }
 
 		//content=[dedal::CompInstance|EString]
-		public Assignment getContentAssignment_7_1() { return cContentAssignment_7_1; }
+		public Assignment getContentAssignment_6_1() { return cContentAssignment_6_1; }
 
 		//[dedal::CompInstance|EString]
-		public CrossReference getContentCompInstanceCrossReference_7_1_0() { return cContentCompInstanceCrossReference_7_1_0; }
+		public CrossReference getContentCompInstanceCrossReference_6_1_0() { return cContentCompInstanceCrossReference_6_1_0; }
 
 		//EString
-		public RuleCall getContentCompInstanceEStringParserRuleCall_7_1_0_1() { return cContentCompInstanceEStringParserRuleCall_7_1_0_1; }
+		public RuleCall getContentCompInstanceEStringParserRuleCall_6_1_0_1() { return cContentCompInstanceEStringParserRuleCall_6_1_0_1; }
 
 		//('attributes' '(' attributes+=Attribute (";" attributes+=Attribute)* ')')?
-		public Group getGroup_8() { return cGroup_8; }
+		public Group getGroup_7() { return cGroup_7; }
 
 		//'attributes'
-		public Keyword getAttributesKeyword_8_0() { return cAttributesKeyword_8_0; }
+		public Keyword getAttributesKeyword_7_0() { return cAttributesKeyword_7_0; }
 
 		//'('
-		public Keyword getLeftParenthesisKeyword_8_1() { return cLeftParenthesisKeyword_8_1; }
+		public Keyword getLeftParenthesisKeyword_7_1() { return cLeftParenthesisKeyword_7_1; }
 
 		//attributes+=Attribute
-		public Assignment getAttributesAssignment_8_2() { return cAttributesAssignment_8_2; }
+		public Assignment getAttributesAssignment_7_2() { return cAttributesAssignment_7_2; }
 
 		//Attribute
-		public RuleCall getAttributesAttributeParserRuleCall_8_2_0() { return cAttributesAttributeParserRuleCall_8_2_0; }
+		public RuleCall getAttributesAttributeParserRuleCall_7_2_0() { return cAttributesAttributeParserRuleCall_7_2_0; }
 
 		//(";" attributes+=Attribute)*
-		public Group getGroup_8_3() { return cGroup_8_3; }
+		public Group getGroup_7_3() { return cGroup_7_3; }
 
 		//";"
-		public Keyword getSemicolonKeyword_8_3_0() { return cSemicolonKeyword_8_3_0; }
+		public Keyword getSemicolonKeyword_7_3_0() { return cSemicolonKeyword_7_3_0; }
 
 		//attributes+=Attribute
-		public Assignment getAttributesAssignment_8_3_1() { return cAttributesAssignment_8_3_1; }
+		public Assignment getAttributesAssignment_7_3_1() { return cAttributesAssignment_7_3_1; }
 
 		//Attribute
-		public RuleCall getAttributesAttributeParserRuleCall_8_3_1_0() { return cAttributesAttributeParserRuleCall_8_3_1_0; }
+		public RuleCall getAttributesAttributeParserRuleCall_7_3_1_0() { return cAttributesAttributeParserRuleCall_7_3_1_0; }
 
 		//')'
-		public Keyword getRightParenthesisKeyword_8_4() { return cRightParenthesisKeyword_8_4; }
+		public Keyword getRightParenthesisKeyword_7_4() { return cRightParenthesisKeyword_7_4; }
 
 		//('versionID' REVISION_NUMB)?
-		public Group getGroup_9() { return cGroup_9; }
+		public Group getGroup_8() { return cGroup_8; }
 
 		//'versionID'
-		public Keyword getVersionIDKeyword_9_0() { return cVersionIDKeyword_9_0; }
+		public Keyword getVersionIDKeyword_8_0() { return cVersionIDKeyword_8_0; }
+
+		//REVISION_NUMB
+		public RuleCall getREVISION_NUMBTerminalRuleCall_8_1() { return cREVISION_NUMBTerminalRuleCall_8_1; }
+
+		//('pre_version' REVISION_NUMB)?
+		public Group getGroup_9() { return cGroup_9; }
+
+		//'pre_version'
+		public Keyword getPre_versionKeyword_9_0() { return cPre_versionKeyword_9_0; }
 
 		//REVISION_NUMB
 		public RuleCall getREVISION_NUMBTerminalRuleCall_9_1() { return cREVISION_NUMBTerminalRuleCall_9_1; }
 
-		//('pre_version' REVISION_NUMB)?
+		//('interfaces' compInterfaces+=Interaction (";" compInterfaces+=Interaction)*)?
 		public Group getGroup_10() { return cGroup_10; }
 
-		//'pre_version'
-		public Keyword getPre_versionKeyword_10_0() { return cPre_versionKeyword_10_0; }
-
-		//REVISION_NUMB
-		public RuleCall getREVISION_NUMBTerminalRuleCall_10_1() { return cREVISION_NUMBTerminalRuleCall_10_1; }
-
-		//('interfaces' compInterfaces+=Interaction (";" compInterfaces+=Interaction)*)?
-		public Group getGroup_11() { return cGroup_11; }
-
 		//'interfaces'
-		public Keyword getInterfacesKeyword_11_0() { return cInterfacesKeyword_11_0; }
+		public Keyword getInterfacesKeyword_10_0() { return cInterfacesKeyword_10_0; }
 
 		//compInterfaces+=Interaction
-		public Assignment getCompInterfacesAssignment_11_1() { return cCompInterfacesAssignment_11_1; }
+		public Assignment getCompInterfacesAssignment_10_1() { return cCompInterfacesAssignment_10_1; }
 
 		//Interaction
-		public RuleCall getCompInterfacesInteractionParserRuleCall_11_1_0() { return cCompInterfacesInteractionParserRuleCall_11_1_0; }
+		public RuleCall getCompInterfacesInteractionParserRuleCall_10_1_0() { return cCompInterfacesInteractionParserRuleCall_10_1_0; }
 
 		//(";" compInterfaces+=Interaction)*
-		public Group getGroup_11_2() { return cGroup_11_2; }
+		public Group getGroup_10_2() { return cGroup_10_2; }
 
 		//";"
-		public Keyword getSemicolonKeyword_11_2_0() { return cSemicolonKeyword_11_2_0; }
+		public Keyword getSemicolonKeyword_10_2_0() { return cSemicolonKeyword_10_2_0; }
 
 		//compInterfaces+=Interaction
-		public Assignment getCompInterfacesAssignment_11_2_1() { return cCompInterfacesAssignment_11_2_1; }
+		public Assignment getCompInterfacesAssignment_10_2_1() { return cCompInterfacesAssignment_10_2_1; }
 
 		//Interaction
-		public RuleCall getCompInterfacesInteractionParserRuleCall_11_2_1_0() { return cCompInterfacesInteractionParserRuleCall_11_2_1_0; }
+		public RuleCall getCompInterfacesInteractionParserRuleCall_10_2_1_0() { return cCompInterfacesInteractionParserRuleCall_10_2_1_0; }
 	}
 
 	public class AttributeElements extends AbstractParserRuleElementFinder {
@@ -4543,10 +4547,10 @@ public class DedalADLGrammarAccess extends AbstractGrammarElementFinder {
 	//CompClass_Impl dedal::CompClass:
 	//	'primitive_component_class' name=component_class_name ('as' realizes+=[dedal::CompRole|EString] (";"
 	//	realizes+=[dedal::CompRole|EString])*)?
-	//	'id' id=EString
-	//	'implements' implements=[dedal::CompType|EString] ('content' content=[dedal::CompInstance|EString])? ('attributes'
-	//	'(' attributes+=Attribute (";" attributes+=Attribute)* ')')? ('versionID' REVISION_NUMB)? ('pre_version'
-	//	REVISION_NUMB)? ('interfaces' compInterfaces+=Interaction (";" compInterfaces+=Interaction)*)?;
+	//	'id' id=EString ('implements' implements=[dedal::CompType|EString])? ('content'
+	//	content=[dedal::CompInstance|EString])? ('attributes' '(' attributes+=Attribute (";" attributes+=Attribute)* ')')?
+	//	('versionID' REVISION_NUMB)? ('pre_version' REVISION_NUMB)? ('interfaces' compInterfaces+=Interaction (";"
+	//	compInterfaces+=Interaction)*)?;
 	public CompClass_ImplElements getCompClass_ImplAccess() {
 		return pCompClass_Impl;
 	}

@@ -26,8 +26,8 @@ public abstract class AbstractDedalADLSyntacticSequencer extends AbstractSyntact
 	protected AbstractElementAlias match_Assembly___LeftParenthesisKeyword_4_0_REVISION_NUMBTerminalRuleCall_4_1_RightParenthesisKeyword_4_2__q;
 	protected AbstractElementAlias match_Assembly___Pre_versionKeyword_12_0_VersionParserRuleCall_12_1__q;
 	protected AbstractElementAlias match_Assembly___VersionIDKeyword_5_0_REVISION_NUMBTerminalRuleCall_5_1__q;
-	protected AbstractElementAlias match_CompClass_Impl___Pre_versionKeyword_10_0_REVISION_NUMBTerminalRuleCall_10_1__q;
-	protected AbstractElementAlias match_CompClass_Impl___VersionIDKeyword_9_0_REVISION_NUMBTerminalRuleCall_9_1__q;
+	protected AbstractElementAlias match_CompClass_Impl___Pre_versionKeyword_9_0_REVISION_NUMBTerminalRuleCall_9_1__q;
+	protected AbstractElementAlias match_CompClass_Impl___VersionIDKeyword_8_0_REVISION_NUMBTerminalRuleCall_8_1__q;
 	protected AbstractElementAlias match_CompositeCompClass___Delegated_interfacesKeyword_7_0_Delegated_interface_listParserRuleCall_7_1__q;
 	protected AbstractElementAlias match_CompositeCompClass___LeftParenthesisKeyword_6_2_0_REVISION_NUMBTerminalRuleCall_6_2_1_RightParenthesisKeyword_6_2_2__q;
 	protected AbstractElementAlias match_CompositeCompClass___Pre_versionKeyword_10_0_REVISION_NUMBTerminalRuleCall_10_1__q;
@@ -49,8 +49,8 @@ public abstract class AbstractDedalADLSyntacticSequencer extends AbstractSyntact
 		match_Assembly___LeftParenthesisKeyword_4_0_REVISION_NUMBTerminalRuleCall_4_1_RightParenthesisKeyword_4_2__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getAssemblyAccess().getLeftParenthesisKeyword_4_0()), new TokenAlias(false, false, grammarAccess.getAssemblyAccess().getREVISION_NUMBTerminalRuleCall_4_1()), new TokenAlias(false, false, grammarAccess.getAssemblyAccess().getRightParenthesisKeyword_4_2()));
 		match_Assembly___Pre_versionKeyword_12_0_VersionParserRuleCall_12_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getAssemblyAccess().getPre_versionKeyword_12_0()), new TokenAlias(false, false, grammarAccess.getAssemblyAccess().getVersionParserRuleCall_12_1()));
 		match_Assembly___VersionIDKeyword_5_0_REVISION_NUMBTerminalRuleCall_5_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getAssemblyAccess().getVersionIDKeyword_5_0()), new TokenAlias(false, false, grammarAccess.getAssemblyAccess().getREVISION_NUMBTerminalRuleCall_5_1()));
-		match_CompClass_Impl___Pre_versionKeyword_10_0_REVISION_NUMBTerminalRuleCall_10_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getCompClass_ImplAccess().getPre_versionKeyword_10_0()), new TokenAlias(false, false, grammarAccess.getCompClass_ImplAccess().getREVISION_NUMBTerminalRuleCall_10_1()));
-		match_CompClass_Impl___VersionIDKeyword_9_0_REVISION_NUMBTerminalRuleCall_9_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getCompClass_ImplAccess().getVersionIDKeyword_9_0()), new TokenAlias(false, false, grammarAccess.getCompClass_ImplAccess().getREVISION_NUMBTerminalRuleCall_9_1()));
+		match_CompClass_Impl___Pre_versionKeyword_9_0_REVISION_NUMBTerminalRuleCall_9_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getCompClass_ImplAccess().getPre_versionKeyword_9_0()), new TokenAlias(false, false, grammarAccess.getCompClass_ImplAccess().getREVISION_NUMBTerminalRuleCall_9_1()));
+		match_CompClass_Impl___VersionIDKeyword_8_0_REVISION_NUMBTerminalRuleCall_8_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getCompClass_ImplAccess().getVersionIDKeyword_8_0()), new TokenAlias(false, false, grammarAccess.getCompClass_ImplAccess().getREVISION_NUMBTerminalRuleCall_8_1()));
 		match_CompositeCompClass___Delegated_interfacesKeyword_7_0_Delegated_interface_listParserRuleCall_7_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getCompositeCompClassAccess().getDelegated_interfacesKeyword_7_0()), new TokenAlias(false, false, grammarAccess.getCompositeCompClassAccess().getDelegated_interface_listParserRuleCall_7_1()));
 		match_CompositeCompClass___LeftParenthesisKeyword_6_2_0_REVISION_NUMBTerminalRuleCall_6_2_1_RightParenthesisKeyword_6_2_2__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getCompositeCompClassAccess().getLeftParenthesisKeyword_6_2_0()), new TokenAlias(false, false, grammarAccess.getCompositeCompClassAccess().getREVISION_NUMBTerminalRuleCall_6_2_1()), new TokenAlias(false, false, grammarAccess.getCompositeCompClassAccess().getRightParenthesisKeyword_6_2_2()));
 		match_CompositeCompClass___Pre_versionKeyword_10_0_REVISION_NUMBTerminalRuleCall_10_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getCompositeCompClassAccess().getPre_versionKeyword_10_0()), new TokenAlias(false, false, grammarAccess.getCompositeCompClassAccess().getREVISION_NUMBTerminalRuleCall_10_1()));
@@ -198,10 +198,10 @@ public abstract class AbstractDedalADLSyntacticSequencer extends AbstractSyntact
 				emit_Assembly___Pre_versionKeyword_12_0_VersionParserRuleCall_12_1__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_Assembly___VersionIDKeyword_5_0_REVISION_NUMBTerminalRuleCall_5_1__q.equals(syntax))
 				emit_Assembly___VersionIDKeyword_5_0_REVISION_NUMBTerminalRuleCall_5_1__q(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_CompClass_Impl___Pre_versionKeyword_10_0_REVISION_NUMBTerminalRuleCall_10_1__q.equals(syntax))
-				emit_CompClass_Impl___Pre_versionKeyword_10_0_REVISION_NUMBTerminalRuleCall_10_1__q(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_CompClass_Impl___VersionIDKeyword_9_0_REVISION_NUMBTerminalRuleCall_9_1__q.equals(syntax))
-				emit_CompClass_Impl___VersionIDKeyword_9_0_REVISION_NUMBTerminalRuleCall_9_1__q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_CompClass_Impl___Pre_versionKeyword_9_0_REVISION_NUMBTerminalRuleCall_9_1__q.equals(syntax))
+				emit_CompClass_Impl___Pre_versionKeyword_9_0_REVISION_NUMBTerminalRuleCall_9_1__q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_CompClass_Impl___VersionIDKeyword_8_0_REVISION_NUMBTerminalRuleCall_8_1__q.equals(syntax))
+				emit_CompClass_Impl___VersionIDKeyword_8_0_REVISION_NUMBTerminalRuleCall_8_1__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_CompositeCompClass___Delegated_interfacesKeyword_7_0_Delegated_interface_listParserRuleCall_7_1__q.equals(syntax))
 				emit_CompositeCompClass___Delegated_interfacesKeyword_7_0_Delegated_interface_listParserRuleCall_7_1__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_CompositeCompClass___LeftParenthesisKeyword_6_2_0_REVISION_NUMBTerminalRuleCall_6_2_1_RightParenthesisKeyword_6_2_2__q.equals(syntax))
@@ -300,10 +300,12 @@ public abstract class AbstractDedalADLSyntacticSequencer extends AbstractSyntact
 	 *     attributes+=Attribute ')' ('versionID' REVISION_NUMB)? (ambiguity) (rule end)
 	 *     content=[CompInstance|EString] ('versionID' REVISION_NUMB)? (ambiguity) 'interfaces' compInterfaces+=Interaction
 	 *     content=[CompInstance|EString] ('versionID' REVISION_NUMB)? (ambiguity) (rule end)
+	 *     id=EString ('versionID' REVISION_NUMB)? (ambiguity) 'interfaces' compInterfaces+=Interaction
+	 *     id=EString ('versionID' REVISION_NUMB)? (ambiguity) (rule end)
 	 *     implements=[CompType|EString] ('versionID' REVISION_NUMB)? (ambiguity) 'interfaces' compInterfaces+=Interaction
 	 *     implements=[CompType|EString] ('versionID' REVISION_NUMB)? (ambiguity) (rule end)
 	 */
-	protected void emit_CompClass_Impl___Pre_versionKeyword_10_0_REVISION_NUMBTerminalRuleCall_10_1__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_CompClass_Impl___Pre_versionKeyword_9_0_REVISION_NUMBTerminalRuleCall_9_1__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -316,10 +318,12 @@ public abstract class AbstractDedalADLSyntacticSequencer extends AbstractSyntact
 	 *     attributes+=Attribute ')' (ambiguity) ('pre_version' REVISION_NUMB)? (rule end)
 	 *     content=[CompInstance|EString] (ambiguity) ('pre_version' REVISION_NUMB)? 'interfaces' compInterfaces+=Interaction
 	 *     content=[CompInstance|EString] (ambiguity) ('pre_version' REVISION_NUMB)? (rule end)
+	 *     id=EString (ambiguity) ('pre_version' REVISION_NUMB)? 'interfaces' compInterfaces+=Interaction
+	 *     id=EString (ambiguity) ('pre_version' REVISION_NUMB)? (rule end)
 	 *     implements=[CompType|EString] (ambiguity) ('pre_version' REVISION_NUMB)? 'interfaces' compInterfaces+=Interaction
 	 *     implements=[CompType|EString] (ambiguity) ('pre_version' REVISION_NUMB)? (rule end)
 	 */
-	protected void emit_CompClass_Impl___VersionIDKeyword_9_0_REVISION_NUMBTerminalRuleCall_9_1__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_CompClass_Impl___VersionIDKeyword_8_0_REVISION_NUMBTerminalRuleCall_8_1__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	

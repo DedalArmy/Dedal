@@ -181,7 +181,7 @@ component_type_name:
 CompClass_Impl returns dedal::CompClass:
 	'primitive_component_class' name=component_class_name ('as' realizes+=[dedal::CompRole|EString] ( ";" realizes+=[dedal::CompRole|EString])*)?
 		'id' id=EString
-		'implements' implements=[dedal::CompType|EString]
+		('implements' implements=[dedal::CompType|EString])?
 		('content' content=[dedal::CompInstance|EString])? 
 		('attributes' '(' attributes+=Attribute ( ";" attributes+=Attribute)* ')')? 
 		('versionID' REVISION_NUMB)? 

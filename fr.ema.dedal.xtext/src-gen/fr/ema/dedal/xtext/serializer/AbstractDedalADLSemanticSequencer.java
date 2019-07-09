@@ -207,7 +207,7 @@ public abstract class AbstractDedalADLSemanticSequencer extends AbstractDelegati
 	 *         name=component_class_name 
 	 *         (realizes+=[CompRole|EString] realizes+=[CompRole|EString]*)? 
 	 *         id=EString 
-	 *         implements=[CompType|EString] 
+	 *         implements=[CompType|EString]? 
 	 *         content=[CompInstance|EString]? 
 	 *         (attributes+=Attribute attributes+=Attribute*)? 
 	 *         (compInterfaces+=Interaction compInterfaces+=Interaction*)?
