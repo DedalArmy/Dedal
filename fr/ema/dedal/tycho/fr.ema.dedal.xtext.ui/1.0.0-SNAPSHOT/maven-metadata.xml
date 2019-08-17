@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata modelVersion="1.1.0">
   <groupId>fr.ema.dedal.tycho</groupId>
-  <artifactId>fr.ema.dedal.xtext</artifactId>
+  <artifactId>fr.ema.dedal.xtext.ui</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20190817.104725</timestamp>
+      <timestamp>20190817.104743</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
-    <lastUpdated>20190817104725</lastUpdated>
+    <lastUpdated>20190817104743</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.0.0-20190817.104725-1</value>
-        <updated>20190817104725</updated>
+        <value>1.0.0-20190817.104743-1</value>
+        <updated>20190817104743</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.0.0-20190817.104725-1</value>
-        <updated>20190817104725</updated>
+        <value>1.0.0-20190817.104743-1</value>
+        <updated>20190817104743</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>p2metadata</classifier>
         <extension>xml</extension>
-        <value>1.0.0-20190817.104725-1</value>
-        <updated>20190817104725</updated>
+        <value>1.0.0-20190817.104743-1</value>
+        <updated>20190817104743</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>p2artifacts</classifier>
         <extension>xml</extension>
-        <value>1.0.0-20190817.104725-1</value>
-        <updated>20190817104725</updated>
+        <value>1.0.0-20190817.104743-1</value>
+        <updated>20190817104743</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
