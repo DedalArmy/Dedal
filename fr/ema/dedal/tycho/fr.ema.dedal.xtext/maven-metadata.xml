@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>fr.ema.dedal.tycho</groupId>
-  <artifactId>fr.ema.dedal.dedalToB</artifactId>
+  <artifactId>fr.ema.dedal.xtext</artifactId>
   <versioning>
     <versions>
       <version>1.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20190817104712</lastUpdated>
+    <lastUpdated>20190817104726</lastUpdated>
   </versioning>
 </metadata>
