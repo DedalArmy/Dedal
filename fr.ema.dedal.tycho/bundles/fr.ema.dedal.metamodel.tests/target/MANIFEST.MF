@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: fr.ema.dedal.metamodel.tests;singleton:=true
+Automatic-Module-Name: fr.ema.dedal.metamodel.tests
+Bundle-Version: 1.0.0.201908181352
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: dedal.tests
+Require-Bundle: org.eclipse.core.runtime,fr.ema.dedal.metamodel;visibili
+ ty:=reexport,org.eclipse.emf.ecore.xmi;visibility:=reexport,org.junit;v
+ isibility:=reexport
+Bundle-ActivationPolicy: lazy
+

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: dedal.tests.RoleConnectionTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in dedal.tests.RoleConnectionTest
+initializationError(dedal.tests.RoleConnectionTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoClassDefFoundError: dedal/Connection
+Caused by: java.lang.ClassNotFoundException: dedal.Connection cannot be found by fr.ema.dedal.metamodel.tests_1.0.0.qualifier
+

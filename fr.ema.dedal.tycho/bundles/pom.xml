@@ -13,15 +13,14 @@
  
     <modules>
         <module>fr.ema.dedal.metamodel</module>
-        <module>fr.ema.dedal.dedalToB</module>
-        <module>fr.ema.dedal.xtext</module>
-        <module>fr.ema.dedal.xtext.ui</module>
-        <module>fr.ema.dedal.design</module>
         <module>fr.ema.dedal.metamodel.edit</module>
 		<module>fr.ema.dedal.metamodel.editor</module>
-<!--	
-        <module>fr.ema.dedal.metamodel.tests</module>
-        <module>fr.ema.dedal.xtext.sdk</module> -->        
+        <module>fr.ema.dedal.dedalToB</module>
+        <module>fr.ema.dedal.design</module>
+        <module>fr.ema.dedal.xtext</module>
+        <module>fr.ema.dedal.xtext.ui</module>
+<!--         <module>fr.ema.dedal.metamodel.tests</module> -->
+    
     </modules>
  
 </project>

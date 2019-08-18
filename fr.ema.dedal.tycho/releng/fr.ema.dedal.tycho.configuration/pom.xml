@@ -12,6 +12,9 @@
   <orbit-repo.url>https://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository/</orbit-repo.url>
   <prob2-repo.url>https://www3.hhu.de/stups/rodin/prob2/releases/2015-Spring-Release/</prob2-repo.url>
   <obeo-repo.url>https://github.com/ObeoNetwork/Xtext-Sirius-integration/xtext-support-parent</obeo-repo.url>
+  <github.global.server>dedalarmy</github.global.server>
+  <project.dir>/mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho</project.dir>
+  <dedal.alexandreleborgne>ftp://ftp.cluster021.hosting.ovh.net/dedal/repository</dedal.alexandreleborgne>
  </properties>
 
  <repositories>
@@ -30,14 +33,33 @@
    <url>${prob2-repo.url}</url>
    <layout>p2</layout>
   </repository>
-  <repository>
+ <!-- <repository>
     <id>jitpack.io</id>
     <url>https://jitpack.io</url>
- </repository>
+ </repository> --> 
  </repositories>
+ 
+ <distributionManagement>
+    <!-- <repository>
+        <id>internal.repo</id>
+        <name>Temporary Staging Repository</name>
+        <url>file://${project.dir}/temp-mvn-repo</url>
+    </repository> -->
+    <repository>
+    	<id>dedal.alexandreleborgne</id>
+    	<url>${dedal.alexandreleborgne}/mvn</url>
+    </repository>
+</distributionManagement>
 
  <build>
   <plugins>
+        <!-- <plugin>
+        <artifactId>maven-eclipse-plugin</artifactId>
+        <version>2.10</version>
+        <configuration>
+          <pde>true</pde>
+        </configuration>
+      </plugin> -->
    <plugin>
     <groupId>org.eclipse.tycho</groupId>
     <artifactId>tycho-maven-plugin</artifactId>
@@ -83,6 +105,86 @@
      </environments>
     </configuration>
    </plugin>
+   
+       <!-- <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.1</version>
+        <executions>
+          <execution>
+            <id>copy-dependencies</id>
+            <phase>process-sources</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}</outputDirectory>
+              <overWriteReleases>false</overWriteReleases>
+              <overWriteSnapshots>false</overWriteSnapshots>
+              <overWriteIfNewer>true</overWriteIfNewer>
+               <excludeScope>system</excludeScope>  
+              <includeScope>system</includeScope>
+              <includeScope>runtime</includeScope>
+              <includeScope>compile</includeScope>
+              <includeScope>provided</includeScope>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+<plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>${basedir}</directory>
+              <includes>
+                <include>*.jar</include>
+              </includes>
+              <followSymlinks>false</followSymlinks>
+             </fileset>
+           </filesets>
+         </configuration>
+       </plugin>-->
+   
+           <plugin>
+            <groupId>com.github.github</groupId>
+            <artifactId>site-maven-plugin</artifactId>
+            <version>0.11</version>
+            <configuration>
+                <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
+                <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
+                <outputDirectory>${project.dir}/temp-mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
+                <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
+                <includes><include>**/*</include></includes>
+                <repositoryName>Dedal</repositoryName>      <!-- github repo name -->
+                <repositoryOwner>DedalArmy</repositoryOwner>    <!-- github username  -->
+            </configuration>
+            <executions>
+              <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
+              <execution>
+                <goals>
+                  <goal>site</goal>
+                </goals>
+                <phase>site</phase>
+              </execution>
+            </executions>
+        </plugin>
+   
   </plugins>
+  
+  
+  
+    <extensions>
+      <!-- Enabling the use of FTP -->
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+         <artifactId>wagon-ftp</artifactId>
+         <version>1.0-beta-6</version>
+      </extension>
+    </extensions>
+    
+    
  </build>
 </project>

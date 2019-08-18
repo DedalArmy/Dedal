@@ -5,7 +5,14 @@ import java.util.List;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 import de.prob.statespace.Transition;
-import dedal.*;
+import dedal.Assembly;
+import dedal.CompClass;
+import dedal.CompRole;
+import dedal.Configuration;
+import dedal.DedalDiagram;
+import dedal.Interaction;
+import dedal.Repository;
+import dedal.Specification;
 import dedal.impl.ClassConnectionImpl;
 import dedal.impl.CompClassImpl;
 import dedal.impl.CompInstanceImpl;

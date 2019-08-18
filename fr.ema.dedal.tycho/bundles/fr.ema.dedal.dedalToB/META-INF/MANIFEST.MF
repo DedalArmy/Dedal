@@ -4,7 +4,7 @@ Bundle-Name: Acceleo DedalToB Module Runtime Plug-in
 Bundle-SymbolicName: fr.ema.dedal.dedalToB;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: fr.ema.dedal.dedalToB.Activator
-Bundle-Vendor: Eclipse Modeling Project
+Bundle-Vendor: IMT Mines Alès
 Require-Bundle: org.eclipse.core.runtime,
  fr.ema.dedal.metamodel,
  org.eclipse.emf.ecore,
@@ -17,7 +17,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.acceleo.engine;bundle-version="3.3.0",
  com.google.guava,
  org.eclipse.sirius
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Eclipse-LazyStart: true
 Export-Package: fr.ema.dedal.dedalToB.main
