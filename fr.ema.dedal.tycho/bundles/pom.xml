@@ -20,6 +20,7 @@
         <module>fr.ema.dedal.xtext</module>
         <module>fr.ema.dedal.xtext.ui</module>
 <!--         <module>fr.ema.dedal.metamodel.tests</module> -->
+<!--         <module>fr.ema.dedal.xtext.tests</module> -->
     
     </modules>
  
