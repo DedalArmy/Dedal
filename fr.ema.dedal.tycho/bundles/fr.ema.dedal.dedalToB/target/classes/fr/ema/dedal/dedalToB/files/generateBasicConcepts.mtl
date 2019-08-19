@@ -1,0 +1,497 @@
+[comment encoding = UTF-8 /]
+[module generateBasicConcepts('http://www.dedal.fr/metamodel')]
+
+
+[template public generateBasicConcepts(aDedalDiagram : DedalDiagram)]
+
+[file ('Basic_concepts.mch', false, 'UTF-8')]
+MACHINE
+    Basic_concepts
+
+SETS
+    /*Abstract sets definition: It is manadatory dto declare abstract sets to type variables defined later.
+    An abstract set captures all possible values of a variable*/
+    PARAM_NAMES = {none
+[let namesList : Sequence(String) = architectureDescriptions.interfaceTypes.signatures.parameters.name]
+[let fullNameList : Sequence(String) = namesList->addAll(repositories.interfaceTypes.signatures.parameters.name)]
+[for (str: String|fullNameList->asOrderedSet()) before(',') separator(',')]
+[str/]
+[/for]
+[comment][for (p: Parameter|architectureDescriptions.interfaceTypes.signatures.parameters) separator(',')]
+[p.name/]
+[/for][/comment]
+[/let]
+[/let]};
+    PARAMETERS = {nonep
+[if repositories->notEmpty()]
+[for (rep : Repository|self.repositories) separator(',')]
+[for (p : Parameter|rep.interfaceTypes.signatures.parameters) before(',') separator(',')]
+['s_'+p.id/]
+[/for]
+[/for]
+[/if]
+[for (p: Parameter|architectureDescriptions.interfaceTypes.signatures.parameters) before(',') separator(',')]
+[p.id/]
+[/for]};
+    INTERFACES = {
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (c : CompRole|rep.eContents(CompRole)) separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name/]
+[/for]
+[/for]
+[for (c : CompClass|rep.eContents(CompClass)) before(',') separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name/]
+[/for]
+[/for]
+[/for]
+[/if]
+
+
+[if (self.eContents(Configuration)->isEmpty())]
+[for (c : CompRole|aDedalDiagram.eContents(Specification).specComponents) separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name/]
+[/for]
+[/for]
+[else]
+[for (c : CompRole|aDedalDiagram.eContents(Specification).specComponents) separator(',') after(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name/]
+[/for]
+[/for]
+[for (c : CompClass|aDedalDiagram.eContents(Configuration).configComponents) separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name/]
+[/for]
+[/for]
+[/if]
+
+   };
+    TYPES = {[let typesList1 : Sequence(String) = architectureDescriptions.interfaceTypes.signatures.type]
+[let typesList2 : Sequence(String) = typesList1->addAll(repositories.interfaceTypes.signatures.type)]
+[let typesList3 : Sequence(String) = typesList2->addAll(architectureDescriptions.interfaceTypes.signatures.parameters.type)]
+[let fullTypesList : Sequence(String) = typesList3->addAll(repositories.interfaceTypes.signatures.parameters.type)]
+[for (str: String|fullTypesList->asOrderedSet()) separator(',')]
+[str/]
+[/for]
+[/let]
+[/let]
+[/let]
+[/let]
+};
+    INTERFACE_TYPES = {
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (intType : InterfaceType|rep.interfaceTypes) separator(',')]
+[intType.name/]
+[/for]
+[/for]
+[/if]
+[for (intType : InterfaceType|architectureDescriptions.interfaceTypes) separator(',')]
+[intType.name/]
+[/for]
+};
+    SIGNATURES= {
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (sig : Signature|rep.interfaceTypes.signatures) separator(',')]
+['s_'+sig.id/]
+[/for]
+[/for]
+[/if]
+[for (sig : Signature|architectureDescriptions.interfaceTypes.signatures) separator(',')]
+[sig.id/]
+[/for]
+};
+    SIG_NAMES = {
+
+
+[let namesList : Sequence(String) = architectureDescriptions.interfaceTypes.signatures.name]
+[let fullNameList : Sequence(String) = namesList->addAll(repositories.interfaceTypes.signatures.name)]
+[for (str : String|fullNameList->asOrderedSet()) separator(',')]
+[str/]
+[/for]
+[/let]
+[/let]
+};
+    DIRECTION = {PROVIDED, REQUIRED}
+    
+VARIABLES
+    
+    /*variables represent the state of the model (also called machine in B)*/
+    /*Every variable should be initialized in the INITIALISATION clause and could be changed through operations*/
+    parameter, interface, type, subtype, parameter_name, parameter_type,
+    int_direction, int_type, interfaceType, int_subtype,
+    int_substitution, param_subtype, int_compatible, signature, sig_name, parameters,
+    sig_return, int_signatures, sig_subtype, sig_equals
+    
+INVARIANT
+    /*Invariant is the set of properties that should be statisfied in all states of the system*/
+    /*In our case, we define all concepts of a component as well as rules of substituability and compatibility between interfaces*/
+    
+    
+    /*Definition of a type: a type set includes all existing types in the system that can be given to parameters and results */
+    
+    type <: TYPES &
+    subtype : type <-> type &
+    /*closure1(subtype) /\ id(type) = {} &*/
+    
+    /*Parameter definition (name  & type)*/
+    
+    parameter <: PARAMETERS &
+    parameter_name : parameter --> PARAM_NAMES &
+    parameter_type : parameter --> type &
+   
+    /*signature definition*/
+    
+    signature <: SIGNATURES &
+    sig_name : signature --> SIG_NAMES &
+    parameters : signature --> POW(parameter) &
+    
+    /*uniqueness of each parameter name belonging to the same interface*/
+    
+    !(p1, p2, sig).(sig : signature & p1 : parameter & p1 : parameters(sig) & p2 : parameter & p2 : parameters(sig) => (p1 /= p2 <=> parameter_name(p1) /= parameter_name(p2))) &
+    sig_return : signature --> type &
+    
+    /* A signature f1 is parameter subtype of a signature f2 if every parameter p1 in f1 has a correpsponding parameter p2 in f2 and p2 is subtype of (or same type as) p1*/
+    
+    param_subtype : signature <-> signature &
+    
+    /* A signature f1 is parameter subtype of a signature f2 if every parameter p1 in f1 has a correpsponding parameter p2 in f2 and p2 is subtype of (or same type as) p1 (we accept a larege number of parameters)*/
+    
+    !(sig1, sig2).(sig1 : signature & sig2 : signature & sig1 /= sig2  => ((sig1, sig2) : param_subtype <=>
+            #inj.(inj : parameters(sig1) >-> parameters(sig2) & !param.(param : parameter & param : dom(inj) => parameter_name(param) = parameter_name(inj(param)) & parameter_type(inj(param)) : (subtype['[{parameter_type(param)}]'/] \/ {parameter_type(param)}))))) &
+
+/*sig_sub specilizes sig_sup if they have the same name, sig_sup is parameter subtype of sig_sub and the return type of sig_sub is subtype of the return type of sig_sup*/
+sig_subtype : signature <-> signature &
+/*closure1(sig_subtype) /\ id(signature) = {} &*/
+!(sig1, sig2).(sig1: signature & sig2 : signature & sig1 /= sig2 => ((sig1, sig2) : sig_subtype <=> (sig_name(sig1) = sig_name(sig2) & (sig2, sig1) : param_subtype & sig_return(sig2) : subtype['[{sig_return(sig1)}]'/] \/ {sig_return(sig1)}))) & 
+
+
+/*two signatures are said equals if and only if they have the same name and the same parameters*/
+sig_equals : signature <-> signature &
+!(sig1, sig2).(sig1 : signature & sig2 : signature & sig1 /= sig2 => ((sig1, sig2) : sig_equals <=> (sig_name(sig1) = sig_name(sig2) & card(parameters(sig1)) = card(parameters(sig2)) & #bij.(bij : parameters(sig1) >->> parameters(sig2) & !(p1, p2).(p1 : parameter & p2 : parameter & p1 : dom(bij) & p2 : ran(bij) & bij(p1) = p2 => parameter_name(p1) = parameter_name(p2) & parameter_type(p1) = parameter_type(p2)))))) &
+
+
+    /*Interface definition (name, list of parameters, result, direction)*/
+    
+    interfaceType <: INTERFACE_TYPES &
+    int_signatures : interfaceType --> POW(signature) &
+    
+    /*an interface must have different signatures*/
+    !(intT, sig1, sig2).(intT : interfaceType & sig1 : signature & sig2 : signature  & sig1 /= sig2 => ({sig1, sig2} <: int_signatures(intT) => (sig1, sig2) /: sig_equals)) &
+    
+    /*interface subtype definition*/
+    int_subtype : interfaceType <-> interfaceType &
+     
+    /*closure1(int_subtype) /\ id(interfaceType) = {} &*/
+    !(intTypeA, intTypeB).(intTypeA : interfaceType & intTypeB : interfaceType & intTypeA /= intTypeB  =>
+        ((intTypeA, intTypeB) : int_subtype <=> #inj.(inj : int_signatures(intTypeA) >-> int_signatures(intTypeB) & !sig.(sig : signature & sig : int_signatures(intTypeA)  => (sig, inj(sig)) : closure(sig_subtype) or sig=inj(sig))))) &    
+   
+/*interface definition*/
+
+    interface <: INTERFACES &
+    int_type : interface --> interfaceType &
+    int_direction : interface --> DIRECTION &
+ 
+    /*substitutability between interfaces*/
+    
+    int_substitution : interface <-> interface &
+    
+    /*A provided interface intA can be replaced by a provided interface intB if intA is parameter_subtype of intB (contravariant specialization of parameters) and resullt of intB is subtype of result of intA (covariant specialization of return type)*/
+    /*A required interface intA can be replaced by a required interface intB if intB is parameter_subtype of intA (cvariant specialization of parameters) and resullt of intA is subtype of result of intB (contravariant specialization of return type)*/
+    
+    !(int_sup, int_sub).(int_sup : interface & int_sub : interface & int_sup /= int_sub => 
+        ((int_sup, int_sub) : int_substitution <=> ((int_type(int_sub) : int_subtype['[{int_type(int_sup)}]'/] \/ {int_type(int_sup)}) & int_direction(int_sup) = PROVIDED & int_direction(int_sub) = PROVIDED) or ((int_type(int_sup) : int_subtype['[{int_type(int_sub)}]'/] \/ {int_type(int_sub)}) & int_direction(int_sup) = REQUIRED & int_direction(int_sub) = REQUIRED))) &
+    
+/*compatibility between a required interface and a provided interface*/
+/*A provided interface intA can be connected to a required interface intB if intA is in contravariant specialization of parameters with intB and in covariant result with intB*/
+
+int_compatible : interface <-> interface &
+
+!(intA, intB).(intA : interface & intB : interface & int_direction(intA) /= int_direction(intB) =>
+    ((intA, intB) : int_compatible <=>
+        ((int_direction(intA) = PROVIDED & int_direction(intB) = REQUIRED & (int_type(intA) : int_subtype['[{int_type(intB)}]'/] \/ {int_type(intB)})) or
+         (int_direction(intA) = REQUIRED & int_direction(intB) = PROVIDED & (int_type(intB) : int_subtype['[{int_type(intA)}]'/] \/ {int_type(intA)})))))
+
+DEFINITIONS
+    compatible_interfaces1 == {int1, int2|int1 : interface & int2: interface & int_direction(int1) = PROVIDED & int_direction(int2) = REQUIRED & int_type(int1) : int_subtype['[{int_type(int2)}]'/] \/ {int_type(int2)}};
+    compatible_interfaces2 == {int1, int2|int1 : interface & int2: interface & int_direction(int1) = REQUIRED & int_direction(int2) = PROVIDED & int_type(int2) : int_subtype['[{int_type(int1)}]'/] \/ {int_type(int1)}};
+    all_compatible_interfaces == compatible_interfaces1 \/ compatible_interfaces2;
+    all_int_substitution == {int1, int2|int1 : interface & int2 : interface & int1 /= int2 & 
+        (((int_type(int2) : int_subtype['[{int_type(int1)}]'/] \/ {int_type(int1)}) & int_direction(int1) = PROVIDED & int_direction(int2) = PROVIDED) or ((int_type(int1) : int_subtype['[{int_type(int2)}]'/] \/ {int_type(int2)}) & int_direction(int1) = REQUIRED & int_direction(int2) = REQUIRED))};
+    interface_subtype_hierarchy == {intTypeA, intTypeB|intTypeA : interfaceType & intTypeB : interfaceType & intTypeA /= intTypeB &
+                #inj.(inj : int_signatures(intTypeA) >-> int_signatures(intTypeB) & !sig.(sig : signature & sig : int_signatures(intTypeA)  => ((sig, inj(sig)) : sig_subtype or sig=inj(sig))))};
+        signature_subtype_hierarchy == {sig1, sig2|sig1: signature & sig2 : signature & sig1 /= sig2 & sig_name(sig1) = sig_name(sig2) & (sig2, sig1) : param_subtype & sig_return(sig2) : subtype['[{sig_return(sig1)}]'/] \/ {sig_return(sig1)}};
+        sig_param_subtype == {sig1, sig2|sig1 : signature & sig2 : signature & sig1 /= sig2  & 
+            #inj.(inj : parameters(sig1) >-> parameters(sig2) & !param.(param : parameter & param : dom(inj) => parameter_name(param) = parameter_name(inj(param)) & (parameter_type(inj(param)) : subtype['[{parameter_type(param)}]'/] or parameter_type(param) = parameter_type(inj(param)))))}
+
+INITIALISATION
+    type := {
+[let typesList1 : Sequence(String) = architectureDescriptions.interfaceTypes.signatures.type]
+[let typesList2 : Sequence(String) = typesList1->addAll(repositories.interfaceTypes.signatures.type)]
+[let typesList3 : Sequence(String) = typesList2->addAll(architectureDescriptions.interfaceTypes.signatures.parameters.type)]
+[let fullTypesList : Sequence(String) = typesList3->addAll(repositories.interfaceTypes.signatures.parameters.type)]
+[for (str: String|fullTypesList->asOrderedSet()) separator(',')]
+[str/]
+[/for]
+[/let]
+[/let]
+[/let]
+[/let]} ||
+    subtype := {} ||
+[if (architectureDescriptions.interfaceTypes.signatures.parameters->isEmpty() and repositories.interfaceTypes.signatures.parameters->isEmpty())]
+parameter := {} ||
+parameter_name := {} ||
+parameter_type := {} ||
+[elseif (repositories.interfaceTypes.signatures.parameters->notEmpty())]
+    parameter := {
+[for (p : Parameter|repositories.interfaceTypes.signatures.parameters) separator(',')]
+['s_'+p.id/]
+[/for]
+[for (p: Parameter|architectureDescriptions.interfaceTypes.signatures.parameters) before(',') separator(',')]
+[p.id/]
+[/for]} ||
+    parameter_name := {
+[for (p : Parameter|repositories.interfaceTypes.signatures.parameters) separator(',')]
+['s_'+p.id+'|->'+p.name/]
+[/for]
+[for (p: Parameter|architectureDescriptions.interfaceTypes.signatures.parameters) before(',') separator(',')]
+[p.id+'|->'+p.name/]
+[/for]}||
+    parameter_type := {
+
+[for (p : Parameter|repositories.interfaceTypes.signatures.parameters) separator(',')]
+['s_'+p.id+'|->' + p.type/]
+[/for]
+[for (p: Parameter|architectureDescriptions.interfaceTypes.signatures.parameters) before(',') separator(',')]
+[p.id+'|->' + p.type/]
+[/for]} ||
+
+[else ]
+parameter := {
+[for (p: Parameter|architectureDescriptions.interfaceTypes.signatures.parameters) separator(',')]
+[p.id/]
+[/for]} ||
+    parameter_name := {
+[for (p: Parameter|architectureDescriptions.interfaceTypes.signatures.parameters) separator(',')]
+[p.id+'|->'+p.name/]
+[/for]}||
+    parameter_type := {
+[for (p: Parameter|architectureDescriptions.interfaceTypes.signatures.parameters) separator(',')]
+[p.id+'|->'+p.type/]
+[/for]} ||
+[/if]
+
+    signature := {
+[if (repositories.interfaceTypes.signatures->notEmpty())]
+[for (sig : Signature|repositories.interfaceTypes.signatures) separator(',') after(',')]
+['s_'+sig.id/]
+[/for]
+[/if]
+[for (sig : Signature|architectureDescriptions.interfaceTypes.signatures) separator(',')]
+[sig.id/]
+[/for]} ||
+    sig_name := {
+[if (repositories.interfaceTypes.signatures->notEmpty())]
+[for (sig : Signature|repositories.interfaceTypes.signatures) separator(',') after(',')]
+['s_'+sig.id+'|->'+sig.name/]
+[/for]
+[/if]
+[for (sig : Signature|architectureDescriptions.interfaceTypes.signatures) separator(',')]
+[sig.id+'|->'+sig.name/]
+[/for]} ||
+    parameters := {
+[if (repositories.interfaceTypes.signatures->notEmpty())]
+[for (sig : Signature|repositories.interfaceTypes.signatures) separator(',') after(',')]
+[if (sig.parameters->isEmpty())]
+['s_'+sig.id+'|->{}'/]
+[else]
+['s_'+sig.id+'|->{'/]
+[for (p:Parameter|sig.parameters) separator(',') after('}')]
+['s_'+p.id/]
+[/for]
+[/if]
+[/for]
+[/if]
+
+[for (sig : Signature|architectureDescriptions.interfaceTypes.signatures) separator(',')]
+[if (sig.parameters->isEmpty())]
+[sig.id+'|->{}'/]
+[else]
+[sig.id+'|->{'/]
+[for (p:Parameter|sig.parameters) separator(',') after('}')]
+[p.id/]
+[/for]
+[/if]
+[/for]} ||
+    sig_return := {
+[if (repositories.interfaceTypes.signatures->notEmpty())]
+[for (sig : Signature|repositories.interfaceTypes.signatures) separator(',') after(',')]
+['s_'+sig.id+'|->'+sig.type/]
+[/for]
+[/if]
+[for (sig : Signature|architectureDescriptions.interfaceTypes.signatures) separator(',')]
+[sig.id+'|->'+sig.type/]
+[/for]} ||
+    interfaceType := {
+[if (repositories.interfaceTypes.signatures->notEmpty())]
+[for (intType : InterfaceType|repositories.interfaceTypes) separator(',') after(',')]
+[intType.name/]
+[/for]
+[/if]
+[for (intType : InterfaceType|architectureDescriptions.interfaceTypes) separator(',')]
+[intType.name/]
+[/for]} ||
+
+    int_signatures := {
+[if (repositories.interfaceTypes.signatures->notEmpty())]
+[for (intType : InterfaceType|repositories.interfaceTypes) separator(',') after(',')]
+[intType.name+'|->{'/]
+[for (sig : Signature|intType.signatures) separator(',') after('}')]
+['s_'+sig.id/]
+[/for]
+[/for]
+[/if]
+[for (intType : InterfaceType|architectureDescriptions.interfaceTypes) separator(',')]
+[intType.name+'|->{'/]
+[for (sig : Signature|intType.signatures) separator(',') after('}')]
+[sig.id/]
+[/for]
+[/for]} ||
+    int_subtype := {} ||
+    interface := {
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (c : CompRole|rep.eContents(CompRole)) separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name/]
+[/for]
+[/for]
+[for (c : CompClass|rep.eContents(CompClass)) before(',') separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name/]
+[/for]
+[/for]
+[/for]
+[/if]
+
+
+[if (self.eContents(Configuration)->isEmpty())]
+[for (c : CompRole|aDedalDiagram.eContents(Specification).specComponents) separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name/]
+[/for]
+[/for]
+[else]
+[for (c : CompRole|aDedalDiagram.eContents(Specification).specComponents) separator(',') after(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name/]
+[/for]
+[/for]
+[for (c : CompClass|aDedalDiagram.eContents(Configuration).configComponents) separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name/]
+[/for]
+[/for]
+[/if]} ||
+    int_type := {
+
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (c : CompRole|rep.eContents(CompRole)) separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name+'|->'+int.type.name/]
+[/for]
+[/for]
+[for (c : CompClass|rep.eContents(CompClass)) before(',') separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name+'|->'+int.type.name/]
+[/for]
+[/for]
+[/for]
+[/if]
+
+[if (self.eContents(Configuration)->isEmpty())]
+[for (c : CompRole|aDedalDiagram.eContents(Specification).specComponents) separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name+'|->'+int.type.name/]
+[/for]
+[/for]
+[else]
+[for (c : CompRole|aDedalDiagram.eContents(Specification).specComponents) separator(',') after(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name+'|->'+int.type.name/]
+[/for]
+[/for]
+[for (c : CompClass|aDedalDiagram.eContents(Configuration).configComponents) separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name+'|->'+int.type.name/]
+[/for]
+[/for]
+[/if]} ||
+    int_direction := {
+
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (c : CompRole|rep.eContents(CompRole)) separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name+'|->'+int.direction.toString().toUpper()/]
+[/for]
+[/for]
+[for (c : CompClass|rep.eContents(CompClass)) before(',') separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name+'|->'+int.direction.toString().toUpper()/]
+[/for]
+[/for]
+[/for]
+[/if]
+
+
+[if (self.eContents(Configuration)->isEmpty())]
+[for (c : CompRole|aDedalDiagram.eContents(Specification).specComponents) separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name+'|->'+int.direction.toString().toUpper()/]
+[/for]
+[/for]
+[else]
+[for (c : CompRole|aDedalDiagram.eContents(Specification).specComponents) separator(',') after(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name+'|->'+int.direction.toString().toUpper()/]
+[/for]
+[/for]
+[for (c : CompClass|aDedalDiagram.eContents(Configuration).configComponents) separator(',')]
+[for (int : Interface|c.compInterfaces) separator(',')]
+[int.name+'|->'+int.direction.toString().toUpper()/]
+[/for]
+[/for]
+[/if]} ||
+    param_subtype := {} ||
+    sig_subtype := {} ||
+    sig_equals := {} ||
+    int_substitution := {} ||
+    int_compatible := {}
+OPERATIONS
+    initializeParam_subtype =
+    BEGIN
+        param_subtype := sig_param_subtype
+    END;
+    initializeSigSubtype =
+    BEGIN
+        sig_subtype := signature_subtype_hierarchy 
+    END;
+    initializeIntSubtype =
+    BEGIN
+        int_subtype := interface_subtype_hierarchy
+    END;
+        computeSubstitutabilityAndCompatibility =
+    BEGIN
+        int_compatible := all_compatible_interfaces ||
+        int_substitution := all_int_substitution
+    END
+END
+[/file]
+[/template]

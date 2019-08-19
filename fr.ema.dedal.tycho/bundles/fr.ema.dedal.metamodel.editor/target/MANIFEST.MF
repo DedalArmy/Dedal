@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: fr.ema.dedal.metamodel.editor;singleton:=true
+Bundle-Version: 1.0.0.201908191445
+Bundle-ClassPath: .
+Bundle-Activator: dedal.presentation.DedalEditorPlugin$Implementation
+Bundle-Vendor: IMT Mines Alès
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: dedal.presentation
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources;visi
+ bility:=reexport,fr.ema.dedal.metamodel.edit;visibility:=reexport,org.e
+ clipse.emf.ecore.xmi;visibility:=reexport,org.eclipse.emf.edit.ui;visib
+ ility:=reexport,org.eclipse.ui.ide;visibility:=reexport,org.eclipse.sir
+ ius.ui;bundle-version="4.1.3",org.eclipse.sirius,org.eclipse.sirius.ext
+ .base;bundle-version="4.1.3",org.eclipse.emf.transaction;bundle-version
+ ="1.9.0",org.eclipse.xtext;bundle-version="2.10.0",org.eclipse.ocl.ecor
+ e;bundle-version="3.6.0"
+Bundle-ActivationPolicy: lazy
+

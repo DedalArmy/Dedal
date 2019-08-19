@@ -1,0 +1,448 @@
+[comment encoding = UTF-8 /]
+[module generateAllArchConfig('http://www.dedal.fr/metamodel')]
+
+
+[template public generateAllArchConfig(aDedalDiagram : DedalDiagram)]
+
+[file ('Arch_configuration.mch', false, 'UTF-8')]
+
+
+MACHINE
+    Arch_configuration
+USES
+    Arch_specification
+
+SETS
+
+    COMP_CLASS = {eClass
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) before(',') separator(',')]
+[for (c : CompClass|rep.eContents(CompClass)) separator(',')]
+['s_cl'+c.id/]
+[/for]
+[/for]
+[/if]
+[for (cl : CompClass|self.eContents(Configuration).configComponents) before(',') separator(',')]
+['cl'+cl.id/]
+[/for]
+};
+    CLASS_NAME = {
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (cl : CompClass|rep.eContents(CompClass)) separator(',')]
+[cl.name/]
+[/for]
+[/for]
+[/if]
+[for (config : Configuration|self.eContents(Configuration)) separator(',')]
+[for (cl : CompClass|config.configComponents) separator(',')]
+[cl.name/]
+[/for]
+[/for]
+};
+    ATTRIBUTES;
+    CONFIGURATIONS = {eConfig
+[for (config : Configuration|self.eContents(Configuration)) before(',') separator(',')]
+[config.name/]
+[for (cl:CompositeCompClass|config.eContents(CompositeCompClass)) before(',') separator(',')]
+[cl.uses.name/]
+[/for]
+[/for]
+};
+    ATT_NAMES
+    
+CONSTANTS
+    COMP_TYPES
+PROPERTIES
+    COMP_TYPES <: COMPONENTS &
+    COMP_TYPES = {
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',')]
+[for (c : CompClass|rep.eContents(CompClass)) separator(',')]
+['s_ct'+c.id/]
+[/for]
+[/for]
+[/if]
+[for (cl : CompClass|self.eContents(Configuration).configComponents) before(',') separator(',')]
+['ct'+cl.id/]
+[/for]
+} &
+    COMP_TYPES = COMPONENTS - COMP_ROLES
+    
+VARIABLES
+    configuration, config_components, config_connections, implements, 
+    compType, compType_substitution, compType_compatible, matches,
+    compClass, class_name, class_implements, class_attributes, realizes,
+    compositeComp, delegatedInterface, delegation, composite_uses,
+    config_clients, config_servers, documents,
+    attribute, attribute_name, attribute_type, initSpec
+    
+INVARIANT
+    
+    /*Component type definition*/
+    compType <: COMP_TYPES & 
+    /*compType_substitution <: comp_substitution &
+    dom(compType_substitution) <: compType &
+    ran(compType_substitution) <: compType &
+    (dom(comp_substitution) - dom(compType_substitution)) /\ compType = {} &
+    (ran(comp_substitution) - ran(compType_substitution)) /\ compType = {} &*/
+    
+     compType_substitution : compType <-> compType &
+   closure1(compType_substitution) /\ id(component) = {} &
+    
+    /*substituability between component types*/
+    !(C_sup, C_sub).(C_sup : compType & C_sub : compType & C_sup /= C_sub & comp_name(C_sup) = comp_name(C_sub) =>
+        (C_sub : compType_substitution['[{C_sup}]'/]  <=> #(inj1, inj2).(inj1 : comp_providedInterfaces(C_sup) >-> comp_providedInterfaces(C_sub) & !(int).(int : interface &  int : comp_providedInterfaces(C_sup) => inj1(int) : int_substitution['[{int}]'/]) & inj2 : comp_requiredInterfaces(C_sub) >-> comp_requiredInterfaces(C_sup) & !(int).(int : interface &  int : comp_requiredInterfaces(C_sub) => inj2(int) : int_substitution['[{int}]'/])))) &
+   
+    compType_compatible : compType <-> compType  &
+    !(C1, C2).(C1 : compType & C2 : compType & C1 /= C2 =>
+        ((C1, C2) : compType_compatible <=> #(int1, int2).(int1 : interface & int1 : comp_interfaces(C1) & int2 : interface & int2 : comp_interfaces(C2) & (int1, int2) : int_compatible))) &
+    
+    /* A component C1 is compatible with a component C2 if and only if they have at least two compatible interfaces*/
+    /*compType_compatible <: comp_compatible &
+    dom(compType_compatible) <: compType &
+    ran(compType_compatible) <: compType &
+    (dom(comp_compatible) - dom(compType_compatible)) /\ compType = {} &
+    (ran(comp_compatible) - ran(compType_compatible)) /\ compType = {} &*/
+    
+    /* A component type CT matches with a component role CR if and only if for every interface int1 of CR there is an interface int2 with the same name as int1 and which matches with int1 */
+    /*matches : compType +-> compRole &
+    !(ctype, crole).(ctype : compType & crole : compRole =>
+        ((ctype, crole) : matches <=> #inj1.(inj1 : comp_interfaces(crole) >-> comp_interfaces(ctype) & inj1/={} & !(int).(int : interface &  int : comp_interfaces(crole) => inj1(int) : int_substitution['[{int}]'/])))) &*/
+        matches : compType <-> compRole &
+        !(CR, CT).(CR : compRole & CT : compType =>
+        ((CT, CR) : matches <=> #(inj1, inj2).(inj1 : comp_providedInterfaces(CR) >-> comp_providedInterfaces(CT) & !(int).(int : interface &  int : comp_providedInterfaces(CR) => inj1(int) : int_substitution['[{int}]'/]) & inj2 : comp_requiredInterfaces(CR) >-> comp_requiredInterfaces(CT) & !(int).(int : interface &  int : comp_requiredInterfaces(CR) => int : int_substitution['[{inj2(int)}]'/])))) &
+    
+    /*Component class definition*/
+    compClass <: COMP_CLASS &
+    class_name : compClass --> CLASS_NAME &
+    attribute <: ATTRIBUTES &
+    attribute_name : attribute --> ATT_NAMES &
+    attribute_type : attribute --> TYPES &
+    class_attributes : compClass --> POW(attribute) &
+    class_implements : compClass --> compType &
+    /*realizes : compClass +-> compRole &
+    !(CL, CR).(CL : compClass & CR : compRole =>
+        ((CL, CR) : realizes <=> #CT.(CT : compType & (CT, CR) : matches & (CL, CT) : class_implements))) &*/
+    
+    realizes : compClass <-> compRole &
+    !(CL, CR).(CL : compClass & CR : compRole =>
+        ((CL, CR) : realizes <=> #CT.(CT : compType & (CT, CR) : matches & (CL, CT) : class_implements))) &
+    /*architecture definition*/
+    /*An architecture is defined by a set of components and eventually a set of connectors*/
+    configuration <:  CONFIGURATIONS &
+    config_components : configuration --> POW1(compClass) &
+    !(cl1, cl2, C1).(cl1 : compClass & cl2 : compClass & cl1 /= cl2 & C1 : configuration & {cl1, cl2} <: config_components(C1) => class_name(cl1) /= class_name(cl2)) &
+    /*implementation*/
+    implements : configuration <-> specification &
+    /*!(C1, A1).(C1 : config & A1 : arch_spec => ((C1, A1) : implements <=> !cr.(cr : compRole & cr : arch_components(A1) => #cl.(cl : compClass & cl : config_components(C1) & (cl, cr) : realizes)))) &*/
+    /*!(Conf, Spec).(Conf : config & Spec : arch_spec =>
+    (Conf, Spec) : implements <=> #bij.(bij : arch_components(Spec) >->> config_components(Conf) & !(CR, CL).(CR : compRole & CL : compClass & bij(CR) = CL => (CL, CR) : realizes))) & */
+    !(Conf, Spec).(Conf : configuration & Spec : specification =>
+    (Conf, Spec) : implements <=> !CR.(CR : compRole & CR : spec_components(Spec) => #CL.(CL : compClass & CL : config_components(Conf) & (CL,CR) : realizes))) &
+	documents : specification <-> configuration &
+	!(Conf, Spec).(Conf : configuration & Spec : specification =>
+    (Spec, Conf) : documents <=> !se1.(se1 : server & se1 : config_servers(Conf) => #se2.(se2 : server & se2 : spec_servers(Spec) & (serverInterfaceElem(se1), serverInterfaceElem(se2)) : int_substitution))) &
+    /*comosiuet component definition*/
+    compositeComp <: compClass &
+    delegatedInterface <<: interface &
+    delegation : delegatedInterface >-> interface &
+    !(int1, int2).(int1 : interface & int2 : interface & int1 /= int2 & (int1, int2) : delegation => int_type(int1) = int_type(int2) & int_direction(int1) = int_direction(int2)) &
+    composite_uses : compositeComp --> configuration &
+    config_connections : configuration --> POW(connection) &
+    config_clients : configuration --> POW(client) &
+    config_servers : configuration --> POW(server) &
+    initSpec : BOOL
+    
+    DEFINITIONS
+    
+    comp_providedInterfaces(comp) == {int|int : interface & int : comp_interfaces(comp) & int_direction(int) = PROVIDED};
+    comp_requiredInterfaces(comp) == {int|int : interface & int : comp_interfaces(comp) & int_direction(int) = REQUIRED};
+    clientInterfaceElem == {cl, int|cl : client & #(comp, rint).(comp : component & rint : interface & cl = (comp,rint) & int = rint)};
+    clientComponentElem == {cl, cr|cl : client & #(comp, rint).(comp : component & rint : interface & cl = (comp,rint) & cr = comp)};
+    serverInterfaceElem == {se, int|se : server & #(comp, pint).(comp : component & pint : interface & se = (comp,pint) & int = pint)};
+    serverComponentElem == {se, cr|se : server & #(comp, pint).(comp : component & pint : interface & se = (comp,pint) & cr = comp)};
+    clients(class) == {cl|class : compClass & cl : client & clientComponentElem(cl) = class_implements(class)};
+    servers(class) == {se|class : compClass & se : server & serverComponentElem(se) = class_implements(class)};
+    class_substitution == (class_implements ; compType_substitution ; class_implements~);
+    
+    /*computing definitions*/
+    all_compType_compatible == {c1, c2|c1 : compType & c2 : compType & c1/=c2 & #(int1, int2).(int1 : interface & int1 : comp_interfaces(c1) & int2 : interface & int2 : comp_interfaces(c2) & (int1, int2) : int_compatible)};
+    all_compType_substitution == {c1, c2|c1 : compType & c2 : compType & c1 /= c2 & #(inj1, inj2).(inj1 : comp_providedInterfaces(c1) >-> comp_providedInterfaces(c2) & !(int).(int : interface &  int : comp_providedInterfaces(c1) => inj1(int) : int_substitution['[{int}]'/]) & inj2 : comp_requiredInterfaces(c2) >-> comp_requiredInterfaces(c1) & !(int).(int : interface &  int : comp_requiredInterfaces(c2) => inj2(int) : int_substitution['[{int}]'/]) & (inj1 /= {} or inj2 /= {}))};
+    /*all_matches == {ct, cr|ct : compType & cr : compRole & #(inj1).(inj1 : comp_providedInterfaces(cr) >-> comp_providedInterfaces(ct) & inj1/={} & !(int).(int : interface &  int : comp_interfaces(cr) & int_direction(int) = PROVIDED => inj1(int) : int_substitution['[{int}]'/]))};
+    all_realizes == {CL, CR|CL : compClass & CR : compRole & #CT.(CT : compType & (CT, CR) : matches & (CL, CT) : class_implements)}*/
+    all_matches == {ct, cr|ct : compType & cr : compRole & #(inj1, inj2).(inj1 : comp_providedInterfaces(cr) >-> comp_providedInterfaces(ct) & !(int).(int : interface &  int : comp_providedInterfaces(cr) => inj1(int) : int_substitution['[{int}]'/]) & inj2 : comp_requiredInterfaces(cr) >-> comp_requiredInterfaces(ct) & !(int).(int : interface &  int : comp_requiredInterfaces(cr) => int : int_substitution['[{inj2(int)}]'/]))};
+    all_realizes == {cl, cr|cl : compClass & cr : compRole & #ct.(ct : compType & (ct, cr) : matches & (cl, ct) : class_implements)};
+    
+    config_consistency == !(cl, config).(cl : client & config : configuration & cl : config_clients(config)  => #(conn, se).(conn : connection & conn : config_connections(config) &
+        se : server & se : config_servers(config) & conn = (cl|->se))) &
+!(se, config).(se : server & config : configuration & se : config_servers(config)  => #(conn, cl).(conn : connection & conn : config_connections(config) &
+        cl : client & cl : config_clients(config) & conn = (cl|->se))) &
+    !(conn, config).(conn : connection & config : configuration & conn : config_connections(spec) => #(cl, se).(cl : client & se : server & cl : config_clients(config) &
+        se : config_servers(config) & conn=(cl|->se))) &
+    !(class, config).(class : compClass & config : configuration & class : config_components(config) => #conn.(conn : connection & conn : config_connections(config) & class_implements(class) : dom(dom({conn})) \/ dom(ran({conn})))) &
+    !(class, config).(class : compClass & config : configuration & class : config_components(config) => !cl.(cl : client & clientComponentElem(cl) = class_implements(class) => cl : config_clients(config)))
+    
+INITIALISATION
+    configuration := {[for (config : Configuration|self.eContents(Configuration)) separator(',')]
+[config.name/]
+[for (cl:CompositeCompClass|config.eContents(CompositeCompClass)) before(',') separator(',')]
+[cl.uses.name/]
+[/for]
+[/for]} ||
+    config_components := {
+[for (config : Configuration|self.eContents(Configuration)) separator(',')]
+[config.name+'|->{'/]
+[for (cl : CompClass|config.configComponents) separator(',') after('}')]
+['cl'+cl.id/]
+[/for]
+[for (cx:CompositeCompClass|config.eContents(CompositeCompClass)) before(',') separator(',')]
+[cx.uses.name+'|->{' /]
+[for (cl : CompClass|cx.uses.configComponents) separator(',') after('}')]
+['cl'+cl.id/]
+[/for]
+[/for]
+[/for]
+} ||
+    implements := {
+[for (config : Configuration|self.eContents(Configuration)) separator(',')]
+['(' + config.name+ '|->' + config.implements.name + ')'/]
+[/for]
+} ||
+documents := {
+[for (config : Configuration|self.eContents(Configuration)) separator(',')]
+['(' + config.implements.name+ '|->' + config.name + ')'/]
+[/for]
+} ||
+    compType := {
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',')]
+[for (c : CompClass|rep.eContents(CompClass)) separator(',')]
+['s_ct'+c.id/]
+[/for]
+[/for]
+[/if]
+[for (cl : CompClass|self.eContents(Configuration).configComponents) before(',') separator(',')]
+['ct'+cl.id/]
+[/for]
+} ||
+    compType_substitution := {} ||
+    compType_compatible := {} ||
+    matches := {} ||
+    compClass := {
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (c : CompClass|rep.eContents(CompClass)) separator(',')]
+['s_cl'+c.id/]
+[/for]
+[/for]
+[/if]
+[for (cl : CompClass|self.eContents(Configuration).configComponents)separator(',')]
+['cl'+cl.id/]
+[/for]
+} ||
+    class_name := {
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (cl : CompClass|rep.eContents(CompClass)) separator(',')]
+['s_cl'+cl.id+'|->'+cl.name/]
+[/for]
+[/for]
+[/if]
+[for (cl : CompClass|self.eContents(Configuration).configComponents) separator(',')]
+['cl'+cl.id+'|->'+cl.name/]
+[/for]
+[for (config : Configuration|self.eContents(Configuration)) separator(',')]
+[for (cx:CompositeCompClass|config.eContents(CompositeCompClass)) before(',') separator(',')]
+[for (cl : CompClass|cx.uses.configComponents) separator(',')]
+['cl'+cl.id+'|->'+cl.name/]
+[/for]
+[/for]
+[/for]
+} ||
+    class_implements := {
+[if (self.repositories->notEmpty())]
+[for (rep : Repository|self.repositories) separator(',') after(',')]
+[for (cl : CompClass|rep.eContents(CompClass)) separator(',')]
+['s_cl'+cl.id+'|->'+'s_ct'+cl.id/]
+[/for]
+[/for]
+[/if]
+[for (cl : CompClass|self.eContents(Configuration).configComponents) separator(',')]
+['cl'+cl.id+'|->'+'ct'+cl.id/]
+[/for]
+} ||
+    class_attributes := {} ||                                                                                     
+    realizes := {} ||
+    attribute := {} ||
+    attribute_name := {} ||
+    attribute_type := {} ||
+[if (self.eContents(Configuration).eContents(CompositeCompClass)->isEmpty())]
+compositeComp := {} ||
+delegatedInterface := {} ||
+delegation := {} ||
+composite_uses := {} ||
+[else]
+    delegatedInterface := {
+[for (config : Configuration|self.eContents(Configuration)) separator(',')]
+[for (cx:CompositeCompClass|config.eContents(CompositeCompClass)) separator(',')]
+[for (int:Interface|cx.delegatedInterfaces) separator('')]
+[int.name/]
+[/for]
+[/for]
+[/for]
+} ||
+    delegation := {}
+[comment][for (int:Interface|configComponents.compInterfaces.delegation) separator(',')]
+['('+int.name+'|->'+int+')'/]
+[/for][/comment] ||
+    composite_uses := {
+[for (config : Configuration|self.eContents(Configuration)) separator(',')]
+[for (cx:CompositeCompClass|config.eContents(CompositeCompClass)) separator(',')]
+[cx.id+'|->'+cx.uses.name/]
+[/for]
+[/for]
+} ||
+compositeComp := {
+[for (config : Configuration|self.eContents(Configuration)) separator(',')]
+[for (cl:CompositeCompClass|config.eContents(CompositeCompClass)) before(',') separator(',')]
+[cl.id/]
+[/for]
+[/for]
+} ||
+[/if]
+    config_connections := {
+[for (config : Configuration|self.eContents(Configuration)) separator(',')]
+[config.name+'|->{'/]
+[for (con : ClassConnection|config.configConnections) separator(',') after('}')]
+['((ct'+con.clientClassElem.id+'|->'+con.clientIntElem.name+')'+'|->(ct'+con.serverClassElem.id+'|->'+con.serverIntElem.name+'))'/]
+[/for]
+
+[for (cx:CompositeCompClass|config.eContents(CompositeCompClass)) before(',') separator(',')]
+[cx.uses.name+'|->{'/]
+[for (con : ClassConnection|cx.uses.configConnections) separator(',') after('}')]
+['((ct'+con.clientClassElem.id+'|->'+con.clientIntElem.name+')'+'|->(ct'+con.serverClassElem.id+'|->'+con.serverIntElem.name+'))'/]
+[/for]
+[/for]
+[/for]
+
+} ||
+    config_clients := {
+[for (config : Configuration|self.eContents(Configuration)) separator(',')]
+[config.name+'|->{'/]
+[for (con : ClassConnection|config.configConnections) separator(',') after('}')]
+['(ct'+con.clientClassElem.id+'|->'+con.clientIntElem.name+')'/]
+[/for]
+
+[for (cx:CompositeCompClass|config.eContents(CompositeCompClass)) before(',') separator(',')]
+[cx.uses.name+'|->{'/]
+[for (con : ClassConnection|cx.uses.configConnections) separator(',') after('}')]
+['((ct'+con.clientClassElem.id+'|->'+con.clientIntElem.name+')'/]
+[/for]
+[/for]
+[/for]
+
+} ||
+    config_servers := {
+[for (config : Configuration|self.eContents(Configuration)) separator(',')]
+[config.name+'|->{'/]
+[for (con : ClassConnection|config.configConnections) separator(',') after('}')]
+['(ct'+con.serverClassElem.id+'|->'+con.serverIntElem.name+')'/]
+[/for]
+
+[for (cx:CompositeCompClass|config.eContents(CompositeCompClass)) before(',') separator(',')]
+[cx.uses.name+'|->{'/]
+[for (con : ClassConnection|cx.uses.configConnections) separator(',') after('}')]
+['(ct'+con.serverClassElem.id+'|->'+con.serverIntElem.name+')'/]
+[/for]
+[/for]
+[/for]
+
+} ||
+initSpec := FALSE
+OPERATIONS
+    initializeArchConfig =
+    BEGIN
+        compType_compatible := all_compType_compatible ||
+        compType_substitution := all_compType_substitution ||
+        matches :=  all_matches
+    END;
+    
+    computeRealizations =
+    BEGIN
+        realizes := all_realizes
+    END;
+    
+    
+   /* Evolution operations*/
+
+   addClass(config, newClass) =
+   PRE
+       config : configuration & newClass : compClass & newClass /: config_components(config) &
+       !cl.(cl : compClass & cl : config_components(config) => class_name(cl) /= class_name(newClass) & class_implements(newClass) /= class_implements(cl))
+   THEN
+       config_clients(config) := config_clients(config) \/ clients(newClass) ||
+       config_components(config) := config_components(config) \/ {newClass}
+   END;
+   
+   addServer(config, se) =
+   PRE
+       config : configuration & se : server & se /: config_servers(config) & serverComponentElem(se) : class_implements['[config_components(config)]'/]
+   THEN
+       config_servers(config) := config_servers(config) \/ {se}
+   END;
+   
+   class_connect(cl, se, config) =
+   PRE
+       config : configuration & cl : client & se : server & cl : config_clients(config) & se : config_servers(config) &
+       (cl|->se) : connection & (cl|->se) /: config_connections(config)
+   THEN
+       config_connections(config) := config_connections(config) \/ {(cl|->se)}
+   END;
+   
+   removeClass(config, class) =
+   PRE
+       config : configuration & class : compClass & class : config_components(config) &
+       !cl.(cl : client & cl : clients(class) => !se.(se : server & se : config_servers(config) => (cl|->se) /: config_connections(config))) &
+       !se.(se : server & se : servers(class) => se /: config_servers(config))
+       /*changeOperation /= none &
+       class /: (deletedClasses \/ addedClasses)*/
+   THEN
+       config_clients(config) := config_clients(config) - clients(class) ||
+       config_components(config) := config_components(config) - {class}
+   END;
+   
+   deleteServer(config, se) =
+   PRE
+       config : configuration & se : server & se : config_servers(config) & !cl.(cl : client & cl : config_clients(config) =>
+           (cl|->se) /: config_connections(config)) 
+   THEN
+       config_servers(config) := config_servers(config) - {se}
+   END;
+   
+   class_disconnect(config, se, cl) =
+   PRE
+       config : configuration & cl : client & se : server & cl : config_clients(config) & se : config_servers(config) &
+       (cl|->se) : connection & (cl|->se) : config_connections(config)
+   THEN
+        config_connections(config) := config_connections(config) - {(cl|->se)}
+   END;
+   
+   replaceClass(config, oldClass, newClass) =
+   PRE
+       oldClass : compClass & newClass : compClass & config : configuration & oldClass : config_components(config) & 
+       newClass /: config_components(config) & (oldClass, newClass) : class_substitution & 
+       !cl.(cl : client & cl : clients(oldClass) => !se.(se : server & se : config_servers(config) => (cl|->se) /: config_connections(config))) &
+       !(se).(se : server & se : servers(oldClass) => se /: config_servers(config))
+   THEN
+       config_components(config) := (config_components(config) - {oldClass}) \/ {newClass} ||
+       config_clients(config) := (config_clients(config) - clients(oldClass)) \/ clients(newClass)
+   END
+
+   
+END
+
+
+[/file]
+
+[/template]

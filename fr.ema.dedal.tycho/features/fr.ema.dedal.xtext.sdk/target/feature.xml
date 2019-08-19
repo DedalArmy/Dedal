@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="fr.ema.dedal.xtext.sdk"
+	label="DedalADL SDK Feature "
+	version="1.0.0.201908191445">
+	<plugin
+			id="fr.ema.dedal.xtext"
+			download-size="282"
+			install-size="812"
+			version="1.0.0.201908191445"
+			unpack="false"/>
+	<plugin
+			id="fr.ema.dedal.xtext.ui"
+			download-size="216"
+			install-size="1056"
+			version="1.0.0.201908191445"
+			unpack="false"/>
+</feature>
