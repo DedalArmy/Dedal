@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: fr.ema.dedal.metamodel.edit;singleton:=true
-Bundle-Version: 1.0.0.201908191445
+Bundle-Version: 1.0.0.201908191633
 Bundle-ClassPath: .
 Bundle-Activator: dedal.provider.DedalEditPlugin$Implementation
 Bundle-Vendor: IMT Mines Alès

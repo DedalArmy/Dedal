@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: fr.ema.dedal.xtext.ui
 Bundle-Vendor: IMT Mines Alès
-Bundle-Version: 1.0.0.201908191445
+Bundle-Version: 1.0.0.201908191633
 Bundle-SymbolicName: fr.ema.dedal.xtext.ui; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: fr.ema.dedal.xtext;visibility:=reexport,org.eclipse.xtex

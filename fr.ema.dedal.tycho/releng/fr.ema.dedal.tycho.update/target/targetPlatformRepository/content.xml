@@ -2,59 +2,6 @@
 <?metadataRepository version='1.2.0'?>
 <repository name='TychoTargetPlatform' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='0.0.1'>
   <units size='186'>
-    <unit id='fr.ema.dedal.xtext' version='1.0.0.201908191445' generation='2'>
-      <update id='fr.ema.dedal.xtext' range='[0.0.0,1.0.0.201908191445)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='fr.ema.dedal.xtext'/>
-        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Ales'/>
-        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
-        <property name='maven-artifactId' value='fr.ema.dedal.xtext'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='13'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.xtext' version='1.0.0.201908191445'/>
-        <provided namespace='osgi.bundle' name='fr.ema.dedal.xtext' version='1.0.0.201908191445'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext' version='0.0.0'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.services' version='0.0.0'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.serializer' version='0.0.0'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.parser.antlr' version='0.0.0'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.parser.antlr.internal' version='0.0.0'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.validation' version='0.0.0'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.scoping' version='0.0.0'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.generator' version='0.0.0'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.formatting' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='fr.ema.dedal.xtext' version='1.0.0.201908191445'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='11'>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.5.0'/>
-        <required namespace='osgi.bundle' name='fr.ema.dedal.metamodel' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.util' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.common.types' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.antlr.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.objectweb.asm' range='[5.0.1,6.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='dedal' range='0.0.0'/>
-        <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='fr.ema.dedal.xtext' version='1.0.0.201908191445'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: fr.ema.dedal.xtext; singleton:=true&#xA;Bundle-Version: 1.0.0.201908191445
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.eclipse.team.ui' version='3.8.500.v20190519-2354' generation='2'>
       <update id='org.eclipse.team.ui' range='[0.0.0,3.8.500.v20190519-2354)' severity='0'/>
       <properties size='8'>
@@ -391,48 +338,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.sirius.ext.base&#xA;Bundle-Version: 6.2.1.201906121145
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='fr.ema.dedal.metamodel' version='1.0.0.201908191445' generation='2'>
-      <update id='fr.ema.dedal.metamodel' range='[0.0.0,1.0.0.201908191445)' severity='0'/>
-      <properties size='7'>
-        <property name='df_LT.pluginName' value='Dedal Model'/>
-        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
-        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
-        <property name='maven-artifactId' value='fr.ema.dedal.metamodel'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='8'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.metamodel' version='1.0.0.201908191445'/>
-        <provided namespace='osgi.bundle' name='fr.ema.dedal.metamodel' version='1.0.0.201908191445'/>
-        <provided namespace='java.package' name='dedal' version='0.0.0'/>
-        <provided namespace='java.package' name='dedal.impl' version='0.0.0'/>
-        <provided namespace='java.package' name='dedal.util' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='fr.ema.dedal.metamodel' version='1.0.0.201908191445'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='3'>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.codegen.ecore' range='2.17.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='fr.ema.dedal.metamodel' version='1.0.0.201908191445'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: fr.ema.dedal.metamodel;singleton:=true&#xA;Bundle-Version: 1.0.0.201908191445
           </instruction>
         </instructions>
       </touchpointData>
@@ -1092,53 +997,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: de.prob2.kernel.bundle;singleton:=true&#xA;Bundle-Version: 1.0.0.201504241041
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='fr.ema.dedal.dedalToB' version='1.0.0.201908191445' generation='2'>
-      <update id='fr.ema.dedal.dedalToB' range='[0.0.0,1.0.0.201908191445)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Acceleo DedalToB Module Runtime Plug-in'/>
-        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
-        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
-        <property name='maven-artifactId' value='fr.ema.dedal.dedalToB'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.dedalToB' version='1.0.0.201908191445'/>
-        <provided namespace='osgi.bundle' name='fr.ema.dedal.dedalToB' version='1.0.0.201908191445'/>
-        <provided namespace='java.package' name='fr.ema.dedal.dedalToB.main' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='fr.ema.dedal.dedalToB' version='1.0.0.201908191445'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='13'>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='fr.ema.dedal.metamodel' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ocl' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ocl.ecore' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.acceleo.common' range='3.3.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.acceleo.model' range='3.3.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.acceleo.profiler' range='3.3.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.acceleo.engine' range='3.3.0'/>
-        <required namespace='osgi.bundle' name='com.google.guava' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.sirius' range='0.0.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='fr.ema.dedal.dedalToB' version='1.0.0.201908191445'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: fr.ema.dedal.dedalToB;singleton:=true&#xA;Bundle-Version: 1.0.0.201908191445
           </instruction>
         </instructions>
       </touchpointData>
@@ -1853,6 +1711,57 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='fr.ema.dedal.xtext.ui' version='1.0.0.201908191633' generation='2'>
+      <update id='fr.ema.dedal.xtext.ui' range='[0.0.0,1.0.0.201908191633)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='fr.ema.dedal.xtext.ui'/>
+        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
+        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
+        <property name='maven-artifactId' value='fr.ema.dedal.xtext.ui'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='9'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.xtext.ui' version='1.0.0.201908191633'/>
+        <provided namespace='osgi.bundle' name='fr.ema.dedal.xtext.ui' version='1.0.0.201908191633'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.ui.quickfix' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.ui.contentassist' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.ui.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.ui.contentassist.antlr' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.ui.contentassist.antlr.internal' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='fr.ema.dedal.xtext.ui' version='1.0.0.201908191633'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='13'>
+        <required namespace='osgi.bundle' name='fr.ema.dedal.xtext' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='3.5.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='3.5.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.shared' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.builder' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.common.types.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.codetemplates.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.compare' range='0.0.0'/>
+        <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='fr.ema.dedal.xtext.ui' version='1.0.0.201908191633'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: fr.ema.dedal.xtext.ui; singleton:=true&#xA;Bundle-Version: 1.0.0.201908191633
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='org.eclipse.compare' version='3.7.600.v20190519-2354' generation='2'>
       <update id='org.eclipse.compare' range='[0.0.0,3.7.600.v20190519-2354)' severity='0'/>
       <properties size='8'>
@@ -2092,6 +2001,56 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.emf.edit.ui;singleton:=true&#xA;Bundle-Version: 2.16.0.v20181104-0733
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='fr.ema.dedal.metamodel.editor' version='1.0.0.201908191633' generation='2'>
+      <update id='fr.ema.dedal.metamodel.editor' range='[0.0.0,1.0.0.201908191633)' severity='0'/>
+      <properties size='7'>
+        <property name='df_LT.pluginName' value='Dedal Editor'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
+        <property name='maven-artifactId' value='fr.ema.dedal.metamodel.editor'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.metamodel.editor' version='1.0.0.201908191633'/>
+        <provided namespace='osgi.bundle' name='fr.ema.dedal.metamodel.editor' version='1.0.0.201908191633'/>
+        <provided namespace='java.package' name='dedal.presentation' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='fr.ema.dedal.metamodel.editor' version='1.0.0.201908191633'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='13'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='fr.ema.dedal.metamodel.edit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.sirius.ui' range='4.1.3'/>
+        <required namespace='osgi.bundle' name='org.eclipse.sirius' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.sirius.ext.base' range='4.1.3'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.transaction' range='1.9.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext' range='2.10.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ocl.ecore' range='3.6.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='fr.ema.dedal.metamodel.editor' version='1.0.0.201908191633'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: fr.ema.dedal.metamodel.editor;singleton:=true&#xA;Bundle-Version: 1.0.0.201908191633
           </instruction>
         </instructions>
       </touchpointData>
@@ -2524,44 +2483,6 @@
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='fr.ema.dedal.sdk.feature.jar' version='1.0.0.201908191445'>
-      <properties size='7'>
-        <property name='org.eclipse.equinox.p2.name' value='Dedal SDK'/>
-        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
-        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
-        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
-        <property name='maven-artifactId' value='fr.ema.dedal.sdk'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.sdk.feature.jar' version='1.0.0.201908191445'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='fr.ema.dedal.sdk' version='1.0.0.201908191445'/>
-      </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='fr.ema.dedal.sdk' version='1.0.0.201908191445'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
     </unit>
     <unit id='org.eclipse.xtend.lib' version='2.18.0.v20190528-0016' singleton='false' generation='2'>
       <update id='org.eclipse.xtend.lib' range='[0.0.0,2.18.0.v20190528-0016)' severity='0'/>
@@ -3549,57 +3470,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.ui.workbench; singleton:=true&#xA;Bundle-Version: 3.115.0.v20190521-1602
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='fr.ema.dedal.xtext.ui' version='1.0.0.201908191445' generation='2'>
-      <update id='fr.ema.dedal.xtext.ui' range='[0.0.0,1.0.0.201908191445)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='fr.ema.dedal.xtext.ui'/>
-        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
-        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
-        <property name='maven-artifactId' value='fr.ema.dedal.xtext.ui'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='9'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.xtext.ui' version='1.0.0.201908191445'/>
-        <provided namespace='osgi.bundle' name='fr.ema.dedal.xtext.ui' version='1.0.0.201908191445'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.ui.quickfix' version='0.0.0'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.ui.contentassist' version='0.0.0'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.ui.internal' version='0.0.0'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.ui.contentassist.antlr' version='0.0.0'/>
-        <provided namespace='java.package' name='fr.ema.dedal.xtext.ui.contentassist.antlr.internal' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='fr.ema.dedal.xtext.ui' version='1.0.0.201908191445'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='13'>
-        <required namespace='osgi.bundle' name='fr.ema.dedal.xtext' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='3.5.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='3.5.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.shared' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.builder' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.common.types.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.codetemplates.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.compare' range='0.0.0'/>
-        <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='fr.ema.dedal.xtext.ui' version='1.0.0.201908191445'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: fr.ema.dedal.xtext.ui; singleton:=true&#xA;Bundle-Version: 1.0.0.201908191445
           </instruction>
         </instructions>
       </touchpointData>
@@ -5210,84 +5080,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='fr.ema.dedal.metamodel.edit' version='1.0.0.201908191445' generation='2'>
-      <update id='fr.ema.dedal.metamodel.edit' range='[0.0.0,1.0.0.201908191445)' severity='0'/>
-      <properties size='7'>
-        <property name='df_LT.pluginName' value='Dedal Edit Support'/>
-        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
-        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
-        <property name='maven-artifactId' value='fr.ema.dedal.metamodel.edit'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='6'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.metamodel.edit' version='1.0.0.201908191445'/>
-        <provided namespace='osgi.bundle' name='fr.ema.dedal.metamodel.edit' version='1.0.0.201908191445'/>
-        <provided namespace='java.package' name='dedal.provider' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='fr.ema.dedal.metamodel.edit' version='1.0.0.201908191445'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='5'>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='fr.ema.dedal.metamodel' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.edit' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='fr.ema.dedal.design' range='1.0.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='fr.ema.dedal.metamodel.edit' version='1.0.0.201908191445'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: fr.ema.dedal.metamodel.edit;singleton:=true&#xA;Bundle-Version: 1.0.0.201908191445
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='fr.ema.dedal.sdk.feature.group' version='1.0.0.201908191445' singleton='false'>
-      <update id='fr.ema.dedal.sdk.feature.group' range='[0.0.0,1.0.0.201908191445)' severity='0'/>
-      <properties size='8'>
-        <property name='org.eclipse.equinox.p2.name' value='Dedal SDK'/>
-        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
-        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
-        <property name='maven-artifactId' value='fr.ema.dedal.sdk'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.sdk.feature.group' version='1.0.0.201908191445'/>
-      </provides>
-      <requires size='5'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.dedalToB' range='[1.0.0.201908191445,1.0.0.201908191445]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.metamodel' range='[1.0.0.201908191445,1.0.0.201908191445]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.xtext' range='[1.0.0.201908191445,1.0.0.201908191445]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.xtext.ui' range='[1.0.0.201908191445,1.0.0.201908191445]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.sdk.feature.jar' range='[1.0.0.201908191445,1.0.0.201908191445]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
-    </unit>
     <unit id='org.eclipse.xtext.common.types.edit' version='2.18.0.v20190528-0513' generation='2'>
       <update id='org.eclipse.xtext.common.types.edit' range='[0.0.0,2.18.0.v20190528-0513)' severity='0'/>
       <properties size='8'>
@@ -6691,56 +6483,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='fr.ema.dedal.metamodel.editor' version='1.0.0.201908191445' generation='2'>
-      <update id='fr.ema.dedal.metamodel.editor' range='[0.0.0,1.0.0.201908191445)' severity='0'/>
-      <properties size='7'>
-        <property name='df_LT.pluginName' value='Dedal Editor'/>
-        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
-        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
-        <property name='maven-artifactId' value='fr.ema.dedal.metamodel.editor'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='6'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.metamodel.editor' version='1.0.0.201908191445'/>
-        <provided namespace='osgi.bundle' name='fr.ema.dedal.metamodel.editor' version='1.0.0.201908191445'/>
-        <provided namespace='java.package' name='dedal.presentation' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='fr.ema.dedal.metamodel.editor' version='1.0.0.201908191445'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='13'>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='fr.ema.dedal.metamodel.edit' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.sirius.ui' range='4.1.3'/>
-        <required namespace='osgi.bundle' name='org.eclipse.sirius' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.sirius.ext.base' range='4.1.3'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.transaction' range='1.9.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext' range='2.10.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ocl.ecore' range='3.6.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='fr.ema.dedal.metamodel.editor' version='1.0.0.201908191445'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: fr.ema.dedal.metamodel.editor;singleton:=true&#xA;Bundle-Version: 1.0.0.201908191445
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.apache.commons.jxpath' version='1.3.0.v200911051830' singleton='false'>
       <update id='org.apache.commons.jxpath' range='[0.0.0,1.3.0.v200911051830)' severity='0'/>
       <properties size='8'>
@@ -7332,6 +7074,44 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='fr.ema.dedal.sdk.feature.jar' version='1.0.0.201908191633'>
+      <properties size='7'>
+        <property name='org.eclipse.equinox.p2.name' value='Dedal SDK'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
+        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
+        <property name='maven-artifactId' value='fr.ema.dedal.sdk'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.sdk.feature.jar' version='1.0.0.201908191633'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='fr.ema.dedal.sdk' version='1.0.0.201908191633'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='fr.ema.dedal.sdk' version='1.0.0.201908191633'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
     <unit id='org.eclipse.equinox.bidi' version='1.2.0.v20190514-1046' generation='2'>
       <update id='org.eclipse.equinox.bidi' range='[0.0.0,1.2.0.v20190514-1046)' severity='0'/>
       <properties size='8'>
@@ -7378,6 +7158,59 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.equinox.bidi;singleton:=true&#xA;Bundle-Version: 1.2.0.v20190514-1046
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='fr.ema.dedal.xtext' version='1.0.0.201908191633' generation='2'>
+      <update id='fr.ema.dedal.xtext' range='[0.0.0,1.0.0.201908191633)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='fr.ema.dedal.xtext'/>
+        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Ales'/>
+        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
+        <property name='maven-artifactId' value='fr.ema.dedal.xtext'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='13'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.xtext' version='1.0.0.201908191633'/>
+        <provided namespace='osgi.bundle' name='fr.ema.dedal.xtext' version='1.0.0.201908191633'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.services' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.serializer' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.parser.antlr' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.parser.antlr.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.validation' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.scoping' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.generator' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.ema.dedal.xtext.formatting' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='fr.ema.dedal.xtext' version='1.0.0.201908191633'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.5.0'/>
+        <required namespace='osgi.bundle' name='fr.ema.dedal.metamodel' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.util' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.common.types' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.antlr.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.objectweb.asm' range='[5.0.1,6.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='dedal' range='0.0.0'/>
+        <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='fr.ema.dedal.xtext' version='1.0.0.201908191633'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: fr.ema.dedal.xtext; singleton:=true&#xA;Bundle-Version: 1.0.0.201908191633
           </instruction>
         </instructions>
       </touchpointData>
@@ -8068,6 +7901,48 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='fr.ema.dedal.metamodel' version='1.0.0.201908191633' generation='2'>
+      <update id='fr.ema.dedal.metamodel' range='[0.0.0,1.0.0.201908191633)' severity='0'/>
+      <properties size='7'>
+        <property name='df_LT.pluginName' value='Dedal Model'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
+        <property name='maven-artifactId' value='fr.ema.dedal.metamodel'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='8'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.metamodel' version='1.0.0.201908191633'/>
+        <provided namespace='osgi.bundle' name='fr.ema.dedal.metamodel' version='1.0.0.201908191633'/>
+        <provided namespace='java.package' name='dedal' version='0.0.0'/>
+        <provided namespace='java.package' name='dedal.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='dedal.util' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='fr.ema.dedal.metamodel' version='1.0.0.201908191633'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.codegen.ecore' range='2.17.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='fr.ema.dedal.metamodel' version='1.0.0.201908191633'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: fr.ema.dedal.metamodel;singleton:=true&#xA;Bundle-Version: 1.0.0.201908191633
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='org.eclipse.acceleo.parser' version='3.7.8.201902261618' generation='2'>
       <update id='org.eclipse.acceleo.parser' range='[0.0.0,3.7.8.201902261618)' severity='0'/>
       <properties size='8'>
@@ -8473,6 +8348,53 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.sirius.ext.swt&#xA;Bundle-Version: 6.2.1.201906121145
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='fr.ema.dedal.dedalToB' version='1.0.0.201908191633' generation='2'>
+      <update id='fr.ema.dedal.dedalToB' range='[0.0.0,1.0.0.201908191633)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Acceleo DedalToB Module Runtime Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
+        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
+        <property name='maven-artifactId' value='fr.ema.dedal.dedalToB'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.dedalToB' version='1.0.0.201908191633'/>
+        <provided namespace='osgi.bundle' name='fr.ema.dedal.dedalToB' version='1.0.0.201908191633'/>
+        <provided namespace='java.package' name='fr.ema.dedal.dedalToB.main' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='fr.ema.dedal.dedalToB' version='1.0.0.201908191633'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='13'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='fr.ema.dedal.metamodel' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ocl' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ocl.ecore' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.acceleo.common' range='3.3.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.acceleo.model' range='3.3.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.acceleo.profiler' range='3.3.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.acceleo.engine' range='3.3.0'/>
+        <required namespace='osgi.bundle' name='com.google.guava' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.sirius' range='0.0.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='fr.ema.dedal.dedalToB' version='1.0.0.201908191633'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: fr.ema.dedal.dedalToB;singleton:=true&#xA;Bundle-Version: 1.0.0.201908191633
           </instruction>
         </instructions>
       </touchpointData>
@@ -8910,6 +8832,48 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.e4.emf.xpath&#xA;Bundle-Version: 0.2.300.v20190513-2118
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='fr.ema.dedal.metamodel.edit' version='1.0.0.201908191633' generation='2'>
+      <update id='fr.ema.dedal.metamodel.edit' range='[0.0.0,1.0.0.201908191633)' severity='0'/>
+      <properties size='7'>
+        <property name='df_LT.pluginName' value='Dedal Edit Support'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
+        <property name='maven-artifactId' value='fr.ema.dedal.metamodel.edit'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.metamodel.edit' version='1.0.0.201908191633'/>
+        <provided namespace='osgi.bundle' name='fr.ema.dedal.metamodel.edit' version='1.0.0.201908191633'/>
+        <provided namespace='java.package' name='dedal.provider' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='fr.ema.dedal.metamodel.edit' version='1.0.0.201908191633'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='fr.ema.dedal.metamodel' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.edit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='fr.ema.dedal.design' range='1.0.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='fr.ema.dedal.metamodel.edit' version='1.0.0.201908191633'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: fr.ema.dedal.metamodel.edit;singleton:=true&#xA;Bundle-Version: 1.0.0.201908191633
           </instruction>
         </instructions>
       </touchpointData>
@@ -11377,6 +11341,42 @@
           </instruction>
         </instructions>
       </touchpointData>
+    </unit>
+    <unit id='fr.ema.dedal.sdk.feature.group' version='1.0.0.201908191633' singleton='false'>
+      <update id='fr.ema.dedal.sdk.feature.group' range='[0.0.0,1.0.0.201908191633)' severity='0'/>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='Dedal SDK'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.provider' value='IMT Mines Alès'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
+        <property name='maven-artifactId' value='fr.ema.dedal.sdk'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.sdk.feature.group' version='1.0.0.201908191633'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.dedalToB' range='[1.0.0.201908191633,1.0.0.201908191633]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.metamodel' range='[1.0.0.201908191633,1.0.0.201908191633]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.xtext' range='[1.0.0.201908191633,1.0.0.201908191633]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.xtext.ui' range='[1.0.0.201908191633,1.0.0.201908191633]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='fr.ema.dedal.sdk.feature.jar' range='[1.0.0.201908191633,1.0.0.201908191633]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
     </unit>
     <unit id='org.eclipse.ocl' version='3.10.300.v20190603-1146' generation='2'>
       <update id='org.eclipse.ocl' range='[0.0.0,3.10.300.v20190603-1146)' severity='0'/>

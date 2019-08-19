@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: dedal.tests.CompositePortTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in dedal.tests.CompositePortTest
-initializationError(dedal.tests.CompositePortTest)  Time elapsed: 0 s  <<< ERROR!
-java.lang.NoClassDefFoundError: dedal/Interaction
-Caused by: java.lang.ClassNotFoundException: dedal.Interaction cannot be found by fr.ema.dedal.metamodel.tests_1.0.0.qualifier
-

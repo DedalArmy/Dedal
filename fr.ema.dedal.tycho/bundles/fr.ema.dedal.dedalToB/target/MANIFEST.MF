@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Acceleo DedalToB Module Runtime Plug-in
 Bundle-SymbolicName: fr.ema.dedal.dedalToB;singleton:=true
-Bundle-Version: 1.0.0.201908191445
+Bundle-Version: 1.0.0.201908191633
 Bundle-Activator: fr.ema.dedal.dedalToB.Activator
 Bundle-Vendor: IMT Mines Alès
 Require-Bundle: org.eclipse.core.runtime,fr.ema.dedal.metamodel,org.ecli

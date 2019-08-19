@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='1'>
-  <artifact classifier='osgi.bundle' id='fr.ema.dedal.metamodel.tests' version='1.0.0.201908181352'>
+  <artifact classifier='osgi.bundle' id='fr.ema.dedal.metamodel.tests' version='1.0.0.201908191629'>
     <properties size='5'>
-      <property name='artifact.size' value='23033'/>
-      <property name='download.size' value='23033'/>
+      <property name='artifact.size' value='23031'/>
+      <property name='download.size' value='23031'/>
       <property name='maven-groupId' value='fr.ema.dedal.tycho'/>
       <property name='maven-artifactId' value='fr.ema.dedal.metamodel.tests'/>
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>

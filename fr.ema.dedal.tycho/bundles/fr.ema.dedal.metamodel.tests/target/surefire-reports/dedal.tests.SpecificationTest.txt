@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: dedal.tests.SpecificationTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in dedal.tests.SpecificationTest
-initializationError(dedal.tests.SpecificationTest)  Time elapsed: 0 s  <<< ERROR!
-java.lang.NoClassDefFoundError: dedal/ArchitectureDescription
-Caused by: java.lang.ClassNotFoundException: dedal.ArchitectureDescription cannot be found by fr.ema.dedal.metamodel.tests_1.0.0.qualifier
-

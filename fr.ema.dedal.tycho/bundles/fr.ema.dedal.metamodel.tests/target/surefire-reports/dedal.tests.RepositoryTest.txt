@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: dedal.tests.RepositoryTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in dedal.tests.RepositoryTest
-initializationError(dedal.tests.RepositoryTest)  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.NoClassDefFoundError: dedal/Repository
-Caused by: java.lang.ClassNotFoundException: dedal.Repository cannot be found by fr.ema.dedal.metamodel.tests_1.0.0.qualifier
-
