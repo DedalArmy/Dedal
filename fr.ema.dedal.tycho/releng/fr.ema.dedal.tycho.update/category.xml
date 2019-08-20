@@ -3,27 +3,10 @@
    <feature url="features/fr.ema.dedal.sdk_1.0.0.qualifier.jar" id="fr.ema.dedal.sdk" version="1.0.0.qualifier">
       <category name="dedal.adl"/>
    </feature>
-   <bundle id="fr.ema.dedal.design" version="1.0.0">
-      <category name="dedal.editors"/>
-   </bundle>
-   <bundle id="fr.ema.dedal.metamodel.edit" version="1.0.0.qualifier">
-      <category name="dedal.editors"/>
-   </bundle>
-   <bundle id="fr.ema.dedal.metamodel.editor" version="1.0.0.qualifier">
-      <category name="dedal.editors"/>
-   </bundle>
-   <bundle id="fr.ema.dedal.dedalToB" version="1.0.0.qualifier">
+   <feature id="fr.ema.dedal.editor" version="1.0.0.qualifier"/>
+   <feature id="fr.ema.dedal.xtext.sdk">
       <category name="dedal.adl"/>
-   </bundle>
-   <bundle id="fr.ema.dedal.metamodel" version="1.0.0.qualifier">
-      <category name="dedal.adl"/>
-   </bundle>
-   <bundle id="fr.ema.dedal.xtext" version="1.0.0.qualifier">
-      <category name="dedal.adl"/>
-   </bundle>
-   <bundle id="fr.ema.dedal.xtext.ui" version="1.0.0.qualifier">
-      <category name="dedal.adl"/>
-   </bundle>
+   </feature>
    <category-def name="dedal.adl" label="Dedal ADL">
       <description>
          The famous Dedal Architecture Language

@@ -1,36 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="generateAll" name="fr.ema.dedal.dedalToB">
-    <property name="ECLIPSE_HOME" value="../../../../../../eclipse/modeling-latest/eclipse"/>
-    <property name="ECLIPSE_WORKSPACE" value="../../../../../../eclipseWorspaces/Dedal_latest"/>
+    <property name="ECLIPSE_HOME" value="../../../../../../../../opt/eclipse/modeling-latest-released/eclipse"/>
+    <property name="ECLIPSE_WORKSPACE" value="../../../../../../eclipse-workspace/dedalstudio"/>
 
     <!-- The classpath with only the dependencies used by the project -->
     <path id="fr.ema.dedal.dedalToB.libraryclasspath">
         <pathelement location="${ECLIPSE_WORKSPACE}/fr.ema.dedal.dedalToB/bin"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.runtime_3.15.100.v20181107-1343.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/javax.inject_1.0.0.v20091030.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.osgi_3.13.300.v20190125-2016.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.osgi.compatibility.state_1.1.300.v20181116-1550.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.equinox.common_3.10.300.v20190122-1234.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.jobs_3.10.200.v20180912-1356.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.equinox.registry_3.8.200.v20181008-1820.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.equinox.preferences_3.7.200.v20180827-1235.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.contenttype_3.7.300.v20190122-1946.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.equinox.app_1.4.0.v20181009-1752.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.codegen.ecore_2.17.0.v20190123-0656.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.ecore_2.17.0.v20190116-0940.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.common_2.15.0.v20181220-0846.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.codegen_2.15.0.v20181120-2156.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.ecore.xmi_2.15.0.v20180706-1146.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl_3.10.200.v20190206-1512.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/lpg.runtime.java_2.0.17.v201004271640.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl.common_1.8.200.v20190206-1512.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl.ecore_3.10.200.v20190206-1512.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.common_3.7.8.201902261618.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.model_3.7.8.201902261618.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.profiler_3.7.8.201902261618.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.engine_3.7.8.201902261618.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/com.google.guava_27.1.0.v20190517-1946.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.sirius_6.1.2.201902150923.jar"/>
     </path>
 
     <path id="fr.ema.dedal.dedalToB.classpath">
