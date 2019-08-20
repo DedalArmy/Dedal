@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (C) 2019 IMT Mines Alès
+  
+  This program and the accompanying materials are made
+  available under the terms of the Eclipse Public License 2.0
+  which is available at https://www.eclipse.org/legal/epl-2.0/
+  
+  SPDX-License-Identifier: EPL-2.0
+-->
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>fr.ema.dedal.tycho</groupId>
+    <artifactId>fr.ema.dedal.tycho.tests</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../</relativePath>
+  </parent>
+  <groupId>fr.ema.dedal.tycho</groupId>
+  <artifactId>fr.ema.dedal.metamodel.tests</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>eclipse-test-plugin</packaging>
+  
+<!--   <dependencies> -->
+<!-- 		      <dependency> -->
+<!-- 		       <type>eclipse-plugin</type> -->
+<!-- 		       <groupId>fr.ema.dedal.tycho</groupId> -->
+<!-- 		       <artifactId>fr.ema.dedal.metamodel</artifactId> -->
+<!-- 		       <version>1.0.0-SNAPSHOT</version> -->
+<!-- 		      </dependency> -->
+<!-- 		     </dependencies> -->
+  
+  <build>
+        <plugins>
+         <plugin>
+            <groupId>org.eclipse.tycho</groupId>
+            <artifactId>tycho-surefire-plugin</artifactId>
+            <version>${tycho.version}</version>
+            <configuration>
+                <useUIHarness>true</useUIHarness>
+            </configuration>
+            <dependencies>
+		      <dependency>
+		       <type>eclipse-plugin</type>
+		       <groupId>fr.ema.dedal.tycho</groupId>
+		       <artifactId>fr.ema.dedal.metamodel</artifactId>
+		       <version>1.0.0-SNAPSHOT</version>
+		      </dependency>
+		     </dependencies>
+         </plugin>
+         
+<!--         <plugin> -->
+<!--         <groupId>org.apache.maven.plugins</groupId> -->
+<!--         <artifactId>maven-surefire-plugin</artifactId> -->
+<!--         <version>2.12</version> -->
+<!--         <executions> -->
+<!--           <execution> -->
+<!--             <id>JUnitTest</id> -->
+<!--             <goals> -->
+<!--               <goal>test</goal> -->
+<!--             </goals> -->
+<!--             <phase>install</phase> -->
+<!--             <configuration> -->
+<!--               <useSystemClassLoader>false</useSystemClassLoader> -->
+<!--             </configuration> -->
+<!--           </execution> -->
+<!--         </executions> -->
+<!--       </plugin> -->
+        </plugins>
+    </build>
+  
+</project>

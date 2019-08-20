@@ -1,3 +1,12 @@
+/*******************************************************************************
+ * Copyright (C) 2019 IMT Mines Alès
+ * 
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+ ******************************************************************************/
 package defaultpackage;
 
 import java.util.List;
@@ -5,7 +14,14 @@ import java.util.List;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 import de.prob.statespace.Transition;
-import dedal.*;
+import dedal.Assembly;
+import dedal.CompClass;
+import dedal.CompRole;
+import dedal.Configuration;
+import dedal.DedalDiagram;
+import dedal.Interaction;
+import dedal.Repository;
+import dedal.Specification;
 import dedal.impl.ClassConnectionImpl;
 import dedal.impl.CompClassImpl;
 import dedal.impl.CompInstanceImpl;

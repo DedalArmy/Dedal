@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: fr.ema.dedal.xtext
-Bundle-Vendor: My Company
+Bundle-Vendor: IMT Mines Ales
 Bundle-Version: 1.0.0.qualifier
 Bundle-SymbolicName: fr.ema.dedal.xtext; singleton:=true
 Bundle-ActivationPolicy: lazy
@@ -12,10 +12,10 @@ Require-Bundle: org.eclipse.xtext;visibility:=reexport,
  org.eclipse.xtext.xbase.lib,
  org.eclipse.xtext.common.types,
  org.antlr.runtime,
- org.objectweb.asm;bundle-version="[5.0.1,6.0.0)";resolution:=optional
+ org.objectweb.asm;bundle-version="5.0.1"
 Import-Package: dedal,
  org.apache.log4j
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: fr.ema.dedal.xtext,
  fr.ema.dedal.xtext.services,
  fr.ema.dedal.xtext.serializer,

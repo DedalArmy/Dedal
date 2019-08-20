@@ -1,0 +1,921 @@
+[[1;34mINFO[m] Scanning for projects...
+/mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.metamodel/.polyglot.build.properties
+/mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/.polyglot.build.properties
+[[1;34mINFO[m] Computing target platform for MavenProject: fr.ema.dedal.tycho:fr.ema.dedal.metamodel:0.1.0-SNAPSHOT @ /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.metamodel/.polyglot.build.properties
+[[1;34mINFO[m] Fetching p2.index from http://download.eclipse.org/releases/latest/
+[[1;34mINFO[m] Fetching p2.index from http://download.eclipse.org/releases/latest/
+[[1;34mINFO[m] Adding repository http://download.eclipse.org/releases/latest
+[[1;34mINFO[m] Fetching p2.index from https://download.eclipse.org/releases/2019-06/
+[[1;34mINFO[m] Fetching p2.index from https://download.eclipse.org/releases/2019-06/
+[[1;34mINFO[m] Fetching p2.index from https://download.eclipse.org/technology/epp/packages/2019-06/
+[[1;34mINFO[m] Fetching p2.index from https://download.eclipse.org/technology/epp/packages/2019-06/
+[[1;34mINFO[m] Fetching p2.index from https://download.eclipse.org/releases/2019-06/201906191000/
+[[1;34mINFO[m] Fetching p2.index from https://download.eclipse.org/releases/2019-06/201906191000/
+[[1;34mINFO[m] Fetching p2.index from https://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository/
+[[1;34mINFO[m] Fetching p2.index from https://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository/
+[[1;34mINFO[m] Adding repository https://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository
+[[1;34mINFO[m] Fetching p2.index from https://download.eclipse.org/tools/orbit/downloads/drops2/R20190602212107/repository/
+[[1;34mINFO[m] Fetching p2.index from https://download.eclipse.org/tools/orbit/downloads/drops2/R20190602212107/repository/
+[[1;34mINFO[m] Adding repository https://www3.hhu.de/stups/rodin/prob2/releases/2015-Spring-Release
+[[1;34mINFO[m] Resolving dependencies of MavenProject: fr.ema.dedal.tycho:fr.ema.dedal.metamodel:0.1.0-SNAPSHOT @ /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.metamodel/.polyglot.build.properties
+[[1;34mINFO[m] Resolving class path of MavenProject: fr.ema.dedal.tycho:fr.ema.dedal.metamodel:0.1.0-SNAPSHOT @ /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.metamodel/.polyglot.build.properties
+[[1;34mINFO[m] Computing target platform for MavenProject: fr.ema.dedal.tycho:fr.ema.dedal.xtext:1.0.0-SNAPSHOT @ /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/.polyglot.build.properties
+[[1;34mINFO[m] Resolving dependencies of MavenProject: fr.ema.dedal.tycho:fr.ema.dedal.xtext:1.0.0-SNAPSHOT @ /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/.polyglot.build.properties
+[[1;34mINFO[m] Resolving class path of MavenProject: fr.ema.dedal.tycho:fr.ema.dedal.xtext:1.0.0-SNAPSHOT @ /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/.polyglot.build.properties
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] fr.ema.dedal.tycho.root                                            [pom]
+[[1;34mINFO[m] fr.ema.dedal.tycho.bundles                                         [pom]
+[[1;34mINFO[m] fr.ema.dedal.metamodel                                  [eclipse-plugin]
+[[1;34mINFO[m] fr.ema.dedal.xtext                                      [eclipse-plugin]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------< [0;36mfr.ema.dedal.tycho:fr.ema.dedal.tycho.root[0;1m >-------------[m
+[[1;34mINFO[m] [1mBuilding fr.ema.dedal.tycho.root 1.0.0-SNAPSHOT                    [1/4][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mfr.ema.dedal.tycho.root[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36mfr.ema.dedal.tycho:fr.ema.dedal.tycho.bundles[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding fr.ema.dedal.tycho.bundles 1.0.0-SNAPSHOT                 [2/4][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mfr.ema.dedal.tycho.bundles[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------< [0;36mfr.ema.dedal.tycho:fr.ema.dedal.metamodel[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding fr.ema.dedal.metamodel 0.1.0-SNAPSHOT                     [3/4][m
+[[1;34mINFO[m] [1m---------------------------[ eclipse-plugin ]---------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mfr.ema.dedal.metamodel[0;1m ---[m
+[[1;34mINFO[m] Deleting /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.metamodel/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mtycho-packaging-plugin:1.3.0:build-qualifier[m [1m(default-build-qualifier)[m @ [36mfr.ema.dedal.metamodel[0;1m ---[m
+[[1;34mINFO[m] The project's OSGi version is 0.1.0.201908181134
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mtycho-packaging-plugin:1.3.0:validate-id[m [1m(default-validate-id)[m @ [36mfr.ema.dedal.metamodel[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mtycho-packaging-plugin:1.3.0:validate-version[m [1m(default-validate-version)[m @ [36mfr.ema.dedal.metamodel[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.4.3:resources[m [1m(default-resources)[m @ [36mfr.ema.dedal.metamodel[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.metamodel/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mtycho-compiler-plugin:1.3.0:compile[m [1m(default-compile)[m @ [36mfr.ema.dedal.metamodel[0;1m ---[m
+[[1;34mINFO[m] Compiling 56 source files to /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.metamodel/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.4.3:testResources[m [1m(default-testResources)[m @ [36mfr.ema.dedal.metamodel[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.metamodel/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mtarget-platform-configuration:1.3.0:target-platform[m [1m(default-target-platform)[m @ [36mfr.ema.dedal.metamodel[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mtycho-packaging-plugin:1.3.0:package-plugin[m [1m(default-package-plugin)[m @ [36mfr.ema.dedal.metamodel[0;1m ---[m
+[[1;34mINFO[m] Building jar: /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.metamodel/target/fr.ema.dedal.metamodel-0.1.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mtycho-p2-plugin:1.3.0:p2-metadata-default[m [1m(default-p2-metadata-default)[m @ [36mfr.ema.dedal.metamodel[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------< [0;36mfr.ema.dedal.tycho:fr.ema.dedal.xtext[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding fr.ema.dedal.xtext 1.0.0-SNAPSHOT                         [4/4][m
+[[1;34mINFO[m] [1m---------------------------[ eclipse-plugin ]---------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mfr.ema.dedal.xtext[0;1m ---[m
+[[1;34mINFO[m] Deleting /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mtycho-packaging-plugin:1.3.0:build-qualifier[m [1m(default-build-qualifier)[m @ [36mfr.ema.dedal.xtext[0;1m ---[m
+[[1;34mINFO[m] The project's OSGi version is 1.0.0.201908181134
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mtycho-packaging-plugin:1.3.0:validate-id[m [1m(default-validate-id)[m @ [36mfr.ema.dedal.xtext[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mtycho-packaging-plugin:1.3.0:validate-version[m [1m(default-validate-version)[m @ [36mfr.ema.dedal.xtext[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.4.3:resources[m [1m(default-resources)[m @ [36mfr.ema.dedal.xtext[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mtycho-compiler-plugin:1.3.0:compile[m [1m(default-compile)[m @ [36mfr.ema.dedal.xtext[0;1m ---[m
+[[1;34mINFO[m] Compiling 19 source files to /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/target/classes
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] fr.ema.dedal.tycho.root 1.0.0-SNAPSHOT ............. [1;32mSUCCESS[m [  0.131 s]
+[[1;34mINFO[m] fr.ema.dedal.tycho.bundles 1.0.0-SNAPSHOT .......... [1;32mSUCCESS[m [  0.004 s]
+[[1;34mINFO[m] fr.ema.dedal.metamodel 0.1.0-SNAPSHOT .............. [1;32mSUCCESS[m [  5.642 s]
+[[1;34mINFO[m] fr.ema.dedal.xtext 1.0.0-SNAPSHOT .................. [1;31mFAILURE[m [  4.712 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  32.036 s
+[[1;34mINFO[m] Finished at: 2019-08-18T11:34:36Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.eclipse.tycho:tycho-compiler-plugin:1.3.0:compile[m [1m(default-compile)[m on project [36mfr.ema.dedal.xtext[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[7] 
+[[1;31mERROR[m] 	import dedal.Assembly;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Assembly cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[8] 
+[[1;31mERROR[m] 	import dedal.Attribute;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Attribute cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[9] 
+[[1;31mERROR[m] 	import dedal.ClassConnection;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.ClassConnection cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[10] 
+[[1;31mERROR[m] 	import dedal.CompClass;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.CompClass cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[11] 
+[[1;31mERROR[m] 	import dedal.CompInstance;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.CompInstance cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[12] 
+[[1;31mERROR[m] 	import dedal.CompRole;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.CompRole cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[13] 
+[[1;31mERROR[m] 	import dedal.CompType;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.CompType cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[14] 
+[[1;31mERROR[m] 	import dedal.CompositeCompClass;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.CompositeCompClass cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[15] 
+[[1;31mERROR[m] 	import dedal.CompositePort;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.CompositePort cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[16] 
+[[1;31mERROR[m] 	import dedal.Configuration;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Configuration cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[17] 
+[[1;31mERROR[m] 	import dedal.DedalDiagram;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.DedalDiagram cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[18] 
+[[1;31mERROR[m] 	import dedal.DedalPackage;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.DedalPackage cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[19] 
+[[1;31mERROR[m] 	import dedal.InstConnection;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.InstConnection cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[20] 
+[[1;31mERROR[m] 	import dedal.Interface;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Interface cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[21] 
+[[1;31mERROR[m] 	import dedal.InterfaceType;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.InterfaceType cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[22] 
+[[1;31mERROR[m] 	import dedal.Port;
+[[1;31mERROR[m] 	       ^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Port cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[23] 
+[[1;31mERROR[m] 	import dedal.Repository;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Repository cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[24] 
+[[1;31mERROR[m] 	import dedal.RoleConnection;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.RoleConnection cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[25] 
+[[1;31mERROR[m] 	import dedal.Signature;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Signature cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[26] 
+[[1;31mERROR[m] 	import dedal.Specification;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Specification cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[51] 
+[[1;31mERROR[m] 	if (epackage == DedalPackage.eINSTANCE)
+[[1;31mERROR[m] 	                ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[53] 
+[[1;31mERROR[m] 	case DedalPackage.ASSEMBLY:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[54] 
+[[1;31mERROR[m] 	sequence_Assembly(context, (Assembly) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_Assembly(ISerializationContext, Assembly) from the type AbstractDedalADLSemanticSequencer refers to the missing type Assembly
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[54] 
+[[1;31mERROR[m] 	sequence_Assembly(context, (Assembly) semanticObject); 
+[[1;31mERROR[m] 	                            ^^^^^^^^
+[[1;31mERROR[m] Assembly cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[56] 
+[[1;31mERROR[m] 	case DedalPackage.ATTRIBUTE:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[57] 
+[[1;31mERROR[m] 	sequence_Attribute(context, (Attribute) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_Attribute(ISerializationContext, Attribute) from the type AbstractDedalADLSemanticSequencer refers to the missing type Attribute
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[57] 
+[[1;31mERROR[m] 	sequence_Attribute(context, (Attribute) semanticObject); 
+[[1;31mERROR[m] 	                             ^^^^^^^^^
+[[1;31mERROR[m] Attribute cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[59] 
+[[1;31mERROR[m] 	case DedalPackage.CLASS_CONNECTION:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[60] 
+[[1;31mERROR[m] 	sequence_ClassConnection(context, (ClassConnection) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_ClassConnection(ISerializationContext, ClassConnection) from the type AbstractDedalADLSemanticSequencer refers to the missing type ClassConnection
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[60] 
+[[1;31mERROR[m] 	sequence_ClassConnection(context, (ClassConnection) semanticObject); 
+[[1;31mERROR[m] 	                                   ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] ClassConnection cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[62] 
+[[1;31mERROR[m] 	case DedalPackage.COMP_CLASS:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[63] 
+[[1;31mERROR[m] 	sequence_CompClass_Impl(context, (CompClass) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_CompClass_Impl(ISerializationContext, CompClass) from the type AbstractDedalADLSemanticSequencer refers to the missing type CompClass
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[63] 
+[[1;31mERROR[m] 	sequence_CompClass_Impl(context, (CompClass) semanticObject); 
+[[1;31mERROR[m] 	                                  ^^^^^^^^^
+[[1;31mERROR[m] CompClass cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[65] 
+[[1;31mERROR[m] 	case DedalPackage.COMP_INSTANCE:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[66] 
+[[1;31mERROR[m] 	sequence_CompInstance(context, (CompInstance) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_CompInstance(ISerializationContext, CompInstance) from the type AbstractDedalADLSemanticSequencer refers to the missing type CompInstance
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[66] 
+[[1;31mERROR[m] 	sequence_CompInstance(context, (CompInstance) semanticObject); 
+[[1;31mERROR[m] 	                                ^^^^^^^^^^^^
+[[1;31mERROR[m] CompInstance cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[68] 
+[[1;31mERROR[m] 	case DedalPackage.COMP_ROLE:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[69] 
+[[1;31mERROR[m] 	sequence_CompRole(context, (CompRole) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_CompRole(ISerializationContext, CompRole) from the type AbstractDedalADLSemanticSequencer refers to the missing type CompRole
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[69] 
+[[1;31mERROR[m] 	sequence_CompRole(context, (CompRole) semanticObject); 
+[[1;31mERROR[m] 	                            ^^^^^^^^
+[[1;31mERROR[m] CompRole cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[71] 
+[[1;31mERROR[m] 	case DedalPackage.COMP_TYPE:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[72] 
+[[1;31mERROR[m] 	sequence_CompType(context, (CompType) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_CompType(ISerializationContext, CompType) from the type AbstractDedalADLSemanticSequencer refers to the missing type CompType
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[72] 
+[[1;31mERROR[m] 	sequence_CompType(context, (CompType) semanticObject); 
+[[1;31mERROR[m] 	                            ^^^^^^^^
+[[1;31mERROR[m] CompType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[74] 
+[[1;31mERROR[m] 	case DedalPackage.COMPOSITE_COMP_CLASS:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[75] 
+[[1;31mERROR[m] 	sequence_CompositeCompClass(context, (CompositeCompClass) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_CompositeCompClass(ISerializationContext, CompositeCompClass) from the type AbstractDedalADLSemanticSequencer refers to the missing type CompositeCompClass
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[75] 
+[[1;31mERROR[m] 	sequence_CompositeCompClass(context, (CompositeCompClass) semanticObject); 
+[[1;31mERROR[m] 	                                      ^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] CompositeCompClass cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[77] 
+[[1;31mERROR[m] 	case DedalPackage.COMPOSITE_PORT:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[78] 
+[[1;31mERROR[m] 	sequence_CompositePort(context, (CompositePort) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_CompositePort(ISerializationContext, CompositePort) from the type AbstractDedalADLSemanticSequencer refers to the missing type CompositePort
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[78] 
+[[1;31mERROR[m] 	sequence_CompositePort(context, (CompositePort) semanticObject); 
+[[1;31mERROR[m] 	                                 ^^^^^^^^^^^^^
+[[1;31mERROR[m] CompositePort cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[80] 
+[[1;31mERROR[m] 	case DedalPackage.CONFIGURATION:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[81] 
+[[1;31mERROR[m] 	sequence_Configuration(context, (Configuration) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_Configuration(ISerializationContext, Configuration) from the type AbstractDedalADLSemanticSequencer refers to the missing type Configuration
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[81] 
+[[1;31mERROR[m] 	sequence_Configuration(context, (Configuration) semanticObject); 
+[[1;31mERROR[m] 	                                 ^^^^^^^^^^^^^
+[[1;31mERROR[m] Configuration cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[83] 
+[[1;31mERROR[m] 	case DedalPackage.DEDAL_DIAGRAM:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[84] 
+[[1;31mERROR[m] 	sequence_DedalDiagram(context, (DedalDiagram) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_DedalDiagram(ISerializationContext, DedalDiagram) from the type AbstractDedalADLSemanticSequencer refers to the missing type DedalDiagram
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[84] 
+[[1;31mERROR[m] 	sequence_DedalDiagram(context, (DedalDiagram) semanticObject); 
+[[1;31mERROR[m] 	                                ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalDiagram cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[86] 
+[[1;31mERROR[m] 	case DedalPackage.INST_CONNECTION:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[87] 
+[[1;31mERROR[m] 	sequence_InstConnection(context, (InstConnection) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_InstConnection(ISerializationContext, InstConnection) from the type AbstractDedalADLSemanticSequencer refers to the missing type InstConnection
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[87] 
+[[1;31mERROR[m] 	sequence_InstConnection(context, (InstConnection) semanticObject); 
+[[1;31mERROR[m] 	                                  ^^^^^^^^^^^^^^
+[[1;31mERROR[m] InstConnection cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[89] 
+[[1;31mERROR[m] 	case DedalPackage.INTERFACE:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[90] 
+[[1;31mERROR[m] 	sequence_Interface(context, (Interface) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_Interface(ISerializationContext, Interface) from the type AbstractDedalADLSemanticSequencer refers to the missing type Interface
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[90] 
+[[1;31mERROR[m] 	sequence_Interface(context, (Interface) semanticObject); 
+[[1;31mERROR[m] 	                             ^^^^^^^^^
+[[1;31mERROR[m] Interface cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[92] 
+[[1;31mERROR[m] 	case DedalPackage.INTERFACE_TYPE:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[93] 
+[[1;31mERROR[m] 	sequence_InterfaceType(context, (InterfaceType) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_InterfaceType(ISerializationContext, InterfaceType) from the type AbstractDedalADLSemanticSequencer refers to the missing type InterfaceType
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[93] 
+[[1;31mERROR[m] 	sequence_InterfaceType(context, (InterfaceType) semanticObject); 
+[[1;31mERROR[m] 	                                 ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[95] 
+[[1;31mERROR[m] 	case DedalPackage.PARAMETER:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[96] 
+[[1;31mERROR[m] 	sequence_Parameter(context, (dedal.Parameter) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_Parameter(ISerializationContext, Parameter) from the type AbstractDedalADLSemanticSequencer refers to the missing type Parameter
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[96] 
+[[1;31mERROR[m] 	sequence_Parameter(context, (dedal.Parameter) semanticObject); 
+[[1;31mERROR[m] 	                             ^^^^^
+[[1;31mERROR[m] dedal cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[98] 
+[[1;31mERROR[m] 	case DedalPackage.PORT:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[99] 
+[[1;31mERROR[m] 	sequence_Port_Impl(context, (Port) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_Port_Impl(ISerializationContext, Port) from the type AbstractDedalADLSemanticSequencer refers to the missing type Port
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[99] 
+[[1;31mERROR[m] 	sequence_Port_Impl(context, (Port) semanticObject); 
+[[1;31mERROR[m] 	                             ^^^^
+[[1;31mERROR[m] Port cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[101] 
+[[1;31mERROR[m] 	case DedalPackage.REPOSITORY:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[102] 
+[[1;31mERROR[m] 	sequence_Repository(context, (Repository) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_Repository(ISerializationContext, Repository) from the type AbstractDedalADLSemanticSequencer refers to the missing type Repository
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[102] 
+[[1;31mERROR[m] 	sequence_Repository(context, (Repository) semanticObject); 
+[[1;31mERROR[m] 	                              ^^^^^^^^^^
+[[1;31mERROR[m] Repository cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[104] 
+[[1;31mERROR[m] 	case DedalPackage.ROLE_CONNECTION:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[105] 
+[[1;31mERROR[m] 	sequence_RoleConnection(context, (RoleConnection) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_RoleConnection(ISerializationContext, RoleConnection) from the type AbstractDedalADLSemanticSequencer refers to the missing type RoleConnection
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[105] 
+[[1;31mERROR[m] 	sequence_RoleConnection(context, (RoleConnection) semanticObject); 
+[[1;31mERROR[m] 	                                  ^^^^^^^^^^^^^^
+[[1;31mERROR[m] RoleConnection cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[107] 
+[[1;31mERROR[m] 	case DedalPackage.SIGNATURE:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[108] 
+[[1;31mERROR[m] 	sequence_Signature(context, (Signature) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_Signature(ISerializationContext, Signature) from the type AbstractDedalADLSemanticSequencer refers to the missing type Signature
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[108] 
+[[1;31mERROR[m] 	sequence_Signature(context, (Signature) semanticObject); 
+[[1;31mERROR[m] 	                             ^^^^^^^^^
+[[1;31mERROR[m] Signature cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[110] 
+[[1;31mERROR[m] 	case DedalPackage.SPECIFICATION:
+[[1;31mERROR[m] 	     ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalPackage cannot be resolved to a variable
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[111] 
+[[1;31mERROR[m] 	sequence_Specification(context, (Specification) semanticObject); 
+[[1;31mERROR[m] 	^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The method sequence_Specification(ISerializationContext, Specification) from the type AbstractDedalADLSemanticSequencer refers to the missing type Specification
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[133] 
+[[1;31mERROR[m] 	protected void sequence_Assembly(ISerializationContext context, Assembly semanticObject) {
+[[1;31mERROR[m] 	                                                                ^^^^^^^^
+[[1;31mERROR[m] Assembly cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[145] 
+[[1;31mERROR[m] 	protected void sequence_Attribute(ISerializationContext context, Attribute semanticObject) {
+[[1;31mERROR[m] 	                                                                 ^^^^^^^^^
+[[1;31mERROR[m] Attribute cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[173] 
+[[1;31mERROR[m] 	protected void sequence_ClassConnection(ISerializationContext context, ClassConnection semanticObject) {
+[[1;31mERROR[m] 	                                                                       ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] ClassConnection cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[216] 
+[[1;31mERROR[m] 	protected void sequence_CompClass_Impl(ISerializationContext context, CompClass semanticObject) {
+[[1;31mERROR[m] 	                                                                      ^^^^^^^^^
+[[1;31mERROR[m] CompClass cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[235] 
+[[1;31mERROR[m] 	protected void sequence_CompInstance(ISerializationContext context, CompInstance semanticObject) {
+[[1;31mERROR[m] 	                                                                    ^^^^^^^^^^^^
+[[1;31mERROR[m] CompInstance cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[256] 
+[[1;31mERROR[m] 	protected void sequence_CompRole(ISerializationContext context, CompRole semanticObject) {
+[[1;31mERROR[m] 	                                                                ^^^^^^^^
+[[1;31mERROR[m] CompRole cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[275] 
+[[1;31mERROR[m] 	protected void sequence_CompType(ISerializationContext context, CompType semanticObject) {
+[[1;31mERROR[m] 	                                                                ^^^^^^^^
+[[1;31mERROR[m] CompType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[298] 
+[[1;31mERROR[m] 	protected void sequence_CompositeCompClass(ISerializationContext context, CompositeCompClass semanticObject) {
+[[1;31mERROR[m] 	                                                                          ^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] CompositeCompClass cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[312] 
+[[1;31mERROR[m] 	protected void sequence_CompositePort(ISerializationContext context, CompositePort semanticObject) {
+[[1;31mERROR[m] 	                                                                     ^^^^^^^^^^^^^
+[[1;31mERROR[m] CompositePort cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[332] 
+[[1;31mERROR[m] 	protected void sequence_Configuration(ISerializationContext context, Configuration semanticObject) {
+[[1;31mERROR[m] 	                                                                     ^^^^^^^^^^^^^
+[[1;31mERROR[m] Configuration cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[348] 
+[[1;31mERROR[m] 	protected void sequence_DedalDiagram(ISerializationContext context, DedalDiagram semanticObject) {
+[[1;31mERROR[m] 	                                                                    ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalDiagram cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[366] 
+[[1;31mERROR[m] 	protected void sequence_InstConnection(ISerializationContext context, InstConnection semanticObject) {
+[[1;31mERROR[m] 	                                                                      ^^^^^^^^^^^^^^
+[[1;31mERROR[m] InstConnection cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[396] 
+[[1;31mERROR[m] 	protected void sequence_InterfaceType(ISerializationContext context, InterfaceType semanticObject) {
+[[1;31mERROR[m] 	                                                                     ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[409] 
+[[1;31mERROR[m] 	protected void sequence_Interface(ISerializationContext context, Interface semanticObject) {
+[[1;31mERROR[m] 	                                                                 ^^^^^^^^^
+[[1;31mERROR[m] Interface cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[421] 
+[[1;31mERROR[m] 	protected void sequence_Parameter(ISerializationContext context, dedal.Parameter semanticObject) {
+[[1;31mERROR[m] 	                                                                 ^^^^^
+[[1;31mERROR[m] dedal cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[435] 
+[[1;31mERROR[m] 	protected void sequence_Port_Impl(ISerializationContext context, Port semanticObject) {
+[[1;31mERROR[m] 	                                                                 ^^^^
+[[1;31mERROR[m] Port cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[447] 
+[[1;31mERROR[m] 	protected void sequence_Repository(ISerializationContext context, Repository semanticObject) {
+[[1;31mERROR[m] 	                                                                  ^^^^^^^^^^
+[[1;31mERROR[m] Repository cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[459] 
+[[1;31mERROR[m] 	protected void sequence_RoleConnection(ISerializationContext context, RoleConnection semanticObject) {
+[[1;31mERROR[m] 	                                                                      ^^^^^^^^^^^^^^
+[[1;31mERROR[m] RoleConnection cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[489] 
+[[1;31mERROR[m] 	protected void sequence_Signature(ISerializationContext context, Signature semanticObject) {
+[[1;31mERROR[m] 	                                                                 ^^^^^^^^^
+[[1;31mERROR[m] Signature cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/src-gen/fr/ema/dedal/xtext/serializer/AbstractDedalADLSemanticSequencer.java:[507] 
+[[1;31mERROR[m] 	protected void sequence_Specification(ISerializationContext context, Specification semanticObject) {
+[[1;31mERROR[m] 	                                                                     ^^^^^^^^^^^^^
+[[1;31mERROR[m] Specification cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[7] 
+[[1;31mERROR[m] 	import dedal.ArchitectureDescription;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.ArchitectureDescription cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[8] 
+[[1;31mERROR[m] 	import dedal.Assembly;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Assembly cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[9] 
+[[1;31mERROR[m] 	import dedal.Attribute;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Attribute cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[10] 
+[[1;31mERROR[m] 	import dedal.ClassConnection;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.ClassConnection cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[11] 
+[[1;31mERROR[m] 	import dedal.CompClass;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.CompClass cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[12] 
+[[1;31mERROR[m] 	import dedal.CompInstance;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.CompInstance cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[13] 
+[[1;31mERROR[m] 	import dedal.CompRole;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.CompRole cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[14] 
+[[1;31mERROR[m] 	import dedal.CompType;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.CompType cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[15] 
+[[1;31mERROR[m] 	import dedal.Component;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Component cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[16] 
+[[1;31mERROR[m] 	import dedal.CompositeCompClass;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.CompositeCompClass cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[17] 
+[[1;31mERROR[m] 	import dedal.Configuration;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Configuration cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[18] 
+[[1;31mERROR[m] 	import dedal.DedalDiagram;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.DedalDiagram cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[19] 
+[[1;31mERROR[m] 	import dedal.InstConnection;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.InstConnection cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[20] 
+[[1;31mERROR[m] 	import dedal.Interaction;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Interaction cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[21] 
+[[1;31mERROR[m] 	import dedal.InterfaceType;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.InterfaceType cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[22] 
+[[1;31mERROR[m] 	import dedal.Parameter;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Parameter cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[23] 
+[[1;31mERROR[m] 	import dedal.Repository;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Repository cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[24] 
+[[1;31mERROR[m] 	import dedal.RoleConnection;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.RoleConnection cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[25] 
+[[1;31mERROR[m] 	import dedal.Signature;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Signature cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[26] 
+[[1;31mERROR[m] 	import dedal.Specification;
+[[1;31mERROR[m] 	       ^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] The import dedal.Specification cannot be resolved
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[42] 
+[[1;31mERROR[m] 	protected void _format(final DedalDiagram dedaldiagram, @Extension final IFormattableDocument document) {
+[[1;31mERROR[m] 	                             ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalDiagram cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[43] 
+[[1;31mERROR[m] 	EList<ArchitectureDescription> _architectureDescriptions = dedaldiagram.getArchitectureDescriptions();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] ArchitectureDescription cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[44] 
+[[1;31mERROR[m] 	for (final ArchitectureDescription architectureDescriptions : _architectureDescriptions) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] ArchitectureDescription cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[47] 
+[[1;31mERROR[m] 	EList<Repository> _repositories = dedaldiagram.getRepositories();
+[[1;31mERROR[m] 	      ^^^^^^^^^^
+[[1;31mERROR[m] Repository cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[48] 
+[[1;31mERROR[m] 	for (final Repository repositories : _repositories) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^
+[[1;31mERROR[m] Repository cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[53] 
+[[1;31mERROR[m] 	protected void _format(final Repository repository, @Extension final IFormattableDocument document) {
+[[1;31mERROR[m] 	                             ^^^^^^^^^^
+[[1;31mERROR[m] Repository cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[54] 
+[[1;31mERROR[m] 	EList<Component> _components = repository.getComponents();
+[[1;31mERROR[m] 	      ^^^^^^^^^
+[[1;31mERROR[m] Component cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[55] 
+[[1;31mERROR[m] 	for (final Component components : _components) {
+[[1;31mERROR[m] 	           ^^^^^^^^^
+[[1;31mERROR[m] Component cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[58] 
+[[1;31mERROR[m] 	EList<InterfaceType> _interfaceTypes = repository.getInterfaceTypes();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[59] 
+[[1;31mERROR[m] 	for (final InterfaceType interfaceTypes : _interfaceTypes) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[64] 
+[[1;31mERROR[m] 	protected void _format(final InterfaceType interfacetype, @Extension final IFormattableDocument document) {
+[[1;31mERROR[m] 	                             ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[65] 
+[[1;31mERROR[m] 	EList<Signature> _signatures = interfacetype.getSignatures();
+[[1;31mERROR[m] 	      ^^^^^^^^^
+[[1;31mERROR[m] Signature cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[66] 
+[[1;31mERROR[m] 	for (final Signature signatures : _signatures) {
+[[1;31mERROR[m] 	           ^^^^^^^^^
+[[1;31mERROR[m] Signature cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[71] 
+[[1;31mERROR[m] 	protected void _format(final Signature signature, @Extension final IFormattableDocument document) {
+[[1;31mERROR[m] 	                             ^^^^^^^^^
+[[1;31mERROR[m] Signature cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[72] 
+[[1;31mERROR[m] 	EList<Parameter> _parameters = signature.getParameters();
+[[1;31mERROR[m] 	      ^^^^^^^^^
+[[1;31mERROR[m] Parameter cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[73] 
+[[1;31mERROR[m] 	for (final Parameter parameters : _parameters) {
+[[1;31mERROR[m] 	           ^^^^^^^^^
+[[1;31mERROR[m] Parameter cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[78] 
+[[1;31mERROR[m] 	protected void _format(final Specification specification, @Extension final IFormattableDocument document) {
+[[1;31mERROR[m] 	                             ^^^^^^^^^^^^^
+[[1;31mERROR[m] Specification cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[79] 
+[[1;31mERROR[m] 	EList<CompRole> _specComponents = specification.getSpecComponents();
+[[1;31mERROR[m] 	      ^^^^^^^^
+[[1;31mERROR[m] CompRole cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[80] 
+[[1;31mERROR[m] 	for (final CompRole specComponents : _specComponents) {
+[[1;31mERROR[m] 	           ^^^^^^^^
+[[1;31mERROR[m] CompRole cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[83] 
+[[1;31mERROR[m] 	EList<RoleConnection> _specConnections = specification.getSpecConnections();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^^^^
+[[1;31mERROR[m] RoleConnection cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[84] 
+[[1;31mERROR[m] 	for (final RoleConnection specConnections : _specConnections) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^^^^
+[[1;31mERROR[m] RoleConnection cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[87] 
+[[1;31mERROR[m] 	EList<InterfaceType> _interfaceTypes = specification.getInterfaceTypes();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[88] 
+[[1;31mERROR[m] 	for (final InterfaceType interfaceTypes : _interfaceTypes) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[93] 
+[[1;31mERROR[m] 	protected void _format(final CompRole comprole, @Extension final IFormattableDocument document) {
+[[1;31mERROR[m] 	                             ^^^^^^^^
+[[1;31mERROR[m] CompRole cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[94] 
+[[1;31mERROR[m] 	EList<Interaction> _compInterfaces = comprole.getCompInterfaces();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^
+[[1;31mERROR[m] Interaction cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[95] 
+[[1;31mERROR[m] 	for (final Interaction compInterfaces : _compInterfaces) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^
+[[1;31mERROR[m] Interaction cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[100] 
+[[1;31mERROR[m] 	protected void _format(final Configuration configuration, @Extension final IFormattableDocument document) {
+[[1;31mERROR[m] 	                             ^^^^^^^^^^^^^
+[[1;31mERROR[m] Configuration cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[101] 
+[[1;31mERROR[m] 	EList<CompClass> _configComponents = configuration.getConfigComponents();
+[[1;31mERROR[m] 	      ^^^^^^^^^
+[[1;31mERROR[m] CompClass cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[102] 
+[[1;31mERROR[m] 	for (final CompClass configComponents : _configComponents) {
+[[1;31mERROR[m] 	           ^^^^^^^^^
+[[1;31mERROR[m] CompClass cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[105] 
+[[1;31mERROR[m] 	EList<InterfaceType> _interfaceTypes = configuration.getInterfaceTypes();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[106] 
+[[1;31mERROR[m] 	for (final InterfaceType interfaceTypes : _interfaceTypes) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[109] 
+[[1;31mERROR[m] 	EList<CompType> _comptypes = configuration.getComptypes();
+[[1;31mERROR[m] 	      ^^^^^^^^
+[[1;31mERROR[m] CompType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[110] 
+[[1;31mERROR[m] 	for (final CompType comptypes : _comptypes) {
+[[1;31mERROR[m] 	           ^^^^^^^^
+[[1;31mERROR[m] CompType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[113] 
+[[1;31mERROR[m] 	EList<ClassConnection> _configConnections = configuration.getConfigConnections();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] ClassConnection cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[114] 
+[[1;31mERROR[m] 	for (final ClassConnection configConnections : _configConnections) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^^^^^
+[[1;31mERROR[m] ClassConnection cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[119] 
+[[1;31mERROR[m] 	protected void _format(final CompType comptype, @Extension final IFormattableDocument document) {
+[[1;31mERROR[m] 	                             ^^^^^^^^
+[[1;31mERROR[m] CompType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[120] 
+[[1;31mERROR[m] 	EList<Interaction> _compInterfaces = comptype.getCompInterfaces();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^
+[[1;31mERROR[m] Interaction cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[121] 
+[[1;31mERROR[m] 	for (final Interaction compInterfaces : _compInterfaces) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^
+[[1;31mERROR[m] Interaction cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[126] 
+[[1;31mERROR[m] 	protected void _format(final CompClass compclass, @Extension final IFormattableDocument document) {
+[[1;31mERROR[m] 	                             ^^^^^^^^^
+[[1;31mERROR[m] CompClass cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[127] 
+[[1;31mERROR[m] 	EList<Attribute> _attributes = compclass.getAttributes();
+[[1;31mERROR[m] 	      ^^^^^^^^^
+[[1;31mERROR[m] Attribute cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[128] 
+[[1;31mERROR[m] 	for (final Attribute attributes : _attributes) {
+[[1;31mERROR[m] 	           ^^^^^^^^^
+[[1;31mERROR[m] Attribute cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[131] 
+[[1;31mERROR[m] 	EList<Interaction> _compInterfaces = compclass.getCompInterfaces();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^
+[[1;31mERROR[m] Interaction cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[132] 
+[[1;31mERROR[m] 	for (final Interaction compInterfaces : _compInterfaces) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^
+[[1;31mERROR[m] Interaction cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[137] 
+[[1;31mERROR[m] 	protected void _format(final CompositeCompClass compositecompclass, @Extension final IFormattableDocument document) {
+[[1;31mERROR[m] 	                             ^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] CompositeCompClass cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[138] 
+[[1;31mERROR[m] 	EList<Attribute> _attributes = compositecompclass.getAttributes();
+[[1;31mERROR[m] 	      ^^^^^^^^^
+[[1;31mERROR[m] Attribute cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[139] 
+[[1;31mERROR[m] 	for (final Attribute attributes : _attributes) {
+[[1;31mERROR[m] 	           ^^^^^^^^^
+[[1;31mERROR[m] Attribute cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[142] 
+[[1;31mERROR[m] 	EList<Interaction> _compInterfaces = compositecompclass.getCompInterfaces();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^
+[[1;31mERROR[m] Interaction cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[143] 
+[[1;31mERROR[m] 	for (final Interaction compInterfaces : _compInterfaces) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^
+[[1;31mERROR[m] Interaction cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[148] 
+[[1;31mERROR[m] 	protected void _format(final Assembly assembly, @Extension final IFormattableDocument document) {
+[[1;31mERROR[m] 	                             ^^^^^^^^
+[[1;31mERROR[m] Assembly cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[149] 
+[[1;31mERROR[m] 	EList<CompInstance> _assmComponents = assembly.getAssmComponents();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^^
+[[1;31mERROR[m] CompInstance cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[150] 
+[[1;31mERROR[m] 	for (final CompInstance assmComponents : _assmComponents) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^^
+[[1;31mERROR[m] CompInstance cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[153] 
+[[1;31mERROR[m] 	EList<InterfaceType> _interfaceTypes = assembly.getInterfaceTypes();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[154] 
+[[1;31mERROR[m] 	for (final InterfaceType interfaceTypes : _interfaceTypes) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[157] 
+[[1;31mERROR[m] 	EList<InstConnection> _assemblyConnections = assembly.getAssemblyConnections();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^^^^
+[[1;31mERROR[m] InstConnection cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[158] 
+[[1;31mERROR[m] 	for (final InstConnection assemblyConnections : _assemblyConnections) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^^^^
+[[1;31mERROR[m] InstConnection cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[163] 
+[[1;31mERROR[m] 	protected void _format(final CompInstance compinstance, @Extension final IFormattableDocument document) {
+[[1;31mERROR[m] 	                             ^^^^^^^^^^^^
+[[1;31mERROR[m] CompInstance cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[164] 
+[[1;31mERROR[m] 	EList<Interaction> _compInterfaces = compinstance.getCompInterfaces();
+[[1;31mERROR[m] 	      ^^^^^^^^^^^
+[[1;31mERROR[m] Interaction cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[165] 
+[[1;31mERROR[m] 	for (final Interaction compInterfaces : _compInterfaces) {
+[[1;31mERROR[m] 	           ^^^^^^^^^^^
+[[1;31mERROR[m] Interaction cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[171] 
+[[1;31mERROR[m] 	if (compositecompclass instanceof CompositeCompClass) {
+[[1;31mERROR[m] 	                                  ^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] CompositeCompClass cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[172] 
+[[1;31mERROR[m] 	_format((CompositeCompClass)compositecompclass, document);
+[[1;31mERROR[m] 	         ^^^^^^^^^^^^^^^^^^
+[[1;31mERROR[m] CompositeCompClass cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[177] 
+[[1;31mERROR[m] 	} else if (compositecompclass instanceof Assembly) {
+[[1;31mERROR[m] 	                                         ^^^^^^^^
+[[1;31mERROR[m] Assembly cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[178] 
+[[1;31mERROR[m] 	_format((Assembly)compositecompclass, document);
+[[1;31mERROR[m] 	         ^^^^^^^^
+[[1;31mERROR[m] Assembly cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[180] 
+[[1;31mERROR[m] 	} else if (compositecompclass instanceof CompClass) {
+[[1;31mERROR[m] 	                                         ^^^^^^^^^
+[[1;31mERROR[m] CompClass cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[181] 
+[[1;31mERROR[m] 	_format((CompClass)compositecompclass, document);
+[[1;31mERROR[m] 	         ^^^^^^^^^
+[[1;31mERROR[m] CompClass cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[183] 
+[[1;31mERROR[m] 	} else if (compositecompclass instanceof CompInstance) {
+[[1;31mERROR[m] 	                                         ^^^^^^^^^^^^
+[[1;31mERROR[m] CompInstance cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[184] 
+[[1;31mERROR[m] 	_format((CompInstance)compositecompclass, document);
+[[1;31mERROR[m] 	         ^^^^^^^^^^^^
+[[1;31mERROR[m] CompInstance cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[186] 
+[[1;31mERROR[m] 	} else if (compositecompclass instanceof CompRole) {
+[[1;31mERROR[m] 	                                         ^^^^^^^^
+[[1;31mERROR[m] CompRole cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[187] 
+[[1;31mERROR[m] 	_format((CompRole)compositecompclass, document);
+[[1;31mERROR[m] 	         ^^^^^^^^
+[[1;31mERROR[m] CompRole cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[189] 
+[[1;31mERROR[m] 	} else if (compositecompclass instanceof CompType) {
+[[1;31mERROR[m] 	                                         ^^^^^^^^
+[[1;31mERROR[m] CompType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[190] 
+[[1;31mERROR[m] 	_format((CompType)compositecompclass, document);
+[[1;31mERROR[m] 	         ^^^^^^^^
+[[1;31mERROR[m] CompType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[192] 
+[[1;31mERROR[m] 	} else if (compositecompclass instanceof Configuration) {
+[[1;31mERROR[m] 	                                         ^^^^^^^^^^^^^
+[[1;31mERROR[m] Configuration cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[193] 
+[[1;31mERROR[m] 	_format((Configuration)compositecompclass, document);
+[[1;31mERROR[m] 	         ^^^^^^^^^^^^^
+[[1;31mERROR[m] Configuration cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[195] 
+[[1;31mERROR[m] 	} else if (compositecompclass instanceof Specification) {
+[[1;31mERROR[m] 	                                         ^^^^^^^^^^^^^
+[[1;31mERROR[m] Specification cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[196] 
+[[1;31mERROR[m] 	_format((Specification)compositecompclass, document);
+[[1;31mERROR[m] 	         ^^^^^^^^^^^^^
+[[1;31mERROR[m] Specification cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[198] 
+[[1;31mERROR[m] 	} else if (compositecompclass instanceof DedalDiagram) {
+[[1;31mERROR[m] 	                                         ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalDiagram cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[199] 
+[[1;31mERROR[m] 	_format((DedalDiagram)compositecompclass, document);
+[[1;31mERROR[m] 	         ^^^^^^^^^^^^
+[[1;31mERROR[m] DedalDiagram cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[201] 
+[[1;31mERROR[m] 	} else if (compositecompclass instanceof InterfaceType) {
+[[1;31mERROR[m] 	                                         ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[202] 
+[[1;31mERROR[m] 	_format((InterfaceType)compositecompclass, document);
+[[1;31mERROR[m] 	         ^^^^^^^^^^^^^
+[[1;31mERROR[m] InterfaceType cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[204] 
+[[1;31mERROR[m] 	} else if (compositecompclass instanceof Repository) {
+[[1;31mERROR[m] 	                                         ^^^^^^^^^^
+[[1;31mERROR[m] Repository cannot be resolved to a type
+[[1;31mERROR[m] /mnt/d/mrale/git/Dedal/fr.ema.dedal.tycho/bundles/fr.ema.dedal.xtext/xtend-gen/fr/ema/dedal/xtext/formatting2/DedalADLFormatter.java:[205] 
+[[1;31mERROR[m] 	_format((Repository)compositecompclass, document);
+[[1;31mERROR[m] 	         ^^^^^^^^^^
+[[1;31mERROR[m] Repository cannot be resolved to a type
+[[1;31mERROR[m] 200 problems (200 errors)
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[[1;31mERROR[m] 
+[[1;31mERROR[m] After correcting the problems, you can resume the build with the command
+[[1;31mERROR[m]   [1mmvn <goals> -rf :fr.ema.dedal.xtext[m
