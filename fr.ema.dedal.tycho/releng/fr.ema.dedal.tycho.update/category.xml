@@ -3,8 +3,10 @@
    <feature url="features/fr.ema.dedal.sdk_1.0.0.qualifier.jar" id="fr.ema.dedal.sdk" version="1.0.0.qualifier">
       <category name="dedal.adl"/>
    </feature>
-   <feature id="fr.ema.dedal.editor" version="1.0.0.qualifier"/>
-   <feature id="fr.ema.dedal.xtext.sdk">
+   <feature id="fr.ema.dedal.editor" version="1.0.0.qualifier">
+      <category name="dedal.editors"/>
+   </feature>
+   <feature id="fr.ema.dedal.xtext.sdk" version="1.0.0.qualifier">
       <category name="dedal.adl"/>
    </feature>
    <category-def name="dedal.adl" label="Dedal ADL">

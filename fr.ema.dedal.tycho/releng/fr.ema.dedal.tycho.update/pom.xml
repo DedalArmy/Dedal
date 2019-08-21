@@ -33,7 +33,7 @@
  <profiles>
   <!-- This profile is used to upload the repo -->
   <profile>
-   <id>uploadRepo</id>
+   <id>uploadEclipse</id>
    <properties>
     <!-- Relative path to the repo being uploaded -->
     <repo.path>${project.build.directory}/repository/</repo.path>
@@ -49,14 +49,14 @@
       <executions>
        <execution>
         <id>upload-repo</id>
-        <phase>install</phase>
+        <phase>deploy</phase>
         <goals>
          <goal>upload</goal>
         </goals>
         <configuration>
          <fromDir>${repo.path}</fromDir>
          <includes>**</includes>
-         <toDir>dedal/${unqualifiedVersion}.${buildQualifier}</toDir>
+         <toDir>dedal/${eclipse.version}</toDir>
          <url>${dedal.alexandreleborgne}/p2</url>
          <serverId>dedal.alexandreleborgne</serverId>
          <!-- Points to your settings.xml
